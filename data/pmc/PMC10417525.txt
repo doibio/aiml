@@ -1,0 +1,263 @@
+
+==== Front
+Cancers (Basel)
+Cancers (Basel)
+cancers
+Cancers
+2072-6694
+MDPI
+
+10.3390/cancers15153907
+cancers-15-03907
+Article
+Unplanned 30-Day Readmission in Glioblastoma Patients: Implications for the Extent of Resection and Adjuvant Therapy
+https://orcid.org/0000-0003-2122-2676
+Kasper Johannes Conceptualization Methodology Investigation Data curation Writing – original draft Writing – review & editing *
+https://orcid.org/0000-0002-4680-0412
+Wach Johannes Formal analysis Data curation Writing – review & editing
+Vychopen Martin Methodology Formal analysis Writing – review & editing
+https://orcid.org/0000-0003-3749-2494
+Arlt Felix Conceptualization Writing – review & editing Supervision
+Güresir Erdem Writing – review & editing Supervision
+https://orcid.org/0000-0002-8634-8897
+Wende Tim Conceptualization Validation Writing – review & editing Supervision †
+Wilhelmy Florian Conceptualization Validation Writing – review & editing Supervision †
+Wong David Academic Editor
+Department of Neurosurgery, University Hospital Leipzig, 04103 Leipzig, Germany; johannes.wach@medizin.uni-leipzig.de (J.W.); martin.vychopen@medizin.uni-leipzig.de (M.V.); felix.arlt@medizin.uni-leipzig.de (F.A.); erdem.gueresir@medizin.uni-leipzig.de (E.G.); tim.wende@medizin.uni-leipzig.de (T.W.); florian.wilhelmy@medizin.uni-leipzig.de (F.W.)
+* Correspondence: johannes.kasper@medizin.uni-leipzig.de; Tel.: +49-341-9717892; Fax: +49-341-9717509
+† These authors contributed equally to this work.
+
+01 8 2023
+8 2023
+15 15 390708 6 2023
+24 7 2023
+27 7 2023
+© 2023 by the authors.
+2023
+https://creativecommons.org/licenses/by/4.0/ Licensee MDPI, Basel, Switzerland. This article is an open access article distributed under the terms and conditions of the Creative Commons Attribution (CC BY) license (https://creativecommons.org/licenses/by/4.0/).
+Simple Summary
+
+Unplanned early hospital readmission (UER) within 30 days seems to be associated with reduced overall survival in patients diagnosed with glioblastoma (GBM). In this study, we retrospectively analyzed how the extent of tumor resection or adjuvant tumor treatment affected the prognosis in GBM patients that experienced UER. A total of 276 patients were included in the study. UER occurred in 13.4% of all cases and significantly reduced the median survival prognosis (5.7 vs. 14.5 months). Moreover, GBM patients suffering from UER did not benefit from extensive tumor resection (5.1 vs. 5.7 months). Concerning post-operative treatment strategies, the application of radio-chemotherapy prolonged the overall survival of GBM patients, even when UER occurred (1.1 (without post-operative therapy) vs. 4.3 (radiotherapy alone) vs. 7.8 months (radio-chemotherapy)). Therefore, GBM patients experiencing unplanned early readmission within 30 days still benefitted from more aggressive post-operative therapy.
+
+Abstract
+
+Background: Unplanned early readmission (UER) within 30 days after hospital release is a negative prognostic marker for patients diagnosed with glioblastoma (GBM). This work analyzes the impact of UER on the effects of standard therapy modalities for GBM patients, including the extent of resection (EOR) and adjuvant therapy regimen. Methods: Records were searched for patients with newly diagnosed GBM between 2014 and 2020 who were treated at our facility. Exclusion criteria were being aged below 18 years or missing data. An overall survival (OS) analysis (Kaplan–Meier estimate; Cox regression) was performed on various GBM patient sub-cohorts. Results: A total of 276 patients were included in the study. UER occurred in 13.4% (n = 37) of all cases, significantly reduced median OS (5.7 vs. 14.5 months, p < 0.001 by logrank), and was associated with an increased hazard of mortality (hazard ratio 3.875, p < 0.001) in multivariate Cox regression when other clinical parameters were applied as confounders. The Kaplan–Meier analysis also showed that patients experiencing UER still benefitted from adjuvant radio-chemotherapy when compared to radiotherapy or no adjuvant therapy (p < 0.001 by logrank). A higher EOR did not improve OS in GBM patients with UER (p = 0.659). Conclusion: UER is negatively associated with survival in GBM patients. In contrast to EOR, adjuvant radio-chemotherapy was beneficial, even after UER.
+
+glioblastoma
+unplanned early readmission
+extent of resection
+radio-chemotherapy
+This research received no external funding.
+==== Body
+pmc1. Introduction
+
+Glioblastoma (GBM) is the most common brain-derived tumor. Characterized by high mitotic activity, aggressive invasive behavior, central necrosis, and neo-angiogenesis, it is classified as WHO grade 4 [1]. It is more common in men, and the median age at diagnosis is 65 years [2]. The standard therapy is maximum safe resection aiming for gross-total resection, followed by adjuvant radio-chemotherapy (up to 60.0 gray and concomitant application of temozolomide), and six cycles of maintenance chemotherapy with temozolomide [3]. Despite intense research efforts and newly available treatment options, such as tumor-treating fields [4] or a new systemic therapy regimen [5], the overall survival rate remains poor. Several clinical and radiological parameters were identified as being associated with survival prognosis. This includes the extent of resection (EOR), O6-methylguanine DNA methyltransferase (MGMT) promoter methylation status [6], patient age at time of diagnosis [7], tumor location, or occurrence of neurological deficits [8,9].
+
+Unplanned early readmission (UER) in general represents a significant economic burden on health care systems [10,11] and might be used as a marker for in-hospital quality of care [12,13]. Concerning neurosurgical cohorts, several works reported an association between UER and a shortened overall survival prognosis, e.g., in glioblastoma [14,15,16]. Moreover, previous data indicated that UER can be associated with preventable adverse events, resulting in reduced quality of care for these patients [12,17]. Due to the affection of the central nervous system, inpatient treatment of early readmitted neurosurgical patients is commonly indispensable [12].
+
+While the negative association of UER with the survival prognosis of GBM patients has been reported before, the impact of unplanned early readmission on standard treatment modalities for glioblastoma patients remains unclear. Therefore, we evaluated the influence of unplanned early readmission on patients suffering from GBM, with a focus on the extent of resection and adjuvant therapy regimen.
+
+2. Methods
+
+2.1. Patient Selection and Treatment
+
+Data collection and analysis were approved by the ethical committee of the Medical Faculty, University of Leipzig, and carried out in accordance with data protection guidelines. Informed consent for retrospective data analysis was obtained from all patients treated in the Neurosurgical Department of Leipzig University. The medical records were checked for all patients with first diagnosis of IDH-wildtype glioblastoma between 1 January 2014 and 31 December 2020 treated at Leipzig University Hospital. Patients aged below 18 years or missing clinical or pathological data were excluded. All tumor cases in our department and neurooncological center were discussed in a weekly, interdisciplinary tumor board, and therapy regimens were determined based on the current treatment guidelines for glioma therapy.
+
+2.2. Clinical, Pathological, and Radiological Assessment
+
+Medical records were analyzed for age at date of diagnosis, sex, peri-operative clinical performance, main onset symptoms, length of stay (LOS) at the intensive care (ICU) unit or our department in general, occurrence of post-operative complications, unplanned early readmission (UER), discharge disposition, and adjuvant therapy regimen. The date of diagnosis was set as the date of neurosurgery with neuropathological proof of glioblastoma.
+
+UER was defined as unexpected readmission to any hospital that required inpatient treatment within 30 days after initial release from our facility. Post-operative complications were defined as every medical condition that occurred after initial neurosurgical tumor extirpation or biopsy with temporary or permanent decrease in the neurological or physical status of patients.
+
+The medical research council neurological performance scale (MRC-NPS) adjusted by Bleehen et al. [18] was used to assess neurological performance with (1) no neurological deficit; (2) some neurological deficit but function adequate for useful work; (3) neurological deficit causing moderate functional impairment (difficulty to move limbs, moderate dysphasia, moderate paresis, and some visual disturbance); (4) neurological deficit causing major functional impairment (inability to move limbs and gross speech or visual disturbances); and (5) inability to make conscious responses. The difference in MRC-NPS was calculated as post-operative values minus pre-operative values. Hence, positive values indicate neurological deterioration, and vice versa.
+
+Histopathological diagnosis and immunohistochemical status were extracted from neuropathology reports. IDH mutation status and MGMT promoter methylation of all GBM samples were determined using immunohistochemistry and pyrosequencing, or nucleic acid amplification followed by pyrosequencing.
+
+Overall survival (OS) was defined as the time between date of neurosurgery and date of death. The date of death, if not provided by our hospital database, was collected from the Leipzig Cancer Registry. Dates were assessed on 31 December 2022. If death did not occur by then or if patients were lost to follow-up, the date of last contact with our department was integrated into statistical analysis as censored value.
+
+Extent of resection (EOR) was retrospectively determined by revising MRI T1 sequences with and without contrast. Analysis was carried out employing iPlan Cranial software (version 3.0.5, Brainlab AG, Munich, Germany). If burr hole trepanation with needle biopsy was performed or the extent of resection was unknown due to missing post-operative MR imaging, EOR was set at 0%.
+
+2.3. Statistical Analysis
+
+Statistical analysis was performed for the entire cohort and sub-cohorts (patients with or without UER) using SPSS statistics software version 29.0.0.0 (IBM, Armonk, NY, USA). Comparative sub-cohort analysis was carried out with Mann–Whitney U test. Survival analysis was performed using Kaplan–Meier estimate as well as Cox regression for univariate and multivariate calculations of survival probability. Survival rates from Kaplan–Meier analysis were tested for statistical significance via logrank. p-values below 0.05 were considered statistically significant. Hazard ratios (HR) from Cox regression are provided with 95% confidence intervals (95 CI) and were considered statistically significant if 1 was excluded by 95 CI. In order to analyze the impact of UER on different treatment regimens, a cutoff for EOR was calculated. Therefore, time-dependent receiver operator characteristic (ROC) analysis was performed, and the optimal cutoff point was defined as the value that maximizes the Youden index (parameter value for which sensitivity + specificity − 1 is maximal). After EOR was categorized according to cutoff values, a second univariate analysis was carried out with and Kaplan–Meier estimate, as stated above.
+
+3. Results
+
+3.1. Baseline Data
+
+Between 2014 and 2021, 294 patients with newly diagnosed GBM were treated at our facility, of whom 276 were included in this study. In accordance with larger databases, male patients were more often diagnosed with glioblastoma, and the median age at diagnosis was 68.8 years (Table 1). Bilateral hemispheric tumor location (27.0% vs. 12.6%, p = 0.033), post-operative neurological deterioration (48.6% vs. 24.7%, p = 0.009), and post-operative complications (51.4% vs. 31.4%, p = 0.012) were significantly more frequent within the UER sub-cohort. Concerning treatment strategies, EOR (p = 0.111) and adjuvant therapy regimens were equally distributed among the groups (p = 0.36).
+
+3.2. Unplanned Early Readmission
+
+UER occurred in 37 cases (13.4% of the entire cohort). Progressive neurological deterioration was the most frequent cause for UER (24 of 37 cases, 64.9%). Among those, five patients suffered from early rapid tumor progression (13.5%), five patients were readmitted due to epileptic seizures, two patients developed hydrocephalus (5.4%), and two patients suffered from intracranial hemorrhage. Six patients (16.2%) developed infectious complications, with the diagnosis of surgical site infection (SSI) in three cases (8.1%). Two patients (5.4%) were readmitted due to insufficient home care. Other medical reasons for UER included one case (2.7%) of urethral hemorrhage, intestinal ischemia, coprostasis, hypertensive crisis, and suicidal attempt, respectively. Surgical treatment was performed for SSI, hydrocephalus, and in one case of intracranial hemorrhage (16.2% of all cases with UER).
+
+3.3. Overall Survival
+
+Kaplan–Meier analysis of GBM patients with or without UER is presented in Figure 1. The median overall survival of patients suffering from UER was significantly shorter (5.7 vs. 14.5 months, p < 0.001 by logrank).
+
+Univariate Cox regression revealed significant influences for all the included parameters except the difference in MRC-NPS and the occurrence of post-operative complications (Table 2). When adjusted as confounders in a multivariate analysis, UER (hazard ratio (HR) 3.875, p < 0.001) and discharge disposition other than home (HR 1.671, p < 0.001) were significantly associated with an increased hazard of mortality. Peri-operative increase or stability of neurological performance calculated via the difference in MRC-NPS (HR 0.556, p = 0.042), higher extent of resection (HR 0.995, p = 0.025), more aggressive adjuvant therapy (HR 0.353, p < 0.001), and positive MGMT promoter methylation status (HR 0.594, p = 0.002) were significantly associated with a reduction in mortality risk (Table 2).
+
+3.4. Readmission, Extent of Resection, and Adjuvant Therapy
+
+The optimal cutoff of EOR for the entire cohort was 90.58% (AUC: 0.63). Survival graphs of sub-cohorts calculated via the Kaplan–Meier estimate are presented in Figure 2. UER significantly reduced the median overall survival for patients receiving concomitant radio-chemotherapy (7.8 (UER) vs. 20.4 months (without UER)), as well as radiotherapy alone (4.3 (UER) vs. 7.9 months (without UER), both p < 0.001), but an analysis of the UER sub-cohort alone revealed beneficial effects on survival prognosis when adjuvant radio-chemotherapy was applied (1.1 (without therapy) vs. 4.3 (Rx) vs. 7.8 months (RCx), p < 0.001). In the UER sub-group, EOR yielded no survival benefit (5.1 (EOR below cutoff) vs. 5.7 months (EOR above cutoff), p = 0.659). The median OS of patients without UER was significantly increased when an EOR above the cutoff was achieved (9.7 (EOR below cutoff) vs. 20.9 (EOR above cutoff) months, p < 0.001).
+
+4. Discussion
+
+The thirty-day readmission rate for inpatient care is an important financial benchmark, considered a marker for quality of care and associated with high costs for health care systems [10,19,20]. Several studies have also shown that UER is associated with a reduced outcome for various medical conditions, especially when survival rates are analyzed [21,22,23,24,25]. In neurosurgery, the most frequent causes for unplanned readmission include post-operative infections and medical complications, such as thromboembolic events, seizures, intracranial hemorrhage, and shunt or ventricle catheter-associated complications [14,15,26], especially in pediatric neurosurgery [27,28]. Neurological complications accounted for the majority of readmission cases in our cohort, which is in line with previous data investigating UER in glioblastoma cohorts [14,15]. The overall readmission rates vary between 6.0% and 21.0% and are highly dependent on the neurosurgical index diagnosis [17,26,29]. Thirty-day readmission rates for patients suffering from glioblastoma were reported before at 7.5% [15] and 20.3% [30], in comparison with 13.8% in our cohort. Therefore, GBM patients are at higher risk of experiencing UER when compared to other neurosurgical sub-cohorts [26], including patients treated at our Neurosurgery Department [17]. The reported factors associated with early readmission in GBM patients were reduced overall physical performance determined via KPS, discharge disposition other than home, MGMT methylation status, location of tumor in eloquent brain areas, or intra-operative hypertension [15,16,30,31]. We also found higher frequencies of bi-hemispheric tumor location, peri-operative neurological deterioration, and the occurrence of post-operative complications in early readmitted glioblastoma patients. In accordance to earlier data [14,15], UER had a significant impact on GBM patient prognosis, with a reduction in the median overall survival of over 50% in the cohort reported here. Early readmission was also independently associated with a higher hazard of mortality among other well-established prognostic factors when multivariate Cox regression analysis was performed. In addition, the study presented here revealed a significant impact of UER on the prognostic effects of standard treatment modalities. As overall survival was reduced in general, patients who experienced early readmission strongly benefited from adjuvant radiotherapy with concomitant chemotherapy when compared to radiotherapy alone or no adjuvant therapy. When analyzed for the extent of resection, survival analysis showed no significant prognostic effect of higher EOR rates for patients in the UER sub-cohort. The beneficial effects of a more aggressive tumor resection were abrogated by the occurrence of early readmission. The underlying mechanism remains unclear. As EOR rates were equally distributed among sub-cohorts, co-dependencies between UER and other prognostic factors that were not considered for this study cannot be ruled out. A higher EOR might be associated with an increased risk of reduced peri-operative neurological performance, which was found more often in the UER sub-cohort and was also the most frequent cause leading to unplanned early readmission. Multivariate analysis, on the other hand, revealed a significant association between shortened overall survival and the occurrence of early readmission, independently from other well-established parameters (including reduced neurological performance). Also, patients in the UER subgroup suffered more often from bilateral glioblastoma, which might have reduced their eligibility for gross-total resection in retrospective, therefore showing no impact of the extent of resection on survival.
+
+The study presented here is limited by its retrospective design. Selection bias cannot be fully ruled out. Based on the data presented here, no conclusions concerning the direct association or causality of clinical factors or treatment modalities with UER can be drawn. It remains, therefore, unclear how to avoid UER in GBM patients. Moreover, corticoid therapy was not considered for data analysis. Neurological deterioration might be induced by reducing corticoid therapy too rapidly, leading to UER. Due to the small number of non-tumor-related cases of UER, non-neurosurgical side-morbidities were not considered in detail for this work.
+
+Unplanned early readmission remains a considerable marker for quality of care but also for financial aspects of health care systems. For patients with a very limited prognosis, including glioblastoma, UER should be avoided whenever possible. It is important for healthcare providers to identify patients at risk of unplanned early readmission in order to address the above-mentioned issues. Future studies should therefore explore factors leading to UER in GBM patients as well as the effects of recurrent surgery on UER.
+
+5. Conclusions
+
+Unplanned early readmission was strongly associated with reduced overall survival in our cohort. When stratified for standard therapy modalities and in contrast to standard glioblastoma cohorts, an increased extent of resection yielded no benefit on survival prognosis in patients experiencing unplanned early readmission. However, radio-chemotherapy was still highly beneficial, even after an unplanned early readmission.
+
+Acknowledgments
+
+The author(s) acknowledge support from the German Research Foundation (DFG) and Universität Leipzig within the program of Open Access Publishing.
+
+Author Contributions
+
+Conceptualization: F.W., T.W., E.G., F.A. and J.K.; Data curation: J.K., J.W. and M.V.; Formal analysis: J.K., J.W. and M.V.; Methodology: J.K., J.W., M.V., T.W. and F.W.; Project administration: F.W. and T.W.; Supervision: F.A., E.G., F.W. and T.W.; Validation: all authors; Writing—original draft: J.K.; Writing—review and editing: all authors. All authors have read and agreed to the published version of the manuscript.
+
+Institutional Review Board Statement
+
+The study was conducted in accordance with the Declaration of Helsinki, and the protocol was approved by the Ethics Committee of Medical Faculty, University of Leipzig (no. 102/19-ek).
+
+Informed Consent Statement
+
+Informed consent for anonymous data analysis was obtained from all subjects involved in the study prior to surgery.
+
+Data Availability Statement
+
+Data of this work are available from corresponding author upon reasonable request.
+
+Conflicts of Interest
+
+The authors declare no conflict of interest.
+
+Abbreviations
+
+EOR	extent of resection	
+ICU	intensive care unit	
+KPS	Karnofsky Performance Scale	
+LOS	length of stay	
+MGMT	O6-methylguanine DNA methyltransferase	
+MRC-NPS	medical research council neurological performance scale	
+RCx	radio-chemotherapy	
+ROC	receiver operator characteristic	
+Rx	radiotherapy	
+SSI	surgical site infection	
+UER	unplanned early readmission	
+
+Figure 1 Survival graphs of patients with or without unplanned early readmission calculated with Kaplan–Meier estimate. UER: unplanned early readmission.
+
+Figure 2 Survival graphs of patients with or without unplanned early readmission calculated with Kaplan–Meier estimate after stratification for adjuvant therapy regimen (A) or extent of resection (B). EOR: extent of resection; RCx: radio-chemotherapy; Rx: radiotherapy; UER: unplanned early readmission.
+
+cancers-15-03907-t001_Table 1 Table 1 Baseline data of the entire cohort and sub-cohorts sorted by occurrence of unplanned early readmission.
+
+		All	without UER	with UER	p Value	
+n		276	239	37	N/A	
+Sex	male	175 (63.4)	150 (62.8)	25 (67.6)	0.573	
+female	101 (36.6)	89 (37.2)	12 (32.4)	
+Age, years		68.4, 32.6–86.7	69.9, 32.6–86.7	66.5, 33.8–84.4	0.065	
+Hemisphere	right	123 (44.6)	111 (46.4)	12 (32.4)	0.033 *	
+left	113 (40.9)	98 (41.0)	15 (40.5)	
+bilateral	40 (14.5)	30 (12.6)	10 (27.0)	
+Lobe	frontal	59 (21.4)	54 (22.6)	4 (10.8)	0.229	
+parietal	46 (16.7)	40 (16.7)	6 (16.2)	
+temporal	76 (27.5)	64 (26.8)	12 (32.4)	
+occipital	14 (5.1)	14 (5.9)	0	
+multilocular	76 (27.5)	62 (25.9)	14 (37.8)	
+other	5 (1.8)	5 (2.1)	0	
+KPS		80, 20–100	80, 20–100	80, 40–100	0.782	
+MRC-NPS	pre-operative	2, 1–5	2, 1–5	2, 1–5	0.186	
+post-operative	3, 1–5	3, 1–5	3, 1–5	0.443	
+Difference in MRC-NPS †	<0	27 (9.8)	25 (10.5)	2 (5.4)	0.009 *	
+=0	172 (62.3)	155 (64.9)	17 (45.9)	
+>0	77 (27.9)	59 (24.7)	18 (48.6)	
+Main onset symptom	seizure	43 (15.6)	37 (15.5)	6 (16.2)	0.148	
+motor deficit	78 (28.3)	74 (31.0)	4 (10.8)	
+aphasia/dysphasia	44 (15.9)	35 (14.6)	9 (24.3)	
+visual deficit	11 (4.0)	9 (3.8)	2 (5.4)	
+cognitive deficit	21 (7.6)	19 (7.9)	2 (5.4)	
+change in character	22 (8.0)	19 (7.9)	3 (8.1)	
+headache	30 (10.7)	22 (9.2)	8 (21.6)	
+reduced vigilance	6 (2.2)	6 (2.5)	0	
+none	5 (1.8)	4 (1.7)	1 (2.7)	
+other	16 (5.8)	14 (5.9)	2 (5.4)	
+EOR, %		72.2, 0–100	74.5, 0–100	36.7, 0–100	0.111	
+Post-operative complication	without	182 (65.9)	164 (68.6)	18 (48.6)	0.012 *	
+with	94 (34.1)	75 (31.4)	19 (51.4)	
+LOS, days		14, 4–72	14, 4–72	14, 6–37	0.705	
+LOS on ICU, days		1, 1–43	1, 1–43	1, 1–29	0.109	
+MGMT status	negative	123 (44.6)	108 (45.2)	15 (40.5)	0.580	
+positive	153 (55.4)	131 (54.8)	22 (59.5)	
+Adjuvant therapy	without	63 (22.8)	54 (22.6)	9 (24.3)	0.36	
+radiotherapy	48 (17.4)	39 (16.3)	9 (24.3)	
+radio-chemotherapy	165 (59.8)	146 (61.1)	19 (51.4)	
+Discharge disposition	home	202 (73.2)	176 (73.6)	26 (70.2)	0.776	
+radio-oncology	32 (11.6)	27 (11.3)	4 (10.8)	
+rehabilitation clinic	17 (6.2)	12 (5.0)	5 (13.5)	
+palliative care/hospice	25 (9.1)	24 (10.0)	2 (5.4)	
+For continuous and ordinal variables, the median with corresponding range is shown. For categorial variables, percent of corresponding n is shown in brackets. p values were calculated by Mann–Whitney U test comparing sub-cohort distribution of analyzed clinical factors. EOR: extent of resection; ICU: intensive care unit; N/A: not applicable; KPS: Karnofsky Performance Scale; LOS: length of stay; MRC-NPS: medical research council neurological performance scale; UER: unplanned early readmission. * Statistical significance. † Post-operative NPS minus pre-operative NPS (positive values indicate neurological deterioration and vice versa).
+
+cancers-15-03907-t002_Table 2 Table 2 Survival probability calculated via univariate and multivariate Cox regression.
+
+		Multivariate Cox Regression	
+	HR	95 CI	p Value	HR	95 CI	p Value	
+UER	2.755	1.852–4.098	<0.001 *	3.875	2.473–6.072	<0.001 *	
+Age	1.028	1.012–1.044	<0.001 *	1.013	0.995–1.031	0.156	
+Hemisphere	1.331	1.06–1.673	0.014 *	1.244	0.968–1.599	0.089	
+Location	1.282	1.151–1.427	<0.001 *	1.103	0.974–1.249	0.122	
+KPS	0.982	0.974–0.989	<0.001 *	0.997	0.981–1.013	0.707	
+MRC-NPS, pre-operative	1.459	1.238–1.719	<0.001 *	0.887	0.557–1.414	0.615	
+MRC-NPS, post-operative	1.621	1.368–1.921	<0.001 *	1.473	0.991–2.189	0.056	
+MRC-NPS, difference †	1.178	0.908–1.527	0.217	0.556	0.316–0.978	0.042 *	
+Main onset symptom	1.086	1.030–1.145	0.002 *	1.045	0.98–1.114	0.181	
+EOR	0.992	0.989–0.995	<0.001 *	0.995	0.992–0.999	0.025 *	
+Post-operative complication	1.380	0.999–1.906	0.051	0.987	0.64–1.523	0.953	
+LOS	1.033	1.015–1.052	<0.001 *	0.975	0.946–1.004	0.094	
+LOS on ICU	1.076	1.048–1.104	<0.001 *	1.01	0.971–1.05	0.63	
+MGMT status	0.591	0.432–0.809	0.001 *	0.594	0.426–0.829	0.002 *	
+Adjuvant therapy	0.281	0.225–0.351	<0.001 *	0.353	0.266–0.468	<0.001 *	
+Discharge disposition	2.098	1.776–2.479	<0.001 *	1.671	1.359–2.054	<0.001 *	
+95 CI: 95% confidence interval; EOR: extent of resection; HR: hazard ratio; ICU: intensive care unit; KPS: Karnofsky Performance Scale; LOS: length of stay; MRC-NPS: medical research council neurological performance scale; UER: unplanned early readmission. * Statistical significance. † Post-operative NPS minus pre-operative NPS.
+
+Disclaimer/Publisher’s Note: The statements, opinions and data contained in all publications are solely those of the individual author(s) and contributor(s) and not of MDPI and/or the editor(s). MDPI and/or the editor(s) disclaim responsibility for any injury to people or property resulting from any ideas, methods, instructions or products referred to in the content.
+==== Refs
+References
+
+1. Louis D.N. Perry A. Wesseling P. Brat D.J. Cree I.A. Figarella-Branger D. Hawkins C. Ng H.K. Pfister S.M. Reifenberger G. The 2021 WHO Classification of Tumors of the Central Nervous System: A summary Neuro-Oncology 2021 23 1231 1251 10.1093/neuonc/noab106 34185076
+2. Ostrom Q.T. Price M. Neff C. Cioffi G. Waite K.A. Kruchko C. Barnholtz-Sloan J.S. CBTRUS Statistical Report: Primary Brain and Other Central Nervous System Tumors Diagnosed in the United States in 2015–2019 Neuro-Oncology 2022 24 v1 v95 10.1093/neuonc/noac202 36196752
+3. Weller M. van den Bent M. Preusser M. Le Rhun E. Tonn J.C. Minniti G. Bendszus M. Balana C. Chinot O. Dirven L. EANO guidelines on the diagnosis and treatment of diffuse gliomas of adulthood Nat. Rev. Clin. Oncol. 2021 18 170 186 10.1038/s41571-020-00447-z 33293629
+4. Fabian D. Guillermo Prieto Eibl M.D.P. Alnahhas I. Sebastian N. Giglio P. Puduvalli V. Gonzalez J. Palmer J.D. Treatment of Glioblastoma (GBM) with the Addition of Tumor-Treating Fields (TTF): A Review Cancers 2019 11 174 10.3390/cancers11020174 30717372
+5. Herrlinger U. Tzaridis T. Mack F. Steinbach J.P. Schlegel U. Sabel M. Hau P. Kortmann R.-D. Krex D. Grauer O. Lomustine-temozolomide combination therapy versus standard temozolomide therapy in patients with newly diagnosed glioblastoma with methylated MGMT promoter (CeTeG/NOA-09): A randomised, open-label, phase 3 trial Lancet 2019 393 678 688 10.1016/S0140-6736(18)31791-4 30782343
+6. Hegi M.E. Diserens A.-C. Gorlia T. Hamou M.-F. de Tribolet N. Weller M. Kros J.M. Hainfellner J.A. Mason W. Mariani L. MGMT gene silencing and benefit from temozolomide in glioblastoma N. Engl. J. Med. 2005 352 997 1003 10.1056/NEJMoa043331 15758010
+7. Okada M. Miyake K. Tamiya T. Glioblastoma Treatment in the Elderly Neurol. Med.-Chir. 2017 57 667 676 10.2176/nmc.ra.2017-0009 29081442
+8. Kasper J. Wende T. Fehrenbach M.K. Wilhelmy F. Jähne K. Frydrychowicz C. Prasse G. Meixensberger J. Arlt F. The Prognostic Value of NANO Scale Assessment in IDH-Wild-Type Glioblastoma Patients Front. Oncol. 2021 11 790458 10.3389/fonc.2021.790458 34926307
+9. Dietterle J. Wende T. Wilhelmy F. Eisenlöffel C. Jähne K. Taubenheim S. Arlt F. Meixensberger J. The prognostic value of peri-operative neurological performance in glioblastoma patients Acta Neurochir. 2020 162 417 425 10.1007/s00701-019-04136-4 31736002
+10. Friedman B. Basu J. The rate and cost of hospital readmissions for preventable conditions Med. Care Res. Rev. 2004 61 225 240 10.1177/1077558704263799 15155053
+11. Gupta A. Fonarow G.C. The Hospital Readmissions Reduction Program-learning from failure of a healthcare policy Eur. J. Heart Fail. 2018 20 1169 1174 10.1002/ejhf.1212 29791084
+12. Shah M.N. Stoev I.T. Sanford D.E. Gao F. Santiago P. Jaques D.P. Dacey R.G. Are readmission rates on a neurosurgical service indicators of quality of care? J. Neurosurg. 2013 119 1043 1049 10.3171/2013.3.JNS121769 23621593
+13. Dao Trong P. Olivares A. El Damaty A. Unterberg A. Adverse events in neurosurgery: A comprehensive single-center analysis of a prospectively compiled database Acta Neurochir. 2023 165 585 593 10.1007/s00701-022-05462-w 36624233
+14. Nuño M. Ly D. Ortega A. Sarmiento J.M. Mukherjee D. Black K.L. Patil C.G. Does 30-day readmission affect long-term outcome among glioblastoma patients? Neurosurgery 2014 74 196 204 10.1227/NEU.0000000000000243 24176955
+15. Dickinson H. Carico C. Nuño M. Mukherjee D. Ortega A. Black K.L. Patil C.G. Unplanned readmissions and survival following brain tumor surgery J. Neurosurg. 2015 122 61 68 10.3171/2014.8.JNS1498 25343184
+16. Botros D. Khalafallah A.M. Huq S. Dux H. Oliveira L.A.P. Pellegrino R. Jackson C. Gallia G.L. Bettegowda C. Lim M. Predictors and Impact of Postoperative 30-Day Readmission in Glioblastoma Neurosurgery 2022 91 477 484 10.1227/neu.0000000000002063 35876679
+17. Sander C. Oppermann H. Nestler U. Sander K. von Dercks N. Meixensberger J. Causes and Predictors of Unplanned Readmission in Cranial Neurosurgery World Neurosurg. 2021 149 e622 e635 10.1016/j.wneu.2021.01.123 33548533
+18. Bleehen N.M. Stenning S.P. A Medical Research Council trial of two radiotherapy doses in the treatment of grades 3 and 4 astrocytoma. The Medical Research Council Brain Tumour Working Party Br. J. Cancer 1991 64 769 774 10.1038/bjc.1991.396 1654987
+19. Tonse R. Townsend A. Rubens M. Siomin V. McDermott M.W. Tom M.C. Hall M.D. Odia Y. Ahluwalia M.S. Mehta M.P. Factors associated with unplanned readmissions and costs following resection of brain metastases in the United States Sci. Rep. 2021 11 22152 10.1038/s41598-021-01641-4 34773051
+20. Vaduganathan M. Bonow R.O. Gheorghiade M. Thirty-day readmissions: The clock is ticking JAMA 2013 309 345 346 10.1001/jama.2012.205110 23340632
+21. Phillips C.O. Wright S.M. Kern D.E. Singa R.M. Shepperd S. Rubin H.R. Comprehensive discharge planning with postdischarge support for older patients with congestive heart failure: A meta-analysis JAMA 2004 291 1358 1367 10.1001/jama.291.11.1358 15026403
+22. Wong E.L.Y. Cheung A.W.L. Leung M.C.M. Yam C.H.K. Chan F.W.K. Wong F.Y.Y. Yeoh E.-K. Unplanned readmission rates, length of hospital stay, mortality, and medical costs of ten common medical conditions: A retrospective analysis of Hong Kong hospital data BMC Health Serv. Res. 2011 11 149 10.1186/1472-6963-11-149 21679471
+23. Wilbur M.B. Mannschreck D.B. Angarita A.M. Matsuno R.K. Tanner E.J. Stone R.L. Levinson K.L. Temkin S.M. Makary M.A. Leung C.A. Unplanned 30-day hospital readmission as a quality measure in gynecologic oncology Gynecol. Oncol. 2016 143 604 610 10.1016/j.ygyno.2016.09.020 27665313
+24. Taylor B.E.S. Youngerman B.E. Goldstein H. Kabat D.H. Appelboom G. Gold W.E. Connolly E.S. Causes and Timing of Unplanned Early Readmission After Neurosurgery Neurosurgery 2016 79 356 369 10.1227/NEU.0000000000001110 26562821
+25. Ejaz A. Gonzalez A.A. Gani F. Pawlik T.M. Effect of Index Hospitalization Costs on Readmission Among Patients Undergoing Major Abdominal Surgery JAMA Surg. 2016 151 718 724 10.1001/jamasurg.2015.5557 26915051
+26. Schipmann S. Suero Molina E. Windheuser J. Doods J. Schwake M. Wilbers E. Alsofy S.Z. Warneke N. Stummer W. The 30-day readmission rate in neurosurgery-a useful indicator for quality assessment? Acta Neurochir. 2020 162 2659 2669 10.1007/s00701-020-04382-x 32495079
+27. Sherrod B.A. Johnston J.M. Rocque B.G. Risk factors for unplanned readmission within 30 days after pediatric neurosurgery: A nationwide analysis of 9799 procedures from the American College of Surgeons National Surgical Quality Improvement Program J. Neurosurg. Pediatr. 2016 18 350 362 10.3171/2016.2.PEDS15604 27184348
+28. Chotai S. Guidry B.S. Chan E.W. Sborov K.D. Gannon S. Shannon C. Bonfield C.M. Wellons J.C. Naftel R.P. Unplanned readmission within 90 days after pediatric neurosurgery J. Neurosurg. Pediatr. 2017 20 542 548 10.3171/2017.6.PEDS17117 29027867
+29. Cusimano M.D. Pshonyak I. Lee M.Y. Ilie G. A systematic review of 30-day readmission after cranial neurosurgery J. Neurosurg. 2017 127 342 352 10.3171/2016.7.JNS152226 27767396
+30. Mallela A.N. Agarwal P. Goel N.J. Durgin J. Jayaram M. O’Rourke D.M. Brem S. Abdullah K.G. An additive score optimized by a genetic learning algorithm predicts readmission risk after glioblastoma resection J. Clin. Neurosci. 2020 80 1 5 10.1016/j.jocn.2020.07.048 33099328
+31. Cajigas I. Mahavadi A.K. Shah A.H. Borowy V. Abitbol N. Ivan M.E. Komotar R.J. Epstein R.H. Analysis of intra-operative variables as predictors of 30-day readmission in patients undergoing glioma surgery at a single center J. Neurooncol. 2019 145 509 518 10.1007/s11060-019-03317-6 31642024
+

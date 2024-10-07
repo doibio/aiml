@@ -1,0 +1,609 @@
+
+==== Front
+Front Oncol
+Front Oncol
+Front. Oncol.
+Frontiers in Oncology
+2234-943X Frontiers Media S.A. 
+
+10.3389/fonc.2020.00798
+Oncology
+Review
+Next Generation Sequencing and Machine Learning Technologies Are Painting the Epigenetic Portrait of Glioblastoma
+Jovčevska Ivana * Medical Centre for Molecular Biology, Institute of Biochemistry, Faculty of Medicine, University of Ljubljana, Ljubljana, Slovenia
+Edited by: Ye Wang, Qingdao University Medical College, China
+
+Reviewed by: Sevtap Savas, Memorial University of Newfoundland, Canada; Zhenhua Xu, Children's National Hospital, United States
+
+*Correspondence: Ivana Jovčevska ivana.jovcevska@mf.uni-lj.siThis article was submitted to Cancer Genetics, a section of the journal Frontiers in Oncology
+
+
+15 5 2020 
+2020 
+10 79803 11 2019 23 4 2020 Copyright © 2020 Jovčevska.2020JovčevskaThis is an open-access article distributed under the terms of the Creative Commons Attribution License (CC BY). The use, distribution or reproduction in other forums is permitted, provided the original author(s) and the copyright owner(s) are credited and that the original publication in this journal is cited, in accordance with accepted academic practice. No use, distribution or reproduction is permitted which does not comply with these terms.Even with a rare occurrence of only 1.35% of cancer cases in the United States of America, brain tumors are considered as one of the most lethal malignancies. The most aggressive and invasive type of brain tumor, glioblastoma, accounts for 60–70% of all gliomas and presents with life expectancy of only 12–18 months. Despite trimodal treatment and advances in diagnostic and therapeutic methods, there are no significant changes in patient outcome. Our understanding of glioblastoma was significantly improved with the introduction of next generation sequencing technologies. This led to the identification of different genetic and molecular subtypes, which greatly improve glioblastoma diagnosis. Still, because of the poor life expectancy, novel diagnostic, and treatment methods are broadly explored. Epigenetic modifications like methylation and changes in histone acetylation are such examples. Recently, in addition to genetic and molecular characteristics, epigenetic profiling of glioblastomas is also used for sample classification. Further advancement of next generation sequencing technologies is expected to identify in detail the epigenetic signature of glioblastoma that can open up new therapeutic opportunities for glioblastoma patients. This should be complemented with the use of computational power i.e., machine and deep learning algorithms for objective diagnostics and design of individualized therapies. Using a combination of phenotypic, genotypic, and epigenetic parameters in glioblastoma diagnostics will bring us closer to precision medicine where therapies will be tailored to suit the genetic profile and epigenetic signature of the tumor, which will grant longer life expectancy and better quality of life. Still, a number of obstacles including potential bias, availability of data for minorities in heterogeneous populations, data protection, and validation and independent testing of the learning algorithms have to be overcome on the way.
+
+glioblastomanext generation sequencingdiagnosistherapymethylationepigeneticsmachine learningdeep learningEuropean Regional Development Fund10.13039/501100008530Javna Agencija za Raziskovalno Dejavnost RS10.13039/501100004329
+==== Body
+Introduction
+This review starts with outlining the complex nature of glioblastoma by providing brief information about its occurrence, mortality rate, molecular features, and heterogeneity. Our level of understanding of glioblastoma genetics has remarkably increased since the introduction of next generation sequencing. However, lack of effective patient treatment necessitates implementation of modern diagnostic and treatment options using newer technological developments. One such example is exploration of epigenetic markers for glioblastoma diagnosis and treatment. Although epigenetics in glioblastoma is still at its infancy, it shows potential for development of novel therapies. Moreover, development of machine learning and deep learning algorithms for glioblastoma patient care may improve objective disease diagnosis and can contribute to tailoring the most effective treatment based on patient molecular profile i.e., precision medicine. At last, understanding the molecular background of each patient will raise the quality of clinical care from the current supportive classical treatment to the level of significantly improving patient life expectancy and quality of life.
+
+Glioblastoma
+In the United States, cancer is the second leading cause of death in both genders with the four most prevalent types being lung, breast, prostate, and colorectal, while brain cancers account for only about 1.35% of the cases (1, 2). However, contrary to their rare occurrence, in the year 2016 brain tumors were the major cause of cancer-related death among men younger than 40 years of age and women younger than 20 years of age (2). With 26% and 21% of the cases, brain and other nervous system tumors represent one of the most commonly diagnosed tumors in children and adolescents, respectively (2). Among adults, gliomas account for almost 80% of the primary malignant brain tumors (3). Gliomas can be classified based on location, differentiation pattern, anaplasia, mitotic activity, and necrosis. Moreover, according to the World Health Organization (WHO), histologically they progress from benign (WHO grade I and II) to malignant (WHO grade III and IV) (3). The most malignant type is the grade IV glioblastoma which accounts for 60–70% of all gliomas (4) and 16% of all primary brain tumors (5). The age-adjusted annual incidence of glioblastoma is 3.19 per 100,000 people in the United States (6). Glioblastoma is most commonly diagnosed in elderly Caucasian men with mean age of 64 years (6–8). Genetically there are two main glioblastoma subtypes—isocitrate dehydrogenase (IDH) wild type (or primary) and mutant (or secondary) that are histo-pathologically the same, but with different clinical progression (9, 10). IDH-mutant glioblastomas tend to develop from previously diagnosed WHO grade II or III gliomas and appear in patients younger than 50 years of age, while IDH-wild type glioblastomas appear de novo in patients with median age of 60 years (3, 11). In general, patients with IDH-mutant glioblastomas show better overall survival than patients with IDH-wild type tumors (11).
+
+Glioblastoma Diagnosis and Therapy
+Due to unspecific symptoms like numbness, mood swings, fatigue, and mild memory loss (12), glioblastoma is usually diagnosed at an advanced stage, when little can be done for the patient. Definitive diagnosis can only be done histologically, but needs to be complemented with the recent advances in the molecular classification. The latest WHO classification of brain tumors (13) constitutes a combination of phenotypic and molecular parameters of brain tumors, and that leads to greater diagnostic accuracy. Still, in cases where molecular diagnostic testing is not available or is inconclusive, brain tumors are labeled as “not otherwise specified (NOS).” Standard treatment comprises maximal surgical resection, followed by concomitant chemotherapy with temozolomide and radiation, and then adjuvant chemotherapy (12). Temozolomide was approved by the US Food and Drug Administration (FDA) for treatment of glioblastoma in the year 2005 (14). It is a small lipophilic molecule that is absorbed completely after oral administration, minimally binds to plasma proteins and is able to penetrate the blood brain barrier (15). Still, this aggressive treatment gives patients only 12–18 months post diagnosis (16, 17), while the 5-year survival is only 9.8% (17). High mortality rate is a result of the localization and rapid tumor growth (3). In order to improve patient care and life expectancy, numerous alternative treatments such as tumor treating fields (18–20), gamma knife radiosurgery (21), and immunotherapy (22–25) are currently being explored.
+
+DNA Sequencing
+Sanger Sequencing
+The first commercialized method for DNA sequencing named Sanger sequencing (26) was extensively used for almost three decades. Sanger sequencing or chain-termination sequencing is based on the use of 2′-deoxynucleotides (dNTPs) and 2′,3′-dideoxynucleotides (ddNTPs) for synthesis and termination of synthesis of the complementary DNA template, respectively. This leads to generation of fragments with different sizes which are separated by high-resolution gel electrophoresis and analyzed to reveal the DNA sequence. Automated Sanger sequencing used fluorescently labeled primers or terminating ddNTPs. Excitation of the fluorophores produced fluorescent emission in different colors that that were used for revealing the DNA sequence. One of the greatest accomplishments of automated Sanger sequencing was sequencing the complete human genome (27) that is considered the largest project of today's mankind (28). Still, its limitations in terms of cost, time, low throughput, efficiency and sensitivity, drove the development of newer sequencing technologies collectively named “next generation sequencing” (NGS).
+
+“Next Generation Sequencing” Boom
+NGS methods are based on the same principle as Sanger sequencing: they both use polymerases for synthesis, modified nucleotides, and fluorescent detection (29). However, for some NGS platforms like Illumina, Life Technologies SOLiD, Ion Torrent Personal Genome Machine (PGM), and Roche 454 systems, the DNA template has to be clonally amplified prior to sequencing, while for the more sensitive Heliscope and Pacific Biosciences (PacBio) single molecule real-time (SMRT) systems pre-amplification is not needed (30). Different NGS platforms use different chemistry for library preparation and sequencing (31). For example, Illumina sequencers are based on the “sequencing by synthesis” approach with fluorescently labeled reversible nucleotide terminator chemistry (32). On the other hand, Ion torrent technology generates sequence templates on a bead or sphere via emulsion PCR with sequencing-by-ligation approach and proton release detection. At last, PacBio sequencers are based on SMRT sequencing with fluorescent detection (30). One of the major advantages of NGS is increased throughput at decreased expenditure i.e., its ability to generate large amount of data at reasonable costs. As an example, the standard Sanger sequencing yielded ~6 Mb DNA sequence per day at a cost of $500/1 Mb while NGS sequencers like Illumina GA (San Diego, CA, USA), yield ~5,000 Mb DNA sequence per day at a cost of $0.50/1 Mb (33). Still, potential problems that arise are setting the necessary infrastructure for NGS including machinery, costs for reagents, space for sample processing, and data storage (34). Moreover, trained personnel with adequate understanding of the software for data analysis and interpretation is a necessity. A more complex problem that should not be neglected is who owns the genetic information obtained from such analysis, and to what extent the raw data can be used for other pathologies besides the one originally intended? These limitations of NGS are issues that still need to be addressed together with institutional ethics boards, researchers and participants as the technology develops.
+
+How did NGS become so popular? After the introduction of commercial next generation sequencers in the year 2005 (29), a new age in nucleic acid research was started. NGS is suitable for a wide range of applications in particular for analysis of genetic variations and mutations, mRNA, non-coding RNA, methylation studies as well as chromatin immunoprecipitation (ChIP)-sequencing (35). By generating genetic information from different individuals, NGS made it possible to perform large scale, comparative, and evolutionary studies (36), and also helped in the development of pharmaceuticals (37). Moreover, NGS started the era of genomic medicine—incorporating patient's tumor genetic information for diagnosis, treatment, and prevention of diseases. NGS can help in overcoming treatment challenges by identifying druggable genetic targets. At last, with NGS the human genome can be resequenced in order to get deeper understanding of how genetic changes affect health and disease (38). NGS offers enormous possibilities for increasing our understanding of human genetics of health and disease, which will change the way we diagnose disease and treat individuals.
+
+Third Generation Sequencing
+The best method for identification of genetic variations crucial for disease development is DNA sequencing. The right sequencing method is desired to be high-throughput, low-cost and able to sequence long reads with high accuracy (39). Despite all the advantages that next generation sequencing offers, the short length of the obtained reads is its weak spot. This led to the emergence of a third generation of sequencing that enables single molecule long reads (39) such as SMRT sequencing by PacBio (40) and nanopore sequencing originally introduced in the year 1996 (41). The authors showed that with an electrical field, single-stranded DNA (ssDNA), or RNA molecules can be driven through a 1–10 nm ion channel, i.e., nanopore, in a lipid bilayer or membrane. When passing through the nanopore, different bases of the DNA strand will cause specific fluctuations in the electrical current; these signals can be converted to DNA sequence information (39). The advantage of this method is the short time for sample preparation, electrical, or fluorescent readout and reads in length of several kilobases of single DNA molecules in real time (29). However, there are two possible issues that have to be resolved: (1) Length of the recognition region of the nanopore should not be larger than 0.5 nm—size that is equivalent to the base-spacing in a ssDNA, otherwise signal interference from adjacent bases will be observed (39); and (2) The current speed of DNA translocation, 300 bases/ms, is too fast for individual bases to be identified—ideally it should be adjusted to 1 base/ms (39). A solution has been proposed by IBM (New York, NY, USA) by creating a nanopore matrix i.e., a transistor with alternating fields of metal and dielectric materials which can control the speed of DNA translocation (42, 43).
+
+New technological developments in the sequencing fields offer different techniques for establishing patients' tumors' molecular profiles which are expected to accelerate the development of personalized medicine. For example, targeted sequencing will allow detection of specific genetic changes of a predefined set of genes; whole exome sequencing will provide information about the coding regions of genes of interest; while RNA sequencing will give information about the post-transcriptional changes (44). At last, whole genome sequencing will provide a complete in depth genetic picture for each patient, but at the cost of great computational power, time, and resources. Because of the high molecular diversity of glioblastoma, these technological advancements are expected to deepen our knowledge of its mechanisms of development and progression. At last, by understanding how the disease works at different molecular levels (transcriptomic, genetic, epigenetic, and protein), new more powerful drugs can be designed that will be of a great benefit for the patients.
+
+Paving the Road to Precision Medicine
+Cancer is a complex disease which arises as a result of combination of hereditary i.e., genetic and environmental factors such as physical and chemical agents, diet, lifestyle, tobacco, and alcohol use (35). These interactions leave footprints in the genome either as mutations or as epigenetic modifications. Genetic changes range from single base substitutions to major chromosomal losses, while the epigenetic modifications influence gene expression as well as DNA replication and repair (45, 46).
+
+Glioblastoma is a disease that is characterized with heterogeneity at both intra- and inter-tumoral level. As a response to its complexity, the scientific society moves away from identification of a single gene as a cause of a disease, and toward identification of combination of molecular changes that eventually lead to tumor development (35). Such changes can be commonly observed in different individuals with the same disease. Personalized medicine implies development of drugs for the needs of a single patient, while precision medicine refers to the classification (or diagnosing) of individuals into genomic subclasses which can be treated in more targeted i.e., precise ways (47). The advantage of using NGS for diagnostics is the simultaneous detection of a number of different markers, which otherwise requires separate consecutive tests and prolongs the diagnostic process.
+
+Genetics of Glioblastoma
+During the course of The Cancer Genome Atlas (TCGA) project glioblastomas were genetically characterized. The most important findings included changes in three core pathways receptor tyrosine kinase (RTK)/rat sarcoma (RAS)/PI3K, p53, and retinoblastoma (RB) with alterations in 88, 78, and 87% of the analyzed cases, respectively (48). The most frequent gene alterations were found in epidermal growth factor receptor (EGFR—mutation in 45% of the cases), phosphatase and tensin homolog (PTEN—inactivated in 36% of the cases), cyclin-dependent kinase inhibitor 2A (CDKN2A—inactivated in 52% of the cases), cyclin-dependent kinase inhibitor 2B (CDKN2B—inactivated in 52% of the cases), tumor protein p53 (TP53—mutated in 35% of the cases) and RB (homozygote deletion in 11% of the cases) (11, 48). IDH mutations are rare in primary glioblastoma patients with EGFR and PTEN alterations, but are commonly found in low grade gliomas and together with TP53 mutations in high grade gliomas that evolved from low grade gliomas (49). Later, Verhaak et al. established the molecular profile of glioblastoma (50). In their study, using molecular profiling they defined four glioblastoma subtypes: classical, proneural, neural, and mesenchymal with different molecular properties. This illustrates high glioblastoma heterogeneity at the molecular level that is present both within (intra) and among (inter) tumors.
+
+Examining intratumor heterogeneity can be precisely performed with method that allows for analysis at individual cell resolution level, such as single-cell RNA sequencing (scRNA-seq) (51). scRNA-seq can be used not only to analyze tumor cells, but also non-tumor cells that shape the microenvironment and aid in tumor progression (52, 53). Numerous research groups are already using this technology to “shred glioblastomas to single-cells” and contribute to their molecular understanding (51, 54–58). One such study identified presence of different cells within the tumor compared to cells from the surrounding based on macrophage and microglia gene expression profiles (52). In another study (59) the authors provided evidence that glioblastoma stem cells shape the transcriptional and cellular landscapes of the tumor. In a different study (51), the authors proposed potential role of the expression levels of rare genes in glioblastoma tumorigenesis. Using the knowledge about molecular heterogeneity of glioblastoma, institutes already implemented next generation sequencing panels containing a specific set of glioblastoma-specific genes for patient diagnosis (60). It is reasoned that the intratumoral heterogeneity reflects the existence of different cellular subclones within the same tumor—this is why deciding the therapeutic strategy from a single biopsy specimen may not be enough for successful therapy (61). Moreover, the molecular diversity of glioblastoma is further increased during treatment—namely, tumors of patients treated with temozolomide present with a hypermutation phenotype (62, 63) which is associated with promotion of tumor growth and metastasis (64). At last, transcriptome analyses are also used for defining glioblastoma signatures that will help in precise disease diagnosis, as well as to anticipate therapy response and patient outcome (53).
+
+Epigenetics of Glioblastoma
+Epigenetic modifications are heritable changes that affect gene expression, but do not change the DNA sequence itself (65, 66). Such changes are DNA methylation, histone modifications, and chromatin remodeling (67). Histones are positively charged proteins H1, H2A, H2B, H3, and H4 (68). Chromatin refers to the complex of negatively charged DNA and positively charged histone proteins, or the fundamental subunit “nucleosome” in the nucleus. Every nucleosome consists of about 146–147 bp DNA associated with octameric core of histone proteins—two H3-H4 histone dimers surrounded by two H2A-H2B dimers (69). Histone acetylation i.e., addition of acetyl groups to lysines of H3 or H4, weakens the interactions between histones and DNA which opens the accessibility to the transcription apparatus, while histone deacetylation removes the acetyl groups which results in histone condensation and gene inactivation (70). These dynamic processes are maintained by histone acetyltransferases (HAT) and deacetylases (HDAC). Histone modifications are different in pediatric and adult gliomas. In pediatric gliomas, the most common mutations are K27M and G34R/V on histone variant H3.3 (71). Mutations in H3F3A show specificity for pediatric high grade gliomas, and are not found in pediatric low grade gliomas, embryonic tumors, or ependymomas nor in adult glioblastoma (72). In adult gliomas, IDH1 mutations indirectly affect H3K27 or H3K36 methylation (73). Lysine (K) methylation at positions K4, K36, and K39 on H3 marks active chromatin regions, while at positions K9 and K27 at H3 it marks inactive chromatin regions (74, 75); still, lysine methylation does not change the net charge of the histone tail (76). Another epigenetic modification is chromatin remodeling that causes conformation changes in chromatin which regulate the DNA-dependent processes, replication, and repair systems as well as centromere and telomere maintenance (67, 77). These 3D conformational chromatin changes can affect gene expression by regulating access to RNA polymerases and transcription factors (77). Examples of the involvement of chromatin remodeling in glioblastoma pathogenesis are switch/sucrose non-fermenting (SWI/SNF) core complex (78) and Brahma-related gene 1 (BRG1), one of the catalytic subunits of the SWI/SNF chromatin remodeling complex (79) that regulate stemness and tumorigenic potential of glioma initiating cells.
+
+DNA Methylation
+From the four DNA bases, only cysteine and adenine can be methylated. Yet, DNA methylation usually refers to the covalent transfer of methyl groups to the C-5 position of the cytosine ring to create 5-methylcytosine as shown in Figure 1. In mammals, DNA methylation occurs on any cytosine of the genome; however, in the majority of the cases it occurs in a 5′-CpG-3′ dinucleotide context of somatic cells, and up to 25% of methylation occurs in non-CpG context of embryonic cells (82). Typically, CpG islands belong to or are near promoter regions of genes where transcription starts (74). Adenine methylation is observed in bacterial, plant, and lately also in mammalian DNA, but is not that much explored and its role is largely unknown (83–85). Methylation is needed for silencing transposable elements and genes on the inactive X-chromosome, as well as maintaining genome stability (86). Besides, DNA methylation plays an important role in regulation of gene expression that has an impact on the clinical outcome of glioblastoma patients (65, 87, 88).
+
+Figure 1 Schematic representation of DNA methylation. Cytosine methylation is mediated by a family of DNA methyltransferase enzymes DNMT1, DNMT3A, and DNMT3B (65, 80, 81).
+
+DNA Methylation in Glioblastoma
+Cancers in general are characterized by global hypomethylation which is associated with gene expression, activation, and chromosomal rearrangements of oncogenes which leads to genomic instability, oncogene activation, and tumor progression, as well as locus-specific hypermethylation which results in heritable transcriptional silencing of tumor suppressor genes (82, 89). Global hypomethylation occurs in 80% of glioblastomas (90). DNA methylation that occurs in CpG islands in gene promoter regions inversely correlates with gene transcription. In glioblastomas, besides at genetic, intratumor heterogeneity is present also at DNA methylation level. Wenger et al. analyzed multiple spatially separated tumor specimens from 12 glioblastoma patients (38 samples total) and observed existence of different methylation subclasses intertumorally—three samples presented with combined existence of mesenchymal and receptor tyrosine kinase (RTK) II subclasses, while two contained both RTKI and RTKII at once (91). Using clustering of IDH-mutant gliomas, Ceccarelli et al. observed existence of three major glioma groups: Codel, IDH-mutant 1p/19q codeleted low grade gliomas; glioma CpG island methylator phenotype (G-CIMP)-low, IDH-mutant non-1p/19q codeleted low and high grade gliomas with low genome-wide DNA methylation; and G-CIMP-high, IDH-mutant non-1p/19q codeleted low and high grade gliomas with higher level of genome-wide DNA methylation (92). Among these, the G-CIMP low group was found to have worst prognosis, while G-CIMP and Codel presented with similar favorable prognoses. The authors also analyzed IDH-wild type gliomas and observed existence of three DNA methylation groups: classic-like, mesenchymal-like, and IDH-wildtype low and high grade gliomas. An interesting observation was that only patients with low grade gliomas from the IDH-wildtype group experienced significantly longer survival. In a different study, Pangeni et al. performed methylation array profiling on a panel of 23 patient-derived glioblastoma stem cell lines and data for TCGA patients with IDH-wildtype glioblastomas (89). Different glioblastoma subtypes were included in the analysis. The authors observed similar bi-modal distribution of CpG methylation in glioblastoma stem cells and glioblastoma tumors. They also found more mesenchymal-hypermethylated than hypomethylated genes in both glioblastoma stem cells and glioblastoma tumors. They observed that high expression levels of proneural-methylated genes CASP8 and FADD-like apoptosis regulator (CFLAR) and Sp100 nuclear antigen (SP100), and low expression levels of the mesenchymal-methylated genes transmembrane and coiled-coil domain family 1 (TMCC1), Rho guanine nucleotide exchange factor 7 (ARHGEF7), Notch homolog 1, translocation-associated (NOTCH1), midnolin (MIDN), potassium voltage-gated channel subfamily Q member 2 (KCNQ2), ataxin 10 (ATXN10), ubiquitin specific peptidase 54 (USP54), and TUB bipartite transcription factor (TUB) correlate to poorer patient prognosis (89).
+
+In glioblastoma, DNA methylation is closely correlated to response to temozolomide treatment. So far, methylation of the O6-methylguanine-DNA methyltransferase (MGMT) is the only predictive biomarker for patient response to first-line temozolomide chemotherapy (93, 94). MGMT is a DNA repair protein that reverses the damage done by alkylating agents such as temozolomide. Temozolomide adds methyl groups at N7 and O6 sites on guanines and O3 sites of adenines in genomic DNA and this is why it is cytotoxic to cells (14). MGMT-promoter methylation causes gene silencing, therefore less protein is expressed which leads to sensitivity to chemotherapy with alkylating agents (95). In a study by Smrdel et al. the authors compared overall survival and time to progression in patients with and without methylated MGMT (96). Their results show longer overall survival (43 vs. 16 months) and time to progression (36 vs. 11 months) in patients with methylated MGMT compared to patients without methylated MGMT, respectively. The authors also observed MGMT methylation in 36 out of 38 (95%) patients who present with long survival (more than 30 months after diagnosis) and in only 12 out of 33 (36%) patients in the control group (short term survival patients i.e., <30 months after diagnosis). In general, patients with methylated MGMT promoter respond better to temozolomide therapy and present with longer survival (3, 63, 97, 98). These findings are in concordance with another study where Felsberg et al. took in consideration 67 adult patients diagnosed with glioblastoma (99). The authors conclude that MGMT promoter hypermethylation is associated with longer time to progression after initiation of chemotherapy (245 vs. 100 days) and longer overall survival (692 vs. 474 days).
+
+On the other hand, one study reports identification of a new histone deacetylase inhibitor, 7-ureido-N-hydroxyheptanamide derivative—CKD5, that shows strong anticancer effect in glioblastoma in vitro and in vivo (100). The advantages of this inhibitor are its water solubility (>1,000 mg/mL), negative result on Ames test which indicated that CKD5 is not genotoxic and does not introduce DNA mutations, and it showed no signs of inducing cardiac toxicity in pre-clinical trials. However, for glioblastoma treatment delivery methods have to be developed as CKD5 cannot penetrate the blood brain barrier. The use of H3K4 and H3K9 me1/2 demethylase KDM1 and H3K4 me2/3 demethylase KDM5A as potential therapeutic targets was also tested (76). The authors of the study show that inhibiting KDM1 and KDM5A enzyme activity presents with strong antitumor affect in wild-type and temozolomide-resistant glioblastoma cells. Romani et al. used a multi-KDM inhibitor, JIB 04, that has strong anti-clonogenic activity in wild-type and temozolomide-resistant glioblastoma cells after only 4 h incubations at low JIB 04 concentrations (0.5 and 1 μM). The authors also tested different drug combinations and showed synergistic effect of JIB 04 and GSK J4 (selective inhibitor of KDM6A/B) on cell proliferation and reduction of the clonogenic potential of temozolomide-resistant glioblastoma cells. These studies show that with targeting epigenetic changes non-traditional treatment methods for glioblastoma patients whose tumors are resistant to the temozolomide chemotherapy can be developed. Knowing the aggressiveness of the tumor and its poor response to current available treatment options, these findings give new hope for glioblastoma patients.
+
+Clinical Trials
+Since the discovery of the altered epigenetic profiles of cancers, epigenetics is getting more and more attention in the research community. Histone deacetylases, the enzymes that remove the acetyl group from histones which is initially associated with gene repression, are often overexpressed in cancer (100). Due to their reversible nature and role in gene expression, epigenetic changes, especially changes in histone acetylation, are also considered as possible therapeutic targets (86) which can be seen from the growing number of clinical trials based on the use of different enzyme inhibitors. Data was obtained from the database of publicly and privately funded clinical studies worldwide, https://clinicaltrials.gov, using the following keywords: “glioblastoma,” “Vorinostat,” “Romidepsin,” “Belinostat,” “Panobinostat,” “LHB589,” “Valproic acid,” “Olaparib,” “Veliparib,” “ABT-888,” “Iniparib,” “BSI-201,” and “CBL0137.” The search conducted on the 8th of August 2019 gave the results presented in Table 1. Still, an obstacle in these clinical trials are our current lack of knowledge about the mechanism of HDAC inhibitors and how they affect cellular signaling pathways; moreover, methods for improved penetration of the HDAC inhibitors into the brain and across the blood brain barrier are still to be found (77).
+
+Table 1 List of selected glioblastoma clinical trials using drugs targeted against enzymes involved in epigenetic modifications.
+
+Drug	Role	Clinical trial number	Clinical trial phase	Selected references	
+Vorinostat	HDAC inhibitor	NCT00762255 
+ NCT01266031 
+ NCT01110876 
+ NCT03426891 
+ NCT01342757 
+ NCT00555399 
+ NCT00731731 
+ NCT00641706 
+ NCT00238303 
+ NCT00939991 
+ NCT01738646 
+ NCT01189266 
+ NCT00268385 
+ NCT01378481	I (completed) 
+ I (completed) 
+ I (terminated) 
+ I (recruiting) 
+ N/A 
+ I/II 
+ I/II 
+ II (completed) 
+ II (completed) 
+ I/II 
+ II (completed) 
+ I/II 
+ I 
+ I (terminated)	(101–107)	
+Romidepsin	HDAC inhibitor	NCT00085540	I/II (completed)	(108)	
+Belinostat	HDAC inhibitor	NCT02137759	II	(109)	
+Panobinostat (LBH589)	HDAC inhibitor	NCT01115036 
+ NCT00848523	II (withdrawn) 
+ II (terminated)	(110)	
+Valproic acid	HDAC inhibitor	NCT02648633 
+ NCT02758366 
+ NCT01817751 
+ NCT01861990 
+ NCT03243461 
+ NCT00302159	I (terminated) 
+ II 
+ II 
+ I (withdrawn) 
+ III 
+ II (completed)	(111–117)	
+Olaparib	PARP inhibitor	NCT02974621 
+ NCT01390571 
+ NCT03212274	II 
+ I (completed) 
+ II (recruiting)	(118, 119)	
+Veliparib (ABT-888)	PARP inhibitor	NCT02152982 
+ NCT00770471 
+ NCT01026493 
+ NCT03581292 
+ NCT01514201	II/III 
+ I (completed) 
+ I/II (completed) 
+ II (recruiting) 
+ I/II (completed)	(120, 121)	
+Iniparib (BSI-201)	PARP inhibitor	NCT00687765	I (completed)	(122)	
+CBL0137	Histone chaperone FACT inhibitor	NCT01905228	I (recruiting)	(123–125)	
+HDAC, histone deacetylase; PARP, poly(ADP-ribose) polymerase; FACT, facilitates chromatin transcription; N/A, not applicable.
+
+Novel Next Generation Sequencing-Based Diagnostic Approaches
+Although the work of Verhaak et al. changed the way we diagnose glioblastoma and increased our understanding of the disease (50), there are still a number of patients whose tumors cannot be classified according to the currently defined subtypes (13). Anyway, understanding the molecular background of disease requires availability of sets of reference samples from healthy donors (126) for comparison.
+
+Molecular Re-classification of Glioblastomas
+Using next generation sequencing data available from TCGA, Bolouri et al. report clustering of glioblastomas based on their methylation profiles (127). The authors of the study used genome wide and methylation data from a merged cohort of glioblastomas and lower grade gliomas and obtained three big glioma clusters: (1) oligodendrogliomas, (2) astrocytomas and oligoastrocytomas, and (3) mostly glioblastomas with a few astrocytomas and oligoastrocytomas (127).
+
+More recently, Capper et al. aided in the classification of glioblastomas that do not belong to the known entities i.e., WHO subclasses (128). The authors established a system for classification of brain tumors based on their epigenetic profiles. They generated genome-wide DNA methylation profiles of 76 histopathological entities and seven entity variants that occur in the central nervous system. Unsupervised clustering within each entity and across histologically similar tumor entities led to obtaining 82 tumor classes with different DNA methylation profiles. Of these, 29 classes were equivalent to single WHO entities, 29 classes were subclasses of WHO entities, in eight classes WHO entities could not be recapitulated, in 11 classes were not identical to WHO entities, while the remaining five classes presented with methylation profiles that are not described by the WHO. To test clinical implementation of this system, Capper et al. analyzed 1,104 samples or 64 different histopathological entities of adult and pediatric brain tumors. The majority of the samples (88%) matched an established DNA methylation profile. From these, in 76% of the cases pathological and methylation profiling were concordant. In the remaining 12% of the cases, methylation and pathological diagnoses were not concordant; samples were molecularly re-evaluated and diagnosis was changed as it was suggested by the methylation subclassifier; diagnoses were changed into both lower (30%) and higher (41%) WHO grades. The study demonstrates that variability within and among tumors can be detected with deeper molecular analysis which can lead to more precise diagnosis and better treatment.
+
+Cancer methylome is a combination of DNA methylation changes and characteristics of the cells of origin; in heterogeneous metastatic tumors this can aid in defining the primary cancer site (128). Although adding molecular characteristics into the histological diagnosis of glioblastoma is beneficial for precise diagnosis, single-gene tests based on DNA methylation analysis like MGMT methylation status, fluorescence in situ hybridization [1p/19q codeletion, EGFR, proto-oncogene C-Myc (MYC), class E basic helix-loop-helix protein 37 (MYCN), platelet derived growth factor receptor alpha (PDGFRA) and 19q13.42), or immunohistochemistry (catenin beta-1 (CTNNB1) and Lin-28 homolog A (LIN28A)], have proven difficult to be standardized (128). The studies from Bolouri et al. and Capper et al. only illustrate the importance of implementation of methylation profiling in glioblastoma diagnosis. Due to tumor heterogeneity it is important for all variables to be taken in consideration for fully informed decision about patient's therapeutic course to be made.
+
+Nanopore Sequencing for Same-Day Patient Diagnosis
+Further development of next generation sequencing techniques may lead to same-day patient diagnosis with nanopore-based systems. Similar to a small 100 mV electrical current passing through a nanopore placed in a membrane separating two chambers with aqueous electrolytes that can be measured with standard electrophysiological techniques, nucleobases of electrophoretically driven ssDNA or RNA molecules would modulate the current when passing through a suitable nanopore (129). The ideal nanopore sequencer is characterized by inexpensive sample preparation complemented with disposable chip with integrated microfluidics and probes, and a portable benchtop instrument for processing of long reads (>10,000–50,000 nt). Using a nanopore sequencer, Jain et al. reported sequencing and assembly of a reference human genome from ultra-long reads up to 882 kb in length with 5x coverage (130). The advantage of this benchtop method over next generation sequencing is its simplicity, speed, size, and reduced cost—nanopore can provide sequencing results faster and in resource-restricted areas (44). One big concern however, is the amount of starting material; namely, ~700 μg of human diploid genetic material will be needed to provide adequate throughput for the nanopore array, which, in theory, can be obtained with routine extraction procedures (129). Still, in the time when single-cell sequencing research is escalating (52, 55, 131) this can be seen as a pitfall.
+
+Meanwhile, nanopore sequencing is already being tested for implementation in cancer diagnostics. In their retrospective proof-of-principle study, Euskirchen et al. examined the utility of nanopore sequencing (Oxford Nanopore Technologies, Oxford, UK) for multimodal molecular diagnosis using previously characterized brain tumors (132). Using deep amplicon sequencing, the authors were able to identify single nucleotide variants in IDH1, IDH2, TP53, H3F3A, and TERT promoter, and diagnostically relevant alterations like 1p/19q codeletion within minutes of sequencing. Moreover, they obtained 0.1X genome coverage within 6 h where copy number and epigenetic profiles matched the ones from microarray data. Because it can detect base modifications such as 5-methylation of cytosines, nanopore sequencing is also suitable for methylation analysis without the need of bisulfite conversion of the DNA. This will increase consistency during nucleic acid processing as well as significantly reduce the time needed for sample preparation. In the study, the authors observed good correlation between the methylation events in CpG sites obtained with nanopore sequencing and the corresponding microarray data.
+
+The study by Euskirchen et al. shows the potential that nanopore sequencing offers for timely cancer diagnosis. In addition, due to small size and inexpensive technology, this method of histomolecular disease classification can be used worldwide even in regions with restricted clinical resources. However, further optimization like for use with highly fragmented nucleic acids originating from improperly stored or formalin-fixed paraffin-embedded tissue samples is still needed. Furthermore, as the method is still in developmental stages frequent improvements of the chemistry and software challenge its clinical implementation at this time.
+
+Artificial Intelligence in Biomedical Sciences
+In the light of new technological developments, the use of artificial intelligence (AI) in biomedical research will bring glioblastoma diagnostics on an advanced level. Machine learning is an application of artificial intelligence that allows for computers to work on tasks, learn from the data and improve their performance based on the gained experience (133, 134). It is a combination of mathematics and computer science that is based on building statistical models from large datasets i.e., billions or trillions data points (133). Classical statistical models describe the relationship between covariates (e.g., clinical factors) and a single dependent variable (e.g., outcome) obtained from a sample population and projected to a larger population. For instance, statistical models are suitable for deciding on treatment strategies based on survival, while machine learning models seek to predict the outcome using clinical factors as input features (135). Machine learning is defined as “the study of algorithmically built mathematical models that have been fitted for the training dataset to make predictions for the similarly obtained and structured validation dataset” (136). Extensive use of machine learning in biomedical fields, either for diagnostic, or therapeutic purposes, is conditioned by the availability of large data sets and appropriate IT infrastructure. Large datasets containing genetic information are generated by sequencing the human genome—a method that became routine with the wide implementation of next generation sequencing in research.
+
+Machine Learning for Disease Diagnosis and Therapy
+In cancer diagnostics, microscopic examination of patient samples is crucial for determining cancer staging. However, microscopy is based on the image interpretation of an expert individual which can also be subjective; lately quantitative examination of microscopy samples is required; and lastly, the availability of such expert individuals can be limited (137). AI can help in automated image analysis for pathological purposes with improved diagnostic accuracy, quantification, and efficiency. One such example is the augmented reality microscope—optical light microscope that enables real-time integration of AI (137).
+
+Generation of large amount of data that contains information about human genetics allows for the development of machine learning techniques whose algorithms are either supervised or unsupervised clustering type. In supervised learning algorithms learn from labeled data, while in unsupervised learning the algorithms try to understand relationships from unlabelled data (134).
+
+Machine learning for therapeutic purposes will be additionally enriched by the implementation of in silico drug discovery and design systems. One such example is the DrugBank database that contains quantitative, analytic and molecular information about drugs, and drug targets (138). DrugBank is organized into four major groups: (1). FDA approved small molecule drugs (>700 entries), (2). FDA approved bio-tech (protein/peptide) drugs (>100 entries), (3). Nutraceuticals or micronutrients such as vitamins and metabolites (>60 entries), and (4). Experimental drugs such as unapproved, de-listed and illicit drugs, enzyme inhibitors, and potential toxins (3,200 entries). Machine learning for drug discovery will offer a cost-effective and timely alternative to current experimental procedures (139). Another perspective is applying machine learning technology for predicting clinical efficiency of drugs and individualized treatment methods (140). This method which is named “drug scoring” or “personalized (individual) medicine” will take into account features that describe activation of cell signaling and metabolic pathways which will distinguish patients who will respond to the treatment from those who will not benefit from it. There are two principles for drug scoring: a priori—evaluating the ability of a drug to restore normal status or stop a physiological process that is considered pathogenic; and a posteriori—resulting from a machine learning process on a training dataset containing information from patients treated with the drug in question (140). The authors have developed a method for translating drug efficiency results obtained using cell lines to predict clinical effect on humans. The use of this method can potentially reduce the costs of drug screening.
+
+Even though machine learning shows potential to improve disease diagnosis and therapy, it still possesses a few limitations such as separating causation from correlation, removing biased data, and regulating predictive analytics (141). For machine learning to be safely used in disease diagnosis and/or treatment, the data which is taken into consideration has to be thoroughly examined to ensure it is appropriate for the specific problem. For correct identification and analysis, data must be equally collected and annotated, and it must be representative even for minorities in heterogeneous populations. In addition, self-implemented risk factors like smoking should be taken in consideration but should not be a limiting factor when deciding on future healthcare measures. An ethical issue in deciding treatment with machine learning can be existence of a permanent health condition, or chronic infection, like an individual being HIV positive. Another possible problem is bias toward populations that provide the most data, and in some societies, toward those that are able to afford medical procedures. As machine learning algorithms are trained on retrospective data it is possible for human subjectivity to influence the results; however, this can be improved by introducing new raw data (135). Before applying machine learning into clinical care, researchers must also consider protecting the privacy of the patients, ensure protection of data and patient information, and allow for equal treatment of all affected parties (141). At last, validation and independent testing of the machine learning algorithms must be performed in order to exclude mistakes due to technical differences. With all the advantages that it offers, machine learning in biomedicine is still at the beginning of its development and requires a multidisciplinary team to answer questions about ethical, legal, moral, and technological issues before it can objectively aid in better patient care.
+
+Deep Learning
+Machine learning works only with structured data which means reduction of amount of data in the raw format, significant time input from a medical professional to structure the data and introduction of human subjectivity (135). On the other hand, deep learning can use a wide range of different parameters which can be optimized by training on labeled data for prediction. While machine learning has already been used to determine gene expression patterns relevant for glioblastoma patient survival (50, 142), the use of deep learning for prognostic gene discovery it at its beginnings (143). The advantage of deep learning is that it can model a large number of differentially expressed genes. Using TCGA data as input, Wong et al. used deep learning to model the relationship between genes and their corresponding proteins on survival prognosis (143). Their model identified different genes associated with glioblastoma survival, glioblastoma cancer cell migration, or glioblastoma stem cells. In a different study, Young et al. used deep learning to classify glioblastomas into six subtypes which corresponded with significant differences in patient survival (144). These findings are in concordance with those from Brennan et al. who used DNA methylation data to classify glioblastomas into six subtypes: mesenchymal, proneural, neural and classical, as identified by Verhaak et al., supplemented with G-C island methylation phenotype (G-CIMP) and non-G-CIMP subtypes within the proneural subtype (145).
+
+Although still at its infancy, the use of deep learning may open up new possibilities for glioblastoma diagnosis. Due to its ability to analyse large amount of data, deep learning can aid identifying features with biological significance which are currently unknown or too complex to be understood. Moreover, novel applications of deep learning may reveal hidden structures of cellular pathways and disease mechanisms. Glioblastoma diagnosis has significantly changed through the years as it can be seen in Figure 2. It started from histological analysis (classical) through addition of molecular and genetic characteristics of the individuals (modern) and is moving toward implementation of self-learning algorithms (personalized) which will eventually lead to the next presently unknown level. However, all these “medicines” have a common goal that is longer life expectancy and greater quality of life or better patient care (Figure 3). This transition from the classical through modern to personalized medicine was greatly aided by the massive use of NGS methods and is able to further develop also because of them.
+
+Figure 2 Illustration of the changes in diagnosis and treatment of glioblastomas in different medical approaches (classical, modern, and personalized). Classical medicine relied on histological analysis of tissues, which is merely subjective, while therapy is universal for the patients which does not show much clinical success. On the other hand, modern medicine takes in consideration both histologic and genetic components which leads to greater diagnostic accuracy [examples: “glioblastoma, IDH-mutant” and “oligodendroglioma, IDH-mutant and 1p/19q-codeleted” (13)], while therapy is modified to suit tumor genetic profile. The trend is moving toward personalized medicine, where diagnosis will be thorough and objective aided by automated histological image analysis, next generation sequencing (NGS) and artificial intelligence (AI) algorithms, and therapy will be adapted not only to the genetic but also transcriptomic and epigenetic patient profile. This will result in increased overall survival and better quality of life.
+
+Figure 3 Glioblastoma diagnosis. This figure illustrates what all healthcare systems have in common and aim for—which is better patient care. Starting from the classical, to the modern, where we are now, and going toward personalized medicine the goal is still improving patient quality of life i.e., both disease diagnosis and patient treatment.
+
+Conclusions
+With the use of NGS researchers generate large amount of data about transcriptomic, genomic, and epigenomic characteristics of humans. However, so far, only a small fraction has been proven to have clinical implementation. Understanding the rest of the “unlocked” data will only be possible with the development of more powerful analytic objective systems. The potential that NGS holds for glioblastoma research and clinical implementation is massive. Intelligent and careful use of NGS data can change the way we diagnose and treat glioblastomas. Studying epigenetic modifications in glioblastoma offers potential for identification of clinical biomarkers either for patient diagnosis or discovering drug targets. Rapid development of different methodologies for analysis of big data may lead to the development of individual diagnosis and patient-tailored treatment. It is expected for in silico diagnosis to be comparable and consistent, less variable, objective, and without human error. However, machine learning and deep learning algorithms have still a lot to learn before this diagnostic model can be implemented in everyday clinical practice. At last, these models need to be trained to understand biological systems so they can have an “insight” into the disease biology. This way, machine learning and deep learning models can adapt their findings in concordance to the nature of the analyzed disease, and simultaneously learn and change as the disease evolves.
+
+Author Contributions
+IJ performed literature search, collected data and information, prepared figures and table, and wrote the manuscript.
+
+Conflict of Interest
+The author declares that the research was conducted in the absence of any commercial or financial relationships that could be construed as a potential conflict of interest.
+
+IJ would like to thank Alja Zottel and Neja Šamec (both from MCMB, Institute of Biochemistry, Faculty of Medicine, University of Ljubljana) for critical reading of the manuscript, constructive suggestions, and comments.
+
+Funding. IJ acknowledges financing from the Interreg EC Project 2014-2020 Ref. No. 146 Acronym: TRANS-GLIOMA, the Research Programme Grant P1-0390 and the Z3-1869 project from the Slovenian Research Agency (SRA). The funders had no role in manuscript design, writing or decision to publish.
+==== Refs
+References
+1. Kanu OO Mehta A Di C Lin N Bortoff K Bigner DD  . Glioblastoma multiforme: a review of therapeutic targets
+. Expert Opin Ther Targets.  (2009 ) 13 :701 –18
+. 10.1517/14728220902942348 19409033 
+2. Siegel RL Miller KD Jemal A  
+Cancer statistics, 2019
+. CA Cancer J Clin.  (2019 ) 69 :7 –34
+. 10.3322/caac.21551 30620402 
+3. Weller M Wick W Aldape K Brada M Berger M Pfister SM  
+Glioma
+. Nat Rev Dis Primers.  (2015 ) 1 :15017 
+10.1038/nrdp.2015.17 27188790 
+4. Wen PY Kesari S  . Malignant gliomas in adults
+. N Engl J Med.  (2008 ) 359 :492 –507
+. 10.1056/NEJMra0708126 18669428 
+5. Ostrom QT Gittleman H Farah P Ondracek A Chen Y Wolinsky Y  . CBTRUS statistical report: primary brain and central nervous system tumors diagnosed in the United States in 2006-2010
+. Neuro Oncol.  (2013 ) 15  (Suppl. 2 ):ii1 –56
+. 10.1093/neuonc/not151 24137015 
+6. Tamimi A. F. Juweid M.   (2017 ). Epidemiology and outcome of glioblastoma
+. In: De Vleeschouwer S   editor. Glioblastoma. 
+Brisbane, QLD : Codon Publications 
+10.15586/codon.glioblastoma.2017.ch8 
+7. Aldape K Zadeh G Mansouri S Reifenberger G von Deimling A  . Glioblastoma: pathology, molecular mechanisms and markers
+. Acta Neuropathol.  (2015 ) 129 :829 –48
+. 10.1007/s00401-015-1432-1 25943888 
+8. Movassaghi M Shabihkhani M Hojat SA Williams RR Chung LK Im K  . Early experience with formalin-fixed paraffin-embedded (FFPE) based commercial clinical genomic profiling of gliomas-robust and informative with caveats
+. Exp Mol Pathol.  (2017 ) 103 :87 –93
+. 10.1016/j.yexmp.2017.06.006 28663030 
+9. Ohgaki H Dessen P Jourde B Horstmann S Nishikawa T Di Patre PL  . Genetic pathways to glioblastoma: a population-based study
+. Cancer Res.  (2004 ) 64 :6892 –9
+. 10.1158/0008-5472.CAN-04-1337 15466178 
+10. Olar A Aldape KD  . Using the molecular classification of glioblastoma to inform personalized treatment
+. J Pathol.  (2014 ) 232 :165 –77
+. 10.1002/path.4282 24114756 
+11. Parsons DW Jones S Zhang X Lin JC Leary RJ Angenendt P  . An integrated genomic analysis of human glioblastoma multiforme
+. Science.  (2008 ) 321 :1807 –12
+. 10.1126/science.1164382 18772396 
+12. Alexander BM Cloughesy TF  . Adult Glioblastoma
+. J Clin Oncol.  (2017 ) 35 :2402 –9
+. 10.1200/JCO.2017.73.0119 28640706 
+13. Louis DN Perry A Reifenberger G von Deimling A Figarella-Branger D Cavenee WK  . The 2016 World Health Organization Classification of tumors of the central nervous system: a summary
+. Acta Neuropathol.  (2016 ) 131 :803 –20
+. 10.1007/s00401-016-1545-1 27157931 
+14. Lee SY  . Temozolomide resistance in glioblastoma multiforme
+. Genes Dis.  (2016 ) 3 :198 –210
+. 10.1016/j.gendis.2016.04.007 30258889 
+15. Thomas A Tanaka M Trepel J Reinhold WC Rajapakse VN Pommier Y  . Temozolomide in the era of precision medicine
+. Cancer Res.  (2017 ) 77 :823 –6
+. 10.1158/0008-5472.CAN-16-2983 28159862 
+16. Zhong J Paul A Kellie SJ O'Neill GM  . Mesenchymal migration as a therapeutic target in glioblastoma
+. J Oncol.  (2010 ) 2010 :430142 . 10.1155/2010/430142 20652056 
+17. Noroxe DS Poulsen HS Lassen U  . Hallmarks of glioblastoma: a systematic review
+. ESMO Open.  (2016 ) 1 :e000144 . 10.1136/esmoopen-2016-000144 28912963 
+18. Rulseh AM Keller J Klener J Sroubek J Dbaly V Syrucek M  . Long-term survival of patients suffering from glioblastoma multiforme treated with tumor-treating fields
+. World J Surg Oncol.  (2012 ) 10 :220 . 10.1186/1477-7819-10-220 23095807 
+19. Stupp R Taillibert S Kanner A Read W Steinberg D Lhermitte B  . Effect of tumor-treating fields plus maintenance temozolomide vs maintenance temozolomide alone on survival in patients with glioblastoma: a randomized clinical trial
+. JAMA.  (2017 ) 318 :2306 –16
+. 10.1001/jama.2017.18718 29260225 
+20. Rick J Chandra A Aghi MK  . Tumor treating fields: a new approach to glioblastoma therapy
+. J Neurooncol.  (2018 ) 137 :447 –53
+. 10.1007/s11060-018-2768-x 29349613 
+21. Paolillo M Boselli C Schinelli S  . Glioblastoma under siege: an overview of current therapeutic strategies
+. Brain Sci.  (2018 ) 8 :15 . 10.3390/brainsci8010015 29337870 
+22. Finocchiaro G Pellegatta S  . Perspectives for immunotherapy in glioblastoma treatment
+. Curr Opin Oncol.  (2014 ) 26 :608 –14
+. 10.1097/CCO.0000000000000135 25210870 
+23. Xu LW Chow KK Lim M Li G  . Current vaccine trials in glioblastoma: a review
+. J Immunol Res.  (2014 ) 2014 :796856 . 10.1155/2014/796856 24804271 
+24. Lemee JM Clavreul A Menei P  . Intratumoral heterogeneity in glioblastoma: don't forget the peritumoral brain zone
+. Neuro Oncol.  (2015 ) 17 :1322 –32
+. 10.1093/neuonc/nov119 26203067 
+25. Artene SA Tuta C Dragoi A Alexandru O Stefana Oana P Tache DE  . Current and emerging EGFR therapies for glioblastoma
+. J Immunoassay Immunochem.  (2018 ) 39 :1 –11
+. 10.1080/15321819.2017.1411816 29308973 
+26. Sanger F Nicklen S Coulson AR  . DNA sequencing with chain-terminating inhibitors
+. Proc Natl Acad Sci USA.  (1977 ) 74 :5463 –7
+. 10.1073/pnas.74.12.5463 271968 
+27. International Human Genome Sequencing C  
+Finishing the euchromatic sequence of the human genome
+. Nature.  (2004 ) 431 :931 –45
+. 10.1038/nature03001 15496913 
+28. Metzker ML  . Emerging technologies in DNA sequencing
+. Genome Res.  (2005 ) 15 :1767 –76
+. 10.1101/gr.3770505 16339375 
+29. Stranneheim H Lundeberg J  . Stepping stones in DNA sequencing
+. Biotechnol J.  (2012 ) 7 :1063 –73
+. 10.1002/biot.201200153 22887891 
+30. Buermans HP den Dunnen JT  . Next generation sequencing technology: advances and applications
+. Biochim Biophys Acta.  (2014 ) 1842 :1932 –41
+. 10.1016/j.bbadis.2014.06.015 24995601 
+31. Hodzic J Gurbeta L Omanovic-Miklicanin E Badnjevic A  . Overview of next-generation sequencing platforms used in published draft plant genomes in light of genotypization of immortelle plant (Helichrysium Arenarium)
+. Med Arch.  (2017 ) 71 :288 –92
+. 10.5455/medarh.2017.71.288-292 28974852 
+32. Hert DG Fredlake CP Barron AE  . Advantages and limitations of next-generation sequencing technologies: a comparison of electrophoresis and non-electrophoresis methods
+. Electrophoresis.  (2008 ) 29 :4618 –26
+. 10.1002/elps.200800456 19053153 
+33. Kircher M Kelso J  . High-throughput DNA sequencing–concepts and limitations
+. Bioessays.  (2010 ) 32 :524 –36
+. 10.1002/bies.200900181 20486139 
+34. Gullapalli RR Desai KV Santana-Santos L Kant JA Becich MJ  . Next generation sequencing in clinical medicine: challenges and lessons for pathology and biomedical informatics
+. J Pathol Inform.  (2012 ) 3 :40 . 10.4103/2153-3539.103013 23248761 
+35. Pfeifer GP Hainaut P  . Next-generation sequencing: emerging lessons on the origins of human cancer
+. Curr Opin Oncol.  (2011 ) 23 :62 –8
+. 10.1097/CCO.0b013e3283414d00 21119514 
+36. Uddin M Goodman M Erez O Romero R Liu G Islam M  . Distinct genomic signatures of adaptation in pre- and postnatal environments during human evolution
+. Proc Natl Acad Sci USA.  (2008 ) 105 :3215 –20
+. 10.1073/pnas.0712400105 18305157 
+37. Doostparast Torshizi A Wang K  . Next-generation sequencing in drug development: target identification and genetically stratified clinical trials
+. Drug Discov Today.  (2018 ) 23 :1776 –83
+. 10.1016/j.drudis.2018.05.015 29758342 
+38. Metzker ML  . Sequencing technologies - the next generation
+. Nat Rev Genet.  (2010 ) 11 :31 –46
+. 10.1038/nrg2626 19997069 
+39. Wang Y Yang Q Wang Z  . The evolution of nanopore sequencing
+. Front Genet.  (2014 ) 5 :449 . 10.3389/fgene.2014.00449 25610451 
+40. Makalowski W Shabardina V  . Bioinformatics of nanopore sequencing
+. J Hum Genet.  (2020 ) 65 :61 –7
+. 10.1038/s10038-019-0659-4 31451715 
+41. Kasianowicz JJ Brandin E Branton D Deamer DW  . Characterization of individual polynucleotide molecules using a membrane channel
+. Proc Natl Acad Sci USA.  (1996 ) 93 :13770 –3
+. 10.1073/pnas.93.24.13770 8943010 
+42. Luan B Aksimentiev A  . Control and reversal of the electrophoretic force on DNA in a charged nanopore
+. J Phys Condens Matter.  (2010 ) 22 :454123 . 10.1088/0953-8984/22/45/454123 21339610 
+43. Luan B Peng H Polonsky S Rossnagel S Stolovitzky G Martyna G  . Base-by-base ratcheting of single stranded DNA through a solid-state nanopore
+. Phys Rev Lett.  (2010 ) 104 :238103 . 10.1103/PhysRevLett.104.238103 20867275 
+44. Young JS Prados MD Butowski N  . Using genomics to guide treatment for glioblastoma
+. Pharmacogenomics.  (2018 ) 19 :1217 –29
+. 10.2217/pgs-2018-0078 30203716 
+45. Davalos V Esteller M  . MicroRNAs and cancer epigenetics: a macrorevolution
+. Curr Opin Oncol.  (2010 ) 22 :35 –45
+. 10.1097/CCO.0b013e328333dcbb 19907325 
+46. Espada J Esteller M  . DNA methylation and the functional organization of the nuclear compartment
+. Semin Cell Dev Biol.  (2010 ) 21 :238 –46
+. 10.1016/j.semcdb.2009.10.006 19892028 
+47. Ashley EA  . Towards precision medicine
+. Nat Rev Genet.  (2016 ) 17 :507 –22
+. 10.1038/nrg.2016.86 27528417 
+48. Cancer Genome Atlas Research N  
+Comprehensive genomic characterization defines human glioblastoma genes and core pathways
+. Nature.  (2008 ) 455 :1061 –8
+. 10.1038/nature07385 18772890 
+49. Yan H Parsons DW Jin G McLendon R Rasheed BA Yuan W  . IDH1 and IDH2 mutations in gliomas
+. N Engl J Med.  (2009 ) 360 :765 –73
+. 10.1056/NEJMoa0808710 19228619 
+50. Verhaak RG Hoadley KA Purdom E Wang V Qi Y Wilkerson MD  . Integrated genomic analysis identifies clinically relevant subtypes of glioblastoma characterized by abnormalities in PDGFRA, IDH1, EGFR, and NF1
+. Cancer Cell.  (2010 ) 17 :98 –110
+. 10.1016/j.ccr.2009.12.020 20129251 
+51. Pang L Hu J Li F Yuan H Yan M Liao G  . Discovering Rare genes contributing to cancer stemness and invasive potential by GBM Single-cell transcriptional analysis
+. Cancers.  (2019 ) 11 :2025 . 10.3390/cancers11122025 31888172 
+52. Darmanis S Sloan SA Croote D Mignardi M Chernikova S Samghababi P  . Single-cell RNA-Seq analysis of infiltrating neoplastic cells at the migrating front of human glioblastoma
+. Cell Rep.  (2017 ) 21 :1399 –410
+. 10.1016/j.celrep.2017.10.030 29091775 
+53. Lopes MB Vinga S  . Tracking intratumoral heterogeneity in glioblastoma via regularized classification of single-cell RNA-Seq data
+. BMC Bioinformatics.  (2020 ) 21 :59 . 10.1186/s12859-020-3390-4 32070274 
+54. Francis JM Zhang CZ Maire CL Jung J Manzo VE Adalsteinsson VA  . EGFR variant heterogeneity in glioblastoma resolved through single-nucleus sequencing
+. Cancer Discov.  (2014 ) 4 :956 –71
+. 10.1158/2159-8290.CD-13-0879 24893890 
+55. Patel AP Tirosh I Trombetta JJ Shalek AK Gillespie SM Wakimoto H  . Single-cell RNA-seq highlights intratumoral heterogeneity in primary glioblastoma
+. Science.  (2014 ) 344 :1396 –401
+. 10.1126/science.1254257 24925914 
+56. Meyer M Reimand J Lan X Head R Zhu X Kushida M  . Single cell-derived clonal analysis of human glioblastoma links functional and genomic heterogeneity
+. Proc Natl Acad Sci USA.  (2015 ) 112 :851 –6
+. 10.1073/pnas.1320611111 25561528 
+57. Muller S Liu SJ Di Lullo E Malatesta M Pollen AA Nowakowski TJ  . Single-cell sequencing maps gene expression to mutational phylogenies in PDGF- and EGF-driven gliomas
+. Mol Syst Biol.  (2016 ) 12 :889 . 10.15252/msb.20166969 27888226 
+58. Abou-El-Ardat K Seifert M Becker K Eisenreich S Lehmann M Hackmann K  . Comprehensive molecular characterization of multifocal glioblastoma proves its monoclonal origin and reveals novel insights into clonal evolution and heterogeneity of glioblastomas
+. Neuro Oncol.  (2017 ) 19 :546 –57
+. 10.1093/neuonc/now231 28201779 
+59. Kim EL Sorokin M Kantelhardt SR Kalasauskas D Sprang B Fauss J  . Intratumoral heterogeneity and longitudinal changes in gene expression predict differential drug sensitivity in newly diagnosed and recurrent glioblastoma
+. Cancers.  (2020 ) 12 :520 . 10.3390/cancers12020520 32102350 
+60. Synhaeve NE van den Bent MJ French PJ Dinjens WNM Atmodimedjo PN Kros JM  . Clinical evaluation of a dedicated next generation sequencing panel for routine glioma diagnostics
+. Acta Neuropathol Commun.  (2018 ) 6 :126 . 10.1186/s40478-018-0633-y 30470264 
+61. Parker NR Hudson AL Khong P Parkinson JF Dwight T Ikin RJ  . Intratumoral heterogeneity identified at the epigenetic, genetic and transcriptional level in glioblastoma
+. Sci Rep.  (2016 ) 6 :22477 . 10.1038/srep22477 26940435 
+62. Kim J Lee IH Cho HJ Park CK Jung YS Kim Y  . Spatiotemporal evolution of the primary glioblastoma genome
+. Cancer Cell.  (2015 ) 28 :318 –28
+. 10.1016/j.ccell.2015.07.013 26373279 
+63. Choi S Yu Y Grimmer MR Wahl M Chang SM Costello JF  . Temozolomide-associated hypermutation in gliomas
+. Neuro Oncol.  (2018 ) 20 :1300 –9
+. 10.1093/neuonc/noy016 29452419 
+64. Muscat AM Wong NC Drummond KJ Algar EM Khasraw M Verhaak R  . The evolutionary pattern of mutations in glioblastoma reveals therapy-mediated selection
+. Oncotarget.  (2018 ) 9 :7844 –58
+. 10.18632/oncotarget.23541 29487696 
+65. Moore LD Le T Fan G  . DNA methylation and its basic function
+. Neuropsychopharmacology.  (2013 ) 38 :23 –38
+. 10.1038/npp.2012.112 22781841 
+66. Moorcraft SY Gonzalez D Walker BA  . Understanding next generation sequencing in oncology: a guide for oncologists
+. Crit Rev Oncol Hematol.  (2015 ) 96 :463 –74
+. 10.1016/j.critrevonc.2015.06.007 26160606 
+67. Romani M Pistillo MP Banelli B  . Epigenetic targeting of glioblastoma
+. Front Oncol.  (2018 ) 8 :448 . 10.3389/fonc.2018.00448 30386738 
+68. Li B Carey M Workman JL  . The role of chromatin during transcription
+. Cell.  (2007 ) 128 :707 –19
+. 10.1016/j.cell.2007.01.015 17320508 
+69. Marino-Ramirez L Kann MG Shoemaker BA Landsman D  . Histone structure and nucleosome stability
+. Expert Rev Proteomics.  (2005 ) 2 :719 –29
+. 10.1586/14789450.2.5.719 16209651 
+70. Jenuwein T Allis CD  . Translating the histone code
+. Science.  (2001 ) 293 :1074 –80
+. 10.1126/science.1063127 11498575 
+71. Schwartzentruber J Korshunov A Liu XY Jones DT Pfaff E Jacob K  . Driver mutations in histone H3.3 and chromatin remodelling genes in paediatric glioblastoma
+. Nature.  (2012 ) 482 :226 –231
+. 10.1038/nature10833 22286061 
+72. Gielen GH Gessi M Hammes J Kramm CM Waha A Pietsch T  . H3F3A K27M mutation in pediatric CNS tumors: a marker for diffuse high-grade astrocytomas
+. Am J Clin Pathol.  (2013 ) 139 :345 –9
+. 10.1309/AJCPABOHBC33FVMO 23429371 
+73. Dang L White DW Gross S Bennett BD Bittinger MA Driggers EM  . Cancer-associated IDH1 mutations produce 2-hydroxyglutarate
+. Nature.  (2009 ) 462 :739 –44
+. 10.1038/nature08617 19935646 
+74. Baylin SB  . (2005 ). DNA methylation and gene silencing in cancer
+. Nat Clin Pract Oncol. 
+2  (Suppl. 1 ):S4 –11
+. 10.1038/ncponc0354 16341240 
+75. Bannister AJ Kouzarides T  . Regulation of chromatin by histone modifications
+. Cell Res.  (2011 ) 21 :381 –95
+. 10.1038/cr.2011.22 21321607 
+76. Romani M Daga A Forlani A Pistillo MP Banelli B  . Targeting of histone demethylases KDM5A and KDM6B inhibits the proliferation of temozolomide-resistant glioblastoma cells
+. Cancers.  (2019 ) 11 :878 . 10.3390/cancers11060878 31238504 
+77. Williams MJ Singleton WG Lowis SP Malik K Kurian KM  . Therapeutic targeting of histone modifications in adult and pediatric high-grade glioma
+. Front Oncol.  (2017 ) 7 :45 . 10.3389/fonc.2017.00045 28401060 
+78. Hiramatsu H Kobayashi K Kobayashi K Haraguchi T Ino Y Todo T  . The role of the SWI/SNF chromatin remodeling complex in maintaining the stemness of glioma initiating cells
+. Sci Rep.  (2017 ) 7 :889 . 10.1038/s41598-017-00982-3 28420882 
+79. Ganguly D Sims M Cai C Fan M Pfeffer LM  . Chromatin remodeling factor BRG1 regulates stemness and chemosensitivity of glioma initiating cells
+. Stem Cells.  (2018 ) 36 :1804 –15
+. 10.1002/stem.2909 30171737 
+80. McCabe MT Brandes JC Vertino PM  . Cancer DNA methylation: molecular mechanisms and clinical implications
+. Clin Cancer Res.  (2009 ) 15 :3927 –37
+. 10.1158/1078-0432.CCR-08-2784 19509173 
+81. Wu H Zhang Y  . Reversing DNA methylation: mechanisms, genomics, and biological functions
+. Cell.  (2014 ) 156 :45 –68
+. 10.1016/j.cell.2013.12.019 24439369 
+82. Jin B Li Y Robertson KD  . DNA methylation: superior or subordinate in the epigenetic hierarchy?
+
+Genes Cancer.  (2011 ) 2 :607 –17
+. 10.1177/1947601910393957 21941617 
+83. Ratel D Ravanat JL Berger F Wion D  . N6-methyladenine: the other methylated base of DNA
+. Bioessays.  (2006 ) 28 :309 –15
+. 10.1002/bies.20342 16479578 
+84. Iyer LM Zhang D Aravind L  . Adenine methylation in eukaryotes: apprehending the complex evolutionary history and functional potential of an epigenetic modification
+. Bioessays.  (2016 ) 38 :27 –40
+. 10.1002/bies.201500104 26660621 
+85. Wu TP Wang T Seetin MG Lai Y Zhu S Lin K  . DNA methylation on N(6)-adenine in mammalian embryonic stem cells
+. Nature.  (2016 ) 532 :329 –33
+. 10.1038/nature17640 27027282 
+86. Nagarajan RP Costello JF  . Epigenetic mechanisms in glioblastoma multiforme
+. Semin Cancer Biol.  (2009 ) 19 :188 –97
+. 10.1016/j.semcancer.2009.02.005 19429483 
+87. Etcheverry A Aubry M de Tayrac M Vauleon E Boniface R Guenot F  . DNA methylation in glioblastoma: impact on gene expression and clinical outcome
+. BMC Genomics.  (2010 ) 11 :701 . 10.1186/1471-2164-11-701 21156036 
+88. Smith AA Huang YT Eliot M Houseman EA Marsit CJ Wiencke JK  . A novel approach to the discovery of survival biomarkers in glioblastoma using a joint analysis of DNA methylation and gene expression
+. Epigenetics.  (2014 ) 9 :873 –83
+. 10.4161/epi.28571 24670968 
+89. Pangeni RP Zhang Z Alvarez AA Wan X Sastry N Lu S  . Genome-wide methylomic and transcriptomic analyses identify subtype-specific epigenetic signatures commonly dysregulated in glioma stem cells and glioblastoma
+. Epigenetics.  (2018 ) 13 :432 –48
+. 10.1080/15592294.2018.1469892 29927689 
+90. Cadieux B Ching TT VandenBerg SR Costello JF  . Genome-wide hypomethylation in human glioblastomas associated with specific copy number alteration, methylenetetrahydrofolate reductase allele status, and increased proliferation
+. Cancer Res.  (2006 ) 66 :8469 –76
+. 10.1158/0008-5472.CAN-06-1547 16951158 
+91. Wenger A Ferreyra Vega S Kling T Bontell TO Jakola AS Caren H  . Intratumor DNA methylation heterogeneity in glioblastoma: implications for DNA methylation-based classification
+. Neuro Oncol.  (2019 ) 21 :616 –27
+. 10.1093/neuonc/noz011 30668814 
+92. Ceccarelli M Barthel FP Malta TM Sabedot TS Salama SR Murray BA  . Molecular profiling reveals biologically discrete subsets and pathways of progression in diffuse glioma
+. Cell.  (2016 ) 164 :550 –63
+. 10.1016/j.cell.2015.12.028 26824661 
+93. Westphal M Lamszus K  . Circulating biomarkers for gliomas
+. Nat Rev Neurol.  (2015 ) 11 :556 –66
+. 10.1038/nrneurol.2015.171 26369507 
+94. Daniel P Sabri S Chaddad A Meehan B Jean-Claude B Rak J  . Temozolomide induced hypermutation in glioma: evolutionary mechanisms and therapeutic opportunities
+. Front Oncol.  (2019 ) 9 :41 . 10.3389/fonc.2019.00041 30778375 
+95. Thomas L Di Stefano AL Ducray F  . Predictive biomarkers in adult gliomas: the present and the future
+. Curr Opin Oncol.  (2013 ) 25 :689 –94
+. 10.1097/CCO.0000000000000002 24076583 
+96. Smrdel U Popovic M Zwitter M Bostjancic E Zupan A Kovac V  . Long-term survival in glioblastoma: methyl guanine methyl transferase (MGMT) promoter methylation as independent favourable prognostic factor
+. Radiol Oncol.  (2016 ) 50 :394 –401
+. 10.1515/raon-2015-0041 27904447 
+97. Hegi ME Diserens AC Gorlia T Hamou MF de Tribolet N Weller M  . MGMT gene silencing and benefit from temozolomide in glioblastoma
+. N Engl J Med.  (2005 ) 352 :997 –1003
+. 10.1056/NEJMoa043331 15758010 
+98. Suva ML  . Genetics and epigenetics of gliomas
+. Swiss Med Wkly.  (2014 ) 144 :w14018 . 10.4414/smw.2014.14018 25356909 
+99. Felsberg J Rapp M Loeser S Fimmers R Stummer W Goeppert M  . Prognostic significance of molecular markers and extent of resection in primary glioblastoma patients
+. Clin Cancer Res.  (2009 ) 15 :6683 –93
+. 10.1158/1078-0432.CCR-08-2801 19861461 
+100. Choi SA Kwak PA Park CK Wang KC Phi JH Lee JY  . A novel histone deacetylase inhibitor, CKD5, has potent anti-cancer effects in glioblastoma
+. Oncotarget.  (2017 ) 8 :9123 –33
+. 10.18632/oncotarget.13265 27852054 
+101. Galanis E Jaeckle KA Maurer MJ Reid JM Ames MM Hardwick JS  . Phase II trial of vorinostat in recurrent glioblastoma multiforme: a north central cancer treatment group study
+. J Clin Oncol.  (2009 ) 27 :2052 –8
+. 10.1200/JCO.2008.19.0694 19307505 
+102. Chinnaiyan P Chowdhary S Potthast L Prabhu A Tsai YY Sarcar B  . Phase I trial of vorinostat combined with bevacizumab and CPT-11 in recurrent glioblastoma
+. Neuro Oncol.  (2012 ) 14 :93 –100
+. 10.1093/neuonc/nor187 22028388 
+103. Lee EQ Puduvalli VK Reid JM Kuhn JG Lamborn KR Cloughesy TF  . Phase I study of vorinostat in combination with temozolomide in patients with high-grade gliomas: North American Brain Tumor Consortium Study 04-03
+. Clin Cancer Res.  (2012 ) 18 :6032 –9
+. 10.1158/1078-0432.CCR-12-1841 22923449 
+104. Ellingson BM Abrey LE Nelson SJ Kaufmann TJ Garcia J Chinot O  . Validation of postoperative residual contrast-enhancing tumor volume as an independent prognostic factor for overall survival in newly diagnosed glioblastoma
+. Neuro Oncol.  (2018 ) 20 :1240 –50
+. 10.1093/neuonc/noy053 29660006 
+105. Galanis E Anderson SK Miller CR Sarkaria JN Jaeckle K Buckner JC  . Phase I/II trial of vorinostat combined with temozolomide and radiation therapy for newly diagnosed glioblastoma: results of alliance N0874/ABTC 02
+. Neuro Oncol.  (2018 ) 20 :546 –56
+. 10.1093/neuonc/nox161 29016887 
+106. Ghiaseddin A Reardon D Massey W Mannerino A Lipp ES Herndon JEII  . Phase II study of bevacizumab and vorinostat for patients with recurrent World Health Organization grade 4 malignant glioma
+. Oncologist.  (2018 ) 23 :157 –e121
+. 10.1634/theoncologist.2017-0501 29133513 
+107. Peters KB Lipp ES Miller E Herndon JE IIMcSherry F Desjardins A  . Phase I/II trial of vorinostat, bevacizumab, and daily temozolomide for recurrent malignant gliomas
+. J Neurooncol.  (2018 ) 137 :349 –56
+. 10.1007/s11060-017-2724-1 29264836 
+108. Iwamoto FM Lamborn KR Kuhn JG Wen PY Yung WK Gilbert MR  . A phase I/II trial of the histone deacetylase inhibitor romidepsin for adults with recurrent malignant glioma: North American Brain Tumor Consortium Study 03-03
+. Neuro Oncol.  (2011 ) 13 :509 –16
+. 10.1093/neuonc/nor017 21377994 
+109. Gurbani SS Yoon Y Weinberg BD Salgado E Press RH Cordova JS  . Assessing treatment response of glioblastoma to an HDAC inhibitor using whole-brain spectroscopic MRI
+. Tomography.  (2019 ) 5 :53 –60
+. 10.18383/j.tom.2018.00031 30854442 
+110. Lee EQ Reardon DA Schiff D Drappatz J Muzikansky A Grimm SA  . Phase II study of panobinostat in combination with bevacizumab for recurrent glioblastoma and anaplastic glioma
+. Neuro Oncol.  (2015 ) 17 :862 –7
+. 10.1093/neuonc/nou350 25572329 
+111. Kerkhof M Dielemans JC van Breemen MS Zwinkels H Walchenbach R Taphoorn MJ  . Effect of valproic acid on seizure control and on survival in patients with glioblastoma multiforme
+. Neuro Oncol.  (2013 ) 15 :961 –7
+. 10.1093/neuonc/not057 23680820 
+112. Krauze AV Myrehaug SD Chang MG Holdford DJ Smith S Shih J  . A Phase 2 study of concurrent radiation therapy, temozolomide, and the histone deacetylase inhibitor valproic acid for patients with glioblastoma
+. Int J Radiat Oncol Biol Phys.  (2015 ) 92 :986 –92
+. 10.1016/j.ijrobp.2015.04.038 26194676 
+113. Tinchon A Oberndorfer S Marosi C Gleiss A Geroldinger A Sax C  . Haematological toxicity of valproic acid compared to Levetiracetam in patients with glioblastoma multiforme undergoing concomitant radio-chemotherapy: a retrospective cohort study
+. J Neurol.  (2015 ) 262 :179 –86
+. 10.1007/s00415-014-7552-z 25359262 
+114. Happold C Gorlia T Chinot O Gilbert MR Nabors LB Wick W  . Does valproic acid or levetiracetam improve survival in glioblastoma? a pooled analysis of prospective clinical trials in newly diagnosed glioblastoma
+. J Clin Oncol.  (2016 ) 34 :731 –9
+. 10.1200/JCO.2015.63.6563 26786929 
+115. Watanabe S Kuwabara Y Suehiro S Yamashita D Tanaka M Tanaka A  . Valproic acid reduces hair loss and improves survival in patients receiving temozolomide-based radiation therapy for high-grade glioma
+. Eur J Clin Pharmacol.  (2017 ) 73 :357 –63
+. 10.1007/s00228-016-2167-1 27889835 
+116. Krauze AV Mackey M Rowe L Chang MG Holdford DJ Cooley T  . Late toxicity in long-term survivors from a phase 2 study of concurrent radiation therapy, temozolomide and valproic acid for newly diagnosed glioblastoma
+. Neurooncol Pract.  (2018 ) 5 :246 –50
+. 10.1093/nop/npy009 30402263 
+117. Valiyaveettil D Malik M Joseph DM Ahmed SF Kothwal SA Vijayasaradhi M  . Effect of valproic acid on survival in glioblastoma: a prospective single-arm study
+. South Asian J Cancer.  (2018 ) 7 :159 –62
+. 10.4103/sajc.sajc_188_17 30112328 
+118. Fulton B Short SC James A Nowicki S McBain C Jefferies S  . PARADIGM-2: two parallel phase I studies of olaparib and radiotherapy or olaparib and radiotherapy plus temozolomide in patients with newly diagnosed glioblastoma, with treatment stratified by MGMT status
+. Clin Transl Radiat Oncol.  (2018 ) 8 :12 –6
+. 10.1016/j.ctro.2017.11.003 29594237 
+119. Lesueur P Lequesne J Grellard JM Dugue A Coquan E Brachet PE  . Phase I/IIa study of concomitant radiotherapy with olaparib and temozolomide in unresectable or partially resectable glioblastoma: OLA-TMZ-RTE-01 trial protocol
+. BMC Cancer.  (2019 ) 19 :198 . 10.1186/s12885-019-5413-y 30832617 
+120. Su JM Thompson P Adesina A Li XN Kilburn L Onar-Thomas A  . A phase I trial of veliparib (ABT-888) and temozolomide in children with recurrent CNS tumors: a pediatric brain tumor consortium report
+. Neuro Oncol.  (2014 ) 16 :1661 –8
+. 10.1093/neuonc/nou103 24908656 
+121. Robins HI Zhang P Gilbert MR Chakravarti A de Groot JF Grimm SA  . A randomized phase I/II study of ABT-888 in combination with temozolomide in recurrent temozolomide resistant glioblastoma: an NRG oncology RTOG group study
+. J Neurooncol.  (2016 ) 126 :309 –16
+. 10.1007/s11060-015-1966-z 26508094 
+122. Blakeley JO Grossman SA Chi AS Mikkelsen T Rosenfeld MR Ahluwalia MS  . Phase II Study of Iniparib with Concurrent Chemoradiation in Patients with newly diagnosed glioblastoma
+. Clin Cancer Res.  (2019 ) 25 :73 –9
+. 10.1158/1078-0432.CCR-18-0110 30131387 
+123. Dermawan JK Hitomi M Silver DJ Wu Q Sandlesh P Sloan AE  . Pharmacological targeting of the histone chaperone complex fact preferentially eliminates glioblastoma stem cells and prolongs survival in preclinical models
+. Cancer Res.  (2016 ) 76 :2432 –42
+. 10.1158/0008-5472.CAN-15-2162 26921329 
+124. Barone TA Burkhart CA Safina A Haderski G Gurova KV Purmal AA  . Anticancer drug candidate CBL0137, which inhibits histone chaperone FACT, is efficacious in preclinical orthotopic models of temozolomide-responsive and -resistant glioblastoma
+. Neuro Oncol.  (2017 ) 19 :186 –96
+. 10.1093/neuonc/now141 27370399 
+125. Jin MZ Xia BR Xu Y Jin WL  . Curaxin CBL0137 exerts anticancer activity via diverse mechanisms
+. Front Oncol.  (2018 ) 8 :598 . 10.3389/fonc.2018.00598 30581774 
+126. Suntsova M Gaifullin N Allina D Reshetun A Li X Mendeleeva L  . Atlas of RNA sequencing profiles for normal human tissues
+. Sci Data.  (2019 ) 6 :36 . 10.1038/s41597-019-0043-4 31015567 
+127. Bolouri H Zhao LP Holland EC  . Big data visualization identifies the multidimensional molecular landscape of human gliomas
+. Proc Natl Acad Sci USA.  (2016 ) 113 :5394 –9
+. 10.1073/pnas.1601591113 27118839 
+128. Capper D Jones DTW Sill M Hovestadt V Schrimpf D Sturm D  . DNA methylation-based classification of central nervous system tumours
+. Nature.  (2018 ) 555 :469 –74
+. 10.1038/nature26000 29539639 
+129. Branton D Deamer DW Marziali A Bayley H Benner SA Butler T  . The potential and challenges of nanopore sequencing
+. Nat Biotechnol.  (2008 ) 26 :1146 –53
+. 10.1038/nbt.1495 18846088 
+130. Jain M Koren S Miga KH Quick J Rand AC Sasani TA  . Nanopore sequencing and assembly of a human genome with ultra-long reads
+. Nat Biotechnol.  (2018 ) 36 :338 –45
+. 10.1038/nbt.4060 29431738 
+131. Sen R Dolgalev I Bayin NS Heguy A Tsirigos A Placantonakis DG  . Single-Cell RNA Sequencing of Glioblastoma Cells
+. Methods Mol Biol.  (2018 ) 1741 :151 –70
+. 10.1007/978-1-4939-7659-1_12 29392698 
+132. Euskirchen P Bielle F Labreche K Kloosterman WP Rosenberg S Daniau M  . Same-day genomic and epigenomic diagnosis of brain tumors using real-time nanopore sequencing
+. Acta Neuropathol.  (2017 ) 134 :691 –703
+. 10.1007/s00401-017-1743-5 28638988 
+133. Deo RC  . Machine learning in medicine
+. Circulation.  (2015 ) 132 :1920 –30
+. 10.1161/CIRCULATIONAHA.115.001593 26572668 
+134. Tandel GS Biswas M Kakde OG Tiwari A Suri HS Turk M  
+A review on a deep learning perspective in brain cancer classification
+. Cancers.  (2019 ) 11 :111 
+10.3390/cancers11010111 
+135. Senders JT Harary M Stopa BM Staples P Broekman MLD Smith TR  . Information-based medicine in glioma patients: a clinical perspective
+. Comput Math Methods Med.  (2018 ) 2018 :8572058 . 10.1155/2018/8572058 30008798 
+136. Borisov N Buzdin A  . New paradigm of machine learning (ML) in personalized oncology: data trimming for squeezing more biomarkers from clinical datasets
+. Front Oncol.  (2019 ) 9 :658 . 10.3389/fonc.2019.00658 31380288 
+137. Chen PC Gadepalli K MacDonald R Liu Y Kadowaki S Nagpal K  . An augmented reality microscope with real-time artificial intelligence integration for cancer diagnosis
+. Nat Med.  (2019 ) 25 :1453 –57
+. 10.1038/s41591-019-0539-7 31406351 
+138. Wishart DS Knox C Guo AC Shrivastava S Hassanali M Stothard P  . DrugBank: a comprehensive resource for in silico drug discovery and exploration
+. Nucleic Acids Res.  (2006 ) 34 :D668 –672
+. 10.1093/nar/gkj067 16381955 
+139. Zhang L Tan J Han D Zhu H  . From machine learning to deep learning: progress in machine intelligence for rational drug discovery
+. Drug Discov Today.  (2017 ) 22 :1680 –5
+. 10.1016/j.drudis.2017.08.010 28881183 
+140. Borisov N Tkachev V Suntsova M Kovalchuk O Zhavoronkov A Muchnik I  . A method of gene expression data transfer from cell lines to cancer patients for machine-learning prediction of drug efficiency
+. Cell Cycle.  (2018 ) 17 :486 –91
+. 10.1080/15384101.2017.1417706 29251172 
+141. Wiens J Saria S Sendak M Ghassemi M Liu VX Doshi-Velez F  
+Do no harm: a roadmap for responsible machine learning for health care
+. Nat Med.  (2019 ) 25 :1337 –40
+. 10.1038/s41591-019-0548-6 31427808 
+142. Kim YW Koul D Kim SH Lucio-Eterovic AK Freire PR Yao J  . Identification of prognostic gene signatures of glioblastoma: a study based on TCGA data analysis
+. Neuro Oncol.  (2013 ) 15 :829 –39
+. 10.1093/neuonc/not024 23502430 
+143. Wong KK Rostomily R Wong STC  . Prognostic gene discovery in glioblastoma patients using deep learning
+. Cancers.  (2019 ) 11 :53 . 10.3390/cancers11010053 30626092 
+144. Young JD Cai C Lu X  . Unsupervised deep learning reveals prognostically relevant subtypes of glioblastoma
+. BMC Bioinformatics.  (2017 ) 18 (Suppl. 11 ):381 . 10.1186/s12859-017-1798-2 28984190 
+145. Brennan CW Verhaak RG McKenna A Campos B Noushmehr H Salama SR  . The somatic genomic landscape of glioblastoma
+. Cell.  (2013 ) 155 :462 –77
+. 10.1016/j.cell.2013.09.034 24120142
+

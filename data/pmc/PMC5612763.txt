@@ -1,0 +1,308 @@
+
+==== Front
+PLoS OnePLoS ONEplosplosonePLoS ONE1932-6203Public Library of Science San Francisco, CA USA 10.1371/journal.pone.0185376PONE-D-17-07680Research ArticleMedicine and Health SciencesOncologyCancers and NeoplasmsNeurological TumorsGliomaMedicine and Health SciencesNeurologyNeurological TumorsGliomaMedicine and Health SciencesOncologyCancers and NeoplasmsBlastomasGlioblastoma MultiformeMedicine and Health SciencesOncologyCancers and NeoplasmsNeurological TumorsGlioblastoma MultiformeMedicine and Health SciencesNeurologyNeurological TumorsGlioblastoma MultiformeResearch and Analysis MethodsBiological CulturesCell CulturesCultured Tumor CellsGlioma CellsBiology and Life SciencesGeneticsGene ExpressionResearch and Analysis MethodsSpecimen Preparation and TreatmentStainingCell StainingResearch and Analysis MethodsBioassays and Physiological AnalysisMicroarraysResearch and Analysis MethodsHistochemistry and Cytochemistry TechniquesImmunohistochemistry TechniquesResearch and Analysis MethodsImmunologic TechniquesImmunohistochemistry TechniquesBiology and Life SciencesCell BiologyCellular TypesAnimal CellsBlood CellsWhite Blood CellsMacrophagesBiology and Life SciencesCell BiologyCellular TypesAnimal CellsImmune CellsWhite Blood CellsMacrophagesBiology and Life SciencesImmunologyImmune CellsWhite Blood CellsMacrophagesMedicine and Health SciencesImmunologyImmune CellsWhite Blood CellsMacrophagesCellular heterogeneity contributes to subtype-specific expression of ZEB1 in human glioblastoma ZEB1 expression in glioblastomahttp://orcid.org/0000-0002-9138-805XEuskirchen Philipp ConceptualizationData curationFormal analysisFunding acquisitionMethodologySoftwareVisualizationWriting – original draftWriting – review & editing123*Radke Josefine Formal analysisInvestigationVisualizationWriting – review & editing345Schmidt Marc Sören Data curationFormal analysisInvestigationMethodologySoftware2Schulze Heuling Eva InvestigationWriting – review & editing2Kadikowski Eric Data curationFormal analysisSoftwareWriting – review & editing2Maricos Meron Investigation2Knab Felix InvestigationMethodology2Grittner Ulrike Formal analysisWriting – review & editing67Zerbe Norman InvestigationResources8Czabanka Marcus Project administrationResourcesSupervision9Dieterich Christoph Formal analysisResourcesSoftwareSupervision10Miletic Hrvoje Data curationResources1112Mørk Sverre Data curationResources12Koch Arend ConceptualizationProject administrationResourcesSupervisionWriting – review & editing345Endres Matthias Funding acquisitionResourcesSupervisionWriting – review & editing1261314Harms Christoph ConceptualizationFunding acquisitionSupervisionWriting – review & editing2361 
+Dept. of Neurology, Charité –Universitätsmedizin Berlin, Berlin, Germany2 
+Dept. of Experimental Neurology, Charité –Universitätsmedizin Berlin, Berlin, Germany3 
+Berlin Institute of Health (BIH), Berlin, Germany4 
+Dept. of Neuropathology, Charité –Universitätsmedizin Berlin, Berlin, Germany5 
+German Cancer Consortium (DKTK), Partner Site Charité Berlin, Berlin, Berlin, Germany6 
+Center for Stroke Research Berlin, Charité –Universitätsmedizin Berlin, Berlin, Germany7 
+Dept. for Biostatistics and Clinical Epidemiology, Charité –Universitätsmedizin Berlin, Berlin, Germany8 
+Dept. of Pathology, Charité –Universitätsmedizin Berlin, Berlin, Germany9 
+Dept. of Neurosurgery, Charité –Universitätsmedizin Berlin, Berlin, Germany10 
+Computational RNA Biology and Ageing Group, Max-Planck-Institute for the Biology of Ageing, Cologne, Germany11 
+Dept. of Biomedicine, University of Bergen, Bergen, Norway12 
+Department of Pathology, Haukeland University Hospital, Bergen, Norway13 
+Deutsches Zentrum für Herz-Kreislauf-Forschung (DZHK), Standort Berlin, Berlin, Germany14 
+Deutsches Zentrum für Neurodegenerative Erkrankungen (DZNE), Standort Berlin, Berlin, GermanyUlasov Ilya EditorSwedish Neuroscience Institute, UNITED STATESCompeting Interests: All authors declare no conflicts of interest for this submission. One or more of the authors (including myself) currently serve, or have previously served, as an Academic Editor or Guest Editor for this journal. This does not alter our adherence to PLOS ONE policies on sharing data and materials.
+
+* E-mail: philipp.euskirchen@charite.de25 9 2017 2017 12 9 e018537625 2 2017 12 9 2017 © 2017 Euskirchen et al2017Euskirchen et alThis is an open access article distributed under the terms of the Creative Commons Attribution License, which permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are credited.The transcription factor ZEB1 has gained attention in tumor biology of epithelial cancers because of its function in epithelial-mesenchymal transition, DNA repair, stem cell biology and tumor-induced immunosuppression, but its role in gliomas with respect to invasion and prognostic value is controversial. We characterized ZEB1 expression at single cell level in 266 primary brain tumors and present a comprehensive dataset of high grade gliomas with Ki67, p53, IDH1, and EGFR immunohistochemistry, as well as EGFR FISH. ZEB1 protein expression in glioma stem cell lines was compared to their parental tumors with respect to gene expression subtypes based on RNA-seq transcriptomic profiles. ZEB1 is widely expressed in glial tumors, but in a highly variable fraction of cells. In glioblastoma, ZEB1 labeling index is higher in tumors with EGFR amplification or IDH1 mutation. Co-labeling studies showed that tumor cells and reactive astroglia, but not immune cells contribute to the ZEB1 positive population. In contrast, glioma cell lines constitutively express ZEB1 irrespective of gene expression subtype. In conclusion, our data indicate that immune infiltration likely contributes to differential labelling of ZEB1 and confounds interpretation of bulk ZEB1 expression data.
+
+Berliner KrebsgesellschaftEUFF-2012-36http://orcid.org/0000-0002-9138-805XEuskirchen Philipp http://dx.doi.org/10.13039/501100006188Einstein Stiftung BerlinEZK-2012-157http://orcid.org/0000-0002-9138-805XEuskirchen Philipp This work was supported by Berliner Krebsgesellschaft (EUFF-2012-36, to PE and CH) and the Einstein Foundation Berlin (EZK-2012-157, to PE). JR and PE are participants of the BIH-Charité Clinician Scientist Program funded by the Charité—Universitätsmedizin Berlin and the Berlin Institute of Health. The funders had no role in study design, data collection and analysis, decision to publish, or preparation of the manuscript. Data AvailabilityRaw data from quantitative histology data are within the paper and its Supporting Information files. Raw sequencing data from RNA-seq experiments are available at the European Genome-phenome Archive (accession EGAS000010011679).Data Availability
+Raw data from quantitative histology data are within the paper and its Supporting Information files. Raw sequencing data from RNA-seq experiments are available at the European Genome-phenome Archive (accession EGAS000010011679).
+==== Body
+Introduction
+Glioblastoma (GBM) is the most frequent primary brain tumor in adults and characterized by rapid, highly infiltrative growth and early recurrence after treatment. Despite intensive research and multimodal treatment including surgical resection, radiotherapy and chemotherapy, patients today still face a dismal prognosis with a median survival of 15 months [1].
+
+In tumors of epithelial origin, epithelial-mesenchymal transition (EMT), i.e. phenotypic plasticity towards an invasive phenotype, is considered an important mechanism in mediating cell motility necessary for invasion and metastasis. EMT is observed physiologically (e.g. during embryonic development) and under pathological conditions (e.g. in carcinomas). At the molecular level, this process is induced by key transcription factors such as ZEB1 as well as twist and snail homologs [2]. Mechanistically, all EMT inducers regulate cadherins, integrins and extracellular matrix proteins, which may be used as molecular markers of EMT. Additionally, ZEB1 has been reported to confer stemness properties to cancer cells by inducing expression of Sox2 and Bmi1 transcription factors via suppression of miR-200 family microRNAs [3]. In addition to this canonical EMT signaling, ZEB1 has lately been shown to be involved in DNA damage response [4] and modulation of tumor induced immunosuppression [5]. For epithelial cancers, this has led to a model of tumor progression in which ZEB1 serves as a molecular marker. ZEB1 and EMT have intensively been studied in carcinomas and has sparked several investigations of ZEB1 in primary brain tumors where it has been proposed to mediate response to hypoxia and increase proliferation, cell migration and invasion [6–9]. Recent experimental data conflictingly propose either a specialized role for ZEB1 in the invasive egde [9] or as universal effector of oncogenic signaling from various driver events [10].
+
+We here provide a comprehensive characterization of ZEB1 in a large series of human glioblastoma with respect to clinical and molecular traits. Our results suggest a constitutive role for ZEB1 in astroglial tumors and identify immune infiltration as a contributor to ZEB1 intratumoral heterogeneity.
+
+Materials and methods
+Patient samples
+A tissue microarray (TMA) of 243 human high grade glioma samples has been described before [11]. Briefly, patient samples diagnosed with glioblastoma and WHO grade III glioma were collected from 1998 to 2008. Three tissue cores per tumor were included in the TMA. Mean patient age at primary diagnosis of GBM was 63.1 ± 10.9 years and median survival of GBM cases was 9.1 months.
+
+The generation of the primary glioma cell lines from patient material used in this study was approved by the local ethics committee (Charité –Universitätsmedizin Berlin, EA1/265/12) with informed consent given by all study participants and has been described before [12]. Briefly, fresh surgical samples were dissociation mechanically and enzymatically, washed and subjected to erythrocyte lysis before culture under neurosphere conditions.
+
+Cell culture
+Cells were grown in Neurobasal medium (Life technologies) supplemented with 0.5X N2 supplement (Life Technologies) and 0.5X B27 (Life Technologies) as described [13], but with 20 ng ml−1 EGF (Peprotech), 20 ng ml−1 bFGF (Peprotech). Spheroids were dissociated using Accutase (Life Technologies). For adherent cell culture, 8-well chamber slides (Ibidi, Martinsried, Germany) were coated with 10 μg/ml laminin (Sigma, cat.no. L2020) for three hours or overnight [14]. Wells were washed three times with PBS and stored at 4°C until use.
+
+Immunohistochemistry
+Immunohistochemical staining of tissue microarray and full biopsy 4 μm thick FFPE tissue sections was performed on a VENTANA Benchmark XT automated staining instrument according to the manufacturer's instructions. Slides were de-paraffinized using EZ prep solution (Ventana Medical Systems, Tucson, AZ) for 30 minutes at 75°C. Antigen retrieval was accomplished on the automated stainer using CC1 solution (Ventana Medical Systems, Tucson, AZ) for 60 minutes at 95°C. The anti-ZEB1 primary antibody (HPA027524, Sigma-Aldrich, dilution 1:300, characterized as part of the Human Protein Atlas [15]) was applied and developed using the iVIEW DAB Detection Kit (Ventana Medical Systems, Tucson, AZ). All slides were then counterstained with hematoxylin for 4 minutes.
+
+For EGFR immunohistochemistry, slides were de-paraffinized using Xylol and antigen retrieval was performed by incubation at room temperature with Proteinase K (DAKO, S302080-2) for 7 minutes. Slides were then blocked for 20 minutes with 5% BSA in TBS-T and incubated with the EGFR primary antibody (Santa Cruz, sc-120, 1:500) for one hour at room temperature and then overnight at 4°C. After treating slides with 3% hydrogen peroxide for 5 minutes, incubation with secondary antibody (1:100) for one hour at room temperature followed. Finally, slides were covered with ABC-solution for 30 minutes, DAB chromogen for two minutes and then counterstained with hematoxylin for 90 seconds.
+
+Slides were scanned using the Pannoramic 250 Flash scanner (3DHistech). Digitalization was performed with extended depth of focus (EDF) using 5 layers with a distance of 6μm each. Subsequently, whole slide images were converted to JPEG2000 format or accessed via the ImageJ Microscope plugin for ROI selection and image export [16].
+
+For double immunofluorescent staining of ZEB1 and IDH1 R132H, anti-mouse Alexa 488 conjugated and anti-rabbit Cy3 conjugated secondary antibodies (Dianova, 1:100) were used. For quantification, multichannel images were acquired from ten fields of view and nuclei were automatically identified using CellProfiler [17]. Image montages were generated for each nucleus and presented in a blinded fashion to the experimenter using custom ImageJ scripts for manual dichotomization. For mutant IDH1, a nuclear or nuclear envelope staining pattern was required for positivity.
+
+Fluorescence in situ hybridization
+Fluorescence in situ hybridization was performed using Vysis EGFR/CEP-7 FISH probes (Abbott Molecular, 01N35-020) and Histology FISH Accessory Kit (Dako, K579911), following the manufacturer’s protocol. Briefly, slides were incubated in pre-treatment solution at 95–99°C for 10 minutes and digested with pepsin for 5 minutes before adding the FISH probe, followed by denaturation (66°C, 10 min) and hybridization (45°C, 120 min). Slides were counterstained with DAPI for 5 minutes.
+
+Tissue microarray analysis
+Individual spot images were extracted from whole slide images using a custom ImageJ gridding plugin. A region of interest (ROI) was defined automatically by determining the largest continuous non-white area using custom ImageJ scripts and refined manually to exclude artifacts and necrotic areas for each spot. For ZEB1 nuclear staining, ROIs were subjected to automated object recognition of single nuclei followed by intensity threshold based classification using CellProfiler [17]. Quantification of Ki67 and p53 stainings was performed by determining the area fraction of DAB positive cells using the ImmunoRatio ImageJ plugin [18]. For EGFR cytoplasmic staining, the mean intensity of the entire ROI was calculated. Manual scoring of EGFR amplification by FISH and pEGFR expression has been published before [11]. IDH1 mutation status was determined manually based upon IDH1 R132H specific antibody staining. The median of three replicate tissue spots was used for all graphs.
+
+Transcriptome sequencing and GBM subtype calling
+RNA sequencing has been performed previously to generate transcriptomic profiles [12]. Briefly, mRNA was purified using poly(A) selection and strand-specific libraries were prepped for HiSeq 2000 paired-end sequencing (Illumina). After sample demultiplexing, reads were aligned to the hg19 reference genome using TopHat, version 1.4.1, [19] and gene expression estimates were calculated using cufflinks, version 2.0.2 [20]. To assign a gene expression subtype to the parental tumor of each cell line, we used the original 840 gene signature proposed by Verhaak and colleagues, where each subtype (Classical, Mesenchymal, Neural, and Proneural) is represented by a set of 210 distinguishing genes [21]. After performing a z-score transformation on FPKM gene-level expression values, samples were subjected to single sample gene set enrichment analysis (ssGSEA) as implemented by the ssGSEAProjection algorithm in the GenePattern software suite [22]. In ssGSEA, an enrichment score is calculated for each of the classification gene sets and samples were assigned to the subtype with the highest score [23].
+
+Quantitative realtime PCR
+Total RNA was isolated from cells using RNeasy columns (Qiagen, Hilden, Germany) according to the manufacturer's instructions and quantified spectrometrically. 100–500 ng RNA were reverse-transcribed by 200 units MuLV reverse transcriptase (Promega) using random hexamer and oligo dT primers in 25 μl total reaction volume.
+
+Real-time PCR was performed on a realplex epGradient S PCR cycler (Eppendorf). For a 25 μl reaction, 12.5 μl 2X QuantiTect SYBRGreen mastermix (Qiagen), 0.8 μl of a 10 μM forward and reverse primer mix and 2 μl template were used. 40 cycles of 15 s denaturation at 94°C, 30 s annealing at the temperature indicated below and 30 s extension at 72°C were performed. Melting curve analysis was used to exclude primer-dimer formation and ensure proper amplification. The following primer pairs were used: ZEB1 (F: GATGATGAATGCGAGTCAGATGC, R: CTGGTCCTCTTCAGGTGCC, TA 60°C) [24], HPRT1 (F: TGAGGATTTGGAAAGGGTGT, R: GAGCACACAGAGGGCTACAA, TA 58°C), and GAPDH (F: GGCATGGACTGTGGTCATGAG, R: TGCACCACCAACTGCTTAGC, TA 58°C) [25]. Results were analyzed using the ∆∆Ct-method and normalized to the geometric mean of two housekeeping genes (HPRT1, GAPDH) [26]. Reactions were performed in duplicates and three independent experiments were performed from different passages per cell line.
+
+Immunocytochemistry and image cytometry
+104 cells were seeded on laminin-coated chamber slides (ibidi) and allowed to attach for 24 hours. Cells were fixed with 4% paraformaldehyde for 10min (PFA, Sigma), permeabilized for 4min in 0.5% Triton-X 100 (Carl Roth) and blocked for 15min in 5% serum from the secondary antibody species. Rabbit polycloncal anti-ZEB1 antibody (HPA027524, Sigma-Aldrich, dilution 1:100) and, for detection, Alexa 647-conjugated secondary antibodies (Life Technologies, dilution 1:500) were incubated for 45 min at 37°C. Nuclei were counterstained with DAPI at room temperature for 5 min. Imaging was performed using an IX81 inverted fluorescence microscope (Olympus).
+
+For quantification, 25 fields of view were imaged for each condition using a motorized stage. After illumination field correction, nuclei were detected in the DAPI channel and the mean intensity of each nucleus in the ZEB1 channel was determined using CellProfiler [17].
+
+Statistics
+To study associations of ZEB1 with molecular and clinical parameters, a random intercept linear mixed model was applied to account for the nested data structure of replicates nested in patients. The regression model was fitted to a subset of the data including all primary and secondary glioblastoma cases and considering patient sex, age, EGFR and IDH1 genomic alteration as well as p53 and EGFR expression as fixed factors. All three replicates entered the analysis as level one units, patients were level two units. For survival analysis, the log-rank test was used to test for group differences. All statistical analyses were performed using R with lme4 and lmerTest packages [27].
+
+Reproducibility and data availability
+All raw data from IHC quantification are provided in the Supplementary Material. Raw sequencing data from RNA-seq experiments are available at the European Genome-phenome Archive (http://www.ebi.ac.uk/ega, accession EGAS000010011679). ImageJ plugins for processing of TMA virtual slides are available at https://gitlab.com/pesk/TMAtools.
+
+Results
+ZEB1 is widely expressed in human gliomas
+We analyzed protein expression of ZEB1 by immunohistochemistry in a panel of human gliomas of different WHO grade and a tissue microarray (TMA) of 243 high grade glioma samples and performed an unbiased, single-cell level classification (S1 Table).
+
+First, we investigated full histological sections of gross total resections (N = 23) of gliomas with different IDH and chromosome 1p/19q codeletion status and normal brain controls (N = 5). We found widespread expression of ZEB1 in all tumor entities (Fig 1A) and observed a dichotomous nuclear expression pattern identifying ZEB1-positive and ZEB1-negative populations in all tumors. In non-tumor brain samples obtained from epilepsy surgery, we found that the ZEB1-positive fraction is expression is significantly lower (linear regression, p = 0.0005), especially in normal white matter where glial tumor usually reside (Fig 1B). As a validation, we compared ZEB1 expression in gliomas vs. normal brain tumors in public transcriptomic datasets from several studies [28] and found higher ZEB1 mRNA expression in glial tumors compared to normal brain controls (Fig 1C). The relative fraction of ZEB1-positive cells, however, varied markedly across tumors with higher variability observed in GBM (Fig 1B).
+
+10.1371/journal.pone.0185376.g001Fig 1 Expression of ZEB1 in human glial tumors and normal brain.
+(A) Biopsy samples of human glial tumors show abundant nuclear expression of ZEB1. Sections from non-neoplastic normal brain show weak cytoplasmic staining of neurons and nuclear expression in astrocytes. (B) Quantification of ZEB1 in full histological sections of gross total resections of human glial tumors. ZEB1 positive cells were quantified using automated image analysis. Dots represent the mean of multiple regions of interest (ROI) per tumor. Box plots show the distribution of the ZEB1 labelling in tumor with indicated integrated diagnosis according the 2016 WHO classification of CNS tumors [29]. (C) ZEB1 mRNA expression in public GBM cDNA microarray datasets. Boxplots show distribution in normal brain vs. GBM. Data were retrieved via the GlioVis portal [30].
+
+Intertumoral heterogeneity of ZEB1 expression in glioblastoma
+To further characterize the observed heterogeneity of ZEB1 expression in GBM, we analyzed a tissue microarray of GBM samples complemented with molecular markers, quantification of routine histology and clinical parameters (S2 Table). We determined the percentage of ZEB1+ cells (ZEB1 labelling index) from three cores per tumor with an average of 3,693 nuclei (min. 133; max. 9,485) quantified per core.
+
+To identify GBM of the classical and (G-CIMP+) proneural gene expression subtypes [21,31], we stratified samples with respect to EGFR amplification and IDH mutations. ZEB1 labelling index showed pronounced differences with respect to these subgroups (Fig 2A). A multivariate analysis confirmed that both EGFR expression and IDH1 status independently and significantly predict higher ZEB1 labelling index (S3 Table). Interestingly, similar results were found for bulk ZEB1 mRNA expression data in microarray based gene expression data from the TCGA GBM cohort (S1 Fig).
+
+10.1371/journal.pone.0185376.g002Fig 2 Intertumoral heterogeneity of ZEB1 expression.
+(A) Box plots of ZEB1 labelling index (percent) with respect to EGFR amplification and IDH1 mutation. (B,C) Correlation of ZEB1 expression and Ki67 labelling index or cellularity, respectively, in N = 193 glioblastoma TMA samples. Trend lines indicate linear regression estimates. Note log scale for Ki67 index. (D) Kaplan-Meier estimates of overall survival time (months) with respect to ZEB1 expression. The observed data range of ZEB1+ percentages was split into two equally sized bins at the threshold value of 49%.
+
+ZEB1 labelling index was significantly and positively correlated with Ki67 proliferation index (Pearson's r = 0.21, p = 0.003) and cellularity (Pearson's r = 0.28, p < 0.0001) (Fig 2B and 2C). In analogy to the well-established concept of ZEB1 as a marker of disease progression in carcinomas, we performed survival analysis separating the dataset into tumors with low versus high ZEB1 labelling index (Fig 2D). However, no significant difference in overall survival was found (p = 0.067), with Kaplan-Meier estimates of median survival being 7.1 months for ZEB1low tumor and 10.4 months for ZEB1high tumors.
+
+Intratumoral heterogeneity of ZEB1 expression in glioblastoma
+We then investigated how intratumoral heterogeneity contributes to ZEB1 expression and how it might explain the observed group differences with respect to EGFR and IDH status. Solid tumors are cellularily heterogeneous, both within the tumor cell population and with respect to composition of the cellular microenvironment.
+
+First, we wondered if ZEB1 is expressed by all tumor cells. Currently, mutation specific IDH1 immunohistochemistry is the only available true in situ tumor cell marker for gliomas. We therefore performed immunofluorescent double labeling of ZEB1 and IDH1 R132H in four IDH-mutant GBM cases (Fig 3A, S2 Fig) and quantified colocalization after blinded manual scoring of individual nuclei from at least three fields of views per tumor (S1 File). Indeed, 96.3% (95% confidence interval 95.0%–97.3%) of IDH1 mutant cells also stained positive for ZEB1. It is thus likely that nearly all tumor cells stain positive for ZEB1. In contrast, we observed variable staining intensities in ZEB1+ tumor cells (Fig 3A). Since increased ZEB1 expression by tumor cells has been associated with hypoxia and invasion, we analyzed regional ZEB1 expression when approaching the tumor edge (Fig 3B) or in perinecrotic areas (Fig 3C and 3D). We identified the tumor border of a GBM resection sample and quantified cellularity and the relative fraction of ZEB1 positive cells along a radial axis perpendicular to the tumor edge. Single ZEB1+ cells scatter in the periphery of the tumor and their relative numbers (i.e. the percentage of ZEB1+ cells) increase simultaneously with overall cellularity (Fig 3B, blue) when approaching the tumor core (Fig 3B, red). As higher ZEB1 expression has been suggested in migrating tumor cells [9], we also analyzed the mean staining intensity of each ZEB+ nucleus with respect to location (Fig 3B, green). Unexpectedly, ZEB1 staining intensity increased towards the tumor center. Even though DAB immunohistochemistry is a semi-quantitative method at best [32], the results do not indicate increased expression at the tumor edge. Next, we evaluated ZEB1 expression by tumor cells near in pseudopalisades and perinecrotic areas from seven additional cases in colabeling with CD68 to discriminate macrophages populating the necrotic region (Fig 3C and 3D). While some interspersed cells showing very high ZEB1 staining intensity could be observed, no general pattern of ZEB1 intensity with respect to proximity to necrosis could be appreciated. In summary, ZEB1 is expressed by nearly all tumor cells but a varying expression levels.
+
+10.1371/journal.pone.0185376.g003Fig 3 Intratumoral heterogeneity of ZEB1 expression.
+(A) Co-labeling of IDH1 R132H and ZEB1 in a case of IDH1 mutant glioblastoma. The image shown has been taken from one out of ten fields of view that were subjected to separate and blinded manual scoring of mutant IDH1 and ZEB1 expression. (B) ZEB1 gradient along the tumor edge of a mesenchymal GBM (BLN-7 parental tumor). ZEB1 IHC, overall cellularity (blue), the relative frequency of ZEB1+ cells (red) and the mean nuclear intensity of ZEB1+ cells (green) at the tumor edge are shown. (C,D) Expression of ZEB1 (pink) and CD68 (brown) in perinecrotic regions with (C) or without (D) pseudopalisades.
+
+ZEB1 expression in vitro
+To overcome the limitation of missing tumor markers for IDH-wildtype glioblastoma, we next analyzed a panel of nine patient-matched gliomasphere cell lines [12] to further test differences in ZEB1 expression within a pure population of tumor cells. We first investigated bulk mRNA expression levels respect to EGFR and IDH status (Fig 4A). All cell lines expressed ZEB1 on the transcriptional level irrespective of genotype. We then selected four cell lines for in depth study of ZEB1 protein expression on a single cell level. Irrespective of EGFR or IDH status or the observed heterogeneity of ZEB1 in the parental tumor (Fig 4B, S3 Fig), ZEB1 was homogeneously expressed in virtually all cells of all four cell lines (Fig 4C), which could be quantified by image cytometry (Fig 4D). We thus conclude that ZEB1 is robustly expressed in glial tumor cells.
+
+10.1371/journal.pone.0185376.g004Fig 4 Expression of ZEB1 in glioma stem cell lines.
+(A) ZEB1 mRNA expression in gliomasphere cell lines with known EGFR and IDH1 status of the parental tumor and cell line. Expression levels from RNA-seq are given as log2-transformed fragments per kilobase per million reads (RPKM). (B,C,D) ZEB1 protein expression in cell lines and matched parental tumors. Human GBMs (B) and matched glioma stem cell lines (C) were stained for ZEB1 using immunostaining. (D) The fraction of ZEB1-positive cells was quantified using image cytometry. Gating was performed with respect to a secondary antibody only negative control. Histograms show a representative intensity distribution of the negative control (dashed) and ZEB1 staining (solid) from at least three independent experiments.
+
+ZEB1 expression in the tumor microenvironment
+Finally, to test whether ZEB1 is expressed by cells of the tumor microenvironment, co-staining of ZEB1 with markers of immune and glial cells were performed in non-tumor tissue. Macrophage (CD68), microglia (Iba1) and leucocytes (CD45) markers revealed mutually exclusive patterns with ZEB1 (Fig 5A). In contrast, reactive astrocytes and endothelial cells showed strong ZEB1 positivity, and some neurons showed weak ZEB1 expression (Fig 5A). Thus both tumor cells and reactive astrocytes, but not immune cells stain ZEB1-positive. Since tumor-associated microglia and macrophages are the most abundant population of immune cells found in GBM [33], we further investigated mutual exclusivity of ZEB1 with CD68 or HLA-DR (as a marker of activated microglia and macrophages) in additional GBM cases (N = 8) using co-labeling (Fig 5B). As in non-neoplastic tissue, tumor-infiltrating CD68+ or HLA-DR+ cells were consistently negative for ZEB1, too. Thus, given this mutual exclusivity of ZEB1 expression in tumor vs. immune cells, the amount of immune infiltration will invariably be reflected in the overall ZEB1 labelling index of human GBMs.
+
+10.1371/journal.pone.0185376.g005Fig 5 ZEB1 expression in the tumor microenvironment.
+(A) Cell type specific expression of ZEB1 in reactive brain tissue. Human brain biopsy samples from cases of seizure-induced reactive gliosis or subacute infarction were co-stained for ZEB1 and Iba1 for microglia, CD45 for leucocytes, CD68 for macrophages and GFAP for astrocytes, respectively. Scale bars 50 μm. (B) Co-labeling of ZEB1 and CD68 or HLA-DR, respectively in human GBM. (C,D) Correlation of microarray-based gene expression levels of ZEB1 and myeloid cell markers CD68 (C) and AIF1 (D), respectively. Processed log2-transformed intensities from 157 GBM cases studied by Gravendeel et al. [34] were obtained via the GlioVis portal [30].
+
+To corroborate this conclusion, we correlated bulk ZEB1 mRNA levels from a public GBM dataset [34] with expression of macrophage/microglial markers (Fig 5C and 5D). For both CD68 and AIF1 (i.e. Iba1), we found significant negative correlations (Pearson's r = –0.33, p < 3 × 10−5 and r = –0.21, p = 0.007, respectively). Thus, indeed, immune infiltration is anti-correlated with bulk ZEB1 expression.
+
+Discussion
+The current study provides an in situ characterization of ZEB1 at single cell resolution in human gliomas. With our focus on glioblastoma, we show high intra- und interindividual variation of the ZEB1 labeling index and an association with EGFR amplification and IDH mutation, i.e. molecular traits of the classical and proneural subtypes, respectively. Many factors are likely to contribute to these variable ZEB1 expression levels, both intratumorally and intertumorally. Tumor cells with EGFR amplification [9], those in the process of migration or exposed to hypoxia [7,8] all have been shown to express higher levels of ZEB1 than controls and experimental studies have identified molecular mechanisms involved in ZEB1 regulation, such as PDGFRA, Wnt- or TGF-beta signaling [6,35–37]. Here, we show that the cellular composition of solid tumors contributes to this heterogeneity. While tumor cells in glioma consistently express ZEB1, we observed mutually exclusive staining with markers of immune cells (CD45, CD68, Iba1, HLA-DR). This is important for interpretation of ZEB1 gene and protein expression of bulk tumors with immune infiltration being a confounder which is tightly associated with GBM subtypes.
+
+It has previously been reported that ZEB1 expression is higher in IDH mutant lower grade glioma [38]. In our study, we have only analyzed a small number of diffuse astrocytomas and oligodendrogliomas, which precluded statistical testing, but we observed the same trend. Another study did not find an association between ZEB1 expression and EGFR amplification or IDH mutation, but compared bulk tumor levels [39].
+
+As we show in IDH-mutant glioblastomas and glioma cell lines, however, ZEB1 appears to be expressed uniformly by the entire tumor cell population. This surprisingly ubiquitous and robust expression pattern of ZEB1 in glial tumors challenges the canonical concept of ZEB1 as a marker of EMT and tumor progression. The numerous biological contexts that have recently been identified for ZEB1 to be involved in, such as immunosuppression and DNA repair [4,5], also suggest that its function is not restricted to an EMT signaling network.
+
+The results also challenge the findings studies claiming that ZEB1 is expressed only in about half of the examined cases, predominantly at the invasive edge or that survival negatively correlated with ZEB1 expression [8,9]. In more than 200 tumors, we found nearly ubiquitous expression in tissue microarray samples where spots represent selected subsamples from the tumor core. In gross total resections, we rather observed decreasing ZEB1+ percentage when approaching the tumor edge. We could also detect no significant differences in survival. However, there was a trend towards longer overall survival time in tumors with high ZEB1 labelling index suggesting that ZEB1 might be, if at all, a positive predictor of survival. In contrast, our data support findings from a recent study that suggest widespread co-expression of SOX2, OLIG2 and ZEB1 in glioblastoma, irrespective of key driver alterations [36].
+
+Differential amounts of infiltrating immune cells more likely explain the observed heterogeneity of the ZEB1 labelling index. Even though a recent study suggests an enrichment in expression of EMT-related genes in tumor-associated macrophages in gliomas [40], we showed that immune cells are consistently ZEB1-negative. As microglia and tumor-associated macrophages have been shown to account for up to 30% of cells in glioma [41–44], they can thus substantially contribute to the ZEB1-negative population. This hypothesis is further supported by the notion that mesenchymal glioblastoma show higher immune infiltration than all other gene expression subtypes [21,45]. We found lower ZEB1 labelling indices in GBM without EGFR amplification or IDH1 mutation, which might be explained by the fact that this group will accordingly be enriched for mesenchymal subtype tumors with higher amounts of immune infiltration. Finally, we show in public gene expression data from bulk glioblastoma samples that ZEB1 inversely correlates with markers of microglia and macrophages. These findings have implications for the interpretation of previous studies investigating ZEB1 levels. For example, Neswick and colleagues found higher ZEB1 levels in IDH-mutant gliomas [38]. Since IDH mutations cause an immunosuppressive phenotype with lower numbers of lymphocytes and macrophages [46–48]. The correlation between ZEB1 expression and IDH status might thus be a spurious relationship mediated by immune infiltrates. This also means that the prognostic value of ZEB1 reported by the above-mentioned study might only be a surrogate of this relationship and care must be taken to attribute it to ZEB1 function.
+
+In conclusion, our data support the notion of ZEB1 as universally expressed transcription factor in human glioblastoma with high inter- and intratumoral heterogeneity, which is best explained by differential contribution of the tumor microenvironment.
+
+Supporting information
+S1 Fig ZEB1 mRNA expression in TCGA GBM cases with respect to transcriptional subtypes.
+Normalized and log2 transformed ZEB1 mRNA expression data from The Cancer Genome Atlas microarray studies are plotted with respect to gene expression subtype. The proneural group is further differentiated by CpG island methylator phenotype (G-CIMP). Horizontal bars indicate subtype median.
+
+(TIFF)
+
+Click here for additional data file.
+
+ S2 Fig Double-labeling of ZEB1 and mutant IDH1 in human glioblastomas.
+Four cases of IDH-mutant GBM were subjected to blinded quantification of ZEB1 and IDH1 R132H status to determine the percentage of tumor cells staining positive for ZEB1. In addition to the case shown in Fig 3A, representative images for from remaining cases is shown here.
+
+(TIFF)
+
+Click here for additional data file.
+
+ S3 Fig Characterization of parental tumors of GBM stem cell lines.
+(A) EGFR fluorescence in situ hybridization depicts chromosomal EGFR copies (red) and a chromosome 7 centromeric probe (green). (B) EGFR and (C) IDH1 R132H immunocytochemistry were counterstained with hematoxylin.
+
+(TIFF)
+
+Click here for additional data file.
+
+ S1 File Manual scoring results of ZEB1 and mutant IDH1 status from 1,270 nuclei from four independent tumors from at least three fields of view per tumor.
+(PDF)
+
+Click here for additional data file.
+
+ S1 Table Overview of samples with quantifiable ZEB1 staining available.
+(DOC)
+
+Click here for additional data file.
+
+ S2 Table Raw data of histological scoring, clinical and molecular annotation.
+(XLSX)
+
+Click here for additional data file.
+
+ S3 Table Multivariate analysis by mixed model linear regression of ZEB1 labelling index with respect to molecular and clinical properties (n = 166 cases).
+(DOC)
+
+Click here for additional data file.
+
+ The authors would like to thank Janet Lips, Petra Matylewski and Randi Koll for excellent technical support, as well as Peter Hufnagl for access to slide scanners. JR and PE are participants of the BIH-Charité Clinician Scientist Program funded by the Charité—Universitätsmedizin Berlin and the Berlin Institute of Health.
+==== Refs
+References
+1 Stupp R , Mason WP , van den Bent MJ , Weller M , Fisher B , Taphoorn MJB , et al
+Radiotherapy plus Concomitant and Adjuvant Temozolomide for Glioblastoma . New England Journal of Medicine . 2005 ;352 : 987 –996 . doi: 10.1056/NEJMoa043330 
+15758009 
+2 Thiery JP , Acloque H , Huang RYJ , Nieto MA . Epithelial-Mesenchymal Transitions in Development and Disease . Cell . 2009 ;139 : 871 –890 . doi: 10.1016/j.cell.2009.11.007 
+19945376 
+3 Wellner U , Schubert J , Burk UC , Schmalhofer O , Zhu F , Sonntag A , et al
+The EMT-activator ZEB1 promotes tumorigenicity by repressing stemness-inhibiting microRNAs . Nat Cell Biol . 2009 ;11 : 1487 –1495 . doi: 10.1038/ncb1998 
+19935649 
+4 Zhang P , Wei Y , Wang L , Debeb BG , Yuan Y , Zhang J , et al
+ATM-mediated stabilization of ZEB1 promotes DNA damage response and radioresistance through CHK1 . Nat Cell Biol . 2014 ;advance online publication. doi: 10.1038/ncb3013 
+25086746 
+5 Chen L , Gibbons DL , Goswami S , Cortez MA , Ahn Y-H , Byers LA , et al
+Metastasis is regulated via microRNA-200/ZEB1 axis control of tumour cell PD-L1 expression and intratumoral immunosuppression . Nat Commun . 2014 ;5 
+doi: 10.1038/ncomms6241 
+25348003 
+6 Joseph JV , Conroy S , Tomar T , Eggens-Meijer E , Bhat K , Copray S , et al
+TGF-β is an inducer of ZEB1-dependent mesenchymal transdifferentiation in glioblastoma that is associated with tumor invasion . Cell Death Dis . 2014 ;5 : e1443 
+doi: 10.1038/cddis.2014.395 
+25275602 
+7 Joseph JV , Conroy S , Pavlov K , Sontakke P , Tomar T , Eggens-Meijer E , et al
+Hypoxia enhances migration and invasion in glioblastoma by promoting a mesenchymal shift mediated by the HIF1α-ZEB1 axis . Cancer Lett . 2015 ;359 : 107 –116 . doi: 10.1016/j.canlet.2015.01.010 
+25592037 
+8 Kahlert U , Suwala A , Raabe E , Siebzehnrubl F , Suarez M , Orr B , et al
+ZEB1 Promotes invasion in human fetal neural stem cells and hypoxic glioma neurospheres . Brain Pathol . 2014 ; doi: 10.1111/bpa.12240 
+25521330 
+9 Siebzehnrubl FA , Silver DJ , Tugertimur B , Deleyrolle LP , Siebzehnrubl D , Sarkisian MR , et al
+The ZEB1 pathway links glioblastoma initiation, invasion and chemoresistance . EMBO Mol Med . 2013 ;5 : 1196 –1212 . doi: 10.1002/emmm.201302827 
+23818228 
+10 Singh DK , Kollipara RK , Vemireddy V , Yang X-L , Sun Y , Regmi N , et al
+Oncogenes Activate an Autonomous Transcriptional Regulatory Circuit That Drives Glioblastoma . Cell Reports . 2017 ;18 : 961 –976 . doi: 10.1016/j.celrep.2016.12.064 
+28122245 
+11 Talasila KM , Soentgerath A , Euskirchen P , Rosland GV , Wang J , Huszthy PC , et al
+EGFR wild-type amplification and activation promote invasion and development of glioblastoma independent of angiogenesis . Acta Neuropathol . 2013 ;125 : 683 –698 . doi: 10.1007/s00401-013-1101-1 
+23429996 
+12 Heuling ES , Knab F , Radke J , Eskilsson E , Martinez-Ledesma E , Koch A , et al
+Prognostic Relevance of Tumor Purity and TERT Promoter Mutations on MGMT Promoter Methylation in Glioblastoma . Mol Cancer Res . 2017 ; molcanres.0322.2016. doi: 10.1158/1541-7786.MCR-16-0322 
+13 Lee J , Kotliarova S , Kotliarov Y , Li A , Su Q , Donin NM , et al
+Tumor stem cells derived from glioblastomas cultured in bFGF and EGF more closely mirror the phenotype and genotype of primary tumors than do serum-cultured cell lines . Cancer Cell . 2006 ;9 : 391 –403 . doi: 10.1016/j.ccr.2006.03.030 
+16697959 
+14 Pollard SM , Yoshikawa K , Clarke ID , Danovi D , Stricker S , Russell R , et al
+Glioma stem cell lines expanded in adherent culture have tumor-specific phenotypes and are suitable for chemical and genetic screens . Cell Stem Cell . 2009 ;4 : 568 –580 . doi: 10.1016/j.stem.2009.03.014 
+19497285 
+15 Uhlén M , Fagerberg L , Hallström BM , Lindskog C , Oksvold P , Mardinoglu A , et al
+Proteomics. Tissue-based map of the human proteome . Science . 2015 ;347 : 1260419 
+doi: 10.1126/science.1260419 
+25613900 
+16 Zerbe N , Hufnagl P , Schlüns K . Distributed computing in image analysis using open source frameworks and application to image sharpness assessment of histological whole slide images . Diagn Pathol . 2011 ;6 
+Suppl 1 : S16 
+doi: 10.1186/1746-1596-6-S1-S16 
+21489186 
+17 Carpenter AE , Jones TR , Lamprecht MR , Clarke C , Kang IH , Friman O , et al
+CellProfiler: image analysis software for identifying and quantifying cell phenotypes . Genome Biology . 2006 ;7 : R100 
+doi: 10.1186/gb-2006-7-10-r100 
+17076895 
+18 Tuominen VJ , Ruotoistenmäki S , Viitanen A , Jumppanen M , Isola J . ImmunoRatio: a publicly available web application for quantitative image analysis of estrogen receptor (ER), progesterone receptor (PR), and Ki-67 . Breast Cancer Research . 2010 ;12 : R56 
+doi: 10.1186/bcr2615 
+20663194 
+19 Trapnell C , Pachter L , Salzberg SL . TopHat: discovering splice junctions with RNA-Seq . Bioinformatics . 2009 ;25 : 1105 –1111 . doi: 10.1093/bioinformatics/btp120 
+19289445 
+20 Trapnell C , Williams BA , Pertea G , Mortazavi A , Kwan G , van Baren MJ , et al
+Transcript assembly and quantification by RNA-Seq reveals unannotated transcripts and isoform switching during cell differentiation . Nat Biotechnol . 2010 ;28 : 511 –515 . doi: 10.1038/nbt.1621 
+20436464 
+21 Verhaak RGW , Hoadley KA , Purdom E , Wang V , Qi Y , Wilkerson MD , et al
+Integrated genomic analysis identifies clinically relevant subtypes of glioblastoma characterized by abnormalities in PDGFRA, IDH1, EGFR, and NF1 . Cancer Cell . 2010 ;17 : 98 –110 . doi: 10.1016/j.ccr.2009.12.020 
+20129251 
+22 Reich M , Liefeld T , Gould J , Lerner J , Tamayo P , Mesirov JP . GenePattern 2.0 . Nat Genet . 2006 ;38 : 500 –501 . doi: 10.1038/ng0506-500 
+16642009 
+23 Barbie DA , Tamayo P , Boehm JS , Kim SY , Moody SE , Dunn IF , et al
+Systematic RNA interference reveals that oncogenic KRAS-driven cancers require TBK1 . Nature . 2009 ;462 : 108 –112 . doi: 10.1038/nature08460 
+19847166 
+24 Renthal NE , Chen C-C , Williams KC , Gerard RD , Prange-Kiel J , Mendelson CR . miR-200 family and targets, ZEB1 and ZEB2, modulate uterine quiescence and contractility during pregnancy and labor . PNAS . 2010 ;107 : 20828 –20833 . doi: 10.1073/pnas.1008301107 
+21079000 
+25 Euskirchen P , Skaftnesmo K- O , Huszthy PC , Brekkå N , Bjerkvig R , Jacobs AH , et al
+NUMB does not impair growth and differentiation status of experimental gliomas . Exp Cell Res . 2011 ;317 : 2864 –2873 . doi: 10.1016/j.yexcr.2011.09.002 
+21939656 
+26 Vandesompele J , Preter KD , Pattyn F , Poppe B , Roy NV , Paepe AD , et al
+Accurate normalization of real-time quantitative RT-PCR data by geometric averaging of multiple internal control genes . Genome Biol . 2002 ;3 : RESEARCH0034 
+12184808 
+27 Bates D, Mächler M, Bolker B, Walker S. Fitting Linear Mixed-Effects Models using lme4. arXiv:14065823 [stat]. 2014; Available: http://arxiv.org/abs/1406.5823
+28 Brennan CW , Verhaak RGW , McKenna A , Campos B , Noushmehr H , Salama SR , et al
+The Somatic Genomic Landscape of Glioblastoma . Cell . 2013 ;155 : 462 –477 . doi: 10.1016/j.cell.2013.09.034 
+24120142 
+29 Louis DN , Perry A , Reifenberger G , Deimling A von , Figarella-Branger D , Cavenee WK , et al
+The 2016 World Health Organization Classification of Tumors of the Central Nervous System: a summary . Acta Neuropathol . 2016 ; 1 –18 . doi: 10.1007/s00401-016-1545-1 
+27157931 
+30 Bowman RL , Wang Q , Carro A , Verhaak RGW , Squatrito M . GlioVis data portal for visualization and analysis of brain tumor expression datasets . Neuro-oncology . 2017 ;19 : 139 –141 . doi: 10.1093/neuonc/now247 
+28031383 
+31 Noushmehr H , Weisenberger DJ , Diefes K , Phillips HS , Pujara K , Berman BP , et al
+Identification of a CpG island methylator phenotype that defines a distinct subgroup of glioma . Cancer Cell . 2010 ;17 : 510 –522 . doi: 10.1016/j.ccr.2010.03.017 
+20399149 
+32 van der Loos CM . Multiple immunoenzyme staining: methods and visualizations for the observation with spectral imaging . J Histochem Cytochem . 2008 ;56 : 313 –328 . doi: 10.1369/jhc.2007.950170 
+18158282 
+33 Charles NA , Holland EC , Gilbertson R , Glass R , Kettenmann H . The brain tumor microenvironment . Glia . 2011 ;59 : 1169 –1180 . doi: 10.1002/glia.21136 
+21446047 
+34 Gravendeel LAM , Kouwenhoven MCM , Gevaert O , de Rooi JJ , Stubbs AP , Duijm JE , et al
+Intrinsic gene expression profiles of gliomas are a better predictor of survival than histology . Cancer Res . 2009 ;69 : 9065 –9072 . doi: 10.1158/0008-5472.CAN-09-2307 
+19920198 
+35 Kahlert U , Maciaczyk D , Doostkam S , Orr BA , Simons B , Bogiel T , et al
+Activation of canonical WNT/β-catenin signaling enhances in vitro motility of glioblastoma cells by activation of ZEB1 and other activators of epithelial-to-mesenchymal transition . Cancer letters . 2012 ; doi: 10.1016/j.canlet.2012.05.024 
+22652173 
+36 Singh SK , Fiorelli R , Kupp R , Rajan S , Szeto E , Lo Cascio C , et al
+Post-translational Modifications of OLIG2 Regulate Glioma Invasion through the TGF-β Pathway . Cell Rep . 2016 ; doi: 10.1016/j.celrep.2016.06.045 
+27396340 
+37 Zhang L , Zhang W , Li Y , Alvarez A , Li Z , Wang Y , et al
+SHP-2-upregulated ZEB1 is important for PDGFRα-driven glioma epithelial-mesenchymal transition and invasion in mice and humans . Oncogene . 2016 ; doi: 10.1038/onc.2016.100 
+27041571 
+38 Nesvick CL , Zhang C , Edwards NA , Montgomery BK , Lee M , Yang C , et al
+ZEB1 expression is increased in IDH1-mutant lower-grade gliomas . J Neurooncol . 2016 ; doi: 10.1007/s11060-016-2240-8 
+27568035 
+39 Nordfors K , Haapasalo J , Mäkelä K , Granberg KJ , Nykter M , Korja M , et al
+Twist predicts poor outcome of patients with astrocytic glioma . J Clin Pathol . 2015 ; doi: 10.1136/jclinpath-2015-202868 
+26163539 
+40 Gabrusiewicz K , Rodriguez B , Wei J , Hashimoto Y , Healy LM , Maiti SN , et al
+Glioblastoma-infiltrated innate immune cells resemble M0 macrophage phenotype . JCI Insight . 2016 ;1 
+doi: 10.1172/jci.insight.85841 
+26973881 
+41 Klein R , Roggendorf W . Increased microglia proliferation separates pilocytic astrocytomas from diffuse astrocytomas: a double labeling study . Acta Neuropathol . 2001 ;101 : 245 –248 . 11307624 
+42 Komohara Y , Ohnishi K , Kuratsu J , Takeya M . Possible involvement of the M2 anti-inflammatory macrophage phenotype in growth of human gliomas . J Pathol . 2008 ;216 : 15 –24 . doi: 10.1002/path.2370 
+18553315 
+43 Morantz RA , Wood GW , Foster M , Clark M , Gollahon K . Macrophages in experimental and human brain tumors. Part 2: studies of the macrophage content of human brain tumors . J Neurosurg . 1979 ;50 : 305 –311 . doi: 10.3171/jns.1979.50.3.0305 
+422981 
+44 Rossi ML , Hughes JT , Esiri MM , Coakham HB , Brownell DB . Immunohistological study of mononuclear cell infiltrate in malignant gliomas . Acta Neuropathol . 1987 ;74 : 269 –277 . 3314311 
+45 Engler JR , Robinson AE , Smirnov I , Hodgson JG , Berger MS , Gupta N , et al
+Increased Microglia/Macrophage Gene Expression in a Subset of Adult and Pediatric Astrocytomas . PLoS ONE . 2012 ;7 : e43339 
+doi: 10.1371/journal.pone.0043339 
+22937035 
+46 Berghoff AS , Kiesel B , Widhalm G , Wilhelm D , Rajky O , Kurscheid S , et al
+Correlation of immune phenotype with IDH mutation in diffuse glioma . Neuro-oncology . 2017 ; doi: 10.1093/neuonc/nox054 
+28531337 
+47 Amankulor NM , Kim Y , Arora S , Kargl J , Szulzewsky F , Hanke M , et al
+Mutant IDH1 regulates the tumor-associated immune system in gliomas . Genes Dev . 2017 ;31 : 774 –786 . doi: 10.1101/gad.294991.116 
+28465358 
+48 Kohanbash G , Carrera DA , Shrivastav S , Ahn BJ , Jahan N , Mazor T , et al
+Isocitrate dehydrogenase mutations suppress STAT1 and CD8+ T cell accumulation in gliomas . J Clin Invest . 2017 ;127 : 1425 –1437 . doi: 10.1172/JCI90644 
+28319047
+

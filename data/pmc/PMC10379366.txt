@@ -1,0 +1,288 @@
+
+==== Front
+Int J Mol Sci
+Int J Mol Sci
+ijms
+International Journal of Molecular Sciences
+1422-0067
+MDPI
+
+10.3390/ijms241411376
+ijms-24-11376
+Article
+Moringa oleifera Lam. Isothiocyanate Quinazolinone Derivatives Inhibit U251 Glioma Cell Proliferation through Cell Cycle Regulation and Apoptosis Induction
+Xie Jing Methodology Validation Data curation Writing – original draft Visualization 123†
+Yang Ming-Rong 14†
+Hu Xia Methodology Validation Data curation Writing – original draft Visualization 15
+Hong Zi-Shan 15
+Bai Yu-Ying 16
+Sheng Jun Methodology 1
+Tian Yang Conceptualization Resources Writing – review & editing Supervision Project administration Funding acquisition 235*
+Shi Chong-Ying 15
+1 College of Food Science and Technology, Yunnan Agricultural University, Kunming 650201, China; jingxie0624@163.com (J.X.); 15228872437@163.com (X.H.); shengjun_ynau@163.com (J.S.); shichongying@163.com (C.-Y.S.)
+2 Engineering Research Center of Development and Utilization of Food and Drug Homologous Resources, Ministry of Education, Yunnan Agricultural University, Kunming 650201, China
+3 National Research and Development Professional Center for Moringa Processing Technology, Yunnan Agricultural University, Kunming 650201, China
+4 Yunnan Rural Science and Technology Service Center, Kunming 650021, China
+5 Yunnan Key Laboratory of Precision Nutrition and Personalized Food Manufacturing, Yunnan Agricultural University, Kunming 650201, China
+6 Yunnan Provincial Engineering Research Center for Edible and Medicinal Homologous Functional Food, Yunnan Agricultural University, Kunming 650201, China
+* Correspondence: tianyang1208@163.com; Tel.: +86-159-2520-0355; Fax: +86-0871-6522-7843
+† These authors contributed equally to this work.
+
+12 7 2023
+7 2023
+24 14 1137605 6 2023
+03 7 2023
+07 7 2023
+© 2023 by the authors.
+2023
+https://creativecommons.org/licenses/by/4.0/ Licensee MDPI, Basel, Switzerland. This article is an open access article distributed under the terms and conditions of the Creative Commons Attribution (CC BY) license (https://creativecommons.org/licenses/by/4.0/).
+A major active constituent of Moringa oleifera Lam. is 4-[(α-L-rhamnose oxy) benzyl] isothiocyanate (MITC). To broaden MITC’s application and improve its biological activity, we synthesized a series of MITC quinazolinone derivatives and evaluated their anticancer activity. The anticancer effects and mechanisms of the compound with the most potent anticancer activity were investigated further. Among 16 MITC quinazolinone derivatives which were analyzed, MITC-12 significantly inhibited the growth of U251, A375, A431, HCT-116, HeLa, and MDA-MB-231 cells. MITC-12 significantly inhibited U251 cell proliferation in a time- and dose-dependent manner and decreased the number of EdU-positive cells, but was not toxic to normal human gastric mucosal cells (GES-1). Further, MITC-12 induced apoptosis of U251 cells, and increased caspase-3 expression levels and the Bax:Bcl-2 ratio. In addition, MITC-12 significantly decreased the proportion of U251 cells in the G1 phase and increased it in S and G2 phases. Transcriptome sequencing showed that MITC-12 had a significant regulatory effect on pathways regulating the cell cycle. Further, MITC-12 significantly decreased the expression levels of the cell cycle-related proteins CDK2, cyclinD1, and cyclinE, and increased those of cyclinA2, as well as the p-JNK:JNK ratio. These results indicate that MITC-12 inhibits U251 cell proliferation by inducing apoptosis and cell cycle arrest, activating JNK, and regulating cell cycle-associated proteins. MITC-12 has potential for use in the prevention and treatment of glioma.
+
+Moringa oleifera Lam. isothiocyanate
+quinazolinone
+glioma U251 cells
+apoptosis
+cell cycle
+Major Project of Science and Technology Department of Yunnan Province202002AA100005 202102AE090027-2 YEFICRC project of Yunnan provincial key programs2019ZG009 Industrial Technology Leading Talent Progrem of the Ten Thousand People of Yunnan ProvinceYNWR-CYJS-2020-010 Yunnan Province-City Integration Project202302AN360002 This work was supported by the Major Project of Science and Technology Department of Yunnan Province (202002AA100005 and 202102AE090027-2), YEFICRC project of Yunnan provincial key programs (2019ZG009), Industrial Technology Leading Talent Progrem of the Ten Thousand People of Yunnan Province (YNWR-CYJS-2020-010), Yunnan Province-City Integration Project (202302AN360002).
+==== Body
+pmc1. Introduction
+
+Moringa oleifera Lam. is a perennial tropical deciduous tree of the genus Moringa (family, Moringaceae), which is rich in nutritional value and used as a traditional medicinal plant in India and Africa. M. oleifera has physiological effects, including anti-diabetic, anti-hyperlipidemic, cardioprotective, hepatoprotective, anticancer, antioxidant, and anti-inflammatory properties [1,2]. Isothiocyanates are a class of sulfur-containing plant secondary metabolites that are abundant in Brassicaceae, a genus of plants in the cruciferous family [3]. Recent evidence suggests that M. oleifera leaves and seeds are rich in isothiocyanates, and that isothiocyanates are among its major active constituents [2]. M. oleifera contains four unique isothiocyanates, all of which are highly bioactive, with 4-[(α-L-rhamnose-oxy)benzyl] isothiocyanate (MITC) having the highest content and strongest activity [4]. MITC exhibits hypolipidemic, hypoglycemic, anti-inflammatory, antioxidant, and anti-cancer activities [5]. For example, it inhibits the proliferation of hepatocellular carcinoma Hep3B cells [6], colon cancer Caco-2 cells [7], and human prostate cancer PC-3 cells [8], as well as inhibiting the growth of SH-SY5Y human neuroblastoma cells by regulating NF-κB and apoptosis-related factors [9]. However, isothiocyanates are structurally unstable and highly susceptible to degradation, which hinders their development.
+
+Quinazolinone is an important nitrogen-containing heterocyclic scaffold that can link pharmacological groups with different properties to its support structure, increasing the structural stability of the compounds [10]. Quinazolinones have a wide range of biological activities and pharmacological properties [11], including anti-inflammatory [10], bactericidal [12], anti-tuberculosis [13], anti-diabetic [14], anti-HIV [15], and anti-cancer [16] effects. In particular, natural quinazolinones and quinazolinone derivatives have shown great potential in anticancer research, and several quinazolinone derivatives have been used in clinical cancer treatments, such as idelalisib, nolatrexed, and raltitrexed dihydrochloride [17]; however, no studies on the anti-cancer properties of MITC quinazolinone derivatives have been reported.
+
+Glioma is a primary malignant tumor of the central nervous system [18], which accounts for approximately 1–3% of systemic malignancies and around 40% of intracranial tumors [19]. The main drugs approved for the treatment of patients with glioma are cisplatin, temozolomide, and lomustine, but primary or secondary resistance of glioma cells to these drugs severely limits their efficacy in this context [20]. In the twentieth century, natural anti-cancer products were found to significantly increase human life expectancy [21]. Therefore, effective and safe natural products from plants are an important source for the possible discovery of anti-cancer drugs.
+
+In this study, we synthesized a series of quinazolinone derivatives of MITC and investigated their anticancer activities, as well as further elucidating the role and mechanism of [6,8-dibromo-2-thio-3-(4-rhamnosylphenylmethyl)-2,3-dihydroquinazolin-4-one] (MITC-12), which exhibited the most potent anticancer activity in terms of inhibiting U251 cell proliferation.
+
+2. Results
+
+2.1. Elucidation of Structures of MITC Quinazolinone Derivatives
+
+Sixteen MITC quinazolinone derivatives were synthesized using the method described in Section 4.3. The chemical reaction formulae are presented in Supplementary Figure S1, and the substituents of the 16 compounds are shown in Supplementary Table S1. In addition, the structures of all compounds were confirmed by 1H-NMR and 13C-NMR; the results and detailed analysis are shown in Supplementary Material 2, and the structural formulae are presented in Figure 1. The derivative, 6,8-dibromo-2-thio-(4-rhamnosylphenylmethyl)-2,3-dihydroquinazolin-4-one (MITC-12), was obtained at 90 °C; the sample was a grey powder with a yield of 20.4%, a purity of 91%, a molecular weight of 585.94, and the chemical formula C21H20Br2N2O6S. The properties of the other MITC quinazolinone isothiocyanate derivatives are shown in Supplementary Table S2.
+
+2.2. MITC-12 Has Strong Growth Inhibitory Activity against U251 Cells
+
+To analyze the anticancer activity of the MITC quinazolinone derivatives, 8 cancer cell lines were treated with each of the 16 MITC quinazolinone derivatives (10 μM) for 48 h. As shown in Table 1, various derivatives showed growth-inhibitory effects on four types of cancer cells (HCT-116, HeLa, MDA-MB-231, and U251). In particular, MITC-12 significantly inhibited the growth of U251, A375, A431, HCT-116, HeLa, and MDA-MB-231 cells, with inhibition rates of 88 ± 0.01% (p < 0.001), 84 ± 0.01% (p < 0.001), 83 ± 0.01% (p < 0.001), 60 ± 0.05% (p < 0.001), 54 ± 0.02% (p < 0.001), and 54 ± 0.04% (p < 0.001), respectively (Supplementary Figure S2). Importantly, MITC-12 showed the strongest inhibitory effect on the growth of U251 cells relative to other cells.
+
+2.3. MITC-12 Inhibited U251 Cell Proliferation
+
+To further investigate whether the growth-inhibitory effect of MITC-12 on U251 cells was dose- and time-dependent, we treated U251 cells with different concentrations of MITC-12 (0, 0.5, 1, 2, 4, 8, and 16 μM) for 24, 48, and 72 h. As shown in Figure 2A, the cell viability of U251 cells decreased from 100.00% to: 82.30% (p < 0.001), 74.53% (p < 0.001), 49.01% (p < 0.001), 26.42% (p < 0.001), 17.28% (p < 0.001), and 14.02% after 24 h; 72.68% (p < 0.001), 52.36% (p < 0.001), 36.50% (p < 0.001), 17.82% (p < 0.001), 15.20% (p < 0.001), and 16.07% (p < 0.001) after 48 h; and 70.35% (p < 0.001), 60.04% (p < 0.001), 45.19% (p < 0.001), 8.31% (p < 0.001), 6.85% (p < 0.001), and 6.57% (p < 0.001) after 72 h, respectively. The half-maximal inhibitory concentrations (IC50) were 4.05, 2.70, and 2.25 μM for 24, 48, and 72 h, respectively. These results demonstrate that MITC-12 significantly inhibits U251 cell proliferation in a dose- and time-dependent manner.
+
+To determine whether MITC-12 had toxic effects on normal cells, human gastric mucosal (GES-1) cells were treated with the same doses of MITC-12 (0, 0.5, 1, 2, 4, 8, or 16 μM) for 24, 48, or 72 h. The GES-1 cell viability after treatment with different concentrations of MITC-12 was >93% relative to the control group (Figure 2B), demonstrating that MITC-12 was not toxic to normal cells.
+
+Next, we assessed the effect of MITC-12 on U251 cell proliferation using cell colony formation assays and found that MITC-12 had a significant inhibitory effect on U251 cell proliferation (Figure 2C).
+
+2.4. MITC-12 Induced Apoptosis of U251 Cells
+
+To investigate whether MITC-12 induced apoptosis of U251 cells, the U251 cells were treated with different concentrations of MITC-12 (0, 1, 2, and 4 μM) for 24 h, and their apoptosis rates were assessed by flow cytometry. The U251 cell apoptosis rates gradually increased along with the MITC-12 concentration, with overall rates increasing from 8.88% to 10.62%, 25.30% (p < 0.001), and 40.61% (p < 0.001), respectively (Figure 3A). In addition, the expression levels of the apoptotic proteins, caspase-3 and Bax/Bcl-2, were significantly increased in MITC-12-treated U251 cells compared to the control group (Figure 3B).
+
+To further illustrate the anti-proliferation and apoptosis-inducing effects of MITC-12 on U251 cells, cells were treated with different concentrations of MITC-12 (0, 2, and 4 µM) for 24 h, then stained with EDU and Hoechst 33342. Compared with the control group, in cells treated with increasing MITC-12 concentrations, the gaps between cells expanded, the number of EdU-positive cells gradually decreased, and Hoechst 33,342 staining showed that the nuclei were of different sizes and that the cells exhibited clear apoptotic features (Figure 3C). These results suggest that MITC-12 induced U251 cell apoptosis.
+
+2.5. MITC-12 Induced U251 Cell Cycle Arrest
+
+To determine whether the inhibitory effect of MITC-12 on U251 cell growth was associated with cell cycle arrest, U251 cells were treated with MITC-12 (0, 1, 2, and 4 µM) for 24 h, and cells were stained for the detection of cell cycle changes by flow cytometry. With the increasing MITC-12 dose, the percentages of cells in the G1 phase reduced from 77.99% to 75.6%, 57.46% (p < 0.001), and 55.40% (p < 0.001); while the percentages of cells in the S phase increased from 11.49% to 13.85%, 26.41% (p < 0.001), and 27.37% (p < 0.001), respectively. The percentage of cells in the G2 phase also increased from 10.30% to 10.45%, 15.93% (p < 0.001), and 15.50% (p < 0.001), respectively (Figure 4). These results indicate that MITC-12 induces S and G2 phase arrest of U251 cells.
+
+2.6. Transcriptomics Analysis of U251 Cells
+
+To determine the biological processes and pathways underlying MITC-12 inhibition of U251 cell growth, U251 cells were treated with MITC-12 (0 and 2 µM) for 24 h, and then transcriptome sequencing analysis was conducted. Significant differences in transcriptional profiles were detected between the control and MITC-12 groups (Figure 5A,B). Specifically, 476 DEGs were detected between the two groups, among which 286 were upregulated and 190 were downregulated (Figure 5C). Volcano plots of DEG expression levels are presented in Figure 5D.
+
+GO enrichment analysis showed that the DEGs between the two groups were mainly involved in the following biological process domains: regulation of nuclear division, regulation of mitotic nuclear division, regulation of mitotic metaphase/anaphase transition, mitotic cell cycle process, cell cycle, regulation of metaphase/anaphase transition of cell cycle, and cell division (Figure 5E). These results indicate that the DEGs mainly function in cell cycle regulation and cell division.
+
+Kyoto Encyclopedia of Genes and Genomes (KEGG) pathway analysis of DEGs was conducted to search for cellular signaling pathways significantly altered by MITC-12, with the aim of further understanding the possible mechanisms underlying the effect of MITC-12 on U251 cells. The DEGs between the two groups were mainly enriched for the following pathways: cell cycle, pyrimidine metabolism, microRNAs in cancer, MAPK signaling pathway, and pathways in cancer (Figure 5F). These results further suggest that cell cycle pathways are highly enriched for DEGs.
+
+From the 476 DEGs, we selected the top four with significantly upregulated expression (MT2A, TMEM158, UQCC3, and ETV4) and the top five with significantly downregulated expression (MMP7, CUBN, KRT15, MIR210HG, and STC1) for RT-PCR validation. Compared with the control group, mRNA expression levels of TMEM158, UQCC3, and ETV4 were significantly increased, while those of MMP7, CUBN, KRT15, MIR210HG, and STC1 were significantly decreased (Supplementary Figure S3). Overall, the expression trends of the nine genes were completely consistent with those detected by RNA-seq, confirming that the sequencing data were reliable.
+
+2.7. Effect of MITC-12 on the Expression Levels of Cell Cycle and JNK Pathway Proteins in U251 Cells
+
+Transcriptome analysis revealed that the DEGs which were significantly regulated by MITC-12 were mainly involved in the regulation of cell cycle pathways. To further clarify the regulatory role of MITC-12 in the cell cycle of U251 cells, cells were treated with MITC-12 (0, 2, and 4 µM) for 24 h and the expression levels of cell cycle-related proteins were detected by Western blotting. Compared with the control group, MITC-12 treatment significantly decreased the expression of the cell cycle-related proteins CDK2, cyclinD1, and cyclinE, and significantly increased that of cyclinA2 (Figure 6).
+
+JNK activation is able to block the U251 cell cycle [22,23]; therefore, we next determined the expression levels of JNK and p-JNK proteins by Western blotting. Relative to the control group, MITC-12 treatment significantly increased the p-JNK:JNK ratio (Figure 6), suggesting that MITC-12 induces cell cycle arrest by regulating the expression of cell cycle-associated proteins, and that this function of MITC-12 is associated with JNK activation.
+
+3. Discussion
+
+Moringa oleifera Lam. is a tropical multifunctional plant with “medicinal and edible” properties. In recent years, there have been many studies on the development of health foods and the extraction of active ingredients from M. oleifera. The glycosinolate content in M. oleifera seeds is approximately 9%, and their enzymatic product, 4-[(α-L-rhamnose-oxy) benzyl] isothiocyanate, has various biological activities, including antioxidant and anticancer functions [24,25]. Despite this, the unique chemical structures of some isothiocyanates mean they are susceptible to degradation under the influence of temperature, pH, light, solvents, and other factors. MITC is unstable in response to heat; therefore, we optimized its structure by generating a series of quinazolinone derivatives, among which screening demonstrated that MITC-12 had the strongest anticancer activity.
+
+The halogen elements (fluorine (F), chlorine (Cl), bromine (Br) and iodine (I)), -OH, -OCH3, and -NO2) are often used as substituent groups in drug design; for example, Nazanin et al. synthesized a complex of Pd and halogen (Pd(II)-complex) with good anticancer activity and low toxicity [26]. Further, Tan et al. added -OH and -Br groups to isoindole-1,3(2H)-dione derivatives and found that their inhibitory activity against HeLa, C6, and A549 cancer cells was enhanced, indicating that -OH and -Br groups can enhance the anticancer activity of isoindole-1,3(2H)-dione derivatives [27]. Duy et al. synthesized a series of four lactose-modified BODIPY compounds with different substituents (-I, -H, -OCH3 and -NO2) added to the p-phenyl moiety attached to the intermediate position of the BODIPY nucleus. The photophysical properties and photodynamic anticancer activity of these compounds were investigated, and compounds with added substituents showed better anticancer activity against HeLa and Huh-7 tumor cells [28]. Overall, use of the halogen group elements ((-Br, -Cl, -F, -I), -OH, -OCH3, and -NO2) as substituents has been found to enhance compound anticancer activity. Therefore, we selected these substituents, used them to synthesize 16 MITC quinazolinone derivatives, and evaluated their anticancer activity.
+
+In our study, MITC-12 was found to have the strongest inhibitory activity against U251 cells, followed by MITC-09 and MITC-10. Notably, both MITC-12 and MITC-09 are meta-substituted, and both have -Br at the R4 position. This is consistent with previous findings that Br-substituted azulene derivatives have better anti-proliferative effects against breast and prostate cancer cells [29]. Further, brominated 8-hydroxy, 8-methoxy, 8-aminoquinolines, and novel cyano 8-hydroxyquinolines showed improved anti-proliferative activity against C6, HeLa, and HT29 cells [30]. In addition, a comparative study of the pharmacological activity of halogen (F-, Cl- and Br-) para- and meta-substituted 1-phenyl-2-(1-pyrrolidinyl)-1-pentanone (α-PVP) derivatives revealed that meta-substitution led to compounds with superior activity relative to para-substitution [31]. Interestingly, MITC-04, MITC-03, and MITC-01, which showed the least inhibitory activity against U251 cells, were all substituted at the R3 position. In conclusion, the strong anticancer effects of MITC-12 are likely due to its meta-substitution and because both substituents are -Br.
+
+Apoptosis is a key tumor suppression mechanism. Apoptotic cell death inhibits tumorigenesis at multiple stages, from transformation to metastasis, and is a major effector function of many anti-cancer therapies [32]. A series of novel quinazolinone derivatives showed growth-inhibitory activity against MDA-MB-231, MCF-7, and T-47D cells, and AO/EB double-staining and flow cytometry analysis showed that some quinazolinone derivatives had apoptosis-inducing effects on cancer cells [33]. Apoptosis can be induced by the endogenous mitochondrial pathway, in which Bcl-2 and Bax are two important proteins. Bcl-2 prevents the permeabilization of the outer mitochondrial membrane, and its high expression inhibits cell apoptosis. Bax promotes the permeabilization of the mitochondrial outer membrane and has a pro-apoptotic effect. Hence, changes in the Bax:Bcl-2 ratio are important in the regulation of apoptosis [34]. In addition, activation of caspase-3, a major effector of the apoptotic pathway, can inactivate the polymerase, PARP, leading to apoptosis [35]. In this study, we detected apoptosis using the Annexin V-FITC/PI double-staining method and flow cytometry, and found that the total numbers of apoptotic cells increased significantly after MITC-12 treatment of U251 cells for 24 h. Further, we conducted Western blotting to detect the expression of apoptotic proteins in U251 cells and found that caspase-3 expression and the Bax:Bcl-2 ratio were significantly increased after MITC-12 treatment. Similar results were obtained in a study by Liu [36], where phenethyl isothiocyanate also induced apoptosis of IPEC-J2 cells via the mitochondria-mediated Bax/Bcl-2 pathway. In addition, U251 cells treated with MITC-12 showed significant apoptotic features, as assessed by Hoechst 33,342 staining. These results suggest that MITC-12 can induce U251 glioma cell apoptosis.
+
+The cell cycle is a regulatory process, responsible for proper DNA replication and cell division, that progresses from the resting phase (G0) through the proliferative phases (G1, S, G2, and M) and back to rest [37]. Uncontrolled cell proliferation and genomic instability are closely related to abnormal cancer cell cycle activation [38]. Therefore, blocking the cell cycle of cancer cells has become a key target in the treatment of malignant tumors. In this study, we used flow cytometry to detect cell cycle changes and found that the percentage of U251 cells in the S phase was significantly increased after MITC-12 treatment. In addition, changes in gene expression in U251 cells in response to MITC-12 treatment were analyzed by transcriptome sequencing. Transcriptome analysis is a research method in molecular biology that has been used to analyze human health, food, and environmental issues. A transcriptome is the complete collection of gene transcripts or RNA species transcribed in a specific cell type, tissue, or organism in a given physiological or pathological state; it includes both coding RNA molecules, which are translated into proteins, and non-coding RNAs, which are involved in post-transcriptional control and influence gene expression [39]. We identified 476 DEGs. In addition, transcriptomics not only detects changes in the expression level of each gene in different transcriptome samples, but transcriptome data can also be subjected to GO and KEGG analyses to predict and classify the biological processes, pathways, or functions performed by the identified genes. GO and KEGG analyses of U251 transcriptome data showed that the identified DEGs were significantly enriched in cell cycle-related pathways. This finding indicates that treatment with MITC-12 significantly influenced the cell cycle in U251 cells.
+
+Cell cycle progression is regulated by a combination of cyclins and cyclin-dependent kinases (CDKs) which, when activated, form complexes to regulate different phases of the cell cycle, with cyclinA2 and CDK2 being the major complexes that regulate the S phase of cells [40]. Downregulation of cyclinD1 protein expression only occurs when cells are blocked in the S phase, while cyclinE is an important positive regulator involved in the late G1 to early S phase of the cell cycle. CyclinE is amplified and overexpressed in various tumors, plays an important role in tumor initiation and progression, and acts as an oncogene. Therefore, we examined changes in related protein expression levels by means of Western blotting and found that MITC-12 significantly downregulated CDK2 and cyclinE protein expression levels, while cyclinD1 protein expression also showed a downregulation trend. CDK2 expression levels are decreased during cellular S-phase block, and although cyclinA2 expression levels are upregulated, downregulation of CDK2 and cyclinE leads to a decrease in cyclinA2-CDK2 and cyclinE-CDK2 complexes, ultimately leading to S-phase block. The observed downregulation of cyclinD1 protein expression was also indicative that the cells were undergoing S-phase block. In conclusion, MITC-12 inhibits U251 cell proliferation by regulating cell cycle-related pathways.
+
+JNK is a Ser/Thr protein kinase. Sustained activation of JNK is associated with apoptosis, while its acute and transient activation is involved in cell proliferation or survival pathways, where cell proliferation depends on the ability of cells to continuously enter the cell cycle [41,42]. JNK protein kinases are activated by MKK4- and MKK7-mediated phosphorylation at Thr and Tyr [43]. In the present study, by detecting the expression levels of JNK and p-JNK, we found that the total JNK protein expression levels were unchanged while p-JNK was significantly increased, further suggesting that MITC-12 may induce apoptosis and cell cycle arrest in U251 cells through JNK activation.
+
+4. Materials and Methods
+
+4.1. Materials and Chemicals
+
+M. oleifera seeds were purchased from Yunnan Tianyou Technology Development Co., Ltd.; Dehong, Yunnan, China. Antibodies against caspase-3, Bax, Bcl-2, and cyclin E were purchased from Shenyang Wanclass Biotechnology Co., Ltd., Shenyang, China. C-Jun N-terminal kinase (JNK) and phosphorylated C-Jun N-terminal kinase (p-JNK)-specific antibodies were purchased from Jiangsu Qiaoke Biological Research Center Co., Ltd., Jiangsu, China. Cyclin D1, cyclin A2, and cyclin-dependent kinase 2 (CDK2) antibodies were purchased from Proteintech Group, Inc., Wuhan, China, while β-Tubulin and GAPDH antibodies were obtained from Abcam Plc, Cambridgeshire, UK.
+
+4.2. Preparation of Quinazolinone Derivatives of MITC
+
+M. oleifera seeds were hulled, crushed, and passed through a 30-mesh sieve; then, M. oleifera seed isothiocyanate (MITC) was prepared by de-oiling, enzymatic extraction, extraction, and recrystallization (yield, 4.70%; purity, 98%). Isothiocyanate derivatives from M. oleifera seeds were generated by chemical semi-synthesis, which involved reacting isothiocyanates extracted from M. oleifera seeds as the raw material, triethylamine as a catalyst, and ethanol as the solvent with o-aminobenzoic acid with different substituents at 90 °C (isothiocyanate: o-aminobenzoic acid: triethylamine = 1:1:1.5). The reactions were conducted in an oil bath and detected using the thin layer chromatography spot plate method until the end of the reaction, which came after the production of new substances, when products were separated by the hourglass rinsing method and column chromatography before evaporation to dryness. Purity was determined by high-performance liquid chromatography, and the structures of the compounds were confirmed by nuclear magnetic resonance (1H-NMR and 13C-NMR).
+
+MITC-12 was prepared as follows: 3,5-dibromo-o-aminobenzoic acid and an appropriate amount of ethanol were added to a flask and shaken gently to dissolve them completely, then triethylamine and MITC were added and the reaction was conducted at 90 °C. The preparation methods of the remaining MITC quinazolinone derivatives are presented in Supplementary Table S1.
+
+4.3. Cell Culture and MTT Assay
+
+Eight cancer cell lines (A431, A375, PC-3, 786-O, HCT-116, HeLa, MDA-MB-231, and U251) were purchased from the Cell Bank of the Chinese Academy of Sciences, Shanghai, China. Cells were cultured in 4.5 g/L DMEM high-sugar medium (HyClone, CA, USA) containing 10% fetal bovine serum (HyClone, CA, USA) and 1% penicillin-streptomycin (Solarbio, Beijing, China) in a cell culture incubator at 37 °C and 5% CO2.
+
+The effect of 16 MITC quinazolinone derivatives on the viability of 8 cancer cell lines was investigated by MTT analysis. Cells were inoculated in 96-well plates (200 μL/well) at 1 × 104 cells/well. Once cells adhered, they were treated with 10 μM MITC quinazolinone derivatives for 48 h. Untreated cells served as controls. After 48 h, the medium was removed and 100 μL of MTT solution (0.25 mg/mL) was added. After incubation in the dark for 4 h, the supernatants were removed, 100 μL DMSO was added to each well, and the plate was shaken for 10 min. The absorbance of each well was measured at 492 nm using a microplate reader. All of the above experiments were performed using sunitinib as a positive control.
+
+U251 and GES-1 cells (1 × 104 cells/well) were inoculated in 96-well plates and, when they became adherent, treated with MITC-12 (0, 0.5, 1, 2, 4, 8 and 16 µM) for 24, 48, and 72 h. Cell viability was assessed by MTT analysis.
+
+4.4. Colony Formation Assay
+
+U251 cells were harvested at the logarithmic growth stage. The cell concentration was adjusted to 500 cells/well; then, they were inoculated in 6-well plates and cultured in an incubator for 24 h. The medium was then aspirated, and the cells were washed with sterile PBS before treatment with different concentrations of MITC-12 (0, 1, 2 and 4 µM) for 24, 48 and 72 h. The medium containing MITC-12 was aspirated, the cells were washed twice with PBS, DMEM complete medium was added, and the medium was changed once every 2–3 days. Cultures were continued for 10–14 days until the cells in the blank control group grew to 80% confluence. Then, the medium was aspirated; the cells were washed twice with PBS; 500 µL of methanol was added to each well to fix the cells for 10 min, then removed; 1 mL of 0.1% crystalline violet was added to each well; and cells were stained for 30 min before washing, air-drying, and photographing. Next, 1 mL of 10% glacial acetic acid was added to each well to dissolve the crystalline violet; the absorbance value at OD560 nm was measured using an enzyme marker; and the relative absorbance values were calculated as follows: Relative absorbance (OD560) = (absorbance value of MITC group/absorbance value of control group) × 100%.
+
+4.5. Flow Cytometry Assay
+
+U251 cells were harvested at the logarithmic growth stage, adjusted to 2 × 105 cells/well, and inoculated in 6-well plates before being allowed to adhere overnight. The medium was then aspirated and discarded, and the cells were washed with sterile PBS and treated with different concentrations of MITC-12 (0, 1, 2, and 4 µM) for 24 h. The medium was removed, and the cells were washed with PBS, digested with 500 µL trypsin per well, and collected by centrifugation (300× g, 5 min, 4 °C). The supernatants were discarded and the cells were collected and resuspended in 100 μL 1× binding buffer, 5 μL Annexin V-FITC, and 10 μL propidium iodide (PI) (Sigma–Aldrich, Darmstadt, Germany). A staining solution was added, gently mixed in, and allowed to react for 10–15 min at room temperature, protected from light. The binding buffer (1×, 400 μL) was added, mixed well, filtered through a filter cloth into a centrifuge tube, and placed on ice. Flow cytometry was performed within 1 h. The apoptosis rate was assessed using FlowJo (Version X; TreeStar, Ashland, OR, USA).
+
+To determine the cell cycle distribution, the cells were treated as described above, then collected and resuspended in 300 µL PBS. While vortex shaking at a low speed, 700 µL of 70% ethanol was added. Next, the cells were fixed overnight at 4 °C. The next day, they were collected by centrifugation, washed, centrifuged with pre-chilled PBS, and resuspended before 400 µL PI staining solution was added to each sample. This was followed by incubation for 30 min at 37 °C in an environment protected from light and filtering. Cell signals were detected by flow cytometry, and their distribution was assessed using FlowJo software.
+
+4.6. Immunofluorescence Assays
+
+4.6.1. EdU Staining
+
+U251 cells at the logarithmic growth stage were inoculated in a chamber slide system at 2 × 104 cells/well, allowed to adhere overnight, and treated with different concentrations of MITC-12 (0, 2 and 4 µM) for 24 h. EdU (Abcam, Cambridge, MA, USA) (800 μL, 50 μM) was added to each well and incubated for 2 h. After washing with PBS, 400 μL of cell fixative was added, and the samples were incubated for 30 min at room temperature. The fixative was then aspirated, 400 μL of 2 mg/mL glycine was added to each well, the samples were washed with PBS, 800 μL of 1× Apollo® Staining Reagent was added, and the samples were placed onto an orbital shaker and incubated in the dark for 30 min. Permeate (0.5% TritonX-100, 800 μL) was then added, and samples were washed 2–3 times for 10 min each on an orbital shaker, aspirated and discarded, then washed with PBS for 5 min. After sealing the sections with an anti-fluorescence quenching sealer, the cells were observed by laser confocal microscopy and photographed; the maximum excitation wavelength of EdU was 550 nm and the maximum emission wavelength was 565 nm.
+
+4.6.2. Hoechst Staining
+
+The cells were treated as described in Section 4.6.1. Hoechst 33,342 reagent was diluted, and an appropriate volume of 1× Hoechst 33,342 reaction solution (Beyotime Biotechnology, Shanghai, China) was prepared and protected from light. Hoechst 33,342 reaction solution (800 μL, 1×) was added to each well, then culture plates were placed on an orbital shaker and incubated for 30 min at room temperature, protected from light. Hoechst 33,342 was then aspirated, and cells were washed 1–3 times for 10 min each with PBS. Image acquisition and analysis were conducted as described in Section 4.6.1. The maximum excitation wavelength of Hoechst 33,342 was 350 nm, and the maximum emission wavelength was 461 nm.
+
+4.7. Transcriptome Sequencing
+
+U251 cells were inoculated into 60 mm cell culture dishes (2 × 105 cells/well) and allowed to adhere overnight, then MITC-12 (0 and 2 µM) was added to the cells for 24 h. The cells were washed twice with cold PBS and 1 mL of Trizol lysis solution was added. Total RNA was extracted from samples using the Trizol method, and genomic DNA was removed using DNase I. The concentration and purity of the extracted RNA was checked using a Nanodrop 2000 instrument, RNA integrity was assessed by agarose gel electrophoresis, and RIN values were determined using the Agilent 2100 system. RNA libraries were prepared using kits. After quantification using a TBS-380 Mini-Fluorometer, the libraries were subjected to high-throughput sequencing on the Illumina HiSeq xten/NovaSeq 6000 sequencing platform, generating 150 bp paired-end reads.
+
+4.8. NGS Data Analysis
+
+After obtaining gene read counts by transcriptome sequencing, an analysis of differential expression between samples was performed using DESeq2. The screening threshold for significantly differentially expressed genes (DEGs) was p-adjust < 0.05, fold-change ≥ 1.5. Cluster analysis was performed with RSEM (http://deweylab.github.io/RSEM/, accessed on 4 June 2023), using relative log10 gene expression levels (ratios). RSEM software was used for PCA analysis to cluster samples based on their expression levels and to identify samples with greater influence on sample clusters. Gene ontology (GO) enrichment analysis was conducted using Goatools (https://github.com/tanghaibao/GOatools, accessed on 4 June 2023). The significance of the differences was assessed by Fisher’s exact test. To control the calculated false positive rate, p-values were corrected using the Benjamini–Hochberg (BH) test correction method; a corrected p-value (p-FDR) ≤ 0.05 was considered to indicate significant enrichment of a GO function. Kyoto Encyclopedia of Genes and Genomes (KEGG) pathway enrichment analysis was performed using KOBAS (http://kobas.cbi.pku.edu.cn/home.do, accessed on 4 June 2023), and comparisons were made using the Fisher’s exact test. To control the calculation of the false positive rate, correction for multiple tests was performed using the BH (FDR) method, with a corrected p-value of 0.05 as the threshold. KEGG pathways that met this condition were considered significantly enriched for DEGs.
+
+4.9. Quantitative RT-PCR Analysis
+
+The total RNA was isolated from U251 cells using Trizol reagent and reverse transcribed into cDNA using a SuperScript double-stranded cDNA synthesis kit (TaKaRa, Tokyo, Japan). Target genes were amplified using cDNA templates in a PCR instrument (FTC3/02). The expression levels of MT2A, TMEM158, UQCC3, ETV4, MMP7, CUBN, KRT15, MIR210HG, and STC1 were calculated using the 2−ΔΔCt method. The specific primers used are listed in Table S3.
+
+4.10. Western Blotting Analysis
+
+U251 cells were cultured as described in Section 4.5. After lysis, the cells were centrifuged at 12,000 rpm for approximately 15 min at 4 °C, and the supernatants were removed. Then, equal amounts of proteins were obtained from cell lysates, separated by 10% SDS-polyacrylamide gel electrophoresis, and transferred to PVDF membranes, which were blocked for 1 h with 5% skimmed milk. The membranes were then incubated overnight at 4 °C with primary antibodies against caspase-3, Bax, Bcl-2, CDK2, cyclinA2, cyclinD1, cyclinE, JNK, and p-JNK; washed 3 times with 1× TBST for 10 min each; incubated with secondary antibodies for 1 h; and then washed 3 times with 1× TBST for 10 min each. Finally, protein expression bands were visualized using the ultrasensitive ECL chemiluminescence kit with ECL chemiluminescence exposure. β-Tubulin and GAPDH were used as controls.
+
+4.11. Statistical Analysis
+
+All data are expressed as mean ± SEM. Flow cytometry data were analyzed using FlowJo software. The protein results were analyzed using ImageJ V1.8.0. Data were statistically analyzed using GraphPad Prism 5. The differences between two groups were analyzed by t-test, and the differences among three or more groups were analyzed by one-way ANOVA; p < 0.05 indicated a significant difference.
+
+5. Conclusions
+
+Of the 16 MITC quinazolinone derivatives analyzed in this study, MITC-12 showed the strongest anticancer activity. MITC-12 significantly inhibited U251 cell proliferation in a dose- and time-dependent manner, and was not toxic to GES-1 at a range of concentrations. In addition, MITC-12 induced apoptosis, reduced the number of EDU-positive cells, and increased caspase-3 expression levels and the Bax:Bcl-2 ratio in U251 cells, as well as inducing S- and G2-phase arrest in U251 cells. RNA sequencing revealed that MITC-12 significantly regulated cell cycle-related pathways. Further, MITC-12 significantly modulated the protein expression levels of CDK2, cyclinA2, cyclinE, and cyclinD1, as well as JNK activation. In conclusion, MITC-12 showed the strongest anticancer activity among the 16 MITC quinazolinone derivatives generated and analyzed in this study, inhibiting U251 cell proliferation by inducing apoptosis and cell cycle arrest, activating JNK, and regulating cell cycle-associated proteins. In the next study, we will further investigate the anti-proliferative effects and mechanisms of MITC-12 on different glioma cells (U87, A172, T98G cells) in depth, as well as the role of MITC-12 in inhibiting glioma cell growth in vivo.
+
+Supplementary Materials
+
+The following supporting information can be downloaded at: https://www.mdpi.com/article/10.3390/ijms241411376/s1.
+
+Click here for additional data file.
+
+Author Contributions
+
+Conceptualization, Y.T.; methodology, J.X., M.-R.Y., X.H., Y.-Y.B., Z.-S.H., Y.-Y.B., C.-Y.S. and J.S.; validation, J.X., M.-R.Y. and X.H.; resources, Y.T.; data curation, J.X., M.-R.Y. and X.H.; writing-original draft preparation, J.X. and X.H.; writing-review and editing, Y.T.; visualization, J.X., M.-R.Y. and X.H.; supervision, Y.T.; project administration, Y.T.; funding acquisition, Y.T. All authors have read and agreed to the published version of the manuscript.
+
+Institutional Review Board Statement
+
+Not applicable.
+
+Informed Consent Statement
+
+Not applicable.
+
+Data Availability Statement
+
+The sequences generated in this study are stored in the National Center for Biotechnology Information (NCBI) and the project number is PRJNA973222. Additionally, all other data are available from the authors.
+
+Conflicts of Interest
+
+The authors declare that the research was conducted in the absence of any commercial or financial relationships that could be construed as potential conflict of interest.
+
+Figure 1 Molecular structures of sixteen MITC quinazolinone derivatives.
+
+Figure 2 MITC-12 inhibited U251 cell growth. Viability of U251 (A) and GES-1 (B) cells after MITC-12 (0, 0.5, 1, 2, 4, 8, and 16 μM) treatment for 24, 48, and 72 h. (C) Proliferation of U251 cells after 24, 48, and 72 h of MITC-12 (0, 1, 2, and 4 μM) treatment, analyzed by colony formation assay. Data are expressed as mean ± SEM. Asterisk indicates significant difference compared to the control group; * p < 0.05, ** p < 0.01, *** p < 0.001.
+
+Figure 3 MITC-12 induced apoptosis of U251 cells. (A) U251 cell apoptosis determined by flow cytometry. U251 cells were treated with MITC-12 (0, 1, 2, and 4 μM) for 24 h. (B) Protein expression of caspase-3, Bax, and Bcl-2 in U251 cells, detected by Western blotting. β-Tubulin served as a loading control. U251 cells were treated with MITC-12 (0, 2, and 4 μM) for 24 h. (C) EDU and Hoechst 33,342 staining of U251 cells treated with MITC-12 (0, 2, and 4 μM) for 24 h. Data are expressed as mean ± SEM. Asterisk indicates significant difference compared to the control group; * p < 0.05, *** p < 0.001.
+
+Figure 4 MITC-12 induced cell cycle arrest in U251 cells. U251 cells were treated with MITC-12 (0, 1, 2, and 4 μM) for 24 h. (A) The cell cycle distribution of U251 cells was determined by flow cytometry. (B) Statistical analysis of three independent experiments. Data are expressed as mean ± SEM. Asterisk indicates significant difference compared to the control group; *** p < 0.001.
+
+Figure 5 Transcriptomic analysis of U251 cells. U251 cells were treated with MITC-12 (0 and 2 μM) for 24 h. (A) Heatmap of two groups of differentially expressed genes (DEGs). Colors indicate the normalized expression values of genes in each sample: red, higher expression; blue, lower expression. (B) Principal component analysis (PCA) between the two groups. (C) Comparison of numbers of DEGs. (D) Volcano plot showing DEGs. (E) GO enrichment analysis. Red, molecular function (MF); blue, cellular component (CC); green, biological process (BP). (F) KEGG enrichment analysis of DEGs between the control and MITC-12 groups. The top 20 enrichment results are displayed by default with Padjust < 0.05.
+
+Figure 6 Effect of MITC-12 on the expression levels of U251 cell cycle and JNK pathway proteins. U251 cells were treated with MITC-12 (0, 2, and 4 μM) for 24 h. (A) Protein expression of CDK2, cyclinA2, cyclinD1, cyclinE, JNK, and p-JNK in U251 cells was detected by Western blotting. GAPDH served as a loading control. (B) Quantification of the relative levels of CDK2, cyclinA2, cyclinD1, cyclinE, and p-JNK; each value was normalized to that of GAPDH or JNK, respectively. Data are expressed as mean ± SEM. Asterisk indicates significant difference compared to the control group, * p < 0.05, ** p < 0.01, *** p < 0.001.
+
+ijms-24-11376-t001_Table 1 Table 1 Inhibition rates of MITC quinazolinone derivatives (10 μM) on the growth of eight types of cancer cells.
+
+MITC	Inhibition Rate %	
+A431	A375	PC-3	786-O	HCT-116	Hela	MDA-MB-231	U251	
+MITC-01	4 ± 0.04%	−2 ± 0.01%	12 ± 0.06%	−9 ± 0.08%	27 ± 0.02%	21 ± 0.19%	−18 ± 0.06%	4 ± 0.07%	
+MITC-02	7 ± 0.04%	−11 ± 0.03%	20 ± 0.11%	−2 ± 0.10%	19 ± 0.03%	19 ± 0.04%	−2 ± 0.04%	11 ± 0.03%	
+MITC-03	5 ± 0.05%	−12 ± 0.05%	6 ± 0.07%	−7 ± 0.07%	19 ± 0.07%	21 ± 0.08%	−16 ± 0.2%	9 ± 0.03%	
+MITC-04	18 ± 0.04%	2 ± 0.02%	9 ± 0.05%	−4 ± 0.07%	32 ± 0.04%	18 ± 0.03%	−16 ± 0.05%	10 ± 0.05%	
+MITC-05	2 ± 0.02%	−6 ± 0.03%	8 ± 0.10%	0 ± 0.07%	49 ± 0.03%	40 ± 0.16%	32 ± 0.12%	17 ± 0.08%	
+MITC-06	10 ± 0.05%	−14 ± 0.04%	14 ± 0.02%	21 ± 0.03%	35 ± 0.05%	−9 ± 0.07%	55 ± 0.08%	16 ± 0.08%	
+MITC-07	−5 ± 0.05%	−17 ± 0.04%	3 ± 0.11%	3 ± 0.13%	28 ± 0.06%	1 ± 0.08%	42 ± 0.15%	19 ± 0.04%	
+MITC-08	−1 ± 0.04%	−15 ± 0.02%	7 ± 0.13%	2 ± 0.06%	50 ± 0.12%	16 ± 0.17%	36 ± 0.08%	20 ± 0.02%	
+MITC-09	3 ± 0.04%	−14 ± 0.02%	4 ± 0.06%	−6 ± 0.04%	41 ± 0.03%	33 ± 0.06%	48 ± 0.08%	28 ± 0.03%	
+MITC-10	21 ± 0.03%	13 ± 0.02%	34 ± 0.05%	−5 ± 0.03%	47 ± 0.03%	34 ± 0.05%	38 ± 0.04%	26 ± 0.06%	
+MITC-11	−4 ± 0.06%	−23 ± 0.01%	6 ± 0.02%	−3 ± 0.07%	18 ± 0.06%	−2 ± 0.12%	33 ± 0.09%	20 ± 0.05%	
+MITC-12	83 ± 0.01%	84 ± 0.01%	19 ± 0.06%	−2 ± 0.05%	60 ± 0.05%	54 ± 0.02%	54 ± 0.04%	88 ± 0.01%	
+MITC-13	9 ± 0.02%	−4 ± 0.01%	−15 ± 0.05%	−31 ± 0.11%	31 ± 0.05%	9 ± 0.03%	1 ± 0.03%	18 ± 0.07%	
+MITC-14	4 ± 0.03%	−6 ± 0.07%	−11 ± 0.13%	−29 ± 0.05%	32 ± 0.05%	11 ± 0.04%	1 ± 0.11%	18 ± 0.04%	
+MITC-15	15 ± 0.02%	−4 ± 0.02%	−9 ± 0.09%	−16 ± 0.06%	36 ± 0.03%	10 ± 0.04%	−4 ± 0.04%	24 ± 0.04%	
+MITC-16	3 ± 0.02%	−11 ± 0.04%	−21 ± 0.13%	−19 ± 0.06%	18 ± 0.05%	2 ± 0.02%	−13 ± 0.07%	23 ± 0.05%	
+
+Disclaimer/Publisher’s Note: The statements, opinions and data contained in all publications are solely those of the individual author(s) and contributor(s) and not of MDPI and/or the editor(s). MDPI and/or the editor(s) disclaim responsibility for any injury to people or property resulting from any ideas, methods, instructions or products referred to in the content.
+==== Refs
+References
+
+1. Amali M. Olatunji L. Olorundare O. An Overview of the Ethno-Pharmacological Potentials of Moringa Oleifera Lam,“The Miracle Tree” Arch. Basic Appl. Med. 2014 2 135 145
+2. Dhakad A.K. Ikram M. Sharma S. Khan S. Pandey V.V. Singh A. Biological, nutritional, and therapeutic significance of Moringa oleifera Lam Phytother. Res. 2019 33 2870 2903 10.1002/ptr.6475 31453658
+3. Steinmetz K.A. Potter J.D. Vegetables, fruit, and cancer prevention: A review J. Am. Diet. Assoc. 1996 96 1027 1039 10.1016/S0002-8223(96)00273-8 8841165
+4. Jaja-Chimedza A. Zhang L. Wolff K. Graf B.L. Kuhn P. Moskal K. Carmouche R. Newman S. Salbaum J.M. Raskin I. A dietary isothiocyanate-enriched moringa (Moringa oleifera) seed extract improves glucose tolerance in a high-fat-diet mouse model and modulates the gut microbiome J. Funct. Foods 2018 47 376 385 10.1016/j.jff.2018.05.056 30930963
+5. Lopez-Rodriguez N.A. Gaytán-Martínez M. de la Luz Reyes-Vega M. Loarca-Piña G. Glucosinolates and isothiocyanates from Moringa oleifera: Chemical and biological approaches Plant Foods Hum. Nutr. 2020 75 447 457 10.1007/s11130-020-00851-x 32909179
+6. Antonini E. Iori R. Ninfali P. Scarpa E.S. A Combination of Moringin and Avenanthramide 2f Inhibits the Proliferation of Hep3B Liver Cancer Cells Inducing Intrinsic and Extrinsic Apoptosis Nutr. Cancer 2018 70 1159 1165 10.1080/01635581.2018.1497672 30204484
+7. Maiyo F.C. Moodley R. Singh M. Cytotoxicity, antioxidant and apoptosis studies of quercetin-3-O glucoside and 4-(β-D-glucopyranosyl-1→4-α-L-rhamnopyranosyloxy)-benzyl isothiocyanate from Moringa oleifera Anticancer Agents Med. Chem. 2016 16 648 656 10.2174/1871520615666151002110424 26428271
+8. Rajan T.S. De Nicola G.R. Iori R. Rollin P. Bramanti P. Mazzon E. Anticancer activity of glucomoringin isothiocyanate in human malignant astrocytoma cells Fitoterapia 2016 110 1 7 10.1016/j.fitote.2016.02.007 26882972
+9. Cirmi S. Ferlazzo N. Gugliandolo A. Musumeci L. Mazzon E. Bramanti A. Navarra M. Moringin from Moringa oleifera seeds inhibits growth, arrests cell-cycle, and induces apoptosis of SH-SY5Y human neuroblastoma cells through the modulation of NF-κB and apoptotic related factors Int. J. Mol. Sci. 2019 20 1930 10.3390/ijms20081930 31010127
+10. Alafeefy A.M. Kadi A.A. Al-Deeb O.A. El-Tahir K.E. Al-Jaber N.A. Synthesis, analgesic and anti-inflammatory evaluation of some novel quinazoline derivatives Eur. J. Med. Chem. 2010 45 4947 4952 10.1016/j.ejmech.2010.07.067 20817329
+11. Bhattarai D. Jung J.H. Han S. Lee H. Oh S.J. Ko H.W. Lee K. Design, synthesis, and biological evaluation of structurally modified isoindolinone and quinazolinone derivatives as hedgehog pathway inhibitors Eur. J. Med. Chem. 2017 125 1036 1050 10.1016/j.ejmech.2016.10.040 27810591
+12. McLaughlin N.P. Evans P. Dihydroxylation of vinyl sulfones: Stereoselective synthesis of (+)- and (−)-febrifugine and halofuginone J. Org. Chem. 2010 75 518 521 10.1021/jo902396m 20000346
+13. Vijaychand A. Manjula S. Bharath E. Divya B. Medicinal and biological significance of quinazoline: A highly important scaffold for drug discovery: A review Int. J. Pharma. Bio. Sci. 2011 2 780 809
+14. Wang Y. BI-1356-Dipeptidyl-peptidase IV inhibitor, Antidiabetic agent Drugs Future 2008 33 473 477
+15. Selvam T.P. Kumar P.V. Siva Kumar A. Arnold Emerson I. Study of inhibitory mechanism and binding mode of the thiazolo quinazoline compounds to HIV-1 integrase by docking J. Pharm. Res. 2010 3 1637 1647
+16. Yang S.H. Khadka D.B. Cho S.H. Ju H.K. Lee K.Y. Han H.J. Lee K.T. Cho W.J. Virtual screening and synthesis of quinazolines as novel JAK2 inhibitors Bioorg. Med. Chem. 2011 19 968 977 10.1016/j.bmc.2010.11.057 21185195
+17. Li H. Fu G. Zhong W. Natural quinazolinones: From a treasure house to promising anticancer leads Eur. J. Med. Chem. 2023 245 114915 10.1016/j.ejmech.2022.114915 36375335
+18. Melhem J.M. Detsky J. Lim-Fat M.J. Perry J.R. Updates in IDH-Wildtype Glioblastoma Neurotherapeutics 2022 19 1705 1723 10.1007/s13311-022-01251-6 35641844
+19. Maccallini C. Gallorini M. Cataldi A. Amoroso R. Targeting iNOS As a Valuable Strategy for the Therapy of Glioma ChemMedChem 2020 15 339 344 10.1002/cmdc.201900580 31851765
+20. Chang L. Su J. Jia X. Ren H. Treating malignant glioma in Chinese patients: Update on temozolomide Onco. Targets Ther. 2014 7 235 244 24600235
+21. Ahuja R.P. NehaMeena J.S. MamtaSarkar D.P. Panda A.K. Natural products and polymeric nanocarriers for cancer treatment: A review Environ. Chem. Lett. 2020 18 2021 2030 10.1007/s10311-020-01056-z
+22. Zhou H. Liu J. Chen Z. Coronarin D suppresses proliferation, invasion and migration of glioma cells via activating JNK signaling pathway Pathol. Res. Pract. 2020 216 152789 10.1016/j.prp.2019.152789 31870592
+23. Guo Z. Guozhang H. Wang H. Li Z. Liu N. Ampelopsin inhibits human glioma through inducing apoptosis and autophagy dependent on ROS generation and JNK pathway Biomed. Pharmacother. 2019 116 108524 10.1016/j.biopha.2018.12.136 31108349
+24. Gueyrard D. Iori R. Tatibouët A. Rollin P. Glucosinolate Chemistry: Synthesis of O-Glycosylated Derivatives of Glucosinalbin Eur. J. Org. Chem. 2010 2010 3657 3664 10.1002/ejoc.201000246
+25. Giacoppo S. Galuppo M. De Nicola G.R. Iori R. Bramanti P. Mazzon E. 4 (α-l-rhamnosyloxy)-benzyl isothiocyanate, a bioactive phytochemical that attenuates secondary damage in an experimental model of spinal cord injury Bioorg. Med. Chem. 2015 23 80 88 10.1016/j.bmc.2014.11.022 25497964
+26. Nazanin K. Hadi A.R. Isabel C. Heteroleptic enantiopure Pd(II)-complexes derived from halogen-substituted Schiff bases and 2-picolylamine: Synthesis, experimental and computational characterization and investigation of the influence of chirality and halogen atoms on the anticancer activity New J. Chem. 2023 24 11357 11738
+27. Tan W.L. Zhang C. Li Y. Synthesis, Anticancer Activity, Structure-Activity Relationship and Mechanistic Investigations of Falcarindiol Analogues ChemMedChem 2021 16 3569 3575 10.1002/cmdc.202100377 34414677
+28. Mai D.K. Kim C. Lee J. BODIPY nanoparticles functionalized with lactose for cancer-targeted and fluorescence imaging-guided photodynamic therapy Sci. Rep. 2022 12 2541 10.1038/s41598-022-06000-5 35169149
+29. Ayaz F. Yuzer A. Ince T. Ince M. Anti-Cancer and Anti-Inflammatory Activities of Bromo- and Cyano-Substituted Azulene Derivatives Inflammation 2020 43 1009 1018 10.1007/s10753-020-01186-0 31955292
+30. Salih Ö. Osman Ç. Şaban T. A SAR Study: Evaluation of Bromo Derivatives of 8-Substituted Quinolines as Novel Anticancer Agents Lett. Drug Des. Discov. 2017 14 1415 1424
+31. Nadal-Gratacós N. Lleixà E. Gibert-Serramià M. Neuropsychopharmacology of Emerging Drugs of Abuse: Meta- and para-Halogen-Ring-Substituted α-PVP (“flakka”) Derivatives Int. J. Mol. Sci. 2022 23 2226 10.3390/ijms23042226 35216339
+32. Lopez J. Tait S. Mitochondrial apoptosis: Killing cancer using the enemy within Br. J. Cancer 2015 112 957 962 10.1038/bjc.2015.85 25742467
+33. Shi L. Wu T.T. Wang Z. Xue J.Y. Xu Y.G. Discovery of quinazolin-4-amines bearing benzimidazole fragments as dual inhibitors of c-Met and VEGFR-2 Bioorg. Med. Chem. 2014 22 4735 4744 10.1016/j.bmc.2014.07.008 25082515
+34. You J. Gao F. Tang H. Peng F. Jia L. Huang K. Chow K. Zhao J. Liu H. Lin Y. A medicinal and edible formula YH0618 ameliorates the toxicity induced by Doxorubicin via regulating the expression of Bax/Bcl-2 and FOXO4 J. Cancer 2019 10 3665 3677 10.7150/jca.32754 31333784
+35. Mazewski C. Liang K. de Mejia E.G. Comparison of the effect of chemical composition of anthocyanin-rich plant extracts on colon cancer cell proliferation and their potential mechanism of action using in vitro, in silico, and biochemical assays Food Chem. 2018 242 378 388 10.1016/j.foodchem.2017.09.086 29037704
+36. Liu S. Zhu Y. Yan S. Xiao H. Yi J. Li R. Wu J. Wen L. Phenethyl isothiocyanate induces IPEC-J2 cells cytotoxicity and apoptosis via S-G2/M phase arrest and mitochondria-mediated Bax/Bcl-2 pathway Comp. Biochem. Physiol. C Toxicol. Pharmacol. 2019 226 108574 10.1016/j.cbpc.2019.108574 31446007
+37. Diaz-Moralli S. Tarrado-Castellarnau M. Miranda A. Cascante M. Targeting cell cycle regulation in cancer therapy Pharmacol. Ther. 2013 138 255 271 10.1016/j.pharmthera.2013.01.011 23356980
+38. Chen C.F. Dou X.W. Liang Y.K. Lin H.Y. Bai J.W. Zhang X.X. Wei X.L. Li Y.C. Zhang G.J. Notch3 overexpression causes arrest of cell cycle progression by inducing Cdh1 expression in human breast cancer cells Cell Cycle. 2016 15 432 440 10.1080/15384101.2015.1127474 26694515
+39. Chambers D.C. Carew A.M. Lukowski S.W. Powell J.E. Transcriptomics and single-cell RNA-sequencing Respirology 2019 24 29 36 10.1111/resp.13412 30264869
+40. Kokontis J.M. Lin H.P. Jiang S.S. Lin C.Y. Fukuchi J. Hiipakka R.A. Chung C.J. Chan T.M. Liao S. Chang C.H. Androgen suppresses the proliferation of androgen receptor-positive castration-resistant prostate cancer cells via inhibition of Cdk2, CyclinA, and Skp2 PLoS ONE 2014 9 e109170 10.1371/journal.pone.0109170 25271736
+41. Ventura J.J. Hübner A. Zhang C. Flavell R.A. Shokat K.M. Davis R.J. Chemical genetic analysis of the time course of signal transduction by JNK Mol. Cell 2006 21 701 710 10.1016/j.molcel.2006.01.018 16507367
+42. Dhanasekaran D.N. Reddy E.P. JNK-signaling: A multiplexing hub in programmed cell death Genes Cancer 2017 8 682 694 10.18632/genesandcancer.155 29234486
+43. Davis R.J. Signal transduction by the JNK group of MAP kinases Cell 2000 103 239 252 10.1016/S0092-8674(00)00116-1 11057897
+

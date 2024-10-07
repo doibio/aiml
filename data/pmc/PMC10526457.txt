@@ -1,0 +1,453 @@
+
+==== Front
+Cancers (Basel)
+Cancers (Basel)
+cancers
+Cancers
+2072-6694
+MDPI
+
+10.3390/cancers15184429
+cancers-15-04429
+Review
+Radiomics: The New Promise for Differentiating Progression, Recurrence, Pseudoprogression, and Radionecrosis in Glioma and Glioblastoma Multiforme
+Alizadeh Mohammadreza 1
+https://orcid.org/0000-0002-5411-0809
+Broomand Lomer Nima 2
+https://orcid.org/0000-0002-2970-4138
+Azami Mobin 3
+Khalafi Mohammad 4
+https://orcid.org/0000-0002-5282-3282
+Shobeiri Parnian 5
+Arab Bafrani Melika 5
+Sotoudeh Houman 6*
+D’Orazi Gabriella Academic Editor
+1 Physiology Research Center, Iran University of Medical Sciences, Tehran 14496-14535, Iran; dr.alizadeh.d@gmail.com
+2 Faculty of Medicine, Guilan University of Medical Sciences, Rasht 41937-13111, Iran; nima.broomand@gmail.com
+3 Student Research Committee, Kurdistan University of Medical Sciences, Sanandaj 66186-34683, Iran; mobinaz98@yahoo.com
+4 Radiology Department, Tabriz University of Medical Sciences, Tabriz 51656-65931, Iran; mohammadkhalafi4287@gmail.com
+5 School of Medicine, Tehran University of Medical Sciences, Tehran 14167-53955, Iran; parnian.shobeiri@gmail.com (P.S.); melika.arab92@gmail.com (M.A.B.)
+6 Department of Radiology and Neurology, Heersink School of Medicine, University of Alabama at Birmingham (UAB), Birmingham, AL 35294, USA
+* Correspondence: hsotoudeh@uabmc.edu
+05 9 2023
+9 2023
+15 18 442911 7 2023
+29 8 2023
+31 8 2023
+© 2023 by the authors.
+2023
+https://creativecommons.org/licenses/by/4.0/ Licensee MDPI, Basel, Switzerland. This article is an open access article distributed under the terms and conditions of the Creative Commons Attribution (CC BY) license (https://creativecommons.org/licenses/by/4.0/).
+Simple Summary
+
+Progression/recurrence, pseudoprogression, and radionecrosis are all scenarios that can be expected during the treatment course of glioma and GBM. Although MRI, PET, CT, and MRS have shown some capabilities in differentiating these conditions, there is still a considerable need for the emergence of state-of-the-art techniques to assist field professionals. Here, we introduce radiomics, a process that extracts many features from medical images using data characterization algorithms and a promising tool to differentiate these scenarios. The results could significantly impact patients’ care by enhancing the understanding and accuracy of post-treatment follow-ups in brain cancer patients.
+
+Abstract
+
+Glioma and glioblastoma multiform (GBM) remain among the most debilitating and life-threatening brain tumors. Despite advances in diagnosing approaches, patient follow-up after treatment (surgery and chemoradiation) is still challenging for differentiation between tumor progression/recurrence, pseudoprogression, and radionecrosis. Radiomics emerges as a promising tool in initial diagnosis, grading, and survival prediction in patients with glioma and can help differentiate these post-treatment scenarios. Preliminary published studies are promising about the role of radiomics in post-treatment glioma/GBM. However, this field faces significant challenges, including a lack of evidence-based solid data, scattering publication, heterogeneity of studies, and small sample sizes. The present review explores radiomics’s capabilities in following patients with glioma/GBM status post-treatment and to differentiate tumor progression, recurrence, pseudoprogression, and radionecrosis.
+
+glioma
+glioblastoma multiform (GBM)
+radiomics
+MRI
+PET
+tumor progression
+tumor recurrence
+pseudoprogression
+radionecrosis
+This research received no external funding.
+==== Body
+pmc1. Introduction
+
+Glioma is the name for all cancers that are thought to come from glial cells. They are also the most common type of brain and spinal cord cancer. About 57% of all gliomas are glioblastoma (GBM), the most common and life-threatening brain tumor. Additionally, 48% of all primary aggressive central nervous system (CNS) tumors are also GBM [1,2,3]. In 2021, the World Health Organization (WHO) classified glioma and glioblastoma based on key molecular biomarkers; this describes neoplastic entities and makes it much less critical for tumor classification to depend on morphologic features. Under the 2021 update, adult diffuse gliomas are divided into three main disease groups based on molecular markers: IDH-mutant, 1p/19q codeleted oligodendroglioma; IDH-mutant, non-codeleted astrocytoma; and IDH-wildtype glioblastoma [4,5].
+
+Surgery with maximum safe reaction is the standard treatment utilized to treat GBM. The aim of resection is a gross total resection without risking the patient’s functional status. However, complete resection is often not practical, given the infiltrative behavior of gliomas. So, surgery is usually followed by chemotherapy and/or radiation treatment. Today, most people with glioblastoma receive a mix of treatments before and after surgery [6,7]. These include radiotherapy (RT) alone or with chemotherapy. After surgery, standard treatment gives 60 Gy in 2 Gy doses over six weeks, along with temozolomide (TMZ). Currently, there are three Food and Drug Administration (FDA)-approved medications to treat GBM: TMZ, bevacizumab, and BCNU (carmustine). TMZ is currently the most common FDA-approved chemotherapy drug for treating glioblastoma [8]. An increase in median survival rate has been observed with these combination therapeutics. Other treatment protocols are now mainly in the research phase, including tumor-treating fields (TTFields), vaccine-based immunotherapies, and oncolytic viral T-cell immunotherapy [8].
+
+IDH-mutant astrocytoma and 1p/19q codeleted oligodendroglioma are usually treated by maximum surgical resection. The subsequent treatment depends on the grade of the neoplasm on histopathology. IDH-mutant astrocytoma grade 2 and 1p/19q codeleted oligodendroglioma grade 2 without residual tumor on fluid-attenuated inversion recovery (FLAIR) magnetic resonance imaging (MRI) will be followed by surveillance MRI. IDH-mutant astrocytoma grade 2 with a residual tumor on FLAIR MRI, 1p/19q codeleted oligodendroglioma grade 2 with residue on FLAIR MRI, grades 3 and 4 IDH-mutant astrocytoma, and grade 3 1p/19q codeleted oligodendroglioma will be treated by chemoradiation [9].
+
+Radionecrosis causes additional lesions resembling tumor progression or recurrence during imaging follow-up. Correctly differentiating these lesions is crucial since their therapeutic paradigms differ [10,11].
+
+MRI and positron emission tomography (PET) approaches have shown the capability of differentiating these scenarios [12,13,14]. There is still no consensus on their effectiveness due to the lack of investigations and heterogeneity in scanning protocols. In addition, these approaches have faced severe restrictions in correctly differentiating these approaches [15,16].
+
+All types of glioma status post-treatment need to be followed by MRI for diagnosis of recurrence and or progression. The interpretation of MRI findings in glioma after treatment is challenging, given the fact that there is an overlap between post-treatment signal alteration and recurrence/progression.
+
+The post-treatment glioma MRI can show the following conditions:A. Pseudoprogression: A transient enlargement of tumoral abnormal signal intensity and enhancement after chemoradiation (usually within six months after treatment) caused by inflammation, edema, damage to the endothelium, blood–brain barrier (BBB) disruption, and oligodendroglial injury after treatment. It is more common within 3 months after completion of therapy, but it can occur years after treatment. Moreover, it is more common in O6-methylguanine-DNA methyltransferase (MGMT)-methylated tumors, particularly when treated with TMZ [15]. Patients are usually stable clinically. Pseudoprogression is generally associated with a longer survival rate [17,18,19]. Pseudoprogression (psp) arises from a pronounced local tissue reaction involving inflammation, edema, and abnormal vessel permeability, leading to new or increased contrast-enhancing lesions. While less severe cases may subside without additional treatment, more severe cases can progress to true treatment-related necrosis over time [20]. The differentiation between tumor progression and pseudoprogression presents a significant challenge, and advanced imaging techniques such as advanced MRI and PET imaging show promise in improving the accuracy of this differentiation [21]. Follow-up MRI scans, conducted 4 to 8 weeks after the initial scan, are commonly utilized to aid in distinguishing between the two conditions [20].
+
+B. Radiation necrosis: Radiation can cause radiation-induced neurotoxicity in the brain parenchyma, secretion of tumor necrosis factor-alpha (TNF-α), endothelial damage, damage to the BBB, glial and subsequence worsening of edema, and the enhancement/evolution of new areas of abnormal enhancement mimicking recurrence/true progression. Radiation necrosis (RN) usually happens 3–12 months after RT in approximately 3–24% of adult brain tumors but can be seen up to several years and even decades after RT [15]. Histological examination reveals necrosis, edema, gliosis, endothelial thickening, hyalinization, fibrinoid deposition, thrombosis, and vessel occlusion. These pathological criteria distinguish RN from other glioma-related conditions [22]. TNF-α is the primary cytokine released following radiation. Other cytokines that cause endothelial cell death, astrocyte activation, and BBB permeability are upregulated by TNF-alpha [23,24]. The imaging features of radiation-induced necrosis present challenges in differentiation, as the contrast-enhancing mass on T1-weighted imaging with gadolinium appears similar to tumor progression using conventional MRI techniques [25,26].
+
+C. Recurrence: Recurrence is one of the leading causes of death in glioma and GBM [27]. Recurrence timelines can demonstrate substantial variability. A study centered on patients diagnosed with low-grade glioma highlighted that a proportion of 28% had recurrence events within two years subsequent to their main surgery. Conversely, a more substantial proportion, 72%, witnessed recurrence events after this two-year threshold [28]. The timing of recurrence is influenced by the grade of the glioma. High-grade gliomas like glioblastoma have a high recurrence rate, with most recurrences found near the original tumor site [29,30].
+
+The gold standard for diagnosing recurrent glioma is histologic confirmation. Still, the decision to perform a biopsy must weigh the diagnostic value against procedural risks, especially considering potential complications from previous treatments like radiation or chemotherapy. During the first six months post-treatment, radiographic changes might indicate pseudoprogression, leading many doctors to opt for regular MR imaging instead of immediate biopsy. However, suppose a new lesion emerges on MR images, particularly outside the initial high-dose radiotherapy zone or 6–12 months postradiotherapy. In that case, it might favor tumor recurrence and prompt further actions even without histologic proof of recurrence [30]. Noteworthily, compared to primary tumors, recurrent gliomas more frequently exhibit features such as copy number variations (CNV), combined IDH1 and TERT mutations, compromised cell cycle signaling pathways, and low tumor mutational burden (TMB) [31]. Remarkably, upon recurrence, gliomas might display variations in their histological characteristics. A previously identified low-grade glioma might escalate to a high-grade form. This evolution could be linked to prior therapeutic interventions, such as the intensity of radiation or chemotherapy sessions [32].
+
+D. True progression: Malignant progression alongside the recurrence of low-grade glioma primarily contributes to its treatment complications and poor prognosis [33]. Pathologically, true progression (TP) is characterized by neovascularization, the proliferation of tumoral cells, and the disruption of the BBB [20]. Numerous determinants, including genetic evolution, microenvironmental interplay, and histological features alterations, mark the progression of gliomas. Additionally, the presence or absence of IDH mutations plays a role in shaping the course of glioma progression, having implications for patient prognosis and the degree of cell malignancy [34]. The glioma’s molecular details and brain location play a critical role in determining its progression rate, which can span from a mere two years to well over ten years [35]. Of note, glioblastoma can exhibit different progression patterns, such as local, diffuse, distant, and multifocal [36]. Although several molecular markers have been identified to predict the progression of the glioma, a lack of standardized methods and insufficient clinical trials have hindered the practicality of this approach in clinical settings [37].
+
+2. Current Differentiating Approaches in Glioma after Treatment
+
+Imaging modalities greatly influence the primary diagnosis and post-therapeutic follow-up of brain gliomas and glioblastomas. Different modalities, such as MRI, computed tomography (CT), and PET, have been utilized in these scenarios [12,13,14] (Table 1). MRI is a commonly used modality in diagnosing and managing patients with glioblastoma or glioma and is the standard of care for the radiographic characterization of glioblastoma after treatment. New foci of enhancement within and around the resection cavity/radiation field can be seen in both recurrence and radiation necrosis. Usually, nodular boundaries with noticeable edges are more common in tumor recurrence, and blurred plumed borders favor RN. The corpus callosum’s involvement with midline crossing, subependymal dissemination, and numerous enhancing lesions promoted tumor recurrence over RN [26,38,39]. It is also stated that the subependymal enhancement could be the only predictive sign in cases of early progression [40]. If a new focus of enhancement appears after treatment but does not change or gets smaller over time, MRI helps show pseudoprogression [41]. Further, pseudoprogression appears as a self-resorbing focal contrast enhancement in this modality [42]. However, contrast enhancement can be both indicator of the therapy response or tumor relapse. It also manifests the increased permeability of the BBB, which is not specific to these scenarios [43]. The other issue is that GBM and anaplastic glioma may show no or minimal enhancement on MRI, limiting decisions determining invasion and the boundaries of the tumor [44].
+
+In daily practice, the most common modality for differentiation between recurrence/progression and RN is dynamic susceptibility contrast (DSC) MR perfusion. It is well known that the relative cerebral blood volume (rCBV) is higher in tumor progression/recurrence than RN. However, radiation necrosis usually shows heterogeneity on diffusion-weighted imaging (DWI) images [45]. With apparent diffusion coefficient (ADC) values that are larger in necrotic tissue than in recurrent tumor tissue, DWI can distinguish recurrence from pseudoprogression. In contrast to pseudoprogression, tumor progression exhibits higher DSC-derived parameters such as peak height and the percentage of signal recovery [46]. However, neither DWI nor diffusion tensor imaging (DTI) offer enough details to distinguish pseudoprogression from TP reliably. Both DWI and ADC maps produce diverse signal intensities, with regions of reduced diffusion that might signify either highly cellular tumor areas or inflammatory processes [43,47,48,49]. Moreover, diffusion imaging can have limitations in resolving lesions with a mixture of recurrence and treatment necrosis since ADC values can be similar in both cases [50]. On top of that, there is a lack of validated diagnostic criteria on an individual level. This means there is no standard way to interpret DWI images, leading to differences in diagnosis between radiologists [51]. Variability in sequences from one center to another, between scanners in the same center, or even in a single scanner can lead to differences in image quality, affecting the accuracy of the diagnosis [52]. Equally important, Rcbv is only semiquantitative (hence the term relative CBV), and that model’s assumptions are violated when there is leakage of contrast agent from the intra- to the extravascular compartment, which is invariably the case in enhancing tumors [20].
+
+MRS is another noninvasive diagnostic tool that measures biochemical changes in the brain, especially the presence of tumors. The choline/creatine ratio used in this method is a good predictor of differentiation between true progression and treatment-induced changes [53]. Recurrent brain neoplasms exhibit an elevation in choline (Cho) as a reflection of increased cell membrane turnover [54]. Moreover, features of radiation necrosis include a variable decrease in n-acetyl-aspartate (NAA), a lack of pronounced Cho elevation, and the presence of lipid-lactate peaks [55]. However, relatively large voxel sizes may lead to partial volume effects between recurrent tumors and treatment-induced changes, limiting its differential power [56]. Beyond that, due to low metabolite concentrations, many acquisitions are required, resulting in long scan times [22]. In the same vein, the need to exclude signal contamination from tissues adjacent to the tumor, such as lipids (from the scalp) and water (from ventricles), makes magnetic resonance spectroscopy (MRS) a challenging technique. Surgical clips also disrupt the local field homogeneity, affecting data quality [53]. Furthermore, there is a considerable overlap of metabolite peaks. This overlap can make distinguishing between different metabolites difficult and lead to misinterpretation of the results [57].
+
+Different modalities of PET scans can also assist in differentiating these stages. Tumor recurrence will usually appear as metabolically active lesions on FDG-PET [48]. Also, radiation necrosis manifests as a metabolically inactive lesion on FDG-PET [48]. However, a lack of specificity and high background uptake in healthy brain tissue curb its ability in differentiating glioma progression from pseudoprogression [58]. On the other hand, amino acid PET is well suited for monitoring treatment response and diagnosing pseudoprogression because amino acid tracers can cross the blood–brain barrier [50]. It can specifically differentiate the cellular component of a tumor mass from inflammatory and necrotic lesions, providing an early response to therapy [59]. This modality can also differentiate between true progression and pseudoprogression, with higher Tbrmax and mean tumor-to-brain ratio (tbrmean) favoring true progression [60], while pseudoprogression manifests with a relatively lower uptake of the radioactive tracer [61]. Nevertheless, amino acid PET requires longer acquisition times than other PET imaging modalities [62]. Additionally, both progression and pseudoprogression can increase metabolic activity on PET scans, making it difficult to differentiate between them [63]. Another issue is that high uptake soon after radiotherapy may be treatment-related, which can be mistaken for recurrence [64]. Moreover, PET is a costly approach and lacks approval and reimbursement by national insurance, which limits its practicality in all settings [65]. Lastly, amino acid PET requires an on-site cyclotron due to its short half-life of 11C, further limiting its widespread usage. [15].
+
+Combining these modalities provides a more accurate diagnosis in these scenarios [66]. In contrast to PET/CT, PET/MRI does not burden ionizing radiation. This can be specifically important when planning for multiple scanning sessions [66]. However, PET/MRI scanners are expensive and not widely accessible. Moreover, the PET/MR imaging parameter cutoff values are not standardized [16]. What is more, the combined approach needs a high scanning time, which may be divided into several daunting sessions [67].
+
+Additionally, a review study established that conventional MRI and 18F-FDG PET possessed higher sensitivity, while thallium single-photon emission CT (SPECT) maintained superior specificity in distinguishing between progressive disease, pseudoprogression, and RN [68]. However, low photon flux, low anatomic resolution, and tracer uptake in the choroid plexus or pituitary limits the SPECTs data for diagnosing [10].
+
+The current performance metrics of different imaging modalities in post-treatment glioma are summarized in Table 1.
+
+cancers-15-04429-t001_Table 1 Table 1 Current application and performance of different imaging modalities in post-treatment glioma.
+
+Imaging Modality	Dx of Recurrence, Treatment Response (Radionecrosis), True Progression	DDX of Recurrence vs. Treatment Changes	DDX of True Progression vs. Radionecrosis	DDX of True Progression vs. Pseudoprogression	
+FDG PET	Recurrence: sensitivity = 78%,
+specificity = 88% [69].		Sensitivity = 0.86, specificity = 0.80, accuracy = 0.83, cut-off: maximum standardized uptake value (SUV max) = 1.9 [70].
+** Sensitivity = 79%, specificity = 70% [71].		
+Amino acid PET		Sensitivity = 93%, specificity = 100%, accuracy = 93%, TBR = 1.6 [72]/
+sensitivity = 0.88, specificity = 0.78, diagnostic odds ratio = 26, the area under the curve (AUC) of hierarchical summary receiver operating characteristic (HSROC) = 0.86 [73].		Sensitivity = 100%, specificity = 91%, accuracy = 96%, maximum tumor-to-brain ratio (tbrmax) cutoff = 2.3 [74].
+Sensitivity = 100%, specificity = 79%, accuracy = 83% [75]/sensitivity = 84%, specificity, = 86%, accuracy = 85% [60].	
+Conventional MRI (T1, T2, FLAIR, T1 + C)	Recurrence: sensitivity = 0.36, specificity = 0.93, AUC = 0.75 [76]/sensitivity = 31.7%, specificity = 80%, PPV = 96.3%, NPV = 6.7% [77].
+Early progression: sensitivity = 0.81, specificity = 0.69, AUROC= 0.79 [78].	Sensitivity = 8%, specificity = 91%,
+PPV = 25%, NPV = 73% [79].	Sensitivity = 88.9%, specificity = 33.4% [80].
+Sensitivity = 38.1%, specificity = 93.3%,
+NPV = 41.8% [40].		
+DWI/ADC	Treatment response: sensitivity = 0.71,
+specificity = 0.87 [53].	Sensitivity = 52.6–94.7%, specificity = 50–90% [81].		TR vs. pseudoprogression: sensitivity = 0.88, specificity= 0.85 [82]/
+TR vs. pseudoprogression: sensitivity = 0.90, specificity = 0.82, accuracy = 0.93 [83].	
+MR perfusion	Treatment response: sensitivity = 0.87,
+specificity = 0.86 [53].	Sensitivity = 0.9, specificity = 0.88 [84]/sensitivity = 0.83, specificity = 0.85, AUROC = 0.91 [85]/sensitivity = 0.88, specificity = 0.88 [84].		Sensitivity = 0.88, specificity = 0.77, AUROC = 0.88 [86]/sensitivity = 0.85, specificity = 0.79, accuracy = 0.9 [82].	
+MR spectroscopy
+(Cho/NAA or
+Cho/Cr)	True progression: sensitivity = 71.2%, specificity = 90.2%, AUC = 0.792 [87]. Treatment response: sensitivity = 91%, specificity= 95% [53].	Sensitivity = 75.0%, specificity = 81.0%,
+accuracy = 79% [88].	Sensitivity = 60%, specificity = 45%,
+PPV = 16% NPV = 87% [89].		
+Multimodal MRI (conventional sequences + DWI/ADC + MRP + MRS)		Sensitivity = 80.6%, specificity = 66.6% [90].			
+PET/MRI	Recurrence: sensitivity = 97.14%,
+specificity = 93.33%, accuracy: 96% [91].		Sensitivity = 0.88, specificity = 0.79, AUC = 0.91 [73].		
+** In order to maintain a more comprehensive and updated approach, some sections contain findings from more than one study. Abbreviations. Dx: diagnosis, DDx: differential diagnosis, SUV: standardized uptake value, RT: recurrence of tumor, FDG: fluorodeoxyglucose, PET: positron emission tomography, TBR: tumor-to-background ratio, AUC: area under the curve, HSROC: hierarchical summary receiver operating characteristic, FLAIR: fluid-attenuated inversion recovery, PPV: positive predictive value, NPV: negative predictive value, ADC: apparent diffusion coefficient, DWI: diffusion-weighted imaging, MRS: magnetic resonance spectroscopy.
+
+Radiomics is a quantitative approach aiming to extract mineable data from medical images using advanced feature analysis [92,93]. Radiomics allows medical personnel to extract and analyze quantitative features from medical images to predict tumor behavior, treatment response, and patient outcomes [94]. This leading-edge paradigm has exhibited competencies in determining and grading glioma tumors. It has also been utilized in survival prediction [95] and has paved the way for precision medicine in these tumors [96]. Traditionally, radiomics features include shape, histogram (intensity/density), and texture features, often called handcraft features. More recently, the features extracted by deep learning models have a robust research momentum, often called deep features. Considering radiomics as an invaluable tool in the diagnosis, treatment, and prognosis of brain tumors, radiomics has proven to differentiate high-grade gliomas versus tumefactive demyelinating diseases significantly [97,98]. Notably, radiomics has shown practical applications in pretreatment evaluation, prognosis, survival, and post-treatment evaluation of glioma and GBM. Regarding the pretreatment assessment, radiomics may detect infiltration and the extent of brain tumors [99,100]. However, its use in differentiating radionecrosis and pseudoprogression from the true progression and recurrence of these tumors is a controversial debate. The present review aims to explore the current radiomics approaches for determining these conditions. Moreover, it delineates a body of knowledge supporting radiomics’s effectiveness in differentiating these scenarios.
+
+3. Radiomics Differentiates
+
+The detailed information on our reviewed studies is mentioned in Table 2.
+
+3.1. Pseudoprogression vs. True Progression
+
+When considering the use of radiomics in the post-treatment assessment of glioma, pseudoprogression (PSP) and distinguishing residual/recurrent tumors from post-treatment changes are among the primary concerns of researchers. In one study, 61 patients with glioblastoma were studied using conventional MRI, DWI, and PWI to distinguish between PSP and TP within three months of radiochemotherapy and surgical resection. Radiomics features were extracted from postcontrast T1, FLAIR, and ADC, and the LASSO model selected CBV maps as the most predictive feature. Subsequently, 12 features were used for the machine learning model, including two postcontrast T1, one FLAIR, two ADC, and seven CBV features. The final model had the area under the curve (AUC) of 0.9 to differentiate the PSP from TP. The AUC in the external validation dataset is 0.85. This multiparametric MRI radiomics was superior to ADC and CBV parameters alone [101].
+
+However, in another study about GBM in 51 cases of TP and 26 cases of PSP, radiomics texture analysis of enhancing lesions (only T1 + C was used) scored much lower values, with accuracy (ACC), sensitivity, and specificity of 72.78%, 78.36%, and 61.33% in the differentiation of pseudoprogression from actual progression GBM [102]. Interestingly, this random forest (RF)–radiomics model still excelled in the performance of three radiologists. No clinical information, including sex, age, KPS score, resection extent, neurological deficit, and mean radiation dose, showed statistically significant differences between true progression and pseudoprogression.
+
+cancers-15-04429-t002_Table 2 Table 2 Tumoral and imaging characteristics of included studies.
+
+Author
+(Year)
+(Country)	Sample Size (Mean Age)	Tumor Characteristics	Grade	Intervention	Follow-Up	Imaging
+Modalities	Tracer or Contrast
+(Dosage)	
+Zhang et al., (2019)
+(China) [103]	51 (47.6)	Glioblastoma 12, astrocytoma 14, ependymoma 3, mixed glioma 22	High (III–IV) 32 (62.7%), low (I–II) 19 (37.3%)	Radiation and surgery	>6 months	3.0 T MRI T1/T1C/T2/FLAIR	Gadolinium (0.1 mmol/kg)	
+Tiwari et al., (2016)
+(USA) [104]	43 (N/M)	Glioma 33, metastasis 25	-	At least one patient had surgical resection	>9 months	T1 + C WI/T2WI/FLAIR	Gadolinium
+(-)	
+Gao et al., (2020)
+(China) [105]	39 (51.45)	Glioblastomas and anaplastic astrocytoma	Glioma
+recurrence: (III = 4, IV = 21)
+TRE: (III = 3, IV = 11)	Radiotherapy and chemotherapy	>6 months	3.0 T MRI T1WI/T2
+FLAIR, postcontrast T2FLAIR	Gadopentetate dimeglumine
+(0.1 mmol/Kg)	
+Chen et al., (2015)
+(China) [106]	22 (43.54)	Glioblastoma	-	Surgical resection
++
+CCRT with TMZ	6 months	1.5 T MRI T1WI, T2WI, FLAIR, and T1Ce	Gadobutrol
+(0.1 mmol/kg)	
+Sadique et al., (2022)
+(USA) [107]	30 (N/M)	Glioblastoma (from different public datasets)	-	-	2–3 months	T1, T2, FLAIR, T1 + C	-	
+Wang et al., (2019)
+(China) [108]	160 (44.59)	Glioma	-	Radiation therapy + TMZ + six cycles of adjuvant TMZ	40 months	18F-FDG, 11C-MET, and 3.0 T MRI (T1 + C and FALIR)	18F-FDG (3.7 MBq/kg)
+11C-MET PET (555–740 MBq)	
+Sun et al., (2021)
+(China) [102]	77 (49.1)	Glioblastoma	-	Total resection or subtotal resection
++ CCRT and TMZ	6 months	3.0 T MRI
+(T1 + C)	Gadodiamide
+(0.1 mmol/kg)	
+Hotta et al., (2019)
+(Japan) [109]	41 (55.5)	Glioma	Grade 2 (n = 4), grade 3 (n = 8), and grade 4 (n = 8)	Radiation therapy (either conventional radiotherapy or stereotactic radiosurgery)	6 months	PET/CT	MET
+(384.0 ± 22.7 MBq)	
+Park et al., (2021)
+(S. Korea) [110]	127 (57.46)	Grade 4 GBM
++
+R132H mutation in IDH1, MGMT	-	Surgery with chemoradiation	2–3 months	3.0 T MRI
+T1, T2, ADC	Gadolinium
+(0.1 mL/kg)	
+Jiang et al., (2022)
+(USA) [111]	86 (52.15)	Primary malignant glioma
+(glioblastoma-anaplastic, oligodendroglioma-anaplastic, astrocytoma-gliosarcoma)	Recurrence: (III = 22, IV = 38), treatment: (III = 4, IV = 22)	Gross total resection, other surgical procedures
++ chemoradiation or radiotherapy	Range, 18 days to 3655 days	3.0 T MRI
+(APTw)—T2w, FLAIR, T1w, and
+(Gd-T1w)	Gadolinium
+(0.2 mL/kg)	
+Zhang et al., (2022)
+(China) [112]	126 (46.25)	Grades 2–4 GBM	-	Surgery
++
+chemoradiation or radiotherapy	2–3 months	3.0 T MRI
+T1WI, T2WI, T2FLAIR, DWI, ASL, and CE-T1WI	-	
+Abbreviations: T1C: postcontrast T1-weighted sequence; FLAIR: fluid-attenuated inversion recovery; CCRT with TMZ: concurrent chemoradiotherapy with temozolomide; FDG: fluorodeoxyglucose; MET: methionine; MRI: magnetic resonance imaging; PET: positron emission tomography; GBM: glioblastoma multiform; IDH1: isocitrate dehydrogenase 1; ADC: apparent diffusion coefficient; APTw: amide proton transfer-weighted.
+
+3.2. Recurrent Brain Tumor vs. Radiation Necrosis
+
+In one feasibility study on 33 glioma patients, radiomics features from T1 + C, T2, and FLAIR were compared by neuroradiologists for differentiation between RN and tumor recurrence (TR). These features had a superior performance with an AUC of 0.79, while FLAIR was the most crucial sequence [104].
+
+In one study on 16 patients with RN and 35 with TR, the researchers extracted handcraft and deep features and used them to differentiate RN versus TR. They used T1, T1 + C, T2, and FLAIR sequences. They showed that handcraft multiparametric MRI features were superior to single-sequence radiomics with an AUC of 0.96. Also, they showed that adding deep features to handcraft features can improve the model’s performance up to an AUC of 0.99. Of note, three patients in this study had ependymoma, and the rest had glioma [103].
+
+In another study (training data set: 63 recurrent GBM and 23 RN; external validation: 23 recurrent GBM and 18 RN), T1 + C and T2 were compared to the ADC. The study concluded that ADC radiomics is superior to T1 + C and T2 and announced ADC to be more capable of differentiating recurrent GBM from TN with an AUC, accuracy, sensitivity, and specificity of 0.80, 78%, 66.7%, and 87%, respectively [110]. Diffusion radiomics models seem promising in these scenarios since they reflect tumor microenvironments [110]. Moreover, second-order features were the most prominent features extracted from the diffusion model [110]. However, quantitative features such as flatness, sphericity, mesh volume, and significant axis length aided this study [110].
+
+In one study about 11C-methionine (MET)-PET on brain metastasis (15 TR, 6 RN) and 23 gliomas (18 TR, 5 RN), radiomics analysis had an AUC of 0.98, which was significantly higher than the traditional evaluation of lesions on brain PET (ratio of tracer uptake in tumor-to-normal-cortex; T/N ratio) [109].
+
+In one radiomics study on 118 recurrent gliomas and 42 RT, T1 + C, and FLAIR MRI, 18F-fluorodeoxyglucose (18F-FDG) positron emission tomography (PET), and 11C-methionine (11C-MET) PET were compared. For a single modality, the AUC values of 0.81, 0.75, and 0.62 were reported for 18F-FDG, 11C-MET, and MRI, respectively, while the combination of 18F-FDG + 11C-MET, 18F-FDG + MRI, and 11C-MET + MRI had AUC values of 0.89, 0.86, and 0.8, respectively [108].
+
+In a study about 11C-methionine (MET)-PET, the tumor-to-normal-cortex (T/N) ratio >1.3 was used as the traditional method for differentiation between TR and RN. This threshold was then compared with radiomics analysis (42 features from the lesion with elevated uptake). For this task, radiomics significantly outperformed the T/N ratio (sensitivities of 90.1% and 60.6%, specificities of 93.9% and 72.7%, and AUC of 0.98 and 0.73, respectively). GLCM has also been considered the most discriminative feature when using PET-MET in cases of recurrent brain tumor vs. radiation necrosis (RN). This may be due to higher intratumoral heterogeneity of the brain tumor and indicates the importance of heterogeneity over intensity uptake [109]. Histopathologically, pseudoprogression exhibits necrotizing effects with a complete absence of tumor cells, vascular dilation, fibrinoid necrosis, and normal cerebral vasculature endothelial damage. At the same time, true progression presents with tumor cells, increased cellularity, and vascular proliferation, except for necrotizing treatment effects. This indicates a more heterogenous pathologic nature of tumor progression and pinpoints the importance of methods identifying the differences in underlying tissue heterogeneity [106].
+
+An amide proton transfer-weighted (APTw-MRI) radiomics model exhibited 86.0% accuracy in diagnosing tumor recurrence from radiotherapy effects, outperforming radiomics analysis on single sequences of T1, T1 + C, T2, and FALIR. The accuracy of this model rose to 89.5% when combined with structural MR images (T1 w, T 2 w, FLAIR, Gd-T 1 w) [111]. The APTw signal intensity originates from amide protons in endogenous proteins and peptides in the parenchyma. In tumor tissue, the content of mobile proteins and peptides is higher than in normal tissue, resulting in increased APTw signal intensity [111,113].
+
+One recent study (66 TR and 30 RN for the training dataset and 18 TR and 12 RN for the validation dataset) evaluated the performance of traditional MR sequences (T1, T2, FLAIR, T1 + C), DWI, and ASL (CBF) for differentiation between TR and RN in glioma. An SVM model which demonstrated a multiparameter MRI radiomics model (AUC 0.96) was superior to conventional MRI (AUC 0.88), ADC (AUC 0.91), and ASL-CBF (AUC 0.95) radiomics models. Also, the multiparameter MRI radiomics model had an AUC of 0.98 in WHO grade 2~3 and 0.96 in WHO grade 4 [112]. In this study, incorporating ASL modality contributed to differentiating recurrence from radiation-induced lesions more than other modalities [112]. In addition, this study used WHO 2021 guidelines as the inclusion criteria and is probably the most reliable publication available now.
+
+The reviewed studies aimed to develop and determine machine learning models’ capacity in differentiating tumor necrosis and progression from treatment (radiotherapy)-related complications. The details of the studies’ characteristics, imaging modalities, and radiomics procedures are mentioned in Table 1, Table 2 and Table 3 at the end of the manuscript.
+
+4. Limitations and Challenges
+
+In 2021, the World Health Organization (WHO) introduced a new classification system for glioma and glioblastoma. The new system categorizes diffuse gliomas into four general groups: adult-type diffuse gliomas, pediatric-type diffuse low-grade gliomas, pediatric diffuse high-grade gliomas, and circumscribed astrocytic gliomas. The updated classification system more strictly defines GBM as a highly malignant tumor. Additionally, the new design includes updated grading within tumor types [114]. Most published studies about radiomics in post-treatment glioma used older 2016 classification, and their results are not necessarily generalized to current glioma classification.
+
+Although some studies used data from pathologically confirmed patients [108,112], most of them used clinical and radiologic findings as the mainstay of diagnosis instead [105]. In this context, the enhancing lesions within the resection cavity and at the radiation field are considered TR if they show enlargement on subsequent imaging and post-treatment if they get smaller on follow-up.
+
+A small data set was a common downfall among studies [103,104,106], which can result in positive bias, lower statistical power, and unreliable results and can damage the generalizability of the findings [115,116]. To overcome this obstacle, some studies used five-fold and 10-fold cross-validation techniques to evaluate their machine learning models [107]. Some others used an independent validation cohort, which provides an unbiased estimate of the model’s performance on unseen data [104]. However, most published studies used just internal datasets, and their results are subject to overestimation of the performance of radiomics.
+
+Many of these studies were conducted retrospectively [105], which may have been damaged by selection bias, recall bias, less validity, and more common errors [117].
+
+The enhancing region within the resection cavity and in the radiation field is the most common region analyzed by radiomics, limiting the assessment of nonenhanced tumor infiltration areas. Thus, multimodal parameters reflecting nonenhanced lesions should be considered in future studies [105].
+
+In some studies, radiologists manually contoured lesions [106]. This may lead to observer bias, high inter-reader variability, the derivation of unstable radiomics features, and increased variability in image acquisition and reconstruction, which can affect the reproducibility of radiomics features [93,118,119]. ITK-SNAP (http://www.itksnap.org/) was the main segmentation software used in studies, although other software was employed, too. Notably, using different segmentation software can introduce variability and affect the reproducibility and accuracy of radiomics features [93] (Table 2).
+
+Lesions with a small volume of interest or trace uptake were excluded from the analysis of some studies. Although it may be inaccessible to fully consider all the regions, with improvement in processing and analysis methods, these regions can be explored and increase the accuracy of studies [109].
+
+A large and varied dataset for training is one of the most critical challenges in model creation for AI. To address this, developing public datasets as benchmarks for AI algorithms is important. It is essential to consider that radiomics can be affected by differences in MRI machines, magnet strength, and acquisition parameters. While models are trained using data from multiple scanners for greater accuracy, there is uncertainty about how well they will work on new datasets acquired from different scanners with diverse scanning protocols. Preprocessing methods such as brain extraction, denoising, segmentation, and feature extraction are essential in medical imaging, but standardization proves challenging due to different criteria and parametrization. To ensure consistency, it is essential to document acquisition protocols and preprocessing pipelines in detail [120].
+
+Despite the benefits of sharing patient data, there are still several challenges. First, it can be difficult to distribute these data, particularly multicenter datasets, when the patient data take up a lot of storage space, for example, with high-resolution images. Second, there are legal and ethical barriers that prevent the public distribution of some or all of the data due to privacy concerns [121]. Third, institutions may choose not to share patient data, considering the data an invaluable asset [122]. Currently, most of the radiomics-trained models about post-treatment glioma have yet to be publicly available. That means that other researchers cannot adopt them for further improvement.
+
+5. Conclusions
+
+The preliminary data are auspicious in applying the radiomics model in post-treatment glioma follow-up imaging and to differentiate between pseudoprogression from true progression and radiation necrosis from tumor recurrence, often with reported AUC above 0.9. Radiomics can be used on traditional MR sequences (T1, T2, FALIR, T1 + C, DWI/ADC), advanced MR sequences (MR perfusion, APTw-MRI), as well as PET (18F-FDG and 11C-MET). The performance of radiomics is likely superior to traditional radiologist diagnosis. Also, the performance of radiomics is enhanced by using multiparametric images (adding different MR sequences, ADC, MR perfusion, and PET) compared to a single modality. However, limited data sets, different preprocessing and analysis software, and methods still need to be improved in reaching a consensus on the exact paradigms of this novel method (Table 3). Further prospective investigations with larger data sets and varied imaging modalities are in huge demand.
+
+cancers-15-04429-t003_Table 3 Table 3 Radiomics features of included studies.
+
+	Machine Learning Features	Radiomics Features	Performance Metrics	
+Author
+(Year)	Model	Method of
+Measuring
+Performance	Segmentation Software #
+Feature Extraction and Selection Software #
+Feature Analysis Software	Type of Features # Number of Selected and Extracted Features	Modality	Sensitivity	Specificity	PPV	NPV	AUC	Accuracy	
+Zhang et al.,
+(2019)
+(China)
+[103]	Random forest, naive Bayes classifiers, AlexNet, Inception v3 CNN	Cross-validation	ITKSNAP software, FSL5.0.9 # AlexNet, and Inception v3 # MATLAB 2017b	Handcrafted, deep texture features # 4 nontexture features, 41,284 texture features, 16,384 AlexNet features, and 8192 Inception v3 features extracted	Multimodality MRI	99.4%	97.5%	NA	NA	0.998	97.8%	
+Tiwari et al.,
+(2016)
+(USA)
+[104]	SVM classifier	Independent validation cohort	3D Slicer and BraTumIA # Matlab R 2014b # Matlab R2014b	Spatial distribution of pixel intensities within the MRI images and included features # E: 119 2D texture features on a per-voxel basis # S: 78	FLAIR	NA	NA	NA	NA	0.79	75%	
+T2	NA	NA	NA	NA	0.77	72%	
+Gao et al., (2020)
+(China) [105]	SVM classifier	Five-fold cross-validation	ITK-SNAP # E:
+PyRadiomics
+S: recursive feature elimination (RFE) # N/A	Three first-order features, eight gray-level co-occurrence matrix (GLCM) features, and two gray-level run-length (GLRLM) features # E: 186
+S: 13	T1 + C	100%	70%	62.5%	100%	0.8	80%	
+T2 FLAIR + C	100%	80%	71.43%	100%	0.84	86.67%	
+T1C subtraction + T2 FLAIR subtraction	100%	90%	83.33%	100%	0.94	93.33%	
+Chen et al., (2015)
+(China) [106]	N/A	N/A	Manually # N/A # MedCalc
+IBM SPSS Statistics	GLCM texture # N/A	T1 + C	91.7%	70%	78.6%	87.5%	0.84	81.8%	
+T2	75%	100%	66.7%	100%	0.88	86.4%	
+FLAIR	66.7%	80%	80%	66.7%	0.75	72.7%	
+Sadique et al., (2022)
+(USA) [107]	Random forest (RF) classifier	Stratified five-fold cross-validation, leave-one-out cross-validation	A 3D deep learning model was used to segment subregions of the tumor, which were verified by a radiologist # N/A # N/A	Multiresolution texture features, texture features #	Texture, volumetric, and histogram features	NA	94%	NA	NA	NA	93%	
+Wang et al., (2019)
+(China) [108]	Computer-supported predictive models	Cross-validation	ITK-SNAP
+#
+AnalysisKit (GE
+Healthcare, China) # R studio	First-order features, shape features, and texture features # E: 912 (FDG 303; MET 297; MRI 312) # S: 8–13	FDG	69%	76%	NA	NA	0.8	71%	
+MET	75%	69%	NA	NA	0.75	73%	
+MRI	62%	65%	NA	NA	0.62	69%	
+FDG + MET	75%	91%	NA	NA	0.89	79%	
+FDG + MRI	83%	75%	NA	NA	0.86	81%	
+MET + MRI	72%	58%	NA	NA	0.8	68%	
+Sun et al.,
+(2021)
+(China) [102]	Random forest classifier	RF classifier trained with 50 trees, 10-fold cross-validation	ITK-SNAP
+version 3.6 # E: Analysis-Kinetics (A.K., GE Healthcare)
+S: R
+version 3. 4. 2 # SPSS 20	42 histogram features, 11 Gy-level size zone matrix (GLSZM) texture features, 10 Haralick features,
+144 Gy-level co-occurrence matrix (GLCM) texture features, and 180 run-length matrix (RLM) texture features # E: 9675 S: 50	T1 + C	78%	61%	NA	NA	NA	72%	
+Hotta et al.,
+(2019)
+(Japan) [109]	Random forest classifier	10-fold cross-validation	LIFEX # E: LIFEx
+S: R package “Boruta” # LIFEx	Texture features extracted from MET-PET images using gray-level co-occurrence matrix (GLCM), gray-level run-length matrix (GLRLM), gray-level zone-length matrix (GLZLM), and neighborhood gray-level difference matrix (NGLDM) # E: 42
+S: 30	Radiomics	90.1%	93.9%	95.2%	88.6%	0.98	92.2%	
+T/N Ratio	60.6%	72.7%	86.9%	38.1%	0.73	63.6%	
+Park et al.,
+(2021)
+(S. Korea)
+[110]	SVM, KNN, AdaBoost	10-fold cross-validation	3D slicer (semiautomatic) # PyRadiomics # R-WhiteStripe	GLCM, GLRLM, GLSZM, NGTDM # E: 263
+S: 18	LASSO feature selection and SVM	66.7%	87%	NA	NA	0.8	78%	
+Jiang et al.,
+(2022)
+(USA) [111]	N/A	N/A	ITK-SNAP # PyRadiomics # SPSS 26.0
+MATLAB R2021a	APTw features # E: 525 for each sequence; a total of 2589
+S: for T1w, T2w, FLAIR, Gd-T1w, or APTw MR images, 34, 61, 47, 18, or 176 radiomics features were selected	All sequences	85%	100%	NA	NA	92.5%	89.5%	
+APTw	70.6%	96.2%	NA	NA	87.8%	86%	
+T1	96.7%	23.1%	NA	NA	59.9%	74.4%	
+T2	58.3%	90%	NA	NA	77.9%	76.7%	
+FLAIR	88.3%	73.1%	NA	NA	80.7%	83.7%	
+T1 + C1	0	75%	NA	NA	61.5%	76.7%	
+T1, T2, FLAIR, T1 + C8	5%	76.9%	NA	NA	81%	82.6%	
+T1, T2, FLAIR, APTw	88.3%	96.2%	NA	NA	92.2%	90.7%	
+Zhang et al.,
+(2022)
+(China) [112]	SVM, KNN, LR, NB	10-fold cross-validation	ITK-SNAP (Manually) # MATLAB # MATLAB, Python 3.8	GLCM, GLRLM, GLSZM, first order # E: 4199
+S: eight (two T1, one T1 + C, one ADC, four CBF)	SVM and multiparameter MRI	91.7%	NA	NA	NA	0.94	NA	
+100%	NA	NA	NA	0.82	NA	
+Abbreviations: PPV: positive predictive value; NPV: negative predictive value; AUC: area under the curve; CNN: convolutional neural network; SVM: support vector machine; GLCM: gray-level co-occurrence matrix; GLRLM: gray-level run-length matrix; RF: random forest; GLSZM: gray-level size zone matrix; RLM: run-length matrix; NGLDM: neighborhood gray-level difference matrix; KNN: k-nearest neighbors algorithm; APTw: amide proton transfer-weighted; LR: logistic regression; NB: naive Bayes; CBF: cerebral blood flow.
+
+Author Contributions
+
+Conceptualization, H.S.; methodology, H.S.; investigation, M.A. (Mobin Azami), M.A.B., M.A. (Mohammadreza Alizadeh), M.K., P.S. and N.B.L.; writing—original draft preparation, M.A. (Mobin Azami), M.A.B., M.A. (Mohammadreza Alizadeh), M.K., P.S. and N.B.L.; writing—review and editing, H.S., M.A. (Mobin Azami), M.A.B., M.A. (Mohammadreza Alizadeh), M.K., P.S. and N.B.L.; supervision, H.S. and M.A. (Mohammadreza Alizadeh); project administration, H.S. and M.A. (Mohammadreza Alizadeh). All authors have read and agreed to the published version of the manuscript.
+
+Conflicts of Interest
+
+The authors declare no conflict of interest.
+
+Disclaimer/Publisher’s Note: The statements, opinions and data contained in all publications are solely those of the individual author(s) and contributor(s) and not of MDPI and/or the editor(s). MDPI and/or the editor(s) disclaim responsibility for any injury to people or property resulting from any ideas, methods, instructions or products referred to in the content.
+==== Refs
+References
+
+1. Davis M.E. Glioblastoma: Overview of Disease and Treatment Clin. J. Oncol. Nurs. 2016 20 S2 S8 10.1188/16.CJON.S1.2-8 27668386
+2. Ostrom Q.T. Gittleman H. Truitt G. Boscia A. Kruchko C. Barnholtz-Sloan J.S. CBTRUS Statistical Report: Primary Brain and Other Central Nervous System Tumors Diagnosed in the United States in 2011–2015 Neuro Oncol. 2018 20 iv1 iv86 10.1093/neuonc/noy131 30445539
+3. Schwartzbaum J.A. Fisher J.L. Aldape K.D. Wrensch M. Epidemiology and molecular pathology of glioma Nat. Clin. Pract. Neurol. 2006 2 494 503 10.1038/ncpneuro0289 16932614
+4. Berzero G. Di Stefano A.L. Ronchi S. Bielle F. Villa C. Guillerm E. Capelle L. Mathon B. Laurenge A. Giry M. IDH-wildtype lower-grade diffuse gliomas: The importance of histological grade and molecular assessment for prognostic stratification Neuro Oncol. 2021 23 955 966 10.1093/neuonc/noaa258 33173941
+5. Whitfield B.T. Huse J.T. Classification of adult-type diffuse gliomas: Impact of the World Health Organization 2021 update Brain Pathol. 2022 32 e13062 10.1111/bpa.13062 35289001
+6. Jovčevska I. Kočevar N. Komel R. Glioma and glioblastoma—How much do we (not) know? Mol. Clin. Oncol. 2013 1 935 941 10.3892/mco.2013.172 24649273
+7. Tan A.C. Ashley D.M. López G.Y. Malinzak M. Friedman H.S. Khasraw M. Management of glioblastoma: State of the art and future directions CA Cancer J. Clin. 2020 70 299 312 10.3322/caac.21613 32478924
+8. Rončević A. Koruga N. Soldo Koruga A. Rončević R. Rotim T. Šimundić T. Kretić D. Perić M. Turk T. Štimac D. Personalized Treatment of Glioblastoma: Current State and Future Perspective Biomedicines 2023 11 1579 10.3390/biomedicines11061579 37371674
+9. van den Bent M. UpToDate Treatment and Prognosis of IDH-Mutant, 1p/19q-Codeleted Oligodendrogliomas in Adults Wen P.Y. UpToDate Waltham, MA, USA 2023
+10. Alexiou G.A. Tsiouris S. Kyritsis A.P. Voulgaris S. Argyropoulou M.I. Fotopoulos A.D. Glioma recurrence versus radiation necrosis: Accuracy of current imaging modalities J. Neurooncol. 2009 95 1 11 10.1007/s11060-009-9897-1 19381441
+11. Giglio P. Gilbert M.R. Cerebral radiation necrosis Neurologist 2003 9 180 188 10.1097/01.nrl.0000080951.78533.c4 12864928
+12. Nihashi T. Dahabreh I.J. Terasawa T. Diagnostic accuracy of PET for recurrent glioma diagnosis: A meta-analysis AJNR Am. J. Neuroradiol. 2013 34 944 950 10.3174/ajnr.A3324 23124638
+13. Abdalla G. Hammam A. Anjari M. D’Arco D.F. Bisdas D.S. Glioma surveillance imaging: Current strategies, shortcomings, challenges and outlook BJR Open 2020 2 20200009 10.1259/bjro.20200009 33178973
+14. Shukla G. Alexander G.S. Bakas S. Nikam R. Talekar K. Palmer J.D. Shi W. Advanced magnetic resonance imaging in glioblastoma: A review Chin. Clin. Oncol. 2017 6 40 10.21037/cco.2017.06.28 28841802
+15. Zikou A. Sioka C. Alexiou G.A. Fotopoulos A. Voulgaris S. Argyropoulou M.I. Radiation Necrosis, Pseudoprogression, Pseudoresponse, and Tumor Recurrence: Imaging Challenges for the Evaluation of Treated Gliomas Contrast Media Mol. Imaging 2018 2018 6828396 10.1155/2018/6828396 30627060
+16. Soni N. Ora M. Mohindra N. Menda Y. Bathla G. Diagnostic Performance of PET and Perfusion-Weighted Imaging in Differentiating Tumor Recurrence or Progression from Radiation Necrosis in Posttreatment Gliomas: A Review of Literature AJNR Am. J. Neuroradiol. 2020 41 1550 1557 10.3174/ajnr.A6685 32855194
+17. Franceschi E. Tosoni A. Pozzati E. Brandes A.A. Association between response to primary treatments and MGMT status in glioblastoma Expert Rev. Anticancer Ther. 2008 8 1781 1786 10.1586/14737140.8.11.1781 18983238
+18. Brandes A.A. Tosoni A. Spagnolli F. Frezza G. Leonardi M. Calbucci F. Franceschi E. Disease progression or pseudoprogression after concomitant radiochemotherapy treatment: Pitfalls in neurooncology Neuro Oncol. 2008 10 361 367 10.1215/15228517-2008-008 18401015
+19. Balaña C. Capellades J. Pineda E. Estival A. Puig J. Domenech S. Verger E. Pujol T. Martinez-García M. Oleaga L. Pseudoprogression as an adverse event of glioblastoma therapy Cancer Med. 2017 6 2858 2866 10.1002/cam4.1242 29105360
+20. Thust S.C. van den Bent M.J. Smits M. Pseudoprogression of brain tumors J. Magn. Reson. Imaging 2018 48 571 589 10.1002/jmri.26171 29734497
+21. Le Fèvre C. Lhermitte B. Ahle G. Chambrelant I. Cebula H. Antoni D. Keller A. Schott R. Thiery A. Constans J.M. Pseudoprogression versus true progression in glioblastoma patients: A multiapproach literature review: Part 1—Molecular, morphological and clinical features Crit. Rev. Oncol. Hematol. 2021 157 103188 10.1016/j.critrevonc.2020.103188 33307200
+22. Brandsma D. Stalpers L. Taal W. Sminia P. van den Bent M.J. Clinical features, mechanisms, and management of pseudoprogression in malignant gliomas Lancet Oncol. 2008 9 453 461 10.1016/S1470-2045(08)70125-6 18452856
+23. Wilson C.M. Gaber M.W. Sabek O.M. Zawaski J.A. Merchant T.E. Radiation-induced astrogliosis and blood-brain barrier damage can be abrogated using anti-TNF treatment Int. J. Radiat. Oncol. Biol. Phys. 2009 74 934 941 10.1016/j.ijrobp.2009.02.035 19480972
+24. Kumar A.J. Leeds N.E. Fuller G.N. Van Tassel P. Maor M.H. Sawaya R.E. Levin V.A. Malignant gliomas: MR imaging spectrum of radiation therapy- and chemotherapy-induced necrosis of the brain after treatment Radiology 2000 217 377 384 10.1148/radiology.217.2.r00nv36377 11058631
+25. Walker A.J. Ruzevick J. Malayeri A.A. Rigamonti D. Lim M. Redmond K.J. Kleinberg L. Postradiation imaging changes in the CNS: How can we differentiate between treatment effect and disease progression? Future Oncol. 2014 10 1277 1297 10.2217/fon.13.271 24947265
+26. Reddy K. Westerly D. Chen C. MRI patterns of T1 enhancing radiation necrosis versus tumour recurrence in high-grade gliomas J. Med. Imaging Radiat. Oncol. 2013 57 349 355 10.1111/j.1754-9485.2012.02472.x 23721146
+27. Chen W. Wang Y. Zhao B. Liu P. Liu L. Wang Y. Ma W. Optimal Therapies for Recurrent Glioblastoma: A Bayesian Network Meta-Analysis Front. Oncol. 2021 11 641878 10.3389/fonc.2021.641878 33854975
+28. Fukuya Y. Ikuta S. Maruyama T. Nitta M. Saito T. Tsuzuki S. Chernov M. Kawamata T. Muragaki Y. Tumor recurrence patterns after surgical resection of intracranial low-grade gliomas J. Neurooncol 2019 144 519 528 10.1007/s11060-019-03250-8 31363908
+29. Birzu C. French P. Caccese M. Cerretti G. Idbaih A. Zagonel V. Lombardi G. Recurrent Glioblastoma: From Molecular Landscape to New Treatment Perspectives Cancers 2020 13 47 10.3390/cancers13010047 33375286
+30. Kirkpatrick J.P. Sampson J.H. Recurrent malignant gliomas Semin. Radiat. Oncol. 2014 24 289 298 10.1016/j.semradonc.2014.06.006 25219814
+31. Zhang L. Liu Z. Li J. Huang T. Wang Y. Chang L. Zheng W. Ma Y. Chen F. Gong X. Genomic analysis of primary and recurrent gliomas reveals clinical outcome related molecular features Sci. Rep. 2019 9 16058 10.1038/s41598-019-52515-9 31690770
+32. Li C. Xi S. Chen Y. Guo C. Zhang J. Yang Q. Wang J. Sai K. Zeng J. Wang J. Clinical significance of histopathological features of paired recurrent gliomas: A cohort study from a single cancer center BMC Cancer 2023 23 8 10.1186/s12885-022-10484-9 36597096
+33. Teng C. Zhu Y. Li Y. Dai L. Pan Z. Wanggou S. Li X. Recurrence- and Malignant Progression-Associated Biomarkers in Low-Grade Gliomas and Their Roles in Immunotherapy Front. Immunol. 2022 13 899710 10.3389/fimmu.2022.899710 35677036
+34. Varn F.S. Johnson K.C. Martinek J. Huse J.T. Nasrallah M.P. Wesseling P. Cooper L.A.D. Malta T.M. Wade T.E. Sabedot T.S. Glioma progression is shaped by genetic evolution and microenvironment interactions Cell 2022 185 2184 2199.e2116 10.1016/j.cell.2022.04.038 35649412
+35. Bready D. Placantonakis D.G. Molecular Pathogenesis of Low-Grade Glioma Neurosurg. Clin. N. Am. 2019 30 17 25 10.1016/j.nec.2018.08.011 30470401
+36. Jiang H. Yu K. Li M. Cui Y. Ren X. Yang C. Zhao X. Lin S. Classification of Progression Patterns in Glioblastoma: Analysis of Predictive Factors and Clinical Implications Front. Oncol. 2020 10 590648 10.3389/fonc.2020.590648 33251147
+37. Rapôso C. Vitorino-Araujo J.L. Barreto N. Molecular Markers of Gliomas to Predict Treatment and Prognosis: Current State and Future Directions Gliomas Debinski W. Exon Publications Brisbane City, Australia 2021
+38. Mullins M.E. Barest G.D. Schaefer P.W. Hochberg F.H. Gonzalez R.G. Lev M.H. Radiation necrosis versus glioma recurrence: Conventional MR imaging clues to diagnosis AJNR Am. J. Neuroradiol. 2005 26 1967 1972 16155144
+39. Katsura M. Sato J. Akahane M. Furuta T. Mori H. Abe O. Recognizing Radiation-induced Changes in the Central Nervous System: Where to Look and What to Look For RadioGraphics 2021 41 224 248 10.1148/rg.2021200064 33216673
+40. Young R.J. Gupta A. Shah A.D. Graber J.J. Zhang Z. Shi W. Holodny A.I. Omuro A.M. Potential utility of conventional MRI signs in diagnosing pseudoprogression in glioblastoma Neurology 2011 76 1918 1924 10.1212/WNL.0b013e31821d74e7 21624991
+41. Sanghera P. Perry J. Sahgal A. Symons S. Aviv R. Morrison M. Lam K. Davey P. Tsao M.N. Pseudoprogression following chemoradiotherapy for glioblastoma multiforme Can. J. Neurol. Sci. 2010 37 36 42 10.1017/S0317167100009628 20169771
+42. van de Weijer T. Broen M.P.G. Moonen R.P.M. Hoeben A. Anten M. Hovinga K. Compter I. van der Pol J.A.J. Mitea C. Lodewick T.M. The Use of (18)F-FET-PET-MRI in Neuro-Oncology: The Best of Both Worlds-A Narrative Review Diagnostics 2022 12 1202 10.3390/diagnostics12051202 35626357
+43. Nuessle N.C. Behling F. Tabatabai G. Castaneda Vega S. Schittenhelm J. Ernemann U. Klose U. Hempel J.M. ADC-Based Stratification of Molecular Glioma Subtypes Using High b-Value Diffusion-Weighted Imaging J. Clin. Med. 2021 10 3451 10.3390/jcm10163451 34441747
+44. Carrete L.R. Young J.S. Cha S. Advanced Imaging Techniques for Newly Diagnosed and Recurrent Gliomas Front. Neurosci. 2022 16 787755 10.3389/fnins.2022.787755 35281485
+45. Asao C. Korogi Y. Kitajima M. Hirai T. Baba Y. Makino K. Kochi M. Morishita S. Yamashita Y. Diffusion-weighted imaging of radiation-induced brain injury for differentiation from tumor recurrence AJNR Am. J. Neuroradiol. 2005 26 1455 1460 15956515
+46. van Dijken B.R.J. van Laar P.J. Smits M. Dankbaar J.W. Enting R.H. van der Hoorn A. Perfusion MRI in treatment evaluation of glioblastomas: Clinical relevance of current and future techniques J. Magn. Reson. Imaging 2019 49 11 22 10.1002/jmri.26306 30561164
+47. da Cruz H.L.C. Jr. Rodriguez I. Domingues R.C. Gasparetto E.L. Sorensen A.G. Pseudoprogression and pseudoresponse: Imaging challenges in the assessment of posttreatment glioma AJNR Am. J. Neuroradiol. 2011 32 1978 1985 10.3174/ajnr.A2397 21393407
+48. Hein P.A. Eskey C.J. Dunn J.F. Hug E.B. Diffusion-weighted imaging in the follow-up of treated high-grade gliomas: Tumor recurrence versus radiation injury AJNR Am. J. Neuroradiol. 2004 25 201 209 14970018
+49. Brandes A.A. Franceschi E. Tosoni A. Blatt V. Pession A. Tallini G. Bertorelle R. Bartolini S. Calbucci F. Andreoli A. MGMT promoter methylation status can predict the incidence and outcome of pseudoprogression after concomitant radiochemotherapy in newly diagnosed glioblastoma patients J. Clin. Oncol. 2008 26 2192 2197 10.1200/JCO.2007.14.8163 18445844
+50. Verma N. Cowperthwaite M.C. Burnett M.G. Markey M.K. Differentiating tumor recurrence from treatment necrosis: A review of neuro-oncologic imaging strategies Neuro Oncol. 2013 15 515 534 10.1093/neuonc/nos307 23325863
+51. van den Elshout R. Scheenen T.W.J. Driessen C.M.L. Smeenk R.J. Meijer F.J.A. Henssen D. Diffusion imaging could aid to differentiate between glioma progression and treatment-related abnormalities: A meta-analysis Insights Imaging 2022 13 158 10.1186/s13244-022-01295-4 36194373
+52. Yanagihara T.K.W. Diffusion-weighted imaging of the brain for glioblastoma: Implications for radiation oncology Appl. Radiat. Oncol. 2014 5 13 10.37549/ARO1055
+53. van Dijken B.R.J. van Laar P.J. Holtman G.A. van der Hoorn A. Diagnostic accuracy of magnetic resonance imaging techniques for treatment response evaluation in patients with high-grade glioma, a systematic review and meta-analysis Eur. Radiol. 2017 27 4129 4144 10.1007/s00330-017-4789-9 28332014
+54. Kamada K. Houkin K. Abe H. Sawamura Y. Kashiwaba T. Differentiation of cerebral radiation necrosis from tumor recurrence by proton magnetic resonance spectroscopy Neurol. Med. Chir. 1997 37 250 256 10.2176/nmc.37.250 9095625
+55. Kazda T. Bulik M. Pospisil P. Lakomy R. Smrcka M. Slampa P. Jancalek R. Advanced MRI increases the diagnostic accuracy of recurrent glioblastoma: Single institution thresholds and validation of MR spectroscopy and diffusion weighted MR imaging Neuroimage Clin. 2016 11 316 321 10.1016/j.nicl.2016.02.016 27298760
+56. Dhermain F.G. Hau P. Lanfermann H. Jacobs A.H. van den Bent M.J. Advanced MRI and PET imaging for assessment of treatment response in patients with gliomas Lancet Neurol. 2010 9 906 920 10.1016/S1474-4422(10)70181-2 20705518
+57. Weinberg B.D. Kuruva M. Shim H. Mullins M.E. Clinical Applications of Magnetic Resonance Spectroscopy in Brain Tumors: From Diagnosis to Treatment Radiol. Clin. N. Am. 2021 59 349 362 10.1016/j.rcl.2021.01.004 33926682
+58. Shooli H. Dadgar H. Wáng Y.J. Vafaee M.S. Kashuk S.R. Nemati R. Jafari E. Nabipour I. Gholamrezanezhad A. Assadi M. An update on PET-based molecular imaging in neuro-oncology: Challenges and implementation for a precision medicine approach in cancer care Quant. Imaging Med. Surg. 2019 9 1597 1610 10.21037/qims.2019.08.16 31667145
+59. Najjar A.M. Johnson J.M. Schellingerhout D. The Emerging Role of Amino Acid PET in Neuro-Oncology Bioengineering 2018 5 104 10.3390/bioengineering5040104 30487391
+60. Kebir S. Fimmers R. Galldiks N. Schäfer N. Mack F. Schaub C. Stuplich M. Niessen M. Tzaridis T. Simon M. Late Pseudoprogression in Glioblastoma: Diagnostic Value of Dynamic O-(2-[18F]fluoroethyl)-L-Tyrosine PET Clin. Cancer Res. 2016 22 2190 2196 10.1158/1078-0432.CCR-15-1334 26673798
+61. Galldiks N. Langen K.J. Albert N.L. Chamberlain M. Soffietti R. Kim M.M. Law I. Le Rhun E. Chang S. Schwarting J. PET imaging in patients with brain metastasis-report of the RANO/PET group Neuro Oncol. 2019 21 585 595 10.1093/neuonc/noz003 30615138
+62. Santo G. Laudicella R. Linguanti F. Nappi A.G. Abenavoli E. Vergura V. Rubini G. Sciagrà R. Arnone G. Schillaci O. The Utility of Conventional Amino Acid PET Radiotracers in the Evaluation of Glioma Recurrence also in Comparison with MRI Diagnostics 2022 12 844 10.3390/diagnostics12040844 35453892
+63. Filss C.P. Cicone F. Shah N.J. Galldiks N. Langen K.J. Amino acid PET and MR perfusion imaging in brain tumours Clin. Transl. Imaging 2017 5 209 223 10.1007/s40336-017-0225-z 28680873
+64. Bell C. Dowson N. Puttick S. Gal Y. Thomas P. Fay M. Smith J. Rose S. Increasing feasibility and utility of (18)F-FDOPA PET for the management of glioma Nucl. Med. Biol. 2015 42 788 795 10.1016/j.nucmedbio.2015.06.001 26162582
+65. Langen K.J. Heinzel A. Lohmann P. Mottaghy F.M. Galldiks N. Advantages and limitations of amino acid PET for tracking therapy response in glioma patients Expert Rev. Neurother. 2020 20 137 146 10.1080/14737175.2020.1704256 31829748
+66. Almansory K.O. Fraioli F. Combined PET/MRI in brain glioma imaging Br. J. Hosp. Med. 2019 80 380 386 10.12968/hmed.2019.80.7.380 31283392
+67. Pyka T. Hiob D. Preibisch C. Gempt J. Wiestler B. Schlegel J. Straube C. Zimmer C. Diagnosis of glioma recurrence using multiparametric dynamic 18F-fluoroethyl-tyrosine PET-MRI Eur. J. Radiol. 2018 103 32 37 10.1016/j.ejrad.2018.04.003 29803382
+68. Caroline I. Rosenthal M.A. Imaging modalities in high-grade gliomas: Pseudoprogression, recurrence, or necrosis? J. Clin. Neurosci. 2012 19 633 637 10.1016/j.jocn.2011.10.003 22321359
+69. Treglia G. Muoio B. Trevisi G. Mattoli M.V. Albano D. Bertagna F. Giovanella L. Diagnostic Performance and Prognostic Value of PET/CT with Different Tracers for Brain Tumors: A Systematic Review of Published Meta-Analyses Int. J. Mol. Sci. 2019 20 4669 10.3390/ijms20194669 31547109
+70. Imani F. Boada F.E. Lieberman F.S. Davis D.K. Mountz J.M. Molecular and metabolic pattern classification for detection of brain glioma progression Eur. J. Radiol. 2014 83 e100 e105 10.1016/j.ejrad.2013.06.033 24321226
+71. Parent E.E. Johnson D.R. Gleason T. Villanueva-Meyer J.E. Neuro-Oncology Practice Clinical Debate: FDG PET to differentiate glioblastoma recurrence from treatment-related changes Neurooncol Pract. 2021 8 518 525 10.1093/nop/npab027 34594566
+72. Galldiks N. Stoffels G. Filss C. Rapp M. Blau T. Tscherpel C. Ceccon G. Dunkl V. Weinzierl M. Stoffel M. The use of dynamic O-(2-18F-fluoroethyl)-l-tyrosine PET in the diagnosis of patients with progressive and recurrent glioma Neuro Oncol. 2015 17 1293 1300 10.1093/neuonc/nov088 26008606
+73. Cui M. Zorrilla-Veloz R.I. Hu J. Guan B. Ma X. Diagnostic Accuracy of PET for Differentiating True Glioma Progression From Post Treatment-Related Changes: A Systematic Review and Meta-Analysis Front. Neurol. 2021 12 671867 10.3389/fneur.2021.671867 34093419
+74. Galldiks N. Dunkl V. Stoffels G. Hutterer M. Rapp M. Sabel M. Reifenberger G. Kebir S. Dorn F. Blau T. Diagnosis of pseudoprogression in patients with glioblastoma using O-(2-[18F]fluoroethyl)-L-tyrosine PET Eur. J. Nucl. Med. Mol. Imaging 2015 42 685 695 10.1007/s00259-014-2959-4 25411133
+75. Prather K.Y. O’Neal C.M. Westrup A.M. Tullos H.J. Hughes K.L. Conner A.K. Glenn C.A. Battiste J.D. A systematic review of amino acid PET in assessing treatment response to temozolomide in glioma Neurooncol. Adv. 2022 4 vdac008 10.1093/noajnl/vdac008 35300149
+76. Zhang J. Song Y. He M. Ren Q. Zeng Y. Liu Z. Liu H. Xu J. Diagnostic Performance of Increased Signal Intensity Within the Resection Cavity on Fluid-Attenuated Inversion Recovery Sequences for Detection of Progression in Patients with Glioma World Neurosurg. 2018 110 434 441 10.1016/j.wneu.2017.11.181 29229341
+77. Bette S. Gempt J. Huber T. Delbridge C. Meyer B. Zimmer C. Kirschke J.S. Boeckh-Behrens T. FLAIR signal increase of the fluid within the resection cavity after glioma surgery: Generally valid as early recurrence marker? J. Neurosurg. 2017 127 417 425 10.3171/2016.8.JNS16752 27767397
+78. Perry L.A. Korfiatis P. Agrawal J.P. Erickson B.J. Increased signal intensity within glioblastoma resection cavities on fluid-attenuated inversion recovery imaging to detect early progressive disease in patients receiving radiotherapy with concomitant temozolomide therapy Neuroradiology 2018 60 35 42 10.1007/s00234-017-1941-9 29103145
+79. Stockham A.L. Tievsky A.L. Koyfman S.A. Reddy C.A. Suh J.H. Vogelbaum M.A. Barnett G.H. Chao S.T. Conventional MRI does not reliably distinguish radiation necrosis from tumor recurrence after stereotactic radiosurgery J. Neurooncol. 2012 109 149 158 10.1007/s11060-012-0881-9 22638727
+80. Shah A.H. Snelling B. Bregy A. Patel P.R. Tememe D. Bhatia R. Sklar E. Komotar R.J. Discriminating radiation necrosis from tumor progression in gliomas: A systematic review what is the best imaging modality? J. Neurooncol. 2013 112 141 152 10.1007/s11060-013-1059-9 23344789
+81. Prager A.J. Martinez N. Beal K. Omuro A. Zhang Z. Young R.J. Diffusion and perfusion MRI to differentiate treatment-related changes including pseudoprogression from recurrent tumors in high-grade gliomas with histopathologic evidence AJNR Am. J. Neuroradiol. 2015 36 877 885 10.3174/ajnr.A4218 25593202
+82. Tsakiris C. Siempis T. Alexiou G.A. Zikou A. Sioka C. Voulgaris S. Argyropoulou M.I. Differentiation Between True Tumor Progression of Glioblastoma and Pseudoprogression Using Diffusion-Weighted Imaging and Perfusion-Weighted Imaging: Systematic Review and Meta-analysis World Neurosurg. 2020 144 e100 e109 10.1016/j.wneu.2020.07.218 32777397
+83. Taylor C. Ekert J.O. Sefcikova V. Fersht N. Samandouras G. Discriminators of pseudoprogression and true progression in high-grade gliomas: A systematic review and meta-analysis Sci. Rep. 2022 12 13258 10.1038/s41598-022-16726-x 35918373
+84. Patel P. Baradaran H. Delgado D. Askin G. Christos P. John Tsiouris A. Gupta A. MR perfusion-weighted imaging in the evaluation of high-grade gliomas after treatment: A systematic review and meta-analysis Neuro Oncol. 2017 19 118 127 10.1093/neuonc/now148 27502247
+85. Zhang H.M. Huo X.B. Wang H.L. Wang C. Diagnostic Performance of Dynamic Susceptibility Contrast-Enhanced Perfusion-Weighted Imaging in Differentiating Recurrence from Radiation Injury in Postoperative Glioma: A Meta-analysis J. Comput. Assist. Tomogr. 2022 46 938 944 10.1097/RCT.0000000000001356 35969866
+86. Wan B. Wang S. Tu M. Wu B. Han P. Xu H. The diagnostic performance of perfusion MRI for differentiating glioma recurrence from pseudoprogression: A meta-analysis Medicine 2017 96 e6333 10.1097/MD.0000000000006333 28296759
+87. Anselmi M. Catalucci A. Felli V. Vellucci V. Di Sibio A. Gravina G.L. Di Staso M. Di Cesare E. Masciocchi C. Diagnostic accuracy of proton magnetic resonance spectroscopy and perfusion-weighted imaging in brain gliomas follow-up: A single institutional experience Neuroradiol. J. 2017 30 240 252 10.1177/1971400916688354 28627984
+88. Di Costanzo A. Scarabino T. Trojsi F. Popolizio T. Bonavita S. de Cristofaro M. Conforti R. Cristofano A. Colonnese C. Salvolini U. Recurrent glioblastoma multiforme versus radiation injury: A multiparametric 3-T MR approach Radiol. Med. 2014 119 616 624 10.1007/s11547-013-0371-y 24408041
+89. De Lucia F. Lefebvre Y. Lemort M.P. Interest of routine MR spectroscopic techniques for differential diagnosis between radionecrosis and progression of brain tumor lesions Eur. J. Radiol. Open 2022 9 100449 10.1016/j.ejro.2022.100449 36386763
+90. Feng A. Yuan P. Huang T. Li L. Lyu J. Distinguishing Tumor Recurrence from Radiation Necrosis in Treated Glioblastoma Using Multiparametric MRI Acad. Radiol. 2022 29 1320 1331 10.1016/j.acra.2021.11.008 34896001
+91. Deuschl C. Kirchner J. Poeppel T.D. Schaarschmidt B. Kebir S. El Hindy N. Hense J. Quick H.H. Glas M. Herrmann K. (11)C-MET PET/MRI for detection of recurrent glioma Eur. J. Nucl. Med. Mol. Imaging 2018 45 593 601 10.1007/s00259-017-3916-9 29282517
+92. Bera K. Braman N. Gupta A. Velcheti V. Madabhushi A. Predicting cancer outcomes with radiomics and artificial intelligence in radiology Nat. Rev. Clin. Oncol. 2022 19 132 146 10.1038/s41571-021-00560-7 34663898
+93. van Timmeren J.E. Cester D. Tanadini-Lang S. Alkadhi H. Baessler B. Radiomics in medical imaging-”how-to” guide and critical reflection Insights Imaging 2020 11 91 10.1186/s13244-020-00887-2 32785796
+94. Tran W.T. Jerzak K. Lu F.I. Klein J. Tabbarah S. Lagree A. Wu T. Rosado-Mendez I. Law E. Saednia K. Personalized Breast Cancer Treatments Using Artificial Intelligence in Radiomics and Pathomics J. Med. Imaging Radiat. Sci. 2019 50 S32 S41 10.1016/j.jmir.2019.07.010 31447230
+95. Zhao R. Krauze A.V. Survival Prediction in Gliomas: Current State and Novel Approaches Gliomas Debinski W. Exon Publications Brisbane City, Australia 2021
+96. Aftab K. Aamir F.B. Mallick S. Mubarak F. Pope W.B. Mikkelsen T. Rock J.P. Enam S.A. Radiomics for precision medicine in glioblastoma J. Neurooncol 2022 156 217 231 10.1007/s11060-021-03933-1 35020109
+97. Verma R.K. Wiest R. Locher C. Heldner M.R. Schucht P. Raabe A. Gralla J. Kamm C.P. Slotboom J. Kellner-Weldon F. Differentiating enhancing multiple sclerosis lesions, glioblastoma, and lymphoma with dynamic texture parameters analysis (DTPA): A feasibility study Med. Phys. 2017 44 4000 4008 10.1002/mp.12356 28543071
+98. Razek A. Elsebaie N.A. Imaging of Fulminant Demyelinating Disorders of the Central Nervous System J. Comput. Assist. Tomogr. 2020 44 248 254 10.1097/RCT.0000000000000997 32195804
+99. Kocher M. Ruge M.I. Galldiks N. Lohmann P. Applications of radiomics and machine learning for radiotherapy of malignant brain tumors Strahlenther. Onkol. 2020 196 856 867 10.1007/s00066-020-01626-8 32394100
+100. Lotan E. Jain R. Razavian N. Fatterpekar G.M. Lui Y.W. State of the Art: Machine Learning Applications in Glioma Imaging AJR Am. J. Roentgenol. 2019 212 26 37 10.2214/AJR.18.20218 30332296
+101. Kim J.Y. Park J.E. Jo Y. Shim W.H. Nam S.J. Kim J.H. Yoo R.E. Choi S.H. Kim H.S. Incorporating diffusion- and perfusion-weighted MRI into a radiomics model improves diagnostic performance for pseudoprogression in glioblastoma patients Neuro Oncol. 2019 21 404 414 10.1093/neuonc/noy133 30107606
+102. Sun Y.Z. Yan L.F. Han Y. Nan H.Y. Xiao G. Tian Q. Pu W.H. Li Z.Y. Wei X.C. Wang W. Differentiation of Pseudoprogression from True Progressionin Glioblastoma Patients after Standard Treatment: A Machine Learning Strategy Combinedwith Radiomics Features from T(1)-weighted Contrast-enhanced Imaging BMC Med. Imaging 2021 21 17 10.1186/s12880-020-00545-5 33535988
+103. Zhang Q. Cao J. Zhang J. Bu J. Yu Y. Tan Y. Feng Q. Huang M. Differentiation of Recurrence from Radiation Necrosis in Gliomas Based on the Radiomics of Combinational Features and Multimodality MRI Images Comput. Math. Methods Med. 2019 2019 2893043 10.1155/2019/2893043 31871484
+104. Tiwari P. Prasanna P. Wolansky L. Pinho M. Cohen M. Nayate A.P. Gupta A. Singh G. Hatanpaa K.J. Sloan A. Computer-Extracted Texture Features to Distinguish Cerebral Radionecrosis from Recurrent Brain Tumors on Multiparametric MRI: A Feasibility Study. AJNR Am J. Neuroradiol. 2016 37 2231 2236 10.3174/ajnr.A4931 27633806
+105. Gao X.Y. Wang Y.D. Wu S.M. Rui W.T. Ma D.N. Duan Y. Zhang A.N. Yao Z.W. Yang G. Yu Y.P. Differentiation of Treatment-Related Effects from Glioma Recurrence Using Machine Learning Classifiers Based Upon Pre-and Post-Contrast T1WI and T2 FLAIR Subtraction Features: A Two-Center Study. Cancer Manag Res. 2020 12 3191 3201 10.2147/CMAR.S244262 32440216
+106. Chen X. Wei X. Zhang Z. Yang R. Zhu Y. Jiang X. Differentiation of true-progression from pseudoprogression in glio-blastoma treated with radiation therapy and concomitant temozolomide by GLCM texture analysis of conventional MRI Clin. Imaging 2015 39 775 780 10.1016/j.clinimag.2015.04.003 25956436
+107. Sadique M. Temtam A. Lappinen E. Iftekharuddin K. Radiomic Texture Feature Descriptor to Distinguish Recurrent Brain Tumor from Radiation Necrosis Using Multimodal MRI SPIE Washington, DC, USA 2022 Volume 12033
+108. Wang K. Qiao Z. Zhao X. Li X. Wang X. Wu T. Chen Z. Fan D. Chen Q. Ai L. Individualized discrimination of tumor recurrence from radiation necrosis in glioma patients using an integrated radiomics-based model Eur. J. Nucl. Med. Mol. Imaging 2020 47 1400 1411 10.1007/s00259-019-04604-0 31773234
+109. Hotta M. Minamimoto R. Miwa K. 11C-methionine-PET for differentiating recurrent brain tumor from radiation necrosis: Radiomics approach with random forest classifier Sci. Rep. 2019 9 15666 10.1038/s41598-019-52279-2 31666650
+110. Park Y.W. Choi D. Park J.E. Ahn S.S. Kim H. Chang J.H. Kim S.H. Kim H.S. Lee S.K. Differentiation of recurrent gli-oblastoma from radiation necrosis using diffusion radiomics with machine learning model development and external validation Sci. Rep. 2021 11 2913 10.1038/s41598-021-82467-y 33536499
+111. Jiang S. Guo P. Heo H.Y. Zhang Y. Wu J. Jin Y. Laterra J. Eberhart C.G. Lim M. Blakeley J.O. Radiomics analysis of amide proton transfer-weighted and structural MR images for treatment response assessment in malignant gliomas NMR Biomed. 2023 36 e4824 10.1002/nbm.4824 36057449
+112. Zhang J. Wu Y. Wang Y. Zhang X. Lei Y. Zhu G. Mao C. Zhang L. Ma L. Diffusion-weighted imaging and arterial spin labeling radiomics features may improve differentiation between radiation-induced brain injury and glioma recurrence Eur. Radiol. 2023 33 3332 3342 10.1007/s00330-022-09365-3 36576544
+113. Sartoretti E. Sartoretti T. Wyss M. Reischauer C. van Smoorenburg L. Binkert C.A. Sartoretti-Schefer S. Mannil M. Amide proton transfer weighted (APTw) imaging based radiomics allows for the differentiation of gliomas from metastases Sci. Rep. 2021 11 5506 10.1038/s41598-021-85168-8 33750899
+114. Louis D.N. Perry A. Wesseling P. Brat D.J. Cree I.A. Figarella-Branger D. Hawkins C. Ng H.K. Pfister S.M. Reifen-berger G. The 2021 WHO Classification of Tumors of the Central Nervous System: A summary Neuro Oncol. 2021 23 1231 1251 10.1093/neuonc/noab106 34185076
+115. An C. Park Y.W. Ahn S.S. Han K. Kim H. Lee S.K. Radiomics machine learning study with a small sample size: Single random training-test set split may lead to unreliable results PLoS ONE 2021 16 e0256152 10.1371/journal.pone.0256152 34383858
+116. Demircioğlu A. Measuring the bias of incorrect application of feature selection when using cross-validation in radiomics Insights Imaging 2021 12 172 10.1186/s13244-021-01115-1 34817740
+117. Tofthagen C. Threats to validity in retrospective studies J. Adv. Pract. Oncol. 2012 3 181 183 25031944
+118. Zhang Y.P. Zhang X.Y. Cheng Y.T. Li B. Teng X.Z. Zhang J. Lam S. Zhou T. Ma Z.R. Sheng J.B. Artificial intelligence-driven radiomics study in cancer: The role of feature engineering and modeling Mil. Med. Res. 2023 10 22 10.1186/s40779-023-00458-8 37189155
+119. Papanikolaou N. Matos C. Koh D.M. How to develop a meaningful radiomic signature for clinical use in oncologic patients Cancer Imaging 2020 20 33 10.1186/s40644-020-00311-4 32357923
+120. Xue C. Yuan J. Zhou Y. Wong O.L. Cheung K.Y. Yu S.K. Acquisition repeatability of MRI radiomics features in the head and neck: A dual-3D-sequence multi-scan study Vis. Comput. Ind. Biomed. Art. 2022 5 10 10.1186/s42492-022-00106-3 35359245
+121. Dluhoš P. Schwarz D. Cahn W. van Haren N. Kahn R. Španiel F. Horáček J. Kašpárek T. Schnack H. Multi-center machine learning in imaging psychiatry: A meta-model approach Neuroimage 2017 155 10 24 10.1016/j.neuroimage.2017.03.027 28428048
+122. Xia W. Wan Z. Yin Z. Gaupp J. Liu Y. Clayton E.W. Kantarcioglu M. Vorobeychik Y. Malin B.A. It’s all in the timing: Calibrating temporal penalties for biomedical data sharing J. Am. Med. Inform. Assoc. 2018 25 25 31 10.1093/jamia/ocx101 29036325
+

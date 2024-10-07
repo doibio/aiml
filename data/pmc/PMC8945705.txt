@@ -1,0 +1,274 @@
+
+==== Front
+Biomedicines
+Biomedicines
+biomedicines
+Biomedicines
+2227-9059
+MDPI
+
+10.3390/biomedicines10030523
+biomedicines-10-00523
+Review
+Imaging Cancer-Associated Fibroblasts (CAFs) with FAPi PET
+Gilardi Laura 1
+Airò Farulla Lighea Simona 12
+Demirci Emre 3
+Clerici Ilaria 4
+Omodeo Salè Emanuela 4
+https://orcid.org/0000-0001-9785-5248
+Ceci Francesco 12*
+Chiba Chikafumi Academic Editor
+1 Division of Nuclear Medicine, IEO European Institute of Oncology IRCCS, 20141 Milan, Italy; laura.gilardi@ieo.it (L.G.); ligheairo@gmail.com (L.S.A.F.)
+2 Department of Oncology and Hemato-Oncology, University of Milan, 20122 Milan, Italy
+3 Department of Nuclear Medicine, Faculty of Medicine, Yeditepe University, Istanbul 34718, Turkey; emredemirci@gmail.com
+4 Division of Pharmacy, IEO European Institute of Oncology IRCCS, 20141 Milan, Italy; ilaria.clerici@ieo.it (I.C.); eomodeo@ieo.it (E.O.S.)
+* Correspondence: francesco.ceci@ieo.it
+23 2 2022
+3 2022
+10 3 52326 1 2022
+21 2 2022
+© 2022 by the authors.
+2022
+https://creativecommons.org/licenses/by/4.0/ Licensee MDPI, Basel, Switzerland. This article is an open access article distributed under the terms and conditions of the Creative Commons Attribution (CC BY) license (https://creativecommons.org/licenses/by/4.0/).
+The tumor microenvironment (TME) surrounding tumor cells is a complex and highly dynamic system that promotes tumorigenesis. Cancer-associated fibroblasts (CAFs) are key elements in TME playing a pivotal role in cancer cells’ proliferation and metastatic spreading. Considering the high expression of the fibroblast activation protein (FAP) on the cell membrane, CAFs emerged as appealing TME targets, namely for molecular imaging, leading to a pan-tumoral approach. Therefore, FAP inhibitors (FAPis) have recently been developed for PET imaging and radioligand therapy, exploring the clinical application in different tumor sub-types. The present review aimed to describe recent developments regarding radiolabeled FAP inhibitors and evaluate the possible translation of this pan-tumoral approach in clinical practice. At present, the application of FAPi-PET has been explored mainly in single-center studies, generally performed in small and heterogeneous cohorts of oncological patients. However, preliminary results were promising, in particular in low FDG-avid tumors, such as primary liver and gastro-entero-pancreatic cancer, or in regions with an unfavorable tumor-to-background ratio at FDG-PET/CT (i.e., brain), and in radiotherapy planning of head and neck tumors. Further promising results have been obtained in the detection of peritoneal carcinomatosis, especially in ovarian and gastric cancer. Data regarding the theranostics approach are still limited at present, and definitive conclusions about its efficacy cannot be drawn at present. Nevertheless, the use of FAPi-based radio-ligand to treat the TME has been evaluated in first-in-human studies and appears feasible. Although the pan-tumoral approach in molecular imaging showed promising results, its real impact in day-to-day clinical practice has yet to be confirmed, and multi-center prospective studies powered for efficacy are needed.
+
+cancer-associated fibroblast
+fibroblast activation protein
+FAPi
+PET/CT
+theranostics
+==== Body
+pmc1. Introduction
+
+1.1. Targeting the Tumor Microenvironment
+
+Tumors are composed of two interdependent compartments: the malignant cells and the stroma, or tumor microenvironment (TME), which may account for up to 90% of the mass in common malignancy, such as breast, stomach, and pancreatic carcinomas. It is a highly dynamic and heterogeneous system composed of immune cells, fibroblasts, precursor cells, endothelial cells, signaling molecules, and extracellular matrix (ECM) components, which interact closely with tumor cells, contributing to tumorigenesis [1].
+
+The natural progression of TMEs can be described in this sequence [2]:
+
+(1) A small cluster of homogeneous cancer cells. These tumors evade immune surveillance as they are in a very early stage of development or because they are a newly metastasized colony.
+
+(2) Tumors with lymphocyte infiltration that release cytokines and directly engage with cancer cells, recruiting blood cells to the tumor. At the same time, nearby macrophages and fibroblasts are converted into tumor-associated macrophages (TAMs) and cancer-associated fibroblasts (CAFs).
+
+(3) Tumors without infiltrating lymphocytes, encapsulated by CAFs with ECMs. They are filled with many stromal cells, including TAMs, CAFs, and myeloid-derived suppressor cells (MDSCs) and do not release cancer cells into the blood circulation.
+
+(4) Tumors with a subgroup of cancer cells that undergo epithelial-mesenchymal transition, which downregulate some genes (such as E-cadherin, β-catenin, cytokeratin 5 and 6) and upregulate other genes (such as E-cadherin, vimentin, Snail, Slug, Twist, ZEB1 and 2, S100A4, MMP2 and 3, α-smooth muscle actin), so these tumors become metastasized, activating mobility-enhancing genes (such as S100 CBPP) and releasing cancer cells into the blood circulation that are often chaperoned by stromal cells.
+
+Accordingly, key elements in the tumor stroma are CAFs: metabolically active spindle-shaped cells with enhanced proliferative and migratory properties that release many growth factors and proinflammatory cytokines, such as transforming growth factor-β (TGF-β), vascular endothelial growth factor (VEGF), and interleukin-6 (IL-6). The causes driving the transformation of fibroblasts to CAFs are not entirely understood. However, the transformation is driven by the occurrence of mutations, including inactivation of TP53 and PTEN [3] and loss of heterozygosity (LOH) [4].
+
+Through this biochemical crosstalk with the surrounding cells of TME, CAFs play a pivotal role in cancer cell invasion, migration and growth, metabolic reprogramming, immunosuppression, and angiogenesis [5]. A distinguishing feature of CAFs is their high expression of fibroblast activation protein (FAP), a type II membrane-bound glycoprotein belonging to the dipeptidyl peptidase 4 (DPP4) family. FAP has both dipeptidyl peptidase and endopeptidase activity, has a large extracellular domain, and is associated with the regulation of the extracellular matrix [6] (Figure 1). This integral protein is coexpressed with DPP4 in the alpha cells of Langerhans islets, in multipotent bone marrow stromal cells, and is also slightly present in the cervix and uterine stroma (during the proliferative cycle) [7,8,9]. In contrast to CAFs, normal fibroblasts have no or very slight FAP expression and, therefore, FAP expression is low in normal adult human tissues. Like CAFs, FAP expression is instead increased in activated fibroblasts in the case of tissue damage, remodeling, or inflammation, and, therefore, in benign conditions, such as wound healing, arthritides, and myocardial infarction [10,11,12].
+
+1.2. Developing PET Radiopharmaceuticals
+
+The differential expression of the protein in normal tissue compared with tumors/inflammation makes FAP a promising target for molecular imaging of a large variety of tumors and for some non-oncological diseases. For this purpose, FAP-targeting radiopharmaceuticals based on FAP-specific inhibitors (FAPis), such as 68Ga-FAPi-02 and 68Ga-FAPi-04, have recently been developed [13,14]. These quinoline-based radiotracers bind to the enzymatic domain of FAP with very high specificity, and the complex is then rapidly internalized. Biodistribution studies on tumor-bearing mice and on mixed population of different cancers showed high intratumoral uptake of the tracers and fast renal clearance, with very low uptake in normal organs (especially the brain, oral mucosa, and liver), leading to a higher tumor-to-background ratio (TBR) and improving the diagnostic performance of PET imaging [13,15,16].
+
+The use of DOTA or other chelators offers the possibility of easily incorporating therapeutic isotopes, such as 177Lu or 90Y, in these compounds, allowing a theranostic approach [14]. Nevertheless, the therapeutic application of FAPi tracers is still impaired by their relatively short tumor retention time, even if FAPi-04 already obtained an improvement in tumor retention compared to FAPi-02 (75% washout) with a 50% of tumor uptake from 1 to 3 h after injection. Lately, FAPi-46 was developed, which allows a theranostic approach due to its longer tumor residence time [17].
+
+Attempts were initially made to label FAPi with covalently attached 18F and favorable results were obtained with NOTA-containing FAPi-74 [18]. Indeed, due to the longer half-life of 18F and lower positron energy than 68Ga (half-life of 110′ and positron energy of 0.65-MeV versus 68′ and 1.90-MeV), labeling FAPi with 18F would reduce the costs of production in case of on-site cyclotron and facilitate its distribution together with improved spatial resolution due to the lower positron energy [19]. In addition, local on-demand production in centers already equipped with a 68Ge/68Ga generator would also be simplified by using NOTA chelator, allowing chelation with 68Ga at room temperature. [18]. Conversely, the use of 68Ge/68Ga generators in clinical practice is impaired by the size of the generator and thus by the maximum number of patients that can be handled per-synthesis and by the increasing prices of generators.
+
+FAPi radiopharmaceuticals demonstrate intense radioactivity in the urinary tract, with the kidneys being the main excretory organs. Uptake of the radioactivity was also observed in the gallbladder and common bile duct, implying elimination via the hepatobiliary system as well. Moderate uptake of radioactivity was observed in other organs, including the submandibular gland, thyroid, and pancreas. Only minimal or mild physiological uptake was observed in other organs and tissue, including brain, parotid, oral mucosa, lung, myocardium, liver, intestine, fat, spine, and muscle. Differences in the biodistribution of [18F]FAPi-42 and [68Ga]Ga-FAPi-04 in normal organs might be due to the different lipophilicity of the NOTA-chelator and DOTA-chelator groups. This might influence the detection of lesions in specific regions, especially for pancreatic, gallbladder, and biliary tract tumors [20]. Drug-related pharmacologic effects or physiologic responses have so farnever been observed in clinical studies, implying the use of FAP inhibitors for PET imaging. The radiopharmaceuticals’ injection was well tolerated, and no side effects have been described.
+
+1.3. Article Selection and Data Extraction
+
+A comprehensive search was performed using the Ovid platform and a comparison of the Embase and Medline databases. No time restrictions were applied. The following search strategy was used: (“cancer associated fibroblast” OR “cancer-associated fibroblast” OR “CAF” OR “CAFs”) AND (“fibroblast activation protein” OR “fibroblast activation protein inhibitor OR “FAPi” OR “FAP”) AND (“Positron Emission Tomography” OR “PET”). The web search was implemented with a manual search (authors consultation and web-search included articles). Only studies in English were selected. The literature search was updated until 10 December 2021. From all studies, we selected for this review the most relevant articles, evaluating manuscripts reporting about the use of radiopharmaceuticals for PET imaging targeting cancer-associated fibroblasts with fibroblast activation protein inhibitors, based on the following criteria: (1) original article or case series or case reports in the (2) English language regarding the (3) use of PET other FAPi (either 68Ga or 18F). Two authors (LG and LSAF) independently reviewed the abstracts and titles of the retrieved studies for inclusion in the review based on the inclusion criteria and removed duplicates. A second review was performed to delete additional studies outside the scope of this review. Disagreements were resolved through consultation with a third author (FC) or consensus. The authors tabulated and organized relevant studies and performed a comprehensive qualitative narrative synthesis of both tabulated studies and non-tabulated articles.
+
+2. Clinical Application of Fapi Pet in Oncology
+
+2.1. Preclinical Studies
+
+Early preclinical studies included the use of FAPI-01 and FAPI-02 radiolabeled with 125I and 68Ga/177Lu, respectively. The [125I]FAPI-01 was then no longer included in preclinical studies because of its time-dependent efflux and enzymatic deiodination, although it showed rapid internalization in both human embryonic kidney (HEK) cells transfected with murine FAP and human fibrosarcoma HT-1080 cells transfected with FAP in vitro. In contrast, [68Ga]FAPI-02 revealed increased binding and uptake in human cells expressing FAP in vitro and in vivo due to its increased stability. Biodistribution studies of [177Lu]FAPI-02 showed maximal uptake at 2 h after administration in mice carrying human FAP-transfected HT-1080 tumors. In biodistribution studies on tumor-bearing mice and on the first cancer patients, the authors also found high intratumoral uptake of the tracer and fast body clearance, resulting in high contrast images and negligible exposure of healthy tissue to radiation [16].
+
+Similar results have emerged from another preclinical study, which demonstrated that the contrast in imaging can be further improved by performing chemical modifications on the structure of FAPI, thereby improving the binding and pharmacokinetics of FAP in most derivatives. The authors also proved how higher doses of radioactivity can be administered while minimizing damage to healthy tissue, thereby improving the therapeutic outcome [17].
+
+At this point, the need to improve the lipophilicity and prolong the tumor retention time emerged. After synthesizing 15 novel quinoline-based radiotracers, the authors analyzed in vivo pharmacokinetic studies by small-animal PET imaging on FAP-transfected HT-1080 xenografts. The five most promising 68Ga-labeled tracers (FAPI-21, FAPI-35, FAPI-36, FAPI-46, and FAPI-55) showed low background activity, rapid tumor accumulation, and prevalent renal clearance. FAPI-36 was excluded because of its prolonged systemic circulation, whereas FAPI-21, FAPI-35, and FAPI-55 showed increased uptake in hepatic and muscle tissues compared with FAPI-04. From the above, it appears that the most promising derivative in this series is FAPI-46 because of its good tumor accumulation and its highest tumor-to-background ratios [17].
+
+2.2. Pan-Tumoral Radiotracer
+
+Different tumor types might share common driver mutations: this assumption underlies the concept of pan-cancer analysis [21]. FAP-targeting radiopharmaceuticals might be potentially superior to 18F-FDG and thus there is growing interest in its application as a pan-tumoral radiotracer. This approach inspired a translational prospective exploratory study [22] evaluating the role of FAPi-PET as a pan-cancer imaging biomarker for FAP expression in 141 patients with 14 different types of cancer (bile duct, bladder, breast, esophagus, colon, liver, stomach, lung, ovary, uterus, oropharynx, prostate, pancreas, and kidney). All patients were eligible for surgery and, thus, immunohistochemical confirmation of FAP expression was obtained in all cases. The authors found that FAPi-PET was positive in more than 50% of cases from 11 cancer types, with variability in the intensity of FAP expression strongly associated with FAP expression assessed by immunohistochemistry in the surgery specimen. FAP expression was higher in cancers of the bile duct, bladder, colon, esophagus, stomach, lung, oropharynx, ovary, and pancreas; average in breast and uterus cancer; and liver, prostate, and renal cell cancer showed only low FAP expression. In addition, all four evaluated metastatic lesions were FAPi-avid, which has important implications in theranostics. Although this study showed how FAPi could play a central role in the context of pan-cancer analysis, the limited number of patients enrolled for each tumor sub-type affected the study’s reproducibility and, thus, broader consideration cannot be drawn at this stage.
+
+A similar conclusion was obtained in a previous study reporting [15] about FAPi-PET uptake in 80 patients and 28 different tumor types. The primary aim was to assess if FAPi-PET might improve tumor delineation (e.g., for radiotherapy planning) in patients with inconclusive or clinically unsatisfactory standard of care imaging. The highest uptake was detected in patients with sarcoma, esophageal, breast, cholangiocarcinoma, and lung cancer, whereas pheochromocytoma, renal cell, differentiated thyroid, and gastric cancers were the lowest. Furthermore, the authors also found that despite the high intratumoral and interindividual variability, the low background activity, resulting in high tumor-to-background ratios, leads to excellent image contrast (Table 1).
+
+2.3. Gliomas, Primary Liver Cancer, and Gastro-Entero-Pancreatic Cancers
+
+First experiences in mixed populations demonstrated that FAPi, unlike FDG, had a significant lower background distribution in the brain, liver, and oral/pharyngeal mucosa and very low unspecific gastric and intestinal/peritoneal uptake [13,15]. These characteristics make FAPi a very promising radiopharmaceutical for the detection of moderate-to-low FDG-avid tumors and for the evaluation of primary and secondary lesions in regions with low TBR at FDG-PET/CT, such as the brain and liver. In their pilot study [23], Röhrich and colleagues characterized the uptake of FAP ligands in 18 glioma patients, 13 with isocitrate dehydrogenase (IDH)-wildtype glioblastoma WHO grade IV and 5 with IDH-mutant glioma. The authors observed elevated tracer uptake in IDH-wildtype glioblastomas and WHO grade III/IV IDH-mutant astrocytomas but not in WHO grade II astrocytomas. Therefore, if these findings are confirmed in larger populations, FAPi-based PET/CT may be useful for non-invasive characterization of gliomas and of their malignant progression from grade II to higher tumor grades. Moreover, the same 13 patients with IDH-wildtype glioblastomas were evaluated for radiotherapy planning [24]. FAPi-PET-based gross tumor volumes (GTVs) were incongruent with MRI GTVs. Indeed, increases in GTVs were highly significant for all FAP-specific PET thresholds. The clinical and therapeutic impact of these results has yet to be addressed.
+
+Primary hepatobiliary tumors showed different patterns of FDG uptake. Hepatocellular carcinoma (HCC), the most frequent primary tumor of the liver, is characterized by an FDG uptake equal to the normal liver tissue, leading to a high false-negative rate in FDG-PET detection. Due to its favorable distribution characteristics, FAPi could overcome these performance deficiencies.
+
+Indeed, recent studies demonstrated higher FAPi uptake in HCC and intrahepatic cholangiocarcinoma (ICC) compared to FDG, with a significantly higher sensitivity [25]. Moreover, FAPi-PET/CT proved to have an equivalent sensitivity for the detection of primary tumors compared to contrast-enhanced CT and MRI and a significantly higher detection rate than FDG-PET for all malignant lesions, including extrahepatic disease [26]. Guo et al. also demonstrated increased 68Ga-FAPI-04 uptake in the liver parenchyma of patients with cirrhosis, with a significantly higher FAPi-TBR in patients without cirrhosis [26]. Further studies are needed to evaluate the impact of these results on the diagnostic performance of FAPi-PET, in terms of the definition of the correct extension of the disease and the detection of small intrahepatic lesions. FAPi represents an ideal radiopharmaceutical to detect liver metastasis as well, due to the lower physiological uptake, leading to potential upstaging and exact identification of tumor locations. In addition, targeted and personalized treatments, such as liver radio-guided surgery, image-guided radiotherapy, or radio-embolization, might be proposed based on the information derived by FAPi-PET. However, several benign conditions, including hepatic cirrhosis, showed FAPi uptake, thus limiting the role of this radiotracer in primary liver cancer, since the presence of hepatic cirrhosis is a common risk factor, especially in patients affected by HCC.
+
+Gastroenteropancreatic (GEP) tumors often disseminate to the liver. In this setting, FAPi-PET was found to be superior to FDG-PET in the detection of liver metastases in small studies including patients with gastric, colorectal, and other GEP tumors [27,28]. Besides, FAPi-PET demonstrated a higher detection rate for primary GEP tumors compared to FDG-PET, with higher TBR and clearer tumor identification [28], considering the lower physiological gastric or bowel uptake. In a retrospective bicentric study focused on gastric cancer staging, FAPi-PET was superior to FDG-PET for the detection of the primary tumor, with a sensitivity of 100% vs. 82%. In particular, the radiopharmaceutical FAPi outperformed FDG in signet ring cell carcinoma (7/7 vs. 4/7), probably due to the low expression level of glucose transporter 1 in this histological type. SUVmax of T2-4 tumors was significantly higher than SUVmax of T1 tumors in FAPi-PET, highlighting the possibility of a non-invasive evaluation of the infiltration degree in primary gastric cancers [29] (Table 2). These preliminary and encouraging results show that, in the future, FAPi-PET may play an important role in brain, liver and GEP cancers, outperforming FDG, and need to be validated in prospective clinical trials on larger samples.
+
+2.4. Head and Neck Cancers
+
+Accurate tumor staging is crucial in head and neck cancer for making an adequate treatment choice, namely the identification of contralateral metastasis. Despite the use of contrast-enhanced CT and MRI, radiological imaging often fails to correctly identify the extension of the disease, due to the diffuse tumor infiltration in complex structures and to the presence of underlying and concomitant inflammatory processes. FDG-PET is affected by several limitations as well, mainly related to high physiological uptake in healthy tissue, such as salivary glands, brain, and oral cavity, and inflammatory uptake in cervical muscles or lymph nodes. Moreover, the presence of FDG-avid brown adipose tissue may impair image reading in FDG-PET scans. In this scenario, FAPi-PET could provide a potential solution, as highlighted by the first single-center studies performed in a cohort of nasopharyngeal carcinoma patients [30,31].
+
+In both papers, FAPI-PET proved to be superior to FDG for exact T staging. Low tracer uptake in normal structures adjacent to the tumor allowed imaging of primary tumors with higher TBR and better lesion delineation. Skull base and intracranial invasion are clearly visualized on 68Ga-FAPI PET due to the low brain tissue uptake. Further studies [32,33] confirmed that FAPi-PET led to significant upstaging of the disease compared to FDG-PET, with a consequent change in the therapy management. However, some concerns are still related to the definition of positive lymphnode since inflammatory nodes might show low FAP overexpression (Table 3).
+
+biomedicines-10-00523-t001_Table 1 Table 1 Oncological setting: Pan-tumoral radiotracer.
+
+Authors	n of Patients	Tumor Type	Clinical Setting	Injected Activity	Acquisition Timing	Image Analyses	Reference Standard	68Ga-FAPI Performance	Highest FAPi Uptake	Lowest FAPi Uptake	
+Mona
+CE et al. [22]	141	Various cancer (14 types)	Biodistribution and kinetics	174–185 MBq	54–96 min	S	HP	SE 80.9%	Bile duct, bladder, colon, esophagus, stomach, lung, oropharynx, ovary and pancreas cancer	Liver, prostate, and renal cell cancer	
+Kratoch wil
+C et al. [15]	80	Various cancer (28 types)	Staging, Restaging, RT planning	122–312 MBq	60 min	S	HP, imaging follow-up	Low uptake (≤6): 7/28 TT;
+Mean uptake (6 > SUV < 12): 14/28 TT;
+High Uptake (≥12): 7/28 TT	Lung, breast and esophageal cancer, cholangiocellular carcinoma and sarcoma (SUVmax ≥ 12)	Pheochromocytoma, renal cell, differentiated thyroid, adenoid cystic and gastric cancer (SUVmax ≤ 6)	
+Chen
+H et al. [32]	68	Various cancer (13 types)	Staging, Restaging	1.8–2.2 MBq/Kg	60 min	V, S	HP, imaging and clinical follow-up	T: SE 86.4%	T: liver, gastric, pancreatic and cervical cancer	T: oroesophageal and lung cancer	
+Chen
+H et al. [33]	75	Various cancer (12 types)	Staging, Restaging	1.8–2.2 MBq/Kg	60 min	V, S	HP	T: SE 98.2%	Pancreatic, liver and oroesophageal cancers, sarcoma and cholangiocarcinoma (SUVmax ≥ 12)	Brain cancer	
+N: SE 86.4%, SP 58.8%	
+M: SE 83.8%, SP 41.7%	
+V, visual analyses; S, semi-quantitative analyses; HP, histopathology; T, primary tumor; N, lymph node(s); M, distant metastases; TT, tumor types; SE, sensitivity; SP, specificity.
+
+biomedicines-10-00523-t002_Table 2 Table 2 Oncological setting: Gliomas, primary liver cancer and gastro-entero-pancreatic cancers.
+
+Authors	n of Patients	Tumor Type	Clinical Setting	Injected Activity	Acquisition Timing	Image Analyses	Reference Standard	68Ga-FAPI Performance	18F-FDG Performance	MRI Performance	
+Röhrich
+M et al. [23]	18	Gliomas	Staging, Restaging	150–250 MBq	30 min (FA-Pi04); 10, 60 and 180 min (FAPi-02)	S	MRI	SE 83.3%	-	SE 100%	
+Windisch
+P et al. [24]	13	GBM	RT planning	150–250 MBq	30 min	S	MRI	SE 100%	-	SE 100%	
+Guo
+W et al. [26]	34	Hepatic nodules	Staging	148–259 MBq	60 min	V, S	HP, imaging follow-up	SE 87.4%	SE 64.9%	-	
+Şahin
+E et al. [27]	31	GEP	Staging and follow-up after treatment	2–3 MBq/Kg	45 min	V, S	Imaging follow-up, tumor biomarker findings, HP	SE 93.5% (patient based)	SE 71% (patient based)	-	
+SE 95.9% (lesion based)	SE 79.6% (lesion based)	-	
+Pang
+Y et al. [28]	35	GI tract	Staging, Restaging	1.8–2.2 MBq/Kg	60 min	V, S	HP	SE 100%	SE 43.8%	-	
+T: SE 100%	T: SE 52.6%	-	
+N: SE 78.6%,
+SP 82.1%	N: SE 53.6%,
+SP 89.3%	-	
+M: SE 88.6%,
+SP 28.6%	M: SE 57.1%,
+SP 85.7%	-	
+Jiang
+D et al. [29]	38	Gastric cancer	Staging	111–185 MBq	60 min	S	HP	T: SE 100%	T: SE 75%	-	
+N: SE 60%,
+SP 92.9%	N: SE 50%,
+SP 92.9%	-	
+V, visual analyses; S, semi-quantitative analyses; HP, histopathology; T, primary tumor; N, lymph node(s); M, distant metastases; SE, sensitivity; SP, specificity; GBM, glioblastoma; GEP, gastro-entero-pancreatic; GI tract, gastro-intestinal tract.
+
+biomedicines-10-00523-t003_Table 3 Table 3 Oncological setting: Head and neck cancers.
+
+Authors	n of Patients	Tumor Type	Clinical Setting	Injected Activity	Acquisition Timing	Image Analyses	Reference Standard	68Ga-FAPI Performance	18F-FDG Performance	MRI Performance	
+Zhao L et al. [30]	45	Nasopharyngeal carcinoma	Staging, Restaging	1.8–2.2 MBq/Kg	40 min	V, S	HP, imaging follow-up	T: SE 86.7%	T: SE 84.4%	-	
+N: SE 95%	N: SE 75.2%	N: SE 97.5%	
+Qin C et al. [31]	15	Nasopharyngeal carcinoma	Staging, Restaging	1.85–3.7 MBq/Kg	30–60 min	V, S	MRI	T: SE 100%	T: SE 100%	-	
+N: SE 48%	N: SE 100%	-	
+M: SE 100%	M: SE 0%	-	
+Chen H et al. [32]	68	Various cancer (13 types)	Staging, Restaging	1.8–2.2 MBq/Kg	60 min	V, S	HP, imaging and clinical follow-up	T: SE 86.4%	-	-	
+Chen H et al. [33]	75	Various cancer (12 types)	Staging, Restaging	1.8–2.2 MBq/Kg	60 min	V, S	HP	T: SE 98.2%	T: SE 82.1%	-	
+N: SE 86.4%,
+SP 58.8%	N: SE 45.5%,
+SP 76.5%	-	
+M: SE 83.8%,
+SP 41.7%	M: SE 59.5%,
+SP 58.3%	-	
+V, visual analyses; S, semi-quantitative analyses; HP, histopathology; T, primary tumor; N, lymph node(s); M, distant metastases; SE, sensitivity; SP, specificity.
+
+Nevertheless, the main clinical application for FAPi-PET in head and neck cancer is the planning of image-guided radiotherapy, especially considering the high TBR. Recently, improved target volume delineation has been reported in comparison with contrast-enhanced CT and MRI [24,34]. This image-guided approach might have substantial implications in the planned target volume (PTV), probably leading to better regional control of the disease and less toxicity due to the more precise identification of the treatment field. Future studies are needed to define the optimal imaging time and thresholds of FAPi uptake for PTV delineation. A personalized radiotherapy approach can be created according to FAPi-PET images, with precise radiation dose escalation or de-escalation plans for tumor subvolumes or with plan adaptation due to microenvironment changes during treatment.
+
+2.5. Breast Cancer
+
+Breast cancer (BC) is a heterogeneous disease in terms of the pathological features, biological behaviors, therapeutic response, and prognosis. The tumors can be classified into subtypes distinguished by pervasive differences in their gene expression patterns and, consequently, phenotypes, where the key players are the estrogen receptor (ER), progesterone receptor (PR), and the human epidermal growth factor receptor 2 (HER2) [35,36]. The different statuses of receptor expression serve as biomarkers for the choice of specific and tailored treatment strategies. Although chemotherapy and targeted therapies have improved the survival of BC patients, many patients relapse or do not respond to first-line therapies. In the last years, it has become increasingly evident that breast cancer evolution is not solely dependent on the behavior of cancer cells, but also on the composition and biological function of TME and on the interactions between cancer cells and TME itself. CAFs represent the most abundant cell type of the BC microenvironment [37] and, consequently, FAP is an excellent candidate as an indirect tumor cell target.
+
+To date, one prospective study assessed the role of FAPi-PET in patients with breast cancer, in comparison with FDG PET/CT [38]. The authors enrolled 20 patients with newly diagnosed or relapsed BC (15 and 5 patients, respectively). 68Ga-FAPI-04 PET/CT was superior to FDG-PET in detecting primary tumors, with a 100% and 95.6% sensitivity and specificity, respectively. Moreover, FAPi-PET detected more lymph node, hepatic, bone, and brain metastases due to the lower background activity and higher uptake in subcentimetric lesions. Future studies should focus on the role of FAPi-PET in diagnosis of different molecular and histological subtypes of BC (as FDG-PET has known limitations in low-grade hormone-positive tumors and in lobular carcinomas) and on its potential in the early detection of disease relapse and in the assessment of therapy response and the patient’s prognosis.
+
+Another attractive application in the BC field concerns the use of FAPi-PET as a guide for the selection of patients for radio-ligand therapy (RLT) with FAP-specific inhibitors, using high-energy β-emitters, such as Lutetium-177. This theranostic approach could be of great value for patients with triple-negative tumors, where currently used agents targeting ER, PR, and HER2 are ineffective.
+
+2.6. Peritoneal Carcinomatosis
+
+Peritoneal carcinomatosis (PC) is a complication regarding several malignancies and is generally associated with a poor outcome. Total peritonectomy and resection of the involved tissue with intraperitoneal chemotherapy is a primary treatment of PC with curative intention [39]. Two of the most important prognostic factors are the extent and volume of the PC. Thus, the pre-operative evaluation of possible peritoneal involvement is crucial and, currently, exploratory surgery is the gold standard for PC detection [40]. Conventional imaging (CT or MRI) is obviously a less invasive procedure compared to surgery. FDG-PET showed good diagnostic accuracy in detecting PC, even if is impaired by the spatial resolution limitation, and the pathological peritoneal thickness does not always show increased glycolytic metabolic activity [41]. Therefore, FAPi-PET might emerge as a leading diagnostic procedure in this specific setting. Recently, in a retrospective analysis, 68Ga-DOTA-FAPi-04 PET/CT was compared to FDG-PET for the evaluation of PC in 46 patients (13 with gastric cancer, 10 colorectal, 9 ovarian, 6 pancreatic, 2 lung, 2 appendiceal, 1 cervical, 1 endometrial, and 1 breast cancer and 1 primary PC). The authors observed a significant difference in the standard uptake values (SUV) of lesions, namely in PC from gastric cancer. FAPi-PET showed a higher peritoneal cancer index (PCI) and better sensitivity than FDG PET [42]. Likewise, a case report about a 63-year-old man who presented with rising carcinoembryonic antigen levels and unknown primary, and had both FDG-PET and FAPi-PET performed demonstrated that FAPi imaging is superior in the detection of primary gastric lesion (not FDG-avid) and a higher number of mesenteric nodules [43]. Another case report about a 60-year-old woman treated for BC showed that FAPI-PET detected more bone lesions and more favorable TBR for peritoneal nodules compared to FDG-PET [44]. Lastly, a case report of a 55-year-old woman, who underwent FDG-PET and FAPi-PET, showed higher accuracy for FAPi imaging in the correct identification of mesenteric and omentum nodules while both techniques correctly identified the primary pancreatic lesion. Follow-up FAPi-PET performed after three months was able to assess the response to cytoreductive surgery [45].
+
+3. Radioligand Therapy Targeting the Tumor Micro-Environment
+
+Theranostics is a neologism that merges the words therapeutics and diagnostic, defining the presence of a specific target that can be equally used both for PET imaging and radio-ligand therapy (RLT). Theranostics has been part of nuclear medicine for decades, starting from the use of radioactive iodine-131, to the application in neuroendocrine tumors labeling somatostatin analogues with 68Ga-, 177Lu-, or 90Y-labeled somatostatin analogs and, more recently, in prostate cancer targeting the prostate-specific membrane antigen (PSMA). The concept of “TME targeted RLT” is, at present, only a theoretical approach. Nevertheless, FAP inhibitors can be proposed as theranostics agents, as FAPi-ligands are chelator-based containing DOTA, which can be labeled by different isotopes. All solid tumors require stroma to grow beyond a minimal size of 1-2 mm and generate it, activating the host’s wound-healing response. Given the long-held notion of tumors as “wounds that do not heal” [46], and the increasing knowledge about the role of TME in tumorigenesis, the innovative approach of FAPi-based RLT consists in treatment of the supporting system that allows cancer cells to grow and reproduce. First in-human studies evaluated RLT with 90Y-FAPI-46, 177Lu-FAPI-46, and 177Lu-FAP-2286 on 9 [46], 18 [47], and 11 patients [48] with different cancers, respectively, and demonstrated the feasibility of this therapeutical approach. RLT was well tolerated, with acceptable side effects (predominantly hematological) and low radiation doses absorbed by non-target tissues, including the kidneys. For 177Lu-FAP-2286, the kidney-absorbed dose was comparable to that of 177Lu-PSMA-617 and to that delivered by 177Lu-DOTATATE with renal protection through amino-acid administration. The whole-body- and bone-marrow-absorbed dose were similar too [48]. The studies’ cohorts were too small and heterogeneous (and mostly comprising heavily pre-treated patients and/or metastatic high-burden cases). Thus, any reliable conclusion regarding the FAPi-based RLT efficacy cannot be drawn at this stage. At present, the clinical application of RLT targeting the TME is only theoretical, and dedicated studies powered by efficacy are needed, since different tumor subtypes responding to TME-targeted RLT, and the injected doses, types of radionuclides (α and/or β emitters), and the development FAP inhibitors with prolonged retention are under still investigation.
+
+4. Clinical Application of Fapi Pet in Non-Oncological Disease
+
+FAP overexpression is observed in many healing processes and benign conditions, such as fibrosis, thus providing the opportunity for a hypothetical application of FAPi-PET even outside oncology. Fibroblasts play a pivotal role in cardiac tissue remodeling and wound healing [11] and the expression of FAP by activated cardiac fibroblasts increases after myocardial infarction and then declines over time [49]. A reduction in cardiac fibrosis and a restoration of systolic function have been achieved by ablation of FAP-positive cells in mice subjected to angiotensin II and phenylephrine [50]. Moreover, a retrospective study analyzing the scans of 229 patients showed an association between high FAPi signal intensities and the presence of a metabolic risk factor (such as arterial hypertension, diabetes mellitus, and obesity) and an increased focal uptake could be suggestive of an underlying cardiovascular disease [51].
+
+FAPi-PET has also shown a role in IgG4-related diseases (IgG4-RD). A case report of a patient with IgG4-RD undergoing both FDG-PET and FAPi-PET showed that this quinoline-based radiotracer had an abnormal uptake in the uncinate process of the pancreas, in addition to sites indicated by FDG-PET/CT, except for some supra- and subdiaphragmatic lymph nodes [52]. Another similar case report demonstrated increased uptake in the lacrimal glands in FAPi-PET that was negative on FDG-PET but, as in the previous case, FDG-avid lymph nodes were negative on FAPi-PET [53].
+
+5. Conclusions
+
+Exploring the TME with molecular imaging is an attractive field of investigation and PET imaging with FAPi-PET is now gaining attention as “pan-tumoral” radiopharmaceuticals since CAFs are activated in many tumor subtypes. However, at present, information regarding the feasibility and efficacy of FAPi-PET is derived from single-center studies only, enrolling small and heterogenous cohorts of patients. The preliminary results are promising, as FAPi-PET seems to allow better evaluation of tumors with low FDG-avidity, leading to tumor upstaging through the detection of unknown distant metastases (especially in case of peritoneal carcinosis) and an improved target volume delineation for radiotherapy planning. Furthermore, FAPi-PET allows the in vivo visualization of TME, leading to a better comprehension of tumor heterogeneity, namely when performed together with FDG-PET. Finally, the first in-human studies highlighted the feasibility of radioligand therapy with FAPi inhibitors, targeting the TME in different tumor subtypes. Multi-center studies in larger cohorts, together with histological validation of FAPi-PET findings, are needed to assess the efficacy of FAPi-based imaging and to understand if, and when, the translation into clinical practice of this new promising approach would be feasible.
+
+Author Contributions
+
+Literature search and abstract search: L.G. and L.S.A.F.; Drafting manuscript: L.G., L.S.A.F., I.C. and F.C.; Figure and Tables: L.G., L.S.A.F. and E.D.; Study supervision: F.C. and E.O.S.; Final review of the manuscript: all authors. All authors have read and agreed to the published version of the manuscript.
+
+Funding
+
+This research received no external funding.
+
+Informed Consent Statement
+
+Not applicable.
+
+Conflicts of Interest
+
+The authors declare that they have no conflict of interest in relation to this work.
+
+Figure 1 The tumor microenvironment consists of tumor cells and nonmalignant cells, such as lymphocytes, macrophages, NK cells, normal epithelial cells, and activated fibroblasts (CAFs).
+
+Publisher’s Note: MDPI stays neutral with regard to jurisdictional claims in published maps and institutional affiliations.
+==== Refs
+References
+
+1. Dvorak H.F. Tumors: Wounds that do not heal. Similarities between tumor stroma generation and wound healing N. Engl. J. Med. 1986 315 1650 1659 10.1056/NEJM198612253152606 3537791
+2. Yamaguchi R. Perkins G. Animal models for studying tumor microenvironment (TME) and resistance to lymphocytic infiltration Cancer Biol. Ther. 2018 18 745 754 10.1080/15384047.2018.1470722 29723108
+3. Kurose K. Gilley K. Matsumoto S. Watson P.H. Zhou X.P. Eng C. Frequent somatic mutations in PTEN and TP53 are mutually exclusive in the stroma of breast carcinomas Nat. Genet. 2002 32 355 357 Erratum in Nat. Genet. 2002, 32, 681 10.1038/ng1013 12379854
+4. Fukino K. Shen L. Patocs A. Mutter G.L. Eng C. Genomic instability within tumor stroma and clinicopathological characteristics of sporadic primary invasive breast carcinoma JAMA 2007 297 2103 2111 10.1001/jama.297.19.2103 17507346
+5. Liu T. Han C. Wang S. Fang P. Ma Z. Xu L. Yin R. Cancer-associated fibroblasts: An emerging target of anti-cancer immunotherapy J. Hematol. Oncol. 2019 12 86 10.1186/s13045-019-0770-1 31462327
+6. Scanlan M.J. Raj B.K. Calvo B. Garin-Chesa P. Sanz-Moncasi M.P. Healey J.H. Old L.J. Rettig W.J. Molecular cloning of fibroblast activation protein alpha, a member of the serine protease family selectively expressed in stromal fibroblasts of epithelial cancers Proc. Natl. Acad. Sci. USA 1994 91 5657 5661 10.1073/pnas.91.12.5657 7911242
+7. Busek P. Hrabal P. Fric P. Sedo A. Co-expression of the homologous proteases fibroblast activation protein and dipeptidyl peptidase-IV in the adult human Langerhans islets Histochem. Cell Biol. 2015 143 497 504 10.1007/s00418-014-1292-0 25361590
+8. Bae S. Park C.W. Son H.K. Ju H.K. Paik D. Jeon C.J. Koh G.Y. Kim J. Kim H. Fibroblast activation protein alpha identifies mesenchymal stromal cells from human bone marrow Br. J. Haematol. 2008 142 827 830 10.1111/j.1365-2141.2008.07241.x 18510677
+9. Schuberth P.C. Hagedorn C. Jensen S.M. Gulati P. van den Broek M. Mischo A. Soltermann A. Jungel A. Belaunzaran O.M. Stahel R. Treatment of malignant pleural mesothelioma by fibroblast activation protein-specific re-directed T cells J. Transl. Med. 2013 11 187 10.1186/1479-5876-11-187 23937772
+10. Hamson E.J. Keane F.M. Tholen S. Schilling O. Gorrell M.D. Understanding fibroblast activation protein (FAP): Substrates, activities, expression and targeting for cancer therapy Proteom. Clin. Appl. 2014 8 454 463 10.1002/prca.201300095
+11. Tillmanns J. Hoffmann D. Habbaba Y. Schmitto J.D. Sedding D. Fraccarollo D. Galuppo P. Bauersachs J. Fibroblast activation protein alpha expression identifies activated fibroblasts after myocardial infarction J. Mol. Cell. Cardiol. 2015 87 194 203 10.1016/j.yjmcc.2015.08.016 26319660
+12. Waumans Y. Baerts L. Kehoe K. Lambeir A.M. De Meester I. The dipeptidyl peptidase family, prolyl oligopeptidase, and prolyl carboxypeptidase in the immune system and inflammatory disease, including atherosclerosis Front. Immunol. 2015 6 387 10.3389/fimmu.2015.00387 26300881
+13. Giesel F.L. Kratochwil C. Lindner T. Marschalek M.M. Loktev A. Lehnert W. Debus J. Jäger D. Flechsig P. Altmann A. 68Ga-FAPI PET/CT: Biodistribution and preliminary dosimetry estimate of 2 DOTA-containing FAP-targeting agents in patients with various cancers J. Nucl. Med. 2019 60 386 392 10.2967/jnumed.118.215913 30072500
+14. Lindner T. Loktev A. Altmann A. Giesel F. Kratochwil C. Debus J. Jäger D. Mier W. Haberkorn U. Development of quinoline-based theranostic ligands for the targeting of fibroblast activation protein J. Nucl. Med. 2018 59 1415 1422 10.2967/jnumed.118.210443 29626119
+15. Kratochwil C. Flechsig P. Lindner T. Abderrahim L. Altmann A. Mier W. Adeberg S. Rathke H. Röhrich M. Winter H. 68Ga-FAPI PET/CT: Tracer uptake in 28 different kinds of cancer J. Nucl. Med. 2019 60 801 805 10.2967/jnumed.119.227967 30954939
+16. Loktev A. Lindner T. Mier W. Debus J. Altmann A. Jäger D. Giesel F. Kratochwil C. Barthe P. Roumestand C. A tumor-imaging method targeting cancer-associated fibroblasts J. Nucl. Med. 2018 59 1423 1429 10.2967/jnumed.118.210435 29626120
+17. Loktev A. Lindner T. Burger E.M. Altmann A. Giesel F. Kratochwil C. Debus J. Marmé F. Jäger D. Mier W. Development of Fibroblast Activation Protein-Targeted Radiotracers with Improved Tumor Retention J. Nucl. Med. 2019 60 1421 1429 10.2967/jnumed.118.224469 30850501
+18. Giesel F.L. Adeberg S. Syed M. Lindner T. Jiménez-Franco L.D. Mavriopoulou E. Staudinger F. Tonndorf-Martini E. Regnery S. Rieken S. FAPI-74 PET/CT using either 18F-AIF or xold-Kit68 Ga labeling: Biodistribution, radiation dosimetry, and tumor delineation in lung cancer patiens J. Nucl. Med. 2021 62 201 207 10.2967/jnumed.120.245084 32591493
+19. Sanchez-Crespo A. Comparison of Gallium-68 and Fluorine-18 imaging characteristics in positron emission tomography Appl. Radiat. Isot. 2013 76 55 62 10.1016/j.apradiso.2012.06.034 23063597
+20. Hu K. Wang L. Wu H. Huang S. Tian Y. Wang Q. Xiao C. Han Y. Tang G. [18F]FAPI-42 PET imaging in cancer patients: Optimal acquisition time, biodistribution, and comparison with [68Ga]Ga-FAPI-04 Eur. J. Nucl. Med. Mol. Imaging 2021 10.1007/s00259-021-05646-z
+21. The Cancer Genome Atlas Research Network Weinstein J.N. Collisson E.A. Mills G.B. Shaw K.R. Ozenberger B.A. Ellrott K. Shmulevich I. Sander C. Stuart J.M. The Cancer Genome Atlas Pan-Cancer analysis project Nat. Genet. 2013 45 1113 1120 10.1038/ng.2764 24071849
+22. Mona C.E. Benz M.R. Hikmat F. Grogan T.R. Lückerath K. Razmaria A. Riahi R. Slavik R. Girgis M.D. Carlucci G. Correlation of 68Ga-FAPi-46 PET biodistribution with FAP expression by immunohistochemistry in patients with solid cancers: A prospective translational exploratory study J. Nucl. Med. 2021 121 262426 10.2967/jnumed.121.262426
+23. Röhrich M. Loktev A. Wefers A.K. Altmann A. Paech D. Adeberg S. Windisch P. Hielscher T. Flechsig P. Floca R. IDH-wildtype glioblastomas and grade III/IV IDH-mutant gliomas show elevated tracer uptake in fibroblast activation protein-specific PET/CT Eur. J. Nucl. Med. Mol. Imaging 2019 46 2569 2580 10.1007/s00259-019-04444-y 31388723
+24. Windisch P. Röhrich M. Regnery S. Tonndorf-Martini E. Held T. Lang K. Bernhardt D. Rieken S. Giesel F. Haberkorn U. Fibroblast Activation Protein (FAP) specific PET for advanced target volume delineation in Glioblastoma Radiother. Oncol. 2020 150 159 163 10.1016/j.radonc.2020.06.040 32598977
+25. Shi X. Xing H. Yang X. Li F. Yao S. Congwei J. Zhao H. Hacker M. Huo L. Li X. Comparison of PET imaging of activated fibroblasts and 18F-FDG for diagnosis of primary hepatic tumours: A prospective pilot study Eur. J. Nucl. Med. Mol. Imaging 2021 48 1593 1603 10.1007/s00259-020-05070-9 33097975
+26. Guo W. Pang Y. Yao L. Zhao L. Fan C. Ke J. Guo P. Hao B. Fu H. Xie C. Imaging fibroblast activation protein in liver cancer: A single-center post hoc retrospective analysis to compare [68Ga]Ga-FAPI-04 PET/CT versus MRI and [18F]-FDG PET/CT Eur. J. Nucl. Med. Mol. Imaging 2021 48 1604 1617 10.1007/s00259-020-05095-0 33179149
+27. Şahin E. Elboğa U. Çelen Y.Z. Sever Ö.N. Çayırlı Y.B. Çimen U. Comparison of 68Ga-DOTA-FAPI and 18FDG PET/CT imaging modalities in the detection of liver metastases in patients with gastrointestinal system cancer Eur. J. Radiol. 2021 142 109867 10.1016/j.ejrad.2021.109867 34315086
+28. Pang Y. Zhao L. Luo Z. Hao B. Wu H. Lin Q. Sun L. Chen H. Comparison of 68Ga-FAPI and 18F-FDG Uptake in Gastric, Duodenal, and Colorectal Cancers Radiology 2021 298 393 402 10.1148/radiol.2020203275 33258746
+29. Jiang D. Chen X. You Z. Wang H. Zhang X. Li X. Ren S. Huang Q. Hua F. Guan Y. Comparison of [68Ga]Ga-FAPI-04 and [18F]-FDG for the detection of primary and metastatic lesions in patients with gastric cancer: A bicentric retrospective study Eur. J. Nucl. Med. Mol. Imaging 2021 49 732 742 10.1007/s00259-021-05441-w 34297193
+30. Zhao L. Pang Y. Zheng H. Han C. Gu J. Sun L. Wu H. Wu S. Lin Q. Chen H. Clinical utility of [68Ga]Ga-labeled fibroblast activation protein inhibitor (FAPI) positron emission tomography/computed tomography for primary staging and recurrence detection in nasopharyngeal carcinoma Eur. J. Nucl. Med. Mol. Imaging 2021 48 3606 3617 10.1007/s00259-021-05336-w 33792760
+31. Qin C. Liu F. Huang J. Ruan W. Liu Q. Gai Y. Hu F. Jiang D. Hu Y. Yang K. A head-to-head comparison of 68Ga-DOTA-FAPI-04 and 18F-FDG PET/MR in patients with nasopharyngeal carcinoma: A prospective study Eur. J. Nucl. Med. Mol. Imaging 2021 48 3228 3237 10.1007/s00259-021-05255-w 33609152
+32. Chen H. Zhao L. Ruan D. Pang Y. Hao B. Dai Y. Wu X. Guo W. Fan C. Wu J. Usefulness of [68Ga]Ga-DOTA-FAPI-04 PET/CT in patients presenting with inconclusive [18F]FDG PET/CT findings Eur. J. Nucl. Med. Mol. Imaging 2021 48 73 86 10.1007/s00259-020-04940-6 32588089
+33. Chen H. Pang Y. Wu J. Zhao L. Hao B. Wu J. Wei J. Wu S. Zhao L. Luo Z. Comparison of [68Ga]Ga-DOTA-FAPI-04 and [18F] FDG PET/CT for the diagnosis of primary and metastatic lesions in patients with various types of cancer Eur. J. Nucl. Med. Mol. Imaging 2020 47 1820 1832 10.1007/s00259-020-04769-z 32222810
+34. Syed M. Flechsig P. Liermann J. Windisch P. Staudinger F. Akbaba S. Koerber S.A. Freudlsperger C. Plinkert P.K. Debus J. Fibroblast activation protein inhibitor (FAPI) PET for diagnostics and advanced targeted radiotherapy in head and neck cancers Eur. J. Nucl. Med. Mol. Imaging 2020 47 2836 2845 10.1007/s00259-020-04859-y 32447444
+35. Perou C.M. Sørlie T. Eisen M.B. van de Rijn M. Jeffrey S.S. Rees C.A. Pollack J.R. Ross D.T. Johnsen H. Akslen L.A. Molecular portraits of human breast tumours Nature 2000 406 747 752 10.1038/35021093 10963602
+36. Sørlie T. Perou C.M. Tibshirani R. Aas T. Geisler S. Johnsen H. Hastie T. Eisen M.B. van de Rijn M. Jeffrey S.S. Gene expression patterns of breast carcinomas distinguish tumor subclasses with clinical implications Proc. Natl. Acad. Sci. USA 2001 98 10869 10874 10.1073/pnas.191367098 11553815
+37. Kalluri R. The biology and function of fibroblasts in cancer Nat. Rev. Cancer 2016 16 582 598 10.1038/nrc.2016.73 27550820
+38. Kömek H. Can C. Güzel Y. Oruç Z. Gündoğan C. Yildirim Ö.A. Kaplan İ. Erdur E. Yıldırım M.S. Çakabay B. 68Ga-FAPI-04 PET/CT, a new step in breast cancer imaging: A comparative pilot study with the 18F-FDG PET/CT Ann. Nucl. Med. 2021 35 744 752 10.1007/s12149-021-01616-5 33934311
+39. Glehen O. Gilly F.N. Boutitie F. Bereder J.M. Quenet F. Sideris L. Mansvelt B. Lorimier G. Msika S. Elias D. Toward curative treatment of peritoneal carcinomatosis from nonovarian origin by cytoreductive surgery combined with perioperative intraperitoneal chemotherapy Cancer 2010 116 5608 5618 10.1002/cncr.25356 20737573
+40. Fagotti A. Fanfani F. Rossitto C. Lorusso D. De Gaetano A.M. Giordano A. Vizzielli G. Scambia G. A treatment selection protocol for recurrent ovarian cancer patients: The role of FDG-PET/CT and staging laparoscopy Oncology 2008 75 152 158 10.1159/000159266 18827492
+41. Kim S.J. Lee S.W. Diagnostic accuracy of 18F-FDG PET/CT for detection of peritoneal carcinomatosis; a systematic review and meta-analysis Br. J. Radiol. 2018 91 20170519 10.1259/bjr.20170519 29099613
+42. Zhao L. Pang Y. Luo Z. Fu K. Yang T. Zhao L. Sun L. Wu H. Lin Q. Chen H. Role of [68Ga]Ga-DOTA-FAPI-04 PET/CT in the evaluation of peritoneal carcinomatosis and comparison with [18F]-FDG PET/CT Eur. J. Nucl. Med. Mol. Imaging 2021 48 1944 1955 10.1007/s00259-020-05146-6 33415432
+43. Guo W. Chen H. 68Ga FAPI PET/CT Imaging in Peritoneal Carcinomatosis Radiology 2020 297 521 10.1148/radiol.2020202469 33048036
+44. Pang Y. Zhao L. Chen H. 68Ga-FAPI Outperforms 18F-FDG PET/CT in Identifying Bone Metastasis and Peritoneal Carcinomatosis in a Patient with Metastatic Breast Cancer Clin. Nucl. Med. 2020 45 913 915 10.1097/RLU.0000000000003263 32910045
+45. Zhao L. Pang Y. Wei J. Hao B. Chen H. Use of 68Ga-FAPI PET/CT for Evaluation of Peritoneal Carcinomatosis Before and After Cytoreductive Surgery Clin. Nucl. Med. 2021 46 491 493 10.1097/RLU.0000000000003611 33782310
+46. Ferdinandus J. Costa P.F. Kessler L. Weber M. Hirmas N. Kostbade K. Bauer S. Schuler M. Ahrens M. Schildhaus H.U. Initial clinical experience with 90Y-FAPI-46 radioligand therapy for advanced stage solid tumors: A case series of nine patients J. Nucl. Med. 2021 10.2967/jnumed.121.262468
+47. Assadi M. Rekabpour S.J. Jafari E. Divband G. Nikkholgh B. Amini H. Kamali H. Ebrahimi S. Shakibazad N. Jokar N. Feasibility and Therapeutic Potential of 177Lu-Fibroblast Activation Protein Inhibitor-46 for Patients with Relapsed or Refractory Cancers: A Preliminary Study Clin. Nucl. Med. 2021 46 e523 e530 10.1097/RLU.0000000000003810 34269729
+48. Baum R.P. Schuchardt C. Singh A. Chantadisai M. Robiller F.C. Zhang J. Mueller D. Eismant A. Almaguel F. Zboralski D. Feasibility, Biodistribution and Preliminary Dosimetry in Peptide-Targeted Radionuclide Therapy (PTRT) of Diverse Adenocarcinomas using 177Lu-FAP-2286: First-in-Human Results J. Nucl. Med. 2021 10.2967/jnumed.120.259192
+49. Varasteh Z. Mohanta S. Robu S. Braeuer M. Li Y. Omidvari N. Topping G. Sun T. Nekolla S.G. Richter A. Molecular imaging of fibroblast activity after myocardial infarction using a 68Ga-labeled fibroblast activation protein inhibitor, FAPI-04 J. Nucl. Med. 2019 60 1743 1749 10.2967/jnumed.119.226993 31405922
+50. Aghajanian H. Kimura T. Rurik J.G. Hancock A.S. Leibowitz M.S. Li L. Scholler J. Monslow J. Lo A. Han W. Targeting cardiac fibrosis with engineered T cells Nature 2019 573 430 433 10.1038/s41586-019-1546-z 31511695
+51. Heckmann M.B. Reinhardt F. Finke D. Katus H.A. Haberkorn U. Leuschner F. Lehmann L.H. Relationship Between Cardiac Fibroblast Activation Protein Activity by Positron Emission Tomography and Cardiovascular Disease Circ. Cardiovasc. Imaging 2020 13 e010628 10.1161/CIRCIMAGING.120.010628 32912030
+52. Luo Y. Pan Q. Zhang W. IgG4-related disease revealed by 68Ga-FAPI and 18F-FDG PET/CT Eur. J. Nucl. Med. Mol. Imaging 2019 46 2625 2626 10.1007/s00259-019-04478-2 31410541
+53. Pan Q. Luo Y. Zhang W. Recurrent immunoglobulin G4-related disease shown on 18F-FDG and 68Ga-FAPI PET/CT Clin. Nucl. Med. 2020 45 312 313 10.1097/RLU.0000000000002919 31977476
+

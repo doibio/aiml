@@ -1,0 +1,555 @@
+
+==== Front
+Biology (Basel)
+Biology (Basel)
+biology
+Biology
+2079-7737
+MDPI
+
+10.3390/biology12060818
+biology-12-00818
+Review
+Regulation of EMT Markers, Extracellular Matrix, and Associated Signalling Pathways by Long Non-Coding RNAs in Glioblastoma Mesenchymal Transition: A Scoping Review
+https://orcid.org/0000-0003-3210-8131
+Leung Dexter Hoi Long
+Phon Brandon Wee Siang
+Sivalingam Mageswary
+https://orcid.org/0000-0003-2638-907X
+Radhakrishnan Ammu Kutty
+https://orcid.org/0000-0003-2505-1018
+Kamarudin Muhamad Noor Alfarizal *
+El-Habr Elias A. Academic Editor
+Virolle Thierry Academic Editor
+Jeffrey Cheah School of Medicine and Health Sciences, Monash University Malaysia, Jalan Lagoon Selatan, Bandar Sunway 47500, Malaysia
+* Correspondence: muhamadnoor.alfarizal@monash.edu; Tel.: +60-3-5515-9664; Fax: +60-3-5515-6341
+04 6 2023
+6 2023
+12 6 81827 4 2023
+26 5 2023
+31 5 2023
+© 2023 by the authors.
+2023
+https://creativecommons.org/licenses/by/4.0/ Licensee MDPI, Basel, Switzerland. This article is an open access article distributed under the terms and conditions of the Creative Commons Attribution (CC BY) license (https://creativecommons.org/licenses/by/4.0/).
+Simple Summary
+
+Glioblastoma (GBM) is the most lethal type of brain tumour due to the high invasiveness caused by the process of mesenchymal (MES) transition. This process is modulated by a myriad of biological factors, one of them being long non-coding RNAs (lncRNAs) which remain highly elusive in the GBM. In this scoping review, all recent lncRNAs which were studied to play a regulatory role in GBM cells through modulating EMT markers, transcription factors (TFs), and the affiliated signalling pathways associated with MES transition were identified through a systematic literature search and reviewed. The results provide an update and prospective on the complex interplays of the EMT markers, TFs, and signalling pathways with lncRNAs identified in GBM cell studies.
+
+Abstract
+
+Glioblastoma (GBM) mesenchymal (MES) transition can be regulated by long non-coding RNAs (lncRNAs) via modulation of various factors (Epithelial-to-Mesenchymal (EMT) markers, biological signalling, and the extracellular matrix (ECM)). However, understanding of these mechanisms in terms of lncRNAs is largely sparse. This review systematically analysed the mechanisms by which lncRNAs influence MES transition in GBM from a systematic search of the literature (using PRISMA) performed in five databases (PubMed, MEDLINE, EMBASE, Scopus, and Web of Science). We identified a total of 62 lncRNAs affiliated with GBM MES transition, of which 52 were upregulated and 10 were downregulated in GBM cells, where 55 lncRNAs were identified to regulate classical EMT markers in GBM (E-cadherin, N-cadherin, and vimentin) and 25 lncRNAs were reported to regulate EMT transcription factors (ZEB1, Snai1, Slug, Twist, and Notch); a total of 16 lncRNAs were found to regulate the associated signalling pathways (Wnt/β-catenin, PI3k/Akt/mTOR, TGFβ, and NF-κB) and 14 lncRNAs were reported to regulate ECM components (MMP2/9, fibronectin, CD44, and integrin-β1). A total of 25 lncRNAs were found dysregulated in clinical samples (TCGA vs. GTEx), of which 17 were upregulated and 8 were downregulated. Gene set enrichment analysis predicted the functions of HOXAS3, H19, HOTTIP, MEG3, DGCR5, and XIST at the transcriptional and translational levels based on their interacting target proteins. Our analysis observed that the MES transition is regulated by complex interplays between the signalling pathways and EMT factors. Nevertheless, further empirical studies are required to elucidate the complexity in this process between these EMT factors and the signalling involved in the GBM MES transition.
+
+glioblastoma
+mesenchymal transition markers
+long non-coding RNA
+extracellular matrix
+EMT markers
+Jeffrey Cheah School of Medicine and Health Sciences, Monash University MalaysiaSED-000019 This study was funded by a collaborative research grant from the Jeffrey Cheah School of Medicine and Health Sciences, Monash University Malaysia (Project Code: SED-000019).
+==== Body
+pmc1. Introduction
+
+IDH-wildtype Glioblastoma (GBM) denotes the most aggressive form of adult-type diffuse glioma with a low survival and high rate of tumour recurrence post-surgical resection [1]. This phenomenon is greatly attributed to the high invasiveness of the glioblastoma (GBM), which makes the complete removal of this tumour difficult, leading to residual tumour foci that can grow and develop resistance to therapy [2]. GBM can also be classified into neural, pro-neural, classical, or mesenchymal subtypes based on differences in genetic signatures, whereby the mesenchymal (MES) subtype is associated with the highest invasive capability [3]. In a healthy brain environment, the dysregulation of various interplays amongst the biological processes at the genetic level may lead to the development of aggressive phenotypes, often seen in malignant tumours [4]. The highly invasive characteristics of the MES subtype of GBM are attributed to a biological event which induces GBM cells of other subtypes to transition to the MES state—an event which is termed as MES transition. MES transition is highly similar to the classic EMT process observed in the epithelial setting and is a major driver that allows GBM cells to exhibit an aggressive phenotype [5].
+
+In the epithelial setting, EMT is a process where the epithelial cells transition into the mesenchymal state, which facilitates cell migration by allowing these cells to detach from a basal membrane [6]. It is a dynamic process that involves disruption of cell–cell adhesion, cytoskeleton remodelling, and changes in the cell–matrix behaviour, all of which ultimately affect tumour progression and metastasis [7]. This process is tightly regulated and is often observed in various cancers. The commonly used markers for the classical EMT process are commonly recognised as E-cadherin, N-cadherin, and vimentin. Induction of the EMT process is characterised by the downregulation of E-cadherin and the upregulation of N-cadherin and vimentin, which are responsible for the loss of cell-to-cell adhesion [8]. The expression of cadherins is governed by several transcription factors; namely ZEB1/2, Snail transcription family (Snail/Slug), Twist1, and Notch [9]. In addition, these transcription factors can also modulate the activation of specific signalling pathways such as mTOR, PI3K/Akt, Wnt/β-catenin, and TGF-β pathways, which affect the EMT process [10]. Because GBMs are not typical epithelial cells due to the absence of a basal membrane within the neural setting and inconsistent expression of E-cadherin, to coin the term “EMT” within the GBM context would be scientifically inaccurate. However, studies in recent years have found that the regulation of the classical EMT markers can induce the GBM cells to the invasive mesenchymal (MES) subtype [11]. These observations have recorded the similarities in genetic profiles observed in both MES transition and the classical EMT process, which includes the classical EMT markers, TFs, and induction of signalling pathways. In the neural setting, the highly hypoxic microenvironment and the extracellular matrix (ECM) are factors which affect GBM MES transition [12]. The highly hypoxic tumour microenvironment stimulates hypoxic adaptive responses, which in turn induces MES transition. Tumour cells will then become increasingly motile where they traverse the ECM which involves cellular interactions with both matrix and cytoskeletal proteins. This will lead to the changes in the integrity of the ECM, leading to cytoskeletal remodelling which further supports the pro-invasion activities of GBM cells.
+
+Looking at the research trend within the past few years, non-coding RNAs (ncRNAs) are known to regulate a wide range of biological processes and signalling pathways, which include cancers and their associated migratory and metastasis mechanisms that include the EMT process. The ncRNAs have garnered interest in cancer research due to their ability to act as molecular “switches” of various signalling pathways in regulating cellular activities through a competitive endogenous RNA (ceRNA) mechanism. The ncRNAs will “sponge” their target through this mechanism, resulting in a silencing effect at both the translational and protein levels [13]. Long non-coding RNAs (lncRNAs) are a class of ncRNAs with more than 200 nucleotides that can sponge with the target microRNAs (miRNAs), DNA, and proteins, which subsequently affect downstream processes. With the growing number of new lncRNAs, their characterisation is essential to complement the current knowledge enshrouding their roles in malignant tumour progression. In cancers, a huge number of lncRNAs and their the involvements in both cancers and EMT are well characterised [14]. Various pro- and anti-EMT lncRNAs have been deliberated in cancers which exhibited differential effects, whereby the regulation of EMT by lncRNA(s) was observed to be present at both the transcriptional and translational levels. The physiological role of lncRNAs is also context-dependent, where a single lncRNA can exhibit differential effects between different cancer subtypes. This multifaceted nature of lncRNAs has posed a challenge to effectively identify and characterise their molecular role in specific cancers. Although the development of lncRNA(s) is still at a very premature stage, they could be elicited as a promising target of prognostic or therapeutical value.
+
+A recent systematic review on colorectal cancer identified several lncRNAs that regulate EMT via the ZEB1, E-cadherin, and Wnt/β-catenin pathways [15]. Although lncRNAs have been widely reported in EMT-related signalling pathways in GBM [16], the specific molecular mechanisms in the GBM MES transition are not fully elucidated. Hence, through this systematic scoping review, we aim to review and analyse the roles of various lncRNAs in regulating common EMT markers in GBM, transcription factors, signalling pathways, and ECM components, which may provide insights into GBM cell invasion via the involvement of the GBM MES transition. This analysis also further identifies their expression and relevancy in clinical samples and further bridges the gaps in understanding GBM MES transition regulation by clinically relevant lncRNAs in GBM.
+
+2. Materials and Methods
+
+2.1. Literature Search Strategy
+
+The Preferred Reporting Items for Systematic Reviews and Meta-analyses (PRISMA) guidelines were used to design, analyse, and report data obtained in this scoping review. Five electronic databases, i.e., PubMed (NLM, Bethesda, MD, USA), MEDLINE (NLM, Bethesda, MD, USA), EMBASE (Elsevier, Amsterdam, The Netherlands), Scopus (Elsevier, Amsterdam, The Netherlands), and Web of Science (Clarivate Analytics, London, UK), were searched systematically for studies related to lncRNAs and their roles in GBM MES transition.
+
+2.2. Study Selection
+
+The search was restricted from 1 January 2011 to 31 October 2021. The following search terms were used: “Glioblastoma”, “Glioma”, “GBM”, “EMT”, “Epithelial-to Mesenchymal”, “Mesenchymal”, “Progression”, “ZEB”, “TWIST”, “SLUG”, “SNAI1”, “lncRNA”, “non-coding RNA”, “long non-coding RNA”. The Boolean search terms “AND” and “OR” were used to define the search. Searches from all databases were collected and duplicate references were removed manually. Only English original articles were included in the final selection for data analysis.
+
+2.3. Inclusion and Exclusion Criteria
+
+Articles were included in the study (i.e., met the inclusion criteria) if the article reported on original research on cell-based models of GBM associated with GBM MES transition or if they were studies investigating the molecular signalling role or involvements of lncRNAs in any type of cellular processes/molecular pathways or factors that will lead to GBM MES transition programme in GBM. In contrast, articles that did not focus on lncRNAs in GBM cell lines, involved in vivo studies, were unrelated to EMT-related mechanisms, or were review articles were excluded from the study (i.e., exclusion criteria).
+
+2.4. Data Extraction and Outcomes
+
+Title and abstract screening, full-text screening, and data extraction were performed by two researchers (DHLL and BWSP). All screenings required consensus between both researchers, and any conflicts were resolved by a senior author (MNAK). The following data were extracted from the selected studies: authors, year of publication, lncRNA, miRNA interaction, further signalling interaction(s), cell lines used, and relevance to GBM MES transition.
+
+2.5. Validation of lncRNAs via TCGA, and GTEx Datasets
+
+For validation, level 3 gene expression profiles of TCGA patient cohort and normal brain samples were obtained from UCSC Xena data portal (https://xenabrowser.net/datapages/, accessed on 20 November 2021) [17]. Specifically, Illumina Hiseq2000 RNASeq log2 transformed HTSeq counts were obtained. Clinical data of the GBM patients from the TCGA database such as gender, age, IDH1 mutation status, and sample type were obtained both from UCSC Xena [17] and cBioPortal (https://www.cbioportal.org, accessed on 20 November 2021) [18,19]. The utilisation of the Toil pipeline allowed for a unified processing workflow between the TCGA and GTEx datasets, with STAR being used to generate alignments and quantifications being performed using RSEM [20]. The recomputation of the raw RNA-Seq data from TCGA and GTEx by the UCSC Xena project makes the two datasets compatible, allowing for the direct expression analyses.
+
+2.6. Gene Set Enrichment Analysis of lncRNAs
+
+Protein interactions associated with the lncRNAs identified in our literature search and available in the TCGA vs. GTEx database were obtained from the RAID v2 database (https://www.rna-society.org/raid2/, accessed on 20 November 2021). Gene set enrichment analysis (GSEA) was then performed through Enrich (https://maayanlab.cloud/Enrichr/, accessed on 20 November 2021), where the Kyoto Encyclopedia of Genes and Genomes (KEGG) pathways, Gene Ontology (GO) Biological Process (BP), and GO Molecular Functions (MF) annotations were utilised.
+
+3. Results
+
+3.1. Literature Search Results of lncRNAs Regulating GBM MES Transition
+
+A total of 1110 original articles were identified from the databases. The search process is illustrated in Figure 1. Of the 1110 papers identified, 738 studies were included after removal of duplicate studies. Then, 639 studies were removed following the initial assessment based on title and abstract screening, which yielded 99 studies which were subjected to full-text review. During full-text review, 21 studies were excluded, leaving 78 studies which were included for data syntheses (Figure 1). In these 78 studies, 52 lncRNAs were reported to be upregulated, and 10 lncRNAs were reported to be downregulated (Table 1). The expression of these lncRNAs was validated (by the respective authors) using (i) quantitative PCR (qPCR), where the authors compared the expression of lncRNA(s) between GBM cell lines or and/or GBM tissues against normal brain tissues/cells, or (ii) through bioinformatics studies using The Cancer Genome Atlas (TCGA) and GTEx databases. Based on these results, the expression of lncRNAs that are oncogenic and promote GBM MES transition were often upregulated and, in contrast, the lncRNAs associated with a tumour suppressive role were downregulated.
+
+3.2. Dysregulated lncRNAs Affect the Expression of Classical EMT Markers
+
+LncRNAs can modulate GBM MES transition through direct or indirect regulation of the expression of common MES-related markers (vimentin, E-cadherin, and N-cadherin) through specific biological pathways. In most studies, the EMT markers commonly used to determine the MES transition are E-cadherin, N-cadherin, and vimentin. In our analysis, 45 upregulated and 10 downregulated lncRNAs can regulate the GBM MES transition through the direct change of expression of these EMT markers (Figure 2A, Table 1). A total of 30 lncRNAs were found to affect the expression of N-cadherin, and 33 and 38 lncRNAs regulated the expression of E-cadherin and vimentin, respectively (Table 1). Seventeen lncRNAs were identified to affect the expression of all three markers (E-cadherin, N-cadherin, and vimentin), while six lncRNAs (LINC00473, AGAP2-AS1, SAMMSON, NNT-AS1, ZFAS-1, and ZEB1-AS1) were found to affect the expression of both N-cadherin and E-cadherin; six lncRNAs (PDIA3P1, LINC00466, PVT1, HSP90AA1-IT1, HOXC13-AS, and SNHG11) were found to affect the expression of both N-cadherin and vimentin; and finally, ten lncRNAs were identified to affect the expression of both vimentin and E-cadherin (Table 1). In all studies, the regulation of E-cadherin is inversely proportional to the regulation of both N-cadherin and vimentin. Still, the regulation of both N-cadherin and vimentin appears directly proportional, signifying their roles as MES markers.
+
+Based on the analysis, the upregulation of the oncogenic lncRNAs demonstrated a positive correlation with the increased expression of N-cadherin and vimentin, with a negative expression of E-cadherin. This observation was consistent with the knockdown of the upregulated lncRNAs via RNAi, demonstrating an increased expression of E-cadherin and a reduction in both mesenchymal markers. Meanwhile, overexpression of tumour suppressive lncRNAs led to the increased expression of E-cadherin and decreased N-cadherin and vimentin. These observations further support the oncogenic or tumour-suppressive roles of these lncRNAs as either a promoter or inhibitor of MES transition in GBM.
+
+3.3. The Expression of Long Non-Coding RNAs Regulates EMT Transcriptional Factors
+
+Next, we identified lncRNAs that regulate transcriptional factors (TFs) of classical EMT biomarkers such as ZEB1, Twist, Notch, and Slug/Snai1 (Table 2). The knockdown of these lncRNAs (oncogenic) downregulated the expression of ZEB1, Twist, Notch, and Slug/Snai1 (Table 2) and vice versa in overexpression studies for the tumour-suppressive lncRNAs. From the studies, 13 lncRNAs were identified to regulate Snai1 and ZEB1, followed by Slug (6 lncRNAs), Twist1 (3 lncRNAs), and Notch (1 lncRNA) (Figure 2B). Some of the lncRNAs were reported to regulate multiple EMT-TFs (Figure 3), namely, (i) the downregulated lncRNA DGCR5 which downregulates TWIST1, Slug, and ZEB1 expression upon inactivation and (ii) upregulated lncRNA ZFAS-1 which upregulates TWIST1, ZEB1, and Snai1 expression upon overexpression. Only one lncRNA (SNHG6) was reported in the regulation of Notch.
+
+3.4. Long Non-Coding RNAs Target EMT-Associated Biological Signalling Pathways
+
+In our analysis, several studies reported that the GBM MES transition by lncRNAs involved specific signalling pathways, namely, Wnt/β-catenin, PI3K/Akt, TGF-β, NF-κB, and mTOR signalling pathways (Table 3). Amongst them, four upregulated (CCAT2, H19, PDIA3P1, SLC8A-AS1) and three downregulated (DGCR5, LINC-PINT, PTCSC3) lncRNAs were identified within Wnt/β-catenin signalling. We identified five upregulated lncRNAs (FOXD2-AS1, GNG12-AS1, SAMMSON, UCA1, and NEAT1) that were shown to regulate the PI3K/Akt/mTOR pathways, while the high expression of PDIA3P1 and UCA1 regulated the TGF-β pathway. Additionally, the upregulated lncRNAs LINC01057 and LOXL-AS1 were reported in the regulation of NF-κB signalling (Figure 4). Two lncRNAs were reported to be involved in regulating more than one signalling pathway, namely, UCA1 was reported to be involved in both PI3K/Akt and TGF-β signalling pathways, and PDIA3P1 was reported to be involved with both Wnt/β-catenin and TGF-β signalling pathways.
+
+3.5. Factors Facilitating ECM Degradation Are Affected by lncRNAs’ Dysregulation
+
+From the results, we obtained lncRNAs which interact with several factors that are integral in maintaining the integrity of ECM. These factors are CD44, MMP2/9, Integrin, and Fibronectin (Figure 5, Table 4). The downregulation of oncogenic lncRNAs through knockdown led to the subsequent downregulation of these ECM factors. Only one lncRNA, SLC8A1-AS1, was recorded to upregulate claudin expression following knockdown.
+
+3.6. Downregulated lncRNAs and Their Potential Tumour-Suppressive Roles in GBM MES Transition
+
+We identified 10 downregulated lncRNAs, which are tabulated in Table 5. As a contrast to the upregulated lncRNAs, the overexpression of the downregulated lncRNAs demonstrated the increased expression of E-cadherins and decreased expression of N-cadherin and vimentin. An opposite trend was observed where the inactivation of these downregulated lncRNAs is associated with decreased expression of E-cadherins and increased expression of N-cadherin and vimentin. Similarly, changes in the expression of these downregulated lncRNAs showed an opposite trend as well in the case of expression levels of the EMT-TFs (Slug, Snai1, ZEB1, and Twist) and ECM components (MMP2/9, fibronectin) which is inversely proportional to the expression of these downregulated lncRNAs.
+
+3.7. Long Non-Coding RNAs Are Dysregulated in the Clinical Setting
+
+Our analysis has observed a total of 41 lncRNAs from the 62 lncRNAs identified in our systematic search to be present in the clinical dataset (complete data available in File S1). Among these lncRNAs, 17 were found to be upregulated (FC > 2), while 8 were found to be downregulated (FC < 0.5). The top-10 upregulated and top-8 downregulated lncRNAs are tabulated in Table 6 and Table 7, respectively. Analysis was also performed to compare the expression of lncRNAs within GBM samples, including treatment received vs. no treatment received, primary vs. recurrent tumours, and IDH-wildtype versus IDH-mutant. No lncRNA of significance which is affiliated with these parameters was obtained.
+
+3.8. Dysregulated lncRNAs Affect Cell Phenotype through Transcriptional and Translational Regulation
+
+Next, we obtained the protein interactions of these lncRNAs from the RAID database (complete data available in File S1). We performed GSEA for the sets of proteins associated with upregulated lncRNAs (HOXAS3, H19, HOTTIP) and downregulated lncRNAs (MEG3, DGCR5, XIST) (data available in File S2. Figures S1–S6), GSEA through KEGG pathways demonstrated that the pathway “RNA transport” is enriched in three lncRNAs—HOXAS3, DGCR5, and XIST. GSEA through GO-BP and MF showed that the proteins associated with these lncRNAs mostly function as a transcriptional or translational control, with GO BP annotations related to translation, and transcription is highly enriched. GSEA through GO MF showed that these proteins primarily function through binding with RNA or binding at the transcription region.
+
+4. Discussion
+
+To date, the roles of any specific lncRNAs in cancers or specifically in GBM are still debatable. This is due to contradictory results in either pro- or anti-cancer effects or in terms of biological pathways that were observed between different cell lines and between cell and animal models. This was reflected similarly in our results, with the lncRNA MEG3 being an example. As the genetic makeup of cancer cells is highly heterogenous, it would be necessary to pinpoint the exact role of specific lncRNAs affected in any particular biological setting to allow the identification of the mechanism being regulated. Further development of lncRNAs without knowing their exact role within individualised cancer samples would be redundant.
+
+4.1. EMT Markers E- and N-Cadherins Are Commonly Used as Markers of MES Transition in GBM
+
+Both classical cadherins, E- and N-cadherins, were investigated in almost all of the studies as an indication of a GBM MES transition. As previously mentioned, cadherin expression in the neuronal setting has observed contradictory and inconsistent results. Noh et al. (2017) evaluated the expression of both cadherins in glioma tissues and cell lines and concluded their limited prognostic value in gliomas. With this in mind, developing a genomic profile for gliomas would provide a more accurate and indicative alternative to the current cadherin solution for the detection of an EMT-like process. Potential factors that would be a crucial element in such genomic profiles would be lncRNAs, EMT-TFs, and also activities of biological signalling pathways.
+
+4.2. Transcription Factors for EMT Play an Important Role in the Overarching Regulation of MES Transition in GBM
+
+Our analysis observed a huge number of lncRNAs that are capable of regulating the expression and activity of EMT transcription factors (ZEB1, Slug, Snail, Twist1) which modulate the expression of the typical EMT markers (E-cadherin, N-cadherin, and vimentin) and concomitantly induce MES transition in GBM. Among these transcription factors, Snai1 and ZEB1 are the most frequently studied and are regulated by 13 lncRNAs. These transcription factors are found to be the central regulators that modulate the expression of the EMT markers. For instance, Snai1 has been heavily implicated as the master regulator of EMT, where its overexpression can lead to the repression of E-cadherin [96]. Twist, consisting of Twist1/2, on the other hand, can also suppress E-cadherin which increases the expression of mesenchymal markers [97]. Another important transcription factor that drives GBM MES transition is ZEB1 [98].
+
+In our analysis, we observed the interplays amongst the transcription factors, where ZEB1 activity was regulated by both Snai1 and Twist [99]. However, knowing the intrinsic mechanism among the transcription factors and whether their expressions are directly affected by lncRNA cannot be concluded at the current stage. Two lncRNAs identified in this study, DGCR5 and ZFAS-1, were shown to affect the expression of multiple EMT transcription factors. From our clinical database analysis, DGCR5 is one of the downregulated lncRNAs, which may suggest its tumour-suppressive role. To further verify the function of DGCR5, GSEA was performed on the on the proteins which were reported to interact with DGCR5. GSEA analysis inferred the potential translational silencing effect of DGCR5 on oncogenic target proteins via binding with a miRNA target in the canonical lncRNA–miRNA–mRNA signalling axis, which supports its tumour-suppressive role.
+
+4.3. Transcription Factors of EMT Influence Components of Cancer-Associated Signalling Pathways Which Leads to GBM MES Transition
+
+Our current analysis focuses the literature search on several prominent pathways which were reported to be affiliated with the EMT process. We observed several interplays among the signalling pathways that regulate the activity of the EMT transcription factors and EMT markers. PI3K signalling can be hyperactivated through activation of TGF-β, where TGF-β activation happens through the phosphorylation of Twist, leading to the subsequent observed loss of E-cadherin [100]. Downstream activation of PI3K leads to subsequent AKT and mTOR activation, which in turn upregulates Snai1 and also NF-κB. Meanwhile, the downstream activation of NF-κB activates multiple EMT transcription factors such as ZEB1, Slug, and Twist [101,102]. From our analysis, both PI3K and Wnt signalling are regulated by the highest numbers of lncRNAs. However, in these individual studies, the interplays between signalling pathways are often not investigated, which indicates the need for further validations on these lncRNAs to allow the identification of the specific molecular pathways affected. In hindsight, although our analysis demonstrated that lncRNAs regulate EMT transcription factors and EMT-associated biological signalling pathways, their direct association cannot be concluded at the current stage. For example, our systematic literature search demonstrated that the knockdown of H19 downregulated ZEB1 and Wnt signalling [60]. However, the direct correlation of Wnt signalling with ZEB1 regulation was unclear in the study. Moreover, the activity of Wnt can also be regulated through TGF-β, which is ZEB1-dependent. This further signifies the complex nature of lncRNA regulation of EMT at various biological levels.
+
+4.4. Long Non-Coding RNAs Influence GBM Microenvironment through Various ECM Components Which Contribute to MES Transition
+
+From our analysis, we also observed lncRNAs which modulated the expression of the ECM components, including matrix metalloproteins (MMPs), fibronectins, CD44, claudin, and integrin-β1. Matrix metalloproteinases (MMPs) are a family of endoproteases, which function to breakdown various proteins in the extracellular matrix (ECM), ultimately leading to their degradation [103]. Degradation of the ECM is closely associated with EMT and tumour cell invasion. In this sense, MMPs are also referred to as an initiator for EMT. In a clinical study, a low level of MMP2 is associated with longer mean survival amongst GBM patients, and its increased level is positively associated with increased tumour grades and recurrence [104]. In our analysis, the expression of two MMPs, MMP2 and MMP9, was frequently influenced by lncRNAs such as HULC, SNHG11, ZEB-AS1, and ZFAS-1. Additionally, both MMPs have been reported to be involved in ZEB1 signalling and Snai1 [105,106]. Similarly, there were lncRNAs identified (HULC, SNHG18, and ZFAS-1) which influence the expression of MMPs and are reported to regulate the EMT transcription factors. Based on this, a linkage between the lncRNAs that regulate the activity of the transcription factors (Snail and ZEB1), which in turn regulate the ECM components (including MMPs), can be observed during MES transition in GBM. Figure 6 illustrates the tight regulations of EMT-TFs and ECM-interacting factors by the signalling pathways highlighted in this study pertaining to the MES process in GBM. LncRNAs were reported to exhibit regulatory activity at various levels in this overarching signalling axis, which emphasised the importance of the accurate characterisation of lncRNAs’ roles within the GBM setting.
+
+4.5. Research Is Lacking Outside of Cell Studies to Observe Clinical Relevance of the lncRNAs in GBM MES Transition
+
+To obtain further insights into lncRNAs within the clinical setting, our analysis observed lncRNAs such as HOXC13-AS being similarly overexpressed in vitro and up to 68-fold in GBM tissues. Similarly, the downregulated expression patterns of MEG3, DGCR5, and LINC-PINT recorded from our literature search also match with the expression data in our analysis of GBM clinical samples (0.11, 0.12, and 0.50-fold, respectively). Interestingly, several upregulated lncRNAs obtained from our systematic search were found to be downregulated instead in the clinical setting. Examples of such lncRNAs are NEAT1 and UCA1, where both of which are widely studied oncogenic lncRNAs. A possible explanation for these inconsistencies could be attributed to the limitations of the current GBM experimental setup. Furthermore, additional analysis was performed to compare the expression of lncRNAs obtained in this study among various GBM clinical sample categories, including parameters such as intervention received and primary or recurrent tumours. From the analysis, only one lncRNA, LINC00645, was upregulated in temozolomide-treated GBM samples compared to non-treated GBM samples. This suggest that the exposure to TMZ may induce molecular interactions with the lncRNAs. Additionally, the exposure of TMZ was known to induce epigenetic changes, which may further affect or influence the expression of the lncRNAs. As for other lncRNAs subjected to TMZ-related analysis, no results of significance were obtained. This can be due to the following: (i) the expression of lncRNAs might not be affected by these parameters, (ii) the sample sizes of GBM clinical samples with these specific criteria are limited, and (iii) the out-of-date statuses of these publicly available expression profiles of GBM clinical samples have greatly limited the information available on the lncRNAs to be effectively compared.
+
+Perhaps the most exigent need for EMT studies is to understand the in-depth process attributed to the high cell invasive phenotype of GBM, and this would expedite the development of anti-EMT therapies to palliate the current negative outcomes among GBM patients. Further, the EMT-like process and the associated factors discussed previously are also heavily implicated with the acquired chemoresistance, especially temozolomide (TMZ) resistance, in GBM. Although whether the acquisition of TMZ resistance and EMT are linked events remains unclear in our current understanding, some studies have reported the involvement of EMT factors in TMZ resistance, which include ZEB1, Slug, and vimentin [107,108,109].
+
+4.6. Future Perspective in lncRNA Studies: Moving forward from Cell Studies
+
+Practical application of lncRNAs in the GBM therapeutic setting is currently still at a mature stage. There are several early clinical trials which were carried out in other cancers but not in GBM [110]. Considering the heterogeneity observed within the genetic profiles between GBM patients, alongside the current practice for GBM diagnosis, development of an effective approach for GBM diagnosis is imperative. In this sense, lncRNAs serve as a potential tool that could be further developed for GBM diagnosis. However, much more effort is still required in characterising novel lncRNAs to allow a more in-depth understanding of the common genetic representation in GBM to allow the effective development of lncRNAs as reliable GBM genetic biomarkers. Additionally, it was seen that most research tends to focus on the upregulated, oncogenic lncRNAs compared to the tumour-suppressive lncRNAs. Future research can focus on tumour-suppressive lncRNAs as they can also be a potential molecular target in the EMT-like process in GBM. Additionally, the different expression profiles of some lncRNAs within in vitro models compared with those in a clinical setting accentuate the need for future studies using a GBM model with a closer-to-truth representation of genomic studies within the brain setting. There are several considerations that in vitro models will not be able to address fully, as they do not emulate the actual brain environment which will deaden the veracity of such studies. In contrast, 3D culture models could be a potential bridging tool to facilitate the convergence of 2D cell models to animal models. A systematic review performed by Phon et al. has found dissimilarities between genomic profiles of 3D and 2D culture models, where 3D cultures can simulate the brain microenvironment to a closer degree [111]. This further reinforces the need to verge upon the junctions between various pre-clinical models to allow the excogitation of lncRNA functions to a more precise level.
+
+5. Conclusions
+
+Our systematic analysis has identified upregulated and downregulated lncRNAs that confer oncogenic or tumour-suppressive properties that influence the GBM MES transition in GBM with a complex signalling regulation between the various EMT transcription factors, ECM components, and classical EMT markers (vimentin, E-cadherin, and N-cadherin). This GBM MES transition by lncRNAs is regulated by complex interplays between Wnt/β-catenin, PI3K/Akt, TGF-β, and NF-κB pathways. Nevertheless, the current understanding of the interplay between the signalling pathways and EMT factors is still immature. The complexity of various interplays between these factors implicated the importance of further validation studies to confirm the direct relation and crosstalk amongst factors in the signalling involved. Additionally, the disparity of lncRNAs’ expression further warrants the usage of more suitable pre-clinical models to allow the elucidation of these regulatory mechanisms relevant to the clinical settings.
+
+Acknowledgments
+
+Figure 3 is created by Cytoscape. D.H.L.L. and B.W.S.P. are supported by a Ph.D. scholarship funded by Monash University Malaysia. The authors would also like to thank Jeffrey Cheah School of Medicine and Health Science, Monash University for the support given.
+
+Supplementary Materials
+
+The following supporting information can be downloaded at: https://www.mdpi.com/article/10.3390/biology12060818/s1, File S1: List of dysregulated lncRNAs identified in clinical dataset and all lncRNA-protein interactions obtained from RAID database for selected lncRNAs; File S2: GSEA of lncRNAs (HOXAS3, H19, HOTTIP, MEG3, DGCR5, and XIST) through GO-BP, GO-MF, and KEGG Pathways.
+
+Click here for additional data file.
+
+Author Contributions
+
+D.H.L.L. and M.N.A.K. conceptualised the project, where D.H.L.L. developed the study and M.N.A.K. oversaw overall direction and planning. M.N.A.K., A.K.R. and M.S. administered the project equally. D.H.L.L. performed the literature search and D.H.L.L., B.W.S.P. and M.N.A.K. screened the data. D.H.L.L. and B.W.S.P. extracted and verified the data and conflicts were resolved by M.N.A.K. and D.H.L.L. synthesised study data, created figures and tables, while D.H.L.L. and B.W.S.P. performed bioinformatic analyses, which all were reviewed by M.N.A.K., M.S., A.K.R. and D.H.L.L. drafted the manuscript with contributions from B.W.S.P., M.N.A.K., M.S. and A.K.R. in the review and critical editing. All authors have read and agreed to the published version of the manuscript.
+
+Institutional Review Board Statement
+
+Not applicable.
+
+Informed Consent Statement
+
+Not applicable.
+
+Data Availability Statement
+
+Not applicable.
+
+Conflicts of Interest
+
+The authors declare no conflict of interest.
+
+Figure 1 PRISMA flow diagram for systematic search of articles from PubMed, MEDLINE, EMBASE, Scopus, and Web of Science literature databases. Articles were then further scrutinised for suitability to be included in the study based on the inclusion and exclusion criteria. Finally, the included studies were extracted and analysed in this study.
+
+Figure 2 (A) The number of upregulated lncRNAs identified to regulate N-cadherin, E-cadherin, and vimentin expression. (B) The number of upregulated (↑) and downregulated (↓) lncRNAs identified through the systematic literature search which regulate EMT-TFs; Snai1, ZEB1, Slug, Twist1, and Notch.
+
+Figure 3 Network visualisation of various lncRNAs in regulating of EMT transcription factors. DGCR5 and ZFAS-1 (red box) were observed to be lncRNAs which were shown to be involved in the regulation of multiple EMT-TFs, namely Twist1, Slug, and ZEB1 (for DGCR5) and Twist1, Snai1, and ZEB1 (for ZFAS-1). Several lncRNAs (orange box) were identified to regulate two EMT-TFs, while lncRNAs in pink box were shown to only regulate a specific EMT-TF. Figure was created using Cytoscape software version 3.10.0.
+
+Figure 4 Upregulated (↑) and downregulated (↓) lncRNAs identified through systematic literature search which regulate biological signalling pathways prominent in GBM and cancers.
+
+Figure 5 Downregulation of lncRNAs through knockdown led to the observation of decreased expression of factors integral to ECM integrity. The dysregulation of ECM factors and components will lead to the degradation of the ECM, which is part of the cytoskeletal remodelling process that promotes the invasive phenotype observed in GBM cells.
+
+Figure 6 Pathway model in which various biological signalling pathways, including Wnt/β-catenin (red arrow), PI3K/Akt (blue arrow), TGF-β (green arrow), and NF-κB (brown arrow) signalling pathways will affect EMT-TFs and ECM-interacting factors which will subsequently induce the MES transition in GBM that is positively correlated with the expression of EMT markers, N-cadherin, and vimentin and negatively correlated with the expression of E-cadherin. The overarching regulation of lncRNA(s) was observed at all levels, which further emphasised the importance of accurate characterisation of the lncRNAs in future studies to allow the development of a promising lncRNA target(s) as either a biomarker or therapeutic target.
+
+biology-12-00818-t001_Table 1 Table 1 Systematic literature search of upregulated lncRNAs that are involved in the regulation of GBM MES transition in GBM observed through the change in expression of EMT markers. The expression of these upregulated lncRNAs was inversely proportional to the expression of N-cadherin and vimentin, where an opposite trend in expression was observed in the case of E-cadherin.
+
+lncRNA	miRNA Interactions	Knockdown or Overexpression Studies	Effect on EMT Markers Expression	References	
+AB073614	NA	Knockdown	↑ E-cadherin
+↓ Vimentin	[21]	
+AGAP2-AS1	mi-497-5p	Knockdown	↑ E-cadherin
+↓ N-cadherin	[22]	
+ASB16-AS1	NA	Knockdown	↑ E-cadherin
+↓ Vimentin, N-cadherin	[23]	
+BLACAT1	NA	Knockdown	↑ E-cadherin
+↓ Vimentin//N-cadherin	[24]	
+CCAT1	miR-181b	Knockdown	↑ E-cadherin
+↓ Vimentin	[25]	
+CCAT2	NA	Knockdown	↑ E-cadherin
+↓ Vimentin//N-cadherin	[26]	
+CTBP1-AS2	miR-370-3p	Knockdown	↑ E-cadherin
+↓ Vimentin//N-cadherin	[27]	
+DANCR	miR-33a-5p	Knockdown	↑ E-cadherin
+↓ Vimentin	[28]	
+DLEU1	NA	Knockdown	↓ N-cadherin	[29]	
+ENST01108	miR-489	Overexpression	↑ Vimentin
+↓ E-cadherin	[30]	
+FOXD2-AS1	miR-506-5p, miR-185	Knockdown	↑ E-cadherin
+↓ Vimentin//N-cadherin	[31,32,33]	
+GNG12-AS1	NA	Knockdown	↓ Vimentin	[34]	
+HMMR-AS1	NA	Both	Knockdown↓
+Vimentin	[35]	
+HOTTIP	miR-101	Knockdown	↑ Vimentin
+↓ E-cadherin	[36]	
+HOXA-AS3	miR-455-5p	Knockdown	↑ E-cadherin
+↓ Vimentin//N-cadherin	[37]	
+HOXC13-AS	miR-122-5p	Knockdown	↓ Vimentin//N-cadherin	[38]	
+HSP90AA1-IT1	miR-885-5p	Knockdown	↓ Vimentin//N-cadherin	[39]	
+HULC	NA	Both	Knockdown
+↑ E-cadherin
+↓ Vimentin//N-cadherin
+Overexpression
+↑ N-cadherin//Vimentin
+↓ E-cadherin	[40]	
+KCNQ1OT1	miR-375	Knockdown	↑ E-cadherin
+↓ Vimentin//N-cadherin	[41]	
+LBX2-AS1	miR-491-5p	Knockdown	↑ E-cadherin
+↓ Vimentin//N-cadherin	[42]	
+LINC00115	miR-200s	Knockdown	↑ E-cadherin
+↓ Vimentin	[43]	
+LINC00152	miR-612 and miR-107	Both	Overexpression
+↑ N-cadherin//Vimentin
+↓ E-cadherin	[44,45,46]	
+LINC00466	miR-598	Knockdown	↓ Vimentin//N-cadherin	[47]	
+LINC00473	miR-637	Knockdown	↑ E-cadherin
+↓ N-cadherin	[48]	
+LINC00511	miR-524-5p
+miR-15a-5p	Knockdown	↑ E-cadherin
+↓ Vimentin//N-cadherin	[49,50]	
+LINC00525	miR-338-3p	Knockdown	↑ E-cadherin
+↓ Vimentin//Fibronectin	[51]	
+LINC00645	miR-205-3p	Both	Overexpression
+↑ Vimentin	[52]	
+LINC00662	miR-34a-5p	Knockdown	↓ Vimentin	[53]	
+LINC01057	NA	Knockdown	↓ Vimentin	[54]	
+NEAT1	Mir-370-3p, miR-185-5p	Both	Knockdown
+↑ E-cadherin
+↓ Vimentin	[55,56]	
+NNT-AS1	miR-582-5p	Knockdown	↑ E-cadherin
+↓ N-cadherin	[57]	
+PDIA3P1	miR-124-3p	Both	Knockdown
+↓ N-cadherin//Vimentin
+Overexpression
+↑ Vimentin	[58]	
+PVT1	miR-1207-3p	Knockdown	↓ N-cadherin//Vimentin	[59]	
+RP11-84E24.3	NA	Both	Overexpression
+↑ N-cadherin//Vimentin
+↓ E-cadherin	[60]	
+SAMMSON	NA	Knockdown	↑ E-cadherin
+↓ N-cadherin	[61]	
+SLC8A1-AS1	NA	Knockdown	↑ E-cadherin
+↓ N-cadherin//Vimentin	[62]	
+SNHG11	miR-154-5p	Knockdown	↓ N-cadherin//Vimentin	[63]	
+SNHG18	NA	Knockdown	↑ N-cadherin//Vimentin
+↓ E-cadherin	[64]	
+SNHG6	miR-101-3p	Knockdown	↑ E-cadherin
+↓ Vimentin	[65,66]	
+SPRY4-IT1	NA	Knockdown	↑ E-cadherin
+↓ Vimentin	[67]	
+SUMO1P3	NA	Both	Knockdown
+↑ E-cadherin
+↓ N-cadherin//Vimentin	[68]	
+UCA1	miR-1, miR-203a, miR-204-5p, miR-135a, miR-206	Both	Knockdown
+↑ E-cadherin
+↓ N-cadherin//Vimentin
+Overexpression
+↑ N-cadherin//Vimentin
+↓ E-cadherin	[69,70,71,72,73]	
+XIST	miR-133a	Knockdown	↑ E-cadherin
+↓ N-cadherin//Vimentin	[74]	
+ZEB1-AS1	NA	Knockdown	↑ E-cadherin
+↓ N-cadherin	[75]	
+ZFAS-1	NA	Knockdown	↑ E-cadherin
+↓ N-cadherin	[76,77]	
+lncRNA: long non-coding RNA; miRNA: microRNA. ↓: downregulated; ↑: upregulated.
+
+biology-12-00818-t002_Table 2 Table 2 Systematic search of the upregulated lncRNAs in regulating EMT transcription factors associated with GBM MES transition in GBM. The expression of these upregulated lncRNAs was observed to be directly proportional to the expression of the EMT-TFs listed.
+
+lncRNA	miRNA Interactions	Knockdown or overexpression Studies	Effect of lncRNA Expression on EMT-TFs	References	
+AGAP2-AS1	mi-497-5p	Knockdown	↓ Snai1	[22]	
+CCAT2	NA	Knockdown	↓ Twist//Snail//β-catenin	[26]	
+CTBP1-AS2	miR-370-3p	Knockdown	↓ Snai1	[27]	
+DLEU1	NA	Knockdown	↓ ZEB1//Snai1	[29]	
+H19	miR-130a-3p, miR-200a	Both	Overexpression:
+↑ ZEB1	[78,79,80]	
+HMMR-AS1	NA	Both	Knockdown:
+↓ ZEB1	[35]	
+HOTTIP	miR-101	Knockdown	HOTTIP indirectly upregulates ZEB1	[36]	
+HOXC-AS2	miR-876-5p	Knockdown	↑ ZEB1, lncRNA also positively regulated by ZEB1 feedback loop	[81]	
+HULC	NA	Both	Overexpression:
+↑ Slug//Snai1	[40]	
+LINC00115	miR-200s	Knockdown	↓ ZEB1	[43]	
+LINC00152	miR-612 and miR-107	Both	Overexpression:
+↑ Snai1	[44,45,46]	
+LINC00511	miR-524-5p
+miR-15a-5p	Knockdown	↓ Snai1	[49,50]	
+LINC00645	miR-205-3p	Both	Knockdown:
+↓ ZEB1	[52]	
+MALAT1	NA	Both	Overexpression:
+↑ ZEB1	[82]	
+RP11-84E24.3	NA	Both	Knockdown:
+↓ Snai1	[60]	
+SNHG18	NA	Overexpression	↑ Snai1//Slug	[64]	
+SNHG6	miR-101-3p	Knockdown	↓ Notch1	[65,66]	
+SUMO1P3	NA	Both	Knockdown:
+↓ Slug//Snai1	[68]	
+UCA1	miR-1, miR-203a, miR-204-5p, miR-135a, miR-206	Both	Knockdown:
+↓ Slug1//ZEB1	[69,70,71,72,73]	
+ZFAS-1	NA	Knockdown	↓ Snai1//ZEB1//Twist	[76,77]	
+lncRNA: long non-coding RNA; miRNA: microRNA. ↓: downregulated; ↑: upregulated.
+
+biology-12-00818-t003_Table 3 Table 3 List of upregulated lncRNAs which regulate EMT-associated signalling pathways.
+
+lncRNA	Knockdown or Overexpression Studies	Effect of lncRNA Expression	References	
+CCAT2	Knockdown	↓ β-catenin	[25]	
+FOXD2-AS1	Knockdown	↓ AKT1	[31,32,33]	
+GNG12-AS1	Knockdown	↓ P-AKT	[34]	
+H19	Both	LncRNA affects Wnt/β-catenin pathway	[78,79,80]	
+LINC01057	Both	LncRNA activates NF-κB	[54]	
+LOXL1-AS1	Knockdown	LncRNA activates NF-κB indirectly through RelB repression	[83]	
+NEAT1	Both	Overexpression:
+↓ DNMT1
+DNMT1 affects mTOR signalling	[55,56]	
+PDIA3P1	Both	Knockdown:
+↓ β-catenin//TGF-β
+Overexpression:
+↑ TGF-β
+RELA expression directly proportional to NF-κB activity	[58]	
+SAMMSON	Knockdown	Knockdown inactivated PI3K/Akt pathway	[61]	
+SLC8A1-AS1	Knockdown	SLC8A1-AS1 knockdown impairs Wnt/β-catenin signalling	[62]	
+UCA1	Both	Knockdown:
+↓ p-AKT
+LncRNA involves in TGF-β signalling	[69,70,71,72,73]	
+lncRNA: long non-coding RNA; miRNA: microRNA. ↓: downregulated; ↑: upregulated.
+
+biology-12-00818-t004_Table 4 Table 4 Upregulated lncRNAs which regulate factors and components that affect the integrity of the extracellular matrix.
+
+lncRNA	Knockdown or Overexpression Studies	Effect of lncRNA Expression	References	
+HULC	Both	Overexpression:
+↑ MMP2//MMP9	[40]	
+KCNQ1OT1	Knockdown	↓ MMP9	[41]	
+TALNEC2	Knockdown	↓ Fibronectin	[44]	
+LINC00473	Knockdown	↓ MMP9//CDK6	[48]	
+LINC00525	Knockdown	↓ Fibronectin	[51]	
+LINC00645	Both	Overexpression:
+↑ Fibronectin	[52]	
+LINC00662	Knockdown	↓ Fibronectin	[53]	
+LINC01057	Both	↓ CD44	[54]	
+LOXL1-AS1	Knockdown	↓ CD44	[83]	
+PDIA3P1	Both	Knockdown:
+↓ CD44	[58]	
+SLC8A1-AS1	Knockdown	↑ Claudin	[62]	
+SNHG18	Overexpression	↑ MMP2//MMP9	[64]	
+SPRY4-IT1	Knockdown	↓ Fibronectin	[67]	
+ZEB1-AS1	Knockdown	↓ MMP2//MMP9//Integrin-β1	[75]	
+ZFAS-1	Knockdown	↓ MMP2//MMP9//Integrin-β1	[76,77]	
+lncRNA: long non-coding RNA; MMP: Matrix Metalloprotein. ↓: downregulated; ↑: upregulated.
+
+biology-12-00818-t005_Table 5 Table 5 Downregulated lncRNAs which act with a tumour-suppressive role in the GBM MES transition in GBM.
+
+lncRNA	miRNA Interactor	Knockdown or Overexpression Studies	EMT Suppressed/Activated	References	
+CASC2	miR-18a	Knockdown	↑ Vimentin//N-cadherin
+↓ E-cadherin	[84]	
+DGCR5	miR-21 and miR-23a	Overexpression	↑ E-cadherin//ZO-1//β-catenin
+↓ Vimentin//Snai2//Twist//ZEB1//Fibronectin	[85,86]	
+GAS5	miR-106b	Overexpression	↑ E-cadherin
+↓ Slug//Vimentin
+GAS5 regulates PTEN through miR-106b	[87]	
+LINC-PINT	NA	Overexpression	↓ N-cadherin//Vimentin//Slug
+LINC-PINT also suppresses Wnt/β-catenin signalling	[88]	
+LINC00312	miR-21-3p	Overexpression	↑ E-cadherin
+↓ Vimentin//N-cadherin//MMP2//MMP9	[89]	
+LINC00599	NA	Overexpression	↑ E-cadherin
+↓ Vimentin	[90]	
+LINC00961	NA	Overexpression	↑ E-cadherin
+↓ Vimentin//N-cadherin	[91]	
+MEG3	miR-6088	Both	Knockdown:
+↑ E-cadherin
+↓ Vimentin//N-cadherin//Snai1
+Overexpression:
+↑ ZEB1//ZEB2
+Regulates SMARCB1 through miR-6088
+Also reported to have both oncogenic and tumour-suppressive effects in two separate studies	[92,93]	
+PTCSC3	NA	Overexpression	↑ E-cadherin
+↓ Fibronectin//Snai1//ZEB1
+Overexpression also inhibits Wnt/β-catenin pathway	[94]	
+TCONS_00020456	NA	Knockdown	↑ N-cadherin//Vimentin
+↓ E-cadherin	[95]	
+lncRNA: long non-coding RNA; miRNA: microRNA. ↓: downregulated; ↑: upregulated.
+
+biology-12-00818-t006_Table 6 Table 6 Top-10 upregulated lncRNAs in GBM clinical setting.
+
+lncRNA	Fold Change	
+HOXC13-AS	68.26	
+HOXA-AS3	50.15	
+H19	31.32	
+HOXC-AS2	26.98	
+HOTTIP	11.36	
+SLC8A1-AS1	9.88	
+AGAP2-AS1	9.49	
+LBX2-AS1	6.07	
+LINC00511	5.44	
+DLEU1	4.57	
+
+biology-12-00818-t007_Table 7 Table 7 Top-8 downregulated lncRNAs in GBM clinical setting.
+
+lncRNA	Fold Change	
+MEG3	0.11	
+DGCR5	0.12	
+MALAT1	0.30	
+XIST	0.33	
+BLACAT1	0.34	
+KCNQ1OT1	0.36	
+SAMMSON	0.46	
+LINC-PINT	0.50	
+
+Disclaimer/Publisher’s Note: The statements, opinions and data contained in all publications are solely those of the individual author(s) and contributor(s) and not of MDPI and/or the editor(s). MDPI and/or the editor(s) disclaim responsibility for any injury to people or property resulting from any ideas, methods, instructions or products referred to in the content.
+==== Refs
+References
+
+1. Louis D.N. Perry A. Wesseling P. Brat D.J. Cree I.A. Figarella-Branger D. Hawkins C. Ng H.K. Pfister S.M. Reifenberger G. The 2021 WHO Classification of Tumors of the Central Nervous System: A summary Neuro Oncol. 2021 23 1231 1251 10.1093/neuonc/noab106 34185076
+2. So J.S. Kim H. Han K.S. Mechanisms of Invasion in Glioblastoma: Extracellular Matrix, Ca(2+) Signaling, and Glutamate Front. Cell Neurosci. 2021 15 663092 10.3389/fncel.2021.663092 34149360
+3. Verhaak R.G. Hoadley K.A. Purdom E. Wang V. Qi Y. Wilkerson M.D. Miller C.R. Ding L. Golub T. Mesirov J.P. Integrated genomic analysis identifies clinically relevant subtypes of glioblastoma characterized by abnormalities in PDGFRA, IDH1, EGFR, and NF1 Cancer Cell 2010 17 98 110 10.1016/j.ccr.2009.12.020 20129251
+4. Liu C. Zong H. Developmental origins of brain tumors Curr. Opin. Neurobiol. 2012 22 844 849 10.1016/j.conb.2012.04.012 22560511
+5. Vollmann-Zwerenz A. Leidgens V. Feliciello G. Klein C.A. Hau P. Tumor Cell Invasion in Glioblastoma Int. J. Mol. Sci. 2020 21 1932 10.3390/ijms21061932 32178267
+6. Iwadate Y. Epithelial-mesenchymal transition in glioblastoma progression Oncol. Lett. 2016 11 1615 1620 10.3892/ol.2016.4113 26998052
+7. Roche J. The Epithelial-to-Mesenchymal Transition in Cancer Cancers 2018 10 52 10.3390/cancers10020052 29462906
+8. Zeisberg M. Neilson E.G. Biomarkers for epithelial-mesenchymal transitions J. Clin. Investig. 2009 119 1429 1437 10.1172/JCI36183 19487819
+9. Ansieau S. Collin G. Hill L. EMT or EMT-Promoting Transcription Factors, Where to Focus the Light? Front. Oncol. 2014 4 353 10.3389/fonc.2014.00353 25566496
+10. Liu X. Yun F. Shi L. Li Z.H. Luo N.R. Jia Y.F. Roles of Signaling Pathways in the Epithelial-Mesenchymal Transition in Cancer Asian Pac. J. Cancer Prev. 2015 16 6201 6206 10.7314/APJCP.2015.16.15.6201 26434817
+11. Noh M.G. Oh S.J. Ahn E.J. Kim Y.J. Jung T.Y. Jung S. Kim K.K. Lee J.H. Lee K.H. Moon K.S. Prognostic significance of E-cadherin and N-cadherin expression in Gliomas BMC Cancer 2017 17 583 10.1186/s12885-017-3591-z 28851312
+12. Leung D.H.L. Long non-coding RNA in glioblastoma invasion: Angiogenesis and mesenchymal transition via PI3K and Wnt signalling Asia Pac. J. Mol. Biol. Biotechnol. 2023 31 36 52 10.35118/apjmbb.2023.031.2.03
+13. Statello L. Guo C.-J. Chen L.-L. Huarte M. Gene regulation by long non-coding RNAs and its biological functions Nat. Rev. Mol. Cell Biol. 2021 22 96 118 10.1038/s41580-020-00315-9 33353982
+14. Gugnoni M. Ciarrocchi A. Long Noncoding RNA and Epithelial Mesenchymal Transition in Cancer Int. J. Mol. Sci. 2019 20 1924 10.3390/ijms20081924 31003545
+15. O’Brien S.J. Bishop C. Hallion J. Fiechter C. Scheurlen K. Paas M. Burton J. Galandiuk S. Long non-coding RNA (lncRNA) and epithelial-mesenchymal transition (EMT) in colorectal cancer: A systematic review Cancer Biol. 2020 21 769 781 10.1080/15384047.2020.1794239 32730165
+16. Xu Q. Deng F. Qin Y. Zhao Z. Wu Z. Xing Z. Ji A. Wang Q.J. Long non-coding RNA regulation of epithelial–mesenchymal transition in cancer metastasis Cell Death Dis. 2016 7 e2254 10.1038/cddis.2016.149 27277676
+17. Goldman M.J. Craft B. Hastie M. Repečka K. McDade F. Kamath A. Banerjee A. Luo Y. Rogers D. Brooks A.N. Visualizing and interpreting cancer genomics data via the Xena platform Nat. Biotechnol. 2020 38 675 678 10.1038/s41587-020-0546-8 32444850
+18. Cerami E. Gao J. Dogrusoz U. Gross B.E. Sumer S.O. Aksoy B.A. Jacobsen A. Byrne C.J. Heuer M.L. Larsson E. The cBio cancer genomics portal: An open platform for exploring multidimensional cancer genomics data Cancer Discov. 2012 2 401 404 10.1158/2159-8290.CD-12-0095 22588877
+19. Gao J. Aksoy B.A. Dogrusoz U. Dresdner G. Gross B. Sumer S.O. Sun Y. Jacobsen A. Sinha R. Larsson E. Integrative analysis of complex cancer genomics and clinical profiles using the cBioPortal Sci. Signal. 2013 6 pl1 10.1126/scisignal.2004088 23550210
+20. Vivian J. Rao A.A. Nothaft F.A. Ketchum C. Armstrong J. Novak A. Pfeil J. Narkizian J. Deran A.D. Musselman-Brown A. Toil enables reproducible, open source, big biomedical data analyses Nat. Biotechnol. 2017 35 314 316 10.1038/nbt.3772 28398314
+21. Li J. Wang Y.M. Song Y.L. Knockdown of long noncoding RNA AB073614 inhibits glioma cell proliferation and migration via affecting epithelial-mesenchymal transition Eur. Rev. Med. Pharmacol. Sci. 2016 20 3997 4002 27775800
+22. Sun Y. Shen Y. Li X. Knockdown of long non-coding RNA AGAP2-AS1 suppresses the proliferation and metastasis of glioma by targeting microRNA-497-5p Bioengineered. 2021 10.1080/21655979.2021.1995573 34709983
+23. Zhang D.L. Zhou H.G. Liu J. Mao J. Long Noncoding RNA ASB16-AS1 Promotes Proliferation, Migration, and Invasion in Glioma Cells Biomed Res. Int. 2019 2019 10 10.1155/2019/5437531 30949502
+24. Li X.S. Qi S.J. Ma D.Z. Fan J.B. Wang J.T. Long non-coding RNA BLACAT1 promotes the proliferation and invasion of glioma cells via Wnt/beta-catenin signaling Exp. Ther. Med. 2019 17 4703 4708 10.3892/etm.2019.7468 31086604
+25. Cui B.Z. Li B.S. Liu Q. Cui Y.Q. lncRNA CCAT1 Promotes Glioma Tumorigenesis by Sponging miR-181b J. Cell. Biochem. 2017 118 4548 4557 10.1002/jcb.26116 28475287
+26. Zeng J. Du T.P. Song Y.F. Gao Y. Li F.Y. Wu R.M. Chen Y.J. Li W. Zhou H. Yang Y. Knockdown of Long Noncoding RNA CCAT2 Inhibits Cellular Proliferation, Invasion, and Epithelial-Mesenchymal Transition in Glioma Cells (vol 25, pg 913, 2017) Oncol. Res. 2020 28 551 552 10.3727/096504020X16032056440085 33349307
+27. Li Y.F. Zong J. Zhao C. lncRNA CTBP1-AS2 promotes proliferation and migration of glioma by modulating miR-370-3p-Wnt7a-mediated epithelial-mesenchymal transition Biochem. Cell Biol. 2020 98 661 668 10.1139/bcb-2020-0065 33150795
+28. Yang J.X. Sun Y. Gao L. Meng Q. Yang B.Y. Long non-coding RNA DANCR facilitates glioma malignancy by sponging miR-33a-5p Neoplasma 2018 65 790 798 10.4149/neo_2018_170724N498 29940760
+29. Lv Q.L. Wang L.C. Li D.C. Lin Q.X. Shen X.L. Liu H.Y. Li M. Ji Y.L. Qin C.Z. Chen S.H. Knockdown lncRNA DLEU1 Inhibits Gliomas Progression and Promotes Temozolomide Chemosensitivity by Regulating Autophagy Front. Pharmacol. 2020 11 15 10.3389/fphar.2020.560543 32153393
+30. Xu D.W. Liu R.H. Meng L. Zhang Y. Lu G.J. Ma P.J. Long non-coding RNA ENST01108 promotes carcinogenesis of glioma by acting as a molecular sponge to modulate miR-489 Biomed. Pharmacother. 2018 100 20 28 10.1016/j.biopha.2018.01.126 29421578
+31. Dong H.X. Cao W. Xue J. Long noncoding FOXD2-AS1 is activated by CREB1 and promotes cell proliferation and metastasis in glioma by sponging miR-185 through targeting AKT1 Biochem. Biophys. Res. Commun. 2019 508 1074 1081 10.1016/j.bbrc.2018.12.050 30553445
+32. Shen F.Z. Chang H.G. Gao G.J. Zhang B. Li X.S. Jin B.Z. Long noncoding RNA FOXD2-AS1 promotes glioma malignancy and tumorigenesis via targeting miR-185-5p/CCND2 axis J. Cell. Biochem. 2019 120 9324 9336 10.1002/jcb.28208 30520141
+33. Zhao J. Zeng X.B. Zhang H.Y. Xiang J.W. Liu Y.S. Long non-coding RNA FOXD2-AS1 promotes cell proliferation, metastasis and EMT in glioma by sponging miR-506-5p Open Med. 2020 15 921 931 10.1515/med-2020-0175 33336050
+34. Xiang Z.J. Lv Q.L. Chen X.R. Zhu X.T. Liu S.K. Li D.C. Peng X.D. Lnc GNG12-AS1 knockdown suppresses glioma progression through the AKT/GSK-3 beta/beta-catenin pathway Biosci. Rep. 2020 40 10 10.1042/BSR20201578 32735016
+35. Li J.Y. Ji X.J. Wang H.D. Targeting Long Noncoding RNA HMMR-AS1 Suppresses and Radiosensitizes Glioblastoma Neoplasia 2018 20 456 466 10.1016/j.neo.2018.02.010 29574252
+36. Zhang S.Y. Wang W.W. Liu G.X. Xie S.L. Li Q.X. Li Y.R. Lin Z.Y. Long non-coding RNA HOTTIP promotes hypoxia-induced epithelial-mesenchymal transition of malignant glioma by regulating the miR-101/ZEB1 axis Biomed. Pharmacother. 2017 95 711 720 10.1016/j.biopha.2017.08.133 28886531
+37. Chen W.H. Li Q.Y. Zhang G.L. Wang H. Zhu Z.H. Chen L.K. LncRNA HOXA-AS3 promotes the malignancy of glioblastoma through regulating miR-455-5p/USP3 axis J. Cell. Mol. Med. 2020 24 11755 11767 10.1111/jcmm.15788 32918360
+38. Liu N. Wang Z.Y. Liu D.C. Xie P. HOXC13-AS-miR-122-5p-SATB1-C-Myc feedback loop promotes migration, invasion and EMT process in glioma Oncotargets Ther. 2019 12 7165 7172 10.2147/OTT.S220027
+39. Gao T.H. Gu G.Y. Tian J.X. Zhang R. Zheng X.R. Wang Y.A. Pang Q. Liu Q. LncRNA HSP90AA1-IT1 promotes gliomas by targeting miR-8855p-CDK2 pathway Oncotarget 2017 8 75284 75297 10.18632/oncotarget.20777 29088865
+40. Yin T.T. Wu J. Hu Y.C. Zhang M. He J. Long non-coding RNA HULC stimulates the epithelial-mesenchymal transition process and vasculogenic mimicry in human glioblastoma Cancer Med. 2021 10 5270 5282 10.1002/cam4.4083 34213079
+41. Ding P.F. Liang B. Shou J.X. Wang X.J. lncRNA KCNQ1OT1 promotes proliferation and invasion of glioma cells by targeting the miR-375/YAP pathway Int. J. Mol. Med. 2020 46 1983 1992 10.3892/ijmm.2020.4760 33125099
+42. Li W. Soufiany I. Lyu X. Lu C. Wei Y. Shi Z. You Y. SP1-upregulated LBX2-AS1 promotes the progression of glioma by targeting the miR-491-5p/LIF axis J. Cancer 2021 13 6989 7002 10.7150/jca.63289 34729101
+43. Tang J. Yu B. Li Y. Zhang W. Alvarez A.A. Hu B. Cheng S.Y. Feng H. TGF-β-activated lncRNA LINC00115 is a critical regulator of glioma stem-like cell tumorigenicity EMBO Rep. 2019 20 e48170 10.15252/embr.201948170 31599491
+44. Brodie S. Lee H.K. Jiang W. Cazacu S. Xiang C.L. Poisson L.M. Datta I. Kalkanis S. Ginsberg D. Brodie C. The novel long non-coding RNA TALNEC2, regulates tumor cell growth and the stemness and radiation response of glioma stem cells Oncotarget 2017 8 31798 31814 10.18632/oncotarget.15991
+45. Cai J.Q. Zhang J.W. Wu P.F. Yang W.T. Ye Q.L. Chen Q. Jiang C.L. Blocking LINC00152 suppresses glioblastoma malignancy by impairing mesenchymal phenotype through the miR-612/AKT2/NF-B pathway J. Neuro-Oncol. 2018 140 225 236 10.1007/s11060-018-2951-0
+46. Reon B.J. Karia B.T.R. Kiran M. Dutta A. LINC00152 Promotes Invasion through a 3′-Hairpin Structure and Associates with Prognosis in Glioblastoma Mol. Cancer Res. 2018 16 1470 1482 10.1158/1541-7786.MCR-18-0322 29991527
+47. Li F. Shen Z.Z. Xiao C.M. Sha Q.K. YY1-mediated up-regulation of lncRNA LINC00466 facilitates glioma progression via miR-508/CHEK1 J. Gene Med. 2021 23 15 10.1002/jgm.3287
+48. Zhang Q.S. Wang G.W. Xu L.P. Yao Z.Q. Song L.J. Long non-coding RNA LINC00473 promotes glioma cells proliferation and invasion by impairing miR-637/CDK6 axis Artif. Cells Nanomed. Biotechnol. 2019 47 3896 3903 10.1080/21691401.2019.1671431 31561732
+49. Du X.L. Tu Y.M. Liu S. Zhao P.Z. Bao Z.Y. Li C. Li J.H. Pan M.H. Ji J. LINC00511 contributes to glioblastoma tumorigenesis and epithelial-mesenchymal transition via LINC00511/miR-524-5p/YB1/ZEB1 positive feedback loop J. Cell. Mol. Med. 2020 24 1474 1487 10.1111/jcmm.14829 31856394
+50. Liu Z. Tao B. Li L. Liu P. Xia K. Zhong C. LINC00511 knockdown suppresses glioma cell malignant progression through miR-15a-5p/AEBP1 axis Brain Res. Bull. 2021 173 82 96 10.1016/j.brainresbull.2021.05.010 33992709
+51. Wan Y. Liang F. Wei M.J. Liu Y. Long non-coding RNA LINC00525 regulates the proliferation and epithelial to mesenchymal transition of human glioma cells by sponging miR-338-3p AMB Express 2020 10 9 10.1186/s13568-020-01094-4 31940098
+52. Li C.L. Zheng H.S. Hou W.L. Bao H.B. Xiong J.S. Che W.L. Gu Y.F. Sun H.M. Liang P. Long non-coding RNA linc00645 promotes TGF-beta-induced epithelial-mesenchymal transition by regulating miR-205-3p-ZEB1 axis in glioma Cell Death Dis. 2019 10 17 10.1038/s41419-019-1948-8 30622242
+53. Geng Y.B. Wu Y.L. Xu C. Li T. Zhang L.W. Long Non-Coding RNA LINC00662 Regulated Proliferation and Migration by Targeting miR-34a-5p/LMAN2L Axis in Glioma Oncotargets Ther. 2020 13 10161 10172 10.2147/OTT.S272616 33116598
+54. Tang G.D. Luo L.Y. Zhang J.L. Zhai D.F. Huang D.Q. Yin J. Zhou Q. Zhang Q. Zheng G.P. lncRNA LINC01057 promotes mesenchymal differentiation by activating NF-kappa B signaling in glioblastoma Cancer Lett. 2021 498 152 164 10.1016/j.canlet.2020.10.047 33130316
+55. Lulli V. Buccarelli M. Ilari R. Castellani G. De Dominicis C. Di Giamberardino A. D’Alessandris Q.G. Giannetti S. Martini M. Stumpo V. Mir-370-3p Impairs Glioblastoma Stem-Like Cell Malignancy Regulating a Complex Interplay between HMGA2/HIF1A and the Oncogenic Long Non-Coding RNA (lncRNA) NEAT1 Int. J. Mol. Sci. 2020 21 21 10.3390/ijms21103610 32443824
+56. Yu H. Xu A. Wu B. Wang M. Chen Z. Long noncoding RNA NEAT1 promotes progression of glioma as a ceRNA by sponging miR-185-5p to stimulate DNMT1/mTOR signaling J. Cell Physiol. 2021 236 121 130 10.1002/jcp.29644 32803763
+57. Pan T. Xue M. LncRNA-NNT-AS1 contributes to the progression of glioma by miR-582-5p/EZH2 axis Cytotechnology 2021 73 473 482 10.1007/s10616-021-00471-6 34149178
+58. Wang S.B. Qi Y.H. Gao X. Qiu W. Liu Q.L. Guo X.F. Qian M.Y. Chen Z.H. Zhang Z.P. Wang H.Z. Hypoxia-induced lncRNA PDIA3P1 promotes mesenchymal transition via sponging of miR-124-3p in glioma Cell Death Dis. 2020 11 17 10.1038/s41419-019-2209-6 31907348
+59. Bi Y.Y. Ji J. Zhou Y.X. LncRNA-PVT1 indicates a poor prognosis and promotes angiogenesis via activating the HNF1B/EMT axis in glioma J. Cancer 2021 12 5732 5744 10.7150/jca.60257 34475987
+60. Chang L. Wang J. Zhou F. Wang D. Chen R. Zhang Y. Zhang J. LncRNA RP11-84E24.3 drives tumorigenesis and epithelial-to-mesenchymal transition of glioma cells by promoting TFAP2C-mediated activation of SNAI1 J. Neurooncol. 2021 151 157 171 10.1007/s11060-020-03624-3 33128099
+61. Ni H.Z. Wang K. Xie P. Zuo J.D. Liu W.G. Liu C. LncRNA SAMMSON Knockdown Inhibits the Malignancy of Glioblastoma Cells by Inactivation of the PI3K/Akt Pathway Cell. Mol. Neurobiol. 2021 41 79 90 10.1007/s10571-020-00833-2 32236901
+62. He L. Yang H. Zhu X.L. Zhang Y. Lv K. Knockdown of long non-coding RNA SLC8A1-AS1 attenuates cell invasion and migration in glioma via suppression of Wnt/beta-catenin signaling pathways Brain Res. Bull. 2021 176 112 120 10.1016/j.brainresbull.2021.08.011 34474120
+63. Geng Y.B. Xu C. Wang Y. Zhang L.W. Long non-coding RNA SNHG11 promotes cell proliferation, invasion and migration in glioma by targeting miR-154-5p Eur. Rev. Med. Pharmacol. Sci. 2020 24 4901 4908 32432753
+64. Zheng R. Yao Q. Li X. Xu B. Long Noncoding Ribonucleic Acid SNHG18 Promotes Glioma Cell Motility via Disruption of α-Enolase Nucleocytoplasmic Transport Front. Genet. 2019 10 1140 10.3389/fgene.2019.01140 31798634
+65. Meng Q. Yang B.Y. Liu B. Yang J.X. Sun Y. Long non-coding RNA SNHG6 promotes glioma tumorigenesis by sponging miR-101-3p Int. J. Biol. Mrk. 2018 33 148 155 10.1177/1724600817747524
+66. Nie J. Feng Y. Wang H. Lian X.Y. Li Y.F. Long Non-Coding RNA SNHG6 Supports Glioma Progression Through Upregulation of Notch1, Sox2, and EMT Front. Cell Dev. Biol. 2021 9 7 10.3389/fcell.2021.707906
+67. Liu H. Lv Z. Guo E. Knockdown of long noncoding RNA SPRY4-IT1 suppresses glioma cell proliferation, metastasis and epithelial-mesenchymal transition Int. J. Clin. Exp. Pathol. 2015 8 9140 9146 26464658
+68. Lou J.Y. Luo J. Yang S.C. Ding G.F. Liao W. Zhou R.X. Qiu C.Z. Chen J.M. Long non-coding RNA SUMO1P3 promotes glioma progression via the Wnt/β-catenin pathway Eur. Rev. Med. Pharm. Sci. 2020 24 9571 9580 10.26355/eurrev_202009_23044
+69. Chen H.Y. Liu Z.Y. Chang H. Gao J.B. Li Y.J. Chen L.H. Luo Y.C. Xu R.X. Knockdown of long noncoding RNA UCA1 inhibits glioma cell metastasis via reduction of epithelial-mesenchymal transition Int. J. Clin. Exp. Pathol. 2016 9 12621 12626
+70. Huang Z. Zhao X.Y. Wu X.W. Xiang L. Yuan Y.N. Zhou S. Yu W.F. LncRNA UCA1 facilitated cell growth and invasion through the miR-206/CLOCK axis in glioma Cancer Cell Int. 2019 19 9 10.1186/s12935-019-1023-7 30636930
+71. Li Z. Liu H. Zhong Q. Wu J. Tang Z. LncRNA UCA1 is necessary for TGF-β-induced epithelial-mesenchymal transition and stemness via acting as a ceRNA for Slug in glioma cells FEBS Open Bio 2018 8 1855 1865 10.1002/2211-5463.12533 30410864
+72. Li Z.G. Xiang W.C. Shui S.F. Han X.W. Guo D. Yan L. 11 Long noncoding RNA UCA1 functions as miR-135a sponge to promote the epithelial to mesenchymal transition in glioma J. Cell. Biochem. 2020 121 2447 2457 10.1002/jcb.29467 31680311
+73. Liang C. Yang Y. Guan J. Lv T. Qu S. Fu Q. Zhao H. LncRNA UCA1 sponges miR-204-5p to promote migration, invasion and epithelial-mesenchymal transition of glioma cells via upregulation of ZEB1 Pathol. Res. Pract. 2018 214 1474 1481 10.1016/j.prp.2018.07.036 30107990
+74. Luo C. Quan Z. Zhong B. Zhang M. Zhou B. Wang S. Luo X. Tang C. LncRNA XIST promotes glioma proliferation and metastasis through miR-133a/SOX4 Exp. Ther. Med. 2020 19 1641 1648 10.3892/etm.2020.8426 32104215
+75. Lv Q.L. Hu L. Chen S.H. Sun B. Fu M.L. Qin C.Z. Qu Q. Wang G.H. He C.J. Zhou H.H. A long noncoding RNA ZEB1-AS1 promotes tumorigenesis and predicts poor prognosis in glioma Int. J. Mol. Sci. 2016 17 1431 10.3390/ijms17091431 27589728
+76. Gao K. Ji Z.W. She K. Yang Q.Y. Shao L.B. Long non-coding RNA ZFAS1 is an unfavourable prognostic factor and promotes glioma cell progression by activation of the Notch signaling pathway Biomed. Pharmacother. 2017 87 555 560 10.1016/j.biopha.2017.01.014 28081466
+77. Lv Q.L. Chen S.H. Zhang X. Sun B. Hu L. Qu Q. Huang Y.T. Wang G.H. Liu Y.L. Zhang Y.Y. Upregulation of long noncoding RNA zinc finger antisense 1 enhances epithelial-mesenchymal transition in vitro and predicts poor prognosis in glioma Tumour Biol. 2017 39 1010428317695022 10.1177/1010428317695022 28349823
+78. Chen X. Li Y. Zuo C. Zhang K. Lei X. Wang J. Yang Y. Zhang J. Ma K. Wang S. Long Non-Coding RNA H19 Regulates Glioma Cell Growth and Metastasis via miR-200a-Mediated CDK6 and ZEB1 Expression Front. Oncol. 2021 11 4556 10.3389/fonc.2021.757650
+79. Hu Q. Yin J. Zeng A. Jin X. Zhang Z. Yan W. You Y. H19 Functions as a Competing Endogenous RNA to Regulate EMT by Sponging miR-130a-3p in Glioma Cell. Physiol. Biochem. 2018 50 150 168 10.1159/000494002 30278465
+80. Jia L. Tian Y. Chen Y. Zhang G. The silencing of LncRNA-H19 decreases chemoresistance of human glioma cells to temozolomide by suppressing epithelial-mesenchymal transition via the Wnt/β-Catenin pathway Onco Targets 2018 11 313 321 10.2147/OTT.S154339
+81. Dong N. Guo J.X. Han S. Bao L. Diao Y. Lin Z.X. Positive feedback loop of lncRNA HOXC-AS2/miR-876-5p/ZEB1 to regulate EMT in glioma Oncotargets Ther. 2019 12 7601 7609 10.2147/OTT.S216134 31571911
+82. Li H. Yuan X. Yan D. Li D. Guan F. Dong Y. Wang H. Liu X. Yang B. Long Non-Coding RNA MALAT1 Decreases the Sensitivity of Resistant Glioblastoma Cell Lines to Temozolomide Cell. Physiol. Biochem. 2017 42 1192 1201 10.1159/000478917 28668966
+83. Wang H. Li L. Yin L. Silencing LncRNA LOXL1-AS1 attenuates mesenchymal characteristics of glioblastoma via NF-κB pathway Biochem. Biophys. Res. Commun. 2018 500 518 524 10.1016/j.bbrc.2018.04.133 29678575
+84. Wang J. Qin C. Zhong C. Wen Y. Ke S. Liao B. Long non-coding RNA CASC2 targeting miR-18a suppresses glioblastoma cell growth, metastasis and EMT in vitro and in vivo J. Biosci. 2020 45 107 10.1007/s12038-020-00077-8 32975234
+85. He Z. Long J. Yang C. Gong B. Cheng M. Wang Q. Tang J. LncRNA DGCR5 plays a tumor-suppressive role in glioma via the miR-21/Smad7 and miR-23a/PTEN axes Aging 2020 12 20285 20307 10.18632/aging.103800 33085646
+86. Yang F. Huang Y.L. DGCR5 suppresses the EMT of pediatric primary glioblastoma multiforme cell and serves as a prognostic biomarker Eur. Rev. Med. Pharmacol. Sci. 2019 23 10024 10034 10.26355/eurrev_201911_19569 31799672
+87. Zhu X.P. Pan S.A. Chu Z. Zhou Y.X. Huang Y.K. Han D.Q. LncRNA GAS5 regulates epithelial-mesenchymal transition and viability of glioma cells by targeting microRNA-106b and regulating PTEN expression Neurosci. Res. 2021 170 32 40 10.1016/j.neures.2020.08.009 32991951
+88. Zhu H. Chen Z. Shen L. Tang T. Yang M. Zheng X. Long Noncoding RNA LINC-PINT Suppresses Cell Proliferation, Invasion, and EMT by Blocking Wnt/β-Catenin Signaling in Glioblastoma Front. Pharm. 2020 11 586653 10.3389/fphar.2020.586653
+89. Lei J. Zhou Z. Effect of long intergenic non-coding RNA 00312 on regulating biological behaviors of glioma cells by targeting microRNA-21-3p Int. J. Clin. Exp. Med. 2021 14 852 863
+90. Fu Q. Li S.S. Zhou Q.J. Yalikun K. Yisireyili D. Xia M. Low LINC00599 expression is a poor prognostic factor in glioma Biosci. Rep. 2019 39 9 10.1042/BSR20190232
+91. Lu X.W. Xu N. Zheng Y.G. Li Q.X. Shi J.S. Increased expression of long noncoding RNA LINC00961 suppresses glioma metastasis and correlates with favorable prognosis Eur. Rev. Med. Pharmacol. Sci. 2018 22 4917 4924 30070327
+92. Gong X. Huang M.Y. Tumor-Suppressive Function of lncRNA-MEG3 in Glioma Cells by Regulating miR-6088/SMARCB1 Axis Biomed Res. Int. 2020 2020 15 10.1155/2020/4309161 32420340
+93. Yang Z.H. Bian E.B. Xu Y.D. Ji X.H. Tang F. Ma C.C. Wang H.L. Zhao B. Meg3 Induces EMT and Invasion of Glioma Cells via Autophagy Oncotargets Ther. 2020 13 989 1000 10.2147/OTT.S239648 32099402
+94. Xia S. Ji R. Zhan W. Long noncoding RNA papillary thyroid carcinoma susceptibility candidate 3 (PTCSC3) inhibits proliferation and invasion of glioma cells by suppressing the Wnt/beta-catenin signaling pathway BMC Neurol. 2017 17 30 10.1186/s12883-017-0813-6 28187755
+95. Tang C. Wang Y. Zhang L. Wang J. Wang W. Han X. Mu C. Gao D. Identification of novel LncRNA targeting Smad2/PKCα signal pathway to negatively regulate malignant progression of glioblastoma J. Cell Physiol. 2020 235 3835 3848 10.1002/jcp.29278 31603255
+96. Du L. Tang J.-H. Huang G.-H. Xiang Y. Lv S.-Q. The progression of epithelial-mesenchymal transformation in gliomas Chin. Neurosurg. J. 2017 3 23 10.1186/s41016-017-0086-3
+97. Vesuna F. van Diest P. Chen J.H. Raman V. Twist is a transcriptional repressor of E-cadherin gene expression in breast cancer Biochem. Biophys. Res. Commun. 2008 367 235 241 10.1016/j.bbrc.2007.11.151 18062917
+98. Chandra A. Jahangiri A. Chen W. Nguyen A.T. Yagnik G. Pereira M.P. Jain S. Garcia J.H. Shah S.S. Wadhwa H. Clonal ZEB1-Driven Mesenchymal Transition Promotes Targetable Oncologic Antiangiogenic Therapy Resistance Cancer Res. 2020 80 1498 1511 10.1158/0008-5472.CAN-19-1305 32041837
+99. Sánchez-Tilló E. Liu Y. de Barrios O. Siles L. Fanlo L. Cuatrecasas M. Darling D.S. Dean D.C. Castells A. Postigo A. EMT-activating transcription factors in cancer: Beyond EMT and tumor invasiveness Cell Mol. Life Sci. 2012 69 3429 3456 10.1007/s00018-012-1122-2 22945800
+100. Yang J. Mani S.A. Donaher J.L. Ramaswamy S. Itzykson R.A. Come C. Savagner P. Gitelman I. Richardson A. Weinberg R.A. Twist, a Master Regulator of Morphogenesis, Plays an Essential Role in Tumor Metastasis Cell 2004 117 927 939 10.1016/j.cell.2004.06.006 15210113
+101. Crespo S. Kind M. Arcaro A. The role of the PI3K/AKT/mTOR pathway in brain tumor metastasis J. Cancer Metastasis Treat. 2016 2 80 89 10.20517/2394-4722.2015.72
+102. Dong P. Xiong Y. Yue J. Hanley S.J.B. Kobayashi N. Todo Y. Watari H. Long Non-coding RNA NEAT1: A Novel Target for Diagnosis and Therapy in Human Tumors Front. Genet. 2018 9 471 10.3389/fgene.2018.00471 30374364
+103. Scheau C. Badarau I.A. Costache R. Caruntu C. Mihai G.L. Didilescu A.C. Constantin C. Neagu M. The Role of Matrix Metalloproteinases in the Epithelial-Mesenchymal Transition of Hepatocellular Carcinoma Anal. Cell. Pathol. 2019 2019 9423907 10.1155/2019/9423907
+104. Zhou W. Yu X. Sun S. Zhang X. Yang W. Zhang J. Zhang X. Jiang Z. Increased expression of MMP-2 and MMP-9 indicates poor prognosis in glioma recurrence Biomed. Pharmacother. 2019 118 109369 10.1016/j.biopha.2019.109369 31545229
+105. Zhang Y. Xu L. Li A. Han X. The roles of ZEB1 in tumorigenic progression and epigenetic modifications Biomed. Pharmacother. 2019 110 400 408 10.1016/j.biopha.2018.11.112 30530042
+106. Shan Y. Zhang L. Bao Y. Li B. He C. Gao M. Feng X. Xu W. Zhang X. Wang S. Epithelial-mesenchymal transition, a novel target of sulforaphane via COX-2/MMP2, 9/Snail, ZEB1 and miR-200c/ZEB1 pathways in human bladder cancer cells J. Nutr. Biochem. 2013 24 1062 1069 10.1016/j.jnutbio.2012.08.004 23159064
+107. Oh S.J. Ahn E.J. Kim O. Kim D. Jung T.Y. Jung S. Lee J.H. Kim K.K. Kim H. Kim E.H. The Role Played by SLUG, an Epithelial-Mesenchymal Transition Factor, in Invasion and Therapeutic Resistance of Malignant Glioma Cell. Mol. Neurobiol. 2019 39 769 782 10.1007/s10571-019-00677-5 31011939
+108. Siebzehnrubl F.A. Silver D.J. Tugertimur B. Deleyrolle L.P. Siebzehnrubl D. Sarkisian M.R. Devers K.G. Yachnis A.T. Kupper M.D. Neal D. The ZEB1 pathway links glioblastoma initiation, invasion and chemoresistance EMBO Mol. Med. 2013 5 1196 1212 10.1002/emmm.201302827 23818228
+109. Lai S.W. Huang B.R. Liu Y.S. Lin H.Y. Chen C.C. Tsai C.F. Lu D.Y. Lin C. Differential Characterization of Temozolomide-Resistant Human Glioma Cells Int. J. Mol. Sci. 2018 19 127 10.3390/ijms19010127 29301329
+110. Wu X. Yang L. Wang J. Hao Y. Wang C. Lu Z. The Involvement of Long Non-Coding RNAs in Glioma: From Early Detection to Immunotherapy Front. Immunol. 2022 13 2229 10.3389/fimmu.2022.897754
+111. Phon B.W.S. Kamarudin M.N.A. Bhuvanendran S. Radhakrishnan A.K. Transitioning pre-clinical glioblastoma models to clinical settings with biomarkers identified in 3D cell-based models: A systematic scoping review Biomed. Pharmacother. 2022 145 112396 10.1016/j.biopha.2021.112396 34775238
+

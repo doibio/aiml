@@ -1,0 +1,315 @@
+
+==== Front
+Cancers (Basel)
+Cancers (Basel)
+cancers
+Cancers
+2072-6694
+MDPI
+
+10.3390/cancers14235751
+cancers-14-05751
+Article
+Immunophenotyping of Circulating and Intratumoral Myeloid and T Cells in Glioblastoma Patients
+Marx Sascha 12†
+Wilken Fabian 23†
+https://orcid.org/0000-0001-7411-9299
+Miebach Lea 34
+Ispirjan Mikael 13
+Kinnen Frederik 25
+Paul Sebastian 6
+https://orcid.org/0000-0002-0603-8953
+Bien-Möller Sandra 25
+https://orcid.org/0000-0003-2950-0984
+Freund Eric 34
+Baldauf Jörg 2
+Fleck Steffen 2
+Siebert Nikolai 7
+https://orcid.org/0000-0002-1201-208X
+Lode Holger 7
+https://orcid.org/0000-0002-8013-7597
+Stahl Andreas 6
+https://orcid.org/0000-0002-6003-4662
+Rauch Bernhard H. 8
+Singer Stephan 910
+Ritter Christoph 11
+Schroeder Henry W. S. 2
+https://orcid.org/0000-0002-8773-8862
+Bekeschus Sander 3*
+Kraus Theo Academic Editor
+Kruyt Frank A.E. Academic Editor
+1 Department of Cancer Immunology and Virology, Dana-Farber Cancer Institute, Harvard Medical School, 450 Brookline Avenue, Boston, MA 02215, USA
+2 Department of Neurosurgery, Greifswald University Medical Center, Ferdinand-Sauerbruch-Str., 17475 Greifswald, Germany
+3 ZIK plasmatis, Leibniz Institute for Plasma Science and Technology (INP), Felix-Hausdorff-Str. 2, 17489 Greifswald, Germany
+4 Department for General, Thoracic, Vascular, and Thorax Surgery, Greifswald University Medical Center, Ferdinand-Sauerbruch-Str., 17475 Greifswald, Germany
+5 Department of Pharmacology, C_DAT, Greifswald University Medical Center, Felix-Hausdorff-Str. 3, 17489 Greifswald, Germany
+6 Department of Ophthalmology, Greifswald University Medical Center, Ferdinand-Sauerbruch-Str., 17475 Greifswald, Germany
+7 Department of Pediatric Oncology, Greifswald University Medical Center, Ferdinand-Sauerbruch-Str., 17475 Greifswald, Germany
+8 Pharmacology and Toxicology, Department of Human Medicine, University of Oldenburg, Carl-von-Ossietzky-Str. 9-11, 26129 Oldenburg, Germany
+9 Department of Pathology, Greifswald University Medical Center, Ferdinand-Sauerbruch-Str., 17475 Greifswald, Germany
+10 Department of Pathology and Neuropathology, Tuebingen University Medical Center, Liebermeisterstr. 8, 72076 Tuebingen, Germany
+11 Institute of Clinical Pharmacy, Greifswald University, Felix-Hausdorff-Str. 3, 17489 Greifswald, Germany
+* Correspondence: sander.bekeschus@inp-greifswald.de
+† These authors contributed equally to this work.
+
+23 11 2022
+12 2022
+14 23 575101 10 2022
+17 11 2022
+© 2022 by the authors.
+2022
+https://creativecommons.org/licenses/by/4.0/ Licensee MDPI, Basel, Switzerland. This article is an open access article distributed under the terms and conditions of the Creative Commons Attribution (CC BY) license (https://creativecommons.org/licenses/by/4.0/).
+Simple Summary
+
+Immune-therapeutical approaches still are not as impactful in glioblastoma (GBM) as in other types of cancer. Due to its unique pathoanatomical localization behind the bony skull, GBM samples are not as easy to obtain, so understanding the immuno-phenotypes in GBM is challenging. Here we present a thorough characterization of the immune status in the GBM tumor microenvironment (TME) and the circulation of the patients compared to a matched proband cohort.
+
+Abstract
+
+Glioblastoma is the most common and lethal primary brain malignancy that almost inevitably recurs as therapy-refractory cancer. While the success of immune checkpoint blockade (ICB) revealed the immense potential of immune-targeted therapies in several types of cancers outside the central nervous system, it failed to show objective responses in glioblastoma patients as of now. The ability of glioblastoma cells to drive multiple modes of T cell dysfunction while exhibiting low-quality neoepitopes, low-mutational load, and poor antigen priming limits anti-tumor immunity and efficacy of antigen-unspecific immunotherapies such as ICB. An in-depth understanding of the GBM immune landscape is essential to delineate and reprogram such immunosuppressive circuits during disease progression. In this view, the present study aimed to characterize the peripheral and intratumoral immune compartments of 35 glioblastoma patients compared to age- and sex-matched healthy control probands, particularly focusing on exhaustion signatures on myeloid and T cell subsets. Compared to healthy control participants, different immune signatures were already found in the peripheral circulation, partially related to the steroid medication the patients received. Intratumoral CD4+ and CD8+ TEM cells (CD62Llow/CD45ROhigh) revealed a high expression of PD1, which was also increased on intratumoral, pro-tumorigenic macrophages/microglia. Histopathological analysis further identified high PSGL-1 expression levels of the latter, which has recently been linked to increased metastasis in melanoma and colon cancer via P-selectin-mediated platelet activation. Overall, the present study comprises immunophenotyping of a patient cohort to give implications for eligible immunotherapeutic targets in neurooncology in the future.
+
+CD163
+GBM
+glioma
+macrophages
+PD1
+PSGL-1
+T cells
+Lieselotte Beutel StiftungComprehensive Cancer Center Mecklenburg-VorpommernForschungsverbund Molekulare MedizinDeutsche ForschungsgemeinschaftGerman Federal Ministry of Education and Research03Z22DN11 03Z22Di1 Funds were received from the Lieselotte Beutel Stiftung (Oranienburg, Germany), Comprehensive Cancer Center Mecklenburg-Vorpommern (CCC-MV; Greifswald/Rostock, Germany), Forschungsverbund Molekulare Medizin (Greifswald, Germany), Deutsche Forschungsgemeinschaft (DFG), as well as the German Federal Ministry of Education and Research (BMBF; grant numbers 03Z22DN11 and 03Z22Di1 to Sander Bekeschus).
+==== Body
+pmc1. Introduction
+
+Immune-therapeutical approaches revolutionized the treatment and prognosis of several types of cancer outside the central nervous system (CNS) in the past decade [1,2,3,4]. Given the poor prognosis and limited treatment options for brain malignancies and glioblastoma, immunotherapy poses a promising therapeutic avenue in neurooncology. However, blockade of the immune checkpoint programmed death (PD1) widely failed to show objective responses in glioblastoma patients in a clinical trial recently (NCT 02017717) [5]. Only a small subset of patients (8%) with temozolomide-induced hypermutations benefited from ICB, highlighting the need for in-depth knowledge of the distinct immune landscape in glioblastoma patients to broaden the range of patients benefiting from such an approach.
+
+Shielded from the peripheral circulation by the blood-brain barrier (BBB) to avoid collateral damage following immune cell entry and attack, the brain comprises a unique immune compartment and is considered one of the “immune privileged” organs of our body [6]. This concept has been partially revised since the presence of functional lymphatic vasculature has been reported along the dural sinuses in mice [7,8] and the notion that CNS-derived antigens can elicit immune responses in cervical lymph nodes [9]. While T cells are not abundant in the brain, myeloid lineage cells comprise 30% of tissue-resident cells [10]. They represent a complex, heterogeneous, and dynamic population of yolk sac-derived microglia in the parenchyma, and border-associated macrophages, partially originating from the bone marrow. In neuropathological disorders, the BBB is often compromised, resulting in increased infiltration of multiple immune cell types from the peripheral circulation at later stages [11]. The immunosuppressive microenvironment in glioblastoma is associated with a high prevalence of pro-tumorigenic glioma-associated macrophages/microglia in the tumor, facilitating GBM invasion, growth, and angiogenesis [12]. In addition, glioblastoma cells propagate multiple modes of T cell dysfunction, including T cell anergy [13], tolerance [14], sequestration [15], senescence, and exhaustion [16]. Compared to melanoma or non-small cell lung cancers, glioblastoma cells exhibit a lower burden of somatic mutations, low-quality neoantigens, and poor antigen priming, which further impairs anti-tumor immunity potency [6].
+
+The present study is the first to comprise a flow cytometric immunophenotyping of the peripheral and intratumoral immune compartment of 28 glioblastoma patients compared to age- and sex-matched healthy control participants with a particular focus on exhaustion signatures on circulating monocytes, glioma-associated macrophages/microglia, and circulating and intratumoral T cells. The myeloid cell landscape was further characterized by histopathological analysis in 19 patients and compared to healthy control tissue. Our findings provide a deeper understanding of immune signatures in glioblastoma patients to help identify potential targets for immunotherapies in the future.
+
+2. Materials and Methods
+
+2.1. Patient Cohorts
+
+The local ethics committee approved the study (BB089/08b) and written informed consent was obtained from every participating GBM patient and control participant. The cohort comprises 35 patients (23 male, 12 female, mean age 68, ranging from 41 to 87 years) (Figure 1a and Table A1). To characterize the peripheral myeloid and lymphoid immune compartment, EDTA anticoagulated blood was withdrawn from 28 glioblastoma patients on the day before surgery. Immunoprofiling of intratumoral immune cells was done in tumors of 12 patients after neurosurgical resection. Histopathological confirmation was available for 19 patients for IHC analysis of FFPE-embedded tumor samples (Table 1 and Figure A2). Age- and sex-matched healthy control subjects were recruited from the local ophthalmology department’s elective surgical candidates (Figure 1b).
+
+2.2. Sample Processing
+
+PBMCs were isolated by density gradient centrifugation and staining for flow cytometry was done immediately after. Surgically resected glioblastoma tissues were mechanically disrupted into small pieces with a disposable, sterile scalpel and further dissociated into single-cell suspension using the enzymatic brain tumor dissociation kit (P) from Milteny Biotec following the manufacturer’s protocol. Tumor samples were immediately stained for consecutive flow cytometric analysis.
+
+2.3. Flow Cytometry
+
+PBMC and tumor cell suspensions from 16 glioblastoma patients were stained with the same core panel and antibodies targeting CD1c, CD3, CD4, CD8a, CD14, CD15, CD16, CD45, CD45-RO, CD56, and CD62L. Beyond that core panel to identify subpopulations, PBMC were stained with antibodies targeting CD25, CD69, 4-IBB (CD137), CTLA4 (CD152), ICOS (CD278), PD1 (CD279), GITR (CD357), TIM3 (CD366), and PSGL-1 (CD162) (all BioLegend, Amsterdam, The Netherlands). With regard to the prominent role of myeloid cells in glioblastoma, PBMCs of 11 patients were separately stained with antibodies targeting CD11b, CD14, CD45, CD55, CD97, PSGL-1 (CD162), CD163, CD169, CD204, CD273, CD276, HLA-ABC, and HLA-DR as well as DAPI for identifying dead cells (all Miltenyi Biotec, Teterow, Germany). Tumor samples of 12 patients were antibody-stained against the target antigens CD3, CD4, CD8, CD62L, CD45, CD45RO, PSGL-1 (CD162), PD1 (CD279), and TIM3 (CD366). Zombie-NIR was used for live-dead discrimination (all BioLegend) (Table A2). FMOs were prepared to correct for the antibodies’ fluorochromes fluorescence spillover. Samples were analyzed on a 3-laser, 10-color Gallios flow cytometer (Beckman-Coulter, Krefeld, Germany). Data analysis was performed using Kaluza software 2.1.3 (Beckman-Coulter) based on the gating strategy shown (Figure A1).
+
+2.4. Immunohistochemistry
+
+For immunohistochemistry-staining, 10 µM paraffin sections were deparaffinized in Xylol, rehydrated, and boiled for 5 min in citrate buffer (pH = 6) for antigen retrieval. Before imaging by light microscopy, sections were incubated with antibodies targeting CD68, PSGL-1 (CD162), and CD163 (dilution 1:50; Enzo Life Sciences, Lörrach, Germany) overnight at 4 °C. After washing, sections were incubated with an immuno-peroxidase polymer for 20 min and mounted on glass microscopy slides using mounting medium (ibidi, Gräfelfing, Germany). Imaging and analysis were performed with a high-content imaging device (Operetta CLS) and its associated software (Harmony 4.9; both PerkinElmer, Hamburg, Germany). For the measurement of non-fluorescent immunohistochemical staining, 3 channels with the following settings were used: brightfield (exposure time: 20 ms, power 50%), a pseudo-absorption channel (exposure time: 5 ms, power 5%), and a tissue autofluorescence channel (exposure time: 100 ms, power 50%). The scanned image was inverted in the first and second channels and merged into one channel. As the size of the entire section was calculated, the number of positive cells per mm² could be determined using quantitative image-based object segmentation by unsupervised computer algorithms.
+
+2.5. Statistical Analysis
+
+Statistical analysis was performed with Prism 9.4.1 (GraphPad Software, San Diego, CA, USA), and details are given in the figure legends. Levels of significance are indicated as follows: p = 0.05 (*), p = 0.01 (**), p = 0.001 (***), ns = non-significant.
+
+3. Results
+
+3.1. Alterations in the Peripheral Myeloid and Lymphoid Compartment in Glioblastoma Patients
+
+Glioblastoma shows a profoundly dysfunctional anti-tumor immunity and remains refractory to immunotherapy. Delineating the glioblastoma immune landscape is essential to target immunosuppressive circuits in this disease. In this light, the present study aimed to perform thorough immunophenotyping of the peripheral and intratumoral immune compartments in glioblastoma tissues of patients (Figure 1a) compared to age- and sex-matched healthy individuals. Flow cytometric analysis was performed of peripheral blood mononuclear cells (PBMCs) and tumor-infiltrating leucocytes (TILs) following histopathological glioblastoma confirmation (Figure 1b).
+
+PBMC activation and immunosuppressive signatures were evaluated, focusing on circulating monocytes and T cells (Figure 2a). Principal component analysis (PCA) of surface marker expression profiles of circulating monocytes already outlined a distinct pattern in glioblastoma patients compared to control participants, as indicated by a markedly different principal component (PC) 1. Hereof, differences were mainly linked to increased expression of the immune checkpoint molecules glucocorticoid-induced TNFR-related protein (GITR; CD357), programmed death 1 (PD1; CD279), the activation-induced costimulatory molecule 4-IBB (CD137), and CD69 in healthy control participants as indicated by their correlation with PC1 displayed in the loading plot (Figure 2b). Among all markers investigated, the immune checkpoint cytotoxic T lymphocyte-associated protein 4 (CTLA4; CD152) was the only marker found to be increased on circulating monocytes in glioblastoma patients (Figure 2c). No alterations in expression were found for CD25, inducible T cell costimulator (ICOS; CD278), selectin P-ligand (PSGL-1; CD162), T cell immunoglobulin and mucin-domain containing-3 (TIM-3; CD366) (Figure 2d), and others (Figure A2a). Despite adjuvant radiochemotherapy, symptomatic steroid treatment is part of the standard of care in glioblastoma patients to reduce commonly occurring brain edema. Steroids are known to significantly influence immune cell function and phenotype and alter the expression of PSGL-1, CD163, and HLA-DR on circulating monocytes of glioblastoma patients in the present study (Figure A2b). Yet, a correlation between expression patterns and the patient-received cumulative dexamethasone dose was not observed in any marker (Figure A2c–e).
+
+Next, surface marker expression patterns were evaluated on circulating T cells (Figure 3a) and their subpopulations (naïve, central memory (cm), effector memory (em), effector memory expressing CD45RA (emra)) based on CD62L and CD45RO expression (Figure A2b)). No significant differences in the distribution of different T cell subpopulations in glioblastoma patients compared to healthy individuals could be observed (Figure A2c), as underlined by t-stochastical neighbor embedding (tSNE) analysis (Figure 3b). Likewise, a global difference in the activation status of CD4+ T helper (Figure 3c) and CD8+ cytotoxic T cells was not observed (Figure 3d). However, a distinct marker expression pattern was found for CD4+ T helper (Figure 3e) and CD8+ cytotoxic T cell subsets (Figure 3f) between PBMC of the patient and proband cohorts as indicated by different PC scores and underlying variables in the calculated PCA. Concerning CD4+ T helper cells, a distinct expression pattern was mainly found in CD62LhighCD45ROlow naïve T cells and CD62LlowCD45ROhigh Tem cells. The former showed increased ICOS, GITR, and 4-IBB, and decreased PSGL-1 expression levels, while in the latter, we found TIM-3 to be increased and ICOS to be decreased (Figure 3g). In CD8+ cytotoxic T cells, differences were found for naïve, CD62LhighCD45ROhigh Tcm, and CD62LlowCD45ROlow Temra cells with a main decrease in CTLA4, and an increase for TIM3, ICOS, GITR, and 4-IBB (Figure 3h).
+
+3.2. Glioblastoma Shows Distinct Myeloid Expression Signatures Compared to Healthy Individuals
+
+Shielded from the peripheral circulation to prevent unwanted immune cell entry and attack, the brain is considered one of our body’s “immune privileged” organs with a unique immune landscape mainly comprised of myeloid cells. After focusing on changes in the peripheral immune compartment of glioblastoma patients, the present study sought to identify alterations in immune signatures in the local GBM tumor immune infiltrate (Figure 4a) with a focus on the myeloid lineage (Figure 4b). Analysis of PSGL-1 and PD1 expression on intratumoral myeloid cells (Figure 4c) revealed a significant decrease in the latter compared to circulating monocytes (Figure 4d). However, when comparing individual patients, a significant correlation could not be identified (Figure 4e). Histopathological analysis was done to compare the myeloid infiltration in healthy and malignant brain tissue. Immunohistochemical staining of CD68 (Figure 4f) revealed a significant increase in CD68+ cells in the malignant parenchyma (Figure 4g). Similar results were obtained for CD163 (Figure 4h,i) and PSGL-1 (Figure 4j,k).
+
+3.3. Glioblastoma Shows High Infiltration of CD4+ and CD8+ CD62LlowCD45ROhigh Effector Memory T Cells
+
+Albeit less abundant in the glioblastoma tumor microenvironment (TME) compared to glioma-associated macrophages/microglia, T cells are a vital part of anti-tumor immune responses. Tumor-infiltrating CD4+ and CD8+ T cells (Figure 5a) were thus characterized using flow cytometric analysis (Figure 5b). No differences were observed in absolute numbers of CD4+ T helper compared to CD8+ cytotoxic T cells in the tumors (Figure 5c). Hereof, CD62LlowCD45ROhigh Tem comprised the dominant T cell subpopulation both in CD4+ T cells and CD8+ T cells, with a higher presence observed for the former (Figure 5d). Flow cytometric analysis of checkpoint and exhaustion signatures on T cells (Figure 5e) revealed no differences in PSGL-1 expression between CD4+ and CD8+ T cells (Figure 5f) and their subpopulations (Figure 5g). Similar to the myeloid compartment, a significant correlation was not observed when comparing expression levels with circulating T lymphocytes (Figure 5h). By contrast, although significant differences in PD1 expression on CD4+ and CD8+ T cells (Figure 5i) and their subpopulations (Figure 5j) were not identified, a strong positive correlation between PD1 expression on circulating and tumor-infiltrating CD8+ cytotoxic T cells could be observed (Figure 5k). Of note, CD4+ and CD8+ Tem cells showed a particularly strong expression of PD1 compared to their naïve counterparts. Similarly, TIM-3 expression was evaluated on CD4+ and CD8+ T cells (Figure 5l) and their subpopulations (Figure 5m) but did not differ significantly. Interestingly, a negative correlation was found between TIM3 expression on circulating and tumor-infiltrating CD8+ T cells (Figure 5n).
+
+4. Discussion
+
+The success of immunotherapeutic approaches such as ICB relies on the body’s ability to recognize tumor cells as foreign and mount T cell responses against tumor antigens. High rates of somatic mutations in cancer cells cause the occurrence of tumor-specific and cancer-associated neoantigens [17,18], recognizable by autologous T cells of the host. Glioblastoma is considered immunologically “cold” due to low-quality neoantigens, low-mutational load, poor antigen priming, and an overall immunosuppressive tumor microenvironment, limiting the efficacy of ICB markedly. Nonetheless, although only a small subset of patients (8%) profited from anti-PD1 checkpoint immuno-blockade in a recent clinical trial (NCT 02017717), responders showed an increased median overall survival compared to the standard of care, highlighting the potential of immune-targeted therapies also in treatment strategies of glioblastoma [19]. Understanding the distinct glioblastoma immune landscape, a tumor type evolving in one of the three “immune privileged” organs in the human body, is essential to expand the number of patients that could profit from immuno-oncological approaches. In this light, the present study comprises immunophenotyping of the peripheral and intratumoral immune compartments of 35 glioblastoma patients compared to age- and sex-matched healthy control participants based on flow cytometry and histopathological confirmation.
+
+Examining the immune status of glioblastoma patients has a high prognostic and predictive relevance to increasing immunotherapeutic success. Immune modulations in the peripheral immune compartment are closely linked to therapy response or progression [20]. In line with a slight downregulation of HLA-DR on circulating monocytes of glioblastoma patients observed in the present study, it has previously been reported that patients with newly diagnosed glioblastoma show an increased number of circulating CD33+ HLA-DR− myeloid-derived suppressor cells (MDSCs) comprised of immature, monocytic and neutrophilic subsets [21]. Blood-derived neutrophilic and eosinophilic MDSCs are further considered to suppress autologous non-specific T cell proliferation and IFNγ secretion leading to impaired anti-tumor immunity in glioblastoma patients [22]. Compared to healthy individuals, circulating monocytes were found to have decreased activation and expression of costimulatory 4-IBB and GITR and upregulation of the immune checkpoint CTLA4. In an experimental model of Sjörgen’s disease, GITRL/GITR signaling was identified to reduce the suppressive function of MDSCs on T cell proliferation and release of suppressive factors, including arginase and NO, while promoting differentiation into mature myeloid cells [23]. Likewise, 4-IBB is a potent monocyte activation factor and induces the expression of IL6, IL8, and TNFα while inhibiting the expression of IL10 upon activation [24]. Considering the reduced expression of 4-IBB and GITR on circulating monocytes of glioblastoma patients observed in our study, it is conceivable that monocytes shed costimulatory molecules during disease progression outlining their immunosuppressive phenotype. Despite being a key regulator of the early activation of naïve and memory T cells, CTLA-4 is expressed in B cells [25], monocytes [26,27], dendritic cells [28], and activated granulocytes [29]. Treatment with ipilimumab, a monoclonal antibody targeting CTLA-4, revealed that the clinical success of T cell immune checkpoint antibodies in patients with metastatic melanoma also relies on off-target effects via myeloid-derived suppressor cells expressing CTLA-4 [30]. The increased expression of immune checkpoint molecules on circulating myeloid and lymphoid cells in cancer patients is associated with advanced disease, and a negative prognosis independent of disease stage [31,32,33] and likely reflects the immunosuppressive network in patients suffering from glioblastoma in the present study. Besides immune modulations accompanying disease progression, the patient’s medication also alters the immune status. Dexamethason is frequently used to reduce clinically relevant brain edema typically surrounding glioblastoma tissues but has multiple adverse effects and strongly influences immune cell counts and the cytotoxic activity of T cells [34], which is in line with the suppressive immune status observed in dexamethasone-medicated patients in our study. This is particularly important as steroid-induced leukopenia likely reduces the efficacy of immunotherapies in the per se compromised immune compartment in glioblastoma tissues of patients. Interestingly, a marked increase in GITR expression was observed in circulating CD4+ T cells in glioblastoma patients in the present study. While on the one hand, GITR expression on naïve T cells is suggested to be induced following antigen-receptor stimulation, it is also highly expressed in CD4+ regulatory T cells. Recent research indicated that GITR signaling promotes expansion of Treg cells and enhances their regulatory activity [35]. In this view, it is conceivable that the increased expression of GITR on CD4+ T cells is linked to increased frequencies of regulatory T cell subsets and underlines the immune dysregulation in glioblastoma patients.
+
+Glioblastoma is characterized by a highly immunosuppressive tumor microenvironment with a predominance of immunosuppressive myeloid cells, the release of the oncometabolite 2-hydroxyglutarate (2-HG) in IDH-wildtype glioblastoma [36], lymphopenia due to steroid treatment and chemoradiation as stated above, and multiple modes of T cell dysfunction. In newly diagnosed tumors, microglia-derived myeloid cells are predominant but outnumbered by monocyte-derived myeloid cells following recurrence, especially in hypoxic tumor environments [37]. Glioma-associated microglia/macrophages have been implicated in brain tumor angiogenesis and resistance to anti-angiogenic therapies [12] and may contribute to the colonization and outgrowth of brain metastasis [38], potentially through their ability to modulate blood vessel integrity and function [39,40]. The myeloid compartment is large, diverse, and dynamic across disease stages, limiting characterization along the linear M1/M2 phenotype axis. Notwithstanding, the anti-inflammatory/pro-tumorigenic activation of microglia/ macrophages is characterized by reduced levels of iNOS expression and NO release, impaired phagocytic abilities, elevated levels of ARG1, CD163, CD206, and several cytokines, including IL-10 and TGF-β [37]. Compared to healthy control participants, histopathological confirmation revealed an increase in parenchymal CD163+ microglia/ macrophages paralleled by increased expression of PSGL-1. Despite being considered a T cell immune checkpoint [41,42], PSGL-1 has been shown to aid in the spreading and metastasis of melanoma and colon cancer cells via P-selectin (SELP) mediated platelet activation [43,44]. In glioblastoma, cancer cells overexpress and oversecrete SELP to exploit PSGL-1 signaling in glioma-associated microglia/macrophages. shRNA knockdown of SELP revealed an increase in pro-inflammatory and T cell recruitment signatures compared to negative controls. Likewise, blocking SELP function was accompanied by delayed tumor growth, prolonged survival, and improved immune infiltration in vivo [44]. Interestingly, intratumoral myeloid cells were also found to express low levels of PD1. Using a conditional allele that allowed myeloid-specific (PD1f/fLysMcre) or T cell-specific (PD1f/fCD4cre) targeting of the Pdcd1 gene, Strauss and colleagues could recently show that granulocyte/macrophage progenitors (GMPs), which accumulate during cancer-driven emergency myelopoiesis and give rise to MDSCs, express PD1 which is of high therapeutic relevance. In tumor-bearing PD1f/fLysMcre mice, accumulation of GMP and MDSCs was prevented while the systemic output of effector myeloid cells was increased. In addition, myeloid cell-specific PD1 ablation increased Tem cells and improved their functionality, ultimately mediating anti-tumor immunity despite a perceived PD1 expression on T cells [45].
+
+In line with previous results, CD4+ Tem was the predominant CD4+ T cell subset inside glioblastoma [22]. Tem cell subsets showed a strong upregulation of PD1, involved in functional T cell exhaustion and providing a rationale for anti-PD1 treatment of glioblastomas to restore T cell function [22]. Exhaustion describes a hyporesponsive T cell state due to chronic antigen exposure, characterized by upregulation of various co-inhibitory receptors. Previous studies indicated that glioma-derived MDSCs could induce antigen-specific CD4+ tolerance or T cell exhaustion in a mouse model [46], contributing substantially to dysfunction among activated T cells that successfully arrive at the tumor side. In line with our study, intratumoral T cells in glioblastoma were recently found to express multiple immune checkpoints, including PD1, TIM3, LAG3, TIGIT, and CD39, signs of a severe exhaustion signature amidst T cells [16]. Those findings support the rationale of combinatorial checkpoint blockade in this disease, already approved as first-line therapy for patients with metastatic or inoperable melanoma by the FDA since 2016 and investigated as a therapeutic option in glioblastoma [47]. Disease stage-dependent assessment of immune biomarker profiles might further serve to design individualized therapeutic strategies in neurooncology.
+
+5. Conclusions
+
+Our findings shed light on glioblastoma patients’ peripheral and intratumoral immune status, delineating the highly immunosuppressive environment compared to healthy control participants. The exhaustive signature found on T cells provides a rationale for future investigation of combinatorial ICB in glioblastoma patients. In addition, the immunosuppressive phenotype of myeloid cells indicates a promising target for successful immunotherapeutic approaches. These findings have to be elucidated in functional experiments in the future.
+
+Acknowledgments
+
+The authors acknowledge financial support by Jung Stiftung für Wissenschaft und Forschung (Hamburg, Germany) and the Gerhard-Domagk Scholarship Program (Greifswald, Germany). The figure design was achieved through a commercial license of the biorender.com platform.
+
+Author Contributions
+
+Conceptualization, S.M. and S.B.; methodology, S.M., F.K., F.W., M.I., S.B.-M., E.F., L.M. and S.B.; software, F.W., M.I., E.F., L.M. and S.B.; validation, S.M., F.K., F.W., L.M. and M.I.; formal analysis, F.K., F.W., M.I., E.F., L.M. and S.B.; investigation, F.K., M.I. and F.W.; resources, S.M., H.L., S.P., J.B., S.F., N.S., A.S., B.H.R., S.S., C.R., H.W.S.S. and S.B.; data curation, S.M., L.M. and S.B.; writing—original draft preparation, S.M., L.M. and S.B.; writing—review and editing, N.S.; visualization, L.M.; supervision, S.M. and S.B.; project administration, S.M. and S.B.; funding acquisition, S.M. and S.B. All authors have read and agreed to the published version of the manuscript.
+
+Institutional Review Board Statement
+
+The study was conducted in accordance with the Declaration of Helsinki and approved by the Institutional Review Board (or Ethics Committee) of the Greifswald University Medical Center (protocol code BB089/08b).
+
+Informed Consent Statement
+
+Informed consent was obtained from all study subjects involved.
+
+Data Availability Statement
+
+The underlying data of the work can be retrieved from the corresponding author upon reasonable request.
+
+Conflicts of Interest
+
+The authors declare no conflict of interest.
+
+Appendix A
+
+Figure A1 Immunophenotyping of PBMCs in glioblastoma patients and healthy individuals. (a) Flow cytometry histograms showing isotype controls and stained circulating myeloid cells; (b) representative gating strategy for identification of myeloid and T cell subsets; (c) Circulating T cell subset frequencies in glioblastoma patients compared to healthy controls. Statistical analysis was performed using paired t-test. ns = non-significant. cm = central memory. em = effector memory. emra = effector memory expressing CD45RA.
+
+Figure A2 Immunophenotyping of circulating monocytes and impact of steroid medication. (a) mean fluorescence intensities (MFI) of CD55, CD97, CD163, CD169, CD204, CD273, CD276, HLA-ABC, and HLA-DR on circulating monocytes of glioblastoma patients (GBM) compared to healthy individuals; (b) quantification of PSGL-1, CD163, and HLA-DR expression on circulating monocytes in GBM patients with Dexamethasone medication or without; (c–e) Pearson’s correlation of PSGL-1 (c), CD163 (d), or HLA-DR (e) expression with the cumulative doses of dexamethasone given to the GBM patients prior to blood withdrawal. Statistical analysis was performed using paired t-test (* p < 0.05). ns = non-significant. dexa = dexamethasone.
+
+cancers-14-05751-t0A1_Table A1 Table A1 Previous medical history and medication. Summary of the previous medical history and medication of the GBM patients and age- and gender-matched control probands. COPD: chronic obstructive pulmonary disease. NSAIDs: non-steroidal anti-inflammatory drugs.
+
+Co-Morbidities	GBM Patients	Controls	
+high blood pressure	17	19	
+atrial fibrillation	3	3	
+hypothyreosis	3	4	
+diabetes mellitus	8	4	
+hyperuricemia	1	1	
+retinal detachment	0	1	
+glaucoma	0	3	
+cataract	0	1	
+cardiovascualr diseases	3	6	
+dyslipidemia	4	2	
+COPD	2	4	
+kidney insufficiency	2	0	
+depression	1	1	
+			
+medication			
+hemostasis	11	13	
+NSAID’s	2	2	
+dexamethasone	22	1	
+anti-epileptics	6	2	
+proton-pump-inhibition	15	9	
+statins	5	10	
+antihypertensives	17	19	
+antidiabetics	8	6	
+uricostatics	3	1	
+antibiotics	1	0	
+L-thyroxin	3	5	
+diuretics	6	9	
+antidepressives	3	7	
+
+cancers-14-05751-t0A2_Table A2 Table A2 List of antibodies used in this study.
+
+Target	Host	Clone	Conjugate	Cells Stained	
+flow cytometry	
+CD1c	mouse	L161	APC/Cy7	myeloid/plasmacytoid DCs	
+CD3	mouse	HIT3a/UCHT1	PCP5.5	T cells	
+CD4	mouse	RPA-T4	PE-Dazzle	TH cells	
+CD8a	mouse	HIT8a	PC7	CTLs	
+CD11b	rat	M1/70.15.11.5	PE	monocytes, macrophages, DCs, neutrophils	
+CD14	mouse	TÜK4	APC-Vio770	monocytes, macrophages	
+CD14	mouse	M5E2	APC/Fire750	monocytes, macrophages	
+CD15	mouse	W6D3	APC/Fire750	neutrophils, eosinophils	
+CD16	mouse	B73.1	APC/Fire750	NK cells	
+CD25	mouse	BC96	BV421	activated T cells	
+CD45	mouse	HI30	AF700	leucocytes	
+CD45	mouse	5B1	PerCP-Viio770	leucocytes	
+CD45-RO	mouse	UCHL1	FITC	activated T cells, Tcm, Tem	
+CD55	mouse	JS11	PE-Vio770	blood cells	
+CD56	mouse	HCD56	APC/Cy7	NK cells	
+CD62L	mouse	DREG-56	BV510	Tem, Tcm	
+CD69	mouse	FN50	PE	activated T cells	
+CD97	mouse	VIM3b	PE-Vio770	leucocytes	
+CD137	mouse	4B4-1	AF647	(TNFRSF9); leucocytes	
+CD152	mouse	BNI3	PE	(CTLA4); T cells	
+CD162	mouse	KPL-1	PE	(PSGL-1); leucocytes	
+CD162	human	REA319	FITC	(PSGL-1); leucocytes	
+CD163	mouse	GHI/61.1	APC	monocytes, macrophages	
+CD169	mouse	7-239	PE-Vio770	macrophages	
+CD204	human	REA460	VioBright-FITC	macrophages	
+CD273	mouse	MIH18	APC	(PDL2); dendritic cells, macrophages	
+CD276	mouse	FM276	FITC	(B7-H3); solid tumors	
+CD278	hamster	C398.4A	BV421	(ICOS); T cells	
+CD279	mouse	EH12.2H7	AF647	(PD1); T cells	
+CD357	mouse	108-17	AF647	(GITR); B cells, T cells	
+CD366	mouse	F38-2E2	BV421	(TIM-3); TH1	
+HLA-ABC	human	REA230	APC	all	
+HLA-DR	mouse	AC122	APC	monocytes, macrophages, DCs	
+tissue staining	
+CD68	mouse	Ab955	unconjugated	macrophages	
+CD162	mouse	MAB9961	unconjugated	(PSGL-1); leucocytes	
+CD163	mouse	NBP1-30147	unconjugated	macrophages	
+
+Figure 1 Study overview. (a) 3D visualizations of MRI scans of glioblastoma (white arrows) patients reconstructed from axial, sagittal, and coronal slices; (b) study overview.
+
+Figure 2 Alterations in the peripheral myeloid immune compartment of glioblastoma patients compared to healthy controls. (a) schematic overview of immunophenotyping analysis of circulating monocytes and T cells in the present study; (b) principal component analysis (PCA) calculated from marker expression profiles of circulating monocytes in age- and sex-matched healthy control participant (control) and glioblastoma patient (GBM)-derived PBMC showing PC scores (left) and loadings (right); (c) volcano plot showing significantly (dotted line, p < 0.05) up- (orange) and downregulated (blue) markers on circulating monocytes of glioblastoma patients compared to healthy individuals; (d) mean fluorescence intensities (MFI) of CTLA4, CD25, CD69, 4-IBB, PD1, GITR, ICOS, PSGL-1, and TIM-3 analyzed on circulating monocytes in glioblastoma patients and healthy individuals’ PBMC. Bar graphs show mean ± standard deviation of the mean (SEM). Statistical analysis was performed using paired t-test (* p < 0.05, ** p < 0.01). ns = non-significant. ctrl = healthy control participants. GBM = glioblastoma patients. PC = principal component. FC = fold change. FDR = false discovery rate.
+
+Figure 3 Alterations in the peripheral lymphoid immune compartment of glioblastoma patients compared to healthy controls. (a) schematic overview of immune marker expression profiling on circulating T cells; (b) t-distributed stochastic neighbor embedding (tSNE) calculated from flow cytometric analysis of marker expression on PBMCs isolated from healthy donors (control) and glioblastoma patients (GBM) showing z-scaled CD4 expression; (c,d) 5–95 percentile boxplots showing CD25 and CD69 expression on circulating CD4+ T helper cells (c) and CD8+ cytotoxic T cells (d) normalized to age- and sex-matched healthy control participants; (e,f) principal component analysis (PCA) calculated from marker expression on CD4+ (e) or CD8+ (f) naïve, central memory (cm), effector memory (em), and effector memory expressing CD45RA (emra) T cell subpopulations showing PC scores (left) and loadings (right); (g,h) volcano plots displaying markers differentially expressed on CD4+ (g) and CD8+ Tnaïve, Tcm, Tem, and Temra cells. Statistical analysis was performed using paired t-tests. control = healthy control participants. GBM = glioblastoma patients. FC = fold change. PC = principal component. FDR = false-discovery rate.
+
+Figure 4 Myeloid immune infiltration in glioblastoma tumors. (a) schematic overview of intratumoral immune profiling after neurosurgical resection of tumor samples; (b) absolute numbers of myeloid cells in tumor samples; (c) surface expression of PSGL-1 and PD1 on intratumoral myeloid cells; (d) comparison of PSGL-1 and PD1 expression on circulating and tumor-infiltrating myeloid cells; (e) Pearson’s correlation of PSGL-1 and PD1 expression on circulating and tumor-infiltrating myeloid cells; (f–k) representative immunohistochemical images and quantification of CD68+ (f,g), CD163+ (h,i) and PSGL1+ cells (j,k) in control and malignant brain tissue. Bar graphs show mean + individual values. Statistical analysis was performed using paired t-test (* p < 0.05, ** p < 0.01, *** p < 0.001).
+
+Figure 5 Immunophenotyping of tumor-infiltrating T cells in glioblastoma tissues. (a) schematic overview of marker expression profiling on intratumoral T cells in glioblastoma patients; (b) representative gating strategy to identify CD4+ and CD8+ T cells and their subpopulations in glioblastoma samples; (c) absolute numbers of CD4+ and CD8+ T cells; (d) frequency of CD4+ and CD8+ Tnaïve, Tcm, Tem, and Temra cells; (e) representative flow cytometry dot plot graphing of FMO and anti-PSGL-1 stained CD4+ T cells; (f,g) surface expression of PSGL-1 on intratumoral CD4+ and CD8+ T cells (f) and Tnaïve, Tcm, Tem and Temra subsets (g); (h) Pearson’s correlation between PSGL-1 expression on circulating and intratumoral CD4+ and CD8+ T cells; (i,j) surface expression of PD1 on intratumoral CD4+ and CD8+ T cells (i) and Tnaïve, Tcm, Tem, and Temra subsets (j); (k) Pearson’s correlation between PD1 expression on circulating and intratumoral CD4+ and CD8+ T cells; (l,m) surface expression of TIM-3 on intratumoral CD4+ and CD8+ T cells (l) and Tnaïve, Tcm, Tem, and Temra subsets (m); (n) Pearson’s correlation between TIM-1 expression on circulating and intratumoral CD4+ and CD8+ T cells. Bar graphs show mean + individual values. Statistical analysis was performed using paired t-test (*** p < 0.001). ns = non-significant. FMO = fluorescence minus one. MFI = mean fluorescence intensity. cm = central memory. em = effector memory. emra = effector memory expressing CD45RA. TIL = tumor-infiltrating leucocytes.
+
+cancers-14-05751-t001_Table 1 Table 1 Overview of patient and proband cohorts. Summary of GBM patient and proband cohorts used for flow cytometric immunophenotyping in this study. N.A.: not applicable. IDH: isocitrate dehydrogenase. MGMT: O6-methylguanine-DNA-methyltransferase.
+
+	GBM Patients	Proband Cohort	
+Number of patients	28	28	
+Mean age/range	68 (41–87)	67 (36–85)	
+Gender (male/female)	18/10	18/10	
+IDH-status (wildtype/mutant/N.A.)	29/0/6	-	
+MGMT status (methylated/unmethylated)	18/17	-	
+
+Publisher’s Note: MDPI stays neutral with regard to jurisdictional claims in published maps and institutional affiliations.
+==== Refs
+References
+
+1. Pardoll D.M. The blockade of immune checkpoints in cancer immunotherapy Nat. Rev. Cancer 2012 12 252 264 10.1038/nrc3239 22437870
+2. Amaria R.N. Reddy S.M. Tawbi H.A. Davies M.A. Ross M.I. Glitza I.C. Cormier J.N. Lewis C. Hwu W.J. Hanna E. Neoadjuvant immune checkpoint blockade in high-risk resectable melanoma Nat. Med. 2018 24 1649 1654 10.1038/s41591-018-0197-1 30297909
+3. Forde P.M. Chaft J.E. Smith K.N. Anagnostou V. Cottrell T.R. Hellmann M.D. Zahurak M. Yang S.C. Jones D.R. Broderick S. Neoadjuvant PD-1 Blockade in Resectable Lung Cancer N. Engl. J. Med. 2018 378 1976 1986 10.1056/NEJMoa1716078 29658848
+4. Song Y. Straker R.J. 3rd Xu X. Elder D.E. Gimotty P.A. Huang A.C. Mitchell T.C. Amaravadi R.K. Schuchter L.M. Karakousis G.C. Neoadjuvant Versus Adjuvant Immune Checkpoint Blockade in the Treatment of Clinical Stage III Melanoma Ann. Surg. Oncol. 2020 27 2915 2926 10.1245/s10434-019-08174-1 31898103
+5. Reardon D.A. Brandes A.A. Omuro A. Mulholland P. Lim M. Wick A. Baehring J. Ahluwalia M.S. Roth P. Bahr O. Effect of Nivolumab vs Bevacizumab in Patients With Recurrent Glioblastoma: The CheckMate 143 Phase 3 Randomized Clinical Trial JAMA Oncol. 2020 6 1003 1010 10.1001/jamaoncol.2020.1024 32437507
+6. Quail D.F. Joyce J.A. The Microenvironmental Landscape of Brain Tumors Cancer Cell 2017 31 326 341 10.1016/j.ccell.2017.02.009 28292436
+7. Aspelund A. Antila S. Proulx S.T. Karlsen T.V. Karaman S. Detmar M. Wiig H. Alitalo K. A dural lymphatic vascular system that drains brain interstitial fluid and macromolecules J. Exp. 2015 212 991 999 10.1084/jem.20142290
+8. Louveau A. Smirnov I. Keyes T.J. Eccles J.D. Rouhani S.J. Peske J.D. Derecki N.C. Castle D. Mandell J.W. Lee K.S. Structural and functional features of central nervous system lymphatic vessels Nature 2015 523 337 341 10.1038/nature14432 26030524
+9. Louveau A. Harris T.H. Kipnis J. Revisiting the Mechanisms of CNS Immune Privilege Trends Immunol. 2015 36 569 577 10.1016/j.it.2015.08.006 26431936
+10. Graeber M.B. Scheithauer B.W. Kreutzberg G.W. Microglia in brain tumors Glia 2002 40 252 259 10.1002/glia.10147 12379912
+11. Weiss N. Miller F. Cazaubon S. Couraud P.O. The blood-brain barrier in brain homeostasis and neurological diseases Biochim. Biophys. Acta 2009 1788 842 857 10.1016/j.bbamem.2008.10.022 19061857
+12. Lu-Emerson C. Snuderl M. Kirkpatrick N.D. Goveia J. Davidson C. Huang Y. Riedemann L. Taylor J. Ivy P. Duda D.G. Increase in tumor-associated macrophages after antiangiogenic therapy is associated with poor survival among patients with recurrent glioblastoma Neuro-Oncology 2013 15 1079 1087 10.1093/neuonc/not082 23828240
+13. Idoate Gastearena M.A. Lopez-Janeiro A. Lecumberri Aznarez A. Arana-Iniguez I. Guillen-Grima F. A Quantitative Digital Analysis of Tissue Immune Components Reveals an Immunosuppressive and Anergic Immune Response with Relevant Prognostic Significance in Glioblastoma Biomedicines 2022 10 1753 10.3390/biomedicines10071753 35885058
+14. Fecci P.E. Mitchell D.A. Whitesides J.F. Xie W. Friedman A.H. Archer G.E. Herndon J.E. 2nd Bigner D.D. Dranoff G. Sampson J.H. Increased regulatory T-cell fraction amidst a diminished CD4 compartment explains cellular immune defects in patients with malignant glioma Cancer Res. 2006 66 3294 3302 10.1158/0008-5472.CAN-05-3773 16540683
+15. Chongsathidkiet P. Jackson C. Koyama S. Loebel F. Cui X. Farber S.H. Woroniecka K. Elsamadicy A.A. Dechant C.A. Kemeny H.R. Sequestration of T cells in bone marrow in the setting of glioblastoma and other intracranial tumors Nat. Med. 2018 24 1459 1468 10.1038/s41591-018-0135-2 30104766
+16. Woroniecka K. Chongsathidkiet P. Rhodin K. Kemeny H. Dechant C. Farber S.H. Elsamadicy A.A. Cui X. Koyama S. Jackson C. T-Cell Exhaustion Signatures Vary with Tumor Type and Are Severe in Glioblastoma Clin. Cancer Res. 2018 24 4175 4186 10.1158/1078-0432.CCR-17-1846 29437767
+17. Wolf T. Luepke N.P. Formation of micronuclei in incubated hen’s eggs as a measure of genotoxicity Mutat. Res.-Genet. Toxicol. Environ. Mutagen. 1997 394 163 175 10.1016/S1383-5718(97)00136-8
+18. Schumacher T.N. Schreiber R.D. Neoantigens in cancer immunotherapy Science 2015 348 69 74 10.1126/science.aaa4971 25838375
+19. Zhao J. Chen A.X. Gartrell R.D. Silverman A.M. Aparicio L. Chu T. Bordbar D. Shan D. Samanamud J. Mahajan A. Immune and genomic correlates of response to anti-PD-1 immunotherapy in glioblastoma Nat. Med. 2019 25 462 469 10.1038/s41591-019-0349-y 30742119
+20. Ruhle P.F. Goerig N. Wunderlich R. Fietkau R. Gaipl U.S. Strnad A. Frey B. Modulations in the Peripheral Immune System of Glioblastoma Patient Is Connected to Therapy and Tumor Progression-A Case Report from the IMMO-GLIO-01 Trial Front. Neurol. 2017 8 296 10.3389/fneur.2017.00296 28690586
+21. Raychaudhuri B. Rayman P. Ireland J. Ko J. Rini B. Borden E.C. Garcia J. Vogelbaum M.A. Finke J. Myeloid-derived suppressor cell accumulation and function in patients with newly diagnosed glioblastoma Neuro-Oncology 2011 13 591 599 10.1093/neuonc/nor042 21636707
+22. Dubinski D. Wolfer J. Hasselblatt M. Schneider-Hohendorf T. Bogdahn U. Stummer W. Wiendl H. Grauer O.M. CD4+ T effector memory cell dysfunction is associated with the accumulation of granulocytic myeloid-derived suppressor cells in glioblastoma patients Neuro-Oncology 2016 18 807 818 10.1093/neuonc/nov280 26578623
+23. Tian J. Zhang B. Rui K. Wang S. The Role of GITR/GITRL Interaction in Autoimmune Diseases Front. Immunol. 2020 11 588682 10.3389/fimmu.2020.588682 33163004
+24. Langstein J. Michel J. Fritsche J. Kreutz M. Andreesen R. Schwarz H. CD137 (ILA/4-1BB), a member of the TNF receptor family, induces monocyte activation via bidirectional signaling J. Immunol. 1998 160 2488 2494 9498794
+25. Pioli C. Gatta L. Ubaldi V. Doria G. Inhibition of IgG1 and IgE production by stimulation of the B cell CTLA-4 receptor J. Immunol. 2000 165 5530 5536 10.4049/jimmunol.165.10.5530 11067906
+26. Wang X.B. Giscombe R. Yan Z. Heiden T. Xu D. Lefvert A.K. Expression of CTLA-4 by human monocytes Scandinavian J. Immunol. 2002 55 53 60 10.1046/j.0300-9475.2001.01019.x
+27. Comin-Anduix B. Sazegar H. Chodon T. Matsunaga D. Jalil J. von Euw E. Escuin-Ordinas H. Balderas R. Chmielowski B. Gomez-Navarro J. Modulation of cell signaling networks after CTLA4 blockade in patients with metastatic melanoma PLoS ONE 2010 5 e12711 10.1371/journal.pone.0012711 20856802
+28. Laurent S. Carrega P. Saverino D. Piccioli P. Camoriano M. Morabito A. Dozin B. Fontana V. Simone R. Mortara L. CTLA-4 is expressed by human monocyte-derived dendritic cells and regulates their functions Hum. Immunol. 2010 71 934 941 10.1016/j.humimm.2010.07.007 20650297
+29. Pistillo M.P. Tazzari P.L. Palmisano G.L. Pierri I. Bolognesi A. Ferlito F. Capanni P. Polito L. Ratta M. Pileri S. CTLA-4 is not restricted to the lymphoid cell lineage and can function as a target molecule for apoptosis induction of leukemic cells Blood 2003 101 202 209 10.1182/blood-2002-06-1668 12393538
+30. Pico de Coana Y. Poschke I. Gentilcore G. Mao Y. Nystrom M. Hansson J. Masucci G.V. Kiessling R. Ipilimumab treatment results in an early decrease in the frequency of circulating granulocytic myeloid-derived suppressor cells as well as their Arginase1 production Cancer Immunol. Res. 2013 1 158 162 10.1158/2326-6066.CIR-13-0016 24777678
+31. Ridder K. Sevko A. Heide J. Dams M. Rupp A.K. Macas J. Starmann J. Tjwa M. Plate K.H. Sultmann H. Extracellular vesicle-mediated transfer of functional RNA in the tumor microenvironment Oncoimmunology 2015 4 e1008371 10.1080/2162402X.2015.1008371 26155418
+32. Chen C. Liang C. Wang S. Chio C.L. Zhang Y. Zeng C. Chen S. Wang C. Li Y. Expression patterns of immune checkpoints in acute myeloid leukemia J. Hematol. Oncol. 2020 13 28 10.1186/s13045-020-00853-x 32245463
+33. Kalathil S. Lugade A.A. Miller A. Iyer R. Thanavala Y. Higher frequencies of GARP(+)CTLA-4(+)Foxp3(+) T regulatory cells and myeloid-derived suppressor cells in hepatocellular carcinoma patients are associated with impaired T-cell functionality Cancer Res. 2013 73 2435 2444 10.1158/0008-5472.CAN-12-3381 23423978
+34. Chitadze G. Fluh C. Quabius E.S. Freitag-Wolf S. Peters C. Lettau M. Bhat J. Wesch D. Oberg H.H. Luecke S. In-depth immunophenotyping of patients with glioblastoma multiforme: Impact of steroid treatment Oncoimmunology 2017 6 e1358839 10.1080/2162402X.2017.1358839 29147621
+35. Shevach E.M. Stephens G.L. The GITR-GITRL interaction: Co-stimulation or contrasuppression of regulatory activity? Nat. Rev. Immunol. 2006 6 613 618 10.1038/nri1867 16868552
+36. Bunse L. Pusch S. Bunse T. Sahm F. Sanghvi K. Friedrich M. Alansary D. Sonner J.K. Green E. Deumelandt K. Suppression of antitumor T cell immunity by the oncometabolite (R)-2-hydroxyglutarate Nat. Med. 2018 24 1192 1203 10.1038/s41591-018-0095-6 29988124
+37. Pombo Antunes A.R. Scheyltjens I. Lodi F. Messiaen J. Antoranz A. Duerinck J. Kancheva D. Martens L. De Vlaminck K. Van Hove H. Single-cell profiling of myeloid cells in glioblastoma across species and disease stage reveals macrophage competition and specialization Nat. Neurosci. 2021 24 595 610 10.1038/s41593-020-00789-y 33782623
+38. Sevenich L. Bowman R.L. Mason S.D. Quail D.F. Rapaport F. Elie B.T. Brogi E. Brastianos P.K. Hahn W.C. Holsinger L.J. Analysis of tumour- and stroma-supplied proteolytic networks reveals a brain-metastasis-promoting role for cathepsin S Nat. Cell Biol. 2014 16 876 888 10.1038/ncb3011 25086747
+39. Hambardzumyan D. Gutmann D.H. Kettenmann H. The role of microglia and macrophages in glioma maintenance and progression Nat. Neurosci. 2016 19 20 27 10.1038/nn.4185 26713745
+40. Komohara Y. Ohnishi K. Kuratsu J. Takeya M. Possible involvement of the M2 anti-inflammatory macrophage phenotype in growth of human gliomas J. Pathol. 2008 216 15 24 10.1002/path.2370 18553315
+41. Tinoco R. Carrette F. Barraza M.L. Otero D.C. Magana J. Bosenberg M.W. Swain S.L. Bradley L.M. PSGL-1 Is an Immune Checkpoint Regulator that Promotes T Cell Exhaustion Immunity 2016 44 1470 10.1016/j.immuni.2016.05.011 27332735
+42. Tinoco R. Neubert E.N. Stairiker C.J. Henriquez M.L. Bradley L.M. PSGL-1 Is a T Cell Intrinsic Inhibitor That Regulates Effector and Memory Differentiation and Responses During Viral Infection Front. Immunol. 2021 12 677824 10.3389/fimmu.2021.677824 34326837
+43. Venteicher A.S. Tirosh I. Hebert C. Yizhak K. Neftel C. Filbin M.G. Hovestadt V. Escalante L.E. Shaw M.L. Rodman C. Decoupling genetics, lineages, and microenvironment in IDH-mutant gliomas by single-cell RNA-seq Science 2017 355 eaai8478 10.1126/science.aai8478 28360267
+44. Yeini E. Ofek P. Pozzi S. Albeck N. Ben-Shushan D. Tiram G. Golan S. Kleiner R. Sheinin R. Israeli Dangoor S. P-selectin axis plays a key role in microglia immunophenotype and glioblastoma progression Nat. Commun. 2021 12 1912 10.1038/s41467-021-22186-0 33771989
+45. Strauss L. Mahmoud M.A.A. Weaver J.D. Tijaro-Ovalle N.M. Christofides A. Wang Q. Pal R. Yuan M. Asara J. Patsoukis N. Targeted deletion of PD-1 in myeloid cells induces antitumor immunity Sci. Immunol. 2020 5 eaay1863 10.1126/sciimmunol.aay1863 31901074
+46. Nagaraj S. Nelson A. Youn J.I. Cheng P. Quiceno D. Gabrilovich D.I. Antigen-specific CD4(+) T cells regulate function of myeloid-derived suppressor cells in cancer via retrograde MHC class II signaling Cancer Res. 2012 72 928 938 10.1158/0008-5472.CAN-11-2863 22237629
+47. Wainwright D.A. Chang A.L. Dey M. Balyasnikova I.V. Kim C.K. Tobias A. Cheng Y. Kim J.W. Qiao J. Zhang L. Durable therapeutic efficacy utilizing combinatorial blockade against IDO, CTLA-4, and PD-L1 in mice with brain tumors Clin. Cancer Res. 2014 20 5290 5301 10.1158/1078-0432.CCR-14-0514 24691018
+

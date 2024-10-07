@@ -1,0 +1,412 @@
+
+==== Front
+J Pers Med
+J Pers Med
+jpm
+Journal of Personalized Medicine
+2075-4426
+MDPI
+
+36675733
+10.3390/jpm13010072
+jpm-13-00072
+Article
+Multiparametric Magnetic Resonance Imaging Correlates of Isocitrate Dehydrogenase Mutation in WHO high-Grade Astrocytomas
+Sahu Arpita 123*†
+https://orcid.org/0000-0001-9606-7223
+Patnam Nandakumar G. 123†
+Goda Jayant Sastri 134*
+Epari Sridhar 135
+Sahay Ayushi 135
+Mathew Ronny 123
+Choudhari Amit Kumar 123
+Desai Subhash M. 23
+Dasgupta Archya 134
+Chatterjee Abhishek 134
+Pratishad Pallavi 36
+Shetty Prakash 137
+Moiyadi Ali Asgar 137
+Gupta Tejpal 137
+Speeckaert Marijn Academic Editor
+1 Neuro-Oncology Disease Management Group, Tata Memorial Centre, Mumbai 400012, India
+2 Department of Radiodiagnosis, Tata Memorial Centre, Mumbai 400012, India
+3 Homi Bhabha National Institute, Mumbai 400012, India
+4 Department of Radiation Oncology, Tata Memorial Centre, Mumbai 400012, India
+5 Department of Pathology, Tata Memorial Centre, Mumbai 400012, India
+6 Department of Biostatistics, Tata Memorial Centre, Mumbai 400012, India
+7 Department of Neurosurgery, Tata Memorial Centre, Mumbai 400012, India
+* Correspondence: drarpitasahu@gmail.com (A.S.); godajayantsastri@gmail.com (J.S.G.); Tel.: +91-7049000101 (A.S.); +91-22-24177000 (ext. 7027) (J.S.G.); Fax: +91-22-24146937 (A.S.); +91-22-24146937 (J.S.G.)
+† These authors contributed equally to this manuscript and are joint first authors.
+
+29 12 2022
+1 2023
+13 1 7209 10 2022
+18 12 2022
+24 12 2022
+© 2022 by the authors.
+2022
+https://creativecommons.org/licenses/by/4.0/ Licensee MDPI, Basel, Switzerland. This article is an open access article distributed under the terms and conditions of the Creative Commons Attribution (CC BY) license (https://creativecommons.org/licenses/by/4.0/).
+Purpose and background: Isocitrate dehydrogenase (IDH) mutation and O-6 methyl guanine methyl transferase (MGMT) methylation are surrogate biomarkers of improved survival in gliomas. This study aims at studying the ability of semantic magnetic resonance imaging (MRI) features to predict the IDH mutation status confirmed by the gold standard molecular tests. Methods: The MRI of 148 patients were reviewed for various imaging parameters based on the Visually AcceSAble Rembrandt Images (VASARI) study. Their IDH status was determined using immunohistochemistry (IHC). Fisher’s exact or chi-square tests for univariate and logistic regression for multivariate analysis were used. Results: Parameters such as mild and patchy enhancement, minimal edema, necrosis < 25%, presence of cysts, and less rCBV (relative cerebral blood volume) correlated with IDH mutation. The median age of IDH-mutant and IDH-wild patients were 34 years (IQR: 29–43) and 52 years (IQR: 45–59), respectively. Mild to moderate enhancement was observed in 15/19 IDH-mutant patients (79%), while 99/129 IDH-wildtype (77%) had severe enhancement (p-value <0.001). The volume of edema with respect to tumor volume distinguished IDH-mutants from wild phenotypes (peritumoral edema volume < tumor volume was associated with higher IDH-mutant phenotypes; p-value < 0.025). IDH-mutant patients had a median rCBV value of 1.8 (IQR: 1.4–2.0), while for IDH-wild phenotypes, it was 2.6 (IQR: 1.9–3.5) {p-value = 0.001}. On multivariate analysis, a cut-off of 25% necrosis was able to differentiate IDH-mutant from IDH-wildtype (p-value < 0.001), and a cut-off rCBV of 2.0 could differentiate IDH-mutant from IDH-wild phenotypes (p-value < 0.007). Conclusion: Semantic imaging features could reliably predict the IDH mutation status in high-grade gliomas. Presurgical prediction of IDH mutation status could help the treating oncologist to tailor the adjuvant therapy or use novel IDH inhibitors.
+
+IDH (Isocitrate dehydrogenase)-mutants
+necrosis
+rCBV (relative cerebral blood volume)
+gliomas
+grade-4
+Glioblastomas
+This research received no external funding.
+==== Body
+pmc1. Introduction
+
+The management of high-grade gliomas has undergone a paradigm shift with the addition of molecular parameters to morphological features in the World Health Organization (WHO) 2016 classification [1]. The modern-day treatment practices of gliomas are now based on molecular biomarkers to have a biologically homogenous treatment group to study newer interventions in clinical trials. Although previously categorized under grade 4 gliomas as an isocitrate dehydrogenase (IDH) mutant and wildtype, glioblastomas are now considered biologically and molecularly separate entities: glioblastoma IDH-wildtype and IDH-mutant grade 4 astrocytoma [2]. Molecular biomarkers such as IDH and MGMT (O-6 methylguanine methyltransferase) have allowed oncologists to personalize treatment and prognosticate the disease better than it used to be a decade earlier [3].
+
+Despite multimodal therapy that includes gross total resection (GTR), radiotherapy, and chemotherapeutics such as temozolomide (TMZ), the prognosis for grade 4 gliomas is dismal with a median survival of only 14 months, and <5% of patients survive beyond five years [1]. This calls for a more concerted approach to understanding the disease biology and the factors associated with its outcome. Literature studies have shown that age, performance status, and treatment-related factors can prognosticate these tumors. However, these factors lack the accuracy to predict response to therapy [4]. With a better understanding of biology and the advent of newer molecular techniques, researchers have been able to show unique biomarkers that could predict treatment response and prognosticate these tumors with a high degree of accuracy, paving the way for a more personalized treatment approach. The two molecular biomarkers of significant interest that have translated into clinical practice are IDH and MGMT, which are responsible for the epigenetic alterations in grade 4 gliomas. Evaluating these biomarkers have become a norm in tailoring therapy and disease prognostication [5].
+
+IDH plays an essential role in the Kreb’s cycle by converting isocitrate to alpha-ketoglutarate. Mutated IDH converts alpha-ketoglutarate into 2-hydroxyglutarate, an oncometabolite responsible for the epigenetic changes in gliomas and associated with improved prognosis. Therefore, IDH-mutants have a better prognosis compared to wild phenotypes. Thus, IDH is a diagnostic and prognostic biomarker for gliomas [6]. Mutated IDH also drives increased methylation in gliomas [7]. MGMT is a DNA (deoxyribonucleic acid) repair enzyme, detoxifying temozolomide (TMZ)-induced DNA damage. Clinically, high MGMT protein expression has been associated with therapeutic resistance to DNA-alkylating agents apart from having prognostic significance [8].
+
+Typically, these markers can only be assessed from the tumor tissues of the surgical specimen. However, it is well-known that grade 4 gliomas are genetically heterogenous, and targeting may lead to erroneous interpretations [9]. Therefore, using high-quality non-invasive magnetic resonance imaging (MRI) parameters to distinguish grade 4 gliomas with different genetic compositions (radiogenomics) has gained importance for prognostication and therapy selection [10]. Imaging studies have used VASARI (Visually AcceSAble Rembrandt Images) semantic features for the molecular subgrouping of grade 4 gliomas [11].
+
+Given the inherent tumor heterogeneity on histopathology and the universal availability of MRI, we envisaged multiparametric semantic MRI features in a large cohort of grade 4 glioma patients to classify them based on the IDH status as confirmed by gold standard immunohistochemistry (IHC) with or without gene sequencing.
+
+2. Materials and Methods
+
+2.1. Patient Selection
+
+This was a retrospective chart review of 148 grade 4 glioma patients in whom we had the baseline MRI and IDH mutational status. The study was carried out after approval from the Institutional Ethics Committee (IEC). One hundred and forty-eight patients were analyzed after assessing the eligibility criteria: availability of baseline pre-treatment MRI and IDH mutational status in our hospital’s electronic medical records (EMR).
+
+2.2. MR Protocol
+
+The MRI sequences performed were: T2 fast spin-echo (time to repeat/time to echo–TR/TE: 2700/100), fluid attenuation and inversion recovery–FLAIR (TR/TE: 9000/120; inversion time: 2200 ms), unenhanced T1 spin-echo and three planes of contrast-enhanced T1 spin-echo (TR range/TE: 600–700/20), axial gradient-echo images (TR/TE: 570/30), and axial diffusion-weighted images (TR/TE: 8300/70; b-1000 s/mm2; 4-mm thickness). Dynamic susceptibility contrast-enhanced (DSC) perfusion imaging was performed with the first-pass acquisition of gadolinium-based contrast injected at 0.2 mmol/kg, followed by a saline chaser using a power injector. The processing of perfusion images for relative cerebral blood volume (rCBV) was performed using a leakage correction algorithm.
+
+2.3. MR Imaging Parameters
+
+We adopted the standard VASARI imaging features with an expanded set of parameters to study their association with IDH status [12]. The VASARI features and extended imaging parameters are provided in Supplementary Table S1.
+
+Pre-treatment multiparametric MRI was assessed for tumor location, laterality (right, left, or midline), enhancement pattern subcategories I, II, and III (I–mild/moderate and severe: based on enhancement intensity, II–homogeneous/heterogeneous enhancement, and III–rim/nodular/solid/patchy type of enhancement), proportion of enhancing tumor (<25%, 25–50%, and >50% of tumor), eloquent cortex involvement, percentage necrosis (nil, <25%, 25–50%, >50% of tumor volume), proportion of edema (<tumor volume, equal to tumor volume, >tumor volume), presence/absence of hemorrhage, presence/absence of cysts (if present, whether cyst was with hemorrhage), unifocal/multifocal/multicentric, tumor size (<2 cm, 2–5 cm, and >5 cm in its longest dimension), presence of satellite lesions, presence of leptomeningeal spread, midline shift (absent, mild: <5 mm, moderate: 5–10 mm, and severe >10 mm), tumor crossing midline, presence of calvarial remodelling, presence of restricted diffusion, presence of ependymal invasion, epicenter (cortical gray matter/deep white matter) with presence of subcortical involvement, tumor margins (well-defined, ill-defined, and well-defined with areas of focal infiltration), presence of FLAIR/T2 mismatch (homogeneous or heterogeneous signal intensity on T2WI and relative hypointensity on FLAIR with a peripheral hyperintense rim), rCBV value, and closeness to the subventricular zone (Appendix A). The radiologist reviewing the imaging features was blinded to the patient’s details and IDH status.
+
+2.4. Mutational Analysis
+
+Patients’ surgical pathology reports from electronic medical records (EMR) were used for IDH mutational status. IDH status was available for all 148 grade 4 glioma patients. The standard institutional practice is to perform immunohistochemistry for IDH status, which was considered the gold standard and confirmed by Sangers sequencing for IDH1R132 and IDH2R172 loci if required.
+
+2.5. Statistical Analysis
+
+Statistical analysis was performed using the Statistical Package for the Social Sciences software (SPSS, ver. 21). Descriptive statistics such as frequencies and percentages were used for the categorical variables, and mean and standard deviation (SD) for the continuous variables. Univariate analyses were done using the Fisher’s exact test or the chi-square test. Multivariate stepwise logistic regression analyses were conducted to evaluate the risk factors for IDH mutation status. Variables with a p-value of < 0.05 on the univariate analysis were used as inputs for the multivariable analysis. A p-value < 0.05 was considered statistically significant.
+
+3. Results
+
+3.1. Patient Demographic and Tumor Characteristics
+
+From the neuro-oncology database, 148 patients were taken up for the study. Most grade 4 glioma patients were IDH-wildtype (n = 129), while IDH-mutant phenotype was observed in only 19 patients, and their representative images are provided in Figure 1 and Figure 2. The male-to-female ratio was 2:1 (males: 99 and females: 49). The median age of patients who harbored IDH mutations was significantly lower than the patients who were IDH-wildtype. Specifically, for the IDH-mutant group, median age was 34 years (interquartile range, IQR: 29.5–43), while for the IDH-wildtype group, median age was 52 years (IQR: 45–59). We observed that 13/19 (68.4%) IDH-mutant patients had left hemispheric predominance than 55/129 IDH-wildtype patients (42.6%). The frontal lobe was predominantly involved in IDH-mutants, while multilobar involvement was more common in IDH-wildtypes. The patient and tumor demographic profiles are summarized in Table 1.
+
+3.2. MRI Parameters of IDH-Wildtype vs. Mutant Phenotype Tumors
+
+Univariate analysis of the semantic MRI features of IDH-mutant vis-à-vis IDH-wildtype grade 4 gliomas have been summarized in Table 2.
+
+Pre-contrast MRI parameters (T1, T2, FLAIR, diffusion, and gradient echo): the absence of perilesional edema and edema volume less than the tumor volume (15.8% and 57.9%, respectively) were commonly associated with IDH-mutants. In comparison, IDH-wildtype tumors had perilesional edema volume equal to and more than tumor volume in 27.1% and 17.8% of patients, respectively (Figure 3). The overall presence of cysts (Figure 4) was observed in 22 patients (14.8%). It was predominant in IDH-mutant phenotypes (31.6%). However, hemorrhagic cysts (Figure 5) were observed in two patients of IDH-mutant phenotypes, which were conspicuously absent in IDH-wildtypes. Subcortical involvement (Figure 6) was predominant in IDH-mutants (94.7%).
+
+Presence of T2-FLAIR mismatch (Figure 7) was seen in 15.8% of IDH-mutants and 3.9% of IDH-wildtypes (p-value 0.067), although not statistically significant. Other parameters such as tumor location, involvement of eloquent cortex, presence of hemorrhage, tumor size, tumor crossing midline, diffusion restriction, multicentricity/multifocality, and distance from subventricular zone did not correlate with IDH status.
+
+Post-contrast MRI T1 parameters: among the IDH-mutants, nine (47.4%) had mild enhancement, six (31.6%) had moderate enhancement, and only four patients had severe enhancement. A proportion of 99/129 IDH-wildtypes (76.7%) were associated with severe enhancement (Figure 8). A patchy enhancement pattern was seen in 11/19 (57.9%) of patients with the IDH-mutant phenotype. However, rim enhancement was common in IDH-wildtypes (104/129; 80.6%) (Figure 9). In our cohort, absence of necrosis (15.8%) and < 25% necrosis (57.9%) was commonly associated with IDH-mutants (Figure 10). In comparison, IDH-wildtypes had predominantly 25–50% necrosis (27.1%) and >50% necrosis (59.7%). The presence of dural enhancement was found only in IDH-wildtypes (24%) (Figure 11).
+
+Other parameters such as the proportion of the enhancing tumor, leptomeningeal spread, satellite lesions, calvarial remodeling, and ependymal invasion did not correlate with the IDH status. These are summarized in Supplementary Table S2.
+
+MRI perfusion parameter: the rCBV values were available for 124/148 patients. IDH-mutants had a median rCBV of 1.8 (IQR: 1.4–2.0), which was significantly lower than the IDH-wildtypes with a median value of 2.6 (IQR: 1.9–3.5) (p-value 0.001).
+
+On multivariate analysis, using a stepwise logistic regression, the MRI parameters of necrosis of > 25% on CE-MRI (p-value < 0.001) and rCBV cut-off of > 2.0 (p-value 0.007), independently correlated for IDH-wildtype phenotype while the other semantic features that were significant on the univariate analysis lost their significance on the multivariate analysis (Table 3). Figure 12 shows the graphical abstract for this study.
+
+4. Discussion
+
+This study attempts to identify the semantic imaging features on multiparametric MRI that best define IDH mutation status against the gold standard immunohistochemistry to predict these mutations. To the best of our knowledge, this study includes one of the largest cohorts of grade 4 gliomas with a description of its imaging morphology at diagnosis and radiopathological correlation.
+
+In our cohort, we found that rCBV and the proportion of necrosis accurately predicts the IDH mutation status on multivariate analysis. The median rCBV for IDH-mutants was 1.8 (IQR: 1.4–2.0), which was significantly lower than the IDH-wildtypes with a median of 2.6 (IQR: 1.9–3.5) on univariate analysis. On multivariate analysis, the rCBV cut-off of <2.0 was able to differentiate IDH-mutants from IDH-wildtype tumors. Our results corroborate with various other studies [13,14,15,16]. Additionally, studies have shown a higher nCBV (normalized CBV) in IDH-wildtypes [17]. The hemodynamic tissue signature segmentation model explains the reduced rCBV in mutant phenotypes [18]. Literature studies have attributed the lower rCBV in IDH-mutants to reduced angiogenesis in the tumor tissue while a positive association of IDH-wildtype tumors have been attributed with increased necrosis [19]. In our study, the percentage of necrosis in IDH-mutant cohorts was <25% of the entire tumor volume, while in IDH-wild phenotypes necrosis was >25%. These findings corroborate the results of several studies [13,14,20]. Park et al. observed that a cut-off necrosis of <33% of the tumor was commonly associated with IDH-mutants [20]. The increased necrosis and non-enhancing tumors in wildtype phenotypes have been attributed to augmented intratumoral hypoxia that results from the activation of the coagulation pathway and intravascular thrombosis leading to excessive tumor necrosis [13,14].
+
+We observed that a mild to moderate and patchy enhancement was commonly associated with the IDH-mutant phenotype tumors. Similarly, IDH-wildtype tumors had severe or intense rim enhancement, a notable feature documented in other literature studies [14,15,16]. Molecular- and genetic-level research provides few valid reasons for these significant associations. It has been observed that IDH-mutant tumors have reduced expression of vascular endothelial growth factor and thereby, reduced vascular permeability leading to reduced enhancement in mutant subtype tumors compared to wildtype tumors [15]. Minimal to mild contrast enhancement in IDH-mutants was attributed to a lack of microvascular proliferation resulting in reduced neoangiogenesis, vascular permeability, and contrast enhancement [13]. Secondly, IDH-wildtypes are known to have increased expression of hypoxia-inducible factor-1α (HIF-1α), which is associated with an increased expression of proangiogenic factors such as vascular endothelial growth factor-A (VEGF-A) and platelet-derived growth factor-A (PDGF-A), responsible for neoangiogenesis leading to increased contrast enhancement [14]. Carrillo et al. showed an increased association of rim enhancement in MGMT unmethylated patients [15].
+
+The absence of peritumoral edema or edema volume less than tumor volume was commonly associated with IDH-mutants, while peritumoral edema volume equal to or more than tumor volume was associated with IDH-wildtypes. Similar results were documented in studies by Lasocki et al. [11] and Patel et al. [16]. Lasocki’s group obtained a cut-off value of 33% to differentiate IDH-mutant from IDH-wildtype tumors. IDH-mutants were associated with the presence of cysts, which is in concordance with other studies [21].
+
+In the present study, left lobe predominance was associated with IDH-mutant tumors, which concurs with the observations of a prior survey by Ellingson et al. [22]. Left hemispheric predominance is a common finding in MGMT-methylated tumors. In our cohort, all the IDH-mutant patients had MGMT methylation. Although literature studies have no proper explanation for this phenomenon, studies have demonstrated that MGMT-methylated tumors have a left hemispheric predominance [22] and most of the MGMT-methylated tumors are IDH-mutant subtypes. Further research needs to be conducted to understand the predisposition of IDH-mutated and MGMT-methylated tumors toward the left hemisphere. Subcortical involvement in our study was primarily seen in IDH-mutants (94.7%). A plausible explanation for this association could be the preponderance of deep white matter involvement by wildtype tumors. Dural enhancement was absent in all IDH-mutants and was present in 24% of IDH-wildtype tumors, probably due to increased vascularity and dural invasion leading to increased dural enhancement. These observations in our study are novel and yet to be documented in the literature.
+
+The T2-FLAIR mismatch sign was predominant in IDH-mutants, characterized by homogeneous or heterogeneous signal intensity on T2WI and relative central hypointensity on FLAIR with a peripheral hyperintense rim [16]. However, in the present study, 15.8% of IDH-mutants and 3.9% of IDH-wildtypes had a peripheral hyperintense rim.
+
+Being a retrospective study, we acknowledge that our results are limited by the inherent bias associated with all retrospective studies. Study designs with still larger sample sizes or prospective studies are needed in this domain to address the inequalities between IDH-mutant and wildtype cohorts. Although a single institutional study, the results are derived from a large cohort of patients who had uniform preoperative MRIs and underwent molecular studies with the internationally recommended gold standard test. We obtained a significant correlation between IDH mutational status and various imaging parameters that corroborate the literature studies. We documented a few new and unique features such as enhancement patterns–rim/nodular/patchy/solid, dural enhancement, and subcortical involvement, which have been highlighted in our study.
+
+5. Conclusions
+
+Semantic imaging features reliably predicted the IDH status in patients diagnosed with grade 4 gliomas. The correlations were more robust when an advanced technique such as perfusion was employed. Tumor necrosis of <25% and rCBV values of <2.0 stood out as independent imaging surrogates for IDH mutation. With the evolution in glioma therapeutics, the advent of newer strategies, and the ongoing trials for targeted therapies, we envisage a need for molecular predictions based on fast, non-invasive, and easy-to-adopt semantic radiological features shortly to select outpatients for targeted therapeutic interventions.
+
+Supplementary Materials
+
+The following are available online at https://www.mdpi.com/article/10.3390/jpm13010072/s1, Table S1: VASARI imaging parameters with its modifications, and Table S2: MR imaging parameters which did not significantly correlate with IDH status.
+
+Click here for additional data file.
+
+Author Contributions
+
+Conceptualization: J.S.G. and A.S. (Arpita Sahu); Methodology: N.G.P., A.S. (Arpita Sahu), S.E., A.S. (Ayushi Sahay), R.M., A.K.C., S.M.D., A.D., A.C., P.P. and P.S.; Validation: J.S.G., P.S. and T.G.; Formal analysis: N.G.P., R.M., A.C. and P.P.; Investigation: A.C. and A.S. (Arpita Sahu); Data curation: N.G.P., A.S. (Arpita Sahu), S.E., A.S. (Ayushi Sahay) and A.K.C.; Writing—original draft: N.G.P., A.S. (Ayushi Sahay), R.M., A.D. and A.C.; Writing—review and editing: J.S.G., A.S. (Arpita Sahu), S.M.D., P.S., A.A.M. and T.G.; Visualization: S.E., A.K.C., A.D., A.A.M. and T.G.; Supervision: A.S. (Arpita Sahu), S.M.D., J.S.G., S.E., P.S. and A.A.M.; Project administration: A.S. (Arpita Sahu). All authors have read and agreed to the published version of the manuscript.
+
+Institutional Review Board Statement
+
+A consent waiver was obtained, as this was a retrospective study.
+
+Informed Consent Statement
+
+Consent waiver obtained from IRB/IEC.
+
+Data Availability Statement
+
+Not applicable.
+
+Conflicts of Interest
+
+The authors declare no conflict of interest.
+
+Appendix A. Glossary of Terms
+
+1. Tumor location: Geographic epicenter of the tumor or the location of the largest part of the tumor. It can be a single or more than one lobe. Location includes the following: Frontal, Parietal, Temporal, Occipital, Insular, Deep gray matter and Brainstem and cerebellum.
+
+2. Tumor laterality: The side at which the tumor is epicentered, namely
+
+-Right, Left and Central or bilateral
+
+3. Enhancement pattern: It is calculated based on subjective qualitative assessment of the degree of contrast enhancement of the entire or part of the tumor on post contrast T1w sequences comparing to pre contrast T1w sequence.
+
+It is further subdivided into
+
+3. Homogenous/heterogenous: Whether the tumor is enhancing homogenously or heterogeneously in its entire portion.
+
+4. Mild/Moderate and severe: Qualitative visual assessment of the degree of contrast enhancement of the entire tumor or part of the tumor.
+
+5. Rim/Nodular/Solid/Patchy: Rim enhancement is provisionally defined as peripheral rim enhancement with central non-enhancing areas. Nodular enhancement is provisionally defined as enhancing nodule with remaining non-enhancing areas. Solid enhancement is provisionally defined as near homogenous or heterogenous enhancement of the entire tumor. Patchy enhancement is provisionally defined as non-uniform distribution of enhancing and non-enhancing areas within the tumor.
+
+6. Proportion enhancing: It is a subjective qualitative assessment of the proportion of the enhancing tumor and is provisionally grouped into four categories namely
+
+-No enhancing part, <25% of tumor, 25–50% of tumor and >50% of tumor.
+
+7. Eloquent brain involvement: Involvement of the eloquent cortex or involvement of the underlying subcortical white matter of the eloquent cortex.
+
+Following eloquent cortex were included in our study,
+
+-Wernicke’s, Broca’s, Motor and Vision.
+
+8. Necrosis: It is the portion of the tumor which is not enhancing on post contrast sequence and is T1 hypointense and T2 hyperintense with irregular borders. It is provisionally grouped into four subjective categories, namely
+
+-No necrosis, <25% of tumor, 25–50% of tumor and >50% of tumor.
+
+9. Edema: It is defined as the T2 and FLAIR hyperintense areas/ region surrounding the tumor. It is provisionally grouped into four subjective categories, namely
+
+-No edema, less than tumor volume, equal to tumor volume and greater than tumor volume.
+
+10. Hemorrhage: It is defined as the area of GRE/SWI blooming within the tumor or any area of T1 hyperintensity or T2 hypointensity.
+
+11. Cysts: It is defined as relatively well-defined round or oval areas of T2 hyperintensity and T1 hypointensity, paralleling the CSF intensity in all sequences with a smooth, thin and regular enhancing or non-enhancing rim. Internal septations can be present or absent.
+
+12. Multifocal/multicentric:
+
+-Focal: It is defined as single tumor localized to one region of the brain parenchyma.
+
+-Multifocal: It is defined as at least one not contiguous lesion with the dominant tumor and is outside the region of edema surrounding the dominant tumor. It can be either enhancing or non-enhancing.
+
+This can be defined as those resulting from dissemination or growth or spread via commissural or other pathways, or via CSF channels or local metastases.
+
+-Multicentric: Two or more widely separated lesions in different lobes or hemispheres that are not attributed to one of the above-mentioned pathways of spread.
+
+-Gliomatosis: It refers to generalized neoplastic transformation of the white matter of most of a hemisphere.
+
+13. Tumor size: It is defined as the maximum longest diameter of the tumor on axial plane (anteroposterior and transverse dimensions) and the craniocaudal dimension measured on coronal or sagittal plane. However, the single largest dimension was only taken in to account. It was further subdivided into
+
+-Maximum dimension less than 2 cm, between 2–5 cm and more than 5 cm.
+
+14. Satellite lesions: It is defined as an area of enhancement within the region of edema surrounding the index lesion and is not contiguous in any part with the major tumor mass.
+
+15. Leptomeningeal spread: It is defined as the enhancement of the overlying pia/arachnoid layer either in continuity or not in continuity with enhancing or non-enhancing tumor.
+
+16. Midline shift: It is defined as the mass effect with resulting midline shift of the brain to contralateral side. It was further subdivided into
+
+-No midline shift, mild midline shift of less than 5 mm, moderate midline shift between 5–10 mm and severe midline shift of more than 10 mm.
+
+17. Tumor crossing midline: It is defined as either the enhancing or non- enhancing tumor crosses into contralateral hemisphere through white matter commissures (not including the herniated ipsilateral parenchyma).
+
+18. Calvarial remodelling: It is defined as erosion of inner table of skull either directly by the tumor or indirectly by the mass effect.
+
+19. Diffusion restriction: It is defined as either presence of restricted diffusion or absence of restriction or facilitated diffusion.
+
+-Restricted diffusion: Hyperintense on diffusion sequence and hypointense on ADC maps.
+
+-No Restriction: Hypointense on diffusion sequence and hyperintense on ADC maps.
+
+-Facilitated diffusion: Hyperintense on diffusion sequence and hyperintense on ADC maps.
+
+20. Ependymal invasion: It is defined as invasion of adjacent ependymal surface by the tumor in continuity with it.
+
+21. Epicenter: It is defined as the epicenter of the tumor which can either be cortical/ deep white matter.
+
+22. Subcortical involvement: It is defined as the presence or absence of the subcortical region by the cortical or deep white matter epicenteredtumor.
+
+23. Tumor margins: The margin characteristics of the tumor are provisionally grouped into three subjective categories, namely
+
+-Well defined: All the margins were smooth and well defined.
+
+-Ill defined: Most of the margins were ill-defined and irregular.
+
+-Well defined with areas of focal infiltration: Most of the margins were smooth and well defined with few areas of ill-defined and irregular margins.
+
+24. FLAIR/T2 mismatch: Homogeneous or heterogeneous signal intensity on T2WI and relative hypointensity on FLAIR with a peripheral hyper intense rim (T2- FLAIR mismatch).
+
+25. rCBV value: The value of relative cerebral blood volume is calculated based on the dynamic susceptibility contrast MRI.
+
+26. Closeness to subventricular zone: The distance of the closest margin of the tumor from the ventricular margin. It is subdivided into
+
+-Distance of the tumor less than 5 mm and more than 5 mm.
+
+27. Dural enhancement: It is defined as the enhancement along the dural lining in case of a cortical based tumor.
+
+28. Presence of vessel on T2w images: Presence or absence of vessels within the tumor on T2 weighted images.
+
+Figure 1 (a–h) FLAIR, T1, T2, post-contrast T1, perfusion color map, and graph representative of IDH-mutant grade 4 astrocytoma. Images a–d show a homogenous well-circumscribed mass without necrosis and edema less than the tumor volume. Images e–h are dynamic susceptibility contrast images showing hypoperfusion.
+
+Figure 2 (a–h) FLAIR, T2, T1, post-contrast T1, GRE, DTI, perfusion color map, and graph representing an IDH-wildtype glioblastoma. Images a–e reveal a heterogeneous peripheral rim-enhancing right frontoparietal mass with significant internal necrosis and hemorrhage. Image f is a DTI image that shows subcortical and adjacent parenchymal infiltration. Images g and h reveal significant hyperperfusion.
+
+Figure 3 (a–d) Representative FLAIR images showing various proportions of edema: (a) none, (b) less than tumor volume, (c) equal to tumor volume, and (d) more than tumor volume.
+
+Figure 4 (a–d) Axial T1w, T2w, FLAIR, and post-contrast T1w images reveal a peritumoral cyst adjacent to the primary tumor. Additional (e,f) sagittal T2w and sagittal T1w are also shown.
+
+Figure 5 (a,b) Axial T2w and FLAIR images reveal intratumoral cysts with fluid-fluid levels within these cysts, suggestive of a hemorrhage.
+
+Figure 6 (a–c) Representative axial FLAIR and coronal T2w images show a tumor with a broad base towards the cortex with subcortical involvement.
+
+Figure 7 Axial FLAIR (a–d) and T2w (e–h) images reveal a T2-FLAIR mismatch sign in the form of hypointensity within the central part with the hyperintense rim on FLAIR, while both are hyperintense on T2.
+
+Figure 8 (a–e) Representative post-contrast T1 images showing various enhancement patterns: (a) no noticeable enhancement; (b,c) severe enhancement, (d) moderate enhancement pattern, and (e) mild enhancement.
+
+Figure 9 (a–f) T1 + C images show: (a,b) rim, (c) nodular, (d,e) patchy, and (f) solid enhancement pattern.
+
+Figure 10 (a–d) T1 + C images from four patients showing various proportions of necrosis: (a) none, (b) < 25%, (c) 25–50%, and (d) > 50%.
+
+Figure 11 (a,b) Representative MR axial T1 + C images show dural enhancement along the right frontoparietal convexity in IDH-wildtype tumor.
+
+Figure 12 Pictorial depiction of the results of our study.
+
+jpm-13-00072-t001_Table 1 Table 1 Patient demographic and tumor profiles, and their correlation with IDH status.
+
+Parameter	IDH-Mutant (N-19)
+Frequency (%)	IDH-Wildtype (N-129)
+Frequency (%)	p-Value	
+Age (years)
+Median (IQR)	
+34 (29.5–43)	
+52 (45–59)	
+<0.001	
+Gender
+Female
+Male	
+5 (26.3)
+14 (73.7)	
+44 (34.1)
+85 (65.9)	
+
+0.680	
+Tumor location
+Frontal
+Temporal
+Insular
+Occipital
+Parietal
+Brainstem/cerebellum
+Multiple sites	
+10 (52.6)
+3 (15.8)
+0
+0
+1 (5.3)
+0
+5 (26.3)	
+36 (27.9)
+19 (14.7)
+2 (1.6)
+4 (3.1)
+19 (14.7)
+2 (1.6)
+47 (36.4)	
+
+0.420	
+Tumor laterality
+Right
+Left
+Bilateral/central	
+3 (15.8)
+13 (68.4)
+3 (15.8)	
+64 (49.6)
+55 (42.6)
+10 (7.8)	0.020	
+Tumor size
+<5 cm
+>5 cm	
+4 (21.1)
+15 (78.9)	
+51 (39.5)
+78 (60.5)	0.136	
+IQR: interquartile range.
+
+jpm-13-00072-t002_Table 2 Table 2 Univariate analysis of MRI imaging correlates of IDH status.
+
+Variable	Parameter	IDH-Mutated (n = 19)	IDH-Wildtype (n = 129)	p-Value	
+Enhancement I	Mild	9 (47.4)	5 (3.9)	<0.001	
+Moderate	6 (31.6)	25 (19.4)	
+Severe	4 (21.1)	99 (76.7)	
+Enhancement III	Rim	6 (31.6)	104 (80.6)	<0.001	
+Nodular	0	2 (1.6)	
+Patchy	11 (57.9)	13 (10.1)	
+Solid	2 (10.5)	10 (7.8)	
+Necrosis	None	3 (15.8)	3 (2.3)	<0.001	
+<25%	11 (57.9)	14 (10.9)	
+25- 50%	2 (10.5)	35 (27.1)	
+>50%	3 (15.8)	77 (59.7)	
+Dural enhancement	AbsentPresent	07 (70.0)	31 (24.0)48 (52.7)	0.013	
+Edema	None	3 (15.8)	3 (2.3)	0.025	
+<tumor volume	11 (57.9)	68 (52.7)	
+Equal to tumor volume	4 (21.1)	35 (27.1)	
+>tumor volume	1 (5.3)	23 (17.8)	
+Cysts *	No	11 (57.9)	115 (89.1)	0.001	
+Yes	6 (31.6)	14 (10.9)	
+Subcortical involvement	Involved	18 (94.7)	94 (72.9)	0.044	
+Not involved	1 (5.3)	35 (27.1)	
+rCBV	Median (IQR)	1.8 [1.4–2.0]	2.6 [1.9–3.5]	0.001	
+IQR—interquartile range. * Two patients of IDH-mutant phenotype had hemorrhagic cysts.
+
+jpm-13-00072-t003_Table 3 Table 3 Multivariate analysis for IDH status.
+
+Variable	Units	Odds Ratio	CI 95%	p-Value	
+Necrosis	None/<25%	Reference			
+	>25%	0.04	[0.01; 0.17]	<0.001	
+rCBV	<=2.0	Reference			
+	>2.0	0.12	[0.03; 0.56]	0.007	
+rCBV—relative cerebral blood volume.
+
+Disclaimer/Publisher’s Note: The statements, opinions and data contained in all publications are solely those of the individual author(s) and contributor(s) and not of MDPI and/or the editor(s). MDPI and/or the editor(s) disclaim responsibility for any injury to people or property resulting from any ideas, methods, instructions or products referred to in the content.
+==== Refs
+References
+
+1. Louis D.N. Perry A. Reifenberger G. Von Deimling A. Figarella-Branger D. Cavenee W.K. Ohgaki H. Wiestler O.D. Kleihues P. Ellison D.W. The 2016 World Health Organization Classification of Tumors of the Central Nervous System: A summary Acta Neuropathol. 2016 131 803 820 10.1007/s00401-016-1545-1 27157931
+2. Louis D.N. Perry A. Wesseling P. Brat D.J. Cree I.A. Figarella-Branger D. Hawkins C. Ng H.K. Pfister S.M. Reifenberger G. The 2021 WHO Classification of Tumors of the Central Nervous System: A summary Neuro-Oncol. 2021 23 1231 1251 10.1093/neuonc/noab106 34185076
+3. Tan A.C. Ashley D.M. López G.Y. Malinzak M. Friedman H.S. Khasraw M. Management of glioblastoma: State of the art and future directions CA Cancer J. Clin. 2020 70 299 312 10.3322/caac.21613 32478924
+4. Alimohammadi E. Bagheri S.R. Sadeghsalehi A. Rizevandi P. Rezaie Z. Abdi A. Prognostic factors in patients with glioblastoma multiforme: Focus on the pathologic variants Acta Neurol. Belg. 2020 120 1341 1350 10.1007/s13760-019-01171-x 31222512
+5. Pandith A.A. Qasim I. Baba S.M. Koul A. Zahoor W. Afroze D. Lateef A. Manzoor U. Bhat I.A. Sanadhya D. Favorable role of IDH 1/2 mutations aided with MGMT promoter gene methylation in the outcome of patients with malignant glioma Futur Sci. OA 2021 7 FSO663 10.2144/fsoa-2020-0057 33552543
+6. Smits M. Van Den Bent M.J. Imaging correlates of adult glioma genotypes Radiology 2017 284 316 331 10.1148/radiol.2017151930 28723281
+7. Cohen A.L. Holmen S.L. Colman H. IDH1 and IDH2 mutations in gliomas Curr. Neurol. Neurosci. Rep. 2013 13 345 10.1007/s11910-013-0345-4 23532369
+8. Yu W. Zhang L. Wei Q. Shao A. O6-Methylguanine-DNA Methyltransferase (MGMT): Challenges and New Opportunities in Glioma Chemotherapy Front. Oncol. 2020 9 1547 10.3389/fonc.2019.01547 32010632
+9. Feraco P. Bacci A. Ferrazza P. Van Den Hauwe L. Pertile R. Girlando S. Barbareschi M. Gagliardo C. Morganti A.G. Petralia B. Magnetic resonance imaging derived biomarkers of IDH mutation status and overall survival in grade III astrocytomas Diagnostics 2020 10 247 10.3390/diagnostics10040247 32340318
+10. Verduin M. Compter I. Steijvers D. Postma A.A. Eekers D.B. Anten M.M. Ackermans L. Ter Laan M. Leijenaar R.T. van de Weijer T. Noninvasive Glioblastoma Testing: Multimodal Approach to Monitoring and Predicting Treatment Response Dis. Markers 2018 2018 2908609 10.1155/2018/2908609 29581794
+11. Lasocki A. Tsui A. Gaillard F. Tacey M. Drummond K. Stuckey S. Reliability of noncontrast-enhancing tumor as a biomarker of IDH1 mutation status in glioblastoma J. Clin. Neurosci. 2017 39 170 175 10.1016/j.jocn.2017.01.007 28214089
+12. Rios Velazquez E. Meier R. Dunn Jr W.D. Alexander B. Wiest R. Bauer S. Gutman D.A. Reyes M. Aerts H.J. Fully automatic GBM segmentation in the TCGA-GBM dataset: Prognosis and correlation with VASARI features Sci. Rep. 2015 5 16822 10.1038/srep16822 26576732
+13. Yamashita K. Hiwatashi A. Togao O. Kikuchi K. Hatae R. Yoshimoto K. Mizoguchi M. Suzuki S.O. Yoshiura T. Honda H. MR imaging-based analysis of glioblastoma multiforme: Estimation of IDH1 mutation status Am. J. Neuroradiol. 2016 37 58 65 10.3174/ajnr.A4491 26405082
+14. Kickingereder P. Sahm F. Radbruch A. Wick W. Heiland S. Deimling A.V. Bendszus M. Wiestler B. IDH mutation status is associated with a distinct hypoxia/angiogenesis transcriptome signature which is non-invasively predictable with rCBV imaging in human glioma Sci. Rep. 2015 5 16238 10.1038/srep16238 26538165
+15. Carrillo J. Lai A. Nghiemphu P.L. Kim H.J. Phillips H.S. Kharbanda S. Moftakhar P. Lalaezari S. Yong W. Ellingson B.M. Relationship between tumor enhancement, edema, IDH1 mutational status, MGMT promoter methylation, and survival in glioblastoma Am. J. Neuroradiol. 2012 33 1349 1355 10.3174/ajnr.A2950 22322613
+16. Patel S.H. Poisson L.M. Brat D.J. Zhou Y. Cooper L. Snuderl M. Thomas C. Franceschi A.M. Griffith B. Flanders A.E. T2–FLAIR mismatch, an imaging biomarker for IDH and 1p/19q status in lower-grade gliomas: A TCGA/TCIA project Clin. Cancer Res. 2017 23 6078 6086 10.1158/1078-0432.CCR-17-0560 28751449
+17. Lee S. Choi S.H. Ryoo I. Yoon T.J. Kim T.M. Lee S.H. Park C.K. Kim J.H. Sohn C.H. Park S.H. Evaluation of the microenvironmental heterogeneity in high-grade gliomas with IDH1/2 gene mutation using histogram analysis of diffusion-weighted imaging and dynamic-susceptibility contrast perfusion imaging J. Neurooncol. 2015 121 141 150 10.1007/s11060-014-1614-z 25205290
+18. Wu H. Tong H. Du X. Guo H. Ma Q. Zhang Y. Zhou X. Liu H. Wang S. Fang J. Vascular habitat analysis based on dynamic susceptibility contrast perfusion MRI predicts IDH mutation status and prognosis in high-grade gliomas Eur. Radiol. 2020 30 3254 3265 10.1007/s00330-020-06702-2 32078014
+19. Wu C.C. Jain R. Radmanesh A. Poisson L.M. Guo W.Y. Zagzag D. Snuderl M. Placantonakis D.G. Golfinos J. Chi A.S. Predicting genotype and survival in glioma using standard clinical MR imaging apparent diffusion coefficient images: A pilot study from the cancer genome atlas Am. J. Neuroradiol. 2018 39 1814 1820 10.3174/ajnr.A5794 30190259
+20. Park Y.W. Han K. Ahn S.S. Bae S. Choi Y.S. Chang J.H. Kim S.H. Kang S.G. Lee S.K. Prediction of IDH1-Mutation and 1p/19q-Codeletion Status Using Preoperative MR Imaging Phenotypes in Lower Grade Gliomas Am. J. Neuroradiol. 2018 39 37 42 10.3174/ajnr.A5421 29122763
+21. Villanueva-Meyer J.E. Wood M.D. Choi B. Mabray M.C. Butowski N.A. Tihan T. Cha S. MRI Features and IDH Mutational Status in Grade II Diffuse Gliomas: Impact on Diagnosis and Prognosis AJR Am. J. Roentgenol. 2018 210 621 10.2214/AJR.17.18457 29261348
+22. Ellingson B.M. Cloughesy T.F. Pope W.B. Zaw T.M. Phillips H. Lalezari S. Nghiemphu P.L. Ibrahim H. Naeini K.M. Harris R.J. Anatomic localization of O6-methylguanine DNA methyltransferase (MGMT) promoter methylated and unmethylated tumors: A radiographic study in 358 de novo human glioblastomas Neuroimage 2012 59 908 916 10.1016/j.neuroimage.2011.09.076 22001163
+

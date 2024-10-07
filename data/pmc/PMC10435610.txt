@@ -1,0 +1,341 @@
+
+==== Front
+Brain Imaging Behav
+Brain Imaging Behav
+Brain Imaging and Behavior
+1931-7557
+1931-7565
+Springer US New York
+
+37067658
+770
+10.1007/s11682-023-00770-w
+Article
+The longitudinal relation between executive functioning and multilayer network topology in glioma patients
+van Lingen Marike R. m.vanlingen@amsterdamumc.nl
+
+12310
+Breedt Lucas C. 123
+Geurts Jeroen J.G. 123
+Hillebrand Arjan 234
+Klein Martin 5
+Kouwenhoven Mathilde C.M. 610
+Kulik Shanna D. 123
+Reijneveld Jaap C. 6710
+Stam Cornelis J. 234
+De Witt Hamer Philip C. 810
+Zimmermann Mona L.M. 12310
+Santos Fernando A.N. 1239
+Douw Linda l.douw@amsterdamumc.nl
+
+12310
+1 grid.12380.38 0000 0004 1754 9227 Department of Anatomy and Neurosciences, Amsterdam UMC location Vrije Universiteit Amsterdam, de Boelelaan 1108, Amsterdam, the Netherlands
+2 grid.484519.5 Amsterdam Neuroscience, Brain Imaging, Amsterdam, the Netherlands
+3 grid.484519.5 Amsterdam Neuroscience, Systems & Network Neurosciences, Amsterdam, the Netherlands
+4 grid.12380.38 0000 0004 1754 9227 Department of Clinical Neurophysiology and MEG Center, Amsterdam UMC location Vrije Universiteit Amsterdam, De Boelelaan 1117, Amsterdam, the Netherlands
+5 grid.12380.38 0000 0004 1754 9227 Department of Medical Psychology, Amsterdam UMC location Vrije Universiteit Amsterdam, De Boelelaan 1117, Amsterdam, the Netherlands
+6 grid.12380.38 0000 0004 1754 9227 Department of Neurology, Amsterdam UMC location Vrije Universiteit Amsterdam, De Boelelaan 1117, Amsterdam, the Netherlands
+7 grid.419298.f 0000 0004 0631 9143 Stichting Epilepsie Instellingen Nederland (SEIN), Heemstede, the Netherlands
+8 grid.12380.38 0000 0004 1754 9227 Department of Neurosurgery, Amsterdam UMC location Vrije Universiteit Amsterdam, De Boelelaan 1117, Amsterdam, the Netherlands
+9 grid.7177.6 0000000084992262 Institute of Advanced Studies, University of Amsterdam, Amsterdam, the Netherlands
+10 grid.16872.3a 0000 0004 0435 165X Cancer Center Amsterdam, Amsterdam, the Netherlands
+17 4 2023
+17 4 2023
+2023
+17 4 425435
+28 3 2023
+© The Author(s) 2023. Springer Nature or its licensor (e.g. a society or other partner) holds exclusive rights to this article under a publishing agreement with the author(s) or other rightsholder(s); author self-archiving of the accepted manuscript version of this article is solely governed by the terms of such publishing agreement and applicable law.
+https://creativecommons.org/licenses/by/4.0/ Open AccessThis article is licensed under a Creative Commons Attribution 4.0 International License, which permits use, sharing, adaptation, distribution and reproduction in any medium or format, as long as you give appropriate credit to the original author(s) and the source, provide a link to the Creative Commons licence, and indicate if changes were made. The images or other third party material in this article are included in the article’s Creative Commons licence, unless indicated otherwise in a credit line to the material. If material is not included in the article’s Creative Commons licence and your intended use is not permitted by statutory regulation or exceeds the permitted use, you will need to obtain permission directly from the copyright holder. To view a copy of this licence, visit http://creativecommons.org/licenses/by/4.0/.
+Many patients with glioma, primary brain tumors, suffer from poorly understood executive functioning deficits before and/or after tumor resection. We aimed to test whether frontoparietal network centrality of multilayer networks, allowing for integration across multiple frequencies, relates to and predicts executive functioning in glioma. Patients with glioma (n = 37) underwent resting-state magnetoencephalography and neuropsychological tests assessing word fluency, inhibition, and set shifting before (T1) and one year after tumor resection (T2). We constructed binary multilayer networks comprising six layers, with each layer representing frequency-specific functional connectivity between source-localized time series of 78 cortical regions. Average frontoparietal network multilayer eigenvector centrality, a measure for network integration, was calculated at both time points. Regression analyses were used to investigate associations with executive functioning. At T1, lower multilayer integration (p = 0.017) and epilepsy (p = 0.006) associated with poorer set shifting (adj. R2 = 0.269). Decreasing multilayer integration (p = 0.022) and not undergoing chemotherapy at T2 (p = 0.004) related to deteriorating set shifting over time (adj. R2 = 0.283). No significant associations were found for word fluency or inhibition, nor did T1 multilayer integration predict changes in executive functioning. As expected, our results establish multilayer integration of the frontoparietal network as a cross-sectional and longitudinal correlate of executive functioning in glioma patients. However, multilayer integration did not predict postoperative changes in executive functioning, which together with the fact that this correlate is also found in health and other diseases, limits its specific clinical relevance in glioma.
+
+Supplementary Information
+
+The online version contains supplementary material available at 10.1007/s11682-023-00770-w.
+
+Keywords
+
+Graph theory
+Network neuroscience
+Functional connectivity
+Eigenvector centrality
+Cognition
+EpilepsieNL08-08 Branco Weiss FellowshipDutch Research Council (Veni)016.146.086 Dutch Research Council (Vidi)198.015 issue-copyright-statement© Springer Science+Business Media, LLC, part of Springer Nature 2023
+==== Body
+pmcIntroduction
+
+Gliomas, originating from glial cells, are the most common primary brain tumors and are fatal. Despite their local appearance on MRI, patients experience varied cognitive complaints that cannot be attributed to location alone (De Baene et al., 2019; van Kessel et al., 2017). Executive functioning (EF), including higher-order cognitive processes such as planning, working memory, inhibition and flexibility, is often affected at diagnosis, before treatment (Noll et al., 2020; Tanzilli et al., 2022; van Kessel et al., 2017), and may contribute to lower quality of life (Weyer-Jamora et al., 2021). Subsequently, there is large individual variability in cognitive trajectories across the disease course. After tumor resection, improving, stable, and deteriorating EF is observed (Lemaitre et al., 2021; Ng et al., 2019; Noll et al., 2015; Satoer et al., 2012; Sinha et al., 2020; Tabor et al., 2021; Talacchi et al., 2011; Wu et al., 2011). Many patients also receive chemo- and/or radiotherapy, depending on tumor subtype and residual tumor, which impacts EF both positively and negatively according to the literature (Hilverda et al., 2010; Koutsarnakis et al., 2021; Tanzilli et al., 2022). Other relevant correlates of poorer EF are higher age, lower Karnofsky performance status (KPS), frontal tumor location (Fang et al., 2014), and use of antiepileptic drugs (Klein et al., 2004). However, it remains impossible to predict individual cognitive trajectories with reasonable accuracy, leading to uncertainty about future cognitive performance.
+
+The currently known neural correlates of EF mainly comprise connectivity and network-based variables, reflecting the distributed brain networks involved. Functional brain connectivity refers to the statistical interdependencies between brain activity of network nodes (e.g. brain regions (Aertsen et al., 1989; Friston, 1994)). Network theory can assess local and global properties of the brain network (Bassett & Sporns, 2017; Sporns et al., 2005; Stam & Reijneveld, 2007; van den Heuvel & Hulshoff Pol, 2010). Cognition in general, and EF particularly, depends on long-distance integration across distributed brain regions, which can be operationalized through the centrality of regions within cognitively relevant networks (Baum et al., 2017; Deco et al., 2021; Medaglia et al., 2015; Sauseng et al., 2005).
+
+In glioma, functional MRI-based connectivity of the frontoparietal network (FPN) is relevant for EF (Cochereau et al., 2020; Kocher et al., 2020; Landers et al., 2021; Lang et al., 2017; Maesawa et al., 2015; Noll et al., 2015, 2021; Tordjman et al., 2021). Using magnetoencephalography (MEG), frequency-specific connectivity has also been linked to EF in these patients: poorer EF at diagnosis relates to lower alpha band (8-13 Hz) functional connectivity (Derks et al., 2019), and particularly lower integrative connectivity in the theta (4-8 Hz), alpha, and beta (13-30 Hz) bands associate with poorer EF cross-sectionally (Bosma et al., 2009) and longitudinally (Carbo et al., 2017; van Dellen et al., 2012a).
+
+Previous studies constructed separate functional networks for each frequency band, which may relate to particular cognitive and EF aspects, e.g. alpha band oscillations to attention (Klimesch, 2012) and theta and gamma band (coupling) to working memory (Kavanaugh et al., 2019). In EF, multiple cognitive aspects are combined, theoretically rendering it a relevant domain for frequency-integrated investigations. The multilayer network approach can be used to synergize frequencies, by defining a network within each frequency (layer), and then coupling these layers (De Domenico et al., 2013). The same nodes (i.e. brain regions) are present in each layer (Brookes et al., 2016; De Domenico et al., 2016; Guillon et al., 2017; Tewarie et al., 2016). Indeed, lower multilayer centrality of the FPN (including MEG and MRI layers) related to poorer EF in healthy subjects (Breedt et al., 2021) and lower centrality of the default mode network/hippocampus to poorer Mini Mental State Exam scores in Alzheimer’s disease (Yu et al., 2017).
+
+In this study, we tested the hypotheses that (1) lower multilayer FPN integration correlates with poorer EF at diagnosis, and (2) changes in EF and multilayer centrality coincide. Finally, we hypothesized (3) lower multilayer centrality at diagnosis to predict deteriorating EF after tumor resection.
+
+Methods
+
+Patients
+
+Patients between 2011 and 2021 at Amsterdam UMC with suspected diffuse glioma were eligible for participation in an ongoing prospective study on brain networks. Exclusion criteria were (1) age < 18 years, (2) psychiatric disease, (3) central nervous system comorbidities, (4) insufficient mastery of the Dutch language, and (5) inability to communicate adequately. After resection, molecular characteristics were assessed as part of clinical routine, including prognostically favorable isocitrate dehydrogenase (IDH) mutations and 1p/19q codeletions (Louis et al., 2021). This led to three subgroups: IDH-wildtype glioblastoma, IDH-mutant, non-codeleted astrocytoma, and IDH-mutant, 1p/19q-codeleted oligodendroglioma.
+
+Patients underwent neuropsychological assessments (NPA (Derks et al., 2019)) and MEG at two time points: preoperatively at diagnosis (T1), and approximately one year after tumor resection (T2). Follow-up MEG and NPA took place between 8 and 20 months after resection, with a maximum of 3 months between them.
+
+The current analysis was preregistered before selecting eligible patients and performing analyses (https://osf.io/83tbq).
+
+The VUmc Medical Ethical Committee approved this study, which was conducted according to the Declaration of Helsinki. All participants provided written informed consent before participation.
+
+Neuropsychological assessment
+
+Three EF tests were performed: the Categoric Word Fluency test (Mulder et al., 2006) for lexical access and updating aspects of EF, the Concept Shifting Test (van der Elst et al., 2006) for attention, working memory and set shifting, and the Stroop Color-Word Test (Hammes, 1978) for attention and inhibition (Supplementary Materials). Each test yielded one final score, which was adjusted for age, sex, and educational level and converted to a Z-score using validated normative data. We used a common cut-off value of Z < -1.5 to indicate cognitive impairment (Lezak, 2004).
+
+Magnetoencephalography
+
+MEG was recorded for 5 min in supine position during eyes closed no-task resting-state in a magnetically shielded room (VacuumSchmelze GmBh, Hanau, Germany), using a 306-channel (102 magnetometers, 204 gradiometers) whole-head MEG system (Elekta Neuromag Oy, Helsinki, Finland) and a sampling frequency of 1250 Hz. Anti-aliasing (410 Hz) and high-pass filters (0.1 Hz) were applied online.
+
+Preprocessing involved visual inspection, noisy channel removal, and noise removal in the remaining signals (see Supplementary Materials). Anatomical MRI was used for co-registration with the digitized scalp surface, and the Automated Anatomical Labeling atlas (Tzourio-Mazoyer et al., 2002) for parcellation of the cortical ribbon into 78 regions.
+
+Broadband time series of neuronal activity were then reconstructed for each region’s centroid (Hillebrand et al., 2016) using a scalar beamformer approach (Hillebrand et al., 2012). For each patient, we included the first 60 epochs of 4096 samples (3.28s; total > 3 min). Fast Fourier transforms filtered the time series into six frequency bands: delta (0.5-4 Hz), theta (4-8 Hz), lower alpha (8-10 Hz), upper alpha (10-13 Hz), beta (13-30 Hz), and gamma (30-48 Hz). Finally, we computed and averaged the phase lag index (PLI (Stam et al., 2007)) between the frequency-filtered time series of region pairs using custom-made MATLAB scripts (R2020b, MathWorks, Natick, MA, USA; see https://github.com/multinetlab-amsterdam for code and data), yielding a single weighted network per frequency band per patient per time point.
+
+Multilayer network analysis
+
+We used the multiplex network (Bianconi, 2018), which contains interlayer links with unitary weight only between the same nodes or brain regions across layers. Since differences in weight distribution across network layers impact multilayer network topology (Mandke et al., 2018), we first binarized each layer separately through Kruskal’s algorithm to construct minimum spanning trees (MSTs (Stam et al., 2014; Tewarie et al., 2015)). The MST recapitulates the network’s backbone, by incorporating each node and optimizing the overall weight of the network with n-1 connections (here 77) and no cycles. The MST has been amply applied in MEG, with a recent meta-analysis revealing consistent transdiagnostic MST alterations (Blomsma et al., 2022).
+
+We then calculated nodal multilayer eigenvector centrality (EC) as topological network measure of integration according to De Domenico et al. (2016) in Python (version 3.6, Python Software Foundation). EC takes the number of connections of a node and their neighboring nodes into account (Lohmann et al., 2010). EC relates to cognition in MEG literature (Hardmeier et al., 2012) and to EF in particular when using the multilayer approach (Breedt et al., 2021). Finally, nodal EC values of FPN nodes (according to (Yeo et al., 2011); Supplementary Table 1) were averaged, resulting in one multilayer FPN EC value per patient per time point (Fig. 1).
+
+Fig. 1 Schematic overview of the MEG multilayer analysis pipeline. For every participant, magnetoencephalography (MEG) data was preprocessed and projected to the brain; the brain was parcellated according to the Automated Anatomical Labeling (AAL) atlas; the Phase Lag Index (PLI) was used to compute weighted connectivity matrices; minimum spanning trees (MST) of the weighted matrices were constructed using Kruskal’s algorithm; and finally an LxN by LxN supra-adjacency matrix representing a multilayer network of the six MEG frequency bands as layers (all with N = 78 nodes for each AAL region and M = N – 1 = 77 binary intralayer links) was constructed, where diagonal blocks contain the intralayer connections for each frequency band and the off-diagonal blocks the interlayer connections; like the intralayer connections, we set all interlayer link weights to 1, obtaining binary multilayer networks; now, multilayer eigenvector centrality (EC) of the frontoparietal network (FPN) was calculated and averaged for each patient and timepoint. NPA = neuropsychological assessment, EF = executive functioning
+
+Statistical analysis
+
+Statistical analyses were performed using IBM SPSS (version 26.0, IBM Corp, Armonk, NY, USA). Paired t-tests (or nonparametric Wilcoxon signed-rank tests) assessed cognitive and network changes.
+
+Backward linear regressions tested whether multilayer EC associated with EF at T1. For each EF aspect, a separate regression was performed. Based on literature (Derks et al., 2019; van Kessel et al., 2017; Wefel et al., 2016), glioma subtype and tumor location were selected as covariates. Potential additional covariates were selected through significant (p < 0.05) associations with the dependent variable (through correlation coefficients for age, time between resection and T2 NPA/MEG, tumor volume, percent tumor overlap with FPN; through t-tests or Mann-Whitney U tests for tumor lateralization, presence of epilepsy, education, sex, handedness, active treatment during or < 4 weeks before T2; through (Kruskal-Wallis) ANOVA for molecular subtype). Patients with tumor progression before T2 were only included for this cross-sectional T1 analysis.
+
+To test whether multilayer EC changes (T2-T1) related to cognitive changes (T2-T1), backward linear regressions were performed. Based on literature (Hilverda et al., 2010; Koutsarnakis et al., 2021), type of anti-tumor treatment (radiotherapy, chemotherapy, chemoradiation, or no treatment) was included as covariate.
+
+Backward linear regressions tested whether T1 multilayer EC predicted changes in EF. Again, anti-tumor treatment was included as covariate, and active treatment was explored as an additional covariate.
+
+The level of significance was set at p < 0.05, and after Bonferroni correction at p < 0.0167 (p-value divided by three for each EF aspect).
+
+Results
+
+Patient characteristics
+
+Thirty-seven participants (mean age 41.7 years ± SD 12.3) completed NPA and MEG at T1 and T2 (Table 1, see Supplementary Fig. 1 for lesion map). For two patients, the T1 set shifting score could not be calculated due to missing motor scores; three patients had incomplete T2 inhibition scores; one patient had a missing T2 word fluency score. In 4 patients, the interval between T2 MEG and NPA was > 3 months (range 4–7), but they were included as they had stable disease for at least 17 months after surgery.
+
+Table 1 Patient characteristics
+
+	Glioma patients (n = 37)	
+Sex (males/females)	29/8	
+Age in years (mean ± SD)	41.7 ± 12.3	
+Education Verhage score (median (range))*	6 (4–7)	
+Karnofsky Performance Status (KPS, median (range))	100 (80–100)	
+Epilepsy (yes/no)**	33/4	
+Use of antiepileptic drugs (yes/no)	32/5	
+Interval resection-MEG in months (median (range))	12 (8–20)	
+Interval resection-NPA in months (median (range))	12 (7–20)	
+Handedness (left/right)	9/28	
+Postoperative treatment before T2		
+ Radiotherapy (n)	4	
+ Concomittant chemoradiation followed by adjuvant temozolomide (n)	6	
+ Radiotherapy followed by adjuvant chemotherapy (n)	14	
+ None (n)	13	
+Active chemotherapy during or < 4 weeks before T2 (n)	6	
+Progression before T2 (yes/no)	7/30	
+Tumor grade (II/III/IV)	23/8/6	
+Tumor lateralization (left/right/bilateral)	25/11/1	
+Location		
+ Frontal (n)	16	
+ Temporal (n)	9	
+ Parietal (n)	7	
+ Frontotemporal (n)	3	
+ Insular (n)	1	
+ Occipital (n)	1	
+Molecular subtype		
+ Glioblastoma, IDH-wildtype glioblastoma (n)	6	
+ Astrocytoma, IDH-mutant, non-codeleted (n)	14	
+ Oligodendroglioma, IDH-mutant, 1p/19q-codeleted (n)	16	
+ Astrocytoma, molecular subtype not available (n)	1	
+Tumor volume corrected for head size in mL (median (range))	34.26 (1.78–118.81)	
+Tumor overlap with frontoparietal network in percent (median (range))	2.47 (0–28.1)	
+T1 Multilayer centrality (mean ± SD)	0.41 ± 0.10	
+T2 Multilayer centrality (mean ± SD)	0.42 ± 0.10	
+Set shifting test completed (n at T1/T2)	35/37	
+Word fluency test completed (n at T1/T2)	37/36	
+Inhibition test completed (n at T1/T2)	37/34	
+*Verhage et al., 1964. **Having epilepsy was assessed at T1, none of the participants developed seizures between T1 and T2.
+
+At T1, 8 patients (22%) showed impaired set shifting (Fig. 2A); 2 patients (5%) had impaired word fluency; no patients had impaired inhibition. Longitudinally, 4 patients (11%) became unimpaired and 3 patients (8%) became impaired in set shifting; 4 patients (11%) declined to impaired word fluency; 1 patient (3%) became impaired in inhibition.
+
+Fig. 2 Executive functioning and multilayer integration at both time points. Each panel shows a paired raincloud plot, in which individual data points of each patient at both time points are displayed through the combination of a scatterplot (the ‘rain’), a spaghetti plot, a box plot, and a probability density plot (the ‘cloud’). Panel A shows patients’ Z-scores of the three executive functioning tests. Scores below the dashed line at -1.5 indicate clinically relevant cognitive deficits. Only word fluency changed significantly at the group-level (p = 0.002). Panel B shows patients’ multilayer eigenvector centrality (EC) of the frontoparietal network, which did not change significantly at the group-level.
+
+At the group-level, word fluency declined significantly and survived Bonferroni correction (p = 0.002, Fig. 2A). Inhibition declined non-significantly (p = 0.057). Set shifting remained unchanged (p = 0.441, Supplementary Table 2 shows individual scores, Supplementary Table 3 shows changes exceeding (-)1 Z-score).
+
+At the group-level, multilayer EC did not change (p = 0.755, Table 1; Fig. 2B, Supplementary Fig. 2 visually represents molecular subtypes).
+
+Baseline brain-cognition correlations
+
+For set shifting, having epilepsy or not was included as an additional covariate at T1, whereas no additional covariates were selected for word fluency and inhibition. Lower multilayer EC and having epilepsy significantly related to poorer set shifting after Bonferroni correction (p = 0.017 and p = 0.006 respectively, model p = 0.003; Table 2; Fig. 3A). Multilayer EC was not included in the final models for word fluency and inhibition, but patients with IDH-mutant, 1p/19q-codeleted glioma had better word fluency than IDH-wildtype glioblastoma patients (Supplementary Table 4).
+
+Table 2 Significant regression results concerning multilayer integration
+
+Dependent	adj. R2	F (df)	p-value	Significant predictors	β (stand.)	p-value	Excluded variables	p-value	
+T1 Set shifting	0.269	7.06 (2,31)	0.003*	T1 multilayer EC	0.377	0.017	Non-frontal tumor (ref = frontal)	0.970	
+				Presence of epilepsy (ref = no epilepsy)	-0.437	0.006	IDH-wildtype (ref = IDH-mutant, 1p/19q-codeleted)	0.470	
+							IDH-mutant, non-codeleted	0.324	
+Δ Set shifting	0.283	6.33 (2,25)	0.006*	Δ multilayer EC	0.414	0.022	Interval resection-NPA	0.524	
+				Active treatment at T2 (ref = no active treatment)	0.530	0.004			
+*significant p-value (< 0.0167) after Bonferroni correction. EC = eigenvector centrality, Δ = change score (T2-T1), NPA = neuropsychological assessment.
+
+Fig. 3 Significant associations between multilayer integration and set shifting. (A) Displays the cross-sectional association between multilayer eigenvector centrality (EC) of the frontoparietal network and set shifting performance (n = 35, model p = 0.003), with color codes indicating the included covariate (presence of epilepsy). (B) Shows the longitudinal association between change in multilayer EC (T2-T1) and change in set shifting (T2-T1; n = 28, model p = 0.006), with color codes indicating the included covariate (active chemotherapy at T2). Shaded area: 95% confidence interval.
+
+Longitudinal brain-cognition correlations
+
+Longitudinal regression analyses were performed in patients without tumor progression before T2 (n = 30). At T2, six patients received active chemotherapy, whereas none received active radiotherapy or concomitant chemoradiation. For set shifting, active chemotherapy, resection-NPA interval, and resection-MEG interval correlated with change scores. Due to multicollinearity, only active chemotherapy (not anti-tumor treatment) and resection-NPA interval (not resection-MEG interval) were included. Decreasing multilayer EC and no active chemotherapy were associated with declining set shifting (p = 0.022 and p = 0.004, respectively, model p = 0.006; Table 2; Fig. 3B).
+
+Multilayer EC changes did not relate to changes in inhibition and word fluency (Supplementary Table 4). Patients with IDH-mutant, 1p/19q-codeleted glioma showed greater word fluency decline than IDH-mutant, non-codeleted glioma patients (p = 0.001, Supplementary Fig. 3) and IDH-wildtype glioblastoma (p = 0.005, model p < 0.001).
+
+Baseline predictors of cognitive change
+
+T1 multilayer EC did not predict cognitive change (Supplementary Table 4). Instead, better baseline inhibition and word fluency were associated with declining performance (p = 0.014 and p < 0.001, respectively, model p = 0.022 and p < 0.001, respectively). The model for inhibition did not survive correction for multiple testing. For set shifting, better baseline performance and no active chemotherapy were related to declining scores (model p = 0.016), but individual predictors did not reach significance (p = 0.069 and p = 0.091, respectively).
+
+Discussion
+
+As expected, a proportion of glioma patients showed executive dysfunction, both at diagnosis and after tumor resection. While there were group-level decreases in word fluency only, we found variable individual trajectories for inhibition and set shifting. Partly confirming our hypotheses, lower and decreasing multilayer FPN integration related to poorer and deteriorating set shifting, but not word fluency and inhibition. Contrary to our hypothesis, baseline multilayer centrality did not predict postoperative changes in executive functioning.
+
+Our observed association between multilayer integration and set shifting are in line with previous findings in healthy controls (Breedt et al., 2021), although that study used a composite EF score. Our results also corroborate work in other patient populations (Baggio et al., 2015; Liu et al., 2021; Marchesi et al., 2022), together suggesting that multilayer FPN integration is a general correlate of EF that is preserved in glioma. Central nodes like those within the FPN are thought to facilitate global communication between segregated communities, presumably enabling EF (Bertolero et al., 2017; Sporns, 2013). Our multilayer analysis indeed detects relevant individual EF variation in these patients, explaining ~ 27% of the cognitive variance in set shifting at diagnosis. Furthermore, our findings synthesize previous frequency-specific findings, where pathologically high local connectivity and clustering as well as lower integrative connectivity in specific frequency bands related to poorer cognitive performance (Bosma et al., 2009; Carbo et al., 2017; van Dellen et al., 2012a).
+
+Correlations were significant only for set shifting, potentially reflecting particular sensitivity of multilayer integration towards this aspect of EF and not the other applied tests. Performance on the three tests showed very different distributions, and the large variability in set shifting performance over time may have led to greater statistical power to find correlations with multilayer integration. Certainly, the lack of findings for inhibition and word fluency could also be due to the small and heterogeneous sample. Hence, we should critically evaluate whether these findings are truly specific to set shifting in larger samples. Particularly, although we statistically adjusted for molecular subtype, scores on especially word fluency diverged between these subtypes. Moreover, higher T1 test scores predicted larger decline in word fluency, as also observed one year after epilepsy surgery (Vogt et al., 2018), potentially reflecting regression to the mean. As for covariates, having epilepsy was related to poorer set shifting at T1, congruent with earlier work (Klein et al., 2003). The finding that patients undergoing active chemotherapy at T2 showed improving set shifting remains difficult to interpret, particularly since none of these patients had shown tumor progression. Again, the relatively small sample should be kept in mind, particularly when it comes to the impact of epilepsy, treatment and tumor type on the dependent variables. The small number of patients representing each group may have led to spurious findings in terms of their impact on EF, and we refer readers to the wider literature when interpreting these results (see Supplementary Table 5 for an overview).
+
+Contrary to our hypothesis, we did not find predictive significance of baseline multilayer integration towards EF change. Our current results suggest that, although relevant as a cross-sectional EF correlate in glioma (comparable to other populations), multilayer integration as operationalized here is not specifically relevant for glioma and may not predict EF trajectories in a heterogeneous glioma population.
+
+There are several limitations that we considered when interpreting these results. Firstly, although large for a rare disease, our sample size is relatively small. Furthermore, we included a heterogeneous cohort, while molecular subtype particularly may pertain to both cognitive functioning (Wefel et al., 2016; Zhang et al., 2020) and network features (Jütten et al., 2020; Kesler et al., 2017). Some studies already indicated, like ours, that molecular subtypes may impact both cognition and network topology in a similar fashion, such that the actual brain-behavior associations are preserved across subtypes (Derks et al., 2019; Kesler et al., 2017). Future studies could include more patients of each subtype to enable more specific assessment of brain-cognition correlations within subgroups. This could potentially also reveal better predictors of cognitive decline. Thirdly, participation bias and therefore generalizability should always be considered in observational studies, as supported by our patients’ high performance status and generally maximal extent of resection, which is not representative of the entire glioma population. Fourthly, the multilayer network approach is new; other choices in terms of defining intra- and interlayer connectivity (Boccaletti et al., 2014) could be explored now that we established that multilayer integration relates to EF. Finally, we used a relatively coarse and non-connectivity-based atlas similar to earlier work (Carbo et al., 2017; Derks et al., 2019; van Dellen et al., 2012a; Dellen et al., 2012b), but replication with a connectivity-based atlas may yield additional and more specific results. Inevitably, tumor mass effects may still slightly affect native-to-template MRI registrations.
+
+Conclusion
+
+We describe multilayer frequency-band integration of the frontoparietal network as a general correlate of executive functioning, also in glioma patients. Lower and decreasing integration related to poorer and declining set shifting. Baseline multilayer centrality did not have predictive value for declining EF over time. Still, our findings may inform future studies on the brain mechanisms underlying cognitive decline in these patients, as well as spark exploration of more targeted treatment of EF deficits.
+
+Electronic supplementary material
+
+Below is the link to the electronic supplementary material.
+
+Supplementary Material 1
+
+Author contributions
+
+included conception and study design (MRvL, LD), data collection or acquisition (MRvL, SDK), preprocessing of MEG data (LCB, SDK, MLMZ), statistical analysis (MRvL, LD, LCB, FANS), interpretation of results (MRvL, LD, LCB), drafting the manuscript work or revising it critically for important intellectual content (all authors) and approval of final version to be published and agreement to be accountable for the integrity and accuracy of all aspects of the work (all authors).
+
+Funding
+
+This study was funded by a Branco Weiss Fellowship, the Dutch Research Council (Veni 016.146.086 and Vidi 198.015), and EpilepsieNL (grants 08–08 and 09–09).
+
+Data Availability
+
+This analysis on existing data has been preregistered (https://osf.io/83tbq). Derivative data needed to replicate these results can be found at https://github.com/multinetlab-amsterdam.
+
+Code Availability
+
+Scripts that were used to construct the supra-adjacency matrices in MATLAB and multilayer eigenvector centrality in the frontoparietal network in Python can be found here:
+
+https://github.com/multinetlab-amsterdam.
+
+Declarations
+
+Conflicts of interest
+
+All authors declare that they have no conflict of interest.
+
+Ethics approval
+
+Approval for this study was obtained from the VUmc Medical Ethical Committee.
+
+Consent to participate
+
+Informed consent was obtained from all individual participants included in the study.
+
+Consent for publication
+
+Not Applicable.
+
+Publisher’s Note
+
+Springer Nature remains neutral with regard to jurisdictional claims in published maps and institutional affiliations.
+==== Refs
+References
+
+Aertsen AMHJ Gerstein GL Habib MK Palm G Dynamics of neuronal firing correlation: Modulation of “Effective connectivity Journal of Neurophysiology 1989 61 5 900 917 10.1152/jn.1989.61.5.900 2723733
+Baggio HC Segura B Sala-Llonch R Marti MJ Valldeoriola F Compta Y Tolosa E Junque C Cognitive impairment and resting-state network connectivity in Parkinson’s disease Human Brain Mapping 2015 36 1 199 212 10.1002/hbm.22622 25164875
+Bassett DS Sporns O Network neuroscience Nature Neuroscience 2017 20 3 353 364 10.1038/nn.4502 28230844
+Baum GL Ciric R Roalf DR Betzel RF Moore TM Shinohara RT Kahn AE Vandekar SN Rupert PE Quarmley M Cook PA Elliott MA Ruparel K Gur RE Gur RC Bassett DS Satterthwaite TD Modular segregation of Structural Brain Networks supports the development of executive function in Youth Current Biology 2017 27 11 1561 1572e1568 10.1016/j.cub.2017.04.051 28552358
+Bianconi, G. (2018). Multilayer networks: Structure and function. Oxford university press. Oxford university press.
+Blomsma, N., de Rooy, B., Gerritse, F., van der Spek, R., Tewarie, P., Hillebrand, A., Otte, W. M., Stam, C. J., & van Dellen, E. (2022). Minimum spanning tree analysis of brain networks: A systematic review of network size effects, sensitivity for neuropsychiatric pathology and disorder specificity. Network Neuroscience, 1–39.
+Boccaletti S Bianconi G Criado R Genio D Gómez-Gardenes CI Romance J Sendina-Nadal M Wang I Zanin M The structure and dynamics of multilayer networks Physics reports 2014 544 1 1 122 10.1016/j.physrep.2014.07.001 32834429
+Bosma I Reijneveld JC Klein M Douw L van Dijk BW Heimans JJ Stam CJ Disturbed functional brain networks and neurocognitive function in low-grade glioma patients: A graph theoretical analysis of resting-state MEG Nonlinear Biomed Phys 2009 3 1 9 10.1186/1753-4631-3-9 19698149
+Breedt, L. C., Santos, F. A. N., Hillebrand, A., Reneman, L., van Rootselaar, A. F., Schoonheim, M. M., Stam, C. J., Ticheler, A., Tijms, B. M., Veltman, D. J., Vriend, C., Wagenmakers, M. J., van Wingen, G. A., Geurts, J. J. G., Schrantee, A., & Douw, L. (2021). Multimodal multilayer network centrality relates to executive functioning. Network Neuroscience.10.1162/netn_a_00284
+Brookes MJ Tewarie PK Hunt BAE Robson SE Gascoyne LE Liddle EB Liddle PF Morris PG A multi-layer network approach to MEG connectivity analysis Neuroimage 2016 132 425 438 10.1016/j.neuroimage.2016.02.045 26908313
+Carbo EW Hillebrand A van Dellen E Tewarie P de Witt Hamer PC Baayen JC Klein M Geurts JJ Reijneveld JC Stam CJ Douw L Dynamic hub load predicts cognitive decline after resective neurosurgery Scientific Reports 2017 7 42117 10.1038/srep42117 28169349
+Cochereau J Lemaitre AL Wager M Moritz-Gasser S Duffau H Herbet G Network-behavior mapping of lasting executive impairments after low-grade glioma surgery Brain Struct Funct 2020 225 8 2415 2429 10.1007/s00429-020-02131-5 32813155
+De Baene W Rutten GM Sitskoorn MM Cognitive functioning in glioma patients is related to functional connectivity measures of the non-tumoural hemisphere European Journal Of Neuroscience 2019 50 12 3921 3933 10.1111/ejn.14535 31370107
+De Domenico M Sasai S Arenas A Mapping Multiplex Hubs in Human Functional Brain Networks Front Neurosci 2016 10 326 10.3389/fnins.2016.00326 27471443
+De Domenico, M., Sole-Ribalta, A., Cozzo, E., Kivela, M., Moreno, Y., Porter, M. A., Gomez, S., & Arenas, A. (2013). Mathematical Formulation of Multilayer Networks. Physical Review X, 3(4). 10.1103/PhysRevX.3.041022
+Deco G Sanz Perl Y Vuust P Tagliazucchi E Kennedy H Kringelbach ML Rare long-range cortical connections enhance human information processing Current Biology 2021 31 20 4436 4448e4435 10.1016/j.cub.2021.07.064 34437842
+Derks J Kulik S Wesseling P Numan T Hillebrand A van Dellen E de Witt Hamer PC Geurts JJG Reijneveld JC Stam CJ Klein M Douw L Understanding cognitive functioning in glioma patients: The relevance of IDH-mutation status and functional connectivity Brain Behav 2019 9 4 e01204 10.1002/brb3.1204 30809977
+Fang D Jiang J Sun X Wang W Dong N Fu X Pang C Chen X Ding L Attention dysfunction of postoperative patients with glioma World Journal Of Surgical Oncology 2014 12 317 10.1186/1477-7819-12-317 25315150
+Friston KJ Functional and effective connectivity in neuroimaging: A synthesis Human brain mapping 1994 2 1-2 56 78 10.1002/hbm.460020107
+Guillon J Attal Y Colliot O La Corte V Dubois B Schwartz D Chavez M De Vico Fallani F Loss of brain inter-frequency hubs in Alzheimer’s disease Scientific Reports 2017 7 1 10879 10.1038/s41598-017-07846-w 28883408
+Hammes, J. G. W. (1978). De Stroop kleur-woord test. Harcourt Test Publ.
+Hardmeier M Schoonheim MM Geurts JJ Hillebrand A Polman CH Barkhof F Stam CJ Cognitive dysfunction in early multiple sclerosis: Altered centrality derived from resting-state functional connectivity using magneto-encephalography PLoS One 2012 7 7 e42087 10.1371/journal.pone.0042087 22848712
+Hillebrand A Barnes GR Bosboom JL Berendse HW Stam CJ Frequency-dependent functional connectivity within resting-state networks: An atlas-based MEG beamformer solution Neuroimage 2012 59 4 3909 3921 10.1016/j.neuroimage.2011.11.005 22122866
+Hillebrand A Tewarie P van Dellen E Yu MC Carbo EWS Douw L Gouw AA van Straaten ECW Stam CJ Direction of information flow in large-scale resting-state networks is frequency-dependent Proceedings of the National Academy of Sciences of the United States of America 2016 113 14 3867 3872 10.1073/pnas.1515657113 27001844
+Hilverda K Bosma I Heimans JJ Postma TJ Vandertop P Slotman W Buter BJ Reijneveld J Klein M Cognitive functioning in glioblastoma patients during radiotherapy and temozolomide treatment: Initial findings Journal Of Neuro-Oncology 2010 97 1 89 94 10.1007/s11060-009-9993-2 19718545
+Jütten K Mainz V Delev D Gauggel S Binkofski F Wiesmann M Clusmann H Na CH Asymmetric tumor-related alterations of network‐specific intrinsic functional connectivity in glioma patients Human brain mapping 2020 41 16 4549 4561 10.1002/hbm.25140 32716597
+Kavanaugh BC Fryc A Carpenter LL Measurement and modulation of Working Memory-Related Oscillatory Abnormalities Journal Of The International Neuropsychological Society 2019 25 10 1076 1081 10.1017/S1355617719000845 31358081
+Kesler SR Noll K Cahill DP Rao G Wefel JS The effect of IDH1 mutation on the structural connectome in malignant astrocytoma Journal Of Neuro-Oncology 2017 131 3 565 574 10.1007/s11060-016-2328-1 27848136
+Klein M Engelberts NH van der Ploeg HM Kasteleijn-Nolst Trenite DG Aaronson NK Taphoorn MJ Baaijen H Vandertop WP Muller M Postma TJ Heimans JJ Epilepsy in low-grade gliomas: The impact on cognitive function and quality of life Annals Of Neurology 2003 54 4 514 520 10.1002/ana.10712 14520665
+Klein M Heimans J Aaronson N Postma T Muller M Van der Ploeg H Taphoorn M Impaired cognitive functioning in low-grade glioma patients: Relationship to tumor localisation, radiotherapy and the use of anticonvulsants Nederlands Tijdschrift voor Geneeskunde 2004 148 44 2175 2180 15559412
+Klimesch W Alpha-band oscillations, attention, and controlled access to stored information Trends in cognitive sciences 2012 16 12 606 617 10.1016/j.tics.2012.10.007 23141428
+Kocher M Jockwitz C Caspers S Schreiber J Farrher E Stoffels G Filss C Lohmann P Tscherpel C Ruge MI Fink GR Shah NJ Galldiks N Langen KJ Role of the default mode resting-state network for cognitive functioning in malignant glioma patients following multimodal treatment Neuroimage Clin 2020 27 102287 10.1016/j.nicl.2020.102287 32540630
+Koutsarnakis C Neromyliotis E Komaitis S Mazarakis N O’Hara DJ Stranjalis G Chumas P Effects of brain radiotherapy on cognitive performance in adult low-grade glioma patients: A systematic review Radiotherapy And Oncology 2021 160 202 211 10.1016/j.radonc.2021.04.023 33964327
+Landers MJF Meesters SPL van Zandvoort M de Baene W Rutten GM The frontal aslant tract and its role in executive functions: A quantitative tractography study in glioma patients Brain Imaging Behav 2021 10.1007/s11682-021-00581-x 34716878
+Lang S Gaxiola-Valdez I Opoku-Darko M Partlo LA Goodyear BG Kelly JJP Federico P Functional connectivity in Frontoparietal Network: Indicator of Preoperative cognitive function and cognitive outcome following surgery in patients with glioma World Neurosurg 2017 105 913 922e912 10.1016/j.wneu.2017.05.149 28583454
+Lemaitre AL Herbet G Ng S Moritz-Gasser S Duffau H Cognitive preservation following awake mapping-based neurosurgery for low-grade gliomas: A longitudinal, within-patient design study Neuro Oncol 2021 10.1093/neuonc/noab275
+Lezak, M. D., Howieson, D. B., & Loring, D. W. (2004). Neuropsychological Assessment (4th Edition ed.). Oxford University Press.
+Liu W Liu L Cheng X Ge H Hu G Xue C Qi W Xu W Chen S Gao R Rao J Chen J Functional Integrity of Executive Control Network contributed to retained executive abilities in mild cognitive impairment Frontiers In Aging Neuroscience 2021 13 710172 10.3389/fnagi.2021.710172 34899264
+Lohmann G Margulies DS Horstmann A Pleger B Lepsien J Goldhahn D Schloegl H Stumvoll M Villringer A Turner R Eigenvector centrality mapping for analyzing connectivity patterns in fMRI data of the human brain PLoS One 2010 5 4 e10232 10.1371/journal.pone.0010232 20436911
+Louis DN Perry A Wesseling P Brat DJ Cree IA Figarella-Branger D Hawkins C Ng HK Pfister SM Reifenberger G Soffietti R von Deimling A Ellison DW The 2021 WHO classification of tumors of the Central Nervous System: A summary Neuro Oncol 2021 23 8 1231 1251 10.1093/neuonc/noab106 34185076
+Maesawa S Bagarinao E Fujii M Futamura M Motomura K Watanabe H Mori D Sobue G Wakabayashi T Evaluation of resting state networks in patients with gliomas: Connectivity changes in the unaffected side and its relation to cognitive function PLoS One 2015 10 2 e0118072 10.1371/journal.pone.0118072 25659130
+Mandke K Meier J Brookes MJ O’Dea RD Van Mieghem P Stam CJ Hillebrand A Tewarie P Comparing multilayer brain networks between groups: Introducing graph metrics and recommendations Neuroimage 2018 166 371 384 10.1016/j.neuroimage.2017.11.016 29138088
+Marchesi O Bonacchi R Valsasina P Preziosa P Pagani E Cacciaguerra L Meani A Conti L Mistri D Rocca MA Filippi M Functional and structural MRI correlates of executive functions in multiple sclerosis Multiple Sclerosis (Houndmills, Basingstoke, England) 2022 28 5 742 756 10.1177/13524585211033184 34387534
+Medaglia JD Lynall ME Bassett DS Cognitive network neuroscience Journal Of Cognitive Neuroscience 2015 27 8 1471 1491 10.1162/jocn_a_00810 25803596
+Mulder, J., Dekker, P., & Dekker, R. (2006). Woord-fluency test/figuur-fluency test, handleiding. PITS.
+Ng JCH See AAQ Ang TY Tan LYR Ang BT King NKK Effects of surgery on neurocognitive function in patients with glioma: A meta-analysis of immediate post-operative and long-term follow-up neurocognitive outcomes Journal Of Neuro-Oncology 2019 141 1 167 182 10.1007/s11060-018-03023-9 30446902
+Noll KR Chen HS Wefel JS Kumar VA Hou P Ferguson SD Rao G Johnson JM Schomer DF Suki D Prabhu SS Liu HL Alterations in functional Connectomics Associated with neurocognitive changes following glioma resection Neurosurgery 2021 88 3 544 551 10.1093/neuros/nyaa453 33080024
+Noll KR Walbert T Wefel JS Impaired neurocognitive function in glioma patients: From pathophysiology to novel intervention strategies Current Opinion In Neurology 2020 33 6 716 722 10.1097/WCO.0000000000000865 33009006
+Noll KR Weinberg JS Ziu M Benveniste RJ Suki D Wefel JS Neurocognitive changes Associated with Surgical Resection of Left and right temporal lobe glioma Neurosurgery 2015 77 5 777 785 10.1227/NEU.0000000000000987 26317672
+Satoer D Vork J Visch-Brink E Smits M Dirven C Vincent A Cognitive functioning early after surgery of gliomas in eloquent areas Case Report Journal Of Neurosurgery 2012 117 5 831 838 10.3171/2012.7.JNS12263
+Sauseng P Klimesch W Schabus M Doppelmayr M Fronto-parietal EEG coherence in theta and upper alpha reflect central executive functions of working memory International Journal Of Psychophysiology 2005 57 2 97 103 10.1016/j.ijpsycho.2005.03.018 15967528
+Sinha R Stephenson JM Price SJ A systematic review of cognitive function in patients with glioblastoma undergoing surgery Neurooncol Pract 2020 7 2 131 142 10.1093/nop/npz018 32626582
+Sporns O Tononi G Kotter R The human connectome: A structural description of the human brain Plos Computational Biology 2005 1 4 e42 10.1371/journal.pcbi.0010042 16201007
+Stam C Tewarie P Van Dellen E Van Straaten E Hillebrand A Van Mieghem P The trees and the forest: Characterization of complex brain networks with minimum spanning trees International Journal of Psychophysiology 2014 92 3 129 138 10.1016/j.ijpsycho.2014.04.001 24726900
+Stam CJ Nolte G Daffertshofer A Phase lag index: Assessment of functional connectivity from multi channel EEG and MEG with diminished bias from common sources Human brain mapping 2007 28 11 1178 1193 10.1002/hbm.20346 17266107
+Stam CJ Reijneveld JC Graph theoretical analysis of complex networks in the brain Nonlinear biomedical physics 2007 1 1 1 19 10.1186/1753-4631-1-3 17908334
+Tabor JK Bonda D LeMonda BC D’Amico RS Neuropsychological outcomes following supratotal resection for high-grade glioma: A review Journal Of Neuro-Oncology 2021 152 3 429 437 10.1007/s11060-021-03731-9 33745058
+Talacchi A Santini B Savazzi S Gerosa M Cognitive effects of tumour and surgical treatment in glioma patients Journal Of Neuro-Oncology 2011 103 3 541 549 10.1007/s11060-010-0417-0 20878206
+Tanzilli A Pace A Prosperini L Oppido PA Telera S Rasile F Farneti A Marucci L Villani V Multidomain and long-term cognitive evaluation in malignant glioma patients Future Oncology 2022 18 15 1839 1848 10.2217/fon-2021-0963 35196869
+Tewarie P Hillebrand A van Dijk BW Stam CJ O’Neill GC Van Mieghem P Meier JM Woolrich MW Morris PG Brookes MJ Integrating cross-frequency and within band functional networks in resting-state MEG: A multi-layer network approach Neuroimage 2016 142 324 336 10.1016/j.neuroimage.2016.07.057 27498371
+Tewarie P van Dellen E Hillebrand A Stam CJ The minimum spanning tree: An unbiased method for brain network analysis Neuroimage 2015 104 177 188 10.1016/j.neuroimage.2014.10.015 25451472
+Tordjman M Madelin G Gupta PK Cordova C Kurz SC Orringer D Golfinos J Kondziolka D Ge Y Wang RL Lazar M Jain R Functional connectivity of the default mode, dorsal attention and fronto-parietal executive control networks in glial tumor patients Journal Of Neuro-Oncology 2021 152 2 347 355 10.1007/s11060-021-03706-w 33528739
+Tzourio-Mazoyer N Landeau B Papathanassiou D Crivello F Etard O Delcroix N Mazoyer B Joliot M Automated anatomical labeling of activations in SPM using a macroscopic anatomical parcellation of the MNI MRI single-subject brain Neuroimage 2002 15 1 273 289 10.1006/nimg.2001.0978 11771995
+van Dellen E de Witt Hamer PC Douw L Klein M Heimans JJ Stam CJ Reijneveld JC Hillebrand A Connectivity in MEG resting-state networks increases after resective surgery for low-grade glioma and correlates with improved cognitive performance Neuroimage Clin 2012 2 1 7 10.1016/j.nicl.2012.10.007 24179752
+van Dellen E Douw L Hillebrand A Ris-Hilgersom IH Schoonheim MM Baayen JC De Witt Hamer PC Velis DN Klein M Heimans JJ Stam CJ Reijneveld JC MEG network differences between low- and high-grade glioma related to epilepsy and cognition PLoS One 2012 7 11 e50122 10.1371/journal.pone.0050122 23166829
+van den Heuvel MP Hulshoff Pol HE Exploring the brain network: A review on resting-state fMRI functional connectivity European Neuropsychopharmacology 2010 20 8 519 534 10.1016/j.euroneuro.2010.03.008 20471808
+van der Elst W van Boxtel MP van Breukelen GJ Jolles J The Letter Digit Substitution Test: Normative data for 1,858 healthy participants aged 24–81 from the Maastricht Aging Study (MAAS): Influence of age, education, and sex Journal Of Clinical And Experimental Neuropsychology 2006 28 6 998 1009 10.1080/13803390591004428 16822738
+van Kessel E Baumfalk AE van Zandvoort MJE Robe PA Snijders TJ Tumor-related neurocognitive dysfunction in patients with diffuse glioma: A systematic review of neurocognitive functioning prior to anti-tumor treatment Journal Of Neuro-Oncology 2017 134 1 9 18 10.1007/s11060-017-2503-z 28567586
+Vogt VL Witt JA Delev D Grote A von Lehe M Becker AJ Schramm J Elger CE Helmstaedter C Cognitive features and surgical outcome of patients with long-term epilepsy-associated tumors (LEATs) within the temporal lobe Epilepsy & Behavior 2018 88 25 32 10.1016/j.yebeh.2018.08.028 30212725
+Wefel JS Noll KR Rao G Cahill DP Neurocognitive function varies by IDH1 genetic mutation status in patients with malignant glioma prior to surgical resection Neuro Oncol 2016 18 12 1656 1663 10.1093/neuonc/now165 27576872
+Weyer-Jamora C Brie MS Luks TL Smith EM Braunstein SE Villanueva-Meyer JE Bracci PM Chang S Hervey-Jumper SL Taylor JW Cognitive impact of lower-grade gliomas and strategies for rehabilitation Neurooncol Pract 2021 8 2 117 128 10.1093/nop/npaa072 33898046
+Wu AS Witgert ME Lang FF Xiao L Bekele BN Meyers CA Ferson D Wefel JS Neurocognitive function before and after surgery for insular gliomas Case Report Journal Of Neurosurgery 2011 115 6 1115 1125 10.3171/2011.8.JNS11488
+Yeo BT Krienen FM Sepulcre J Sabuncu MR Lashkari D Hollinshead M Roffman JL Smoller JW Zollei L Polimeni JR Fischl B Liu H Buckner RL The organization of the human cerebral cortex estimated by intrinsic functional connectivity Journal Of Neurophysiology 2011 106 3 1125 1165 10.1152/jn.00338.2011 21653723
+Yu M Engels MMA Hillebrand A van Straaten ECW Gouw AA Teunissen C van der Flier WM Scheltens P Stam CJ Selective impairment of hippocampus and posterior hub areas in Alzheimer’s disease: An MEG-based multiplex network study Brain 2017 140 5 1466 1485 10.1093/brain/awx050 28334883
+Zhang Z Jin Z Yang X Zhang L Zhang Y Liu D Chi X Hao S Feng J Ji N Pre-operative neurocognitive function was more susceptible to decline in Isocitrate Dehydrogenase Wild-Type Subgroups of Lower-Grade Glioma Patients Frontiers In Neurology 2020 11 591615 10.3389/fneur.2020.591615 33363506
+

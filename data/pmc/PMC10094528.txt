@@ -1,0 +1,313 @@
+
+==== Front
+Int J Mol Sci
+Int J Mol Sci
+ijms
+International Journal of Molecular Sciences
+1422-0067
+MDPI
+
+10.3390/ijms24076184
+ijms-24-06184
+Article
+Influence of MMR, MGMT Promotor Methylation and Protein Expression on Overall and Progression-Free Survival in Primary Glioblastoma Patients Treated with Temozolomide
+Brawanski Konstantin R. Conceptualization Validation Investigation Data curation Writing – original draft Writing – review & editing Project administration Funding acquisition 1
+Sprung Susanne Investigation Writing – review & editing 2
+https://orcid.org/0000-0002-8228-8217
+Freyschlag Christian F. Resources Writing – review & editing 1
+Hoeftberger Romana Resources Writing – review & editing 3
+Ströbel Thomas Investigation Writing – review & editing 3
+Haybaeck Johannes Investigation Resources Writing – review & editing Supervision 24
+Thomé Claudius Resources Writing – review & editing Supervision 1
+Manzl Claudia Conceptualization Validation Investigation Resources Data curation Writing – original draft Writing – review & editing Visualization Project administration Funding acquisition 2*†
+https://orcid.org/0000-0001-6908-145X
+Birkl-Toeglhofer Anna M. Validation Formal analysis Investigation Data curation Writing – original draft Writing – review & editing Visualization 2*†
+Tappia Paramjit S. Academic Editor
+Ramjiawan Bram Academic Editor
+1 Department of Neurosurgery, Medical University of Innsbruck, 6020 Innsbruck, Austria
+2 Institute of Pathology, Neuropathology and Molecular Pathology, Medical University of Innsbruck, 6020 Innsbruck, Austria
+3 Division of Neuropathology and Neurochemistry, Department of Neurology, Medical University of Vienna, 1090 Vienna, Austria
+4 Diagnostic and Research Center for Molecular Biomedicine, Diagnostic and Research Institute of Pathology, Medical University of Graz, 8036 Graz, Austria
+* Correspondence: claudia.manzl@i-med.ac.at (C.M.); anna.birkl-toeglhofer@i-med.ac.at (A.M.B.-T.)
+† These authors contributed equally to this work.
+
+24 3 2023
+4 2023
+24 7 618428 2 2023
+21 3 2023
+22 3 2023
+© 2023 by the authors.
+2023
+https://creativecommons.org/licenses/by/4.0/ Licensee MDPI, Basel, Switzerland. This article is an open access article distributed under the terms and conditions of the Creative Commons Attribution (CC BY) license (https://creativecommons.org/licenses/by/4.0/).
+Glioblastoma is the most common malignant brain tumor in adults. Standard treatment includes tumor resection, radio-chemotherapy and adjuvant chemotherapy with temozolomide (TMZ). TMZ methylates DNA, whereas O6-methylguanine DNA methyltransferase (MGMT) counteracts TMZ effects by removing the intended proteasomal degradation signal. Non-functional MGMT mediates the mismatch repair (MMR) system, leading to apoptosis after futile repair attempts. This study investigated the associations between MGMT promoter methylation, MGMT and MMR protein expression, and their effect on overall survival (OS) and progression-free survival (PFS) in patients with glioblastoma. MGMT promoter methylation was assessed in 42 treatment-naïve patients with glioblastoma WHO grade IV by pyrosequencing. MGMT and MMR protein expression was analyzed using immunohistochemistry. MGMT promoter methylation was present in 52%, whereas patients <70 years of age revealed a significantly longer OS using a log-rank test and a significance threshold of p ≤ 0.05. MGMT protein expression and methylation status showed no correlation. MMR protein expression was present in all patients independent of MGMT status and did not influence OS and PFS. Overall, MGMT promoter methylation implicates an improved OS in patients with glioblastoma aged <70 years. In the elderly, the extent of surgery has an impact on OS rather than the MGMT promoter methylation or protein expression.
+
+glioblastoma
+MGMT promoter methylation
+MGMT protein expression
+mismatch repair
+temozolomide
+immunohistochemical analysis
+Medizinischer Forschungsfond InnsbruckMFF-257 This research was funded by the Medizinischer Forschungsfond Innsbruck, grant number MFF-257.
+==== Body
+pmc1. Introduction
+
+Despite advances in surgery, radiation and chemotherapy, the diagnosis of glioblastoma multiforme (GBM) is devastating and the outcome poor. Next to neurological examination, diagnostic tools, i.e., magnetic resonance imaging (MRI), computed tomography [1] and classical histopathology, as well as other invasive and advanced methods [2,3], provide the basis for histopathological diagnosis of GBM. Tumor resection might be a curative intervention in the case of a gross total resection (GTR) compared to a subtotal resection (STR). GTR is defined as the complete removal of all tumor tissue, supported by imaging approaches. In addition to the surgical intervention, treatment including temozolomide (TMZ)-based chemoradiotherapy is used as a standard of care for GBM [4]. Many studies showed that O6-methylguanin DNA methyltransferase (MGMT) promoter methylation serves as a prognostic factor for progression-free survival (PFS) and overall survival (OS) associated with a positive response to alkylating agents, such as TMZ, in newly diagnosed GBM patients [5,6,7,8,9,10]. On the contrary, low levels of MGMT promoter methylation are associated with an increased resistance against alkylating agents [6,11,12]. Controversially discussed is the MGMT protein expression as a predictive marker for the TMZ response in GBM patients. Spiegl-Kreinecker et al., considered MGMT protein expression superiorly predictive than its promoter methylation [8]. In contrast, Uno et al., indicated that MGMT promoter methylation is more reliable to adjuvant therapy and prognosis than MGMT protein expression [13].
+
+With respect to the current standard therapy, patients below the age of 70 years receive resection, followed by concomitant radio-chemotherapy and subsequent adjuvant chemotherapy with TMZ, independent of MGMT promoter methylation [14]. Independent of MGMT promoter methylation, OS is 20.5 months in newly diagnosed GBM with tumor-treating fields in addition to current standard therapy [15]. In the elderly (age >70 years), treatment depends on the Karnofsky performance score (KPS) and MGMT promoter methylation status. Thus, elderly patients with a low KPS and a verified MGMT promoter methylation receive solely chemotherapy with TMZ, while patients with an absent MGMT promoter methylation rather receive radiation therapy [16,17].
+
+TMZ alkylates the DNA at different positions, generating pre-apoptotic DNA lesions, whereas only 10% of cytotoxic lesions triggered by O6-methylguanin (O6-MG) are directly attributable to TMZ [18]. In general, mammalian cells have different mechanisms to counteract induced DNA damage by DNA-damage response (DDR) systems, such as the DNA mismatch repair (MMR) system, or base excision repair (BER). The cytotoxic effect of TMZ is based on an impaired interaction of MGMT and the MMR system [6,12,19]. MGMT is a cellular DNA repair protein, which typically removes the methylation of O6-MG and, hence, neutralizes the cytotoxic effect of TMZ [20,21]. Functional MGMT blocks the tumor cell death mediated by alkylating drugs such as TMZ. The epigenetic dysregulation of MGMT transcription leads to MGMT promotor methylation and inhibition of its transcription. In this scenario, MGMT is silenced and the O6-MG, which is paired with thymine, is not neutralized by MGMT during DNA replication, the mismatched base pair (O6-MG with thymine) is recognized by the MMR system [22]. With the attempt of correction by MMR, the newly synthesized daughter strand is replaced instead of O6-MG and the mismatch persist. During the next DNA replication, the MMR system aims to fix the mismatch. This leads to a “futile-repair cycle” generating single- and double-strand breaks in the DNA [19,23], causing apoptosis and cell death [24,25,26]. Interestingly, a recent study reported that the apoptosis-inducing factor protein (AIF) behaves like an apoptotic nuclease under increased Ca2+ levels [27]. Under alkylating conditions, the AIF-containing DNA–degradosome complex degrades DNA [28]. However, alterations in the MMR system, e.g., deletion of one of the key players, such as MLH1, causes microsatellite instability and is associated with several cancers [29,30,31]. Findings of The Cancer Genome Atlas showed a differing mutation rate between treated and untreated GBMs [32]. Several studies demonstrated alterations of mismatch repair genes (MLH1, MSH2, MSH6, PMS2) in recurrent GBM after TMZ treatment [32,33,34,35].
+
+The aim of this study was to clarify the influence of MGMT promoter methylation, MGMT protein expression, as well as the expression of the MMR, and the impact of the extent of surgery on OS and PFS in primary-diagnosed GBM patients.
+
+2. Results
+
+2.1. Patient Characteristics
+
+Basic characteristics of 42 analyzed GBM patients are summarized in Table 1. The median age of the patients was 67 years at the time of surgery, with a range of 58.0–74.8 years and a sex distribution of 16f:26m (1:1.6). Stratification by age into younger patients (<70 years) and elderly patients (≥70 years) included 23 (54.8%) and 19 (45.2%) individuals, respectively. The mean KPS was 86.3 (±15.45 SD) preoperatively, and 77.9 (±27.63 SD) postoperatively. All patients, underwent surgical treatment, with 31.7% undergoing STR and 68.3% GTR. The majority of the patients in this study were treated with the Stupp protocol (32; 76.2%), whereas two patients were treated with radiotherapy alone (4.8%) and eight patients did not receive any further treatment (19.0%). The IDH1 status was assessed in 88.1% of the included patients, demonstrating a 7.1% IDH1 mutation rate, which is within the published range [36,37].
+
+Overall, the patients’ characteristics reflect a balanced study cohort, with a high percentage of GTR and a representative KPS.
+
+2.2. Overall Survival, Sex, Age and Resection Association
+
+The median OS for the entire GBM patient cohort was 11.5 months (95% CI: 5.0–17.0). Stratifying by age, patients <70 years revealed a longer median OS, of 15 months, compared to 4 months for patients ≥70 years (p = 0.032) (Figure 1A).
+
+A sex-related difference in OS was not detected (Figure S1), with a median OS for females of 14.5 months (95% CI: 3.0–34.0) compared to 8 months for males (95% CI: 4.0–17.0) (p = 0.37) in the total cohort. Within the subgroup of patients with GTR an OS advantage compared to patients with STR (median OS of 13 and 4 months, respectively; p = 0.3) was observed (Figure S2), although not reaching statistical significance. For PFS, neither age-related nor a sex-related effects were determined (p = 0.460 and p = 0.180, respectively). However, GTR compared to STR demonstrated a benefit for PFS (median PFS of 214 and 102 days, respectively, p = 0.003). The results are summarized in Table 2.
+
+In summary, the data underline the beneficial influence on OS in younger patients with GBM and, in general, patients with GTR.
+
+2.3. MGMT Promoter Methylation Causes a Survival Benefit in Younger GBM Patients
+
+In total, MGMT promoter methylation (MGMTmet+) was present in 50% of the patients (representative pyrograms are depicted in Figure S3). Patients with unmethylated MGMT promoter (MGMTmet−) did show a slight advantage during the first 6 months after surgery (Figure 1B). This slight advantage could likely be explained by a resection effect, since 76.2% of patients with MGMTmet− underwent GTR compared to 60.0% GTR in the MGMTmet+ group. However, the median OS was observed to be longer in patients with MGMTmet+ compared to patients with MGMTmet−, at 14 and 11 months, respectively, (p = 0.028) (Figure 1B). Stratification of MGMT methylation status and age revealed a statistically significant longer OS for younger patients compared to elderly patients. Patients <70 years with MGMTmet+ (n = 11) showed a median OS of 31 months compared to the MGMTmet− subgroup (n = 12), with a median OS of 13 months (p = 0.003) (Figure 1C). In the ≥70 years subgroup of patients, patients with MGMTmet− (n = 9) and patients with MGMTmet+ (n = 10) revealed a similar OS (Figure 1D). The univariate Cox proportional hazard model revealed an increased risk for patients <70 years and an unmethylated MGMT promoter (hazard ratio (HR): 4.85 (95% CI: 1.59–14.74), p = 0.005) compared to the patients with MGMTmet+ (Table 3). STR represented a risk for patients ≥70 years (HR: 4.05 (95% CI: 1.11–14.79), p = 0.035) compared to GTR. Analyses of PFS demonstrated no survival benefit for any subgroup of GBM patients, independent of age and MGMT promoter methylation status.
+
+Overall, the results showed an OS advantage for younger patients with MGMTmet+, while the MGMTmet− showed a concomitant risk for tumor-related death.
+
+2.4. MGMT Promoter Methylation Does Not Correlate with MGMT Protein Expression
+
+Classification by IHC revealed high MGMT protein expression for 26% of patients (MGMThigh), while in 74% of patients, low MGMT protein expression (MGMTlow) could be detected (exemplary images are shown in Figure 2). For both groups, the MGMThigh and MGMTlow group, comparable percentages of MGMT promoter methylation, 45.5% (n = 5/11) and 52% (n = 16/31), respectively, were determined (Table 2). No correlation could be monitored between MGMT promoter methylation and MGMT protein expression (phi = 0.054). Both subgroups with an unmethylated MGMT promoter, MGMTmet−/MGMTlow and MGMTmet−/MGMThigh, had a higher tumor-related death probability irrespective of the MGMT protein expression (HR = 2.11 (95% CI: 0.92–4.83), p = 0.078 and HR = 3.78 (95% CI: 1.29–11.09), p = 0.015, respectively) compared to the MGMTmet+/MGMTlow patients.
+
+Association analyses of the different subgroups and the PFS revealed no statistical differences. However, a trend could be monitored, whereby the MGMTmet+/MGMTlow patients (n = 12) showed the longest PFS with a median of 281 days compared to all other subgroups. The MGMTmet−/MGMTlow patients (n = 14), demonstrated a median PFS of 149 days. In both subgroups expressing MGMT protein, a decreased median PFS was observed (MGMTmet−/MGMThigh, n = 4, median PFS 211 days and MGMTmet+/MGMThigh, n = 4, median PFS 118 days), albeit the sub-cohorts encompassed low numbers of patients.
+
+To summarize, epigenetic silencing of MGMT by promoter methylation does not correlate with protein expression of MGMT. Although methylated, a sub-cohort of patients showed a clear protein expression pattern (MGMTmet+/MGMThigh), which might indicate that the epigenetic silencing must not result in a complete downregulation of protein expression. Furthermore, our data suggest a tendency for a decreased median PFS in the MGMThigh sub-cohort.
+
+2.5. MGMT Promoter Methylation Status as a Prognostic Factor Dependent on Patient Age
+
+A multivariate Cox proportional hazard model, including sex, MGMT promoter methylation status, MGMT protein expression status and type of resection, was performed and is summarized in Table 4. In the entire cohort, patients with MGMTmet− showed an increased associated risk for a reduced OS (HR: 2.69 (95% CI: 1.19–6.07), p = 0.017). Patients <70 years indicated a more prognosticating effect of the MGMT promoter methylation status (HR: 6.14 (95% CI: 1.78–21.21), p = 0.004). For STR, the entire cohort revealed an increased risk of death, although not statistically significant. In patients ≥70 years, a statistically significant increased risk was observed (HR: 5.74 (95% CI: 1.43–23.05), p = 0.012).
+
+The results of our analyses underline the importance of a GTR, with a focus on the ≥70 years subgroup of patients compared to STR and evaluation of MGMT status in patients <70 years as prognostic factors.
+
+2.6. Stable Expression of MMR Proteins Independent of MGMT Status
+
+Evaluating the expression results of proteins related to the MMR system, including MLH1, MSH2, MSH6 and PMS2 by IHC, revealed a stable expression in all GBM patients of the tested cohort. MMR protein expression in tumor cells was present with a score of 2 to 3, independent of MGMT status (promoter methylation and protein expression), sex, age, IDH1 mutation status or treatment (Figure 3).
+
+3. Discussion
+
+Prognostic factors are of particular interest in brain tumors. The prognostic value of MGMT promoter methylation in newly diagnosed, as well as recurrent GBM is confirmed by a plethora of studies [38]. In our study, we could demonstrate that the MGMT promoter methylation status and the combination with MGMT protein expression are of prognostic value in newly diagnosed GBM treated with standard therapy. In particular, the prognostic value of MGMT on epigenetic and protein level is associated with age in GBM patients. Further, the observed effects on OS and PFS seem to be independent from the MMR system. As demonstrated in this study, all tested tumor samples expressed MLH1, MSH2, MSH6 and PMS2 in normal and tumor cells to a high level (both, score and intensity), and there was no correlation with any patient characteristics. Therefore, the evaluation of our data suggests that analyzing protein expression of the MMR system has no impact as a prognostic factor for GBM. Epigenetic silencing of MGMT or MGMT protein expression does not influence the expression of MMR.
+
+Generally, the median OS of the entire cohort of this study is comparable to other studies investigating patients with GBM [39,40]. However, other studies show a longer median OS [4,41,42]. This difference is likely due to a higher number of included elderly patients in our study. This reflects published data including elderly individuals [43].
+
+Fifty-two percent of the GBM tested showed MGMT promoter methylation resulting in an age-related survival benefit in favor of the <70 year sub-cohort. The relationship between MGMT protein expression and MGMT silencing by epigenetic regulation, like hypermethylation of the promoter region, is still controversially discussed. Several studies showed that MGMT protein expression has no clear effect on the clinical outcome of patients [44,45,46]. However, in our study, a subgroup of patients with a low MGMT protein expression and MGMT promoter methylation demonstrated a benefit in median OS compared to patients expressing the MGMT protein in tumor cells. Interestingly, even the subgroup with an unmethylated MGMT promoter, yet with low MGMT protein expression, revealed a better survival compared to those patients expressing the MGMT protein. The results of both of these defined subgroups are in line with findings of Lalezari et al. [47]. It was indicated that low protein expression alone was inadequate for a better outcome. Interestingly, there is a sub-cohort of MGMT-promoter-methylated patients with MGMT protein expression showing a worse median OS. This outcome might be due to a partial escape of the epigenetic silencing of the MGMT protein and an efficient DNA repair via the functional MMR or other DDR systems, such as BER, in the TMZ-treated tumor cells [47,48,49].
+
+Overall, it can be concluded, that a partial correlation of an effective MGMT silencing via epigenetic alterations is present in a portion of patients with GBM, while in others a “mosaic-like” pattern, such as unmethylated MGMT promoter and low protein expression or methylated MGMT promoter and present MGMT protein expression, exist.
+
+Evaluation of our data suggests that analyzing protein expression of the MMR system has no impact as a prognostic factor for GBM. Epigenetic silencing of MGMT or MGMT protein expression does not influence the expression of MMR. However, mutations or hypermethylation of the MMR proteins, such as MLH1, a dynamic expression pattern or the involvement of other DDR pathways [48] upon/after TMZ treatment, remain to be clarified in future studies.
+
+Besides molecular factors, the extent of neurosurgical intervention has prognostic value on the survival in GBM [50,51,52]. The results of this study show that GTR of the tumor results in an OS and PFS advantage, whereas STR is associated with decreased survival probabilities dependent on age. This is in line with published data [40,53,54]. Although only elderly patients, ≥65-year-old patients were included in the study by Bruno et al., and a clear advantage of GTR compared to STR was observed for OS and PFS [53]. Further study performed by Almenawer et al., showed an OS of 8.68 and 14.04 months for STR and GTR, respectively, and a PFS of 4.31 months for STR and 7.03 months for GTR [54]. These findings underline the importance of surgery in the neuro-oncological management.
+
+The strengths of the study are (i) exclusively treatment-naïve GBM grade IV patients, (ii) with inclusion of MGMT protein expression with the evaluation of the nucleus and cytoplasmic distribution, the cytoplasmic localization could indicate the trafficking of MGMT loaded with methyl towards proteasome for degradation, and (iii) balanced groups for age, MGMT promoter methylation status and surgical resection type. The major limitation of our study is that stratifying into the groups of interest resulted in small sample sizes in the respective subgroups, thus, solely large effects could be observed.
+
+4. Materials and Methods
+
+4.1. Patient Selection
+
+The implementation of this study is subject to the ethical votes (AN5220 329/4.4, AN2014-0068 334/424) of the Medical University of Innsbruck. Only patients with writ-ten informed consent were included in the study. Tissue samples of diagnosed GBM patients were collected from 2015 to 2018. The following inclusion criteria were applied: (i) patients diagnosed with GBM WHO grade IV, (ii) absence of other concurrent tumors, (iii) treatment-naïve patients, and (iv) availability of tumor tissue for analyses. Medical history, including age, sex, KPS, surgical resection and therapeutic intervention, were documented and evaluated. OS and PFS were calculated from the date of surgery. Surgical re-section was performed via craniotomy, depending on tumor location and preoperative MRI. The extent of resection was measured on postoperative contrast-enhanced T1 MRI (within 48 h after resection). The extent of the resection was determined as GTR (≥98% tumor removal) and STR (90 to 98% tumor removal).
+
+4.2. Tissue Sampling
+
+Surgical specimens were formalin-fixed and, after macroscopic evaluation by a trained pathologist, paraffin-embedded (FFPE). After standard hematoxylin/eosin staining (Diapath, Sanova, Vienna, Austria), diagnosis was performed according to the WHO classification (2016 version) [55] by experienced neuropathologists, at the Medical University of Innsbruck and at the Institute of Neuropathology and Neurochemistry, Medical University of Vienna.
+
+4.3. Methylation Analysis
+
+Following the histopathological evaluation by an experienced pathologist, three to five 5 µm thick slices of the FFPE material were used for further DNA isolation. Genomic DNA was isolated using the EZ1 DNA investigator kit or QIAamp DNA FFPE Tissue Kit, and bisulfite conversion was performed using the EpiTect Fast FFPE bisulfite Kit (all Kits from Qiagen, Hilden, Germany), according to manufacturer’s recommendation. For pyrosequencing, the Pyro Mark Therascreen MGMT Kit (Qiagen, Hilden, Germany) was used to assess four CpG sites. In total, 50 ng of bisulfite-converted DNA was used for amplification PCR. All analyses were performed as duplicates. As sequencing controls, an unmethylated and a methylated control DNA were processed in parallel. The CpG sites were located in exon 1 of the human MGMT gene (CpG 76–79). A mean methylation score of <8% was classified as unmethylated, as previously published [56,57].
+
+4.4. Immunohistochemical Analysis
+
+For the 42 cases, immunohistochemistry was performed on 2 µm thick slices of FFPE material. Following deparaffination of the slices, MMR protein staining was performed using the OptiView DAB IHC Detection Kit or the Ventana system, as recommended by the manufacturer (Roche, Basel, Switzerland). Immunohistochemical staining of the MGMT protein was performed manually on FFPE sections. For antigen retrieval, a heat-induced epitope retrieval was performed in a water bath at 98.5 °C for 40 min, in a citrate buffer (pH 6.0). For detection, the Dako REAL EnVision Detection System (Agilent, Santa Clara, CA, USA) and peroxidase/DAB+/rabbit/mouse was used. The following antibodies and dilutions were used: anti-MGMT antibody, clone MT3.1 (Merck Millipore, Burlington, MA, USA), 1:100 in blocking solution; MLH1 (M1) (Roche Cell Marque, Basel, Switzerland), 1.4 µg/mL pre-diluted; MSH2 (G219-1129) (Roche Cell Marque, Basel, Switzerland), 3.62 mg/mL pre-diluted; MSH6 (BC/44) (Biocare Medical, Pacheco, CA, USA), 1:50 in sCC1; PMS2 (EPR3947) (Roche Cell Marque, Basel, Switzerland), 14.37 µg/mL pre-diluted; IDH1 R132H (clone H09, Dianova, Hamburg, Germany) 1:30. The intensity of the immunohistochemical staining was scored from 0 to 3, representing very weak, weak, moderate and strong staining, respectively. The density of MMR and MGMT protein expression was scored in percent of the tumor area. The MGMT expression scores were assigned to low (scores: 0 and 1) and high (scores: 2 and 3) expression. The expression patterns of MGMT, MMR and IDH1 were evaluated by at least two independent researchers (J.H., S.S., R.H. and A.M.B.-T.), blinded to MGMT promoter methylation status and further clinical information.
+
+4.5. Statistics
+
+Correlation analyses for dichotomous data were assessed using the phi coefficient. Survival probabilities were assessed for OS and PFS. Kaplan–Meier curves were compared using the log-rank test. Univariate and multivariate analyses were carried out using Cox proportional hazards models. A p-value of <0.05 was considered as statistically significant. All statistical analyses were performed using R version 4.0.3.
+
+5. Conclusions
+
+Summarizing the results of this study, determination of MGMT promoter methylation status and concomitant MGMT protein expression status have an additional prognostic value, whereby the former is particularly of prognostic value in patients younger than 70 years. The analysis of the MMR system by IHC could not demonstrate any diagnostic or prognostic relevance in order to improve the treatment of GBM patients. Further analyses are needed in the future to define the role of the epigenetic MGMT silencing regulation and its effectiveness and to strengthen its application as a prognostic and predictive molecular marker in GBM.
+
+Acknowledgments
+
+We gratefully thank Sabine Joebstl (MUI), Margit Gogg-Kammerer and Sylvia Eidenhammer (both MUG) and Verena Forcher (Institute for Pathology/INNPATH, Tirol Kliniken, Innsbruck) for excellent technical assistance.
+
+Supplementary Materials
+
+The following supporting information can be downloaded at: https://www.mdpi.com/article/10.3390/ijms24076184/s1.
+
+Click here for additional data file.
+
+Author Contributions
+
+Conceptualization, K.R.B. and C.M.; methodology, C.M.; validation, K.R.B., C.M. and A.M.B.-T.; formal analysis, A.M.B.-T.; investigation, K.R.B., S.S., T.S., J.H., C.M. and A.M.B.-T.; resources, C.F.F., R.H., J.H., C.T. and C.M.; data curation, K.R.B., C.M. and A.M.B.-T.; writing—original draft preparation, K.R.B., C.M. and A.M.B.-T.; writing—review and editing, K.R.B., S.S., C.F.F., R.H., T.S., J.H., C.T., C.M. and A.M.B.-T.; visualization, C.M. and A.M.B.-T.; supervision, J.H. and C.T.; project administration, K.R.B. and C.M.; funding acquisition, K.R.B. and C.M. All authors have read and agreed to the published version of the manuscript.
+
+Institutional Review Board Statement
+
+The study was conducted in accordance with the Declaration of Helsinki, and approved by the Ethics Committee of the Medical University of Innsbruck (AN5220 329/4.4, AN2014-0068 334/424, in December 2016).
+
+Informed Consent Statement
+
+Written informed consent to publish this paper was obtained from the patients.
+
+Data Availability Statement
+
+The data presented in this study are available on request from the corresponding author. The data are not publicly available due to ethical restrictions.
+
+Conflicts of Interest
+
+The authors declare no conflict of interest.
+
+Figure 1 Kaplan–Meier estimates of overall survival (OS) in patients with glioblastoma WHO grade IV. (A) OS of patients stratified by age at diagnosis younger than 70 years and older than 70 years. (B) OS of patients stratified by MGMT promoter methylation status. (C) OS in patients younger than 70 years, comparing MGMT promoter methylation. (D) OS in patients older than 70 years, comparing MGMT promoter methylation. The hazard ratio (HR) and the 95% confidence interval in are stated in brackets. Statistical significance between the groups was evaluated using a log-rank test.
+
+Figure 2 Representative images of the hematoxylin/eosin (HE) staining and the immunohistochemical staining for MGMT protein. Case 1 represents MGMTmet+/MGMThigh, case 2 MGMTmet−/MGMThigh, case 3 MGMTmet+/MGMTlow and case 4 MGMTmet−/MGMTlow. Images were taken using the Pannoramic Scan software v1.15.0.57 of a 3D Histech Scanner, and exemplary areas were determined via the Panoramic Viewer software v2.4.0.53492. Arrow heads indicate MGMT-positive cells. V = vessel; scale bar = 100 µm; insert scale bar = 20 µm.
+
+Figure 3 Representative images of the hematoxylin/eosin (HE) staining and the immunohistochemical staining for the mismatch repair system (MMR). All four cases show a positive MMR signal. Case 1 represents MGMTmet+/MMGThigh, case 2 MGMTmet−/MGMThigh, case 3 MGMTmet+/MGMTlow and case 4 MGMTmet−/MGMTlow. Brownish color indicates a positive MMR staining with diaminobenzidine. Images were taken using a 3D Histech Scanner, and exemplary areas were determined via the Panoramic Viewer software. Scale bar = 100 µm.
+
+ijms-24-06184-t001_Table 1 Table 1 Characteristics of patients with glioblastoma WHO grade IV. The characteristics are listed for all patients (All), patients younger than 70 years of age (<70 years) and patients with an age of 70 years or more (≥70 years).
+
+Characteristic	All	<70 Years	≥70 Years	
+Patients, n (%)	42	23 (54.8)	19 (45.2)	
+Sex				
+ Female, n (%)	16 (38.1)	12 (52.2)	4 (21.1)	
+ Male, n (%)	26 (61.9)	11 (47.8)	15 (78.9)	
+Age at surgery, years, median (IQR)	67.0 (58.0–74.8)	58.0 (54.0–63.0)	75.0 (72.5–78.0)	
+IDH1 status				
+ IDH1 wildtype, n (%)	34 (81.0)	1 (4.3)	2 (10.5)	
+ IDH1 mutated, n (%)	3 (7.1)	18 (78.3)	16 (84.2)	
+ IDH1 NOS, n (%)	5 (11.9)	4 (17.4)	1 (5.3)	
+KPS				
+ Preoperative KPS, mean (±SD)	86.3 (±15.45)	89.1 (±9.71)	83.2 (±20.0)	
+ Postoperative KPS, mean (±SD)	77.9 (±27.63)	82.2(±26.45)	72.6 (±28.8)	
+Extent of surgery §				
+ Subtotal resection, n (%)	13 (31.7)	7 (69.6)	12 (66.7)	
+ Gross total resection, n (%)	28 (68.3)	16 (30.4)	6 (33.3)	
+First-line therapy				
+ Stupp protocol, n (%)	32 (76.2)	21 (95.5)	11 (57.9)	
+ Radiotherapy, n (%)	8 (19.0)	2 (4.5)	6 (31.6)	
+ No further treatment, n (%)	2 (4.8)	0 (0.0)	2 (10.5)	
+IDH1—isocitrate dehydrogenase 1; KPS—Karnofsky performance score; NOS—not otherwise specified; SD—standard deviation; IQR—interquartile range; § Data were not evaluable for one patient.
+
+ijms-24-06184-t002_Table 2 Table 2 Overall survival (OS) and progression-free survival (PFS) in patients with glioblastoma WHO grade IV. The data are shown for all patients (All), patients younger than 70 years of age (<70 years) and patients with an age of 70 years or more (≥70 years). The median OS and PFS are given in months and days after surgery, respectively.
+
+	All	<70 Years	≥70 Years	
+Parameter	n	OS	n	PFS	n	OS	n	PFS	n	OS	n	PFS	
+Total cohort	42	11.5	34	116.5	23	15.0	20	125	19	4.0	14	214	
+Sex													
+ Female	16	14.5	13	119	12	17.5	10	114	4	1.5	3	294	
+ Male	26	8.0	21	190	11	13.0	10	130	15	5.0	11	214	
+Age at surgery													
+ <70 years	23	15.0	20	125									
+ ≥70 years	19	4.0	14	214									
+MGMT methylation status													
+ MGMTmet+	21	14.0	16	134	11	31.0	9	125	10	3.0	7	294	
+ MGMTmet−	21	11.0	18	190	12	13.0	11	125	9	7.0	7	214	
+MGMT protein expression													
+ MGMTlow	31	13.0	26	190	18	15.5	16	125	13	4.0	10	214	
+ MGMThigh	11	7.0	8	134	5	15.0	4	118	6	5.0	4	- *	
+MGMT combined													
+ MGMTmet+/MGMTlow	16	19.5	12	281	8	28.0	7	125	8	2.5	5	294	
+ MGMTmet+/MGMThigh	5	12.0	4	118	4	17.5	2	118	2	7.5	2	102	
+ MGMTmet−/MGMTlow	15	13.0	14	149	10	13.0	9	125	5	11.0	5	214	
+ MGMTmet−/MGMThigh	6	5.0	4	211	1	15.0	2	124	4	4.0	2	- *	
+Extent of surgery §													
+ Subtotal resection	13	4	11	102	7	17.0	14	172	6	3	5	294	
+ Gross total resection	28	13	23	214	16	14.5	6	70	12	9	9	- *	
+MGMT—O6-metylguanin DNA methyltransferase; * Patients censored before half of the patients progressed.; § Data were not evaluable for one patient.
+
+ijms-24-06184-t003_Table 3 Table 3 Univariate Cox proportional hazard model of OS in patients with glioblastoma WHO grade IV. The data are shown for all patients (All), patients younger than 70 years of age (<70 years) and patients with an age of 70 years or more (≥70 years). References in the model were female sex, methylated MGMT promoter, low MGMT protein expression, gross total resection and a Karnofsky performance score below 70. The hazard ratio (HR), the 95% confidence interval (CI) and the corresponding p-value are listed.
+
+	All	<70 Years	≥70 Years	
+Parameter	HR (95% CI)	p	HR (95% CI)	p	HR (95% CI)	p	
+Sex (male)	1.34 (0.70–2.58)	0.379	1.24 (0.52–2.94)	0.623	0.75 (0.24–2.36)	0.620	
+Unmethylated MGMT promoter	2.20 (1.06–4.55)	0.034	4.85 (1.59–14.74)	0.005	0.96 (0.37–2.53)	0.941	
+Expressed MGMT protein	1.48 (0.73–2.99)	0.278	1.19 (0.43–3.31)	0.743	1.40 (0.49–3.97)	0.531	
+Subtotal resection	1.41 (0.72–2.77)	0.317	1.03 (0.41–2.57)	0.950	4.05 (1.11–14.79)	0.035	
+KPS pre-surgery (score > 70)	0.80 (0.31–2.06)	0.647	1.99 (0.26–15.20)	0.508	0.78 (0.25–2.42)	0.666	
+MGMT—O6-methylguanine DNA methyltransferase ; KPS—Karnofsky performance score.
+
+ijms-24-06184-t004_Table 4 Table 4 Multivariate Cox proportional hazard model of OS in patients with GBM. The data are shown for all patients (All), patients younger than 70 years of age (<70 years) and patients with an age of 70 years or more (≥70 years). References in the model were female sex, methylated MGMT promoter, low MGMT protein expression and gross total resection. The hazard ratio (HR), the 95% confidence interval (CI) and the corresponding p-value are listed.
+
+	All	<70 Years	≥70 Years	
+Parameter	HR (95% CI)	p	HR (95% CI)	p	HR (95% CI)	p	
+Sex (male)	1.36 (0.65–2.87)	0.415	1.00 (0.39–2.51)	0.993	0.70 (0.15–3.23)	0.652	
+Unmethylated MGMT promoter	2.69 (1.19–6.07)	0.017	6.14 (1.78–21.21)	0.004	1.20 (0.39–3.72)	0.753	
+Expressed MGMT protein	1.67 (0.81–3.44)	0.165	1.53 (0.53–4.43)	0.438	2.56 (0.79–8.32)	0.117	
+Subtotal resection	1.92 (0.94–3.93)	0.074	1.60 (0.60–4.29)	0.350	5.74 (1.43–23.05)	0.012	
+MGMT—O6-methylguanine DNA methyltransferase.
+
+Disclaimer/Publisher’s Note: The statements, opinions and data contained in all publications are solely those of the individual author(s) and contributor(s) and not of MDPI and/or the editor(s). MDPI and/or the editor(s) disclaim responsibility for any injury to people or property resulting from any ideas, methods, instructions or products referred to in the content.
+==== Refs
+References
+
+1. Abd-Elghany A.A. Naji A.A. Alonazi B. Aldosary H. Alsufayan M.A. Alnasser M. Mohammad E.A. Mahmoud M.Z. Radiological Characteristics of Glioblastoma Multiforme Using CT and MRI Examination J. Radiat. Res. Appl. Sci. 2019 12 289 293 10.1080/16878507.2019.1655864
+2. Magazzù A. Marcuello C. Investigation of Soft Matter Nanomechanics by Atomic Force Microscopy and Optical Tweezers: A Comprehensive Review Nanomaterials 2023 13 963 10.3390/nano13060963 36985857
+3. Tsitlakidis A. Tsingotjidou A.S. Kritis A. Cheva A. Selviaridis P. Aifantis E.C. Foroglou N. Atomic Force Microscope Nanoindentation Analysis of Diffuse Astrocytic Tumor Elasticity: Relation with Tumor Histopathology Cancers 2021 13 4539 10.3390/cancers13184539 34572766
+4. Stupp R. Hegi M.E. Mason W.P. van den Bent M.J. Taphoorn M.J.B. Janzer R.C. Ludwin S.K. Allgeier A. Fisher B. Belanger K. Effects of Radiotherapy with Concomitant and Adjuvant Temozolomide versus Radiotherapy Alone on Survival in Glioblastoma in a Randomised Phase III Study: 5-Year Analysis of the EORTC-NCIC Trial Lancet Oncol. 2009 10 459 466 10.1016/S1470-2045(09)70025-7 19269895
+5. Hegi M.E. Liu L. Herman J.G. Stupp R. Wick W. Weller M. Mehta M.P. Gilbert M.R. Correlation of O6-Methylguanine Methyltransferase (MGMT) Promoter Methylation with Clinical Outcomes in Glioblastoma and Clinical Strategies to Modulate MGMT Activity J. Clin. Oncol. 2008 26 4189 4199 10.1200/JCO.2007.11.5964 18757334
+6. Hegi M.E. Diserens A.-C. Gorlia T. Hamou M.-F. de Tribolet N. Weller M. Kros J.M. Hainfellner J.A. Mason W. Mariani L. MGMT Gene Silencing and Benefit from Temozolomide in Glioblastoma N. Engl. J. Med. 2005 352 997 1003 10.1056/NEJMoa043331 15758010
+7. Esteller M. Herman J.G. Generating Mutations but Providing Chemosensitivity: The Role of O6-Methylguanine DNA Methyltransferase in Human Cancer Oncogene 2004 23 1 8 10.1038/sj.onc.1207316 14712205
+8. Spiegl-Kreinecker S. Pirker C. Filipits M. Lötsch D. Buchroithner J. Pichler J. Silye R. Weis S. Micksche M. Fischer J. O6-Methylguanine DNA Methyltransferase Protein Expression in Tumor Cells Predicts Outcome of Temozolomide Therapy in Glioblastoma Patients Neuro Oncol. 2010 12 28 36 10.1093/neuonc/nop003 20150365
+9. Ostrom Q.T. Bauchet L. Davis F.G. Deltour I. Fisher J.L. Langer C.E. Pekmezci M. Schwartzbaum J.A. Turner M.C. Walsh K.M. The Epidemiology of Glioma in Adults: A “State of the Science” Review Neuro Oncol. 2014 16 896 913 10.1093/neuonc/nou087 24842956
+10. Zhang K. Wang X. Zhou B. Zhang L. The Prognostic Value of MGMT Promoter Methylation in Glioblastoma Multiforme: A Meta-Analysis Fam. Cancer 2013 12 449 458 10.1007/s10689-013-9607-1 23397067
+11. Hegi M.E. Diserens A.-C. Godard S. Dietrich P.-Y. Regli L. Ostermann S. Otten P. Van Melle G. de Tribolet N. Stupp R. Clinical Trial Substantiates the Predictive Value of O-6-Methylguanine-DNA Methyltransferase Promoter Methylation in Glioblastoma Patients Treated with Temozolomide Clin. Cancer Res. 2004 10 1871 1874 10.1158/1078-0432.CCR-03-0384 15041700
+12. Esteller M. Toyota M. Sanchez-Cespedes M. Capella G. Peinado M.A. Watkins D.N. Issa J.P. Sidransky D. Baylin S.B. Herman J.G. Inactivation of the DNA Repair Gene O6-Methylguanine-DNA Methyltransferase by Promoter Hypermethylation Is Associated with G to A Mutations in K-Ras in Colorectal Tumorigenesis Cancer Res. 2000 60 2368 2371 10811111
+13. Uno M. Oba-Shinjo S.M. Camargo A.A. Moura R.P. de Aguiar P.H. Cabrera H.N. Begnami M. Rosemberg S. Teixeira M.J. Marie S.K.N. Correlation of MGMT Promoter Methylation Status with Gene and Protein Expression Levels in Glioblastoma Clinics 2011 66 1747 1755 10.1590/S1807-59322011001000013 22012047
+14. Stupp R. Mason W.P. van den Bent M.J. Weller M. Fisher B. Taphoorn M.J.B. Belanger K. Brandes A.A. Marosi C. Bogdahn U. Radiotherapy plus Concomitant and Adjuvant Temozolomide for Glioblastoma N. Engl. J. Med. 2005 352 987 996 10.1056/NEJMoa043330 15758009
+15. Stupp R. Taillibert S. Kanner A.A. Kesari S. Steinberg D.M. Toms S.A. Taylor L.P. Lieberman F. Silvani A. Fink K.L. Maintenance Therapy with Tumor-Treating Fields plus Temozolomide vs. Temozolomide Alone for Glioblastoma: A Randomized Clinical Trial JAMA 2015 314 2535 2543 10.1001/jama.2015.16669 26670971
+16. Wick W. Platten M. Meisner C. Felsberg J. Tabatabai G. Simon M. Nikkhah G. Papsdorf K. Steinbach J.P. Sabel M. Temozolomide Chemotherapy Alone versus Radiotherapy Alone for Malignant Astrocytoma in the Elderly: The NOA-08 Randomised, Phase 3 Trial Lancet Oncol. 2012 13 707 715 10.1016/S1470-2045(12)70164-X 22578793
+17. Malmström A. Grønberg B.H. Marosi C. Stupp R. Frappaz D. Schultz H. Abacioglu U. Tavelin B. Lhermitte B. Hegi M.E. Temozolomide versus Standard 6-Week Radiotherapy versus Hypofractionated Radiotherapy in Patients Older than 60 Years with Glioblastoma: The Nordic Randomised, Phase 3 Trial Lancet Oncol. 2012 13 916 926 10.1016/S1470-2045(12)70265-6 22877848
+18. Jiapaer S. Furuta T. Tanaka S. Kitabayashi T. Nakada M. Potential Strategies Overcoming the Temozolomide Resistance for Glioblastoma Neurol. Med. Chir. 2018 58 405 421 10.2176/nmc.ra.2018-0141
+19. Li G.-M. Mechanisms and Functions of DNA Mismatch Repair Cell Res. 2008 18 85 98 10.1038/cr.2007.115 18157157
+20. Pegg A.E. Dolan M.E. Moschel R.C. Structure, Function, and Inhibition of O6-Alkylguanine-DNA Alkyltransferase Prog. Nucleic Acid Res. Mol. Biol. 1995 51 167 223 10.1016/s0079-6603(08)60879-x 7659775
+21. Koukourakis G.V. Kouloulias V. Zacharias G. Papadimitriou C. Pantelakos P. Maravelis G. Fotineas A. Beli I. Chaldeopoulos D. Kouvaris J. Temozolomide with Radiation Therapy in High Grade Brain Gliomas: Pharmaceuticals Considerations and Efficacy; a Review Article Molecules 2009 14 1561 1577 10.3390/molecules14041561 19384285
+22. Trivedi R.N. Almeida K.H. Fornsaglio J.L. Schamus S. Sobol R.W. The Role of Base Excision Repair in the Sensitivity and Resistance to Temozolomide-Mediated Cell Death Cancer Res. 2005 65 6394 6400 10.1158/0008-5472.CAN-05-0715 16024643
+23. Helleday T. Petermann E. Lundin C. Hodgson B. Sharma R.A. DNA Repair Pathways as Targets for Cancer Therapy Nat. Rev. Cancer 2008 8 193 204 10.1038/nrc2342 18256616
+24. Maxwell J.A. Johnson S.P. McLendon R.E. Lister D.W. Horne K.S. Rasheed A. Quinn J.A. Ali-Osman F. Friedman A.H. Modrich P.L. Mismatch Repair Deficiency Does Not Mediate Clinical Resistance to Temozolomide in Malignant Glioma Clin. Cancer Res. 2008 14 4859 4868 10.1158/1078-0432.CCR-07-4807 18676759
+25. Perazzoli G. Prados J. Ortiz R. Caba O. Cabeza L. Berdasco M. Gónzalez B. Melguizo C. Temozolomide Resistance in Glioblastoma Cell Lines: Implication of MGMT, MMR, P-Glycoprotein and CD133 Expression PLoS ONE 2015 10 e0140131 10.1371/journal.pone.0140131 26447477
+26. Quiros S. Roos W.P. Kaina B. Processing of O6-Methylguanine into DNA Double-Strand Breaks Requires Two Rounds of Replication Whereas Apoptosis Is Also Induced in Subsequent Cell Cycles Cell Cycle 2010 9 168 178 10.4161/cc.9.1.10363 20016283
+27. Novo N. Romero-Tamayo S. Marcuello C. Boneta S. Blasco-Machin I. Velázquez-Campoy A. Villanueva R. Moreno-Loshuertos R. Lostao A. Medina M. Beyond a Platform Protein for the Degradosome Assembly: The Apoptosis-Inducing Factor as an Efficient Nuclease Involved in Chromatinolysis PNAS Nexus 2022 2 pgac312 10.1093/pnasnexus/pgac312 36845352
+28. Artus C. Boujrad H. Bouharrour A. Brunelle M.N. Hoos S. Yuste V.J. Lenormand P. Rousselle J.C. Namane A. England P. AIF Promotes Chromatinolysis and Caspase-Independent Programmed Necrosis by Interacting with Histone H2AX EMBO J. 2010 29 1585 1599 10.1038/emboj.2010.43 20360685
+29. Wu B.-P. Zhang Y.-L. Zhou D.-Y. Gao C.-F. Lai Z.-S. Microsatellite Instability, MMR Gene Expression and Proliferation Kinetics in Colorectal Cancer with Famillial Predisposition World J. Gastroenterol. 2000 6 902 905 10.3748/wjg.v6.i6.902 11819718
+30. McConechy M.K. Talhouk A. Li-Chang H.H. Leung S. Huntsman D.G. Gilks C.B. McAlpine J.N. Detection of DNA Mismatch Repair (MMR) Deficiencies by Immunohistochemistry Can Effectively Diagnose the Microsatellite Instability (MSI) Phenotype in Endometrial Carcinomas Gynecol. Oncol. 2015 137 306 310 10.1016/j.ygyno.2015.01.541 25636458
+31. Carethers J.M. Stoffel E.M. Lynch Syndrome and Lynch Syndrome Mimics: The Growing Complex Landscape of Hereditary Colon Cancer World J. Gastroenterol. 2015 21 9253 9261 10.3748/wjg.v21.i31.9253 26309352
+32. Cancer Genome Atlas Research Network Comprehensive Genomic Characterization Defines Human Glioblastoma Genes and Core Pathways Nature 2008 455 1061 1068 10.1038/nature07385 18772890
+33. Yip S. Miao J. Cahill D.P. Iafrate A.J. Aldape K. Nutt C.L. Louis D.N. MSH6 Mutations Arise in Glioblastomas during Temozolomide Therapy and Mediate Temozolomide Resistance Clin. Cancer Res. 2009 15 4622 4629 10.1158/1078-0432.CCR-08-3012 19584161
+34. Felsberg J. Thon N. Eigenbrod S. Hentschel B. Sabel M.C. Westphal M. Schackert G. Kreth F.W. Pietsch T. Löffler M. Promoter Methylation and Expression of MGMT and the DNA Mismatch Repair Genes MLH1, MSH2, MSH6 and PMS2 in Paired Primary and Recurrent Glioblastomas Int. J. Cancer 2011 129 659 670 10.1002/ijc.26083 21425258
+35. Hunter C. Smith R. Cahill D.P. Stephens P. Stevens C. Teague J. Greenman C. Edkins S. Bignell G. Davies H. A Hypermutation Phenotype and Somatic MSH6 Mutations in Recurrent Human Malignant Gliomas after Alkylator Chemotherapy Cancer Res. 2006 66 3987 3991 10.1158/0008-5472.CAN-06-0127 16618716
+36. Parsons D.W. Jones S. Zhang X. Lin J.C.-H. Leary R.J. Angenendt P. Mankoo P. Carter H. Siu I.-M. Gallia G.L. An Integrated Genomic Analysis of Human Glioblastoma Multiforme Science 2008 321 1807 1812 10.1126/science.1164382 18772396
+37. Huang L.E. Friend or Foe-IDH1 Mutations in Glioma 10 Years On Carcinogenesis 2019 40 1299 1307 10.1093/carcin/bgz134 31504231
+38. Alnahhas I. LaHaye S. Giglio P. Mardis E. Puduvalli V. An Evaluation of MGMT Promoter Methylation within the Methylation Subclasses of Glioblastoma Neuro-Oncol. Adv. 2020 2 vdaa117 10.1093/noajnl/vdaa117
+39. Pinson H. Hallaert G. Van der Meulen J. Dedeurwaerdere F. Vanhauwaert D. Van den Broecke C. Van Dorpe J. Van Roost D. Kalala J.P. Boterberg T. Weak MGMT Gene Promoter Methylation Confers a Clinically Significant Survival Benefit in Patients with Newly Diagnosed Glioblastoma: A Retrospective Cohort Study J. Neurooncol. 2020 146 55 62 10.1007/s11060-019-03334-5 31701343
+40. Sanai N. Polley M.-Y. McDermott M.W. Parsa A.T. Berger M.S. An Extent of Resection Threshold for Newly Diagnosed Glioblastomas J. Neurosurg. 2011 115 3 8 10.3171/2011.2.JNS10998 21417701
+41. Magrowski Ł. Nowicka E. Masri O. Tukiendorf A. Tarnawski R. Miszczyk M. The Survival Impact of Significant Delays between Surgery and Radiochemotherapy in Glioblastoma Patients: A Retrospective Analysis from a Large Tertiary Center J. Clin. Neurosci. 2021 90 39 47 10.1016/j.jocn.2021.05.002 34275579
+42. Hallaert G. Pinson H. Vanhauwaert D. Van den Broecke C. Van Roost D. Boterberg T. Kalala J.P. Partial Resection Offers an Overall Survival Benefit over Biopsy in MGMT-Unmethylated IDH-Wildtype Glioblastoma Patients Surg. Oncol. 2020 35 515 519 10.1016/j.suronc.2020.10.016 33152608
+43. Abhinav K. Aquilina K. Gbejuade H. La M. Hopkins K. Iyer V. A Pilot Study of Glioblastoma Multiforme in Elderly Patients: Treatments, O-6-Methylguanine-DNA Methyltransferase (MGMT) Methylation Status and Survival Clin. Neurol. Neurosurg. 2013 115 1375 1378 10.1016/j.clineuro.2012.12.023 23333005
+44. Cao V.T. Jung T.Y. Jung S. Jin S.G. Moon K.S. Kim I.Y. Kang S.S. Park C.S. Lee K.H. Chae H.J. The Correlation and Prognostic Significance of MGMT Promoter Methylation and MGMT Protein in Glioblastomas Neurosurgery 2009 65 866 875 10.1227/01.NEU.0000357325.90347.A1 19834398
+45. Rodriguez F.J. Thibodeau S.N. Jenkins R.B. Schowalter K.V. Caron B.L. O’neill B.P. James C.D. David James C. Passe S. Slezak J. MGMT Immunohistochemical Expression and Promoter Methylation in Human Glioblastoma Appl. Immunohistochem. Mol. Morphol. 2008 16 59 65 10.1097/PAI.0b013e31802fac2f 18091318
+46. Sonoda Y. Yokosawa M. Saito R. Kanamori M. Yamashita Y. Kumabe T. Watanabe M. Tominaga T. O(6)-Methylguanine DNA Methyltransferase Determined by Promoter Hypermethylation and Immunohistochemical Expression Is Correlated with Progression-Free Survival in Patients with Glioblastoma Int. J. Clin. Oncol. 2010 15 352 358 10.1007/s10147-010-0065-6 20232102
+47. Lalezari S. Chou A.P. Tran A. Solis O.E. Khanlou N. Chen W. Li S. Carrillo J.A. Chowdhury R. Selfridge J. Combined Analysis of O6-Methylguanine-DNA Methyltransferase Protein Expression and Promoter Methylation Provides Optimized Prognostication of Glioblastoma Outcome Neuro Oncol. 2013 15 370 381 10.1093/neuonc/nos308 23328811
+48. Gao F. Cui Y. Jiang H. Sui D. Wang Y. Jiang Z. Zhao J. Lin S. Circulating Tumor Cell Is a Common Property of Brain Glioma and Promotes the Monitoring System Oncotarget 2016 7 71330 71340 10.18632/oncotarget.11114 27517490
+49. Barciszewska A.-M. Gurda D. Głodowicz P. Nowak S. Naskręt-Barciszewska M.Z. A New Epigenetic Mechanism of Temozolomide Action in Glioma Cells PLoS ONE 2015 10 e0136669 10.1371/journal.pone.0136669 26309255
+50. Zinn P.O. Colen R.R. Kasper E.M. Burkhardt J.-K. Extent of Resection and Radiotherapy in GBM: A 1973 to 2007 Surveillance, Epidemiology and End Results Analysis of 21,783 Patients Int. J. Oncol. 2013 42 929 934 10.3892/ijo.2013.1770 23338774
+51. Brown T.J. Brennan M.C. Li M. Church E.W. Brandmeir N.J. Rakszawski K.L. Patel A.S. Rizk E.B. Suki D. Sawaya R. Association of the Extent of Resection With Survival in Glioblastoma: A Systematic Review and Meta-Analysis JAMA Oncol. 2016 2 1460 1469 10.1001/jamaoncol.2016.1373 27310651
+52. Awad A.-W. Karsy M. Sanai N. Spetzler R. Zhang Y. Xu Y. Mahan M.A. Impact of Removed Tumor Volume and Location on Patient Outcome in Glioblastoma J. Neurooncol. 2017 135 161 171 10.1007/s11060-017-2562-1 28685405
+53. Bruno F. Pellerino A. Pronello E. Palmiero R. Bertero L. Mantovani C. Bianconi A. Melcarne A. Garbossa D. Rudà R. Elderly Gliobastoma Patients: The Impact of Surgery and Adjuvant Treatments on Survival: A Single Institution Experience Brain Sci. 2022 12 632 10.3390/brainsci12050632 35625018
+54. Almenawer S.A. Badhiwala J.H. Alhazzani W. Greenspoon J. Farrokhyar F. Yarascavitch B. Algird A. Kachur E. Cenic A. Sharieff W. Biopsy versus Partial versus Gross Total Resection in Older Patients with High-Grade Glioma: A Systematic Review and Meta-Analysis Neuro Oncol. 2015 17 868 881 10.1093/neuonc/nou349 25556920
+55. Louis D.N. Perry A. Reifenberger G. von Deimling A. Figarella-Branger D. Cavenee W.K. Ohgaki H. Wiestler O.D. Kleihues P. Ellison D.W. The 2016 World Health Organization Classification of Tumors of the Central Nervous System: A Summary Acta Neuropathol. 2016 131 803 820 10.1007/s00401-016-1545-1 27157931
+56. Reifenberger G. Hentschel B. Felsberg J. Schackert G. Simon M. Schnell O. Westphal M. Wick W. Pietsch T. Loeffler M. Predictive Impact of MGMT Promoter Methylation in Glioblastoma of the Elderly Int. J. Cancer 2012 131 1342 1350 10.1002/ijc.27385 22139906
+57. Preusser M. Berghoff A.S. Manzl C. Filipits M. Weinhäusel A. Pulverer W. Dieckmann K. Widhalm G. Wöhrer A. Knosp E. Clinical Neuropathology Practice News 1-2014: Pyrosequencing Meets Clinical and Analytical Performance Criteria for Routine Testing of MGMT Promoter Methylation Status in Glioblastoma Clin. Neuropathol. 2014 33 6 14 10.5414/NP300730 24359605
+

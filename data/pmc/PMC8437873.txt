@@ -1,0 +1,252 @@
+
+==== Front
+J Neurooncol
+J Neurooncol
+Journal of Neuro-Oncology
+0167-594X
+1573-7373
+Springer US New York
+
+34322829
+3812
+10.1007/s11060-021-03812-9
+Clinical Study
+Volumetric study reveals the relationship between outcome and early radiographic response during bevacizumab-containing chemoradiotherapy for unresectable glioblastoma
+Takigawa Kosuke 1
+http://orcid.org/0000-0002-5523-7166
+Hata Nobuhiro hatanobu@ns.med.kyushu-u.ac.jp
+
+1
+Michiwaki Yuhei 12
+Hiwatashi Akio 3
+Yonezawa Hajime 4
+Kuga Daisuke 1
+Hatae Ryusuke 1
+Sangatsuda Yuhei 1
+Fujioka Yutaka 1
+Funakoshi Yusuke 1
+Otsuji Ryosuke 1
+Sako Aki 1
+Togao Osamu 3
+Yoshiura Takashi 5
+Yoshimoto Koji 14
+Mizoguchi Masahiro 1
+1 grid.177174.3 0000 0001 2242 4849 Department of Neurosurgery, Graduate School of Medical Sciences, Kyushu University, 3-1-1 Maidashi, Higashi-ku, Fukuoka, 812-8582 Japan
+2 grid.411731.1 0000 0004 0531 3030 Department of Neurosurgery, International University of Health and Welfare, Narita Hospital, Chiba, Japan
+3 grid.177174.3 0000 0001 2242 4849 Department of Clinical Radiology, Graduate School of Medical Sciences, Kyushu University, Fukuoka, Japan
+4 grid.258333.c 0000 0001 1167 1801 Department of Neurosurgery, Graduate School of Medical and Dental Sciences, Kagoshima University, Kagoshima, Japan
+5 grid.258333.c 0000 0001 1167 1801 Department of Radiology, Graduate School of Medical and Dental Sciences, Kagoshima University, Kagoshima, Japan
+28 7 2021
+28 7 2021
+2021
+154 2 187196
+3 6 2021
+16 7 2021
+© The Author(s) 2021
+https://creativecommons.org/licenses/by/4.0/ Open AccessThis article is licensed under a Creative Commons Attribution 4.0 International License, which permits use, sharing, adaptation, distribution and reproduction in any medium or format, as long as you give appropriate credit to the original author(s) and the source, provide a link to the Creative Commons licence, and indicate if changes were made. The images or other third party material in this article are included in the article's Creative Commons licence, unless indicated otherwise in a credit line to the material. If material is not included in the article's Creative Commons licence and your intended use is not permitted by statutory regulation or exceeds the permitted use, you will need to obtain permission directly from the copyright holder. To view a copy of this licence, visit http://creativecommons.org/licenses/by/4.0/.
+Purpose
+
+Although we have shown the clinical benefit of bevacizumab (BEV) in the treatment of unresectable newly diagnosed glioblastomas (nd-GBM), the relationship between early radiographic response and survival outcome remains unclear. We performed a volumetric study of early radiographic responses in nd-GBM treated with BEV.
+
+Methods
+
+Twenty-two patients with unresectable nd-GBM treated with BEV during concurrent temozolomide radiotherapy were analyzed. An experienced neuroradiologist interpreted early responses on fluid-attenuated inversion recovery (FLAIR) and gadolinium-enhanced T1-weighted images (GdT1WI). Volumetric changes were evaluated using diffusion-weighted imaging (DWI) and GdT1WI according to the Response Assessment in Neuro-Oncology (RANO) criteria. The results were categorized into improved (complete response [CR] or partial response [PR]) or non-improved (stable disease [SD] or progressive disease [PD]) groups; outcomes were compared using Kaplan–Meier analysis.
+
+Results
+
+The volumetric GdT1WI improvement was a significant predictive factor for overall survival (OS) prolongation (p = 0.0093, median OS: 24.7 vs. 13.6 months); however, FLAIR and DWI images were not predictive. The threshold for the neuroradiologist’s interpretation of improvement in GdT1WI was nearly 20% of volume reduction, which was lesser than 50%, the definition of PR applied in the RANO criteria. However, even less stringent neuroradiologist interpretation could successfully predict OS prolongation (improved vs. non-improved: p = 0.0067, median OS: 17.6 vs. 8.3 months). Significant impact of OS on the early response in volumetric GdT1WI was observed within the cut-off range of 20–50% (20%, p = 0.0315; 30%, p = 0.087; 40%, p = 0.0456).
+
+Conclusions
+
+Early response during BEV-containing chemoradiation can be a predictive indicator of patient outcome in unresectable nd-GBM.
+
+Keywords
+
+Bevacizumab
+Early response
+Glioblastoma
+RANO criteria
+Volumetric study
+19K1767321K0912821H0304420K1797220K09392issue-copyright-statement© Springer Science+Business Media, LLC, part of Springer Nature 2021
+==== Body
+pmcIntroduction
+
+Glioblastoma (GBM) is one of the most common malignant brain tumors and has a poor prognosis. The current standard treatment for newly diagnosed GBM (nd-GBM) is maximal safe removal with concurrent temozolomide and radiation (TMZ-RT), followed by maintenance TMZ with, if possible, tumor-treating fields [1]. Despite such multimodal treatment, the median overall survival (OS) remains less than 2 years.
+
+In addition to these treatments, the FDA approved bevacizumab (BEV), an anti-VEGF antibody molecular-targeted drug that produces an indirect antitumor activity via inhibition of tumor angiogenesis [2], as treatment for recurrent GBM in 2009. Thereafter, two randomized trials, AVAglio and RTOG0825, were conducted to verify the efficacy of BEV for the treatment of nd-GBM, resulting in only progression-free survival (PFS) prolongation, but failed to impact OS [3, 4]. Accordingly, there is no robust evidence supporting the efficacy of BEV treatment for nd-GBM; however, BEV has been approved in Japan as an insurance-covered first-line drug for GBM concurrently with its second-line application, considering the benefit of maintaining patient performance status [5]. Thereafter, Japanese institutes, including ours, have launched several real-world studies, which indicate the clinical benefits of optional first-line BEV for patients with severe clinical conditions [1, 6–10]. Practically, we selected first-line BEV for patients with unresectable GBM and accumulated the clinical data [11]. These case series revealed that the radiographic course following first-line BEV for unresectable tumors varied among patients, and its outcome was considered an unresolved issue that needs to be addressed.
+
+In the response judgment of GBM, gadolinium-enhanced T1-weighted image (GdT1WI) measurement based on the Macdonald criteria has generally been applied [12]. However, in BEV treatment for GBM, apparent tumor reduction on GdT1WI, the so-called pseudo-response, can be observed at an earlier time. Therefore, the evaluation of response using GdT1WI alone may overestimate the therapeutic effect of BEV. This type of complicated radiographic response during BEV treatment was taken into consideration, and the Response Assessment in Neuro-Oncology (RANO) criteria added the evaluation of non-enhanced lesions using T2/FLAIR [13]. Consequently, integrated evaluation based on multiple magnetic resonance imaging (MRI) sequences became essential for the assessment of treatment response; however, the association between complicated radiographic response and clinical outcome remains a controversial issue.
+
+Only a limited number of studies have explored the relationship between radiographic response and clinical outcome following BEV treatment for nd-GBM [14, 15]. In this study, we retrospectively examined the detailed radiographic response using MRI scans during TMZ-RT combined with BEV for unresectable nd-GBM, and aimed to elucidate the relationship between early radiographic response and clinical outcome.
+
+Methods
+
+Patients
+
+Since the Japanese approval of BEV for GBM in 2013, 72 adult (> 18 y) patients with IDH-wt nd-GBM were registered in our brain tumor database. Adaptive add-on BEV treatment to the Stupp regimen described previously [8–10] was selected for patients with unresectable GBM in our institute. The patients, whose postsurgical residual tumors were radiographically evident, were included in the present study. Two patients were excluded because BEV was added for the treatment of a novel lesion during radiotherapy, or radiographical total resection was performed previously. Finally, 22 patients were enrolled in the present study (Table 1). During radiotherapy, all enrolled patients underwent biweekly BEV administrations in combination with TMZ (mean 2.81 times; min 1; max 4). Steroid (betamethasone) was administered in three patients for neurological symptom control during concurrent chemoradiation therapy (CCRT). Two patients continued with 2 mg/day, whereas one patient started with 8 mg/day, which was gradually decreased to 2 mg/day. Thereafter, except for three patients who were transferred to the best supportive care and one who continued TMZ monotherapy, 18 patients continued maintenance treatment with BEV in combination with TMZ in accordance with the AVAglio regimen [3] (TMZ: mean 11.5 course [min 1; max 29], BEV: mean 19.1 course [min 2; max 36]). Although there is a heterogeneity in post-therapy, all 22 cases including these were used for the following contents. The present investigation was approved by the ethics committee (ethics review number: 2019-090) and was conducted in accordance with the 1964 Declaration of Helsinki (as revised in Fortaleza, Brazil, October 2013). All patients provided written informed consent.Table 1 Clinical and molecular characteristics of patients
+
+Characteristics		
+Age, years (mean ± SD)	65.2 ± 12.0	
+Gender, n (%)		
+ Male	11/22(50.0)	
+ Female	11/22(50.0)	
+KPS score, points (mean ± SD)	69.1 ± 21.1	
+MGMT status, n (%)		
+ Methylated	10/22(45.5)	
+ Unmethylated	12/22(54.5)	
+TERT status, n (%)		
+ Mutant	13/22(59.1)	
+ Wild-type	9/22(40.9)	
+PTEN, n (%)		
+ Heterozygous deletion	12/22(54.5)	
+ Normal	10/22(45.5)	
+EGFR, n (%)		
+ Amplification	8/22(36.4)	
+ Normal	14/22(63.6)	
+CDKN2A, n (%)		
+ Homozygous deletion	8/22(36.4)	
+ Normal	14/22(63.6)	
+
+Neuroimaging findings
+
+We evaluated the change in MRI images between pre- and post-CCRT (pre-RT and post-RT) (Fig. 1). Pre-RT MRI was obtained within 2 weeks prior to day 1 of CCRT, whereas post-RT MRI was performed within 1 week after CCRT. Post-MRI was performed within 1 week after RT. An experienced neuroradiologist (A.H.) who was blinded to patients’ clinical characteristics or prognosis evaluated the fluid-attenuated inversion recovery (FLAIR) and GdT1WI neuroimages. The neuroradiologist diagnosed the following based on pre-MRI and post-MRI GdT1WI (Gd-interpretation [Gd-IP]): (1) improved disease, defined as an obvious reduction in enhancing lesions; (2) progressive disease, defined as new or apparently enlarged enhancing lesions; and (3) stable disease, defined as neither improvement nor progression.Fig. 1 Schematic overview of the present study design
+
+FLAIR was evaluated according to the RANO criteria methods [13]. Improvement in diffusion-weighted imaging (DWI) was evaluated using the measurement methods proposed by another group [16]. RANO criteria-based judgments on GdT1WI images that measured enhancing lesions and the sum of the product of the perpendicular diameter (Gd-SPPD) were also performed, and patients were categorized into two groups: improvement (complete response [CR] or partial response [PR]) and non-improvement (stable disease [SD] or progressive disease [PD]) [13].
+
+Genetic analyses
+
+Sample preparations and subsequent confirmation of genetic signatures whose clinical significance was revealed in previous studies, including ours, were performed as described previously [17–25]. The status of TP53, EGFR, PTEN, and CDKN2A was evaluated using the MLPA kit P105-2 according to our previous study [26].
+
+Statistical analysis
+
+Chi-squared and Fisher’s exact tests were used to investigate the relationship of neuroimaging changes with patient characteristics and molecular genetic stratification. Kaplan–Meier analysis was conducted to evaluate OS, and the log-rank test was used to compare survival distributions. The level of statistical significance was set at p < 0.05. All statistical analyses were performed using JMP Pro version 13 (SAS Institute Inc., NC, USA).
+
+Results
+
+Background characteristics
+
+Patient characteristics and molecular genetic stratifications of tumors are summarized in Table 1. The judgment of improvement on DWI, FLAIR, and Gd-SPPD was determined in 8 (36.4%), 16 (72.7%), and 13 (59.1%) patients, respectively. Table 2 shows the genetic markers analyzed in this study. In the univariate analysis, unmethylated MGMT status and CDKN2A homozygous deletion were associated with a poor prognosis (unmethylated MGMT status: HR 2.54, 95% confidence intervals [CI] 0.86–7.5, CDKN2A: HR 2.49, 95% CI 0.86–7.27, p = 0.093). Prognostic significances of analyzed genetic markers were also evaluated in the multivariate analysis, and unmethylated MGMT was the only predictor of poor prognosis (HR 8.51, 95% CI 1.25–58.1, p = 0.0288). CDKN2A status and EGFR status showed a trend toward poor prognosis (CDKN2A, HR 2.73, 95% CI 0.88–8.42, p = 0.0806; EGFR, HR 6.56, 95% CI 0.75–2.45, p = 0.0649) (Table 2).Table 2 Prognostic factors about the genetic markers
+
+Genetic marker	Case (n = 22)	Univariate analysis	Multivariate analysis	
+HR (95% CI)	p value	HR (95% CI)	p value	
+Unmethylated MGMT status	12 (54.5%)	2.54(0.86–7.5)	0.093	8.51 (1.25–58.1)	0.029*	
+TERT mutation	12(57.1%)	1.02(0.35–2.95)	0.973	0.65(0.12–3.46)	0.610	
+EGFR amplification	8(36.4%)	1.48(0.52–4.24)	0.464	6.56(0.75–2.45)	0.065	
+CDKN2A homozygous deletion	8(36.4%)	2.49(0.86–7.27)	0.093	2.73(0.88–8.42)	0.081	
+PTEN loss	12 (54.5%)	0.91(0.33–2.54)	0.864	0.16 (0.02–1.26)	0.082	
+HR hazard ratio, CI confidence interval
+
+*Indicates values that are statistically significant (p < 0.05)
+
+No significant bias in clinical and genetic backgrounds was detected between patients whose radiographic findings improved with each of the three judgments (Table 3).Table 3 Comparison of clinical and molecular characteristics between radiographical findings
+
+MRI imaging	DWI	p	FLAIR	p	GD-SPPD	p	
+Image judgment	Imp (8)	Non imp (14)	Imp (16)	Non imp (6)	Imp (13)	Non imp (9)	
+Age (median, year)	71.4 ± 11.2	61.7 ± 11.3	0.07	65.7 ± 11.5	64 ± 14.3	0.78	66 ± 12.4	64.1 ± 12.1	0.72	
+Sex, M/F	4/4	7/7	0.74	9/7	2/4	0.37	7/6	4/5	0.55	
+KPS change (non-det/det)*1	7/1	11/3	1	13/3	5/1	1	11/2	7/2	1	
+Eloquent/non eloquent	4/4	9/5	0.66	10/6	3/3	0.65	7/6	6/3	0.67	
+Pre Gd-SPPD high/low*2	3/5	8/6	0.66	9/7	2/4	0.64	7/6	4/5	1	
+TERT wt/mut	5/3	4/10	0.19	7/9	2/4	1	5/8	4/5	1	
+MGMT, u/m	3/5	9/5	0.38	9/7	3/3	1	6/7	6/3	0.41	
+PTEN n/hetero	3/5	7/7	0.67	7/9	3/3	1	6/7	4/5	1	
+EGFR n/amp	4/4	10/4	0.39	10/6	4/2	1	8/5	6/3	1	
+CDKN2A n/homo	7/1	7/7	0.17	11/5	3/3	0.62	9/4	5/4	0.66	
+det deterioration, wt wild type, mut mutant, u unmethylated, m methylated, hetero heterozygous deletion, amp amplification, homo homozygous deletion, imp improvement, non imp non improvement
+
+*1 deterioration:≧20 KPS score reduction
+
+*2 Set the median of Pre MRI Gd-SPPD as the border
+
+Survival outcome of radiographic findings
+
+Kaplan–Meier analyses revealed that only Gd-SPPD improvement was a significant predictive factor for OS prolongation (p = 0.0093). The median OS was 24.7 and 13.6 months when GD-SPPD was improved or not, respectively. In contrast, FLAIR and DWI images were not predictive of OS outcome (FLAIR improved vs. non-improvement: p = 0.13, 16.9 vs. 16.3 months, DWI improved vs. non-improved: p = 0.48: 17.6 vs. 16.3 months) (Fig. 2).Fig. 2 Kaplan–Meier estimates of overall survival (OS). A Fluid-attenuated inversion-recovery (FLAIR) imaging group stratified by improvement/non-improvement (SD or PD) do not show different outcomes. B Enhancing lesion and the sum of the product of the perpendicular diameter (Gd-SPPD) imaging group stratified by improvement (CR or PD)/non-improvement (SD or PD), and improvement is the significant predictive factor for OS prolongation (p = 0.0093). C diffusion-weighted imaging (DWI) group stratified by improvement (CR or PD)/non-improvement (SD or PD) do not show different outcomes. CR complete response; OS overall survival; PD progressive disease; SD stable disease
+
+In addition to the evaluation of Gd-SPPD, GdT1WI improvement was interpreted by a neuroradiologist (Gd-IP). Improvement in Gd-IP was associated with OS prolongation (improvement vs. non-improvement: p = 0.0067, 17.6 vs. 8.3 months). We compared the discrepant judgment between Gd-SPPD and Gd-IP results for seven cases in which the reduction was less than 50% in the measurement, as shown in Fig. 3 (Table 4).Fig. 3 A representative case of discrepant result: 63-year-old female. We performed partial removal of the tumor. The patient was treated with temozolomide (TMZ; 75 mg/m2/day) and radiotherapy (Intensity Modulated RT60 Gy) and bevacizumab (four times in total). On the pre-RT magnetic resonance imaging (MRI), enhancing lesion and the sum of the product of the perpendicular diameter (Gd-SPPD) was 37 × 19 mm. After RT, GdT1WI showed a reduction in interpretation by the neuroradiologist. However, Gd-SPPD was 30 × 15 mm and the change in SPPD was 32.4%, which was determined as SD based on the Response Assessment in Neuro-Oncology (RANO) criteria. OS at 22.8 months. GBM glioblastoma; RT radiotherapy; SD stable disease; TMZ temozolomide
+
+Table 4 Cases that were judged SD in the Gd-SPPD due to reduction of less than 50%
+
+Case	Gd-interpretation	Gd-SPPD (%)	Gd-SPPD judge	Discrepant of judgement	
+1	Imp	− 40.4	SD	Yes	
+2	Imp	− 32.4	SD	Yes	
+3	Imp	− 28.8	SD	Yes	
+4	Non imp	− 11.1	SD	No	
+5	Non imp	− 8.68	SD	No	
+6	Non imp	− 8.03	SD	No	
+7	Non imp	− 7.53	SD	No	
+SD stable disease, imp improvement, non imp non improvement
+
+To determine the suitable threshold of GdT1 improvement for the prediction of outcome, we changed the cut-off line for PR judgment in the measurement from 10 to 70%, and we performed Kaplan–Meier analysis (Fig. 4). OS prolongation was observed as a cut-off of 20% to 50% (20% improvement vs. non-improvement: p = 0.0315, 30% improvement vs. non-improvement: p = 0.087, 40% improvement vs. non-improvement: p = 0.0456).Fig. 4 Correlation between Gd-improvement and outcome. A Significant overall OS prolongation is revealed in the Gd-interpretation improvement group. C–F OS prolongation is observed in the improvement group according to a cut-off line from 20 to 50% (20% improved vs. non-improved: p = 0.0315, 30% improved vs. non-improved: p = 0.087, 40% improved vs. non improved: p = 0.0456). B, G, H On the other hand, this outcome disappeared when using a 10%, 60%, and 70% cut-off line. OS overall survival; PR partial response
+
+BEV toxicity
+
+During the course of CCRT, the only obvious BEV-related toxicity was deep venous thrombosis, which was identified in a single patient and led to a temporary discontinuation of BEV administration.
+
+Discussion
+
+We analyzed the impact of radiographic changes during BEV-containing chemoradiotherapy for unresectable nd-GBM. As a result, while changes in DWI and FLAIR images did not have a significant impact, only GdT1WI improvement was associated with significant OS prolongation. The Macdonald criteria applied to GdT1WI have been the standard for determining the treatment response of GBM. The RANO criteria added FLAIR image progression to predict pseudo-response [12, 13]. In previous reports, the relationship between the radiographic response assessed by the RANO criteria and survival outcome following BEV treatment was analyzed in patients with recurrent GBM. Ellingson et al. reported that the changes in FLAIR and GdT1WI were not related to both PFS and OS, and the pre-treatment ratio of FLAIR to contrast-enhancing volume was a predictive marker of both PFS and OS [27]. Boxerman et al. reported that early progression of GdT1WI was a poor prognostic factor for OS and that changes in FLAIR images showed no significant impact on OS [28]. Both studies investigated recurrent GBM, and the therapeutic situations were different from those for nd-GBM. These two studies indicated that quantitative FLAIR improvement showed no significant correlation with OS because BEV treatment improved FLAIR hyperintensity with an anti-permeability effect and supported our results that an early response on FLAIR images is not likely to reflect the survival outcome after BEV treatment. It is speculated that FLAIR progression is useful for differentiating the pseudo response and that FLAIR improvement does not indicate an antitumor effect. An exploratory analysis of AVAglio classified the type of radiologic progression of nd-GBM treated with TMZ-RT and BEV, revealing that CR in the GdT1WI group showed longer OS than that in the PR group [12]. Our results indicated that even PR on GDT1WI could have a survival impact in real-world clinics. The discrepancy between AVAglio and our results might be due to differences in the background characteristics. Our case series consisted of patients with severe clinical conditions that were more likely to be excluded from clinical trials due to their strict inclusion criteria. In addition, the extent of resection should be taken into consideration because CR on GdT1WI is likely to occur after treatment of patients with near completely resected tumors, while there were very few such cases included in our cohort. The impact of GdT1WI improvement in clinical practice is currently an unsolved issue to be elucidated by the accumulation of clinical reports from Japanese institutes where BEV is approved for treatment of nd-GBM.
+
+Other MRI sequences were analyzed for their impact on outcome. DWI has been recognized as a promising sequence for the prediction of the response to BEV treatment because the apparent diffusion coefficient level can reflect the cellularity of tumor tissues [29]. Yamasaki et al. reported that DWI can distinguish the pseudo-response from true response after BEV treatment for recurrent GBM, and the evaluation based on the RANO criteria predicted OS more precisely when combined with DWI change, suggesting that DWI can clearly demonstrate the true extent of the tumor area at an early point [12]. In this study, DWI evaluation was performed according to the method of Yamasaki et al.; however, there was no correlation between the OS and DWI responses. It is noteworthy that the impact of radiotherapy should be considered when discussing these issues because the treatment situation is different between nd- and recurrent GBM. Regarding nd-GBM, relative cerebral blood volume (rCBV) is attracting attention for its association with the response to BEV treatment. An exploratory analysis of RTOG0825 revealed OS prolongation with BEV treatment in the high pretreatment rCBV group compared to the placebo group [30]. However, rCBV changes during BEV treatment did not show an impact on OS in both nd- and recurrent GBMs [30, 31]. Another recent study focused on the contrast between DWI and perfusion images to generate an automated threshold by measuring the hypercellular tumor volume and hyperperfused tumor volume and showed that the ratio changes of these two values during chemoradiotherapy had an impact on OS [32]. On the other hand, they reported that significant GdT1WI volume reduction during chemoradiotherapy was also observed; however, the GdT1WI volume change was not correlated with OS. Nonetheless, the treatment situation in this study was also different from that in ours, in which chemoradiation included BEV administration. Further studies including multiple MRI sequences are warranted to confirm the relationship between early radiographic response and outcome in clinical situations where first-line BEV is approved.
+
+Our study revealed that Gd-improvement evaluated not only by the RANO criteria but also by neuroradiologist’s impression can predict the outcome of unresectable GBM treated with BEV-combined regimen. In addition, the extent of GD-SPPD improvement correlated with significant outcome impact ranging from 20 to 50%, similar to the GD-IP and GD-SPPD thresholds. In other words, OS prolongation can be predicted even in cases when GD-improvement is insufficient to determine PR according to the RANO criteria. These results indicated that, for outcome prediction, evaluation by a neuroradiologist hinted at a clinically appropriate response judgment of BEV-combined treatment for nd-GBM. The criteria of radiographic response by measuring contrast-enhancement lesions have been consistently used from the Macdonald criteria to the RANO criteria [12, 13]. McDonald's standard was created based on the WHO oncology response criteria, which is a general diagnostic imaging standard for solid tumors [33]; therefore, the measurement protocol for contrast-enhancement lesions has not been changed for more than 20 years. Our results propose the possibility that some patients evaluated as SD by the RANO criteria may have a good prognosis and suggest an alternative threshold value for identifying the group with a good prognosis [26].
+
+Our study has several limitations. First, this was a single-center, non-randomized, retrospective study that included a small number of patients. Hence, our results should be verified in a larger cohort. As first-line BEV for GBM has not been approved outside of Japan, a multi-institutional clinical study involving several Japanese facilities is desirable. Second, subsequent treatments were inconsistent among the enrolled patients, which might have affected the outcome. Third, the analyzed image sequences were limited to only DWI, Gd, and FLAIR, and other sequences such as rCBV may be more significant predictors. Fourth, while there existed a correlation between the extent of GD-improvement and outcome, how the background bioactivity attributed to such a relationship was unclear. In the present study, univariate analysis for molecular markers revealed an unmethylated MGMT status, and CDKN2A homozygous deletion showed a trend toward poor prognosis. Our recent study also reported that MGMT and CDKN2A status could stratify Japanese GBM patients into three race-specific groups with different prognoses [26]. Further accumulation of studies including molecular-genetic signatures and evidence beyond real-clinic data are warranted to evaluate the significance of image changes during BEV-included regimens for unresectable GBM.
+
+Conclusions
+
+We examined the radiographic response in multiple MRI sequences (FLAIR, Gd-SPPD, and DWI) in patients with unresectable nd-GBM treated with BEV-including chemoradiotherapy and proved that the Gd-SPPD improvement group showed a significant prolongation of OS. Furthermore, the OS impact was significant even with less strict judgment of radiographic response compared with that of the RANO criteria. This raised the possibility that some patients evaluated as SD by the RANO criteria may have a good prognosis, and the interpretation of neuroradiologists likely hinted at an alternative evaluation for outcome prediction.
+
+Funding
+
+This work was supported by a Japanese Society for the Promotion of Science Grants-in-Aid for Scientific Research (JSPS KAKENHI) Award (Grant No. 19K17673, 21H03044, 21K09128, 20K17972, and JP20K09392).
+
+Declarations
+
+Conflict of interest
+
+The authors declare that they have no conflict of interest.
+
+Ethical approval
+
+All procedures performed in studies involving human participants were in accordance with the ethical standards of the institutional and/or national research committee and with the 1964 Helsinki Declaration and its later amendments or comparable ethical standards. The present investigation was approved by the ethics committee (Ethics review number: 2019-090).
+
+Publisher's Note
+
+Springer Nature remains neutral with regard to jurisdictional claims in published maps and institutional affiliations.
+==== Refs
+References
+
+1. Funakoshi Y Hata N Kuga D Hatae R Sangatsuda Y Fujioka Y Takigawa K Mizoguchi M Update on chemotherapeutic approaches and management of bevacizumab usage for glioblastoma Pharmaceuticals (Basel) 2020 13 470 10.3390/ph13120470
+2. Ferrara N Hillan KJ Gerber HP Novotny W Discovery and development of bevacizumab, an anti-VEGF antibody for treating cancer Nat Rev Drug Discov 2004 3 391 400 10.1038/nrd1381 15136787
+3. Chinot OL Wick W Mason W Henriksson R Saran F Nishikawa R Carpentier AF Hoang-Xuan K Kavan P Cernea D Brandes AA Hilton M Abrey L Cloughesy T Bevacizumab plus radiotherapy-temozolomide for newly diagnosed glioblastoma N Engl J Med 2014 370 709 722 10.1056/NEJMoa1308345 24552318
+4. Gilbert MR Dignam JJ Armstrong TS Wefel JS Blumenthal DT Vogelbaum MA Colman H Chakravarti A Pugh S Won M Jeraj R Brown PD Jaeckle KA Schiff D Stieber VW Brachman DG Werner-Wasik M Tremont-Lukats IW Sulman EP Aldape KD Curran WJ Jr Mehta MP A randomized trial of bevacizumab for newly diagnosed glioblastoma N Engl J Med 2014 370 699 708 10.1056/NEJMoa1308573 24552317
+5. Narita Y Bevacizumab for glioblastoma Ther Clin Risk Manag 2005 11 1759 1765 10.2147/TCRM.S58289
+6. Yonezawa H Hirano H Uchida H Habu M Hanaya R Oyoshi T Sadamura Y Hanada T Tokimura H Moinuddin F Arita K Efficacy of bevacizumab therapy for unresectable malignant glioma: a retrospective analysis Mol Clin Oncol 2017 6 105 110 10.3892/mco.2016.1086 28123740
+7. Yamaguchi S Ishi Y Motegi H Okamoto M Kobayashi H Hirata K Oda Y Tanaka S Terasaka S Houkin K The prognostic improvement of add-on bevacizumab for progressive disease during concomitant temozolomide and radiation therapy in the patients with glioblastoma and anaplastic astrocytoma J Neurosurg Sci 2020 64 502 508 10.23736/S0390-5616.18.04463-6 30035459
+8. Hata N Yoshimoto K Hatae R Kuga D Akagi Y Sangatsuda Y Suzuki SO Shono T Mizoguchi M Iihara K Add-on bevacizumab can prevent early clinical deterioration and prolong survival in newly diagnosed partially resected glioblastoma patients with a poor performance status Onco Targets Ther 2017 10 429 437 10.2147/OTT.S125587 28176936
+9. Hata N Mizoguchi M Kuga D Hatae R Akagi Y Sangatsuda Y Amemiya T Michiwaki Y Fujioka Y Takigawa K Suzuki SO Yoshitake T Togao O Hiwatashi A Yoshimoto K Iihara K First-line bevacizumab contributes to survival improvement in glioblastoma patients complementary to temozolomide J Neurooncol 2020 146 451 458 10.1007/s11060-019-03339-0 32020475
+10. Akiyama Y Kimura Y Enatsu R Mikami T Wanibuchi M Mikuni N Advantages and disadvantages of combined chemotherapy with carmustine wafer and bevacizumab in patients with newly diagnosed glioblastoma: a single-institutional experience World Neurosurg 2018 113 e508 e514 10.1016/j.wneu.2018.02.070 29476996
+11. Funakoshi Y Hata N Kuga D Hatae R Sangatsuda Y Fujioka Y Takigawa K Yoshimoto K Mizoguchi M Iihara K Current trend in treatment of glioblastoma in Japan: a national survey using the diagnostic procedure combination database (J-ASPECT Study-Glioblastoma) Int J Clin Oncol 2021 10.1007/s10147-021-01929-5 33974184
+12. Macdonald D Cascino T Schold SJ Cairncross JG Response criteria for phase II studies of supratentorial malignant glioma J Clin Oncol 1990 8 1277 1280 10.1200/JCO.1990.8.7.1277 2358840
+13. Wen PY Macdonald DR Reardon DA Cloughesy TF Sorensen AG Galanis E Degroot J Wick W Gilbert MR Lassman AB Tsien C Mikkelsen T Wong ET Chamberlain MC Stupp R Lamborn KR Vogelbaum MA van den Bent MJ Chang SM Updated response assessment criteria for high-grade gliomas: response assessment in neuro-oncology working group J Clin Oncol 2010 2 1963 1972 10.1200/JCO.2009.26.3541
+14. Nowosielski M Ellingson BM Chinot OL Garcia J Revil C Radbruch A Nishikawa R Mason WP Henriksson R Saran F Kickingereder P Platten M Sandmann T Abrey LE Cloughesy TF Bendszus M Wick W Radiologic progression of glioblastoma under therapy—an exploratory analysis of AVAglio Neuro Oncol 2018 20 557 566 10.1093/neuonc/nox162 29016943
+15. Schmainda KM Prah MA Marques H Kim E Barboriak DP Boxerman JL Value of dynamic contrast perfusion MRI to predict early response to bevacizumab in newly diagnosed glioblastoma: results from ACRIN 6686 multicenter trial Neuro Oncol 2021 23 314 323 10.1093/neuonc/noaa167 32678438
+16. Yamasaki F Kurisu K Aoki T Yamanaka M Kajiwara Y Watanabe Y Takayasu T Akiyama Y Sugiyama K Advantages of high b-value diffusion-weighted imaging to diagnose pseudo-responses in patients with recurrent glioma after bevacizumab treatment Eur J Radiol 2012 81 2805 2810 10.1016/j.ejrad.2011.10.018 22100373
+17. Sturm D Witt H Hovestadt V Khuong-Quang DA Jones DT Konermann C Pfaff E Tönjes M Sill M Bender S Kool M Zapatka M Becker N Zucknick M Hielscher T Liu XY Fontebasso AM Ryzhova M Albrecht S Jacob K Wolter M Ebinger M Schuhmann MU van Meter T Frühwald MC Hauch H Pekrun A Radlwimmer B Niehues T von Komorowski G Dürken M Kulozik AE Madden J Donson A Foreman NK Drissi R Fouladi M Scheurlen W von Deimling A Monoranu C Roggendorf W Herold-Mende C Unterberg A Kramm CM Felsberg J Hartmann C Wiestler B Wick W Milde T Witt O Lindroth AM Schwartzentruber J Faury D Fleming A Zakrzewska M Liberski PP Zakrzewski K Hauser P Garami M Klekner A Bognar L Morrissy S Cavalli F Taylor MD van Sluis P Koster J Versteeg R Volckmann R Mikkelsen T Aldape K Reifenberger G Collins VP Majewski J Korshunov A Lichter P Plass C Jabado N Pfister SM Hotspot mutations in H3F3A and IDH1 define distinct epigenetic and biological subgroups of glioblastoma Cancer Cell 2012 22 425 437 10.1016/j.ccr.2012.08.024 23079654
+18. Yoshimoto K Hatae R Sangatsuda Y Suzuki SO Hata N Akagi Y Kuga D Hideki M Yamashita K Togao O Hiwatashi A Iwaki T Mizoguchi M Iihara K Prevalence and clinicopathological features of H3.3 G34-mutant high-grade gliomas: a retrospective study of 411 consecutive glioma cases in a single institution Brain Tumor Pathol 2017 34 103 112 10.1007/s10014-017-0287-7 28447171
+19. Arita H Yamasaki K Matsushita Y Nakamura T Shimokawa A Takami H Tanaka S Mukasa A Shirahata M Shimizu S Suzuki K Saito K Kobayashi K Higuchi F Uzuka T Otani R Tamura K Sumita K Ohno M Miyakita Y Kagawa N Hashimoto N Hatae R Yoshimoto K Shinojima N Nakamura H Kanemura Y Okita Y Kinoshita M Ishibashi K Shofuda T Kodama Y Mori K Tomogane Y Fukai J Fujita K Terakawa Y Tsuyuguchi N Moriuchi S Nonaka M Suzuki H Shibuya M Maehara T Saito N Nagane M Kawahara N Ueki K Yoshimine T Miyaoka E Nishikawa R Komori T Narita Y Ichimura K A combination of TERT promoter mutation and MGMT methylation status predicts clinically relevant subgroups of newly diagnosed glioblastomas Acta Neuropathol Commun 2016 4 79 10.1186/s40478-016-0351-2 27503138
+20. Hatae R Hata N Suzuki SO Yoshimoto K Kuga D Murata H Akagi Y Sangatsuda Y Iwaki T Mizoguchi M Iihara K A comprehensive analysis identifies BRAF hotspot mutations associated with gliomas with peculiar epithelial morphology Neuropathology 2017 37 191 199 10.1111/neup.12347 27792249
+21. Parsons DW Jones S Zhang X Lin JC Leary RJ Angenendt P Mankoo P Carter H Siu IM Gallia GL Olivi A McLendon R Rasheed BA Keir S Nikolskaya T Nikolsky Y Busam DA Tekleab H Diaz LA Jr Hartigan J Smith DR Strausberg RL Marie SK Shinjo SM Yan H Riggins GJ Bigner DD Karchin R Papadopoulos N Parmigiani G Vogelstein B Velculescu VE Kinzler KW An integrated genomic analysis of human glioblastoma multiforme Science 2008 321 1807 1812 10.1126/science.1164382 18772396
+22. Simon M Hosen I Gousias K Rachakonda S Heidenreich B Gessi M Schramm J Hemminki K Waha A Kumar R Tert promoter mutations: a novel independent prognostic factor in primary glioblastomas Neuro Oncol 2015 17 45 52 10.1093/neuonc/nou158 25140036
+23. Hatae R Hata N Yoshimoto K Kuga D Akagi Y Murata H Suzuki SO Mizoguchi M Iihara K Precise detection of IDH1/2 and BRAF hotspot mutations in clinical glioma tissues by a differential calculus analysis of high-resolution melting data PLoS ONE 2016 11 e0160489 10.1371/journal.pone.0160489 27529619
+24. Hata N Hatae R Yoshimoto K Murata H Kuga D Akagi Y Sangatsuda Y Suzuki SO Iwaki T Mizoguchi M Iihara K Insular primary glioblastomas with IDH mutations: clinical and biological specificities Neuropathology 2017 37 200 206 10.1111/neup.12362 28116838
+25. Araki Y Mizoguchi M Yoshimoto K Shono T Amano T Nakamizo A Suzuki SO Iwaki T Sasaki T Quantitative digital assessment of MGMT immunohistochemical expression in glioblastoma tissue Brain Tumor Pathol 2011 28 25 31 10.1007/s10014-010-0004-2 21249460
+26. Funakoshi Y Hata N Takigawa K Arita H Kuga D Hatae R Sangatsuda Y Fujioka Y Sako A Umehara T Yoshitake T Togao O Hiwatashi A Yoshimoto K Iwaki T Mizoguchi M Clinical significance of CDKN2A homozygous deletion in combination with methylated MGMT status for IDH-wildtype glioblastoma Cancer Med 2021 10.1002/cam4.3860 33838014
+27. Ellingson BM Cloughesy TF Lai A Nghiemphu PL Mischel PS Pope WB Quantitative volumetric analysis of conventional MRI response in recurrent glioblastoma treated with bevacizumab Neuro Oncol 2011 13 401 409 10.1093/neuonc/noq206 21324937
+28. Boxerman JL Zhang Z Safriel Y Larvie M Snyder BS Jain R Chi TL Sorensen AG Gilbert MR Barboriak DP Early post-bevacizumab progression on contrast-enhanced MRI as a prognostic marker for overall survival in recurrent glioblastoma: results from the ACRIN 6677/RTOG 0625 Central Reader Study Neuro Oncol 2013 15 945 954 10.1093/neuonc/not049 23788270
+29. Nowosielski M, Recheis W, Goebel G, Güler O, Tinkhauser G, Kostron H, Schocke M, Gotwald T, Stockhammer G, Hutterer M ADC histograms predict response to anti-angiogenic therapy in patients with recurrent high-grade glioma Neuroradiology 2011 53 291 302 10.1007/s00234-010-0808-0 21125399
+30. Kickingereder P Wiestler B Burth S Wick A Nowosielski M Heiland S Schlemmer HP Wick W Bendszus M Radbruch A Relative cerebral blood volume is a potential predictive imaging biomarker of bevacizumab efficacy in recurrent glioblastoma Neuro Oncol 2015 17 1139 1147 10.1093/neuonc/nov028 25754089
+31. Schmainda KM Zhang Z Prah M Snyder BS Gilbert MR Sorensen AG Barboriak DP Boxerman JL Dynamic susceptibility contrast MRI measures of relative cerebral blood volume as a prognostic marker for overall survival in recurrent glioblastoma: results from the ACRIN 6677/RTOG 0625 multicenter trial Neuro Oncol 2015 17 1148 1156 10.1093/neuonc/nou364 25646027
+32. Kim MM Aryal MP Sun Y Parmar HA Li P Schipper M Wahl DR Lawrence TS Cao Y Response assessment during chemoradiation using a hypercellular/hyperperfused imaging phenotype predicts survival in patients with newly diagnosed glioblastoma Neuro Oncol 2021 10.1093/neuonc/noab038 34174070
+33. Miller AB Hoogstraten B Staquet M Winkler A Reporting results of cancer treatment Cancer 1981 47 1 207 214 10.1002/1097-0142(19810101)47:1<207::aid-cncr2820470134>3.0.co;2-6 7459811
+

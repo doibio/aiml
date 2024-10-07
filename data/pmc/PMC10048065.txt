@@ -1,0 +1,252 @@
+
+==== Front
+Genes (Basel)
+Genes (Basel)
+genes
+Genes
+2073-4425
+MDPI
+
+10.3390/genes14030701
+genes-14-00701
+Article
+SESN2 Could Be a Potential Marker for Diagnosis and Prognosis in Glioma
+Xu Lingdan Writing – original draft 1†
+Liu Zelin Formal analysis Data curation 1
+Wang Huihui Writing – original draft Project administration 1†
+Lu Jiyuan Data curation 1
+Xu Jia 1
+Meng Yucheng Investigation 1
+https://orcid.org/0000-0002-8257-5558
+Huang Ke Writing – original draft Project administration 2*
+Liu Bin Writing – original draft Funding acquisition 1*
+Zhang Xiaoping Academic Editor
+1 Key Laboratory of Dental Maxillofacial Reconstruction and Biological Intelligence Manufacturing, School of Stomatology, Lanzhou University, Lanzhou 730030, China
+2 Key Laboratory of Preclinical Study for New Drugs of Gansu Province, School of Basic Medical Sciences, Lanzhou University, Lanzhou 730030, China
+* Correspondence: huangk18@lzu.edu.cn (K.H.); liubkq@lzu.edu.cn (B.L.)
+† These authors contributed equally to this work.
+
+12 3 2023
+3 2023
+14 3 70126 11 2022
+27 2 2023
+09 3 2023
+© 2023 by the authors.
+2023
+https://creativecommons.org/licenses/by/4.0/ Licensee MDPI, Basel, Switzerland. This article is an open access article distributed under the terms and conditions of the Creative Commons Attribution (CC BY) license (https://creativecommons.org/licenses/by/4.0/).
+(1) Background: Glioma is among the most common brain tumors, and is difficult to eradicate with current therapeutic strategies due to its highly invasive and aggressive characteristics. Sestrin2 (SESN2) is an autophagy inducer. The effect of SESN2 on glioma is controversial and unclear. (2) Methods: We downloaded related RNA-seq data from the TCGA and GTEx databases. Bioinformatic analyses including differential gene expression analysis, KM survival curve analysis, univariate and multivariate Cox regression analyses, nomogram analysis, ROC curve analysis, gene function enrichment analysis, and immune cell infiltration analysis were conducted. In addition, data from the Human Protein Atlas (HPA) database were collected to validate SESN2 expression in glioma. (3) Results: In comparison with normal tissue, expression of SESN2 in glioma tissue was higher, and those with higher expressions had significantly lower overall survival rates. The results of univariate Cox regression analyses showed that SESN2 can be a disadvantageous factor in poor glioma prognosis. Both nomograms and ROC curves confirmed these findings. Meanwhile, according to gene function analysis, SESN2 may be involved in immune responses and the tumor microenvironment (TME). Based on the HPA database results, SESN2 is localized in the cytosol and shows high expression in glioma. (4) Conclusions: The expression of SESN2 in gliomas was positively relevant to a poorer prognosis, suggesting that SESN2 could be used as a prognostic gene.
+
+glioma
+SESN2
+bioinformatics analysis
+prognostic marker
+Open Subject Foundation of Key Laboratory of Dental Maxillofacial ReconstructionBiological Intelligence Manufacturing, School of Stomatology, Lanzhou University, Gansu Province20JR10RA653 Foundation of School/Hospital of Stomatology, Lanzhou Universitylzukqky-2021-y06 lzukqky-2020-y09 lzujbky-2020-y01 This study was funded by Open Subject Foundation of Key Laboratory of Dental Maxillofacial Reconstruction and Biological Intelligence Manufacturing, School of Stomatology, Lanzhou University, Gansu Province (No. 20JR10RA653 to B.L.), and the Foundation of School/Hospital of Stomatology, Lanzhou University (No. lzukqky-2021-y06 to L.X., No. lzukqky-2020-y09 to Z.L. and No. lzujbky-2020-y01 to J.L.).
+==== Body
+pmc1. Introduction
+
+Glioma is a common type of central nervous system (CNS) tumor [1], with an average survival period of only 12–15 months [2]. Due to its highly infiltrative and aggressive characteristics, it is difficult to eradicate using current treatment strategies including chemotherapy, radiotherapy, and surgery [3]. However, glioma is typically treated with surgical resection, supplemented by chemotherapy and radiotherapy [4]. Glioma is classified on the basis of the World Health Organization (WHO) classification system, from benign ependymomas to glioblastomas (GBMs) [5]. In the past decade, the development of new biomarkers for tumor diagnosis and treatment has presented a frontier of tumor-related research. Its diagnosis and treatment have become increasingly dependent on molecular biomarkers [6]. In order to improve the survival rate and prognosis of patients with glioma, a potential biomarker is urgently needed. As a diagnostic and prognostic indicator, it can help patients receive more efficacious treatments and increase their chances of survival.
+
+Numerous studies have shown that the tumor microenvironment (TME) plays a considerable role in the progression of glioma [7], which constitutes tumor cells, immune cells, tumor-related stroma, and other components [8]. The TME, especially the tumor immune microenvironment (TIME), is one of the major factors affecting a patient’s prognosis [9]. The change in immune infiltration has a meaningful influence on the survival of glioma patients [10]. One study has shown that infiltrating immune cells can promote the development of tumors [11]. However, the prevailing view is that the immune system has the potential to both prevent and promote neoplastic growth [12]. Moreover, the interaction between immune cells and tumor cells is usually bidirectional. In detail, tumor cells can suppress the secretion of immune-related factors, and immune cells can kill tumors. Some genes have been found to be relevant to immune infiltration and affect tumor progression. Nevertheless, the relationship between SESN2 and tumor immunity in glioma has not been explored.
+
+Sestrins, with molecular weights between 52 and 57 kDa are known to belong to a highly conserved family [13]. Sestrins are expressed in mammalian cells in three isoforms: sestrin1 (SESN1), sestrin2 (SESN2), and sestrin3 (SESN3) [14]. SESN2 was first described to be part of the hypoxia-induced gene 95 family (Hi95) [15] and is a powerful autophagy inducer able to activate the antioxidant system and maintain cell homeostasis [16]. The gene is present on chromosome 1, at Cytoband p35.3, and encodes 481 amino acids. The encoded protein of SESN2 localizes to the cytosol. It has an antioxidant function [17], being involved in cell regeneration, protection, and survival [18,19]. SESN2 negatively regulates the TORC1 signaling pathway by acting as an intracellular leucine sensor [18]. In most tumor-related studies, SESN2 has anticancer effects [17]. It inhibits proliferation in hepatocytes [20], inhibits migration, and promotes autophagy in colorectal cancer cells [21,22]. There is a correlation between the low expression of SESN2 and tumor progression and an unfavorable prognosis [17,19]. Despite the fact that SESN2 generally antagonizes colon tumor growth, it can promote tumorigenesis in an iron-rich environment by suppressing cancer cell death associated with oxidative stress [23]. In contrast, SESN2 promotes tumorigenesis and chemotherapy resistance in squamous cell carcinomas and melanoma [24]. A previous study showed ionizing radiation increased SESN2 expression in human glioma U87 cells [25]. The effects of SESN2 on human glioma cancer cells have not been fully examined, and its role in the prognosis of glioma remains unclear.
+
+In the present study, we conducted comprehensive research on SESN2 expression in glioma and evaluated its potential as a prognostic biomarker based on the TCGA database, and explore the role of related immune cells in glioma and possible molecular pathways. The findings of this study provide clinicians with additional information to help them better assess the long-term outcome prognosis of patients with gliomas.
+
+2. Materials and Methods
+
+2.1. Collecting and Processing Data
+
+The Cancer Genome Atlas (TCGA) database was used to gather the gene expression profile data of 689 glioma samples and 5 peritumor tissues, while the Genotype-Tissue Expression (GTEx) provided 1,152 normal samples [26]. Concurrently, we incorporated glioma patient data from existing literature sources [27,28], leading to another 9 patient data points. TCGA provided RNA-seq data and related clinical information RNA-seq data. UCSC XENA was used to download the transcripts per million reads (TPM) format through Toil process standardization. To further compare tumor and normal mRNA levels, log2 fold change (log2FC) was calculated. Age, IDH status, 1p/19q status, WHO grade, histological type, and overall survival (OS) were included in the clinical data of glioma patients. We excluded unclear or incorrect samples to prevent unreliable results. It is important to understand how proteins function at the subcellular level. Protein expression and subcellular location of SESN2 in glioma were verified through the Human Protein Atlas (HPA, https://www.proteinatlas.org/) database [29].
+
+2.2. Survival and Statistical Analyses
+
+Patients were divided into high expression and low expression groups in accordance with the median expression level of SESN2. The R software (version 3.6.3, R Core Team, Vienna, Austria) and the R package (survminer, version 0.4.9 and survival, version 3.2.10) were used to assess the correlation between SESN2 expression level and overall survival via Kaplan–Meier (KM) survival analyses.
+
+2.3. Univariate and Multivariate Cox Regression Analyses
+
+We conducted univariate and multivariate Cox regression analyses to ascertain whether SESN2 expression, race, age, gender, IDH status, 1p/19q status, WHO grade, and histological type were prognostic factors for the survival of glioma patients. We used the R package (survival, version 3.2.10) to process data. We calculated hazard ratios (HRs) and 95% confidence intervals (CIs), and the significance threshold was set at p < 0.05.
+
+2.4. Construction of Nomograms, Calibration Plots, and ROC Curves
+
+Nomogram construction was performed in accordance with the nomogram guidelines [30]. The calibration of the nomogram was performed to visualize predicted probabilities’ deviations [31]. We used the R package (pROC, version 1.17.0.1 and ggplot2, version 3.3.3) to generate time-dependent receiver operating characteristic (ROC) curves for diagnostic analyses.
+
+2.5. Analyses of SESN2-Related Gene Function Enrichment and Immune Cell Infiltration
+
+Analyses of gene-gene correlations were carried out using the Spearman correlation function of the R package (stat, version 3.6.3). To screen and evaluate potential SESN2-related genes, the R package (org.Hs.eg.db, version 3.10.0 and clusterProfiler, version 3.14.3) were applied for Gene Ontology (GO) and Kyoto Encyclopedia of Genes and Genomes (KEGG) analysis. We used the R package (GSVA package, version 1.34.0) for immunocyte cell infiltration analyses.
+
+3. Results
+
+3.1. The Clinical Characteristics and SESN2 Expression of Glioma
+
+The data of 698 primary tumors and 5 peritumor tissues were gathered from the TCGA database and relevant literature sources, while the data of 1152 normal samples were downloaded from the GTEx database. The clinical characteristics of glioma patients were collected, including WHO grade, age, IDH status, and histological type (Table 1).
+
+In the present study, we compared the expression of SESN2 between normal samples and glioma samples. The results showed that SESN2 expression was significantly higher in glioma than in normal samples (p < 0.001) (Figure 1A). Then, KM survival analysis was conducted on glioma patients to determine the link between SESN2 expression and overall survival. The overall survival of glioma patients with high SESN2 expression was remarkably shorter based on KM survival curves (Figure 1B). Hence, a high expression level of SESN2 is indicative of a worse prognosis outcome in gliomas.
+
+3.2. Correlations of Clinical Characteristics with SESN2 Expression in Gliomas
+
+Next, we explored the correlations between clinical characteristics and SESN2 mRNA expressions in glioma. The results indicate the expression of SESN2 was significantly different between the 1p/19q codeletion group and the non-codeletion group (p < 0.001) (Figure 2A). Secondly, SESN2 was more expressed in the IDH mutation group than in the IDH wild-type group (p < 0.001) (Figure 2B). As for age, the expression of SESN2 in patients above 60 years of age was slightly higher than in ages less than or equal to 60 years (p < 0.05) (Figure 2C). We also found varying SESN2 expression levels in different histological types (Figure 2D). Of note, the level of SESN2 expression was higher in high-grade gliomas (Figure 2E).
+
+3.3. Associations between SESN2-Related Clinical Characteristics and Prognosis
+
+We conducted a subgroup analysis to explore the prognosis of SESN2 in different clinical contexts. In the 1p/19q non-codeletion status, the high expression of SESN2 was markedly relevant to a poorer prognosis of glioma (Figure 3A), while in the 1p/19q codeletion status, they had a relatively small correlation (Figure 3B). High expression of SESN2 was associated with a worse prognosis in grades WHO III and IV, while in grade II, no correlation was observed (Figure 3C,D). Meanwhile, high expression of SESN2 was significantly relevant to a worse prognosis in mutant IDH status and older patients (Figure 3E–H). As for the histological types, high expression of SESN2 was relevant to a poorer prognosis in astrocytoma and oligodendroglioma (Figure 3I,J). We did not find a remarkable relationship between SESN2 expression and the prognosis of oligoastrocytoma and glioblastoma (Figure 3K,L).
+
+3.4. Diagnostic Value of SESN2 in Glioma
+
+We used univariate and multivariate Cox regression analysis to identify risk factors. Based on the univariate Cox regression analysis, high SESN2 expression was associated with a poorer outcome in gliomas (HR = 2.464, 95% confidence interval (CI), 1.912–3.175; p < 0.001). However, the results of the multivariate analysis showed no statistical significance (p > 0.05) (Figure 4). Hence, SESN2 is a prognostic gene of glioma. Additionally, there were risk factors related to age, IDH status, 1p/19q status, WHO grade, histological type, and primary therapy outcome. Using these prognosis factors, we constructed nomograms predicting 1, 3, and 5-year survival rates (Figure 5A). The nomogram-predicted survival probability calibration plots were highly close to the ideal (Figure 5B). The ROC curve was applied to evaluate the diagnostic performance of SESN2. The area under the curve (AUC) was 0.872 (95% confidence interval (CI), 0.856–0.888; p < 0.001), indicating good discrimination between patients with and without the target condition (Figure 5C). The sensitivity was 84%, and the specificity was 76.1% when the cut-off point was 2.946. SESN2 was shown to have an excellent diagnostic effect on glioma.
+
+3.5. Co-Expression of Genes Responsible for SESN2 and Predicted Gene Functions
+
+The top 40 relevant genes identified via gene correlations are presented (Figure 6A,B). GO and KEGG enrichment analysis was conducted in order to investigate the possible biological functions of SESN2. Activating functions related to SESN2 were found in the results, such as cell cycle, DNA-binding transcription activator activity, RNA polymerase II-specific, collagen-containing extracellular matrix, and the pattern specification process (Figure 7A). Meanwhile, SESN2 downregulates the expression of active genes relevant to neuroactive ligand-receptor interaction, metal ion transmembrane transporter activity, synaptic membrane, regulation of trans-synaptic signaling, calcium signaling pathway, and modulation of chemical synaptic transmission (Figure 7B).
+
+3.6. The Association between SESN2 and Immune Cell Infiltration in Glioma
+
+Following the above analyses, further analysis of SESN2 expression and immune cell infiltration was conducted. There are 24 types of immune cells represented by the data downloaded from the TCGA database. There was an obvious positive correlation between SESN2 expression and Type 2 helper T (Th2) cells, aDC, Neutrophils, Eosinophils, Macrophages, interdigitating dendritic cell (iDC), T helper cells, and NK CD56 dim cells (Figure 8). At the same time, there is a significant negative correlation with pDC, NK CD56 bright cells, and follicular T helper (TFH) cells (Figure 8).
+
+3.7. Subcellular Location and Protein Expression
+
+SESN2 is localized to the cytosol according to the HPA database (Figure 9A). As shown in the expression profile of SESN2 from HPA, moderate expression of SESN2 was detected in normal cerebral cortex tissues (Figure 9B). Meanwhile, the immunohistochemical results revealed that strong SESN2 expression was also recorded in gliomas (Figure 9C).
+
+4. Discussion
+
+The prognosis of glioma, particularly high-grade glioma, is poor due to its high invasiveness. Gliomas account for 81% of central nervous system malignancies, with 5 to 10 cases per 100,000 people [32]. In low-grade gliomas, the age-standardized 10-year survival rate was 47%, and the median survival was 11.6 years [33,34]. For high-grade gliomas, the median overall survival was about 3 years for anaplastic astrocytoma and 15 months for glioblastoma multiforme [35]. To improve the cure rate of the disease compared with the patient survival rate, a potential biomarker, and therapeutic target are urgently needed as both diagnostic and prognostic indicators. To explore more possible biomarkers for glioma, we performed a search of the literature and found the IDH1 G105G SNP. However, it was not found to have any prognostic impact on IDH wild-type Glioblastoma [36].
+
+Previous studies indicated that SESN2 could alleviate oxidative stress via nuclear factor erythroid 2-related factor 2 (Nrf2), and thus favor cancer cell survival [37]. According to this study, SESN2 expression was observably increased in gliomas, while its high expression was markedly relevant to a poor prognosis. The expression of SESN2 in gliomas with varying clinical features was analyzed. In gliomas, IDH mutations distinguish WHO grade 1 glioma from glioma proliferation [35], indicating a relatively good prognosis [38,39]. SESN2 was more highly expressed in IDH mutation than in IDH wild-type (p < 0.001). Chromosome 1p/19q co-deletion (codel) is a key variant in oligodendrogliomas [35], which indicates a relatively favorable prognosis [40]. The expression of SESN2 had a significant difference between 1p/19q codeletion and non-codeletion (p < 0.001). In all, a high expression of SESN2 is markedly relevant to IDH status, WHO grade, 1p/19q status, and histological type. Further, we performed the subgroup analysis of the effect of SESN2 on prognosis. The results indicated that high expression of SESN2 was significantly relevant to a poor prognosis in IDH mutations, 1p/19q non-co-deleted glioma, and glioma patients above 60 years of age. Furthermore, the results of univariate and multivariate Cox regression analyses, nomograms, calibration plots, and ROC curves in combination, suggest SESN2 could be used as a predictor of a poor prognosis. In general, univariate analysis and multivariate analysis complement each other. In multivariate Cox regression analysis, the inclusion of more variables complicates interpretation. In this paper, the results of the univariate analysis showed statistical significance, but the results of the multivariate analysis showed no statistical significance. In that case, we believe that SESN2 is a disadvantageous factor rather than an independent prognostic factor.
+
+Sestrins are believed to be an essential component of antioxidant defense [41]. In all, the role of SESN2 in excessive oxidative stress, hypoxia, DNA damage, amyloid-induced, and mitochondrial dysfunction neurotoxicity has been investigated [42,43,44,45]. The role of SESN2 in glioma is still unclear. Therefore, we investigated the gene functions relevant to SESN2 in glioma. The outcomes suggest that potential biological functions may include neuroactive ligand-receptor interaction, synaptic membrane, synaptic signaling regulation, calcium signaling pathways, cell cycle, DNA-binding transcription activator activity, RNA polymerase II-specific, collagen-containing extracellular matrix, and pattern specification process, and presynaptic signaling regulation (Figure 7). Studies have found glioma cells and TME cells communicate through the interaction of neuroactive ligand-receptors [46,47]. Metabotropic glutamate receptor 1 (GRM1), 5-Hydroxytryptamine (serotonin) receptor 7 (HTR7), and 5-Hydroxytryptamine (5-HT) receptor 2A (HTR2A) may play a role in glioma by participating in the interaction pathway of neuroactive ligand receptor interaction pathway [47,48]. HTR2A has also been confirmed to be associated with glioma grade through neuroactive ligand receptor interaction [49]. Neurons and glioma cells can communicate directly through chemical synapses. Furthermore, glutamate synaptic input into glioma cells promotes the development of glioma [50]. Our study also found that SESN2 can down-regulate synapse-related pathways to affect glioma. Astrocytoma conditioned medium can promote the elimination of cell synapses and have a negative impact on the stability of synapses [51]. Synaptic vesicular protein 2A can be used as a predictor of the response of glioma patients to certain drugs [52]. In addition, GRM1 and adenylate cyclase 2 (ADCY2) may contribute to glioma development through the calcium signaling pathway [46,47]. The cell cycle, which is regulated by HOXD-AS2, can promote the development of glioma [53]. Meanwhile, Calmodulin Binding Transcription Activator 1 (CAMTA1) plays a vital role in the human nervous system and affects the prognosis of glioma. Our study found that the potential biological function of SESN2 can up-regulate the cell cycle and DNA-binding transcriptional activator activity related pathways, thus affecting the onset and progression of glioma. As for the collagen-containing extracellular matrix, Zhou’s study showed that Mitochondrial Ribosomal Protein S17 (MRPS17) can promote tumor cell metastasis through this pathway in gastric cancer [54]. Additionally, the excessive collagen-containing extracellular matrix is a hallmark of fibrosis [55].
+
+The TIME contains a large number of tumor immune cell infiltration, which are significantly related to tumor progression [56]. The level of infiltration of immune cells varies in different glioma classifications and stages [10]. In TIME, immune cells have abnormal components and functions that contribute to immune escape, drug resistance, and metastasis, which is the key reason why tumors are difficult to cure. Creating an immunosuppressive environment can help glioma cells escape immune surveillance and immune attack [57], which is a characteristic of glioma TIME. In this study, we examined how SESN2 expression relates to immune cell infiltration. The results show that the expression of SESN2 was positively correlated with Th2 cells, aDC, neutrophils, eosinophils, macrophages, iDCs and T helper cells, and NK CD56 dim cells. Meanwhile, the expression of SESN2 was negatively relevant to pDC, NK CD56 bright cells, and TFH. Th2 cells belong to CD4 + T cells [58]. Previous studies have shown that in glioma, conversion from Th2 to Th1 helps prevent the growth of glioma [59]. The adaptive response of Th2 will affect the response of Th1, so the balance of Th1/Th2 is very important [60]. In gastric cancer, similar to Th2 cells, macrophages can also secrete interleukin-10 (IL-10) and participate in immunosuppression [61]. DCs are specialized antigen-presenting cells that are involved in antitumor immunity [62]. NK cells were divided into two subtypes in accordance with the density of CD56. The CD56 bright phenotype can differentiate into the CD56 dim phenotype [63]. In glioma, the expression of SESN2 showed a positive correlation with NK CD56 dim phenotype and a negative correlation with the CD56 bright phenotype in the present study. We speculate that the reason for this result may be that the high expression of SESN2 promotes this transformation. Our study also found an increase in neutrophil and eosinophil infiltration. Neutrophils account for 50–70% of all white blood cells and are an important defense line of human immunity. Meanwhile, eosinophils account for 0.5–5%, and infiltration is observed in various tumors [64,65]. The degree of eosinophil infiltration in tumor is closely related to the number of eosinophils in the blood [66]. In general, the exact relationship between SESN2 and the glioma immune microenvironment necessitates further research to explore.
+
+Taken together, our study clarified the relationship between SESN2’s high expression and the clinical features of glioma. SESN2 can be considered a potential marker for the diagnosis and prognosis of glioma. We discussed the potential biological function of SESN2 in glioma and its correlation with immune cell infiltration. However, as with any research design, our approach also has its limitations. Firstly, our conclusions were not confirmed by in vitro or in vivo experiments. Moreover, researchers have not deeply explored the causes and mechanisms of high SESN2 expression in glioma patients. There is no clear explanation for the differential expression in gliomas with varying clinical features. Finally, there is no systematic and in-depth study on the relevant mechanism between the high expression of SESN2 and the infiltration of immune cells. In order to understand the molecular mechanism underlying SESN2 in gliomas, further studies are needed.
+
+5. Conclusions
+
+The expression of SESN2 is higher compared with normal tissue in the present study. Moreover, the high SESN2 expression was significantly correlated with a poor outcome in glioma, which suggests that SESN2 could be a potential marker for diagnosis and prognosis. Further experimental assays are necessary to validate the conclusion. We infer these results may be mechanistically linked to alterations in the immune microenvironment.
+
+Acknowledgments
+
+We sincerely thank the experimental guidance from HK_Potions_Lab (https://mp.weixin.qq.com/s/SkjneqFslhkoKrTKs7QA3Q (accessed on 12 September 2022), Blog, WeChat Official Accounts).
+
+Author Contributions
+
+Data curation, formal analysis, writing—review and editing, L.X.; resources, administration visualization, writing—original draft preparation, Z.L. and H.W.; investigation, supervision, J.L.; Conceptualization, J.X. and Y.M.; methodology and software, K.H.; project, funding acquisition, B.L. All authors have read and agreed to the published version of the manuscript.
+
+Institutional Review Board Statement
+
+Not applicable.
+
+Informed Consent Statement
+
+Not applicable.
+
+Data Availability Statement
+
+Not applicable.
+
+Conflicts of Interest
+
+The authors declare no conflict of interest.
+
+Figure 1 SESN2’s overall expression and survival analyses in gliomas. (A) SESN2 was upregulated in glioma tumor tissues. (B) SESN2 overexpression was involved in poor prognosis of glioma patients (*** p < 0.001).
+
+Figure 2 Associations between SESN2 expression and clinical characteristics in glioma. (A) Correlations between SESN2 expression and 1p/19q status. (B) Associations between SESN2 expression and IDH status (WT: wild-type; Mut: mutation). (C) Associations between SESN2 expression and age. (D) Associations between SESN2 expression and histological type. (E) Associations between SESN2 expression and WHO grade (ns, no significance; * p < 0.05; ** p < 0.01; *** p < 0.001).
+
+Figure 3 SESN2 expression and survival analysis in glioma. (A,B) Subgroup survival analyses for correlations between SESN2 expression and 1p/19q codeletion. (C,D) Subgroup survival analyses for correlations between SESN2 expression and WHO grade. (E,F) Subgroup survival analyses for correlations between SESN2 expression and IDH status. (G,H) Subgroup survival analyses for correlations between SESN2 expression and age. (I–L) Subgroup survival analyses for correlations between SESN2 expression and histological type.
+
+Figure 4 Univariate analysis and multivariate analysis risk score of SESN2 expression and relevant key clinical features. An HR above 1 indicates an increased risk, while an HR below 1 indicates a protective effect (PD: progressive disease; SD: stable disease; PR: partial response; CR: complete response).
+
+Figure 5 Diagnostic value of SESN2 in glioma. (A) The nomogram was developed by integrating the SESN2 expression with key clinical characteristics. (B) The calibration plot of the nomogram for predicting overall survival at 1-year, 3-years, and 5-years. (C) The diagnostic value of SESN2 (AUC, 0.872; 95%CI, 0.856-0.888).
+
+Figure 6 Heat maps illustrating patterns of gene co-expression. (A) Top 20 positive correlation genes. (B) Top 20 negative correlation genes (*** p < 0.001).
+
+Figure 7 Bubble plot of GO/KEGG enrichment analysis. (A) The up-regulated gene of SESN2. (B) The down-regulated gene of SESN2.
+
+Figure 8 The association of SESN2 with 24 types of immune cells in glioma according to TCGA data.
+
+Figure 9 (A) Immunofluorescent staining of the U251-MG cell line showed localization to the cytosol. (B) SESN2 expression in different normal human tissues. Moderate expression of SESN2 was detected in normal cerebral cortex tissues. (C) Immunohistochemical staining images of SESN2 in glioma. All the pictures were downloaded from the HPA database. Antibody HPA018191 was used for staining.
+
+genes-14-00701-t001_Table 1 Table 1 The clinical characteristics of glioma patients.
+
+Characteristic	Levels	Overall	
+WHO grade, n (%)	G2	224 (35.3%)	
+	G3	243 (38.3%)	
+	G4	168 (26.5%)	
+IDH status, n (%)	WT	246 (35.9%)	
+	Mut	440 (64.1%)	
+Histological type, n (%)	Astrocytoma	195 (28%)	
+	Glioblastoma	168 (24.1%)	
+	Oligoastrocytoma	134 (19.3%)	
+	Oligodendroglioma	199 (28.6%)	
+Age, n (%)	≤60	553 (79.5%)	
+	>60	143 (20.5%)	
+
+Disclaimer/Publisher’s Note: The statements, opinions and data contained in all publications are solely those of the individual author(s) and contributor(s) and not of MDPI and/or the editor(s). MDPI and/or the editor(s) disclaim responsibility for any injury to people or property resulting from any ideas, methods, instructions or products referred to in the content.
+==== Refs
+References
+
+1. Louis D.N. Perry A. Reifenberger G. von Deimling A. Figarella-Branger D. Cavenee W.K. Ohgaki H. Wiestler O.D. Kleihues P. Ellison D.W. The 2016 World Health Organization Classification of Tumors of the Central Nervous System: A summary Acta Neuropathol. 2016 131 803 820 10.1007/s00401-016-1545-1 27157931
+2. Shergalis A. Bankhead A. 3rd Luesakul U. Muangsin N. Neamati N. Current Challenges and Opportunities in Treating Glioblastoma Pharmacol. Rev. 2018 70 412 445 10.1124/pr.117.014944 29669750
+3. Wank M. Schilling D. Schmid T.E. Meyer B. Gempt J. Barz M. Schlegel J. Liesche F. Kessel K.A. Wiestler B. Human Glioma Migration and Infiltration Properties as a Target for Personalized Radiation Medicine Cancers 2018 10 456 10.3390/cancers10110456 30463322
+4. Venur V.A. Peereboom D.M. Ahluwalia M.S. Current medical treatment of glioblastoma Cancer Treat. Res. 2015 163 103 115 10.1007/978-3-319-12048-5_7 25468228
+5. DeWitt J.C. Mock A. Louis D.N. The 2016 WHO classification of central nervous system tumors: What neurologists need to know Curr. Opin. Neurol. 2017 30 643 649 10.1097/WCO.0000000000000490 28901970
+6. Bianconi A. Aruta G. Rizzo F. Salvati L.F. Zeppa P. Garbossa D. Cofano F. Systematic Review on Tumor Microenvironment in Glial Neoplasm: From Understanding Pathogenesis to Future Therapeutic Perspectives Int. J. Mol. Sci. 2022 23 4166 10.3390/ijms23084166 35456984
+7. Wei J. Chen P. Gupta P. Ott M. Zamler D. Kassab C. Bhat K.P. Curran M.A. de Groot J.F. Heimberger A.B. Immune biology of glioma-associated macrophages and microglia: Functional and therapeutic implications Neuro Oncol. 2020 22 180 194 10.1093/neuonc/noz212 31679017
+8. Ma Q. Long W. Xing C. Chu J. Luo M. Wang H.Y. Liu Q. Wang R.F. Cancer Stem Cells and Immunosuppressive Microenvironment in Glioma Front. Immunol. 2018 9 2924 10.3389/fimmu.2018.02924 30619286
+9. Siegel R.L. Miller K.D. Fuchs H.E. Jemal A. Cancer Statistics, 2021 CA Cancer J. Clin. 2021 71 7 33 10.3322/caac.21654 33433946
+10. Bindea G. Mlecnik B. Tosolini M. Kirilovsky A. Waldner M. Obenauf A.C. Angell H. Fredriksen T. Lafontaine L. Berger A. Spatiotemporal dynamics of intratumoral immune cells reveal the immune landscape in human cancer Immunity 2013 39 782 795 10.1016/j.immuni.2013.10.003 24138885
+11. Lai S.W. Liu Y.S. Lu D.Y. Tsai C.F. Melatonin Modulates the Microenvironment of Glioblastoma Multiforme by Targeting Sirtuin 1 Nutrients 2019 11 1343 10.3390/nu11061343 31207928
+12. Dunn G.P. Bruce A.T. Ikeda H. Old L.J. Schreiber R.D. Cancer immunoediting: From immunosurveillance to tumor escape Nat. Immunol. 2002 3 991 998 10.1038/ni1102-991 12407406
+13. Chen S.D. Yang J.L. Lin T.K. Yang D.I. Emerging Roles of Sestrins in Neurodegenerative Diseases: Counteracting Oxidative Stress and Beyond J. Clin. Med. 2019 8 1001 10.3390/jcm8071001 31324048
+14. Chuang Y.C. Yang J.L. Yang D.I. Lin T.K. Liou C.W. Chen S.D. Roles of Sestrin2 and Ribosomal Protein S6 in Transient Global Ischemia-Induced Hippocampal Neuronal Injury Int. J. Mol. Sci. 2015 16 26406 26416 10.3390/ijms161125963 26556340
+15. Budanov A.V. Shoshani T. Faerman A. Zelin E. Kamer I. Kalinski H. Gorodin S. Fishman A. Chajut A. Einat P. Identification of a novel stress-responsive gene Hi95 involved in regulation of cell viability Oncogene 2002 21 6017 6031 10.1038/sj.onc.1205877 12203114
+16. Bae S.H. Sung S.H. Oh S.Y. Lim J.M. Lee S.K. Park Y.N. Lee H.E. Kang D. Rhee S.G. Sestrins activate Nrf2 by promoting p62-dependent autophagic degradation of Keap1 and prevent oxidative liver damage Cell Metab. 2013 17 73 84 10.1016/j.cmet.2012.12.002 23274085
+17. Wang L.X. Zhu X.M. Yao Y.M. Sestrin2: Its Potential Role and Regulatory Mechanism in Host Immune Response in Diseases Front. Immunol. 2019 10 2797 10.3389/fimmu.2019.02797 31867002
+18. Luo C. Zhao S. Zhang M. Gao Y. Wang J. Hanigan M.D. Zheng N. SESN2 negatively regulates cell proliferation and casein synthesis by inhibition the amino acid-mediated mTORC1 pathway in cow mammary epithelial cells Sci. Rep. 2018 8 3912 10.1038/s41598-018-22208-w 29500367
+19. Chen S. Yan W. Lang W. Yu J. Xu L. Xu X. Liu Y. Bao H. SESN2 correlates with advantageous prognosis in hepatocellular carcinoma Diagn. Pathol. 2017 12 13 10.1186/s13000-016-0591-2 28118855
+20. Buitrago-Molina L.E. Marhenke S. Longerich T. Sharma A.D. Boukouris A.E. Geffers R. Guigas B. Manns M.P. Vogel A. The degree of liver injury determines the role of p21 in liver regeneration and hepatocarcinogenesis in mice Hepatology 2013 58 1143 1152 10.1002/hep.26412 23526443
+21. Seo K. Ki S.H. Park E.Y. Shin S.M. 5-Fluorouracil inhibits cell migration by induction of Sestrin2 in colon cancer cells Arch. Pharm. Res. 2017 40 231 239 10.1007/s12272-016-0878-6 28028695
+22. Jeong S. Kim D.Y. Kang S.H. Yun H.K. Kim J.L. Kim B.R. Park S.H. Na Y.J. Jo M.J. Jeong Y.A. Docosahexaenoic Acid Enhances Oxaliplatin-Induced Autophagic Cell Death via the ER Stress/Sesn2 Pathway in Colorectal Cancer Cancers 2019 11 982 10.3390/cancers11070982 31337142
+23. Kim H. Yin K. Falcon D.M. Xue X. The interaction of Hemin and Sestrin2 modulates oxidative stress and colon tumor growth Toxicol. Appl. Pharmacol. 2019 374 77 85 10.1016/j.taap.2019.04.025 31054940
+24. Zhao B. Shah P. Budanov A.V. Qiang L. Ming M. Aplin A. Sims D.M. He Y.Y. Sestrin2 protein positively regulates AKT enzyme signaling and survival in human squamous cell carcinoma and melanoma cells J. Biol. Chem. 2014 289 35806 35814 10.1074/jbc.M114.595397 25378405
+25. Liu S.Y. Lee Y.J. Lee T.C. Association of platelet-derived growth factor receptor β accumulation with increased oxidative stress and cellular injury in sestrin 2 silenced human glioblastoma cells FEBS Lett. 2011 585 1853 1858 10.1016/j.febslet.2011.04.041 21536039
+26. Blum A. Wang P. Zenklusen J.C. SnapShot: TCGA-Analyzed Tumors Cell 2018 173 530 10.1016/j.cell.2018.03.059 29625059
+27. Ceccarelli M. Barthel F.P. Malta T.M. Sabedot T.S. Salama S.R. Murray B.A. Morozova O. Newton Y. Radenbaugh A. Pagnotta S.M. Molecular Profiling Reveals Biologically Discrete Subsets and Pathways of Progression in Diffuse Glioma Cell 2016 164 550 563 10.1016/j.cell.2015.12.028 26824661
+28. Liu J. Lichtenberg T. Hoadley K.A. Poisson L.M. Lazar A.J. Cherniack A.D. Kovatich A.J. Benz C.C. Levine D.A. Lee A.V. An Integrated TCGA Pan-Cancer Clinical Data Resource to Drive High-Quality Survival Outcome Analytics Cell 2018 173 400 416.e11 10.1016/j.cell.2018.02.052 29625055
+29. Uhlen M. Zhang C. Lee S. Sjöstedt E. Fagerberg L. Bidkhori G. Benfeitas R. Arif M. Liu Z. Edfors F. A pathology atlas of the human cancer transcriptome Science 2017 357 eaan2507 10.1126/science.aan2507 28818916
+30. Balachandran V.P. Gonen M. Smith J.J. DeMatteo R.P. Nomograms in oncology: More than meets the eye Lancet Oncol. 2015 16 e173 e180 10.1016/S1470-2045(14)71116-7 25846097
+31. Brentnall A.R. Cuzick J. Use of the concordance index for predictors of censored survival data Stat. Methods Med. Res. 2018 27 2359 2373 10.1177/0962280216680245 27920368
+32. Ostrom Q.T. Cioffi G. Gittleman H. Patil N. Waite K. Kruchko C. Barnholtz-Sloan J.S. CBTRUS Statistical Report: Primary Brain and Other Central Nervous System Tumors Diagnosed in the United States in 2012-2016 Neuro Oncol. 2019 21 (Suppl. S5) v1 v100 10.1093/neuonc/noz150 31675094
+33. Smoll N.R. Gautschi O.P. Schatlo B. Schaller K. Weber D.C. Relative survival of patients with supratentorial low-grade gliomas Neuro Oncol. 2012 14 1062 1069 10.1093/neuonc/nos144 22773277
+34. Ohgaki H. Kleihues P. Population-based studies on incidence, survival rates, and genetic alterations in astrocytic and oligodendroglial gliomas J. Neuropathol. Exp. Neurol. 2005 64 479 489 10.1093/jnen/64.6.479 15977639
+35. Bleeker F.E. Molenaar R.J. Leenstra S. Recent advances in the molecular understanding of glioblastoma J. Neurooncol. 2012 108 11 27 10.1007/s11060-011-0793-0 22270850
+36. Saaid A. Monticelli M. Ricci A.A. Orlando G. Botta C. Zeppa P. Bianconi A. Osella-Abate S. Bruno F. Pellerino A. Prognostic Analysis of the IDH1 G105G (rs11554137) SNP in IDH-Wildtype Glioblastoma Genes 2022 13 1439 10.3390/genes13081439 36011350
+37. Li T. Jiang D. Wu K. p62 promotes bladder cancer cell growth by activating KEAP1/NRF2-dependent antioxidative response Cancer Sci. 2020 111 1156 1164 10.1111/cas.14321 31967368
+38. Klionsky D.J. Abdel-Aziz A.K. Abdelfatah S. Abdellatif M. Abdoli A. Abel S. Abeliovich H. Abildgaard M.H. Abudu Y.P. Acevedo-Arozena A. Guidelines for the use and interpretation of assays for monitoring autophagy (4th edition)1 Autophagy 2021 17 1 382 10.1080/15548627.2020.1797280 33634751
+39. Reuss D.E. Kratz A. Sahm F. Capper D. Schrimpf D. Koelsche C. Hovestadt V. Bewerunge-Hudler M. Jones D.T. Schittenhelm J. Adult IDH wild type astrocytomas biologically and clinically resolve into other tumor entities Acta Neuropathol. 2015 130 407 417 10.1007/s00401-015-1454-8 26087904
+40. Suzuki H. Aoki K. Chiba K. Sato Y. Shiozawa Y. Shiraishi Y. Shimamura T. Niida A. Motomura K. Ohka F. Mutational landscape and clonal architecture in grade II and III gliomas Nat. Genet. 2015 47 458 468 10.1038/ng.3273 25848751
+41. Rhee S.G. Bae S.H. The antioxidant function of sestrins is mediated by promotion of autophagic degradation of Keap1 and Nrf2 activation and by inhibition of mTORC1 Free Radic. Biol. Med. 2015 88 Pt B 205 211 10.1016/j.freeradbiomed.2015.06.007 26117317
+42. Wu C.L. Chen S.D. Yin J.H. Hwang C.S. Yang D.I. Nuclear Factor-kappaB-Dependent Sestrin2 Induction Mediates the Antioxidant Effects of BDNF Against Mitochondrial Inhibition in Rat Cortical Neurons Mol. Neurobiol. 2016 53 4126 4142 10.1007/s12035-015-9357-1 26208700
+43. Lin M.Y. Chang Y.C. Wang S.Y. Yang M.H. Chang C.H. Hsiao M. Kitsis R.N. Lee Y.J. OncomiR miR-182-5p Enhances Radiosensitivity by Inhibiting the Radiation-Induced Antioxidant Effect through SESN2 in Head and Neck Cancer Antioxidants 2021 10 1808 10.3390/antiox10111808 34829679
+44. Kumar A. Shaha C. SESN2 facilitates mitophagy by helping Parkin translocation through ULK1 mediated Beclin1 phosphorylation Sci. Rep. 2018 8 615 10.1038/s41598-017-19102-2 29330382
+45. Malik B. Devine H. Patani R. La Spada A.R. Hanna M.G. Greensmith L. Gene expression analysis reveals early dysregulation of disease pathways and links Chmp7 to pathogenesis of spinal and bulbar muscular atrophy Sci. Rep. 2019 9 3539 10.1038/s41598-019-40118-3 30837566
+46. Wang R. Wei J. Li Z. Tian Y. Du C. Bioinformatical analysis of gene expression signatures of different glioma subtypes Oncol. Lett. 2018 15 2807 2814 10.3892/ol.2017.7660 29435008
+47. Wei L. He F. Zhang W. Chen W. Yu B. Bioinformatics analysis of microarray data to reveal the pathogenesis of diffuse intrinsic pontine glioma Biol. Res. 2018 51 26 10.1186/s40659-018-0175-6 30124166
+48. Deng L. Xiong P. Luo Y. Bu X. Qian S. Zhong W. Bioinformatics analysis of the molecular mechanism of diffuse intrinsic pontine glioma Oncol. Lett. 2016 12 2524 2530 10.3892/ol.2016.5024 27698822
+49. Li Y. Wang D. Wang L. Yu J. Du D. Chen Y. Gao P. Wang D.M. Yu J. Zhang F. Distinct genomic aberrations between low-grade and high-grade gliomas of Chinese patients PLoS ONE 2013 8 e57168 10.1371/journal.pone.0057168 23451178
+50. Venkataramani V. Tanev D.I. Strahle C. Studier-Fischer A. Fankhauser L. Kessler T. Körber C. Kardorff M. Ratliff M. Xie R. Glutamatergic synaptic input to glioma cells drives brain tumour progression Nature 2019 573 532 538 10.1038/s41586-019-1564-x 31534219
+51. Inácio R.F. Zanon R.G. Castro M.V. Souza H.M. Bajgelman M.C. Verinaud L. Oliveira A.L. Astroglioma conditioned medium increases synaptic elimination and correlates with major histocompatibility complex of class I (MHC I) upregulation in PC12Cells Neurosci. Lett. 2016 634 160 167 10.1016/j.neulet.2016.10.019 27751786
+52. de Groot M. Aronica E. Heimans J.J. Reijneveld J.C. Synaptic vesicle protein 2A predicts response to levetiracetam in patients with glioma Neurology 2011 77 532 539 10.1212/WNL.0b013e318228c110 21795655
+53. Qi Y. Wang Z. Wu F. Yin B. Jiang T. Qiang B. Yuan J. Han W. Peng X. Long noncoding RNA HOXD-AS2 regulates cell cycle to promote glioma progression J. Cell Biochem. 2019 120 8343 8351 10.1002/jcb.28117 30485495
+54. Zhou W. Ouyang J. Li J. Liu F. An T. Cheng L. Kuo Z.C. Zhang C. He Y. MRPS17 promotes invasion and metastasis through PI3K/AKT signal pathway and could be potential prognostic marker for gastric cancer J. Cancer 2021 12 4849 4861 10.7150/jca.55719 34234855
+55. Sadler T. Scarpa M. Rieder F. West G. Stylianou E. Cytokine-induced chromatin modifications of the type I collagen alpha 2 gene during intestinal endothelial-to-mesenchymal transition Inflamm. Bowel Dis. 2013 19 1354 1364 10.1097/MIB.0b013e318281f37a 23635716
+56. Cheng Y. Liu C. Liu Y. Su Y. Wang S. Jin L. Wan Q. Liu Y. Li C. Sang X. Immune Microenvironment Related Competitive Endogenous RNA Network as Powerful Predictors for Melanoma Prognosis Based on WGCNA Analysis Front. Oncol. 2020 10 577072 10.3389/fonc.2020.577072 33194692
+57. Platten M. Weller M. Wick W. Shaping the glioma immune microenvironment through tryptophan metabolism CNS Oncol. 2012 1 99 106 10.2217/cns.12.6 25054303
+58. Constant S.L. Bottomly K. Induction of Th1 and Th2 CD4+ T cell responses: The alternative approaches Annu. Rev. Immunol. 1997 15 297 322 10.1146/annurev.immunol.15.1.297 9143690
+59. Li G. Hu Y.S. Li X.G. Zhang Q.L. Wang D.H. Gong S.F. Expression and switching of TH1/TH2 type cytokines gene in human gliomas Chin. Med. Sci. J. 2005 20 268 272 16422258
+60. Moriyama M. Tanaka A. Maehara T. Furukawa S. Nakashima H. Nakamura S. T helper subsets in Sjögren’s syndrome and IgG4-related dacryoadenitis and sialoadenitis: A critical review J. Autoimmun. 2014 51 81 88 10.1016/j.jaut.2013.07.007 23920005
+61. Pei J.P. Zhang C.D. Yusupu M. Zhang C. Dai D.Q. Screening and Validation of the Hypoxia-Related Signature of Evaluating Tumor Immune Microenvironment and Predicting Prognosis in Gastric Cancer Front. Immunol. 2021 12 705511 10.3389/fimmu.2021.705511 34249015
+62. Guo Z. Yuan Y. Chen C. Lin J. Ma Q. Liu G. Gao Y. Huang Y. Chen L. Chen L.Z. Durable complete response to neoantigen-loaded dendritic-cell vaccine following anti-PD-1 therapy in metastatic gastric cancer NPJ Precis. Oncol. 2022 6 34 10.1038/s41698-022-00279-3 35661819
+63. Cooper M.A. Fehniger T.A. Caligiuri M.A. The biology of human natural killer-cell subsets Trends Immunol. 2001 22 633 640 10.1016/S1471-4906(01)02060-9 11698225
+64. Munitz A. Levi-Schaffer F. Eosinophils: ‘New’ roles for ‘old’ cells Allergy 2004 59 268 275 10.1111/j.1398-9995.2003.00442.x 14982507
+65. Davis B.P. Rothenberg M.E. Eosinophils and cancer Cancer Immunol. Res. 2014 2 1 8 10.1158/2326-6066.CIR-13-0196 24778159
+66. Curran C.S. Bertics P.J. Eosinophils in glioblastoma biology J. Neuroinflamm. 2012 9 11 10.1186/1742-2094-9-11
+

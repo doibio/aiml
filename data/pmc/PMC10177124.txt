@@ -1,0 +1,364 @@
+
+==== Front
+Cancers (Basel)
+Cancers (Basel)
+cancers
+Cancers
+2072-6694
+MDPI
+
+10.3390/cancers15092631
+cancers-15-02631
+Review
+Head-To-Head Comparison of PET and Perfusion Weighted MRI Techniques to Distinguish Treatment Related Abnormalities from Tumor Progression in Glioma
+https://orcid.org/0000-0002-3915-3034
+Henssen Dylan 12*
+Leijten Lars 1
+https://orcid.org/0000-0001-5921-639X
+Meijer Frederick J. A. 12
+https://orcid.org/0000-0002-8267-8848
+van der Kolk Anja 123
+https://orcid.org/0000-0001-7066-5372
+Arens Anne I. J. 1
+https://orcid.org/0000-0002-9213-430X
+ter Laan Mark 24
+Smeenk Robert J. 25
+Gijtenbeek Anja 26
+van de Giessen Elsmarieke M. 7
+https://orcid.org/0000-0002-8005-2833
+Tolboom Nelleke 3
+Oprea-Lager Daniela E. 7
+https://orcid.org/0000-0001-5563-2871
+Smits Marion 8910
+https://orcid.org/0000-0002-3555-0809
+Nagarajah James 1
+Kessler Tobias Academic Editor
+1 Department of Medical Imaging, Radboud University Medical Center, 6525 GA Nijmegen, The Netherlands; lars.leijten@radboudumc.nl (L.L.);
+2 Radboudumc Center of Expertise Neuro-Oncology, 6525 GA Nijmegen, The Netherlands
+3 Department of Radiology and Nuclear Medicine, University Medical Center Utrecht, 3584 CX Utrecht, The Netherlands
+4 Department of Neurosurgery, Radboud University Medical Center, 6525 GA Nijmegen, The Netherlands
+5 Department of Radiation Oncology, Radboud University Medical Center, 6525 GA Nijmegen, The Netherlands
+6 Department of Neurology, Radboud University Medical Center, 6525 GA Nijmegen, The Netherlands
+7 Department of Radiology and Nuclear Medicine, Amsterdam University Medical Centers, Vrije Universiteit Amsterdam, 1100 DD Amsterdam, The Netherlands
+8 Department of Radiology & Nuclear Medicine, Erasmus MC, University Medical Center Rotterdam, 3015 GD Rotterdam, The Netherlands
+9 Brain Tumor Center, Erasmus MC Cancer Institute, 3015 GD Rotterdam, The Netherlands
+10 Medical Delta, 2629 JH Delft, The Netherlands
+* Correspondence: dylan.henssen@radboudumc.nl; Tel.: +31-24-361-1111
+05 5 2023
+5 2023
+15 9 263120 3 2023
+01 5 2023
+03 5 2023
+© 2023 by the authors.
+2023
+https://creativecommons.org/licenses/by/4.0/ Licensee MDPI, Basel, Switzerland. This article is an open access article distributed under the terms and conditions of the Creative Commons Attribution (CC BY) license (https://creativecommons.org/licenses/by/4.0/).
+Simple Summary
+
+This meta-analysis provides a first head-to-head comparison of PET and perfusion weighted magnetic resonance imaging (PWI) in the surveillance of post-treatment gliomas in order to distinguish tumor progression (TP) from treatment-related abnormalities (TRA). Although various reviews have been published on the use of either PET or PWI in this setting, no meta-analysis to date provides a head-to-head comparison of both techniques. The findings of this paper illuminate the strengths and limitations of each technique and enable clinicians to take more evidence-based decisions in their daily practice with regard to the imaging surveillance of gliomas.
+
+Abstract
+
+The post-treatment imaging surveillance of gliomas is challenged by distinguishing tumor progression (TP) from treatment-related abnormalities (TRA). Sophisticated imaging techniques, such as perfusion-weighted magnetic resonance imaging (MRI PWI) and positron-emission tomography (PET) with a variety of radiotracers, have been suggested as being more reliable than standard imaging for distinguishing TP from TRA. However, it remains unclear if any technique holds diagnostic superiority. This meta-analysis provides a head-to-head comparison of the diagnostic accuracy of the aforementioned imaging techniques. Systematic literature searches on the use of PWI and PET imaging techniques were carried out in PubMed, Embase, the Cochrane Library, ClinicalTrials.gov and the reference lists of relevant papers. After the extraction of data on imaging technique specifications and diagnostic accuracy, a meta-analysis was carried out. The quality of the included papers was assessed using the QUADAS-2 checklist. Nineteen articles, totaling 697 treated patients with glioma (431 males; mean age ± standard deviation 50.5 ± 5.1 years) were included. The investigated PWI techniques included dynamic susceptibility contrast (DSC), dynamic contrast enhancement (DCE) and arterial spin labeling (ASL). The PET-tracers studied concerned [S-methyl-11C]methionine, 2-deoxy-2-[18F]fluoro-D-glucose ([18F]FDG), O-(2-[18F]fluoroethyl)-L-tyrosine ([18F]FET) and 6-[18F]-fluoro-3,4-dihydroxy-L-phenylalanine ([18F]FDOPA). The meta-analysis of all data showed no diagnostic superior imaging technique. The included literature showed a low risk of bias. As no technique was found to be diagnostically superior, the local level of expertise is hypothesized to be the most important factor for diagnostically accurate results in post-treatment glioma patients regarding the distinction of TRA from TP.
+
+molecular imaging–cancer
+MR–perfusion
+neuro-oncology
+PET/CT
+PET/MR
+INTERREG program of the European Union203020/2020P18 Part of this research was funded by the INTERREG program of the European Union, grant number 203020/2020P18.
+==== Body
+pmc1. Introduction
+
+Diffuse infiltrating gliomas can have an astrocytic or an oligodendroglial origin—World Health Organization (WHO) grades 2–4, depending on the subtype—and have a high morbidity and mortality, even with the optimal treatment consisting of surgical resection and postoperative chemoradiotherapy [1]. This is mainly due to their (microscopic) infiltrative growth pattern and therapy-resistant glioma stem cells, leading to frequently observed posttreatment tumor progression (TP): the renewed occurrence or progression of enhancing areas within the remaining tumor or surgical bed on follow-up conventional magnetic resonance imaging (MRI). However, treatment-related abnormalities, (TRA) such as pseudoprogression and radiation necrosis, have almost identical characteristics on MRI [2], resulting in a diagnostic challenge [3,4]. Considering the fact that both entities require a vastly different therapeutic approach and are associated with significantly different outcomes, in recent years more sophisticated imaging techniques have been suggested to help distinguish TP from TRA [5,6,7]. These techniques include perfusion-weighted MRI (PWI) and positron emission tomography (PET) imaging.
+
+The gold standard for diagnosing TP is a surgical resection, but a non-invasive technique is preferable. The three most frequently used techniques to perform PWI include arterial spin labeling (ASL), dynamic contrast enhanced (DCE) and dynamic susceptibility contrast (DSC) PWI. ASL PWI is based on blood as an endogenous arterial tracer, whereas DCE and DSC require the administration of an exogenous contrast agent [8]. The diagnostic capacity of each technique with regard to the differentiation of TP and TRA was recently meta-analyzed, showing excellent diagnostic accuracy for each technique [9]. Which of the different PWI techniques is superior remains a topic of debate, since the scientific literature provides encouraging evidence for each technique [10,11,12].
+
+As PET imaging provides information on the metabolic status of glioma it is considered a valuable alternative method to distinguish TP from TRA [13]. A variety of PET tracers have been described in the literature, including 2-deoxy-2-[18F]fluoro-D-glucose ([18F]FDG), [S-methyl-11C]methionine ([11C]MET), O-(2-[18F]fluoroethyl)-L-tyrosine ([18F]FET) and 6-[18F]-fluoro-3,4-dihydroxy-L-phenylalanine ([18F]FDOPA) [5,14]. Although the use of radio-active labelled glucose (18F-FDG) for PET imaging is widespread in nuclear medicine, its clinical use in neuro-oncological diseases is limited because of the high physiological uptake of glucose in the cerebral and cerebellar cortex, resulting in a poor tumor-to-background ratio. On the other hand, glioma cells have a distinctly increased nutritional demand for amino acids to enable rapid proliferation and, unlike glucose, normal brain tissue has a low physiological uptake of amino acids, providing a superior tumor-to-background contrast. Positron-emitting nuclide labelled amino acids are therefore interesting probes for imaging gliomas in the pre- and post-treatment setting using PET [15]. The main amino acid tracers used for glioma imaging are [11C]MET, [18F]FET and [18F]FDOPA, all of which are taken up by the cell from the extracellular space via the Na+-independent system L-type amino acid transporter [16].
+
+The diagnostic capacities of each technique have been summarized recently [17]. It has become apparent that the use of either PET or PWI allows for a more accurate differentiation between TRA and TP, although there is no consensus on the superiority of either technique or their complementary information. Therefore, more research is needed to identify the most optimal use. In particular, a direct head-to-head comparison of both techniques would contribute to this knowledge gap.
+
+Therefore, the current systematic review and meta-analysis set out to provide an overview of the scientific literature that investigated the use of PET imaging and PWI in a head-to-head comparison to differentiate TRA from TP in patients with glioma. By only including articles in which patients underwent both PWI and PET imaging, we aimed to provide methodologically sound guidance for clinicians as well as policy makers regarding the use of PWI and/or PET imaging in the radiological follow-up of post-treatment glioma patients when in doubt as to whether a lesion reflects TP or TRA.
+
+2. Materials and Methods
+
+This study concerns a systematic literature review and meta-analysis of scientific literature on the use of PWI and/or PET imaging in the radiological follow-up of post-treatment glioma patients with a new contrast-enhancing lesion in order to distinguish TP and TRA.
+
+The Preferred Reporting Items for Systematic Reviews and Meta-Analyses (PRISMA) guidelines were followed while conducting this review. PRISMA is an evidence-based minimum set of items for reporting in systematic reviews and meta-analyses. For more information on the PRISMA methodology and the subsequent steps, please see the PRISMA webpage (prisma-statement.org) (accessed on 5 April 2021).
+
+2.1. Literature Search
+
+A systematic literature search was carried out in PubMed, Embase and the Cochrane Library. The search strings can be found in Table 1. The databases were searched between 12 April 2021 and 10 May 2021. The literature search was updated on 8 August 2022. There were no restrictions in the search strategy. The literature search was carried out by two investigators independently (D.H. and L.L.).
+
+2.2. Assessment of the Retrieved Articles
+
+All the literature was assessed based on title and abstract to decide which articles were relevant for this study. This was carried out by two investigators independently (D.H. and L.L.). Discrepancies were resolved by discussion. If no consensus was reached, a third investigator (J.N.) was consulted to settle the argument.
+
+Following screening of the title and abstract, a full-text analysis was carried out by the two investigators independently (D.H. and L.L.). The criteria for articles to be eligible for inclusion in this review were: (1) the use of PET-CT and/or PET-MRI with [18F]FDG, [11C]MET, [18F]FET or [18F]FDOPA as well as PWI (ASL, DCE and/or DSC) in the same patient; (2) the study population comprised patients diagnosed with adult-type diffuse glioma (WHO grades 2–4) after a neurosurgical resection and radiation therapy and/or chemotherapy and (3) the aim was to differentiate between TP and TRA. Articles needed to provide true positive, true negative, false positive and false negative (TP, TN, FP, FN, respectively) numbers, sensitivity and specificity for each imaging technique. The exclusion criteria comprised articles in which brain metastases were investigated and articles presenting no original data (e.g., reviews).
+
+After inclusion, a data-extraction sheet constructed by D.H. and J.N. was used to extract the data from each included article. Data that were extracted concerned: (1) name of first author, (2) year of publication, (3) number of included patients, (4) sex distribution of the included patients, (5) mean/median age of the patients (with range and/or standard deviation), (6) grading of gliomas following the WHO guidelines, (7) number of lesions investigated, (8) type of PET system used (PET-CT or PET-MRI), (9) PET tracer and administered activity, (10) PWI technique, (11) TP, TN, FP, FN numbers, sensitivity and specificity for the investigated imaging techniques separately, (12) investigated parameter for PET imaging (e.g., tumor-brain ratio or standardized uptake value) and used cut-off value, (13) investigated parameters for each PWI technique (e.g., rCBV) and used cut-off value, (14) gold standard methodology and (15) final diagnosis of investigated lesions.
+
+The methodological quality of the included articles was assessed using the QUADAS-2 checklist. This tool helps to evaluate the risk of bias and the applicability of primary diagnostic accuracy articles. This was carried out by two investigators independently (D.H. and L.L.). Discrepancies were resolved by discussion. If no consensus was reached, a third investigator (J.N.) was consulted to settle the argument.
+
+2.3. Statistical Analysis
+
+All data obtained from the individual articles were examined for completeness of observations and to avoid duplication. TN, TP, FN and FP were converted as the outcome state varied between the included articles. The outcome state for this meta-analysis was defined as TP; therefore a TN outcome referred to a patient in which TRA was present which was correctly identified by imaging. FP, on the other hand, comprised the situation in which a patient was found to have a TRA lesion although imaging identified the lesion as TP. The data were analyzed using RevMan (RevMan Version 5.4, Cochrane, https://training.cochrane.org/online-learning/core-software-cochrane-reviews/revman) (accessed on 17 May 2021). Random effects models were applied for calculating the pooled sensitivity and specificity. In addition, a Forest plot was constructed for each included study. A summary receiver operating characteristic curve (SROC) was plotted for each meta-analyzed technique. We chose to apply random effects models to enable a clinically relevant interpretation of the results. A significance level of 0.05 was chosen for all statistical tests. The meta-analysis yielded estimated pooled sensitivity and specificity values with 95% confidence intervals (95% CI). When the 95% CIs overlapped, the sensitivity/specificity between groups was deemed not statistically significantly different [18,19].
+
+3. Results
+
+3.1. Overview
+
+Systematic searches yielded 385 articles and 8 articles were identified through cross-referencing. After the removal of all duplicates (n = 13), the remaining 380 articles were screened by title and abstract, leading to the exclusion of 340 articles, as they were deemed irrelevant for the purpose of this review. The full texts of the remaining 40 articles were analyzed (Figure 1). In total, 19 articles were included in this meta-analysis.
+
+The 19 articles [20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38] were published between 2010 and 2022 and totaled 697 glioma patients (431 males) with a mean age ± standard deviation (SD) of 50.5 ± 5.1 years. The investigated PWI techniques included DSC PWI (14 articles) [20,21,22,23,24,25,26,31,32,33,34,35,36,38], DCE PWI (4 articles) [27,28,29,30] and ASL PWI (2 articles) [26,37]; the PET-tracers used included [11C]MET (5 articles) [20,21,22,23,38], [18F]FDG) (8 articles) [23,24,25,26,27,28,29,30], [18F]FET (5 articles) [31,32,33,34,35] and [18F]FDOPA (2 articles) [36,37]. A gold standard diagnosis was solely based on a histological assessment of brain tissue in three studies [20,21,26]. The assessed tissue in these studies was obtained by various neurosurgical interventions (i.e., brain biopsy or re-resection). In the remaining included studies, a gold standard diagnosis was based on a combination of radiological and clinical follow-up with or without the histological assessment of tissue after a brain biopsy. Again, when a histopathological assessment was carried out, the method of acquiring the brain tissue varied between and within studies (i.e., brain biopsy or re-resection). Table 2 provides an overview of the patient characteristics and imaging techniques of each study.
+
+The methodological quality of the included articles is summarized in Table 3. Both retrospective and prospective articles were included in this meta-analysis. In most of the included articles, the investigators were not blinded to clinical and imaging information, which must be considered as a potential source of bias. In addition, none of the included articles described the use of a validation cohort to test the found cut-off values.
+
+3.2. Meta-Analysis
+
+Four subgroups could be distinguished: (1) papers in which [11C]MET PET was compared with DSC PWI (n = 5), (2) papers in which [18F]FDG PET was compared with DCE PWI (n = 4), (3) papers in which [18F]FDG PET was compared with DSC PWI (n = 4) and (4) papers in which [18F]FET PET was compared with DSC PWI (n = 5). The two papers on ASL PWI could not be meta-analyzed, as one paper compared ASL PWI with [18F]FDG PET, whereas the other paper focused on a comparison with [18F]FET PET. Additionally, the two papers on the use of [18F]FDOPA PET could also not be meta-analyzed as the PWI technique differed in each paper; one paper described the use of ASL PWI, whereas the other compared [18F]FDOPA PET with DSC PWI.
+
+3.2.1. [18F]FDG PET Imaging vs. DCE PWI
+
+[18F]FDG PET was compared with DCE PWI in four papers, totaling 112 patients (47 males and 24 females; the study of Seligman et al. [30] provided no information on sex distribution) [27,28,29,30]. In two papers, PET-CT systems were used for PET imaging and DCE PWI was performed separately [27,29]. Only the paper of Hatzoglou et al. describes the applied time interval: both imaging modalities were applied within a time period of 12 weeks [27]. In the other two articles, a hybrid PET-MRI system was used, which allowed for simultaneous imaging [28,30]. Two papers used a quantitative assessment for both the PET and the DCE images [28,29]. For the PET data, the remaining two articles used a TBR ratio [27,30]. On a meta-level, [18F]FDG PET showed a sensitivity of 89% (95% CI: 70–97%) and a specificity of 64% (95% CI: 40–83%), whereas DCE in these articles showed a sensitivity of 93% (95% CI: 85–96%) and a specificity of 72% (95% CI: 56–84%) (Figure 2).
+
+3.2.2. [18F]FDG PET Imaging vs. DSC PWI
+
+[18F]FDG PET was compared with DSC PWI in 99 patients (75 males) in four papers [23,24,25,26]. In two papers, PET-CT systems were used for PET imaging and DSC PWI was, therefore, performed separately within 0–30 days [23,26]. One study used a hybrid PET-MRI system, allowing for single-session imaging [25]. One paper compared the use of a PET-CT and hybrid PET-MRI system with a time frame of 10 min between PET-CT and PET-MRI imaging sessions (including DSC PWI sequences) [24]. Except for the paper of Ozsunar and colleagues [26], all papers analyzed their PET data using mean TBR [23,24,25]. Regarding the quantification of the DSC PWI data, all articles used rCBV parameters. On a meta-level, [18F]FDG PET showed a sensitivity of 86% (95% CI: 77–92%) and a specificity of 85% (95% CI: 66–94%), whereas DSC PWI in these articles showed a sensitivity of 92% (95% CI: 61–99%) and a specificity of 67% (95% CI: 40–87%) (Figure 3).
+
+3.2.3. [11C]MET PET Imaging vs. DSC PWI
+
+In total, 157 patients (107 males) were included in the meta-analysis of [11C]MET PET imaging vs. DSC PWI as described in five papers [20,21,22,23,38]. In four papers, PET-CT systems were used for PET imaging and DSC PWI was performed separately within a period of 3–30 days [20,21,22,23]. One paper described the use of a hybrid PET-MRI system [38]. A variety of parameters were used to quantify the image analysis (i.e., uptake ratios comparing the left and right hemispheres and the tumor-brain ratio (TBR) max values) [21,22,23,38]. One paper analyzed PET images in a qualitative fashion [20]. For DSC PWI, all papers used the rCBVmax parameter for the image quantification analysis.
+
+On a meta-level, [11C]MET PET showed a sensitivity of 89% (95% CI: 78–95%) and a specificity of 72% (95% CI: 25–95%), whereas DSC PWI in these articles showed a sensitivity of 90% (95% CI: 69–97%) and a specificity of 80% (95% CI: 27–98%) (Figure 4).
+
+3.2.4. [18F]FET PET Imaging vs. DSC PWI
+
+[18F]FET PET was compared with DSC PWI in 273 patients (178 males) in five papers [31,32,33,34,35]. One study used a PET-CT acquisition system and a separate MRI session with a maximum interval of 3 months between imaging sessions [35]. Other articles used a hybrid PET-MRI system allowing for simultaneous imaging [31,32,33,34]. Regarding the quantification of the PET images and the DSC PWI data, all articles used TBR parameters and rCBV parameters, respectively [31,32,33,34,35]. On a meta-level, [18F]FET PET showed a sensitivity of 82% (95% CI: 72–90%) and a specificity of 85% (95% CI: 68–94%), whereas DSC PWI in these articles showed a sensitivity of 76% (95% CI: 52–90%) and a specificity of 88% (95% CI: 67–96%) (Figure 5).
+
+Given overlapping 95% CIs, the sensitivity values and most of the specificity values of the aforementioned grouped PET and PWI imaging methods, all techniques were considered comparable with regard to distinguishing TP from TRA in glioma patients. The pooled sensitivity and specificity values for each technique are provided in Table 4.
+
+4. Discussion
+
+This is the first meta-analysis of articles in which PWI and PET imaging were compared head-to-head in patients with treated glioma to distinguish TP from TRA, providing a unique insight into the diagnostic capacity of each technique. Despite inherent technological differences between PET imaging and PWI, the sensitivity and specificity were relatively comparable between these imaging methods when distinguishing TP from TRA in glioma patients. In addition, no significant differences were observed when comparing different PWI techniques and/or different PET tracers. Regarding the different PWI techniques, it has been reported that DSC PWI and DCE PWI provide similar diagnostic accuracy when distinguishing TP from TRA [39]. However, a more recent review by Van Dijken et al. showed higher diagnostic accuracy for DCE PWI compared with DSC PWI [40]. In terms of clinical relevance, this study shows that each imaging technique has comparable high pooled sensitivity rates with regard to diagnosing TRA. Thereby, a neurosurgical intervention (e.g., a brain biopsy) can be circumvented in a large number of cases when either of these imaging techniques is used.
+
+PET imaging using either amino acid tracers or [18F]FDG showed no superiority/inferiority compared to the use of the different PWI techniques. Amino acid tracers, however, showed a higher sensitivity compared with [18F]FDG as a PET tracer. This agrees with previous publications on this topic [14] and can be explained by the poor TBR on [18F]FDG PET images, as [18F]FDG shows a high physiological uptake in the brain, complicating the detection of TP (no significant uptake) when a glucose-based PET tracer is used. Amino acid tracers, on the other hand, have a high TBR due to the significantly increased amino acid metabolism in glioblastoma cells to sustain cell proliferation and extracellular matrix production. In agreement with previously published reviews on the use of amino acid tracers and the detection of TP vs. TRA, there were no significant differences between the different amino acid radiotracers [14,17].
+
+A major limitation in this field of research is that the cut-off values on which diagnostic accuracy (e.g., sensitivity, specificity) is based were determined without any form of internal or external validation. Thereby, there is a lack of robust data which limits the scientific evidence and hinders further standardization for future imaging trials. Additionally, in most of the included articles, readers were not blinded to the clinical/histopathological data and imaging information. Another limitation of the included articles concerns the variability in metrics which were meta-analyzed (e.g., rCBVmax, rCBVmean, ktransmean, TBRmean, TBRmax), especially in the [18F]FDG PET vs. DCE PWI meta-analysis. Nevertheless, when comparing TBRmax and TBRmean values to semiquantify FET data, Sogani et al. did not reveal significant differences regarding the diagnostic accuracy [33]. Therefore, it remains elusive to what extent this variability impacted the outcomes of the different diagnostic articles. In addition, as the reference standard to obtain the final diagnosis varied among studies, this could have partially influenced the results. In addition, the methods of obtaining brain tissue for histopathological examination varied within and between studies, which might have impacted the outcomes. Additionally, the QUADAS-2 checklist showed that histopathological criteria were not mentioned clearly by the authors. However, this was deemed as having only a minor impact on the outcomes of this review, as all papers referred to the use of the WHO Classification of Tumors of the Central Nervous System of either 2007 or 2016. Thereby, it was understood that histopathological diagnostics were carried out according to the then-applicable guidelines. Another limitation is the lack of harmonization of imaging protocols, which partially prohibits the discovery of robust imaging biomarkers needed for future research and clinical care. The European Imaging Biomarkers Alliance (EIBALL) and the Quantitative Imaging Biomarkers Alliance (QIBA), propelled by the European Society of Radiology and the Radiological Society of North America, respectively, collaborate to provide guidelines for future imaging articles. Furthermore, these societies aim to set standards for data acquisition, image processing and validation processes, as these three steps are essential for the development and implementation of imaging biomarkers in clinical trials and, ultimately, in the clinical setting [41,42].
+
+Even though there are advantages of the additional use of PET over conventional MRI, the clinical implementation of PET-CT and PET-MRI techniques are limited by capacity, availability and logistical challenges, especially regarding the use of [11C]MET. PWI, on the other hand, is a widely available technique that has the additional advantage of being less expensive and less time-consuming than PET-CT or PET-MRI. Additionally, although their prevalence is continuously increasing, there are still only a few PET-MRI systems available in the world, limiting the use of simultaneous imaging protocols. Therefore, PWI is being implemented in a growing number of clinical practices. Based on the findings from this meta-analysis, we recommend performing routine radiological follow-up with the more widely available PWI. The high sensitivity rates of either PWI technique can help to exclude TP.
+
+The combination of PET imaging and PWI has been suggested to further improve the overall diagnostic accuracy of the differentiation of TP from TRA [22,23,24,25,26,27,29,30,31,32,33,34]. A stepwise approach, where PWI-MRI is used to select cases for which PET imaging is most useful, can also increase diagnostic accuracy [35]. This could be valuable in more challenging cases with diagnostic uncertainties. The combination of exactly which PWI and PET technique is most optimal is not known and, therefore, should be determined by the level of local expertise. More prospective, blinded research is needed to investigate whether PET imaging indeed adds diagnostic value when PWI is inconclusive. It should be noted that most studies included different tumor types and that we could not perform meta-analyses per tumor type. The diagnostic accuracy for amino acid PET may increase for glioblastomas, as the use of [18F]FET PET imaging was shown to be significantly less accurate in IDH-mutant tumors compared to IDH-wildtype tumors in distinguishing TP from TRA [43].
+
+Sub analyses per tumor type could provide important information on how the different techniques behave in different tumor types. Another factor that might influence diagnostic accuracy is the time period between radiotherapy and scan acquisition. For example, for amino acid PET the accuracy increases when image acquisition occurs at least 6 months after radiotherapy [44]. This factor is often not reported but may need more attention in future studies. Finally, it must be noted that the reference standard was different for different patients included in the analysis; some groups correlated their imaging findings with a histopathological assessment of obtained tissue, whereas the majority of articles described the use of clinical and radiological follow-up to determine the entity of an observed lesion.
+
+More advanced analysis methods, including artificial intelligence methodologies, could be a promising solution for the near future. For example, a machine learning application was found to effectively distinguish TP from TRA on conventional MR imaging sequences alone [45,46,47]. The use of artificial intelligence applications on PW MR imaging data, however, has not been reported in the scientific literature. The application of artificial intelligence applications of PET-imaging, on the other hand, has been carried out by one group. Kebir et al. reported on the results of a preliminary study on the use of a machine learning model which used [18F]FET PET images to distinguish TP from TRA. In this study, they found that the applied machine learning approach had a significantly higher diagnostic accuracy with regard to differentiating TP from TRA when compared to the use of the TBRmax-value [48]. However, the aforementioned studies using artificial intelligence applications are limited by their use of relatively small datasets and the absence of an external validation dataset. These limitations should be addressed in future clinical trials using artificial intelligence applications to drive them to fully become powerful diagnostic tools in the future.
+
+5. Conclusions
+
+This meta-analysis demonstrates that PET imaging and PWI have similar diagnostic accuracy regarding the differentiation of TP from TRA in post-treatment glioma patients. Further research is necessary to optimize the complementary information provided by different imaging modalities for TRA and TP lesions, given that each modality uses distinct biological properties.
+
+Author Contributions
+
+All authors contributed to the study conception and design. Material preparation, data collection and analysis were performed by D.H. and L.L. The first draft of the manuscript was written by D.H. and all authors commented on previous versions of the manuscript. All authors have read and agreed to the published version of the manuscript.
+
+Conflicts of Interest
+
+Smits declares that she received speaker fees from GE Healthcare with regard to the use of perfusion weighted magnetic resonance imaging. The other authors declare that they have had no conflict of interest in the conduction of this research.
+
+Figure 1 PRISMA flow chart.
+
+Figure 2 Forest plot and summary receiver operating curves (SROCs) of [18F]FDG PET imaging and DCE PW imaging with regard to the differentiation of TP from TRA. [18F]FDG, 2-deoxy-2-[18F]fluoro-D-glucose; DCE PW imaging, dynamic contrast enhancement perfusion weighted imaging; TP, tumor progression. Forest plot displaying the individual effect sizes from each study for the diagnostic accuracy of [18F]FDG PET imaging and DCE PW imaging with regard to the differentiation of TP from TRA. SROC of [18F]FDG PET imaging (black line) and DCE PW imaging (red line) with regard to the differentiation of TP from TRA shows greater potential for DCE PW imaging. However, the difference in the diagnostic accuracy of the techniques was not statistically significant [27,28,29,30].
+
+Figure 3 Forest plot and summary receiver operating curves (SROCs) of [18F]FDG PET imaging and DSC PW imaging with regard to the differentiation of TP from TRA. [18F]FDG, 2-deoxy-2-[18F]fluoro-D-glucose; DSC PW imaging, dynamic susceptibility contrast perfusion weighted imaging; TP, tumor progression. Forest plot displaying the individual effect sizes from each study for the diagnostic accuracy of [18F]FDG PET imaging and DSC PW imaging with regard to the differentiation of TP from TRA. SROC of [18F]FDG PET imaging (black line) and DSC PW imaging (red line) with regard to the differentiation of TP from TRA shows greater potential for [18F]FDG PET imaging. However, the difference in the diagnostic accuracy of the techniques was not statistically significant [24,25,26].
+
+Figure 4 Forest plot and summary receiver operating curves (SROCs) of [11C]MET PET imaging and DSC PW imaging with regard to the differentiation of TP from TRA. [C1-11C]MET, [S-methyl-11C]methionine; DSC PW imaging, dynamic susceptibility contrast perfusion weighted imaging; TP, tumor progression. Forest plot displaying the individual effect sizes from each study for the diagnostic accuracy of [C1-11C]MET PET imaging and DSC PW imaging with regard to the differentiation of TP from TRA. SROC of [C1-11C]MET PET imaging (black line) and DSC PW imaging (red line) with regard to the differentiation of TP from TRA shows no superiority of either technique. Additionally, the difference in the diagnostic accuracy of the techniques was not statistically significant [20,21,22,23,38].
+
+Figure 5 Forest plot and summary receiver operating curves (SROCs) of [18F]FET PET imaging and DSC PW imaging with regard to the differentiation of TP from TRA. [18F]FET, O-(2-[18F]fluoroethyl)-L-tyrosine; DSC PW imaging, dynamic susceptibility contrast perfusion weighted imaging; TP, tumor progression. Forest plot displaying the individual effect sizes from each study for the diagnostic accuracy of [18F]FET PET imaging and DSC PW imaging with regard to the differentiation of TP from TRA. SROC of [18F]FET PET imaging (black line) and DSC PW imaging (red line) with regard to the differentiation of TP from TRA shows greater potential for the DSC PW imaging. However, the difference in the diagnostic accuracy of the techniques was not statistically significant [31,32,33,34,35].
+
+cancers-15-02631-t001_Table 1 Table 1 Search strings for different databases.
+
+PubMed	
+(“Glioma”[Title/Abstract] OR “glioblastoma”[Title/Abstract]) AND (“tumor recurrence”[Title/Abstract] OR “pseudoprogression”[Title/Abstract] OR “progression”[Title/Abstract]) AND (“PET”[Title/Abstract] OR “positron emission tomography”[Title/Abstract] OR “Positron Emission Tomography Computed Tomography”[MeSH Terms]) AND (“dynamic susceptibility contrast”[Title/Abstract] OR “dynamic contrast enhancement”[Title/Abstract] OR “arterial spin labeling”[Title/Abstract] OR (“Magnetic Resonance Imaging”[MeSH Terms] OR “Multiparametric Magnetic Resonance Imaging”[MeSH Terms] OR (“Magnetic Resonance Imaging”[Title/Abstract] OR “MRI”[Title/Abstract])))	
+EMBASE	
+(glioma or glioblastoma).m_titl.OR ((tumor recurrence or pseudoprogression or recurrence).mp. [mp = title, abstract, heading word, drug trade name, original title, device manufacturer, drug manufacturer, device trade name, keyword heading word, floating subheading word, candidate term word] OR (tumor recurrence or pseudoprogression or recurrence).m_titl.)) AND ((PET or positron emission tomography).mp. [mp = title, abstract, heading word, drug trade name, original title, device manufacturer, drug manufacturer, device trade name, keyword heading word, floating subheading word, candidate term word] OR (PET or positron emission tomography).m_titl) AND ((MRI perfusion.m_titl. OR MRI perfusion.mp. [mp = title, abstract, heading word, drug trade name, original title, device manufacturer, drug manufacturer, device trade name, keyword heading word, floating subheading word, candidate term word]) OR (dynamic contrast enhancement or dynamic susceptibility contrast or arterial spin labeling).m_titl. OR (dynamic contrast enhancement or dynamic susceptibility contrast or arterial spin labeling).mp. [mp = title, abstract, heading word, drug trade name, original title, device manufacturer, drug manufacturer, device trade name, keyword heading word, floating subheading word, candidate term word])	
+Cochrane Library	
+(((“glioblastoma”):ti,ab,kw OR (“glioma”):ti,ab,kw) OR ((“pseudoprogression”):ti,ab,kw OR (“tumor recurrence”):ti,ab,kw AND (“tumor progression”):ti,ab,kw)) AND (“positron emission tomography”):ti,ab,kw AND ((“perfusion weighted magnetic resonance imaging”):ti,ab,kw” OR (“dynamic susceptibility contrast”):ti,ab,kw OR (“dynamic contrast enhancement”):ti,ab,kw OR (“arterial spin labeling”):ti,ab,kw)	
+
+cancers-15-02631-t002_Table 2 Table 2 Overview of all included articles/studied populations.
+
+Study	Patients
+(n)	M/F (n)	Age (Years)	WHO Classification and Grade of Glioma	Lesions (n)	PET-Tracer	PET-CT vs. PET-MRI	Dose	Sens	Spec	PWI Technique	Sens	Spec	Lesion Diagnosis (Gold Standard)	Parameter PET	Cut-Off	Parameter PWI	Cut-Off	
+Dandois et al. (2010)
+[20]	28	16/12	mean 51 (range 25–74)	WHO grade 3 astrocytoma (9); WHO grade 3 oligodendroglioma (5); WHO grade 4 glioblastoma (14)	28	[11C]MET	PET-CT	740 MBq	100	N/E	DSC	67	100	Histological assessment after biopsy	Qualitative assessment	rCBV	>1.82	
+Kim et al. (2010); part 1
+[23]	10	8/2	mean age: 46.1 years	WHO grade 3 astrocytoma (3); WHO grade 3 oligodendroglioma (2); WHO grade 4 (5)	10	[18F]FDG	PET-CT	NR	100	75	DSC	100	100	Histological assessment after biopsy and/or radiological/clinical follow-up	Uptake ratios Lmax/Rmax	2.64	L/R ratio from rCBV	>3.69	
+Kim et al. (2010); part
+2
+[23]	10	8/2	mean age: 46.1 years	WHO grade 3 astrocytoma (3); WHO grade 3 oligodendroglioma (2); WHO grade 4 (5)	10	[11C]MET	PET-CT	NR	75	100	DSC	100	100	Histological assessment after biopsy and/or radiological/clinical follow-up	Uptake ratios Lmax/Rmax	2.64	L/R ratio from rCBV	>3.69	
+Ozsunar et al. (2010); part 1
+[26]	30	22/8	mean 42 (SD 11)	WHO grade 2 (7); WHO grade 3 (9); WHO grade 4 (19)	30	[18F]FDG	PET-CT	185–370 MBq	81	90	DSC	71	40	Histological assessment after biopsy	Qualitative assessment	normalized rCBV	>1.5	
+Ozsunar et al. (2010); part 2
+[26]	30	22/8	mean 42 (SD 11)	WHO grade 2 (7); WHO grade 3 (9); WHO grade 4 (19)	30	[18F]FDG	PET-CT	185–370 MBq	81	90	ASL	94	52	Histological assessment after biopsy	Qualitative assessment	normalized rCBV	>1.3	
+Prat et al. (2010)
+[29]	9	5/4	44.5 (16.3)	WHO grade 2 astrocytoma (3); WHO grade 2 oligodendroglioma (1); WHO grade 3 astrocytoma (5); WHO grade 3 oligodendroglioma (3); WHO grade 4 (11)	9	[18F]FDG	PET-CT	NR	83	67	DCE	100	100	Histological assessment after biopsy and/or radiological/clinical follow-up	Qualitative assessment	Qualitative assessment	
+D’Souza et al. (2014)
+[21]	29	24/17	NR	WHO grade 3 astrocytoma (16); WHO grade 4 glioblastoma (13)	29	[11C]MET	PET-CT	6 MBq/kg	95	20	DSC	84	90	Histological assessment after biopsy	L/R ratio from SUVmean	>1.58	rCBV	>1.82	
+Hatzoglou et al. (2015)
+[27]	53	35/18	mean 57 (range 19–81)	WHO grade 2 astrocytoma (2); WHO grade 3 astrocytoma (6); WHO grade 2 oligodendroglioma (1); WHO grade 3 oligodendroglioma (2); WHO grade 4 glioblastoma (18); 24 metastases	29	[18F]FDG	PET-CT	370 MBq	68	82	DCE	92	77	Histological assessment after biopsy and/or radiological/clinical follow-up	SUV ratio	>1.2	Vp ratio	>2.1	
+Jena et al. (2016)
+[31]	26	21/5	mean 51.6 (SD 16.0)	NR	32	[18F]FET	PET-MRI	352.12 ± 64.26	100	71.4	DSC	96	71.4	Histological assessment after biopsy and/or radiological/clinical follow-up	TBRmax	>2.11	rCBV mean	>1.89	
+Jena et al. (2017)
+[25]	35	29/6	mean 50 (SD 12.0)	WHO grade 2 (9); WHO grade 3 (13); WHO grade 4 (19)	41	[18F]FDG	PET-MRI	222 ±
+30 MBq	90	81.8	DSC	83	63.6	Histological assessment after biopsy and/or radiological/clinical follow-up	TBRmean	>1.18	rCBVmean	>1.7	
+Sogani et al. (2017); part 1
+[33]	32	25/7	52.3 (17–80)	NR	32	[18F]FET	PET-MRI	207.2 ± 25 MBq	89	86,2	DSC	95	72	Histological assessment after biopsy and/or radiological/clinical follow-up	TBRmax	>2.09	rCBVmean	>1.78	
+Sogani et al. (2017); part 2
+[33]	32	25/7	52.3 (17–80)	NR	32	[18F]FET	PET-MRI	207.2 ± 25 MBq	89	86.2	DSC	95	72	Histological assessment after biopsy and/or radiological/clinical follow-up	TBRmean	>1.52	rCBVmean	>1.78	
+Hojjati et al. (2018); part 1
+[24]	24	16/8	mean 57.5 (range 34–81)	WHO grade 4 (24)	23	[18F]FDG	PET-MRI	440 MBq	100	80	DSC	100	75	Histological assessment after biopsy and/or radiological/clinical follow-up	TBRmean	>1.31	rCBVmax	>3.32	
+Hojjati et al. (2018); part 2
+[24]	24	16/8	mean 57.5 (range 34–81)	WHO grade 4 (24)	23	[18F]FDG	PET-CT	440 MBq	83	80	DSC	100	75	Histological assessment after biopsy and/or radiological/clinical follow-up	TBRmean	>1.47	rCBVmax	>3.32	
+Pyka et al. (2018)
+[32]	47	22/25	mean 54 (SD 11)	WHO grade 2 astrocytoma (2); WHO grade 2 oligodendroglioma (1); WHO grade 3 astrocytoma (13); WHO grade 3 oligodendroglioma (3); WHO grade 4 (27)	63	[18F]FET	PET-MRI	190 MBq	80	85	DSC	66	77	Histological assessment after biopsy and/or radiological/clinical follow-up	TBRmax	>2.07	rCBVmean	>3.35	
+Qiao et al. (2018)
+[22]	42	28/14	mean 47.2 (SD 10.5)	WHO grade 3 astrocytoma (12); WHO grade 3 oligodendroglioma (7); WHO grade 4 (23)	42	[11C]MET	PET-CT	370–738.8
+MBq	91	56	DSC	67	77.8	Histological assessment after biopsy and/or radiological/clinical follow-up	TBRmax	>1.85	rCBVmean	>1.83	
+Verger et al. (2018)
+[34]	32	17/15	mean age, 52 (SD 13.4)	WHO grade 2 astrocytoma (1); WHO grade 2 oligodendroglioma (1); WHO grade 3 astrocytoma (2); WHO grade 3 oligodendroglioma (1); WHO grade 4 (27)	32	[18F]FET	PET-MRI	3 MBq/kg	80	86	DSC	52	0	Histological assessment after biopsy and/or radiological/clinical follow-up	TBRmax	>2.61	rCBVmean	NR	
+Lundemann et al. (2019); part1
+[28]	9	7/2	mean 58.7 (SD 12.1)	WHO grade 4 (9)	9	[18F]FDG	PET-MRI	200 MBq	100	71.4	DCE	96	71.4	Histological assessment after biopsy and/or radiological/clinical follow-up	Qualitative assessment	Qualitative assessment	
+Lundemann et al. (2019); part 2
+[28]	9	7/2	mean 58.7 (SD 12.1)	WHO grade 4 (9)	9	[18F]FET	PET-CT	200 MBq	90	81.8	DCE	83	63.6	Histological assessment after biopsy and/or radiological/clinical follow-up	Qualitative assessment	Qualitative assessment	
+Seligman et al. (2019)
+[30]	41	NR	median 53 (21–79)	WHO grade 3 (21); WHO grade 4 (20)	41	[18F]FDG	PET-MRI	NR	94	33	DCE	91	56	Histological assessment after biopsy and/or radiological/clinical follow-up	TBRmean (Whole-tumor SUVmean divided by
+SUVmean of normal WM)	>0.75	Ktransmean (Mean Ktrans of whole tumor divided by mean Ktrans of contralateral brain)	>4.5	
+Fraioli et al. (2020)
+[36]	40	23/17	median 34 years (range 5–65)	WHO grade 1 (3); WHO grade 2 (12); WHO grade 3 (14); WHO grade 4 (11); glioblastoma (11); astrocytoma (23); oligodendroglioma (6)	40	[18F]
+FDOPA	PET-MRI	250–
+370 MBq	100	100	DSC	99	25	Histological assessment after biopsy and/or radiological/clinical follow-up	Qualitative assessment	Qualitative assessment	
+Steidl et al. (2021)
+[35]	104	68/36	median age of 52 (range 20–78)	WHO grade 2 (9); WHO grade 3 (24); WHO grade 4 (71)	104	[18F]FET	PET-CT	3 MBq/kg	70	60	DSC	54	100	Histological assessment after biopsy and/or radiological/clinical follow-up	TBRmax	>1.95	rCBVmax	>2.85	
+Pellerin et al. (2021)
+[37]	58	34/24	mean age 53.1 ± 14.3	WHO grade 2 (10); WHO grade 3 (21); WHO grade 4 (27)	58	[18F]
+FDOPA	PET-MRI	2 MBq/kg	94.1	79.2	ASL	64.7	100	Histological assessment after biopsy and/or radiological/clinical follow-up	L/R 2 sample t-test	t > 6.36	L/R 2 sample t-test	t > 3.25	
+Jabeen et al. (2021)
+[38]	48	31/17	mean age 39.9 ± 12.5	WHO grade 2 (3); WHO grade 3 (28); WHO grade 4 (17)	48	[11C]MET	PET-MRI	360–378 MBq	81.8	92.3	DSC	84.8	76.9	Histological assessment after biopsy and/or radiological/clinical follow-up	TBRmax	>1.23	rCBVradio	>1.38	
+[18F]FDG = 2-deoxy-2-[18F]fluoro-D-glucose; [11C]MET = [S-methyl-11C]methionine; [18F]FET = O-(2-[18F]fluoroethyl)-L-tyrosine; [18F]FDOPA = 6-[18F]-fluoro-3,4-dihydroxy-L-phenylalanine. When part 1 or part 2 is described, this indicates that the included paper comprises more than two groups relevant for meta-analysis.
+
+cancers-15-02631-t003_Table 3 Table 3 Overview of the quality of the included articles. Green = low risk of bias; red = high of bias; yellow = unclear risk of bias.
+
+Study	Prospective?	Patient and Treatment Characteristics Compared?	Adequately Described the Treatment Protocol?	Potentially Confounding Adjuvant Treatments?	Did the Study Avoid Inappropriate Exclusions?	Interval between the Completion of Treatment and Imaging Documented?	PET Imaging Results Interpreted without Knowledge of the Results of PW Imaging and Vice Versa	Post-Processing Techniques Reproducible as Described?	Did More than One Investigator Process the Imaging Data? Was There an Evaluation of Inter-Rater Reliability?	Were Histological Criteria Defined?	Reference Standard Adequately Defined When Pathology Was Unavailable?	Pathology Interpreted without Knowledge of the Results of PET/PW Imaging Outcomes?	Did All Patients Receive the Same Reference Test?	Were All Patients Included in the Analysis?	
+Dandois et al. (2010)
+[20]	●	●	●	●	●	●	●	●	●	●	●	●	●	●	
+D’Souza et al. (2014)
+[21]	●	●	●	●	●	●	●	●	●	●	●	●	●	●	
+Fraioli et al. (2020)
+[36]	●	●	●	●	●	●	●	●	●	●	●	●	●	●	
+Hatzoglou et al. (2015)
+[29]	●	●	●	●	●	●	●	●	●	●	●	●	●	●	
+Hojjati et al. (2018); part1
+[24]	●	●	●	●	●	●	●	●	●	●	●	●	●	●	
+Hojjati et al. (2018); part2
+[24]	●	●	●	●	●	●	●	●	●	●	●	●	●	●	
+Jena et al. (2016)
+[31]	●	●	●	●	●	●	●	●	●	●	●	●	●	●	
+Jena et al. (2017)
+[25]	●	●	●	●	●	●	●	●	●	●	●	●	●	●	
+Lundemann et al. (2019); part1
+[28]	●	●	●	●	●	●	●	●	●	●	●	●	●	●	
+Lundemann et al. (2019); part 2
+[28]	●	●	●	●	●	●	●	●	●	●	●	●	●	●	
+Ozsunar et al. (2010); part 1
+[26]	●	●	●	●	●	●	●	●	●	●	●	●	●	●	
+Ozsunar et al. (2010); part 2
+[26]	●	●	●	●	●	●	●	●	●	●	●	●	●	●	
+Pyka et al. (2018)
+[32]	●	●	●	●	●	●	●	●	●	●	●	●	●	●	
+Qiao et al. (2018)
+[22]	●	●	●	●	●	●	●	●	●	●	●	●	●	●	
+Sogani et al. (2017); part 1
+[33]	●	●	●	●	●	●	●	●	●	●	●	●	●	●	
+Sogani et al. (2017); part 2
+[33]	●	●	●	●	●	●	●	●	●	●	●	●	●	●	
+Kim et al. (2010); part 1
+[23]	●	●	●	●	●	●	●	●	●	●	●	●	●	●	
+Kim et al. (2010); part 2
+[23]	●	●	●	●	●	●	●	●	●	●	●	●	●	●	
+Prat et al. (2010)
+[29]	●	●	●	●	●	●	●	●	●	●	●	●	●	●	
+Seligman et al. (2019)
+[28]	●	●	●	●	●	●	●	●	●	●	●	●	●	●	
+Verger et al. (2018)
+[34]	●	●	●	●	●	●	●	●	●	●	●	●	●	●	
+Steidl et al. (2021)
+[35]	●	●	●	●	●	●	●	●	●	●	●	●	●	●	
+Pellerin et al. (2021)
+[37]	●	●	●	●	●	●	●	●	●	●	●	●	●	●	
+Jabeen et al. (2021)
+[38]	●	●	●	●	●	●	●	●	●	●	●	●	●	●	
+
+cancers-15-02631-t004_Table 4 Table 4 Pooled sensitivity and specificity of each technique included in this review.
+
+Technique	References	Patients (n)	Pooled Sensitivity	95% CI	Pooled Specificity	95% CI	
+DCE PWI	[27,28,29,30]	112	90%	84–94%	70%	56–82%	
+DSC PWI	[20,21,22,23,24,25,26,31,32,33,34,35,36,38]	497	90%	80–95%	77%	61–88%	
+ASL PWI	[26,37]	56	84%	31–98%	85%	11–100%	
+[18F]FDG PET	[23,24,25,26,27,28,29,30]	192	89%	80–94%	78%	65–87%	
+[11C]MET PET	[20,21,22,23,38]	157	89%	78–95%	72%	25–95%	
+[18F]FET PET	[28,31,32,33,34,35]	250	84%	75–90%	80%	67–88%	
+[18F]FDOPA	[36,37]	98	94%	86–98%	78%	58–90%	
+[18F]FDG, 2-deoxy-2-[18F]fluoro-D-glucose; [11C]MET, [S-methyl-11C]methionine; [18F]FET, O-(2-[18F]fluoroethyl)-L-tyrosine; [18F]FDOPA, 6-[18F]-fluoro-3,4-dihydroxy-L-phenylalanine.
+
+Disclaimer/Publisher’s Note: The statements, opinions and data contained in all publications are solely those of the individual author(s) and contributor(s) and not of MDPI and/or the editor(s). MDPI and/or the editor(s) disclaim responsibility for any injury to people or property resulting from any ideas, methods, instructions or products referred to in the content.
+==== Refs
+References
+
+1. Louis D.N. Perry A. Wesseling P. Brat D.J. Cree I.A. Figarella-Branger D. Hawkins C. Ng H.K. Pfister S.M. Reifenberger G. The 2021 WHO Classification of Tumors of the Central Nervous System: A summary Neuro Oncol. 2021 23 1231 1251 10.1093/neuonc/noab106 34185076
+2. Wen P.Y. Macdonald D.R. Reardon D.A. Cloughesy T.F. Sorensen A.G. Galanis E. Degroot J. Wick W. Gilbert M.R. Lassman A.B. Updated response assessment criteria for high-grade gliomas: Response assessment in neuro-oncology working group J. Clin. Oncol. 2010 28 1963 1972 10.1200/JCO.2009.26.3541 20231676
+3. Brandsma D. Stalpers L. Taal W. Sminia P. van den Bent M.J. Clinical features, mechanisms, and management of pseudoprogression in malignant gliomas Lancet Oncol. 2008 9 453 461 10.1016/S1470-2045(08)70125-6 18452856
+4. Young R.J. Gupta A. Shah A.D. Graber J.J. Zhang Z. Shi W. Holodny A.I. Omuro A.M. Potential utility of conventional MRI signs in diagnosing pseudoprogression in glioblastoma Neurology 2011 76 1918 1924 10.1212/WNL.0b013e31821d74e7 21624991
+5. Albert N.L. Weller M. Suchorska B. Galldiks N. Soffietti R. Kim M.M. la Fougere C. Pope W. Law I. Arbizu J. Response Assessment in Neuro-Oncology working group and European Association for Neuro-Oncology recommendations for the clinical use of PET imaging in gliomas Neuro Oncol. 2016 18 1199 1208 10.1093/neuonc/now058 27106405
+6. Smits M. MRI biomarkers in neuro-oncology Nat. Rev. Neurol. 2021 17 486 500 10.1038/s41582-021-00510-y 34149051
+7. Santo G. Laudicella R. Linguanti F. Nappi A.G. Abenavoli E. Vergura V. Rubini G. Sciagrà R. Arnone G. Schillaci O. The Utility of Conventional Amino Acid PET Radiotracers in the Evaluation of Glioma Recurrence also in Comparison with MRI Diagnostics 2022 12 844 10.3390/diagnostics12040844 35453892
+8. Essig M. Shiroishi M.S. Nguyen T.B. Saake M. Provenzale J.M. Enterline D. Anzalone N. Dorfler A. Rovira A. Wintermark M. Perfusion MRI: The five most frequently asked technical questions AJR Am. J. Roentgenol. 2013 200 24 34 10.2214/AJR.12.9543 23255738
+9. Wang L. Wei L. Wang J. Li N. Gao Y. Ma H. Qu X. Zhang M. Evaluation of perfusion MRI value for tumor progression assessment after glioma radiotherapy: A systematic review and meta-analysis Medicine 2020 99 e23766 10.1097/MD.0000000000023766 33350761
+10. Seeger A. Braun C. Skardelly M. Paulsen F. Schittenhelm J. Ernemann U. Bisdas S. Comparison of three different MR perfusion techniques and MR spectroscopy for multiparametric assessment in distinguishing recurrent high-grade gliomas from stable disease Acad. Radiol. 2013 20 1557 1565 10.1016/j.acra.2013.09.003 24200483
+11. Zakhari N. Taccone M.S. Torres C.H. Chakraborty S. Sinclair J. Woulfe J. Jansen G.H. Cron G.O. Thornhill R.E. McInnes M.D.F. Prospective comparative diagnostic accuracy evaluation of dynamic contrast-enhanced (DCE) vs. dynamic susceptibility contrast (DSC) MR perfusion in differentiating tumor recurrence from radiation necrosis in treated high-grade gliomas J. Magn. Reson. Imaging 2019 50 573 582 10.1002/jmri.26621 30614146
+12. Shin K.E. Ahn K.J. Choi H.S. Jung S.L. Kim B.S. Jeon S.S. Hong Y.G. DCE and DSC MR perfusion imaging in the differentiation of recurrent tumour from treatment-related changes in patients with glioma Clin. Radiol. 2014 69 e264 e272 10.1016/j.crad.2014.01.016 24594379
+13. Langen K.J. Galldiks N. Hattingen E. Shah N.J. Advances in neuro-oncology imaging Nat. Rev. Neurol. 2017 13 279 289 10.1038/nrneurol.2017.44 28387340
+14. de Zwart P.L. van Dijken B.R.J. Holtman G.A. Stormezand G.N. Dierckx R. Jan van Laar P. van der Hoorn A. Diagnostic Accuracy of PET Tracers for the Differentiation of Tumor Progression from Treatment-Related Changes in High-Grade Glioma: A Systematic Review and Metaanalysis J. Nucl. Med. 2020 61 498 504 10.2967/jnumed.119.233809 31541032
+15. Sun A. Liu X. Tang G. Carbon-11 and Fluorine-18 Labeled Amino Acid Tracers for Positron Emission Tomography Imaging of Tumors Front. Chem. 2017 5 124 10.3389/fchem.2017.00124 29379780
+16. Castagna M. Shayakul C. Trotti D. Sacchi V.F. Harvey W.R. Hediger M.A. Molecular characteristics of mammalian and insect amino acid transporters: Implications for amino acid homeostasis J. Exp. Biol. 1997 200 269 286 10.1242/jeb.200.2.269 9050235
+17. Soni N. Ora M. Mohindra N. Menda Y. Bathla G. Diagnostic Performance of PET and Perfusion-Weighted Imaging in Differentiating Tumor Recurrence or Progression from Radiation Necrosis in Posttreatment Gliomas: A Review of Literature AJNR Am. J. Neuroradiol. 2020 41 1550 1557 10.3174/ajnr.A6685 32855194
+18. Goldstein H. Healy M.J. The graphical presentation of a collection of means J. R. Stat. Soc. Ser. A Stat. Soc. 1995 158 175 177 10.2307/2983411
+19. Cumming G. Finch S. Inference by eye: Confidence intervals and how to read pictures of data Am. Psychol. 2005 60 170 10.1037/0003-066X.60.2.170 15740449
+20. Dandois V. Rommel D. Renard L. Jamart J. Cosnard G. Substitution of 11C-methionine PET by perfusion MRI during the follow-up of treated high-grade gliomas: Preliminary results in clinical practice J. Neuroradiol. 2010 37 89 97 10.1016/j.neurad.2009.04.005 19570578
+21. D’Souza M.M. Sharma R. Jaimini A. Panwar P. Saw S. Kaur P. Mondal A. Mishra A. Tripathi R.P. 11C-MET PET/CT and advanced MRI in the evaluation of tumor recurrence in high-grade gliomas Clin. Nucl. Med. 2014 39 791 798 10.1097/RLU.0000000000000532 25036022
+22. Qiao Z. Zhao X. Wang K. Zhang Y. Fan D. Yu T. Shen H. Chen Q. Ai L. Utility of Dynamic Susceptibility Contrast Perfusion-Weighted MR Imaging and (11)C-Methionine PET/CT for Differentiation of Tumor Recurrence from Radiation Injury in Patients with High-Grade Gliomas AJNR Am. J. Neuroradiol. 2019 40 253 259 10.3174/ajnr.A5952 30655259
+23. Kim Y.H. Oh S.W. Lim Y.J. Park C.K. Lee S.H. Kang K.W. Jung H.W. Chang K.H. Differentiating radiation necrosis from tumor recurrence in high-grade gliomas: Assessing the efficacy of 18F-FDG PET, 11C-methionine PET and perfusion MRI Clin. Neurol. Neurosurg. 2010 112 758 765 10.1016/j.clineuro.2010.06.005 20619531
+24. Hojjati M. Badve C. Garg V. Tatsuoka C. Rogers L. Sloan A. Faulhaber P. Ros P.R. Wolansky L.J. Role of FDG-PET/MRI, FDG-PET/CT, and Dynamic Susceptibility Contrast Perfusion MRI in Differentiating Radiation Necrosis from Tumor Recurrence in Glioblastomas J. Neuroimaging 2018 28 118 125 10.1111/jon.12460 28718993
+25. Jena A. Taneja S. Jha A. Damesha N.K. Negi P. Jadhav G.K. Verma S.M. Sogani S.K. Multiparametric Evaluation in Differentiating Glioma Recurrence from Treatment-Induced Necrosis Using Simultaneous (18)F-FDG-PET/MRI: A Single-Institution Retrospective Study AJNR Am. J. Neuroradiol. 2017 38 899 907 10.3174/ajnr.A5124 28341716
+26. Ozsunar Y. Mullins M.E. Kwong K. Hochberg F.H. Ament C. Schaefer P.W. Gonzalez R.G. Lev M.H. Glioma recurrence versus radiation necrosis? A pilot comparison of arterial spin-labeled, dynamic susceptibility contrast enhanced MRI, and FDG-PET imaging Acad. Radiol. 2010 17 282 290 10.1016/j.acra.2009.10.024 20060750
+27. Hatzoglou V. Yang T.J. Omuro A. Gavrilovic I. Ulaner G. Rubel J. Schneider T. Woo K.M. Zhang Z. Peck K.K. A prospective trial of dynamic contrast-enhanced MRI perfusion and fluorine-18 FDG PET-CT in differentiating brain tumor progression from radiation injury after cranial irradiation Neuro Oncol. 2016 18 873 880 10.1093/neuonc/nov301 26688076
+28. Lundemann M. Munck Af Rosenschold P. Muhic A. Larsen V.A. Poulsen H.S. Engelholm S.A. Andersen F.L. Kjaer A. Larsson H.B.W. Law I. Feasibility of multi-parametric PET and MRI for prediction of tumour recurrence in patients with glioblastoma Eur. J. Nucl. Med. Mol. Imaging 2019 46 603 613 10.1007/s00259-018-4180-3 30276440
+29. Prat R. Galeano I. Lucas A. Martinez J.C. Martin M. Amador R. Reynes G. Relative value of magnetic resonance spectroscopy, magnetic resonance perfusion, and 2-(18F) fluoro-2-deoxy-D-glucose positron emission tomography for detection of recurrence or grade increase in gliomas J. Clin. Neurosci. 2010 17 50 53 10.1016/j.jocn.2009.02.035 19959364
+30. Seligman L. Kovanlikaya I. Pisapia D.J. Naeger D.M. Magge R. Fine H.A. Chiang G.C. Integrated PET-MRI for Glioma Surveillance: Perfusion-Metabolism Discordance Rate and Association with Molecular Profiling AJR Am. J. Roentgenol. 2019 212 883 891 10.2214/AJR.18.20531 30779663
+31. Jena A. Taneja S. Gambhir A. Mishra A.K. D’Souza M.M. Verma S.M. Hazari P.P. Negi P. Jhadav G.K. Sogani S.K. Glioma Recurrence Versus Radiation Necrosis: Single-Session Multiparametric Approach Using Simultaneous O-(2-18F-Fluoroethyl)-L-Tyrosine PET/MRI Clin. Nucl. Med. 2016 41 e228 e236 10.1097/RLU.0000000000001152 26859208
+32. Pyka T. Hiob D. Preibisch C. Gempt J. Wiestler B. Schlegel J. Straube C. Zimmer C. Diagnosis of glioma recurrence using multiparametric dynamic 18F-fluoroethyl-tyrosine PET-MRI Eur. J. Radiol. 2018 103 32 37 10.1016/j.ejrad.2018.04.003 29803382
+33. Sogani S.K. Jena A. Taneja S. Gambhir A. Mishra A.K. D’Souza M.M. Verma S.M. Hazari P.P. Negi P. Jadhav G.K. Potential for differentiation of glioma recurrence from radionecrosis using integrated (18)F-fluoroethyl-L-tyrosine (FET) positron emission tomography/magnetic resonance imaging: A prospective evaluation Neurol. India 2017 65 293 301 10.4103/neuroindia.NI_101_16 28290392
+34. Verger A. Filss C.P. Lohmann P. Stoffels G. Sabel M. Wittsack H.J. Kops E.R. Galldiks N. Fink G.R. Shah N.J. Comparison of O-(2-(18)F-Fluoroethyl)-L-Tyrosine Positron Emission Tomography and Perfusion-Weighted Magnetic Resonance Imaging in the Diagnosis of Patients with Progressive and Recurrent Glioma: A Hybrid Positron Emission Tomography/Magnetic Resonance Study World Neurosurg. 2018 113 e727 e737 10.1016/j.wneu.2018.02.139 29510293
+35. Steidl E. Langen K.J. Hmeidan S.A. Polomac N. Filss C.P. Galldiks N. Lohmann P. Keil F. Filipski K. Mottaghy F.M. Sequential implementation of DSC-MR perfusion and dynamic [(18)F]FET PET allows efficient differentiation of glioma progression from treatment-related changes Eur. J. Nucl. Med. Mol. Imaging 2021 48 1956 1965 10.1007/s00259-020-05114-0 33241456
+36. Fraioli F. Shankar A. Hyare H. Ferrazzoli V. Militano V. Samandouras G. Mankad K. Solda F. Zaccagna F. Mehdi E. The use of multiparametric 18F-fluoro-L-3,4-dihydroxy-phenylalanine PET/MRI in post-therapy assessment of patients with gliomas Nucl. Med. Commun. 2020 41 517 525 10.1097/MNM.0000000000001184 32282634
+37. Pellerin A. Khalifé M. Sanson M. Rozenblum-Beddok L. Bertaux M. Soret M. Galanaud D. Dormont D. Kas A. Pyatigorskaya N. Simultaneously acquired PET and ASL imaging biomarkers may be helpful in differentiating progression from pseudo-progression in treated gliomas Eur. Radiol. 2021 31 7395 7405 10.1007/s00330-021-07732-0 33787971
+38. Jabeen S. Arbind A. Kumar D. Singh P.K. Saini J. Sadashiva N. Krishna U. Arimappamagan A. Santosh V. Nagaraj C. Combined amino acid PET-MRI for identifying recurrence in post-treatment gliomas: Together we grow Eur. J. Hybrid Imaging 2021 5 15 10.1186/s41824-021-00109-y 34405282
+39. Patel P. Baradaran H. Delgado D. Askin G. Christos P. John Tsiouris A. Gupta A. MR perfusion-weighted imaging in the evaluation of high-grade gliomas after treatment: A systematic review and meta-analysis Neuro Oncol. 2017 19 118 127 10.1093/neuonc/now148 27502247
+40. van Dijken B.R.J. van Laar P.J. Holtman G.A. van der Hoorn A. Diagnostic accuracy of magnetic resonance imaging techniques for treatment response evaluation in patients with high-grade glioma, a systematic review and meta-analysis Eur. Radiol. 2017 27 4129 4144 10.1007/s00330-017-4789-9 28332014
+41. European Imaging Biomarkers Alliance—EIBALL Available online: https://www.myesr.org/research/european-imaging-biomarkers-alliance-eiball (accessed on 9 May 2022)
+42. Quantitative Imaging Biomarkers Alliance Available online: https://www.rsna.org/research/quantitative-imaging-biomarkers-alliance (accessed on 9 May 2022)
+43. Maurer G.D. Brucker D.P. Stoffels G. Filipski K. Filss C.P. Mottaghy F.M. Galldiks N. Steinbach J.P. Hattingen E. Langen K.J. (18)F-FET PET Imaging in Differentiating Glioma Progression from Treatment-Related Changes: A Single-Center Experience J. Nucl. Med. 2020 61 505 511 10.2967/jnumed.119.234757 31519802
+44. Bashir A. Mathilde Jacobsen S. Molby Henriksen O. Broholm H. Urup T. Grunnet K. Andree Larsen V. Moller S. Skjoth-Rasmussen J. Skovgaard Poulsen H. Recurrent glioblastoma versus late posttreatment changes: Diagnostic accuracy of O-(2-[18F]fluoroethyl)-L-tyrosine positron emission tomography (18F-FET PET) Neuro Oncol. 2019 21 1595 1606 10.1093/neuonc/noz166 31618420
+45. Ari A.P. Akkurt B.H. Musigmann M. Mammadov O. Blömer D.A. Kasap D.N.G. Henssen D.J.H.A. Nacul N.G. Sartoretti E. Sartoretti T. Pseudoprogression prediction in high grade primary CNS tumors by use of radiomics Sci. Rep. 2022 12 5915 10.1038/s41598-022-09945-9 35396525
+46. Mammadov O. Akkurt B.H. Musigmann M. Ari A.P. Blömer D.A. Kasap D.N.G. Henssen D.J.H.A. Nacul N.G. Sartoretti E. Sartoretti T. Radiomics for pseudoprogression prediction in high grade gliomas: Added value of MR contrast agent Heliyon 2022 8 e10023 10.1016/j.heliyon.2022.e10023 35965975
+47. Jang B.S. Park A.J. Jeon S.H. Kim I.H. Lim D.H. Park S.H. Lee J.H. Chang J.H. Cho K.H. Kim J.H. Machine Learning Model to Predict Pseudoprogression Versus Progression in Glioblastoma Using MRI: A Multi-Institutional Study (KROG 18-07) Cancers 2020 12 2706 10.3390/cancers12092706 32967367
+48. Kebir S. Schmidt T. Weber M. Lazaridis L. Galldiks N. Langen K.J. Kleinschnitz C. Hattingen E. Herrlinger U. Lohmann P. A Preliminary Study on Machine Learning-Based Evaluation of Static and Dynamic FET-PET for the Detection of Pseudoprogression in Patients with IDH-Wildtype Glioblastoma Cancers 2020 12 3080 10.3390/cancers12113080 33105661
+

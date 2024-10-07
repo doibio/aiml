@@ -1,0 +1,319 @@
+
+==== Front
+BMC Cancer
+BMC Cancer
+BMC Cancer
+1471-2407
+BioMed Central London
+
+10492
+10.1186/s12885-022-10492-9
+Research
+The prognostic significance of tumor-associated neutrophils and circulating neutrophils in glioblastoma (WHO CNS5 classification)
+Wang Xuezhen 12
+Li Xiaoxia 12
+Wu Yufan 12
+Hong Jinsheng 13799375732@163.com
+
+123
+Zhang Mingwei zhangmingwei28@sina.cn
+
+123
+1 grid.412683.a 0000 0004 1758 0400 Department of Radiotherapy, Cancer Center, The First Affiliated Hospital of Fujian Medical University, Fuzhou, China
+2 grid.412683.a 0000 0004 1758 0400 Department of Radiotherapy, National Regional Medical Center, Binhai Campus of the First Affiliated Hospital of Fujian Medical University, Fuzhou, China
+3 grid.412683.a 0000 0004 1758 0400 Key Laboratory of Radiation Biology of Fujian Higher Education Institutions, The First Affiliated Hospital, Fujian Medical University, Fuzhou, China
+6 1 2023
+6 1 2023
+2023
+23 2024 5 2022
+27 12 2022
+© The Author(s) 2023
+https://creativecommons.org/licenses/by/4.0/ Open AccessThis article is licensed under a Creative Commons Attribution 4.0 International License, which permits use, sharing, adaptation, distribution and reproduction in any medium or format, as long as you give appropriate credit to the original author(s) and the source, provide a link to the Creative Commons licence, and indicate if changes were made. The images or other third party material in this article are included in the article's Creative Commons licence, unless indicated otherwise in a credit line to the material. If material is not included in the article's Creative Commons licence and your intended use is not permitted by statutory regulation or exceeds the permitted use, you will need to obtain permission directly from the copyright holder. To view a copy of this licence, visit http://creativecommons.org/licenses/by/4.0/. The Creative Commons Public Domain Dedication waiver (http://creativecommons.org/publicdomain/zero/1.0/) applies to the data made available in this article, unless otherwise stated in a credit line to the data.
+Background
+
+Tumor-associated neutrophils (TANs) in the tumor microenvironment are prognostic biomarkers in many malignancies. However, it is unclear whether TANs can serve as a prognostic marker for clinical outcomes in patients with glioblastoma (GBM), as classified according to World Health Organization Classification of Tumors of the Central Nervous System, fifth edition (CNS5). In the present study, we analyzed correlations of TANs and peripheral blood neutrophils prior to radiotherapy with overall survival (OS) in GBM (CNS5).
+
+Methods
+
+RNA-seq expression profiles of patients with newly diagnosed GBM (CNS5) were extracted from The Cancer Genome Atlas (TCGA), and The Chinese Glioma Genome Atlas (CGGA). TAN infiltration was inferred using CIBERSORTx algorithm. Neutrophil counts prior to radiotherapy in newly diagnosed GBM (CNS5) were obtained from the First Affiliated Hospital of Fujian Medical University. The prognostic value of TANs and peripheral blood neutrophils before radiotherapy was investigated using Kaplan-Meier analysis and Cox proportional hazards models. The robustness of these findings was evaluated by sensitivity analysis, and E values were calculated.
+
+Results
+
+A total of 146 and 173 individuals with GBM (CNS5) were identified from the TCGA and CGGA cohorts, respectively. High infiltration of TANs was of prognostic of poor OS in TCGA (HR = 1.621, 95% CI: 1.004–2.619) and CGGA (HR = 1.546, 95% CI: 1.029–2.323). Levels of peripheral blood neutrophils before radiotherapy (HR = 2.073, 95% CI: 1.077–3.990) were independently associated with poor prognosis. Sensitivity analysis determined that the E-value of high TANs infiltration was 2.140 and 2.465 in the TCGA and CGGA cohorts.
+
+Conclusions
+
+TANs and peripheral blood neutrophil levels before radiotherapy are prognostic of poor outcomes in GBM (CNS5).
+
+Supplementary Information
+
+The online version contains supplementary material available at 10.1186/s12885-022-10492-9.
+
+Keywords
+
+Neutrophils
+Glioblastoma
+IDH-wildtype
+Prognosis
+Sensitivity analysis
+issue-copyright-statement© The Author(s) 2023
+==== Body
+pmcIntroduction
+
+Glioblastoma is a highly malignant type of glioma, and accounts for over 50% of emerging glioma cases [1]. Treatment with postoperative chemoradiotherapy is currently the standard of care for glioblastoma. Even though some patients may benefit from the Stupp regimen [2], the overall prognosis remains poor [3], with less than 10% survivorship at 5 years [4]. At present, prognostic predictions for patients with glioblastoma are mainly made based on patient age, Karnofsky Performance Status (KPS), prior treatment, resection range, methylation of O6-methylguanine-DNA methyltransferase (MGMT) promoter methylation status, isocitrate dehydrogenase genes (IDH), telomerase reverse transcriptase (TERT), and other molecular markers, such as alpha thalassemia/mental retardation syndrome X-linked (ATRX) gene [5, 6]. It is of paramount significance to make overall assessment of patients, and to evaluate potential high-risk factors that affect patient prognosis, to improve the timely adjustment of treatment methods and the accuracy of prognostic assessments.
+
+The World Health Organization Classification of Tumors of the Central Nervous System, fifth edition (WHO CNS5 classification; CNS5) states that an IDH-wildtype diffuse astrocytic glioma in an adult with microvascular proliferation or necrosis or EGFR gene amplification or + 7/− 10 chromosome copy number changes or TERT promoter mutation should be diagnosed as GBM (CNS5), even if the histological grade was considered low [1]. There are different driver genes, molecular characteristics, and clinical prognosis associated with either IDH mutant or IDH-wildtype glioblastoma [7]. GBM (CNS5) is considered as an independent genotyping for diagnosis based on the fifth edition of the 2021 World Health Organization classification of tumors of the central nervous system [1], thus further advancing the role of molecular neuropathology in CNS tumor classification. Compared with the IDH mutant type, IDH wild type glioblastoma (IDHwt GBM, CNS4) exhibits higher invasiveness, has a poor prognosis, with a median patient survival time ranging from 6 to 15 months [8]. As studies have shown, 30 to 50% of IDHwt GBM (CNS4) demonstrates methylation of the MGMT promoter, which is associated with favorable clinical responses to TMZ, and is considered to be a poor prognostic factor [9]. However, the utility of this biomarker may be limited by acquired drug resistance, and disease prognosis still varies greatly. The prognostic value of methylation of MGMT promoter [10], the TERT promoter, and EGFR [11] in GBM (CNS5) remains controversial. It also remains unclear whether heritable factors can contribute to risk stratification for patients [12], and there are likely other factors remaining to be identified that can stratify prognosis for patients with GBM (CNS5). Therefore, there still must be additional reliable biomarkers developed for patient stratification and disease prognosis of patients with GBM (CNS5).
+
+During the progression of glioblastoma, factors such as the tumor microenvironment, and infiltration of non-tumor cells and immune cells influences the gene expression and transcription types of glioblastoma [13], and can result in the interconversion of molecular subtypes. Neutrophils are important members of the tumor microenvironment. Neutrophils exhibit tumor-promoting activity by inducing angiogenesis [14–17], inhibiting T cell activation (immunosuppression) [18–22], inducing genetic instability [23–25], and maintaining tumor cell proliferation [26–29]. Tumor-associated neutrophils (TANs) are also prognostic markers for patients with tumors [30–32], and are closely related to the prognosis of gastric carcinoma [30], breast cancer [33], cholangiocarcinoma [34] and urothelial carcinoma [32]. However, there are few studies on TANs in patients with glioma diagnosed by WHO CNS5 classification, especially for patients with GBM (CNS5), of which the prognostic value is currently unclear. What’s more, at present, studies on hematologic markers of glioma mostly center on preoperative peripheral blood samples [35], and are often disturbed by many factors such as preoperative stress and postoperative infection, which can greatly limit the representation of the real postoperative condition of glioma. Correlative research on the influence of peripheral blood neutrophils on the overall survival of patients with glioma before postoperative radiotherapy has been reported less now, and its influence on the prognosis of glioma is of certain research value.
+
+In the present study, RNA-sequencing (RNA-seq) expression profiles and clinical data from the TCGA database were used to measure the abundance of TANs in the tumor microenvironment by the CIBERSORTx algorithm, and to evaluate the relationship between TANs and clinical prognosis. Moreover, Gene Set Variation Analysis (GSVA) enrichment analysis was performed to explore differences in biological characteristics between the high and low TANs groups, and the CGGA database was used for external verification. In addition, a retrospective analysis was made on the levels of peripheral blood neutrophils before radiotherapy for patients with GBM (CNS5), and the prognostic significance of this metric was determined for GBM (CNS5).
+
+Methods
+
+Data collection
+
+TCGA database
+
+Level 3 gene expression profiles (level 3 data) for glioblastoma patients were downloaded from TCGA (The Cancer Genome Atlas) database (https://portal.gdc.cancer.gov/). Clinical data such as sex, age, and overall survival (OS) were also downloaded from TCGA data portal. The molecular pathological data regarding IDH, MGMT promoter methylation, TERT promoter mutation, and + 7/− 10 chromosome copy number was extracted from a published database [36].The detailed inclusion criteria included: 1) primary glioblastoma; 2) according to WHO CNS5 classification, an IDH-wildtype diffuse astrocytic glioma in adults with microvascular proliferation or necrosis, or 1 or more of 3 genetic parameters [EGFR gene amplification, combined gain of entire chromosome 7 and loss of entire chromosome 10 (+ 7/− 10), TERT promoter mutation] should be diagnosed as GBM (CNS5) [1]. For further categorization of GBM, GBM with histologic diagnosis (histoGBM, CNS5) was defined as IDH-wildtype diffuse astrocytoma with microvascular proliferation or necrosis, and molecular diagnostic GBM (molGBM, CNS5) was defined as IDH-wildtype diffuse astrocytoma that did not have the histologic appearance described above, if any one or a combination of EGFR gene amplification, + 7/− 10, or TERT promoter mutation were present [37, 38]. Exclusion criteria included: 1) recurrent glioblastoma; 2) incomplete records in grade or IDH mutation status; 3) patients with missing survival data or OS < 90 days, or without definitive OS.
+
+CGGA database
+
+The CGGA RNA sequencing (RNA-seq) dataset (mRNAseq_693, mRNAseq_325) and corresponding molecular and clinical information were acquired from the Chinese glioma genome atlas (CGGA) database (http://www.cgga.org.cn/index.jsp), which provides information such as age, sex, grade, subtype, MGMT promoter status, IDH status, and follow-up data of each patient. Inclusion and exclusion criteria were consistent with those for the TCGA dataset.
+
+Acquisition of tumor-associated neutrophil data
+
+By using TCGA and CGGA RNA-seq data, the content of GBM (CNS5) TANs was computed by CIBERSORTx, an analysis tool (https://cibersortx.stanford.edu/) [39]. The content of TANs was considered a continuous variable, and a binary variable was obtained by establishing a cut-off point (cut) by using “survMisc” package (https://cran.r-project.org/web/packages/survMisc/index.html) [40], where TANs content below or equal to the cut-off point was considered as the low group, and the high group was patients whose TANs content was higher than the cut-off point.
+
+Biological enrichment analysis
+
+GSVA is a nonparametric and unsupervised approach, that is used to estimate changes in pathways and biological activity in a sample of an expression dataset. The gene sets “c2.cp.kegg.v7.5.1.symbols.gmt” and “h.all.v7.5.1.symbols.gmt”, which were obtained from the MSigDB database (http://www.gsea-msigdb.org/gsea/login.jsp), were used for performing GSVA analysis. GSVA was carried out using the R “GSVA” package to evaluate the enrichment score of the pathways in the high-TANs and low-TANs groups [41]. The correlation between the enrichment score and the level of TANs was evaluated by Spearman correlation analysis. We also evaluated correlations between functional molecules involved in the tumor-promoting mechanism of neutrophils in the tumor microenvironment, including CXCR4, TGFBR1, CXCR1, CD86, PILRA, LILRB2, CD200R1, TNFSF10, S100A9, S100A8, PROK2, MMP9, AGTR1, IFNAR1, IFNB1, PDGFB, and ARG1. Furthermore, we investigated the correlation between TANs infiltration and the expression of neutrophil functional molecules and apoptotic genes.
+
+Prognostic value of peripheral blood neutrophils in a radiation cohort
+
+Ethical approval of the study protocol
+
+The study protocol was approved by the Ethics Review Board for Human Research of The First Affiliated Hospital of Fujian Medical University (Fujian, China), (approval No. [2015]084–1), and all participants gave written informed consent.
+
+Research design
+
+A retrospective cohort study was adopted to collect data from all patients with GBM (CNS5) treated in the radiotherapy department from September 2013 to June 2020. Pathological diagnoses were reevaluated and confirmed by two different pathologists from the Pathology Department of The First Affiliated Hospital of Fujian Medical University. Inclusion criteria: 1) GBM (CNS5); 2) surgery and post-operative intensity modulated radiation therapy (IMRT) were performed; 3) the hematological examination data was completed within 1 week prior to radiotherapy; 4) patients with complete follow-up information. Exclusion criteria: 1) antitumor therapy was performed before surgery (including radiotherapy, chemotherapy, biotherapy, immunotherapy, or targeted therapy); 2) patient suffered from an infectious diseases such as septicemia during hematological examination; 3) the presence of two or more tumors simultaneously; 4) complications with hematological diseases; 5) complications with immune system diseases; 6) transfusion history within 1 month; 7) history of long-term glucocorticoid treatment.
+
+Demographic and clinicopathologic variables and outcomes
+
+Demographic and clinicopathologic variables included sex, age and methylation status of the MGMT promoter. The level of neutrophil counts in routine blood parameters within 1 week prior to radiotherapy were also reported. A cut-off point was obtained using the “survMisc” package (https://cran.r-project.org/web/packages/survMisc/index.html), and the level of neutrophil counts were divided into a high group and a low group. Follow-up, including further consultation and / or telephone follow-up, ended in December 2020.
+
+Statistical analysis
+
+R version 4.0.1 (R Foundation for Statistical Computing, Vienna, Austria;www.r-project.org) was used for statistical analysis. The categorical variables were presented as number and percentage (N, %), and Pearson’s Chi-Square test was used for comparison between groups. The correlation between the content of functional molecules and TANs, as mentioned above, was confirmed by Spearman correlation analysis. A correlation coefficient greater than 0.3 was defined as a significant correlation [42]. The overall survival (OS) was estimated from the date of diagnosis to death or the last follow-up, which was calculated by Kaplan-Meier method and the log-rank test. The univariate and multivariate Cox regression models were performed to determine potential prognostic factors. Sensitivity analysis: as to the TANs computed by CIBERSORTx, the results of multivariate Cox regression analysis of TANs infiltration were repeatedly validated, to verify the robustness of the determination of independent risk factors for high and low, identified by different in silico algorithms. Adopt E-value [43] was used to evaluate the extent to which unmeasured confounding factors influenced the results All statistical tests were two-sided, and a p-value of P < 0.05 was considered significant.
+
+Results
+
+Demographic and clinicopathologic characteristics
+
+The study design is shown in Fig. 1. A total of 146 eligible GBM (CNS5) patients were identified in the TCGA database and selected in this study. In the TCGA dataset, there was no statistically significant difference in age, sex, whether radiation or chemotherapy was performed, and MGMT promoter methylation status among patients in the TANs high group and low group (P > 0.05). Similarly, the CGGA RNA-seq database with 173 GBM (CNS5) samples was used as a validation cohort. In CCGA dataset, there were no statistically significant differences in age, sex, whether radiation was performed, and MGMT promoter methylation status (P > 0.05) (Table 1). The distribution of the TANs levels between molGBM (CNS5) and histoGBM (CNS5) are shown in Supplementary file 1.Fig. 1 Flowchart of sample data analysis
+
+Table 1 Summary of clinicopathological features of glioblastoma (CNS5) patients in the TCGA and CGGA cohorts
+
+	TCGA	CGGA	
+Variables	Total (n=146)	High group (n=100)	Low group (n=46)	p	Total (n=173)	High group (n=38)	Low group (n=135)	p	
+Age				0.606				0.325	
+ <60	70 (48%)	46 (46%)	24 (52%)		114 (66%)	22 (58%)	92 (68%)		
+ ≥60	76 (52%)	54 (54%)	22 (48%)		59 (34%)	16 (42%)	43 (32%)		
+Sex				0.236				0.589	
+ Female	53 (36)	40 (40%)	13 (28%)		68 (39%)	13 (34%)	55 (41%)		
+ Male	93 (64)	60 (60%)	33 (72%)		105 (61%)	25 (66%)	80 (59%)		
+Radiation				0.918				0.298	
+ NO	20 (14%)	13 (13%)	7 (15%)		25 (14%)	3 (8%)	22 (16%)		
+ YES	126 (86%)	87 (87%)	39 (85%)		148 (86%)	35 (92%)	113 (84%)		
+Chemotherapy				0.524				0.016	
+ NO	35 (24%)	26 (26%)	9 (20%)		37 (21%)	14 (37%)	23 (17%)		
+ YES	111 (76%)	74 (74%)	37 (80%)		136 (79%)	24 (63%)	112 (83%)		
+MGMT promoter				0.593				0.248	
+ Methylated	51 (35%)	33 (33%)	18 (39%)		71 (41%)	12 (32%)	59 (44%)		
+ Un-methylated/Unknown	95 (65%)	67 (67%)	28 (61%)		102 (59%)	26 (68%)	76 (56%)		
+TERT promoter				0.008				-	
+ Mutant	41 (28%)	21 (21%)	20 (43%)		-	-	-		
+ Unknown	103 (71%)	78 (78%)	25 (54%)		-	-	-		
+ WT	2 (1%)	1 (1%)	1 (2%)		-	-	-		
+KPS				0.025				-	
+ <70	25 (17%)	22 (22%)	3 (7%)		-	-	-		
+ ≥70	88 (60%)	60 (60%)	28 (61%)		-	-	-		
+ Unknown	33 (23%)	18 (18%)	15 (33%)		-	-	-		
+Group				<0.001				-	
+ histoGBM	113 (77%)	89 (89%)	24 (52%)		-	-	-		
+ molGBM	33 (23%)	11 (11%)	22 (48%)		-	-	-		
+
+Survival of patients and potential prognostic factors for OS
+
+TCGA dataset
+
+In the TCGA dataset, clinical follow-up was available for 146 patients and KM survival curve for OS was performed (Fig. 2A-H). The median survival time of patients in the TANs high group was 13.2 months, and was 17.7 months for patients in the TANs low group, and there was a statistically significant difference in overall survival between the groups (P = 0.034; Fig. 2A). Of note, age, sex, KPS and MGMT promoter methylation status did not significantly affect OS (P = 0.249, 0.98, 0.478, and 0.226, respectively; Fig. 2B-E). Meanwhile, patients who received radiation or chemotherapy had longer OS (P < 0.001 and P = 0.046, respectively; Fig. 2G, H). In the TCGA dataset, univariate Cox analysis have shown that the infiltration of TANs (HR = 1.552, 95% CI: 1.03–2.338), radiation (HR = 0.357, 95%CI: 0.216–0.59), and chemotherapy (HR = 0.651, 95% CI: 0.425–0.998) were factors that significantly influenced the prognosis of patients with GBM (CNS5) (Fig. 2I). Multivariate Cox regression showed that the infiltration of TANs (HR = 1.621, 95% CI: 1.004–2.619) and radiation (HR = 0.347, 95% CI: 0.182–0.663) were independent factors influencing the prognosis of patients with GBM (CNS5) (Fig. 2I). The subgroup analysis of 126 patients who received radiotherapy confirmed that high TANs infiltration was associated with shorter OS (HR (95%CI) = 1.753 (1.047–2.936)) (Fig. 2J).Fig. 2 KM survival curves of patients based on TANs levels (A), age (B), sex (C), KPS (D), MGMT promoter status (E), TERT promoter status (F), radiation status (G), chemotherapy status (H). Univariate and multivariate Cox analysis of TANs level and patient survival in the entire GBM (CNS5) cohort in the TCGA dataset (I). Univariate and multivariate Cox analysis of TANs level and patient survival in patients treated with radiation in the TCGA dataset (J)
+
+External validation
+
+In the CGGA dataset, follow-up details were available for 173 patients. The median survival time of patients in the TANs high group was 12.6 months, and was 15.8 months for patients in the TANs low group; there were statistically significant differences in overall survival between the two groups (P = 0.002; Fig. S1A). Of note, patients less than 60 years of age or who received chemotherapy had longer OS (P = 0.016 and P < 0.001, respectively; Fig. S1B, F) In the CGGA dataset, univariate Cox analysis revealed that the infiltration of TANs (HR = 1.799, 95% CI: 1.227–2.637), age (HR = 1.5, 95% CI: 1.076–2.091) and chemotherapy (HR = 0. 419, 95% CI: 0.285–0.616) were factors influencing the prognosis of patients with GBM (CNS5) (Fig. S1G). Multivariate Cox regression showed that the level of TANs infiltration (HR = 1.546, 95% CI: 1.029–2.323), age (HR = 1.461, 95% CI: (1.041–2.052) and chemotherapy (HR = 0.414, 95% CI: 0.268–0.64) were independent prognostic factors for OS of GBM (CNS5) patients.
+
+Sensitivity analysis
+
+In the TCGA dataset, after adjusting for patient age, sex, radiation, chemotherapy, and methylation of MGMT promoter, the RR = 1.396 and E-value (95%CI) = 2.140(1.055–3.281) were determined for death in the TANs high group (Fig. 3A, B). The RR and E-value of TERT promoter and radiation were shown in Fig. 3C and D, respectively. In the CGGA dataset, the RR = 1.546 and E-value (95%CI) = 2.465(1.202–4.076) were determined for death in the TANs high group, and the RR = 1.461 and E-value = 2.28 for the aged ≥60 years group (Fig. S2A, B).Fig. 3 Sensitivity analyses in the TCGA cohort
+
+Biological enrichment analysis
+
+Heatmaps were generated indicating Spearman correlation coefficients greater than 0.3 or less than 0.3. Correlation analysis between TANs infiltration level and GSVA enrichment scores showed that TANs levels ware significantly correlated with hypoxia (TCGA cohort: r2 = 0.441, P < 0.001; CGGA cohort: r2 = 0.538, P < 0.001) (Fig. 4A, B, Table S1) and apoptosis (TCGA cohort: r2 = 0.431, P < 0.001; CGGA cohort: r2 = 0.638, P < 0.001) (Fig. 4C, D, Table S2). The level of TANs infiltration was significantly correlated with the expression of the apoptotic genes TNFRSF10C (TCGA cohort: r2 = 0.460, P < 0.001; CGGA cohort: r2 = 0.461, P < 0.001) and TNFRSF10D (TCGA cohort: r2 = 0.397, P < 0.001; CGGA cohort: r2 = 0.426, P < 0.001) (Fig. 5A, B, Table S3). Additionally, TANs were found to be significantly correlated with the expression of neutrophil function-related genes, including CXCR1 (TCGA cohort: r2 = 0.700, P < 0.001; CGGA cohort: r2 = 0.569, P < 0.001) and S100A9 (TCGA cohort: r2 = 0.628, P < 0.001; CGGA cohort: r2 = 0.542, P < 0.001) (Fig. 5C, D, Table S4).Fig. 4 Correlation analysis between KEGG pathways and TANs levels in the TCGA cohort (A), and the CGGA cohort (B) via GSVA. Correlation analysis of hallmark pathways and TANs levels in the TCGA cohort (C), and the CGGA cohort (D) via GSVA
+
+Fig. 5 Correlation analysis between TANs levels and expression of apoptosis-related genes in the TCGA cohort (A), and the CGGA cohort (B). Correlation analysis between TANs levels and expression of neutrophil function-related genes in the TCGA cohort (C), and the CGGA cohort (D)
+
+The prognostic value of peripheral blood neutrophils in a radiation cohort
+
+In the radiation cohort, 143 patients with GBM (CNS5) were included, and there were no statistically significant differences in age, sex, radiation, chemotherapy, or methylation of MGMT promoter between the peripheral blood neutrophil high and low groups before radiation (Table S5). The correlation between peripheral blood neutrophils and survival before radiation was analyzed; 50 patients died at the end of follow-up, with a median survival time of 21.8 months in the peripheral blood neutrophil high group, and 13 patients died in the low group, with a median survival time of 39.4 months. The overall survival of patients in the high peripheral blood neutrophil group was significantly shorter than that in low group (P = 0.026; Fig. 6A). Kaplan Meier survival curves were generated for patients based on age, sex, and MGMT promoter methylation status (Fig. 6B-D). In accordance with the univariate and multivariate Cox regression models: the level of peripheral blood neutrophils before radiation (Univariate Cox regression: HR = 2.073, 95% CI: 1.077–3.990; Multivariate Cox regression: HR = 2.098, 95% CI: 1.055–4.172) was an independent risk factor affecting the overall survival of patients with GBM (CNS5) (Fig. 6E).Fig. 6 KM survival curves of peripheral blood neutrophils (A), age (B), sex (C), MGMT-promoter status (D), and univariate and multivariate Cox analyses (E) of peripheral blood neutrophils before radiation in the patient dataset from The First Affiliated Hospital of Fujian Medical University
+
+Discussion
+
+While the integrated WHO CNS5 classification has advantages for guiding clinical diagnosis compared with previous simple histological diagnosis, it also further increases the heterogeneity of GBM cohorts and sets higher requirements for evaluating prognosis. Despite some research efforts in IDHwt GBM (CNS4), it remains unknown as to whether TANs could serve as a prognostic biomarker in patients diagnosed as GBM (CNS5). Patients diagnosed with GBM (CNS5) were included in this study, and we found that high TANs level remains an independent prognostic factor for poor OS of GBM (CNS5) [TCGA cohort: HR (95%CI) = 1.621(1.004–2.619); CGGA cohort: HR (95%CI) = 1.526(1.029–2.323)]. Moreover, the level of TANs infiltration was significantly correlated with the expression of apoptotic genes, including TNFRSF10C and TNFRSF10D, and with expression of the neutrophil marker genes CXCR1, S100A9. In order to investigate the effect of peripheral blood neutrophils on the prognosis of GBM (CNS5), data from 143 patients was analyzed. Peripheral blood neutrophils before radiotherapy was an independent prognostic factor for OS [HR (95%CI) = 2.098 (1.055–4.172)]. Neutrophils are present in most solid tumors microenvironments [44–49], and are important non-malignant cells found in the tumor microenvironment [50]. Neutrophil infiltration influences the response to different anticancer therapies, and high neutrophil infiltration is associated with a poor response to radiotherapy [51]. In this study, a subgroup analysis of 126 patients who received radiotherapy confirmed that high TANs infiltration was associated with shorter OS [HR (95%CI) = 1.753 (1.047–2.936)].
+
+Most current studies on the prognostic significance of TANs do not agree on the relevant biomarkers of neutrophils, which may result in a bias in prognostic estimates. By analyzing three groups of operative specimens of patients with gastric cancer who received total or partial gastrectomy independently at two medical centers, Zhang et al. found that high infiltration of TANs in gastric tissue suggests a better prognosis [30]. Zhao et al. [52] demonstrated that high infiltration of TANs in gastric tissue suggests a poor prognosis. Causes for this difference may be that CD66b was used to mark neutrophils in the former study, while CD15 was used to mark neutrophils in the latter study. CD15 can be expressed not only in neutrophils, but also in monocytes, eosinophils, and tumor cells, among other cell types. As a consequence, the RNA-seq data of TCGA and CGGA datasets were analyzed in the present study by CIBERSORTx in an exploratory way, to infer the neutrophil infiltration levels and avoid potential biases introduced by evaluating only specific neutrophil markers.
+
+TANs are involved in malignant transformation and angiogenesis in numerous preclinical and clinical studies [53–57]. Arora et al. demonstrated that higher levels of S100A8 (median survival: High vs. Low = 12.73 months vs. 15.1 months, respectively; P = 0.0009) and S100A9 (median survival: High vs. Low = 12.67 months vs. 15.03 months, respectively; P = 0.0005) gene expression was associated with poor prognosis in GBM (CNS4) patients [58]. By releasing angiogenic factors including S100A8 and S100A9, as well as activating vascular endothelial growth factors A (VEGFA) in the extracellular matrix and MMP9, tumor angiogenesis was maintained by neutrophils [14–17]. This angiogenic effect was also found in hepatocellular carcinoma, gastric cancer, and nasal carcinoma [59–61]. S100A8/S100A9 co-expression in hepatocellular carcinoma cells promotes malignant progression by induction of ROS, down-regulation of p38 MAPK signaling, cell survival, and resistance to tumor necrosis factor (TNF)-α-induced apoptosis [62]. Li et al. report that high expression of MMP9 is associated with the pathological grading of gliomas and predicts poor prognosis [OS: HR (95%CI) = 1.171(1.018–1.346), PFS: HR (95%CI) = 1.146(1.012–1.299)]. Patients with lower MMP9 expression are more likely to benefit from TMZ treatment regardless of MGMT-methylation status [63]. Furthermore, neutrophil can stimulate dormant cancer cells through release of MMP9 which can produce epitopes that bind to tumor integrins and trigger the proliferation of cancer cells [26, 27]. It has been reported that CXCR1 mRNA expression is significantly higher in patients with glioma than in normal individuals [64]. The tumor-promoting activity of neutrophils was related to growth factors and chemotactic factors [53, 65, 66], and CXCR was involved in promoting neutrophil maturation, survival, and recruitment [18, 67–69]. TNFRSF10C is a protein that belongs to the TNFRSF family that binds to tumor necrosis factor-related apoptosis-inducing ligand (TRAIL) and inhibits intracellular apoptotic signaling pathways [70]. TNFRSF10D expression is associated with prostate cancer and TNFRSF10D is a direct effector p53 and ERK signaling pathways [71]. Although the prognostic value of TNFSF10C and TNFRSF10D has not been previously investigated in glioma, these proteins have the potential to be used as novel biomarkers.
+
+Neutrophils are classical congenital immune cells that are important members of the tumor immune micro-environment. Neutrophils in peripheral blood and tissues are of the same origin [72, 73]. A clinical study of 1233 patients undergoing radical radiotherapy demonstrated a significant association between elevated blood neutrophil counts and reduced 3-year OS [74]. In view of current glioma studies, the clinical studies to explore the prognostic value of neutrophils have mostly focused on preoperative peripheral blood samples, and most of evaluated the ratio of neutrophils to lymphocytes [35], which may not truly reflect the prognostic value of peripheral blood neutrophils, given that this index is susceptible to lymphocyte interference. K. Takakura et al. [75] demonstrated that NLR was significantly associated with high density CD20+ lymphocytes (P = 0.031) and CD163+ macrophagocytes (P = 0.023), but not with CD66b + neutrophils (P = 0.397). Also, the correlation between neutrophils and prognosis may also be influenced by the location in tumors. Immunohistochemical studies on operative specimens of esophageal squamous carcinoma found that 5-year rates of DFS and OS were 20 and 26.7%, respectively, in patients with increased CD66+ intratumoral neutrophils, but 51.1 and 55.5%, respectively, in patients with decreased CD66+ neutrophils, suggesting that CD66+ neutrophils are an independent prognostic factor of DFS (HR = 2.174 (1.249–3.784), P = 0.006) and OS (HR = 1.858 (1.038–3.325), p = 0.037). No prognostic significance of peritumoral neutrophils was noted [76]. The correlation between neutrophils and prognosis was also influenced by the time of specimen collection, especially peripheral blood specimens. Whereas most patients with glioma are treated with surgery, there may be differences in tumor burden status after operation compared with pre-operation. Meanwhile, neutrophil infiltration was shown to associate with radiotherapy sensitivity [77]. Presently, there are few reports on the association with postoperative peripheral blood neutrophil before radiotherapy and OS of GBM (CNS5). Therefore, the time point before radiotherapy used in this study, with strict inclusion and exclusion criteria to avoid the influences brought by postoperative surgical stress or postoperative infection, may ensure better evaluation of the effects of the overall immune status of patients with glioma before radiotherapy. Our results showed that the level of peripheral blood neutrophils before radiotherapy was an independent risk factor that affects the prognosis of patients with GBM (CNS5) suggesting that immune status before radiotherapy affects the survival of patients with glioma.
+
+There are several limitations of this study that need to be discussed. First, this study is an observational study, and it is unknown to what extent unmeasured confounders may have influenced the results. In order to reduce the interference of confounding factors, the study used multivariate analysis to adjust as many confounding factors as possible. Additionally, E-values were calculated to assess the impact of unmeasured confounders. However, confounding factors such as the precise types, dose, course and comedication of chemotherapy and radiotherapy were not fully documented in the database, and were therefore unable to be evaluated in this study. Secondly, levels of TANs evaluated by CIBERSORTx is calculated by mRNA-seq, which lacks data validation on a cell-by-cell level. Furthermore, the interactions between blood neutrophils and TANs and the tumor-promoting or tumor-inhibiting mechanisms of neutrophils were not been explored in depth. The results of this study need to be validated by prospective multi-center randomized trials with a larger patient population in the future.
+
+Conclusions
+
+TANs can be used as a prognostic marker for patients with GBM (CNS5). Patients whose tumors have a high infiltration of TANs have a worse prognosis.
+
+Supplementary Information
+
+Additional file 1: Fig. S1. KM survival curves of patients based on TANs levels (A), age (B), sex (C), MGMT promoter status (D), radiation status (E), chemotherapy status (F). The univariate and multivariate Cox analyses of TANs levels and patient survival in the whole-cohort GBM(CNS5) patients in dataset of CGGA (G).
+
+Additional file 2: Fig. S2. Sensitivity analyses in the CGGA cohort.
+
+Additional file 3: Table S1. Correlation analysis of TANs levels with GSVA scores of hallmark gene sets in dataset of TCGA and CGGA, respectively.
+
+Additional file 4: Table S2. Correlation analysis of TANs levels with GSVA scores of KEGG pathways in dataset of TCGA and CGGA, respectively.
+
+Additional file 5: Table S3. Correlation analysis of TANs levels with apoptotic-related genes in dataset of TCGA and CGGA, respectively.
+
+Additional file 6: Table S4. Correlation analysis of TANs levels with neutrophils function-related marker genes in dataset of TCGA and CGGA, respectively.
+
+Additional file 7: Table S5. Characteristics of the study population based on the level of peripheral blood neutrophils before radiotherapy.
+
+Additional file 8: Supplementary File 1. The distribution of the TANs levels between molGBM and histoGBM.
+
+Acknowledgements
+
+The authors thank Professor Hong’s team members (Key Laboratory of Radiation Biology of Fujian Higher Education Institutions, The First Affiliated Hospital, Fujian Medical University, Fuzhou, China) for helpful discussion and their critical reading of the manuscript.
+
+Authors’ contributions
+
+Xuezhen Wang: Writing – original draft (lead); writing – review and editing (equal input); formal analysis (equal input). Xiaoxia Li: Visualization (equal input); formal analysis (equal input). Yufan Wu: Visualization (equal input); formal analysis (equal input). Jinsheng Hong: Writing – review and editing (equal input). Mingwei Zhang: Conceptualization (lead); writing – review and editing (equal input). The author(s) read and approved the final manuscript.
+
+Funding
+
+This research received no external funding.
+
+Availability of data and materials
+
+Data are available from the corresponding authors on reasonable request.
+
+Declarations
+
+Ethics approval and consent to participate
+
+Ethical approval for this study was obtained from the Ethical Review Board for Human Research of The First Affiliated Hospital of Fujian Medical University, Fujian, China (approval No. [2015]084–1), and all participants gave written informed consent. Part of data in this study were downloaded from the publicly available TCGA and CGGA databases, and no additional ethics approval was necessary. All methods were carried out in accordance with relevant guidelines and regulations.
+
+Consent for publication
+
+All authors of this paper have read and approved the final version submitted.
+
+Competing interests
+
+The authors declare that they have no competing interests.
+
+Publisher’s Note
+
+Springer Nature remains neutral with regard to jurisdictional claims in published maps and institutional affiliations.
+
+Xuezhen Wang, Xiaoxia Li and Yufan Wu contributed equally to this work.
+==== Refs
+References
+
+1. Louis DN Perry A Wesseling P Brat DJ Cree IA Figarella-Branger D Hawkins C Ng HK Pfister SM Reifenberger G The 2021 WHO classification of tumors of the central nervous system: a summary Neuro-Oncology 2021 23 8 1231 1251 34185076
+2. Wang Y Zhang J Li W Jiang T Qi S Chen Z Kang J Huo L Wang Y Zhuge Q Guideline conformity to the Stupp regimen in patients with newly diagnosed glioblastoma multiforme in China Future Oncol 2021 17 33 4571 4582 34519220
+3. Tan AC Ashley DM López GY Malinzak M Friedman HS Khasraw M Management of glioblastoma: state of the art and future directions CA Cancer J Clin 2020 70 4 299 312 32478924
+4. Ostrom QT Cote DJ Ascha M Kruchko C Barnholtz-Sloan JS Adult glioma incidence and survival by race or ethnicity in the United States from 2000 to 2014 JAMA Oncol 2018 4 9 1254 1262 29931168
+5. Gritsch S Batchelor TT Gonzalez Castro LN Diagnostic, therapeutic, and prognostic implications of the 2021 World Health Organization classification of tumors of the central nervous system Cancer 2022 128 1 47 58 34633681
+6. Śledzińska P, Bebyn MG, Furtak J, Kowalewski J, Lewandowska MA. Prognostic and predictive biomarkers in gliomas. Int J Mol Sci. 2021;22(19):10373.
+7. Louis DN Perry A Reifenberger G von Deimling A Figarella-Branger D Cavenee WK Ohgaki H Wiestler OD Kleihues P Ellison DW The 2016 World Health Organization classification of tumors of the central nervous system: a summary Acta Neuropathol 2016 131 6 803 820 27157931
+8. Kessler J, Hohmann T, Güttler A, Petrenko M, Ostheimer C, Hohmann U, et al. Radiosensitization and a less aggressive phenotype of human malignant glioma cells expressing Isocitrate dehydrogenase 1 (IDH1) mutant protein: dissecting the mechanisms. Cancers (Basel). 2019;11(6):889.
+9. Zawlik I Vaccarella S Kita D Mittelbronn M Franceschi S Ohgaki H Promoter methylation and polymorphisms of the MGMT gene in glioblastomas: a population-based study Neuroepidemiology 2009 32 1 21 29 18997474
+10. Nguyen HN Lie A Li T Chowdhury R Liu F Ozer B Wei B Green RM Ellingson BM Wang HJ Human TERT promoter mutation enables survival advantage from MGMT promoter methylation in IDH1 wild-type primary glioblastoma treated by standard chemoradiotherapy Neuro-Oncology 2017 19 3 394 404 27571882
+11. Galbraith K Kumar A Abdullah KG Walker JM Adams SH Prior T Dimentberg R Henderson FC Mirchia K Sathe AA Molecular correlates of long survival in IDH-wildtype glioblastoma cohorts J Neuropathol Exp Neurol 2020 79 8 843 854 32647886
+12. Mirchia K, Richardson TE. Beyond IDH-mutation: emerging molecular diagnostic and prognostic features in adult diffuse gliomas. Cancers (Basel). 2020;12(7):1817.
+13. Wang Q Hu B Hu X Kim H Squatrito M Scarpace L deCarvalho AC Lyu S Li P Li Y Tumor evolution of glioma-intrinsic gene expression subtypes associates with immunological changes in the microenvironment Cancer Cell 2017 32 1 42 56.e46 28697342
+14. Kowanetz M Wu X Lee J Tan M Hagenbeek T Qu X Yu L Ross J Korsisaari N Cao T Granulocyte-colony stimulating factor promotes lung metastasis through mobilization of Ly6G+Ly6C+ granulocytes Proc Natl Acad Sci U S A 2010 107 50 21248 21255 21081700
+15. Nozawa H Chiu C Hanahan D Infiltrating neutrophils mediate the initial angiogenic switch in a mouse model of multistage carcinogenesis Proc Natl Acad Sci U S A 2006 103 33 12493 12498 16891410
+16. Scapini P Morini M Tecchio C Minghelli S Di Carlo E Tanghetti E Albini A Lowell C Berton G Noonan DM CXCL1/macrophage inflammatory protein-2-induced angiogenesis in vivo is mediated by neutrophil-derived vascular endothelial growth factor-a J Immunol 2004 172 8 5034 5040 15067085
+17. Shojaei F Singh M Thompson JD Ferrara N Role of Bv8 in neutrophil-dependent angiogenesis in a transgenic model of cancer progression Proc Natl Acad Sci U S A 2008 105 7 2640 2645 18268320
+18. Coffelt SB Kersten K Doornebal CW Weiden J Vrijland K Hau CS Verstegen NJM Ciampricotti M Hawinkels L Jonkers J IL-17-producing γδ T cells and neutrophils conspire to promote breast cancer metastasis Nature 2015 522 7556 345 348 25822788
+19. Gabrilovich DI Ostrand-Rosenberg S Bronte V Coordinated regulation of myeloid cells by tumours Nat Rev Immunol 2012 12 4 253 268 22437938
+20. Fridlender ZG Sun J Kim S Kapoor V Cheng G Ling L Worthen GS Albelda SM Polarization of tumor-associated neutrophil phenotype by TGF-beta: “N1” versus “N2” TAN Cancer Cell 2009 16 3 183 194 19732719
+21. Veglia F Tyurin VA Blasi M De Leo A Kossenkov AV Donthireddy L To TKJ Schug Z Basu S Wang F Fatty acid transport protein 2 reprograms neutrophils in cancer Nature 2019 569 7754 73 78 30996346
+22. Xu W Dong J Zheng Y Zhou J Yuan Y Ta HM Miller HE Olson M Rajasekaran K Ernstoff MS Immune-checkpoint protein VISTA regulates antitumor immunity by controlling myeloid cell-mediated inflammation and immunosuppression Cancer Immunol Res 2019 7 9 1497 1510 31340983
+23. Butin-Israeli V Bui TM Wiesolek HL Mascarenhas L Lee JJ Mehl LC Knutson KR Adam SA Goldman RD Beyder A Neutrophil-induced genomic instability impedes resolution of inflammation and wound healing J Clin Invest 2019 129 2 712 726 30640176
+24. Güngör N Knaapen AM Munnia A Peluso M Haenen GR Chiu RK Godschalk RW van Schooten FJ Genotoxic effects of neutrophils and hypochlorous acid Mutagenesis 2010 25 2 149 154 19892774
+25. Wilson CL Jurk D Fullard N Banks P Page A Luli S Elsharkawy AM Gieling RG Chakraborty JB Fox C NFκB1 is a suppressor of neutrophil-driven hepatocellular carcinoma Nat Commun 2015 6 6818 25879839
+26. Tohme S Yazdani HO Al-Khafaji AB Chidi AP Loughran P Mowen K Wang Y Simmons RL Huang H Tsung A Neutrophil extracellular traps promote the development and progression of liver metastases after surgical stress Cancer Res 2016 76 6 1367 1380 26759232
+27. Albrengues J, Shields MA, Ng D, Park CG, Ambrico A, Poindexter ME, et al. Neutrophil extracellular traps produced during inflammation awaken dormant cancer cells in mice. Science. 2018;361(6409):eaao4227.
+28. Tecchio C Scapini P Pizzolo G Cassatella MA On the cytokines produced by human neutrophils in tumors Semin Cancer Biol 2013 23 3 159 170 23410636
+29. Finisguerra V Di Conza G Di Matteo M Serneels J Costa S Thompson AA Wauters E Walmsley S Prenen H Granot Z MET is required for the recruitment of anti-tumoural neutrophils Nature 2015 522 7556 349 353 25985180
+30. Zhang H Liu H Shen Z Lin C Wang X Qin J Qin X Xu J Sun Y Tumor-infiltrating neutrophils is prognostic and predictive for postoperative adjuvant chemotherapy benefit in patients with gastric Cancer Ann Surg 2018 267 2 311 318 27763900
+31. Zhang WH, Wang WQ, Gao HL, Xu SS, Li S, Li TJ, et al. Tumor-infiltrating neutrophils predict poor survival of non-functional pancreatic neuroendocrine tumor. J Clin Endocrinol Metab. 2020;105(7):dgaa196.
+32. Liu K Zhao K Wang L Sun E The prognostic values of tumor-infiltrating neutrophils, lymphocytes and neutrophil/lymphocyte rates in bladder urothelial cancer Pathol Res Pract 2018 214 8 1074 1080 29803657
+33. Geng SK Fu SM Ma SH Fu YP Zhang HW Tumor infiltrating neutrophil might play a major role in predicting the clinical outcome of breast cancer patients treated with neoadjuvant chemotherapy BMC Cancer 2021 21 1 68 33446143
+34. Wang J Bo X Suo T Liu H Ni X Shen S Li M Xu J Liu H Wang Y Tumor-infiltrating neutrophils predict prognosis and adjuvant chemotherapeutic benefit in patients with biliary cancer Cancer Sci 2018 109 7 2266 2274 29723922
+35. Wang ZL Zhang CB Liu YQ Wang Z Jiang T Peripheral blood test provides a practical method for glioma evaluation and prognosis prediction CNS Neurosci Ther 2019 25 8 876 883
+36. Ceccarelli M Barthel FP Malta TM Sabedot TS Salama SR Murray BA Morozova O Newton Y Radenbaugh A Pagnotta SM Molecular profiling reveals biologically discrete subsets and pathways of progression in diffuse glioma Cell 2016 164 3 550 563 26824661
+37. Brat DJ Aldape K Colman H Holland EC Louis DN Jenkins RB Kleinschmidt-DeMasters BK Perry A Reifenberger G Stupp R cIMPACT-NOW update 3: recommended diagnostic criteria for “diffuse astrocytic glioma, IDH-wildtype, with molecular features of glioblastoma, WHO grade IV” Acta Neuropathol 2018 136 5 805 810 30259105
+38. Ramos-Fresnedo A Pullen MW Perez-Vega C Domingo RA Akinduro OO Almeida JP Suarez-Meade P Marenco-Hillembrand L Jentoft ME Bendok BR The survival outcomes of molecular glioblastoma IDH-wildtype: a multicenter study J Neurooncol 2022 157 1 177 185 35175545
+39. Newman AM Steen CB Liu CL Gentles AJ Chaudhuri AA Scherer F Khodadoust MS Esfahani MS Luca BA Steiner D Determining cell type abundance and expression from bulk tissues with digital cytometry Nat Biotechnol 2019 37 7 773 782 31061481
+40. Bae S Choi YS Ahn SS Chang JH Kang SG Kim EH Kim SH Lee SK Radiomic MRI phenotyping of glioblastoma: improving survival prediction Radiology 2018 289 3 797 806 30277442
+41. Wang Y Wang B Huang Y Li Y Yan S Xie H Zhang Y Li J Multi-transcriptomic analysis and experimental validation implicate a central role of STAT3 in skin barrier dysfunction induced aggravation of Rosacea J Inflamm Res 2022 15 2141 2156 35392024
+42. Chen SH, Lin HH, Li YF, Tsai WC, Hueng DY. Clinical significance and systematic expression analysis of the thyroid receptor interacting protein 13 (TRIP13) as human gliomas biomarker. Cancers (Basel). 2021;13(10):2338.
+43. Haneuse S VanderWeele TJ Arterburn D Using the E-value to assess the potential effect of unmeasured confounding in observational studies JAMA 2019 321 6 602 603 30676631
+44. Powell DR Huttenlocher A Neutrophils in the tumor microenvironment Trends Immunol 2016 37 1 41 52 26700397
+45. Jensen HK Donskov F Marcussen N Nordsmark M Lundbeck F von der Maase H Presence of intratumoral neutrophils is an independent prognostic factor in localized renal cell carcinoma J Clin Oncol 2009 27 28 4709 4717 19720929
+46. Kuang DM Zhao Q Wu Y Peng C Wang J Xu Z Yin XY Zheng L Peritumoral neutrophils link inflammatory response to disease progression by fostering angiogenesis in hepatocellular carcinoma J Hepatol 2011 54 5 948 955 21145847
+47. Ilie M Hofman V Ortholan C Bonnetaud C Coëlle C Mouroux J Hofman P Predictive clinical outcome of the intratumoral CD66b-positive neutrophil-to-CD8-positive T-cell ratio in patients with resectable nonsmall cell lung cancer Cancer 2012 118 6 1726 1737 21953630
+48. Jensen TO Schmidt H Møller HJ Donskov F Høyer M Sjoegren P Christensen IJ Steiniche T Intratumoral neutrophils and plasmacytoid dendritic cells indicate poor prognosis and are associated with pSTAT3 expression in AJCC stage I/II melanoma Cancer 2012 118 9 2476 2485 21953023
+49. Rao HL Chen JW Li M Xiao YB Fu J Zeng YX Cai MY Xie D Increased intratumoral neutrophil in colorectal carcinomas correlates closely with malignant phenotype and predicts patients' adverse prognosis PLoS One 2012 7 1 e30806 22295111
+50. Khan S, Mittal S, McGee K, Alfaro-Munoz KD, Majd N, Balasubramaniyan V, et al. Role of neutrophils and myeloid-derived suppressor cells in glioma progression and treatment resistance. Int J Mol Sci. 2020;21(6):1954.
+51. Jaillon S Ponzetta A Di Mitri D Santoni A Bonecchi R Mantovani A Neutrophil diversity and plasticity in tumour progression and therapy Nat Rev Cancer 2020 20 9 485 503 32694624
+52. Zhao JJ Pan K Wang W Chen JG Wu YH Lv L Li JJ Chen YB Wang DD Pan QZ The prognostic value of tumor-infiltrating neutrophils in gastric adenocarcinoma after resection PLoS One 2012 7 3 e33655 22442706
+53. Shaul ME Fridlender ZG Tumour-associated neutrophils in patients with cancer Nat Rev Clin Oncol 2019 16 10 601 620 31160735
+54. Nagaraj S Schrum AG Cho HI Celis E Gabrilovich DI Mechanism of T cell tolerance induced by myeloid-derived suppressor cells J Immunol 2010 184 6 3106 3116 20142361
+55. Mantovani A Cassatella MA Costantini C Jaillon S Neutrophils in the activation and regulation of innate and adaptive immunity Nat Rev Immunol 2011 11 8 519 531 21785456
+56. Cortez-Retamozo V Etzrodt M Newton A Rauch PJ Chudnovskiy A Berger C Ryan RJ Iwamoto Y Marinelli B Gorbatov R Origins of tumor-associated macrophages and neutrophils Proc Natl Acad Sci U S A 2012 109 7 2491 2496 22308361
+57. Kim J Bae JS Tumor-associated macrophages and neutrophils in tumor microenvironment Mediators Inflamm 2016 2016 6058147 26966341
+58. Arora A Patil V Kundu P Kondaiah P Hegde AS Arivazhagan A Santosh V Pal D Somasundaram K Serum biomarkers identification by iTRAQ and verification by MRM: S100A8/S100A9 levels predict tumor-stroma involvement and prognosis in glioblastoma Sci Rep 2019 9 1 2749 30808902
+59. Zhao Y Huang X Ding TW Gong Z Enhanced angiogenesis, hypoxia and neutrophil recruitment during Myc-induced liver tumorigenesis in zebrafish Sci Rep 2016 6 31952 27549025
+60. Sano M Takahashi R Ijichi H Ishigaki K Yamada T Miyabayashi K Kimura G Mizuno S Kato H Fujiwara H Blocking VCAM-1 inhibits pancreatic tumour progression and cancer-associated thrombosis/thromboembolism Gut 2021 70 9 1713 1723 33087490
+61. Li T Tan KS Tu YY Zhao L Liu J Ong HH Wang Y Shi L Overexpression of neutrophil MMP-9 and HIF-1α may contribute to the finger-like projections formation and Histo-pathogenesis in nasal inverted papilloma J Inflamm Res 2021 14 2979 2991 34262323
+62. Németh J Stein I Haag D Riehl A Longerich T Horwitz E Breuhahn K Gebhardt C Schirmacher P Hahn M S100A8 and S100A9 are novel nuclear factor kappa B target genes during malignant progression of murine and human liver carcinogenesis Hepatology 2009 50 4 1251 1262 19670424
+63. Li Q Chen B Cai J Sun Y Wang G Li Y Li R Feng Y Han B Li J Comparative analysis of matrix metalloproteinase family members reveals that MMP9 predicts survival and response to Temozolomide in patients with primary glioblastoma PLoS One 2016 11 3 e0151815 27022952
+64. He J Jiang Z Lei J Zhou W Cui Y Luo B Zhang M Prognostic value and therapeutic perspectives of CXCR members in the glioma microenvironment Front Genet 2022 13 787141 35571062
+65. Carmeliet P Angiogenesis in health and disease Nat Med 2003 9 6 653 660 12778163
+66. Uribe-Querol E Rosales C Neutrophils in Cancer: two sides of the same coin J Immunol Res 2015 2015 983698 26819959
+67. Coffelt SB Wellenstein MD de Visser KE Neutrophils in cancer: neutral no more Nat Rev Cancer 2016 16 7 431 446 27282249
+68. Raccosta L Fontana R Maggioni D Lanterna C Villablanca EJ Paniccia A Musumeci A Chiricozzi E Trincavelli ML Daniele S The oxysterol-CXCR2 axis plays a key role in the recruitment of tumor-promoting neutrophils J Exp Med 2013 210 9 1711 1728 23897983
+69. Roumenina LT Daugan MV Petitprez F Sautès-Fridman C Fridman WH Context-dependent roles of complement in cancer Nat Rev Cancer 2019 19 12 698 715 31666715
+70. Xiao Z Nie K Han T Cheng L Zhang Z Peng W Shi D Development and validation of a TNF family-based signature for predicting prognosis, tumor immune characteristics, and immunotherapy response in colorectal Cancer patients J Immunol Res 2021 2021 6439975 34541005
+71. Liu Z Zhong J Cai C Lu J Wu W Zeng G Immune-related biomarker risk score predicts prognosis in prostate cancer Aging (Albany N Y) 2020 12 22 22776 22793
+72. Lawrence SM, Corriden R, Nizet V. The ontogeny of a neutrophil: mechanisms of Granulopoiesis and homeostasis. Microbiol Mol Biol Rev. 2018;82(1):e00057–17.
+73. Borregaard N Neutrophils, from marrow to microbes Immunity 2010 33 5 657 670 21094463
+74. Schernberg A Blanchard P Chargari C Deutsch E Neutrophils, a candidate biomarker and target for radiation therapy? Acta Oncol 2017 56 11 1522 1530 28835188
+75. Takakura K Ito Z Suka M Kanai T Matsumoto Y Odahara S Matsudaira H Haruki K Fujiwara Y Saito R Comprehensive assessment of the prognosis of pancreatic cancer: peripheral blood neutrophil-lymphocyte ratio and immunohistochemical analyses of the tumour site Scand J Gastroenterol 2016 51 5 610 617 26679084
+76. Wang J Jia Y Wang N Zhang X Tan B Zhang G Cheng Y The clinical significance of tumor-infiltrating neutrophils and neutrophil-to-CD8+ lymphocyte ratio in patients with resectable esophageal squamous cell carcinoma J Transl Med 2014 12 7 24397835
+77. Wisdom AJ Hong CS Lin AJ Xiang Y Cooper DE Zhang J Xu ES Kuo HC Mowery YM Carpenter DJ Neutrophils promote tumor resistance to radiation therapy Proc Natl Acad Sci U S A 2019 116 37 18584 18589 31462499
+

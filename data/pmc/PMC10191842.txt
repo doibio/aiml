@@ -1,0 +1,287 @@
+
+==== Front
+Cancer Gene Ther
+Cancer Gene Ther
+Cancer Gene Therapy
+0929-1903
+1476-5500
+Nature Publishing Group US New York
+
+36599974
+582
+10.1038/s41417-022-00582-y
+Article
+Single-cell RNA sequencing reveals changes in glioma-associated macrophage polarization and cellular states of malignant gliomas with high AQP4 expression
+http://orcid.org/0000-0002-2361-860X
+Wang Ran 1
+Peng Lu 2
+Xiao Yong 1
+Zhou Qi 1
+Wang Zhen 1
+Tang Lei 1
+Xiao Hong 3
+http://orcid.org/0000-0002-0273-2198
+Yang Kun doctoryk@njmu.edu.cn
+
+1
+http://orcid.org/0000-0002-3914-252X
+Liu Hongyi njnkyylhy@163.com
+
+1
+http://orcid.org/0000-0002-2177-9522
+Li Li annylish@126.com
+
+4
+1 grid.89957.3a 0000 0000 9255 8984 Department of Neurosurgery, The Affiliated Brain Hospital of Nanjing Medical University, Nanjing, Jiangsu China
+2 grid.89957.3a 0000 0000 9255 8984 Department of Clinical Laboratory, The Affiliated Brain Hospital of Nanjing Medical University, Nanjing, Jiangsu China
+3 grid.89957.3a 0000 0000 9255 8984 Department of Neuro-Psychiatric Institute, The Affiliated Brain Hospital of Nanjing Medical University, Nanjing, Jiangsu China
+4 grid.412478.c 0000 0004 1760 4628 Department of Laboratory Medicine, Shanghai General Hospital of Nanjing Medical University, Shanghai, China
+4 1 2023
+4 1 2023
+2023
+30 5 716726
+15 6 2022
+1 12 2022
+20 12 2022
+© The Author(s) 2022, corrected publication 2023
+https://creativecommons.org/licenses/by/4.0/ Open Access This article is licensed under a Creative Commons Attribution 4.0 International License, which permits use, sharing, adaptation, distribution and reproduction in any medium or format, as long as you give appropriate credit to the original author(s) and the source, provide a link to the Creative Commons license, and indicate if changes were made. The images or other third party material in this article are included in the article’s Creative Commons license, unless indicated otherwise in a credit line to the material. If material is not included in the article’s Creative Commons license and your intended use is not permitted by statutory regulation or exceeds the permitted use, you will need to obtain permission directly from the copyright holder. To view a copy of this license, visit http://creativecommons.org/licenses/by/4.0/.
+Glioma is the most common primary central nervous system tumor in adults. Aquaporin-4, as a water channel protein encoded by AQP4 in the brain, is reported to alter its aggregation status to affect plasma membrane dynamics and provide the potential for metastasis of tumor cells and components of the tumor microenvironment. We performed single-cell RNA transcriptome sequencing of 53059 cells from 13 malignant glioma samples and spotted that the expression of AQP4 differed between samples. The same result was observed in the TCGA glioma database, showing poor overall survival and poor response to chemotherapy in AQP4 overexpressed populations. Concomitant with the overexpression of AQP4, genes related to the immune system were also over-expressed, such as CD74, HES1, CALD1, and HEBP2, indicating AQP4 may relate to immune factors of tumor progression. We also found that tumor-associated macrophages tended to polarize toward M2 macrophages in the high AQP4 group. In glioblastoma samples, we examined cell status differences and identified that cell status differs according to AQP4 expression levels. Briefly, our study revealed substantial heterogeneity within malignant gliomas with different AQP4 expression levels, indicating the intricate connection between tumor cells and the tumor immune environment.
+
+Subject terms
+
+CNS cancer
+Tumour heterogeneity
+https://doi.org/10.13039/501100010227 Medical Science and Technology Development Foundation, Nanjing Municipality Health Bureau ZKX22041 ZDX16011 Liu Hongyi Li Li Postgraduate Research & Practice Innovation Program of Jiangsu Province (SJCX22_0667)https://doi.org/10.13039/501100001809 National Natural Science Foundation of China (National Science Foundation of China) 81972350 81902535 Liu Hongyi issue-copyright-statement© Springer Nature America, Inc. 2023
+==== Body
+pmcIntroduction
+
+Glioma is the most common type of tumor in adults’ central nervous system (CNS). Grade III and IV gliomas are more malignant due to their rapid progression and high recurrence rate [1]. Glioblastomas (GBMs), in particular, lead to a poor prognosis despite the standard radiotherapy and chemotherapy administered, with overall survival of only 12 to 18 months [2].
+
+Targeted therapies have always been potential strategies for this notorious tumor. However, it has had little impact on glioma treatment these years. Recent advances [3, 4] suggest that targeted therapies that are often used in clinical practice won’t benefit overall survival as they may induce resistance after a period of therapy, leading to immune suppression. Immunotherapy strategies are also meant to deal with this tricky situation. However, evidence shows that the efficacies of immunotherapy remain limited, including cellular [5, 6], vaccination [7, 8], and immune-checkpoint inhibitor treatment [9].
+
+The tumor microenvironment (TME) consists of immune cells, lymphocytes, bone marrow-derived inflammatory cells, blood vessels, extracellular matrix, fibroblasts, and signaling molecules [10]. TME, especially the immune microenvironment, is associated with tumorigenesis as it can harbor tumor cells and stimulate uncontrolled cell proliferation [11–13], explaining the poor efficacy of current treatments.
+
+Recent studies show that the immune microenvironment varies across different tumor types. Unlike nuances of cell atlas in melanoma, pancreatic, colorectal, and breast cancer, GBMs seem to change the composition of the immune microenvironment significantly to the opposite extreme [14], indicating potential characteristics related to the immune microenvironment are to be discovered.
+
+The lymphatic system is the bridge between the circulatory and the immune system. It has been recently identified that the brain has its unique lymphatic system—the glymphatic system. It clears the interstitial solutes in the brain parenchyma, associated with the causes of many neurodegenerative diseases [15, 16]. The glymphatic system clears the interstitial solutes in the brain parenchyma. Moreover, it has been revealed to transport CNS-derived antigens to induce an immune response, influencing the outcome of brain tumors [17]. Aquaporin-4 (AQP4) is a crucial protein in the glymphatic system [18]. It is concentrated in perivascular and subpial end-foot membranes, and creates micro-domains at the blood-brain and cerebrospinal fluid brain barrier [19]. The previous study [20] shows that the expression of AQP4 varies across different grades and individuals. Due to its pivotal role in the glymphatic system, AQP4 may contribute to the impact on glioma malignancy. At present, some studies suggest AQP4 may be a marker for the progression of malignant glioma [21], while others argue that AQP4 has no impact on the overall survival of IDH-wildtype GBMs [22]. As for immune-related aspects, there is little research regarding AQP4 and glioma’s immune system within the last ten years except for two case reports [23, 24]. Its role in the glioma immune microenvironment is yet to be revealed.
+
+Single-cell RNA sequencing (scRNA-seq) allows us to probe the expression distribution down to the individual cell level [25]. As the diversity of cell type and tumor microenvironment is increasingly studied in the field of glioma therapy, scRNA-seq becomes more and more appealing to glioma research. By digging and comparing the heterogeneity of glioma cells based on the expression of AQP4, we investigated the correlation between AQP4 and the glioma immune microenvironment from a novel perspective.
+
+Results
+
+Tumor heterogeneity revealed within glioma samples
+
+We used the public glioma dataset GSE135045 [26], and collected additional resection samples from 6 patients with malignant glioma during surgery. All glioma samples used were assessed by pathologists using the 2021 WHO Classification of Tumors of the Central Nervous System (Supplementary Table S1). After constructing scRNA-seq libraries according to the protocol, we performed strict quality control, normalization, and data scaling. Eventually, we obtained a total of 53059 cells and 34031 genes per cell for subsequent analysis (Fig. 1a). These cells were clustered into 43 groups using unsupervised Uniform Manifold Approximation and Projection (UMAP) (Fig. 1b). Two comprehensive reference data sets were used to perform cluster annotation (see Material and methods). We managed to confirm the identity of macrophages, monocytes, T cells, B cells, oligodendrocytes, and pericytes (Fig. 1c, d). The rest of the cells were suspiciously malignant cells as these clusters were far away from each other, suggesting that they were highly heterogeneous as formerly described [27].Fig. 1 scRNA-seq result of 13 individual glioma samples.
+
+a The UMAP plot showed 53059 profiled cells from glioma samples. Different samples were labeled with different colors. b Unsupervised clustering results distinguished with different colors. c Cell types are marked with different colors. d Dot plot demonstrated three top expressed genes of each cluster. The color of dots represents the mean level of a specific gene, and the size of dots represents the number of cells expressing this gene.
+
+AQP4 expression profile varies across glioma samples
+
+Assuming those undefined clusters of cells are genuine tumor cells, we extracted these cells and performed unsupervised clustering using t-Distributed Stochastic Neighbor Embedding (t-SNE) for visualization (Fig. 2a). As a result, we found it still remarkable that the samples were highly different. Therefore the influence of other types of cells on clustering was excluded. To further verify whether these cells are genuine malignant cells, we analyzed the copy number variation (CNV) of each sample. We use the inferCNV R package to infer somatic large-scale chromosomal copy number alterations [28]. According to inferCNV manual, the cut-off was set to 0.1 for the minimal average read counts per gene among cells. The output heatmap (Fig. 2b) was rather apparent that all samples showed over or less abundance in different regions of the tumor genome, respectively. Thus, we were confident that these previously undefined clusters of cells were tumor cells.Fig. 2 AQP4 expression profile in malignant glioma cells.
+
+a The potential malignant glioma cells were divided based on t-SNE analysis. b The heatmap demonstrated the CNV profiles inferred scRNA-seq data for all likely malignant glioma cells. The colored bar describes different chromosomes on top and samples on the left. All undefined cells exhibit apparent chromosome gain (red) or loss (blue), compared to macrophages. c The feature plot highlights the AQP4 expression profile in malignant glioma cells. d Violin plots displaying AQP4 across clusters of samples.
+
+Based on the dimensional reduction plot of tumor cells, we further examined the AQP4 expression among each glioma sample. Interestingly, the AQP4 expression profile varies across glioma samples. The expression of AQP4 was relatively high in 4 samples (Sample 1, 2, 12, and 39) and low in the other samples (Fig. 2c, d). For the convenience of subsequent analysis, we put samples 1, 2, 12, and 39 together as the “high AQP4” group, samples 3, 7, 16, 20, 21, 44, 45, 47, and 49 as “low AQP4” group.
+
+The association between AQP4 expression and the prognosis of gliomas
+
+To demonstrate the meaning of AQP4 expression diversity, we used the TCGA GBM (the glioblastoma dataset, n = 163), LGG (the lower grade glioma dataset, n = 518), and GTEx normal brain tissues data (n = 207) to compare with all types of tumor samples and paired normal tissues. The gene expression profile showed that AQP4 is highly expressed in gliomas (including GBM and LGG) than in normal brain tissues. In other organs, comparably, AQP4 expressions are at very low levels in both tumor and paired normal tissues (Fig. 3a), consistent with previous studies [29, 30]. We further compared AQP4 expression levels between tumor and normal brain tissues of LGG and GBM, respectively, and found that AQP4 tends to be overexpressed in the tumor samples (p < 0.05, Fig. 3b), inferring that AQP4 may have an impact on glioma development. The Kaplan–Meier survival analysis was performed to investigate the association between AQP4 expression and prognosis of gliomas to describe the Overall Survival (OS) curves of AQP4 over- and lower-expression groups in all gliomas (TCGA GBM and LGG), GBM, and LGG datasets, respectively. Log-rank was used to validate the difference between two groups in each dataset (Fig. 3d). The hazard ratio was calculated based on the Cox proportional-hazards model to evaluate the risk of death. Compared to the low AQP4 group, the high AQP4 group tended to have shorter OS in all gliomas (Fig. 3d, Supplementary Fig. S1). In LGG, the same result was achieved. In GBM, however, the discrepancy of OS was not significant between low AQP4 and high AQP4 groups, consistent with the result of an earlier study [22].Fig. 3 Landscape of AQP4 expression in TCGA dataset.
+
+a AQP4 expression profile across all tumor samples and paired normal samples. Tumor samples (T) are indicated by red, and normal tissue samples are green, using a normalization method that calculates transcripts per million (TPM). b The TCGA LGG (n = 518) and GBM (n = 163) dataset, as well as GTEx normal brain tissues data (n = 207) showing AQP4, was upregulated in tumor samples. c The AQP4 Kaplan–Meier survival analysis shows OS of all gliomas (left), GBMs (middle), and LGGs (right). d Boxplot displaying AQP4 expression levels of longer and shorter OS groups in samples went through chemotherapy (left) and radiotherapy (right).
+
+Previous studies have shown that AQP4 regulates water homeostasis in the brain [31, 32], potentially associated with blood-brain barrier permeability and cerebral edema. Cerebral edema comes with radiotherapy [33, 34], leading to a poor prognosis. On the other hand, Blood-brain barrier permeability can affect chemotherapy efficiency [35–37], leading to a poor prognosis. Thus, we continued to investigate its correlation with radiotherapy and chemotherapy prognosis. We acquired data from glioma individuals who went through radiotherapy (n = 184) and chemotherapy (n = 93) from the TCGA dataset (Supplementary Table S2) for subsequent analysis. Median OS was used as a cut-off where individuals with larger values were assigned to the Longer OS group and the others to the Shorter OS group. We compared AQP4 expression levels between two groups and found that individuals with shorter OS in the chemotherapy group showed higher AQP4 expression levels than those with higher OS (Fig. 3c, Supplementary Table S3). On the other hand, this difference was not significant in the radiotherapy group, suggesting that AQP4 was more meaningful for cases that went through chemotherapy rather than radiotherapy.
+
+AQP4 related differentially expressed genes are associated with glioma immune microenvironment
+
+We next focused on AQP4-related genes, trying to discover events that would potentially influence the prognosis of glioma. “FindAllMarkers” function of the Seurat R package was used to perform the Wilcoxon Rank Sum test to identify differentially expressed genes (DEGs) that were upregulated in each group (Supplementary Table S4). Gene ontology analysis showed that genes upregulated in the high AQP4 group are relevant to immune-related entries (Supplementary Fig. S2). Eventually, we targeted four over-expressed genes (Fig. 4a, logged fold change >0.25) in the high AQP4 group: CD74, HES1, CALD1, and HEBP2. The average expression of each DEG was also calculated in non-log space by Seurat’s “AverageExpression” function, showing the notable difference between the two groups (Fig. 4b, c). A recent study showed that brain tumors utilize CD74 activation to escape pro-inflammatory M1 conversion [38], indicating that CD74 is closely related to the glioma immune microenvironment. HES1 has been proven regulated by the NOTCH signaling pathway [39], along with the Hedgehog and Wnt signaling pathways [40], which are common pathways of tumor cells and also related to immune response [41]. CALD1 is a cytoskeleton-associated protein that has been revealed to be related to neoplastic angiogenesis [42], and immune infiltrates in gastric cancers [43]. As for HEBP2, there is not enough evidence showing its correlation with tumor cells, but it is believed that its related pathways are innate immune system [44]. All four selected DEGs were either related to the microenvironment or the immune system, which is thought-provoking that these DEGs and AQP4 may be associated with the glioma immune microenvironment.Fig. 4 Differential expressed genes related to AQP4 expression.
+
+a Violin plots displaying AQP4-related DEGs expression levels across single-cell samples. b Average expression level of AQP4-related DEGs of all single-cell samples. c Representative immunofluorescence staining images showing the expression of AQP4 and its DEGs in patient tumor sample. Scale bar: 20 μm.
+
+Thus, we extracted macrophages from initially clustered scRNA-seq data (Fig. 1c, cluster “Macrophages”), split them into two groups by the same standard of tumor cells, and constructed a single-cell pseudo-time trajectory via Monocle 3 R package. Dimension reduction and batch effect removal was performed before ordering cells based on progression states. The root state of the pseudo-time trajectory was manually set with markers referencing the work of Nestorowa et al. [45], inferring they hold the characteristic of progenitors. We noted that the pseudo-time trajectory pattern of the DEGs was almost identical, except that the CD74 expression level in the low AQP4 macrophage group was slightly lower than in the high AQP4 macrophage group (Fig. 5a, b). Next, we analyzed the average expression of M1 and M2 polarized macrophage markers to evaluate the polarization profile related to the tumor immune microenvironment. Interestingly, we noticed that macrophages of the high AQP4 group tended to polarize in the direction of M2 macrophages, while those of the low AQP4 group showed no apparent tendency (Fig. 5c). This result was corroborated by flow cytometry analysis (Supplementary Fig. S3). We retrieved the functional protein association network to explore further the potential proteins interacting with AQP4 (Fig. 5d, Supplementary Table S5). Four DEGs were presented in the network, consistent with the result we derived with Seurat, demonstrating that AQP4 is associated with DEGs. In addition, we observed that many genes that upregulated in M2 polarized macrophages were also revealed in this network.Fig. 5 Pseudo-time trajectory analysis revealed different regulation patterns in macrophages.
+
+a Pseudo-time trajectory of all macrophages extracted from single-cell samples. Upper: the trajectory of the high AQP4 group. Below: the trajectory of the low AQP4 group. b Pseudo-time trajectory of DEGs of macrophages in high AQP4 (left) and low AQP4 group (right) extracted from single-cell samples. c Average expression level of markers representing M1 (CD86, IL6, IRF1, IRF5) and M2 macrophages (MSR1, CCL17, CXCR4, SLC38A6) in all single-cell samples. d Protein interaction network showing DEGs (green and labeled dots), M2 (red dots), and M1 markers (blue dots). The size of dots indicates the degree of connectivity, and the shades of yellow indicate the combined score.
+
+AQP4 expression level is associated with the distribution of glioma cellular states
+
+Next, we focused on the association between AQP4 and the progression of gliomas. Tumor cells of high AQP4 and low AQP4 groups were separately pooled, dimension reduced, and normalized via Monocle 3 R package. The pseudo-time trajectory was performed based on the same protocol we used in Fig. 5a. We chose OLIG2 as a root-state marker, as it had long been treated as stem cells of malignant glioma [46–48], and ordered cells to visualize the development of glioma cells (Fig. 6a). Similarly, we constructed a pseudo-time trajectory pattern of the DEGs in tumor cells (Fig. 6b). Notably, DEGs are hardly expressed at the start point of the pseudo-time trajectory, i.e., cells with proliferation potential, implying that DEGs in the low AQP4 group tend to upregulate in cells with invasion potential. We asked whether this difference is related to the diversity of the microenvironment. A previous study reported that GBM malignant cells contain four different cellular states, which are plastic depending on the variety of microenvironment [49]. Based on this, the tumor cells of GBM samples were pooled to examine different cellular state proportions. Following the integrative model of GBM reported by Neftel et al. [49], we used their published algorithm to highlight oligodendrocyte-progenitor-like (OPC-like), neural-progenitor-like (NPC-like), astrocyte-like (AC-like), and mesenchymal-like (MES-like) cells (Fig. 6c). Different cellular states landscape was revealed in two groups: Most cells in GBMs of the high AQP4 group tended to be MES-like and AC-like cells while those of the low AQP4 group did not, suggesting AQP4 expression level may be associated with GBM cellular states proportions.Fig. 6 Pseudo-time trajectory analysis revealed different regulation patterns in tumor cells.
+
+a Pseudo-time trajectory of all glioma. Left: the trajectory of the high AQP4 group. Right: the trajectory of the low AQP4 group. Purple: early stages. Yellow: late stages. b Pseudo-time trajectory of DEGs of glioma cells in high AQP4 (left) and low AQP4 group (right). Different from the high AQP4 group, DEGs of the low AQP4 group did not upregulate at an early stage. c Two-dimensional plot visualization of different cell state scores. Red dots highlight high AQP4 populations. Blue dots represent low AQP4 populations.
+
+Discussion
+
+AQP4 is a glial water channel protein that regulates water homeostasis in the brain. It has been identified that alterations of the AQP4 aggregation state can influence plasma membrane dynamics, offering the potential for metastasis of glioma and changes of the tumor microenvironment. However, few previous studies have put AQP4 and the glioma immune microenvironment together, and neither have they utilized single-cell sequencing analysis to reveal the AQP4 expression profile in malignant gliomas. We performed AQP4-related analyses of different types of cells in malignant glioma samples using single-cell transcriptome analysis. Our findings discovered for the first time that AQP4 can alter the polarization tendency of tumor-associated macrophages (TAMs), associated with the immune microenvironment of glioma, consequently causing alterations in glioma cellular states.
+
+AQP4 is generally highly expressed in brain tissues, which is determined by the properties of AQP4 and has been widely confirmed by studies [18, 19]. We further validated that its expression level is even higher in gliomas compared with normal brain tissues. We found that increased expression of AQP4 can lead to reduced OS in malignant gliomas, resulting in a poor prognosis. Previous studies have shown that high levels of AQP4 expression are not associated with OS in GBMs [22]. Consistently, our study found that high levels of AQP4 expression are not associated with OS in GBM, either. However, AQP4 expression levels were strongly correlated with OS of LGGs, i.e., LGGs with high levels of AQP4 expression may have shorter OS and are more likely to be led to poor prognosis. We speculate that this is because GBM itself has an extremely short overall survival, and the influence of AQP4 is on the mild side.
+
+Since AQP4 is crucial in the glymphatic system and able to maintain water homeostasis in brain tissue [18, 19], we suspect that there may also be a correlation between AQP4 and edema and drug delivery. In the treatment of glioma, radiotherapy may lead to edema, and the effect of chemotherapy is dependent on drug delivery. Out of this, we further investigated the relationship between AQP4 and the difference in OS of individuals under radiotherapy and chemotherapy. We found that the level of AQP4 expression could differentially affect the OS after chemotherapy, but not that of radiotherapy. We theorized that this might be related to the regulation of permeability of the blood-brain barrier by AQP4. Previous studies have shown that enhanced phosphorylation of AQP4 can reduce water permeability and decrease the invasiveness of tumor cells. Still, its association with chemotherapeutic drug delivery has not been analyzed, and the relationship with prognosis has not been elucidated. Therefore, more validation studies are needed to address this issue.
+
+By performing differential expression analysis on our malignant glioma samples, we identified four DEGs, CD74, HES1, CALD1, and HEBP2, significantly upregulated in the AQP4 high expression group. All four DEGs were more or less associated with the tumor microenvironment and the immune system [38–42, 50]. Since all four DEGs with similar expression patterns to AQP4 were associated with the tumor microenvironment and the immune system, we suspected that AQP4 itself might be related to the immune microenvironment of glioma. Accordingly, we performed further analysis for TAMs in our samples. We found that the TAMs in the high AQP4 group tended to become M2 macrophages, whereas the TAMs in the low AQP4 group did not demonstrate a significant polarization tendency. In the protein interaction network, many M2 macrophage markers were noticed, along with a few markers of M1 macrophages linked to AQP4, too. However, some markers of M1 macrophages in the network were linked with those of M2 macrophages in this network. IL-6, for example, is upregulated in M1 macrophages but was also reported to be able to influence the balance between M1 and M2 macrophages and contribute to inducing M2 macrophage polarization [51, 52], explaining the noticeable M2 type bias of macrophages in the high AQP4 group. A previous study has demonstrated that AQP4 blockade alleviated irradiated lung damage and inhibited activation of M2 macrophages [53]. However, similar studies related to brain tumors are absent at this moment. With trajectory analysis, we noticed that in the low AQP4 group, the expression of CD74 is upregulated earlier than AQP4, indicating that CD74 may play an upstream regulating role for AQP4. Plus, CD74 is a receptor of macrophage migration inhibitory factor (MIF). Several studies have shown that MIF/CD74 impedes microglial M1 polarization [54–56]. We suspect that AQP4 has the ability to indicate the polarization propensity of macrophages and thus the glioma immune microenvironment.
+
+As cellular states of GBMs are plastic depending on the diversity of the microenvironment [49], we further examined the cellular states of GBMs in our single-cell samples. Our results show that samples with higher AQP4 expression levels tended to be MES-like and AC-like states. It has been proven that MES-like and AC-like cells express major histocompatibility complex significantly higher, indicating the interaction between immune cells and MES-like cells (as well as AC-like cells) [57]. Furthermore, the previous study also revealed that macrophages induce a transition of tumor cells into MES-like states, and MES-like cells are also related to a mesenchymal program in macrophages [57]. Thus, we assume the alteration of AQP4 expression levels may involve the interaction between the immune microenvironment and tumor cell states, impacting glioma’s malignancy by transitioning into MES-like states. However, our study does not yet have enough data to decipher the effects of AQP4 on the growth and development of glioma cells or TAMs, and more extensive work is warranted for further investigation.
+
+In summary, our study provides a novel perspective to investigate the impacts of AQP4. We identified the crucial role that AQP4 plays in the immune microenvironment of malignant gliomas, suggesting that AQP4 has the potential to be a breakpoint in malignant glioma for future discovery of the immune microenvironment of glioma.
+
+Material and methods
+
+Glioma samples collection and processing
+
+The fresh glioma samples were obtained during the surgeries in size of 1 cm × 1 cm × 1 cm. All samples were resected from tumor core area. Detailed sample information is listed in Supplementary Table S1. The usage of samples was approved by the Institutional Review Board at Nanjing Brain Hospital Affiliated to Nanjing Medical University. Informed consent was signed by each patient. Samples were stored in GEXSCOPE™ Tissue Preservation Solution (Singleron Biotechnologies, Nanjing, China) at 4 °C and transported to the laboratory within 6 h. The specimens were rinsed with Hanks Balanced Salt Solution (HBSS) three times and split into 1–2 mm pieces. The pieces were then digested with 2 ml of GEXSCOPE™ Tissue Dissociation Solution (Singleron Biotechnologies) at 37 °C for 15 min with sustained agitation. Then, the samples were filtered through 40 µm sterile strainers and centrifuged at 1000 rpm for 5 min, 4 °C. Afterward, the supernatants were discarded. The cell pellets were suspended in 1 ml phosphate-buffered saline (PBS; HyClone). 2 ml GEXSCOPE™ Red Blood Cell Lysis Buffer (Singleron Biotechnologies) was added to cell suspension at 25 °C for 10 min to remove the red blood cells. Subsequently, the solution was centrifuged at 1000 rpm for 5 min and suspended in PBS. Samples were counted with a TC20 automated cell counter (Bio-Rad).
+
+Single-cell RNA library construction and sequencing
+
+Single-cell suspension was of 1 × 105 cells/ml in PBS and loaded onto a microfluidic chip according to the Singleron GEXSCOPE™ Single Cell RNA-seq Library Kit (Singleron Biotechnologies). Single-cell RNA libraries were constructed following the GEXSCOPE™ protocol [58]. After construction, the libraries were initially quantified using a Qubit 2.0 Fluorometer and diluted to 1.5 ng/µl. All libraries were more than 2 nM, examined by qRT-PCR, and pooled for sequencing. The pools were sequenced on the Illumina HiSeq X10 platform with 150 bp paired-end reads.
+
+Single-cell RNA library pre-processing
+
+Raw reads were processed to generate gene expression profiles using the standard internal pipeline based on the Cell Ranger toolkit (version 2.1.1). The raw base call (BCL) files were used to generate the FASTQ files with the “mkfastq” command. After read 1 without poly T tails were removed, cell barcode and unique molecular identifiers (UMIs) were extracted. Adapters and poly-A tails were trimmed (fastp V1) before aligning the read 2 to GRCh38 Ensemble build 92 genomes (fastp 2.5.3a and featureCounts 1.6.2). Reads with the same cell barcode, UMIs, and genes were grouped to calculate the number of UMIs per gene per cell. The UMI count tables of each cellular barcode were used for further analysis.
+
+Single-cell RNA-seq data quality control and preparation
+
+All the scRNA-seq data were loaded and merged into one object with Seurat [59, 60]. The following standards ruled out Low-quality cells: low feature counts (<200), high feature counts (>5000), and high mitochondrial content (>30%). The built-in SCTransform algorithm processed the Seurat object to perform sample integration, gene normalization, and data scaling. The “RunPCA” function was used to reduce dimension.
+
+Cell clusters annotation
+
+Unbiased cell type recognition was performed by SingleR [61] with two comprehensive human reference data sets, one from the Human Primary Cell Atlas [62] and one from the Blueprint [63] and ENCODE [64] projects. Cell type recognition was also verified by known cluster-specific differentially expressed genes.
+
+Copy number variations inference
+
+Copy number variations were inferred by inferCNV [28]. 10X counts matrix was extracted from the Seurat object and input to the “CreateInfercnvObject” function, along with the annotation file extracted from the Seurat object metadata and the genome position reference data set obtained from the GENCODE project (version 36). Then, the inferCNV object was processed with the “infercnv::run” function with dynamic threshold denoising to infer copy number variations.
+
+Pseudo-time trajectory inference
+
+We use monocle3 to perform pseudo-time trajectory inference. Briefly, we transformed the Seurat object into the monocle3 required “cell_data_set”. The batch effect was removed with cell alignment by the “align_cds” function. Dimension was reduced by the “reduce_dimension” function using UMAP. The pseudo-time trajectory was inferred by the “learn_graph” and “order_cells” functions using DDRThree. We chose cells with the most OLIG2 expression level as the “root_state”.
+
+Statistical analysis
+
+Statistical analysis was performed on the IBM SPSS® software platform. The statistical significance threshold was set to p < 0.05. All significance was performed by t-test.
+
+General gene expression profile and survival analysis
+
+We use GEPIA2 platform [65] to analyze the RNA sequencing expression data of glioma and normal samples from the TCGA and the GTEx projects, respectively. Gene expression profile across samples was calculated by the “General Information” pipeline. Overall survival Kaplan–Meier curve plot was generated by the “Survival Analysis” pipeline.
+
+Functional protein association network analysis
+
+The protein interaction network was built based on STRING database v11 [66]. The TSV format network files were imported to Cytoscape v3.8.2 [67] and processed by network analyses. The network was visualized with an organic layout. The size of nodes was adjusted according to the degree of connectivity.
+
+Immunofluorescence
+
+The samples were collected from formalin-fixed paraffin-embedded sections of primary GBMs. First, the sample slides were incubated with the first primary antibody against AQP4 (#16473-1-AP; Proteintech; 1:200) overnight at 4 °C. Then, the samples were incubated with the first corresponding secondary antibody for 50 min at room temperature away from light. Next, the samples were incubated with the second primary antibody CD74 (#GB12179; Servicebio; 1:200) overnight at 4 °C and with the second corresponding secondary antibody for 50 min at room temperature away from light. DAPI is used for counterstaining to display nuclei. The same protocol was applied to AQP4(#16473-1-AP; Proteintech; 1:2000) and the rest of DEGs: HES1 (#GB112254; Servicebio; 1:5000), HEBP2 (#A71824-050; Epigentek; 1:1000), CALD1 (#HPA017330-S; Atlas antibodies; 1:2000). At last, the sample slides were imaged using Nikon Imaging System. Multispectral images were processed and analyzed using 3DHISTECH CaseViewer software.
+
+Supplementary information
+
+Supplementary Figure S1
+
+Supplementary Figure S2
+
+Supplementary Figure S3
+
+Supplementary Table S1
+
+Supplementary Table S2
+
+Supplementary Table S3
+
+Supplementary Table S4
+
+Supplementary Table S5
+
+Supplementary information
+
+The online version contains supplementary material available at 10.1038/s41417-022-00582-y.
+
+Acknowledgements
+
+The work was supported by grants from the National Natural Science Foundation of China (81972350, 81902535), Medical Science and Technology Development Foundation of Nanjing (ZDX16011, ZKX22041), and Postgraduate Research & Practice Innovation Program of Jiangsu Province (SJCX22_0667).
+
+Author contributions
+
+KY, HL, LL, HX and RW conceived the project. KY, YX, RW, QZ, ZW and LT prepared the tumor tissues for scRNA-seq. RW performed bioinformatics analysis. RW, LP and YX drafted and revised the manuscript. QZ helped conduct experiments for revision. All authors read and approved the submitted version.
+
+Data availability
+
+The scRNA-seq datasets presented in this study can be found in GEO repositories at: https://www.ncbi.nlm.nih.gov/geo/, GSE135045 and GSE167960.
+
+Competing interests
+
+The authors declare no competing interests.
+
+Publisher’s note Springer Nature remains neutral with regard to jurisdictional claims in published maps and institutional affiliations.
+
+These authors contributed equally: Ran Wang, Lu Peng, Yong Xiao.
+
+Change history
+
+2/9/2023
+
+A Correction to this paper has been published: 10.1038/s41417-023-00592-4
+==== Refs
+References
+
+1. Louis DN Perry A Reifenberger G von Deimling A Figarella-Branger D Cavenee WK The 2016 World Health Organization Classification of Tumors of the Central Nervous System: a summary Acta Neuropathol (Berl) 2016 131 803 20 10.1007/s00401-016-1545-1 27157931
+2. Wen PY Kesari S Malignant Gliomas in Adults N Engl J Med 2008 359 492 507 10.1056/NEJMra0708126 18669428
+3. Chinot OL Wick W Mason W Henriksson R Saran F Nishikawa R Bevacizumab plus Radiotherapy–Temozolomide for Newly Diagnosed Glioblastoma N Engl J Med 2014 370 709 22 10.1056/NEJMoa1308345 24552318
+4. Gilbert MR Dignam JJ Armstrong TS Wefel JS Blumenthal DT Vogelbaum MA A Randomized Trial of Bevacizumab for Newly Diagnosed Glioblastoma N Engl J Med 2014 370 699 708 10.1056/NEJMoa1308573 24552317
+5. O’Rourke DM, Nasrallah MP, Desai A, Melenhorst JJ, Mansfield K, Morrissette JJD et al. A single dose of peripherally infused EGFRvIII-directed CAR T cells mediates antigen loss and induces adaptive resistance in patients with recurrent glioblastoma. Sci Transl Med 2017; 9. 10.1126/scitranslmed.aaa0984.
+6. Dai H, Wang Y, Lu X, Han W Chimeric Antigen Receptors Modified T-Cells for Cancer Therapy. JNCI J Natl Cancer Inst 2016; 108. 10.1093/jnci/djv439.
+7. Felsberg J Hentschel B Kaulich K Gramatzki D Zacher A Malzkorn B Epidermal Growth Factor Receptor Variant III (EGFRvIII) Positivity in EGFR-Amplified Glioblastomas: Prognostic Role and Comparison between Primary and Recurrent Tumors Clin Cancer Res J Am Assoc Cancer Res 2017 23 6846 55 10.1158/1078-0432.CCR-17-0890
+8. van den Bent MJ Gao Y Kerkhof M Kros JM Gorlia T van Zwieten K Changes in the EGFR amplification and EGFRvIII expression between paired primary and recurrent glioblastomas Neuro-Oncol 2015 17 935 41 10.1093/neuonc/nov013 25691693
+9. Reardon DA Omuro A Brandes AA Rieger J Wick A Sepulveda J OS10.3 Randomized Phase 3 Study Evaluating the Efficacy and Safety of Nivolumab vs Bevacizumab in Patients With Recurrent Glioblastoma: CheckMate 143 Neuro-Oncol 2017 19 iii21 iii21 10.1093/neuonc/nox036.071
+10. Spill F Reynolds DS Kamm RD Zaman MH Impact of the physical microenvironment on tumor progression and metastasis Curr Opin Biotechnol 2016 40 41 48 10.1016/j.copbio.2016.02.007 26938687
+11. Gonzalez H Hagerling C Werb Z Roles of the immune system in cancer: from tumor initiation to metastatic progression Genes Dev 2018 32 1267 84 10.1101/gad.314617.118 30275043
+12. Weber CE Kuo PC The tumor microenvironment Surg Oncol 2012 21 172 7 10.1016/j.suronc.2011.09.001 21963199
+13. Sistigu A Musella M Galassi C Vitale I De Maria R Tuning Cancer Fate: Tumor Microenvironment’s Role in Cancer Stem Cell Quiescence and Reawakening Front Immunol 2020 11 2166 10.3389/fimmu.2020.02166 33193295
+14. Allen BM Hiam KJ Burnett CE Venida A DeBarge R Tenvooren I Systemic dysfunction and plasticity of the immune macroenvironment in cancer models Nat Med 2020 26 1125 34 10.1038/s41591-020-0892-6 32451499
+15. Louveau A Smirnov I Keyes TJ Eccles JD Rouhani SJ Peske JD Structural and functional features of central nervous system lymphatic vessels Nature 2015 523 337 41 10.1038/nature14432 26030524
+16. Ma Q Ineichen BV Detmar M Proulx ST Outflow of cerebrospinal fluid is predominantly through lymphatic vessels and is reduced in aged mice Nat Commun 2017 8 1434 10.1038/s41467-017-01484-6 29127332
+17. Rustenhoven J Drieu A Mamuladze T de Lima KA Dykstra T Wall M Functional characterization of the dural sinuses as a neuroimmune interface Cell 2021 184 1000 .e27 10.1016/j.cell.2020.12.040 33508229
+18. Simka M Recent advances in understanding the lymphatic and glymphatic systems of the brain Phlebol Rev 2016 23 69 71
+19. Nagelhus EA Ottersen OP Physiological Roles of Aquaporin-4 in Brain Physiol Rev 2013 93 1543 62 10.1152/physrev.00011.2013 24137016
+20. Mou K Chen M Mao Q Wang P Ni R Xia X AQP-4 in peritumoral edematous tissue is correlated with the degree of glioma and with expression of VEGF and HIF-alpha J Neurooncol 2010 100 375 83 10.1007/s11060-010-0205-x 20467785
+21. Wang J Feng L Zhu Z Zheng M Wang D Chen Z Aquaporins as diagnostic and therapeutic targets in cancer: How far we are? J Transl Med 2015 13 96 10.1186/s12967-015-0439-7 25886458
+22. Behling F Barrantes-Freer A Behnes CL Stockhammer F Rohde V Adel-Horowski A Expression of Olig2, Nestin, NogoA and AQP4 have no impact on overall survival in IDH-wildtype glioblastoma PLOS ONE 2020 15 e0229274 10.1371/journal.pone.0229274 32160197
+23. Lim BC Chae JH Kim S-K Park S-H Wang K-C Lee JY Aquaporin-4 autoimmunity masquerading as a brainstem tumor J Neurosurg Pediatr 2014 14 301 5 10.3171/2014.6.PEDS13674 25014325
+24. Liu Y Gao F Hao H Sun W Huang Y Anaplastic astrocytoma with aquaporin-4 positive in CSF: A case report Medicine (Baltim) 2017 96 e9193 10.1097/MD.0000000000009193
+25. Wang Z Gerstein M Snyder M RNA-Seq: a revolutionary tool for transcriptomics Nat Rev Genet 2009 10 57 63 10.1038/nrg2484 19015660
+26. Xiao Y Wang Z Zhao M Deng Y Yang M Su G Single-Cell Transcriptomics Revealed Subtype-Specific Tumor Immune Microenvironments in Human Glioblastomas Front Immunol 2022 13 914236 10.3389/fimmu.2022.914236 35669791
+27. Patel AP Tirosh I Trombetta JJ Shalek AK Gillespie SM Wakimoto H Single-cell RNA-seq highlights intratumoral heterogeneity in primary glioblastoma Science 2014 344 1396 401 10.1126/science.1254257 24925914
+28. inferCNV of the Trinity CTAT Project. 2021. https://github.com/broadinstitute/infercnv (accessed 17 Jan2021).
+29. Hasegawa H Ma T Skach W Matthay MA Verkman AS Molecular cloning of a mercurial-insensitive water channel expressed in selected water-transporting tissues J Biol Chem 1994 269 5497 5500 10.1016/S0021-9258(17)37486-0 7509789
+30. Jung JS Bhat RV Preston GM Guggino WB Baraban JM Agre P Molecular characterization of an aquaporin cDNA from brain: candidate osmoreceptor and regulator of water balance Proc Natl Acad Sci 1994 91 13052 6 10.1073/pnas.91.26.13052 7528931
+31. Kitchen P Salman MM Halsey AM Clarke-Bland C MacDonald JA Ishida H Targeting Aquaporin-4 Subcellular Localization to Treat Central Nervous System Edema Cell 2020 181 784 .e19 10.1016/j.cell.2020.03.037 32413299
+32. Yang L Wang X Zhen S Zhang S Kang D Lin Z Aquaporin-4 upregulated expression in glioma tissue is a reaction to glioma-associated edema induced by vascular endothelial growth factor Oncol Rep 2012 28 1633 8 10.3892/or.2012.1973 22922737
+33. Parvez K Parvez A Zadeh G The diagnosis and treatment of pseudoprogression, radiation necrosis and brain tumor recurrence Int J Mol Sci 2014 15 11832 46 10.3390/ijms150711832 24995696
+34. Giglio P Gilbert MR Cerebral radiation necrosis Neurologist 2003 9 180 8 10.1097/01.nrl.0000080951.78533.c4 12864928
+35. de Vries NA Beijnen JH Boogerd W van Tellingen O Blood-brain barrier and chemotherapeutic treatment of brain tumors Expert Rev Neurother 2006 6 1199 209 10.1586/14737175.6.8.1199 16893347
+36. Fortin D The Blood-Brain Barrier: Its Influence in the Treatment of Brain Tumors Metastases Curr Cancer Drug Targets 2012 12 247 59 10.2174/156800912799277511 22229251
+37. Abbott NJ Blood-brain barrier structure and function and the challenges for CNS drug delivery J Inherit Metab Dis 2013 36 437 49 10.1007/s10545-013-9608-0 23609350
+38. Qazi MA Vora P Venugopal C Sidhu SS Moffat J Swanton C Intratumoral heterogeneity: pathways to treatment resistance and relapse in human glioblastoma Ann Oncol J Eur Soc Med Oncol 2017 28 1448 56 10.1093/annonc/mdx169
+39. Matsuno K Ito M Hori K Miyashita F Suzuki S Kishi N Involvement of a proline-rich motif and RING-H2 finger of Deltex in the regulation of Notch signaling Dev Camb Engl 2002 129 1049 59
+40. Ingram WJ McCue KI Tran TH Hallahan AR Wainwright BJ Sonic Hedgehog regulates Hes1 through a novel mechanism that is independent of canonical Notch pathway signalling Oncogene 2008 27 1489 1500 10.1038/sj.onc.1210767 17873912
+41. Rani A Greenlaw R Smith RA Galustian C HES1 in immunity and cancer Cytokine Growth Factor Rev 2016 30 113 7 10.1016/j.cytogfr.2016.03.010 27066918
+42. Zheng P-P Sieuwerts AM Luider TM van der Weiden M Sillevis-Smitt PAE Kros JM Differential expression of splicing variants of the human caldesmon gene (CALD1) in glioma neovascularization versus normal brain microvasculature Am J Pathol 2004 164 2217 28 10.1016/S0002-9440(10)63778-9 15161654
+43. Liu Y Xie S Zhu K Guan X Guo L Lu R CALD1 is a prognostic biomarker and correlated with immune infiltrates in gastric cancers Heliyon 2021 7 e07257 10.1016/j.heliyon.2021.e07257 34189308
+44. PathCards:: Innate Immune System Pathway and related pathways. https://pathcards.genecards.org/card/innate_immune_system (accessed 6 Feb2021).
+45. Nestorowa S Hamey FK Pijuan Sala B Diamanti E Shepherd M Laurenti E A single-cell resolution map of mouse hematopoietic stem and progenitor cell differentiation Blood 2016 128 e20 e31 10.1182/blood-2016-05-716480 27365425
+46. Bouchart C Trépant A-L Hein M Gestel DV Demetter P Prognostic impact of glioblastoma stem cell markers OLIG2 and CCND2 Cancer Med 2020 9 1069 78 10.1002/cam4.2592 31568682
+47. Ligon KL Huillard E Mehta S Kesari S Liu H Alberta JA Olig2-Regulated Lineage-Restricted Pathway Controls Replication Competence in Neural Stem Cells and Malignant Glioma Neuron 2007 53 503 17 10.1016/j.neuron.2007.01.009 17296553
+48. Kupp R Shtayer L Tien A-C Szeto E Sanai N Rowitch DH Lineage-Restricted OLIG2-RTK Signaling Governs the Molecular Subtype of Glioma Stem-like Cells Cell Rep 2016 16 2838 45 10.1016/j.celrep.2016.08.040 27626655
+49. Neftel C Laffy J Filbin MG Hara T Shore ME Rahme GJ An Integrative Model of Cellular States, Plasticity, and Genetics for Glioblastoma Cell 2019 178 835 .e21 10.1016/j.cell.2019.06.024 31327527
+50. Barbu MC, Campbell A, Amador C, Adams MJ, Lynall ME, Howard DM et al. Epigenome-wide association study of self-reported antidepressant use in Generation Scotland implicates the innate immune system. medRxiv. 2020;2020.10.06.20207621.
+51. Luckett-Chastain L Calhoun K Schartz T Gallucci RM IL-6 influences the balance between M1 and M2 macrophages in a mouse model of irritant contact dermatitis J Immunol 2016 196 196.17 196.17 10.4049/jimmunol.196.Supp.196.17 26621863
+52. Roca H Varsos ZS Sud S Craig MJ Ying C Pienta KJ CCL2 and Interleukin-6 Promote Survival of Human CD11b+ Peripheral Blood Mononuclear Cells and Induce M2-type Macrophage Polarization * J Biol Chem 2009 284 34342 54 10.1074/jbc.M109.042671 19833726
+53. Li Y Lu H Lv X Tang Q Li W Zhu H Blockade of Aquaporin 4 Inhibits Irradiation-Induced Pulmonary Inflammation and Modulates Macrophage Polarization in Mice Inflammation 2018 41 2196 205 10.1007/s10753-018-0862-z 30091034
+54. Ghoochani A Schwarz MA Yakubov E Engelhorn T Doerfler A Buchfelder M MIF-CD74 signaling impedes microglial M1 polarization and facilitates brain tumorigenesis Oncogene 2016 35 6246 61 10.1038/onc.2016.160 27157615
+55. Figueiredo CR Azevedo RA Mousdell S Resende-Lara PT Ireland L Santos A Blockade of MIF-CD74 Signalling on Macrophages and Dendritic Cells Restores the Antitumour Immune Response Against Metastatic Melanoma Front Immunol 2018 9 1132 10.3389/fimmu.2018.01132 29875777
+56. Fukuda Y Bustos MA Cho S-N Roszik J Ryu S Lopez VM Interplay between soluble CD74 and macrophage-migration inhibitory factor drives tumor growth and influences patient survival in melanoma Cell Death Dis 2022 13 1 11.
+57. Hara T Chanoch-Myers R Mathewson ND Myskiw C Atta L Bussema L Interactions between cancer cells and immune cells drive transitions to mesenchymal-like states in glioblastoma Cancer Cell 2021 39 779 .e11 10.1016/j.ccell.2021.05.002 34087162
+58. Dura B Choi J-Y Zhang K Damsky W Thakral D Bosenberg M scFTD-seq: freeze-thaw lysis based, portable approach toward highly distributed single-cell 3′ mRNA profiling Nucl Acids Res 2019 47 e16 e16 10.1093/nar/gky1173 30462277
+59. Butler A Hoffman P Smibert P Papalexi E Satija R Integrating single-cell transcriptomic data across different conditions, technologies, and species Nat Biotechnol 2018 36 411 20 10.1038/nbt.4096 29608179
+60. Stuart T Butler A Hoffman P Hafemeister C Papalexi E Mauck WM Comprehensive Integration of Single- Cell Data Cell 2019 177 1888 1902.e21 31178118
+61. Aran D Looney AP Liu L Wu E Fong V Hsu A Reference-based analysis of lung single-cell sequencing reveals a transitional profibrotic macrophage Nat Immunol 2019 20 163 72 10.1038/s41590-018-0276-y 30643263
+62. Mabbott NA Baillie JK Brown H Freeman TC Hume DA An expression atlas of human primary cells: inference of gene function from coexpression networks BMC Genomics 2013 14 632 10.1186/1471-2164-14-632 24053356
+63. Fernández JM de la Torre V Richardson D Royo R Puiggròs M Moncunill V The BLUEPRINT Data Analysis Portal Cell Syst 2016 3 491 .e5 10.1016/j.cels.2016.10.021 27863955
+64. Sloan CA Chan ET Davidson JM Malladi VS Strattan JS Hitz BC ENCODE data at the ENCODE portal Nucl Acids Res 2016 44 D726 D732 10.1093/nar/gkv1160 26527727
+65. Tang Z Kang B Li C Chen T Zhang Z GEPIA2: an enhanced web server for large-scale expression profiling and interactive analysis Nucl Acids Res 2019 47 W556 W560 10.1093/nar/gkz430 31114875
+66. Szklarczyk D Gable AL Lyon D Junge A Wyder S Huerta-Cepas J STRING v11: protein-protein association networks with increased coverage, supporting functional discovery in genome-wide experimental datasets Nucl Acids Res 2019 47 D607 D613 10.1093/nar/gky1131 30476243
+67. Shannon P Markiel A Ozier O Baliga NS Wang JT Ramage D Cytoscape: a software environment for integrated models of biomolecular interaction networks Genome Res 2003 13 2498 504 10.1101/gr.1239303 14597658
+

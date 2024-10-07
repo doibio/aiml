@@ -1,0 +1,191 @@
+
+==== Front
+BMC Cancer
+BMC Cancer
+BMC Cancer
+1471-2407 BioMed Central London 
+
+7628
+10.1186/s12885-020-07628-0
+Research Article
+Analyses of metastasis-associated genes in IDH wild-type glioma
+Li Xiaozhi 1 http://orcid.org/0000-0002-0486-1938Meng Yutong mengyt@vip.163.com 2 1 grid.412467.20000 0004 1806 3501Department of Neurosurgery, Shengjing Hospital of China Medical University, Shenyang, China 
+2 grid.412467.20000 0004 1806 3501Department of Stomatology, Shengjing Hospital of China Medical University, No. 36 Sanhao Street, Shenyang, Liaoning Province 110004 People’s Republic of China 
+16 11 2020 
+16 11 2020 
+2020 
+20 111422 6 2020 11 11 2020 © The Author(s) 2020Open AccessThis article is licensed under a Creative Commons Attribution 4.0 International License, which permits use, sharing, adaptation, distribution and reproduction in any medium or format, as long as you give appropriate credit to the original author(s) and the source, provide a link to the Creative Commons licence, and indicate if changes were made. The images or other third party material in this article are included in the article's Creative Commons licence, unless indicated otherwise in a credit line to the material. If material is not included in the article's Creative Commons licence and your intended use is not permitted by statutory regulation or exceeds the permitted use, you will need to obtain permission directly from the copyright holder. To view a copy of this licence, visit http://creativecommons.org/licenses/by/4.0/. The Creative Commons Public Domain Dedication waiver (http://creativecommons.org/publicdomain/zero/1.0/) applies to the data made available in this article, unless otherwise stated in a credit line to the data.Background
+Glioma is the most common malignant tumor of the brain. The existence of metastatic tumor cells is an important cause of recurrence even after radical glioma resection.
+
+Methods
+Single-cell sequencing data and high-throughput data were downloaded from GEO database and TCGA/CGGA database. By means of PCA and tSNE clustering methods, metastasis-associated genes in glioma were identified. GSEA explored possible biological functions that these metastasis-associated genes may participate in. Univariate and multivariate Cox regression were used to construct a prognostic model.
+
+Results
+Glioma metastatic cells and metastasis-associated genes were identified. The prognostic model based on metastasis-associated genes had good sensitivity and specificity for the prognosis of glioma. These genes may be involved in signal pathways such as cellular protein catabolic process, p53 signaling pathway, transcriptional misregulation in cancer and JAK-STAT signaling pathway.
+
+Conclusion
+This study explored glioma metastasis-associated genes through single-cell sequencing data mining, and aimed to identify prognostic metastasis-associated signatures for glioma and may provide potential targets for further cancer research.
+
+Keywords
+GliomaMetastasisPrognosisInvasionSingle-cell sequencing345 Talent Projectissue-copyright-statement© The Author(s) 2020
+==== Body
+Background
+Glioma is the most common malignant tumor in the brain. In recent years, research on glioma especially on the molecular mechanisms has been increasing. In 2016, the World Health Organization first applied histology and molecular classification to define central nervous system tumors simultaneously [1]. Although with the continuous improvement of glioma diagnosis and treatment technology, the 5-year survival rate of patients with grade IV glioma is less than 5% [2], and the median survival time is about 12–15 months [3].
+
+Glioma is composed of the tumor core and metastatic tumor cells. The metastatic tumor cells can be located a few centimeters away from the tumor core area. The existence of metastatic tumor cells is an important cause of recurrence even after radical glioma resection [4]. The process of tumor metastasis is generally considered to be divided into the following four steps: (1) separating of invading cells from the primary site; (2) adhesion to the extracellular matrix: (3) degradation of the extracellular matrix; (4) movement of the invasive cells [5, 6]. In addition, the heterogeneity of the cells within the tumor also promotes the metastatic capacity of the tumor cells. However, specific molecular mechanism of the metastasis of glioma is still unclear.
+
+Traditional high-throughput sequencing data analysis is difficult to analyze the heterogeneity inside the tumor [7–9], while the single-cell sequencing technology developed in recent years allows researchers to view the expression profile of each cell and explore the expression heterogeneity of single cells within the tumor mass [10–12]. The discovery of intracellular difference provides the potential for a deeper understanding of tumor internal characteristics [13]. The purpose of this study is to analyze the glioma single-cell sequencing data, analyze the characteristics and marker genes of metastatic glioma cells, and analyze the prognostic value of these metastasis-associated genes (MAGs) with the help of high-throughput sequencing, thereby providing new targets for basic and clinical research for gliomas. Since IDH wild-type glioma has a worse prognosis than their mutant counterparts and shows more malignant biological behaviors [14, 15], IDH wild-type glioma were selected for study in order to better explore the metastatic characteristics of glioma.
+
+Methods
+Acquisition and quality control of glioma expression sequencing data
+The glioma single-cell sequencing data were sourced from GSE84465 of the GEO database (Gene Expression Omnibus, https://www.ncbi.nlm.nih.gov/geo/). “limma” package of R software was used for preliminary data correction. “Seurat” package was used to analyze single-cell sequencing data. Genes expressed in less than 3 cells and cells expressing less than 50 genes were excluded. Percentage of mitochondrial sequencing count < 0.05 and the correlation between gene numbers and sequencing depth > 0.4 were used as the threshold to identifying high-quality single-cell sequencing samples. The high-throughput sequencing data of IDH wild-type glioma and patient clinical information were derived from the TCGA database (https://cancergenome.nih.gov/) and CGGA database (http://www.cgga.org.cn/). Since all the original data were downloaded from public databases, no additional ethical proof was required.
+
+Dimensionality reduction and clustering
+In this study, the single-cell sequencing data was firstly subjected to dimensionality reduction using the principal component analysis (PCA) method. The t-Distributed Stochastic Neighbor Embedding (tSNE) analysis were then introduced based on the P values of each principal component. According to differentially expressed genes of each cluster by tSNE clustering and marker genes of brain tissues reported by previous articles, cells from each cluster were annotated.
+
+Gene set enrichment analysis (GSEA)
+The “clusterProfiler” package of R software was used to analyze the MAGs in glioma by Gene Ontology (GO) and Kyoto Encyclopedia of Genes and Genomes (KEGG) enrichment analyses, and to explore the potential biological functions of these genes.
+
+Identification of MAGs and prognostic correlation
+According to the cell annotations, differentially expressed genes of metastatic glioma cells and nonmetastatic glioma cells were identified. Heat-map and volcano-map of MAGs were drawn accordingly. In order to study the prognostic correlation of these MAGs, we extracted the expression profiles of these MAGs and patient survival information from glioma high-throughput sequencing data. Because glioma patients in TCGA database included normal brain tissue samples, we used TCGA database as the training cohort while CGGA database as the validation cohort. Firstly, univariate Cox regression was used to analyze the prognostic genes in the training cohort. Then multivariate Cox regression by Efron approximation was used to establish the risk score, which was expressed as: risk score = βgene1 × Expressiongene1 + βgene2 × Expressiongene2 + βgene3 × Expressiongene3 + ... + βgenen × Expressiongenen. Using this model, the ROC curve (Receiver operating characteristic) and Kaplan-Meier survival curve were drawn in both the training cohort and the validation cohort respectively. The sensitivity and specificity of the model for the prognosis of glioma were analyzed.
+
+Results
+Quality control of single-cell sequencing profiles
+A total of 3589 cell expression data were obtained from the 4 tumor tissues and 4 surrounding peritumor tissues from the GSE84465. The number of gene types and total number of genes expressed in each sample and the correlation between the number of sequenced genes and the depth of sequencing in each sample were shown in Fig. S1. With Pearson correlation greater than 0.4 as the threshold, 4 surrounding peritumor tissues and 2 tumor samples (N_BT_S1, T_BT_S2, N_BT_S2, N_BT_S4, T_BT_S6, and N_BT_S6) were screened. These 6 eligible samples were used for subsequent analysis. The number of gene types and total number of genes expressed in the eligible samples were shown in Fig. 1a-b. In addition, all the percentages of mitochondrial sequencing count of samples were very low (Fig. 1c), which may be due to the single cell sorting process by antibodies before performing single-cell sequencing, resulting in very few apoptosis or lysed cells. Figure 1d-e showed the distribution of the 500 genes with the most intercellular expression differences and the names of the top 10 differentially expressed genes (including PLP1, CHI3L1, TF, MAG, FCGBP, DCN, CTGF, THBS1, MBP and IBSP).
+Fig. 1 Overview of single-cell sequencing profiles. a The description of feature genes of the profiles. b The description of total gene numbers of the profiles. c Percentage of mitochondrial genes detected in each sample. d-e Diagrams of differentially expressed genes between cells
+
+
+
+Clustering and cell annotation
+The PCA analysis results of single-cell sequencing data were shown in Fig. 2a. The glioma cells were differentiated clearly by the PC_1 and PC_2 clusters. In addition, Fig. 2b-c listed top 20 principal genes and corresponding heat-maps of PC_1 and PC_2 clusters. P value of each principal component was calculated, as shown in Fig. 2d. Significant principal components were further introduced to the tSNE dimensionality reduction in order to make glioma cells better clustered. The results of tSNE dimensionality reduction were shown in Fig. 2e. From the figure, we found that glioma cells were divided into 13 clusters named 0–12, and the glioma cells were more clearly distinguished than the PCA method. Among them, cluster 6 was only derived from tumor tissues, and cluster 7 and cluster 11 were only derived from surrounding peritumor brain tissue. According to existing literature reports [16–18], we analyzed the expression of marker genes of different brain tissues in various clusters (as shown in Fig. 2f). First, cluster 7 and 11 were adopted only from peritumoral brain tissue, indicating that they were not tumor cells. Cell-specific genes provide more important proofs for cell annotation. Meanwhile, Ye Zhang’s suggests that CCL3 can be the cell-specific gene for microglia/macrophages, AGXT2L1 for astrocytes, and SYT1 for neurons [18]. In addition, Spyros Darmanis points out in their study that endothelium-derived cells tend to express DCN, OPC cells tend to express GPR17, and oligodendrocytes tend to express MOG. More importantly, EGFR can discriminate glioma cells with high sensitivity and specificity [16]. From the above, cells belonging to cluster 2,3,6 and derived from peritumor brain tissue were defined as metastatic tumor cells. The differentially expressed genes between metastatic tumor cells and non-metastatic tumor cells were identified.
+Fig. 2 Clustering and cell annotation. a PCA results of single-cell sequencing profiles. b Top 20 principal genes of PC_1 and PC_2 clusters. c Heat-maps of PC_1 and PC_2 clusters. d
+P value of each PCA component. e tSNE results of single-cell sequencing profiles. f Expression of classical genes in various clusters
+
+
+
+Gene set enrichment analysis
+The expression and survival information were extracted from IDH wild-type glioma high-throughput sequencing data from the TCGA and CGGA database. The shared genes of TCGA and CGGA database were extracted for subsequent analysis. Wilcox test was applied to find the differentially expressed genes between IDH wild-type glioma and normal brain tissue. The intersection differentially expressed genes in IDH wild-type glioma and metastatic cells were defined as MAGs. The MAGs were analyzed by GO and KEGG enrichment analysis for their potential functions. The results were shown in Fig. 3. With P < 0.05 as the statistical standard, GO enrichment analysis suggested that genes were enriched on items such as regulation of protein catabolic process, regulation of proteolysis involved in cellular protein catabolic process. Meanwhile, KEGG enrichment analysis suggested that these genes may be involved in signal pathways such as p53 signaling pathway, transcriptional misregulation in cancer, JAK-STAT signaling pathway.
+Fig. 3 Gene set enrichment analysis of the MAGs. a GO enrichment results. b KEGG enrichment results
+
+
+
+Construction of prognostic model based on MAGs
+Univariate Cox regulation was used to analyze the MAGs to find out the prognostic genes and 79 MAGs were associated with overall survival of IDH wild-type glioma patients. Using the multivariate Cox regression in the training cohort, a total of 3 MAGs were identified for constructing the prognostic model, including GNS (glucosamine (N-acetyl)-6-sulfatase), LBH (LBH regulator of WNT signaling pathway) and SCARA3 (scavenger receptor class A member 3). The Cox results of these genes were shown in Table 1. Risk score = 0.516 * Expression GNS + 0.422 * Expression LBH + 0.211 * Expression SCARA3. The value for Likelihood ratio test was 19.84 (P < 0.001), 18.94 for Wald test (P < 0.001) and 18.95 for Score (logrank) test (P < 0.001). Based on the risk score calculated by the prognostic model, the ROC curves and Kaplan-Meier survival curves for the training and validation cohorts were drawn in Fig. 4a-d.
+Table 1 Univariate analysis and multivariate Cox results of metastasis-associated genes
+
+RNA	Univariate Analysis	Multivariate Analysis	
+HR (95%CI)	P	HR (95%CI)	P	
+GNS	1.661 (1.161–2.378)	0.006	1.676 (1.131–2.482)	0.010	
+LBH	1.499 (1.118–2.010)	0.007	1.524 (1.117–2.081)	0.008	
+SCARA3	1.146 (1.119–1.791)	0.004	1.234 (0.956–1.593)	0.106	
+Fig. 4 Cox regression. a 1-year and 3-year ROC curves in the training cohort. b Kaplan–Meier survival analysis between high-risk group and low-risk group in the training cohort. c 1-year and 3-year ROC curves in the validation cohort. d Kaplan–Meier survival analysis between high-risk group and low-risk group in the validation cohort. e The relationship between the risk scores and overall survival
+
+
+
+The results showed that the AUCs (the area under ROC curves) for 1-year and 3-years OS (overall survival) of the training cohort were 0.661 and 0.701, respectively; the AUC for the 3-year and 5-year OS of the validation cohort were 0.563 and 0.605, respectively. In addition, the P values of Kaplan-Meier survival curves of the training and validation cohorts were 0.003 and 0.000 respectively. The prognostic model based on MAGs showed an excellent prognostic ability for IDH wild-type glioma. Furthermore, the relationship between the risk scores and overall survival were shown in Fig. 4e.
+
+Discussion
+The metastasis is an important reason for the difficulty of glioma treatment. This study combined single-cell sequencing and high-throughput sequencing to study the characteristics of MAGs of IDH wild-type glioma. First, through quality control, we selected six eligible single-cell sequencing profiles for further research. Second, the PCA and tSNE dimensionality reduction were used to classify all cells into 13 clusters according to the differentially expressed genes between cells. According to the cell annotation results, cluster 2, cluster 3 and cluster 6 were identified as glioma cells. A small percentage of cells in cluster 2 and cluster 3 originated from surrounding peritumor tissue, and theses cell were defined as metastatic cells. MAGs of glioma were gained by comparison between metastatic cells and non-metastatic cells.
+
+Due to the small number of patients with single-cell sequencing, it is difficult to complete survival analyses of MAGs. Therefore, we extracted high-throughput sequencing data of glioma from the TCGA database for prognostic analyses of MAGs. GSEA results suggested that these MAGs might be involved in signal pathways such as regulation of proteolysis involved in cellular protein catabolic process (CLU/HSP90AB3P/MDM2/OS9/RNF180/SDCBP/TRIB2), p53 signaling pathway (CASP3/CCND2/CDK4/CDKN1A/IGFBP3/MDM2), transcriptional misregulation in cancer (CCND2/CDKN1A/IGFBP3/MDM2/PLAT/ZEB1) and JAK-STAT signaling pathway (CCND2/CDKN1A/FHL1/GFAP/STAT1). For example, MDM2, a negative regulator of P53, inhibits P53 transcription and promotes ubiquitination and degradation of P53 through proteasome [19]. CDKN1A, whose gene promoter region contains TP53 binding sites, can be a mediator of p53 signaling pathway [20]. Moreover, CCND2 is a cyclin expressed mainly in glioma stem cells. Knockdown of CCND2 can decrease levels of E2F1, E2F2 and cyclin B1, leading to a significant increase in the proportion of G1 phase cells [21]. In addition, STAT1 has an antagonistic effect on cellular proliferation and apoptosis through the JAK-STAT signaling pathway [22]. Interestingly, STAT3, also a member of the STAT protein family, has been found in many studies to be phosphorylated and mediate drug resistance in cancer therapy [23, 24]. With P < 0.05 as the statistical threshold, STAT3 was highly expressed in metastatic glioma cells, which also indicated the accuracy and application prospect of single-cell sequencing research.
+
+Through Cox regression, this study selected 3 MAGs (GNS, LBH and SCARA3) to construct the prognostic model. The ROC curves and Kaplan-Meier survival curves of the training cohort and the validation cohort indicated that the model had good prognostic ability.
+
+This study identified the MAGs of IDH wild-type glioma and the prognostic model was constructed by genes including GNS, LBH and SCARA3. Many of these genes have been reported in previous studies. For example, LBH is highly expressed in glioma. Under hypoxic conditions, LBH is directly regulated by HIF-1, and promotes glioma angiogenesis in human brain microvessel endothelial cells through the VEGFA-mediated ERK signaling pathway [25]. SCARA3 mRNA is highly expressed in breast cancer [26]. Besides, SCARA3 promotes drug resistance in multiple myeloma [27]. The mechanism of more metastasis-associated genes of glioma remains to be discovered.
+
+Studies on the analyses of RNA sequencing and prediction of the prognosis of IDH wild-type glioblastoma have been reported [28]. Since metastasis is generally considered as a pivotal factor of prognosis of glioma, the innovation of this paper is to identify the molecular characteristics of metastatic glioma cells by analyzing single-cell sequencing of glioma, and to use high-throughput sequencing for prognostic validation. The study may help provide deeper insight into genes involved in glioma cell metastasis.
+
+This study also has some shortcomings, such as lacking of overexpression/deletion studies and validation in vivo experiments which may further examine the function and mechanism of candidate genes.
+
+Conclusions
+In conclusion, this study explored glioma MAGs through single-cell sequencing data mining, and studied the prognostic value of these genes for glioma patients. The aim of this study is to identify prognostic metastasis-associated signatures for glioma and may provide potential targets for further cancer research.
+
+Supplementary Information
+
+Additional file 1 : Figure S1. The correlation between the number of sequenced genes and the percentage of mitochondrial genes, and the correlation between the number of sequenced genes and the depth of sequencing in each sample. (A: T_BT_S1; B: N_BT_S1; C: T_BT_S2; D: N_BT_S2; E: T_BT_S4; F: N_BT_S4; G: T_BT_S6; H: N_BT_S6).
+
+ 
+
+Abbreviations
+MAGsMetastasis-associated genes
+
+OSOverall survival
+
+LASSOLeast absolute shrinkage and selection operator
+
+PCAPrincipal component analysis
+
+tSNEt-Distributed Stochastic Neighbor Embedding
+
+logFCLogarithm of fold change
+
+adjPvalAdjustment of P value
+
+ROC curveReceiver operating characteristic
+
+AUCThe area under ROC curves
+
+GSEAGene set enrichment analysis
+
+GOGene Ontology
+
+KEGGKyoto Encyclopedia of Genes and Genomes
+
+Publisher’s Note
+
+Springer Nature remains neutral with regard to jurisdictional claims in published maps and institutional affiliations.
+
+Supplementary Information
+The online version contains supplementary material available at 10.1186/s12885-020-07628-0.
+
+Acknowledgements
+Not applicable.
+
+Authors’ contributions
+YM contributed to the experiment design, manuscript draft, and data analysis. XL contributed to the experiment implementation, manuscript draft and data analysis. All authors read and approved the final manuscript.
+
+Funding
+The study was supported by 345 Talent Project.
+
+Availability of data and materials
+All original data in the manuscript are available upon reasonable request.
+
+Ethics approval and consent to participate
+All data of the study were acquired from public database so that no more ethical approval was needed.
+
+Consent for publication
+Not applicable.
+
+Competing interests
+The authors declare there are no conflicts of interest.
+==== Refs
+References
+1. Komori T   The 2016 WHO classification of Tumours of the central nervous system: the major points of revision Neurol Med Chir (Tokyo) 2017 57 7 301 311 10.2176/nmc.ra.2017-0010 28592714 
+2. da Hora CC, Schweiger MW, Wurdinger T, Tannous BA. Patient-derived glioma models: from patients to dish to animals. Cells. 2019;8(10):1177.
+3. Nakada M  Kita D  Watanabe T  Hayashi Y  Teng L  Pyko IV  Hamada J   Aberrant signaling pathways in glioma Cancers (Basel) 2011 3 3 3242 3278 10.3390/cancers3033242 24212955 
+4. Giese A  Bjerkvig R  Berens ME  Westphal M   Cost of migration: invasion of malignant gliomas and implications for treatment J Clin Oncol 2003 21 8 1624 1636 10.1200/JCO.2003.05.063 12697889 
+5. Marusyk A  Almendro V  Polyak K   Intra-tumour heterogeneity: a looking glass for cancer? Nat Rev Cancer 2012 12 5 323 334 10.1038/nrc3261 22513401 
+6. Onishi M  Ichikawa T  Kurozumi K  Date I   Angiogenesis and invasion in glioma Brain Tumor Pathol 2011 28 1 13 24 10.1007/s10014-010-0007-z 21221826 
+7. Li X  Meng Y   Survival analysis of immune-related lncRNA in low-grade glioma BMC Cancer 2019 19 1 813 10.1186/s12885-019-6032-3 31419958 
+8. Yang MH  Zhao L  Wang L  Ou-Yang W  Hu SS  Li WL  Ai ML  Wang YQ  Han Y  Li TT    Nuclear lncRNA HOXD-AS1 suppresses colorectal carcinoma growth and metastasis via inhibiting HOXD3-induced integrin beta3 transcriptional activating and MAPK/AKT signalling Mol Cancer 2019 18 1 31 10.1186/s12943-019-0955-9 30823921 
+9. Zhang C  He H  Hu X  Liu A  Huang D  Xu Y  Chen L  Xu D   Development and validation of a metastasis-associated prognostic signature based on single-cell RNA-seq in clear cell renal cell carcinoma Aging (Albany NY) 2019 11 22 10183 10202 10.18632/aging.102434 31747386 
+10. Tang F  Barbacioru C  Wang Y  Nordman E  Lee C  Xu N  Wang X  Bodeau J  Tuch BB  Siddiqui A    mRNA-Seq whole-transcriptome analysis of a single cell Nat Methods 2009 6 5 377 382 10.1038/nmeth.1315 19349980 
+11. Vorstandlechner V, Laggner M, Kalinina P, Haslik W, Radtke C, Shaw L, Lichtenberger BM, Tschachler E, Ankersmit HJ, Mildner M. Deciphering the functional heterogeneity of skin fibroblasts using single-cell RNA sequencing. FASEB J. 2020;34:3677-92.
+12. Zhou Z  Xu B  Minn A  Zhang NR   DENDRO: genetic heterogeneity profiling and subclone detection by single-cell RNA sequencing Genome Biol 2020 21 1 10 10.1186/s13059-019-1922-x 31937348 
+13. Lin L, Lin DC: Biological Significance of Tumor Heterogeneity in Esophageal Squamous Cell Carcinoma. Cancers (Basel). 2019;11(8):1156.
+14. Fu Y  Zheng S  Zheng Y  Huang R  An N  Liang A  Hu C   Glioma derived isocitrate dehydrogenase-2 mutations induced up-regulation of HIF-1α and β-catenin signaling: possible impact on glioma cell metastasis and chemo-resistance Int J Biochem Cell Biol 2012 44 5 770 775 10.1016/j.biocel.2012.01.017 22309944 
+15. Mirchia K, Richardson TE. Beyond IDH-Mutation: emerging molecular diagnostic and prognostic features in adult diffuse gliomas. Cancers (Basel). 2020;12(7):1817.
+16. Darmanis S  Sloan SA  Croote D  Mignardi M  Chernikova S  Samghababi P  Zhang Y  Neff N  Kowarsky M  Caneda C    Single-cell RNA-Seq analysis of infiltrating neoplastic cells at the migrating front of human Glioblastoma Cell Rep 2017 21 5 1399 1410 10.1016/j.celrep.2017.10.030 29091775 
+17. Darmanis S  Sloan SA  Zhang Y  Enge M  Caneda C  Shuer LM  Hayden Gephart MG  Barres BA  Quake SR   A survey of human brain transcriptome diversity at the single cell level Proc Natl Acad Sci U S A 2015 112 23 7285 7290 10.1073/pnas.1507125112 26060301 
+18. Zhang Y  Sloan SA  Clarke LE  Caneda C  Plaza CA  Blumenthal PD  Vogel H  Steinberg GK  Edwards MS  Li G    Purification and characterization of progenitor and mature human astrocytes reveals transcriptional and functional differences with mouse Neuron 2016 89 1 37 53 10.1016/j.neuron.2015.11.013 26687838 
+19. Nag S  Zhang X  Srivenugopal KS  Wang MH  Wang W  Zhang R   Targeting MDM2-p53 interaction for cancer therapy: are we there yet? Curr Med Chem 2014 21 5 553 574 10.2174/09298673113206660325 24180275 
+20. el-Deiry WS, Tokino T, Velculescu VE, Levy DB, Parsons R, Trent JM, Lin D, Mercer WE, Kinzler KW, Vogelstein B: WAF1, a potential mediator of p53 tumor suppression. Cell 1993, 75(4):817–825.
+21. Koyama-Nasu R  Nasu-Nishimura Y  Todo T  Ino Y  Saito N  Aburatani H  Funato K  Echizen K  Sugano H  Haruta R    The critical role of cyclin D2 in cell cycle progression and tumorigenicity of glioblastoma stem cells Oncogene 2013 32 33 3840 3845 10.1038/onc.2012.399 22964630 
+22. Swiatek-Machado K  Kaminska B   STAT Signaling in Glioma Cells Adv Exp Med Biol 2020 1202 203 222 10.1007/978-3-030-30651-9_10 32034715 
+23. Wong ALA  Hirpara JL  Pervaiz S  Eu JQ  Sethi G  Goh BC   Do STAT3 inhibitors have potential in the future for cancer therapy? Expert Opin Investig Drugs 2017 26 8 883 887 10.1080/13543784.2017.1351941 
+24. Lee M  Hirpara JL  Eu JQ  Sethi G  Wang L  Goh BC  Wong AL   Targeting STAT3 and oxidative phosphorylation in oncogene-addicted tumors Redox Biol 2019 25 101073 10.1016/j.redox.2018.101073 30594485 
+25. Jiang Y  Zhou J  Zou D  Hou D  Zhang H  Zhao J  Li L  Hu J  Zhang Y  Jing Z   Overexpression of limb-bud and Heart (LBH) promotes angiogenesis in human glioma via VEGFA-mediated ERK signalling under hypoxia EBioMedicine 2019 48 36 48 10.1016/j.ebiom.2019.09.037 31631037 
+26. Bock AJ  Nymoen DA  Brenne K  Kærn J  Davidson B   SCARA3 mRNA is overexpressed in ovarian carcinoma compared with breast carcinoma effusions Hum Pathol 2012 43 5 669 674 10.1016/j.humpath.2011.06.003 21855113 
+27. Brown CO  Schibler J  Fitzgerald MP  Singh N  Salem K  Zhan F  Goel A   Scavenger receptor class a member 3 (SCARA3) in disease progression and therapy resistance in multiple myeloma Leuk Res 2013 37 8 963 969 10.1016/j.leukres.2013.03.004 23537707 
+28. Liu YQ  Wu F  Li JJ  Li YF  Liu X  Wang Z  Chai RC   Gene expression profiling stratifies IDH-Wildtype Glioblastoma with distinct prognoses Front Oncol 2019 9 1433 10.3389/fonc.2019.01433 31921684
+

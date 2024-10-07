@@ -1,0 +1,271 @@
+
+==== Front
+Sci Rep
+Sci Rep
+Scientific Reports
+2045-2322 Nature Publishing Group UK London 
+
+79829
+10.1038/s41598-020-79829-3
+Article
+Precise enhancement quantification in post-operative MRI as an indicator of residual tumor impact is associated with survival in patients with glioblastoma
+Garcia-Ruiz Alonso 1 Naval-Baudin Pablo 2 Ligero Marta 1 Pons-Escoda Albert 23 Bruna Jordi 34 Plans Gerard 35 Calvo Nahum 2 Cos Monica 2 Majós Carles 23 Perez-Lopez Raquel rperez@vhio.net 16 1 grid.411083.f0000 0001 0675 8654Radiomics Group, Vall d’Hebron Institute of Oncology (VHIO), 117 Natzaret, 08035 Barcelona, Spain 
+2 grid.411129.e0000 0000 8836 0780Department of Radiology, Institut de Diagnòstic Per La Imatge (IDI), Bellvitge University Hospital, Barcelona, Spain 
+3 grid.418284.30000 0004 0427 2257Neuro-Oncology Unit, Institut d’Investigació Biomèdica de Bellvitge (IDIBELL), Barcelona, Spain 
+4 grid.411129.e0000 0000 8836 0780Department of Neurology, Bellvitge University Hospital, Barcelona, Spain 
+5 grid.411129.e0000 0000 8836 0780Department of Neurosurgery, Bellvitge University Hospital, Barcelona, Spain 
+6 grid.411083.f0000 0001 0675 8654Department of Radiology, Vall d’Hebron University Hospital, Barcelona, Spain 
+12 1 2021 
+12 1 2021 
+2021 
+11 69512 3 2020 9 12 2020 © The Author(s) 2021Open Access This article is licensed under a Creative Commons Attribution 4.0 International License, which permits use, sharing, adaptation, distribution and reproduction in any medium or format, as long as you give appropriate credit to the original author(s) and the source, provide a link to the Creative Commons licence, and indicate if changes were made. The images or other third party material in this article are included in the article's Creative Commons licence, unless indicated otherwise in a credit line to the material. If material is not included in the article's Creative Commons licence and your intended use is not permitted by statutory regulation or exceeds the permitted use, you will need to obtain permission directly from the copyright holder. To view a copy of this licence, visit http://creativecommons.org/licenses/by/4.0/.Glioblastoma is the most common primary brain tumor. Standard therapy consists of maximum safe resection combined with adjuvant radiochemotherapy followed by chemotherapy with temozolomide, however prognosis is extremely poor. Assessment of the residual tumor after surgery and patient stratification into prognostic groups (i.e., by tumor volume) is currently hindered by the subjective evaluation of residual enhancement in medical images (magnetic resonance imaging [MRI]). Furthermore, objective evidence defining the optimal time to acquire the images is lacking. We analyzed 144 patients with glioblastoma, objectively quantified the enhancing residual tumor through computational image analysis and assessed the correlation with survival. Pathological enhancement thickness on post-surgical MRI correlated with survival (hazard ratio: 1.98, p < 0.001). The prognostic value of several imaging and clinical variables was analyzed individually and combined (radiomics AUC 0.71, p = 0.07; combined AUC 0.72, p < 0.001). Residual enhancement thickness and radiomics complemented clinical data for prognosis stratification in patients with glioblastoma. Significant results were only obtained for scans performed between 24 and 72 h after surgery, raising the possibility of confounding non-tumor enhancement in very early post-surgery MRI. Regarding the extent of resection, and in agreement with recent studies, the association between the measured tumor remnant and survival supports maximal safe resection whenever possible.
+
+Subject terms
+NeurologyOncologyMathematics and computinghttp://dx.doi.org/10.13039/501100004587Instituto de Salud Carlos IIIPI18/01395Perez-Lopez Raquel http://dx.doi.org/10.13039/100000892Prostate Cancer Foundationhttp://dx.doi.org/10.13039/100010434“la Caixa” Foundationissue-copyright-statement© The Author(s) 2021
+==== Body
+Introduction
+Glioblastoma is the most common primary brain tumor1. Although some treatments prolong survival, the prognosis of patients with glioblastoma is very poor, e.g. 2-year survival of 26.5%2. Standard of care therapy consists of maximum safe resection combined with adjuvant radiochemotherapy followed by chemotherapy with temozolomide. The extent of tumor resection is a relevant prognostic factor in this patient population3–9. Albert et al.established that the extent of resection should be evaluated with a magnetic resonance imaging (MRI) scan performed shortly after surgery, as inflammatory reparative changes can result in benign non-tumor contrast enhancement that can be misinterpreted as tumor remnants10. This is widely accepted in clinical practice, and most guidelines recommend performing early postoperative magnetic resonance (EPMR) to evaluate the extent of resection. Some guidelines suggest performing the EPMR scan within the first 72 h after surgery, while others are more restrictive and state with 48 h11–13. However, these recommendations rely on the experience and opinion of experts, rather than on formal clinical evidence. To the best of our knowledge, an in-depth evaluation of the optimal time range to perform the EPMR scan has not yet been described. An objective numerical assessment of the residual tumor enhancement to support this would allow identification of the optimal timing to evaluate the enhancement in the EPMR, and thus, the timing at which it is most informative for patient prognosis.
+
+
+There is no consensus about the extent of resection to stratify prognostic groups. Some studies suggest an “all-or-nothing” approach8 in which complete resection should be achieved to improve patient survival. However, others suggest that it is possible to stratify several prognostic groups according to ranges of tumor resection3–7,9,10,14,15, namely < 75%, 75–95%, 95–100% and total resection.
+
+An objective numerical evaluation of the residual tumor would allow analysis of a continuous range of values instead of subjective qualitative assessment, and help identify the best approach in regards to therapy and prognosis, while also being readily applicable and comparable between centers and studies. In this study, we focus on the enhancing residual tumor only. While there may be also non-enhancing residual tumor, a recent study has demonstrated an association between the post-operative enhancement volume and survival16. Therefore, it may be possible to identify additional prognosis value using more extensive image analysis of the enhancing tumor remnant in the post-surgical MRI. To this end, we focused on the post-surgical MRI and investigated radiomics and perfusion imaging features as an alternative evaluation to the extent of resection, which requires paired pre- and post-surgical MRI.
+
+Image processing and radiomics extract quantifiable features from body tissues using characterization algorithms on the image spatial data. Radiomics is a lively topic of research that is shaping medical image assessment and interpretation, providing crucial information regarding tumor biology including glioblastomas17,18.
+
+In this study, our goals were to develop a tool to facilitate the quantification of enhancing post-surgery residual tumor in patients with glioblastoma and analyze whether precise quantification of the area of contrast enhancement by image processing and radiomics could improve the patient´s prognostic evaluation. With this objective data, we also assessed the time range from surgery to the EPMR scan for an optimal association of residual tumor and overall survival (OS), to provide quantitative evidence for the optimal time range to perform the EPMR scan after surgery.
+
+Results
+A total of 144 patients were included in the study (92 [64%] men, 52 [36%] women); median age of all patients was 59 years (range 20–77 years). Population demographics are described in Supplementary Table S1.
+
+Correlation of post-operative enhancement with survival
+The enhancement thickness was calculated as the 3D distance transform of the segmented tumor, and mean and maximum values were determined. The mean and maximum enhancement thickness correlated with OS with a hazard ratio (HR) of 1.98 (95% CI 1.36–2.90, p < 0.001) and 1.11 (95% CI 1.05–1.17, p < 0.001), respectively (Table 1). Mean and maximum thickness also correlated significantly with progression-free survival (PFS) with HR of 2.01 (95% CI 1.35–3.12, p < 0.001) and 1.08 (95% CI 1.03–1.14, p = 0.004), respectively.Table 1 Univariate Cox model of the enhancement thickness (mean and maximum) for overall survival, for the entire population and by subgroup according to time elapsed between surgery and the MRI.
+
+Variable	Group	Distribution	Cox regression	
+n	Mean	SD	HR	95% CI	p-value	
+Mean thickness (mm)	All	144	1.18	0.44	1.98	1.36–2.90	 < 0.001	
+ < 24 h	26	1.25	0.57	1.19	0.59–2.39	0.44	
+24–48 h	51	1.18	0.39	3.00	1.24–7.24	0.03	
+48–72 h	42	1.16	0.44	3.30	1.30–8.40	0.03	
+ ≥ 72 h	25	1.21	0.51	2.40	0.74–7.72	0.16	
+Maximum thickness (mm)	All	144	7.16	3.27	1.11	1.05–1.17	 < 0.001	
+ < 24 h	26	6.98	3.54	1.02	0.91–1.14	0.56	
+24–48 h	51	7.41	3.23	1.21	1.08–1.36	0.005	
+48–72 h	42	6.92	3.05	1.19	1.04–1.36	0.02	
+ ≥ 72 h	25	7.16	3.81	1.08	0.96–1.21	0.21	
+P-values were adjusted for multiple test comparison.
+
+N number of observations, SD standard deviation, mm millimetres, h hour, HR hazard ratio, CI confidence interval, LR likelihood ratio.
+
+
+
+The survival rate of patients with a mean thickness of 1.4 mm or more was 47% after 12 months, whereas survival of patients with a mean thickness less than 1.4 mm was 78% (p < 0.001, Fig. 1, left panel). Similarly, the survival rate of patients with a maximum thickness of 8 mm or more was 55% after 12 months, whereas survival of patients with maximum thickness of less than 8 mm was 80% after 12 months (p = 0.0012, Fig. 1, right panel).Figure 1 Kaplan–Meier survival curves for the enhancement thickness analysis, according to high and low mean (left) and maximum (right) thickness. Censored data are indicated with tick marks.
+
+
+
+The volume of enhancement was also associated with OS, with an HR of 1.04 (95% CI 1.01–1.07, p = 0.009), however there was no significant association with PFS (HR 1.02, 95% CI 0.99–1.05, p = 0.19). A previously reported threshold of 12 mL16 resulted in unbalanced subpopulations: patients with enhancement volume greater than 12 mL (n = 10) had a survival rate of 20% at 12 months, while patients with volume less than 12 mL (n = 134) had a survival rate of 75% at 12 months (Supplementary Fig. S1). Despite the different survival rates, Kaplan–Meier analysis did not yield a significant difference (p = 0.1).
+
+Survival prediction for time between surgery and the EPMR scan
+We analyzed the population in terms of the time elapsed between surgery and the EPMR scan according to the following groups: within 24 h (n = 26), from 24 up to 48 h (n = 51), from 48 up to 72 h (n = 42), and 72 h or more (n = 25). The mean and maximum thickness of enhancement were significantly associated with survival in patients with an EPMR scan performed between 24 and 72 h after surgery (p < 0.05, adjusted for multiple test comparisons, Table 1). There was no association between thickness and OS when the EPMR was performed within 24 h of surgery or more than 72 h after. In Supplementary Fig. S2, the HR and the confidence intervals of each subgroup are shown for comparison, and the Kaplan–Meier curves are shown in Supplementary Fig. S3.
+
+Prognostic value of perfusion sub-analysis
+Dynamic susceptibility contrast (DSC) data were available for 113 patients (113/144, 78%). When the entire population was analyzed, patients with a relative cerebral blood volume in the 99th percentile (rCBV-99) above 8.26 had worse survival (p = 0.05, Supplementary Table S2), with a survival rate of 50% after 12 months, compared to a 75% rate in patients below this threshold (Supplementary Fig. S4). A maximum percentage of signal recovery (PSR) above 112% defined patients with lower survival (p < 0.001, Supplementary Table S2), with a 50% survival rate after 12 months, compared to an 80% rate for patients below the threshold (Supplementary Fig. S4).
+
+We also analyzed the perfusion data in terms of the time between surgery and the EPMR scan, according to within the first 24 h (n = 22), between 24 and 48 h (n = 37), between 48 and 72 h (n = 33) and 72 h or later (n = 21). rCBV-99 predicted survival when the EPMR scan was performed 24 to 48 h post-surgery (p = 0.004 adjusted for multiple test comparisons, Supplementary Table S2); for patients with a rCBV-99 above 7.93, the survival rate was 20% after 12 months, compared to 70% for those below this threshold (Supplementary Fig. S4). The maximum PSR predicted survival when the EPMR scan was performed 24 to 72 h post-surgery (p < 0.001, adjusted for multiple test comparisons, Supplementary Table S2), with a survival rate of 20% after 12 months for patients above a 111% threshold and a rate of 80% for patients below this threshold (Supplementary Fig. S4). Neither the rCBV-99 nor PSR had prognostic value when the EPMR scan was performed within 24 h of surgery. When the scan was performed more than 72 h after surgery, the rCBV-99 showed significantly different survival rates (p = 0.011), albeit with unbalanced subgroups.
+
+Prognostic value of the radiomics signature
+The population with measurable enhancement segmentation (129/144, 90%; see “Methods” for details) was analyzed to determine the prognosis of the clinical endpoint of OS ≥ 2 years (long; 36/129, 28%) or OS < 2 years (short; 93/129, 72%). The population was randomly split into training (92/129, 70%) and test (37/129, 30%) sets, with balanced distribution of survival in both sets (26/92, 28% of long survivors in the training; 10/37, 27% of long survivors in the test set) (Supplementary Table S3).
+
+Twelve radiomics variables were selected in the training set using minimum-redundancy-maximum-relevance and stepwise regression (Supplementary Table S4). This radiomics signature predicted short and long survival groups with an AUC of 0.73 (0.60–0.86 p < 0.001) in the training set and an AUC of 0.71 (0.55–0.88 p = 0.01) in the test set. Receiver operating characteristic (ROC) curves and Kaplan–Meier curves of the training and test sets are presented in Supplementary Fig. S5.
+
+Combining quantitative imaging and clinical data for predicting survival
+The multivariate logistic model including all imaging features (mean enhancement thickness, DSC, radiomics) and clinical data (age, postoperative KPS) yielded the highest prognostic capacity for predicting long and short survival (AUC 0.72, 95% CI 0.61–0.83, p < 0.001, Fig. 2). In the multivariate Cox model including all of these parameters, the mean thickness and age were retained as independent prognostic factors (Supplementary Table S5).Figure 2 ROC of different prognostic models: perfusion variables (99th percentile cerebral blood volume [rCBV], maximum percentage of signal recovery [PSR]), mean thickness of enhancement and all variables (perfusion, thickness, age, Karnofsky performance status [KPS] and radiomics) together for predicting survival (left panel). The model with clinical variables age and KPS is shown in the right panel for clarity.
+
+
+
+Discussion
+Radiological visual assessment of the remaining tumor after surgery is the standard of care in oncology clinical practice, and should be performed with an MRI rapidly after the surgical procedure. The extent of resection is a well-known prognostic factor in glioblastomas4,5,8, though inter-reader reproducibility is limited and hinders comparisons between centers and studies.
+
+In this study, we identified a method to facilitate the quantification of the remaining tumor using a processing pipeline of multi-sequence MRI scans. By automatic registration and subtraction of T1w and T1wC images, it is possible to optimally isolate the enhancing areas from confounding post-operative changes. This method was also conceived by Ellingson et al.16, although they reported only the enhancement volume and did not analyze the influence of time to the EPMR, to measure post-surgery residual enhancing tumor. Moreover, we analyzed and internally validated a multivariate prognostic model including quantified residual tumor, perfusion, radiomics and clinical variables in an effort to improve the prognostic performance of residual tumor enhancement.
+
+In our population, the quantification of the residual enhancement thickness after surgery shows a continuous association with OS and PFS (HR of 1.98 and 2.01 respectively, for mean enhancement thickness) that outperforms the subjective assessment of a dichotomous thin-or-thick tumor remnant3. Our findings also showed that the enhancement thickness had a stronger association with survival compared to the enhancement volume, suggesting the value of further investigation of this metric.
+
+The combination of the enhancement thickness, perfusion, radiomics and clinical data into a predictive model showed slightly better performance (AUC 0.72) for distinguishing patients with short and long survival compared to thickness alone, compared to the univariate perfusion or the clinical models. When analyzed in separate groups, age and KPS yielded the lowest AUC (0.59), followed by rCBV and PSR (0.60), thickness (0.61) and radiomics (0.71). Therefore, in our population, radiomics variables performed better when applied in a dichotomous patient longer-or-shorter survival model, while the other variables added only marginal value. However, when correlating with specific patient survival, enhancement thickness alone demonstrated meaningful prognostic value, with higher mean thickness (as a continuous variable) associated with poorer survival (HR of 1.98 [95% CI 1.36–2.90, p < 0.001]). Both the enhancement thickness and the radiomics signature can be automatically calculated from the enhancement mask. Although further work is needed to facilitate the implementation of these assays in clinical practice, these results show the potential application of quantitative data from EPMR T1w and T1wC for supporting medical decisions.
+
+We also explored the impact of the time between surgery and the MRI scan for quantifying the residual tumor. According to the National Comprehensive Cancer Network guideline, the early post-surgery MRI scan should be performed within the first 72 h after surgery19. Other guidelines are more restrictive and suggest that the scan be performed within the first 24 to 48 h after surgery12,13,20. The rationale for earlier imaging is that after 72 h post-surgery, inflammatory reparative changes result in benign non-tumor contrast enhancement that could be misinterpreted as tumor remnant10. Correspondingly, in our study we found no significant association between the measured enhancement and OS in the group of patients with EPMR scans performed more than 72 h after surgery.
+
+Interestingly, we found no association between the enhancement thickness and survival when the MRI was acquired within the first 24 h after surgery. Although the sample size of this subpopulation was small (n = 26 patients), there was no visible trend towards the strong association found for the next time range. We hypothesize that immediately after surgery, intra-cavity transudation leads to non-tumor enhancement. Accordingly, Smets et al. showed that contrast transudation could appear in the very early postoperative MRI scans of glioblastomas6. Thereafter, the tissues may repair so that the enhancement corresponds to the real tumor remnants. Nevertheless, other possible explanations for this lack of association include the presence of surgical products that may affect MRIs performed soon after surgery.
+
+We further explored whether features describing tissue vasculature from the DSC would differentiate the enhancement corresponding to post-surgery residual tumor and inflammation. Interestingly, 99th percentile rCBV and maximum PSR are indicators of bad prognosis when the residual tumor was assessed in an EPMR performed more than 24 h post-surgery. Accordingly, associations between recurrent tumor and higher rCBV values have been previously reported21. However, this correlation is strongest between 24 to 48 h but was not present for scans acquired before 24 h or after 72 h.
+
+Taken together, these findings suggest that the enhancement thickness is representative of the remaining tumor when the MRI scan is acquired from 24 to 72 h after surgery, however there may be some confounders (i.e., non-tumor contrast enhancement) when the EPMR is acquired too early (during the first day after surgery) or too late (more than 4 days after surgery). Further studies are needed to better ascertain the importance of the number of days after surgery in measuring the remaining tumor tissue and elucidating the biological explanation behind such a phenomenon.
+
+The prognostic value of the extent of resection is widely accepted by the scientific community. Nevertheless, there is no consensus about the threshold of the extent of resection that can influence survival. Some authors have suggested an “all-or-nothing” approach8. In this setting, no debulking surgery should be pursued when the tumor involves critical brain areas. Other studies however, suggest that a smaller extent of tumor resection could also positively impact patient survival3–7. In agreement with this, we found a correlation between residual tumor extent and patient survival. This supports maximal safe tumor resection with the knowledge that it could improve patient survival even in cases of partial tumor resection.
+
+In our population, the radiomics analysis of the enhancement area including texture features, allows for identification of patients with long and short survival. As previously shown, radiomics features inform tumor heterogeneity and are indicators of tumor aggressiveness in glioblastoma22–24. We have explored several other variables to evaluate their clinical utility. While all quantitative imaging data (radiomics, thickness, DSC) provide relevant information that complements clinical data (age and KPS), we found the enhancing tumor thickness and radiomics to have high prognostic value and only T1w and T1wC are required to calculate them, thus simplifying the implementation.
+
+This study has a number of potential limitations. Firstly, as a retrospective study, isocitrate dehydrogenase (IDH) mutation status data were available for 54 patients, only one of whom (2%) had an IDH mutation. This low incidence rate may be explained by the relatively old age of our population, as IDH-mutant glioblastoma has been reported to correlate with younger age25. In addition, only glioblastomas treated with maximal safe resection were included in our study. Newly diagnosed IDH-mutant glioblastoma tend to present with a more diffuse infiltrative pattern than IDH-wildtype glioblastoma, likely leading to a biopsy instead of a maximal safe resection, and IDH-mutant glioblastomas progressing after a previous known IDH-mutant low-grade astrocytoma26 were also not included in our study. Therefore, there may be confounders in patients for whom IDH status is missing, although as the rate of IDH mutant in glioblastoma is 10% in the general population27 compared to approximately 2% in our population, we believe this did not significantly affect our results.
+
+Secondly, in this analysis we focus on the post-surgical residual enhancing tumor and certain drugs may be administered perioperatively that can affect the enhancement on post-surgery T1wC scans (i.e., glucocorticoids or antiangiogenic drugs such as bevacizumab). We confirmed that bevacizumab was not administered prior to EPMR in any patients. Glucocorticoids might have been administered in cases with extensive edema, which could have influenced the characteristics of post-contrast MRI. Nevertheless, glucocorticoids are avoided as much as possible in our hospital to prevent this drug from affecting the histological interpretation of biopsy samples.
+
+Thirdly, given the observational retrospective nature of this study, standardization of all the image acquisition parameters was not possible. Therefore, all images were homogenously normalized in intensity and resampled to minimize variability. Additionally, DSC scans without contrast preload and acquisition at 1.5 T may result in leakage effects, hence leakage correction methods were applied to avoid confounders. Additionally, the method used requires input (semi-automatic segmentation) from an experienced radiologist who supervises the enhancement mask. This might induce some segmentation variability. However, the thickness is calculated as the mean value of the distance transform, and thus it is possible that an average value smooths out small differences in segmentations, making it more robust. Lastly, we performed an internal validation, though applying the prognostic models to an external dataset would confirm its performance.
+
+It is noteworthy to mention that there may still be non-enhancing residual tumor, which is out of the scope of the current analysis. Therefore, as future work, combining other sequences such as T2w and FLAIR (Fluid-Attenuated Inversion Recovery) may be useful to delineate additional areas of residual tumor with a potential role in patient prognosis28,29, although at the expense of a more complex pipeline.
+
+Additionally, novel MRI techniques using chemical exchange saturation transfer (CEST) imaging have been reported to correlate with response to treatment and survival. With CEST MRI, pulses off the water resonance frequency are absorbed by proteins that then transfer the energy to water through chemical exchange, lowering the signal. Derived signal maps such as amide proton transfer (APT) and nuclear Overhauser effect (NOE) are both reported to correlate with survival in gliomas and glioblastomas30–32, even in a sub-cohort of IDH-wildtype patients. While the number of patients evaluated in these studies is small, they showed similar HRs as those reported in our study. This highlights the potential of CEST MRI and its radiomics analysis, and merits further research. In combination with the relevant variables proposed in this study, a thorough imaging signature could provide major insight into patient response.
+
+In conclusion, in patients with glioblastoma multiforme, objective quantification of the area of enhancement in the tumor bed after surgery, in an EPMR scan performed between 24 and 72 h after surgery provides relevant information on the remaining tumor and relevant prognostic information. The MRI processing pipeline defined in this study is an easy and rapid method for a more accurate evaluation of the post-surgery residual tumor, that could be implemented in routine clinical practice.
+
+Methods
+Ethical approval
+The Research Ethics Committee of the Hospital Universitari de Bellvitge revised and approved this study, in compliance with applicable regulatory requirements and the International Conference on Harmonization Guidelines on Good Clinical Practice (ICH GCP). For this retrospective study, informed consent was waived by the Research Ethics Committee of the Hospital Universitari de Bellvitge.
+
+Study population and design
+We evaluated data from 160 consecutive patients with primary glioblastoma multiforme who underwent maximum safe resection surgery between February 2009 and December 2017 at the Hospital Universitari de Bellvitge, Spain, and who had an early post-surgery MRI scan (i.e., within the first week after surgery). Data on isocitrate dehydrogenase (IDH) 1/2 mutation status were available in 54 out of 160 patients (33%)33. Only one patient (1/54, 2%) had an identified IDH mutation. To be eligible for the analysis, patients had to have been treated with adjuvant radiotherapy plus concomitant and post-radiotherapy temozolomide (i.e., Stupp protocol)2 (144/160, 90%).
+
+MRI scan protocol and image pre-processing
+The earliest post-surgery MRI scan per patient was collected, including T1-weighted before (T1w) and after intravenous contrast administration (T1wC), and dynamic susceptibility contrast (DSC) images. Approximately half of the MRI scans were acquired with a 1.5 T MR magnet Intera (Philips Healthcare, Best, The Netherlands) and half with a 1.5 T MR magnet Achieva (Philips Healthcare, Best, The Netherlands) with the following parameters for T1w: spin-echo; TE 15 ms; TR 540 ms; flip angle 90°; matrix size 256 × 256 mm2; slice thickness 5 mm.
+
+A single MRI scan was performed with a 3 T MR unit (Achieva; Philips Healthcare, Best, The Netherlands), gradient-echo; TE 4 ms; TR 9 ms; flip angle 8º; matrix size 672 × 672 mm2; slice thickness 1 mm.
+
+Regarding DSC, all acquisitions were gradient-echo without bolus preload; a total of 10 baseline points were collected before the pass of contrast with the following protocol: in the 1.5 T Intera MR unit (scans from 2009 to 2015) PRESTO sequence; TE 25 ms; TR 17 ms; flip angle 7°; matrix size 128 × 128 mm2; slice thickness 3.5 mm; dynamic acquisitions 40. In the 1.5 T Achieva MR unit (from 2015 to 2917) TE 40 ms; TR 1522–1642 ms; flip angle 75º; matrix size 128 × 128 mm2; slice thickness, 4–5 mm; dynamic acquisitions 60.
+
+A single MRI scan was performed with a 3 T MR unit (Achieva; Philips Healthcare, Best, The Netherlands), echo planar sequence; TE 40 ms; TR 1618 ms; flip angle 75º; matrix size 128 × 128 mm2; slice thickness 4 mm; dynamic acquisitions 40.
+
+The pre-processing of images for homogenization included N4 bias field correction34 and intensity normalization with Nyul’s method as adapted by Shah35,36.
+
+Enhancement mask definition and thickness quantification
+The T1w and T1wC images with different slice spacing (1/144 = 1% of the scans) were resampled to 5 mm for consistency and robustness. The T1w was registered to the T1wC with the rigid transformation tool of 3DSlicer v4.1037. The T1w signal intensity was normalized to that of the T1Cw28. A 3D enhancement map was obtained by T1w-T1wC subtraction. The area of enhancement within and around the tumor bed was delineated by an experienced radiologist (P.N.B), blinded to the clinical outcome, using the 3DSlicer semi-automatic delineation tools (thresholding and morphological operations).
+
+The 3D distance transform of the volume of interest (VOI) was then calculated. The distance transform provides the Euclidean distance in millimeters of every voxel within the VOI to its nearest VOI boundary38. We calculated the mean and the maximum values of the 3D distance transform as measures of the enhancement mask thickness for each patient (Fig. 3), as well as the total volume of the VOI.Figure 3 Pipeline of the applied methods. Registration is performed with the contrast-T1w scan as the reference image and the radiomics features are extracted from the contrast-T1w. The thickness is calculated from the 3D distance transform of the volume of interest, depicted as a colormap.
+
+
+
+Perfusion MRI sub-analysis
+The DSC temporal volumes were processed with the DSCMRIAnalysis module of 3DSlicer37,39, the curves were leakage-corrected with the Boxerman–Schmainda–Weiskoff method40 and the rCBV were obtained. The DSC volumes were then registered to the T1wC images for co-alignment with the enhancement masks. The temporal curves of the DSC were first analyzed to remove noisy and low-signal curves from the mask. For this purpose only, the curves were low-pass filtered, normalized between − 1 and 0, and then those that reflected the bolus arrival41,42 were selected by resemblance to a Gaussian distribution (Supplementary Fig. S6). Once the DSC curves had been filtered, the original non-normalized DSC values were analyzed.
+
+Relative cerebral blood volume
+An ROI within the white matter contralateral to the tumor was delineated in each MRI and the relative cerebral blood volume (rCBV) map was normalized to this ROI. To retrieve the tumor hot-spot, we calculated the 99th percentile of the rCBV (rCBV-99) and the maximum percentage of signal recovery (PSR) from the enhancement mask selected curves. The rCBV-99 and not the maximum was calculated to avoid extreme outlier values of the rCBV. The PSR was calculated as described by Cha et al.42.
+
+Radiomics feature extraction and robustness
+Radiomics extraction was performed with Pyradiomics v2.1.2 for Python43, with image resampling of 1 mm isotropic voxels and fixed binarization to 10 levels of bin-width, as has been suggested to maximize radiomics reproducibility44–46. Ninety-four radiomics features were extracted from the enhancement mask applied to the T1wC images, including first-order (n = 19) and second-order from texture Grey-Level Co-occurrence Matrix (n = 24), Grey-Level Run-Length Matrix (n = 16), Grey-Level Size-Zone Matrix (n = 16), Neighboring-Grey-Tone Difference Matrix (n = 5) and Grey-Level Dependence Matrix (n = 14) (Supplementary Table S6). Feature description and compliance with image biomarker standardization initiative guidelines is publicly available in the package documentation43. We also studied the variability of radiomics when changing the extraction parameters voxel size and bin width, and when the most robust features (i.e., < 20% coefficient of variation) were selected for further analysis (54 out of 94 [57%] radiomics features, see Supplementary Methods).
+
+Radiomics feature selection and analysis
+Patients with measurable enhancement segmentation (129/144, 90%) were eligible for this analysis. For clarification, these patients may present gross total resection, however benign reactive enhancement has been reported by some authors up to 72 h after surgery3,6,16,47. The patients were split into ‘training’ (70%) and ‘test’ (30%) sets for internal validation, with balanced survival distribution in both sets. Patient characteristics of the sets are presented in Supplementary Table S3. The radiomics features were normalized according to the mean value and standard deviation of the training set. From the 54 robust features of the previous section, further selection was performed in the training set by minimum-redundancy–maximum-relevance48,49 plus stepwise regression. The logistic regression model with the selected variables was then internally validated in the test set.
+
+Statistical analysis
+Log-rank analysis on Kaplan–Meier data and Cox proportional hazards regression models were used to evaluate the association of the analyzed variables with survival.
+
+For dichotomized survival analysis, the population was split according to lower or higher than 2-year overall survival (< 2 years, ≥ 2 years respectively, Supplementary Table S1). Censored patients with a survival shorter than the defined endpoint were excluded. These survival groups were defined for logistic regression models and to obtain the area under the curve (AUC) of the receiver operating characteristic (ROC) curve. A threshold for each independent variable was calculated from the regression models from the maximum sum of sensitivity and specificity (Youden’s index). The postoperative Karnofsky performance status (KPS) was dichotomized as < 90 and ≥ 90.
+
+To assess how the time from surgery to the EPMR scan affects the residual tumor quantification, sub-analyses of survival prediction were performed based on the time elapsed between surgery and the EPMR scan. The patients were split into four subpopulations according to the time between surgery and the MRI scan (< 24, 24 to < 48, 48 to < 72 and ≥ 72 h). Multiple comparison tests were adjusted with the Benjamini–Hochberg method, and p-values were considered statistically significant below 0.05.
+
+The thickness analysis was done in-house with Matlab R2015a (Mathworks). Radiomics selection and statistical analysis were performed with R Statistical Software v3.5.150.
+
+Supplementary Information
+
+Supplementary Information
+
+ 
+
+Abbreviations
+AUCArea under the curve
+
+CIConfidence interval
+
+DSCDynamic susceptibility contrast
+
+EPMREarly post-operative magnetic resonance
+
+HRHazard ratio
+
+IDHIsocitrate dehydrogenase
+
+KPSKarnofsky performance status
+
+LRLikelihood ratio
+
+PSRPercentage of signal recovery
+
+rCBVRelative cerebral blood volume
+
+ROIRegion of interest
+
+OSOverall survival
+
+VOIVolume of interest
+
+WWeighted
+
+Publisher's note
+
+Springer Nature remains neutral with regard to jurisdictional claims in published maps and institutional affiliations.
+
+These authors contributed equally: Alonso Garcia-Ruiz and Pablo Naval-Baudin.
+
+These authors jointly supervised this work: Carles Majós and Raquel Perez-Lopez.
+
+Supplementary Information
+The online version contains supplementary material available at 10.1038/s41598-020-79829-3.
+
+Acknowledgements
+This work was supported by the Fundacio La Caixa. R.P.L is supported by a Prostate Cancer Foundation Young Investigator Award, CRIS Foundation Talent Award (TALENT-05), Fero Foundation, and the Spanish Ministry of Health FIS Program (Instituto de Salud Carlos III-Investigación en Salud PI18/01395). Mr Guillermo Villacampa Javierre kindly provided statistical advice for this manuscript.
+
+Author contributions
+All of the authors substantially contributed to the presented work in many aspects. Furthermore, we consider A.G.R. and P.N.B. to be joint first authors for their equal efforts in this study, as well as R.P.L. and C.M. to be joint senior authors for their decisive contributions to all aspects of this study. Other contributions made by non-authors were properly acknowledged within the manuscript with their consent. As a summary of author participations: C.M., R.P.L., A.G.R, P.N., A.P. and N.C. together conceived the study design and development. C.M., J.B., G.P. and M.C. were in charge of the medical data acquisition. P.N., C.M. and N.C. were responsible of defining the criteria for data collection into a structured database. P.N., C.M., R.P.L. and A.G.R. worked in the segmentation of the images. A.G.R. and M.L. carried out the processing of data and performed the analyses, with the help of C.M., P.N. and A.P. in the interpretation and validation of results. A.G.R, R.P.L, C.M. and P.N. worked in the manuscript drafting. R.P.L. and C.M. critically revised the written works. Lastly, all authors reviewed and approved the manuscript for its publication. Each and every one of the authors certifies the integrity of the presented work.
+
+Competing interests
+The authors declare no competing interests.
+==== Refs
+References
+1. Ostrom QT    CBTRUS statistical report: Primary brain and other central nervous system tumors diagnosed in the United States in 2011–2015 Neuro Oncol. 2018 20 1 86 10.1093/neuonc/noy131 29329454 
+2. Stupp R    Radiotherapy plus concomitant and adjuvant temozolomide for glioblastoma N. Engl. J. Med. 2005 352 987 996 10.1056/NEJMoa043330 15758009 
+3. Majos C    Early post-operative magnetic resonance imaging in glioblastoma: Correlation among radiological findings and overall survival in 60 patients Eur. Radiol. 2016 26 1048 1055 10.1007/s00330-015-3914-x 26188660 
+4. Kuhnt D    Correlation of the extent of tumor volume resection and patient survival in surgery of glioblastoma multiforme with high-field intraoperative MRI guidance Neuro Oncol. 2011 13 1339 1348 10.1093/neuonc/nor133 21914639 
+5. Bloch O    Impact of extent of resection for recurrent glioblastoma on overall survival: Clinical article J. Neurosurg. 2012 117 1032 1038 10.3171/2012.9.JNS12504 23039151 
+6. Smets T  Lawson TM  Grandin C  Jankovski A  Raftopoulos C   Immediate post-operative MRI suggestive of the site and timing of glioblastoma recurrence after gross total resection: A retrospective longitudinal preliminary study Eur. Radiol. 2013 23 1467 1477 10.1007/s00330-012-2762-1 23314599 
+7. Krivoshapkin AL    Automated volumetric analysis of postoperative magnetic resonance imaging predicts survival in patients with glioblastoma World Neurosurg. 2019 10.1016/j.wneu.2019.03.142 31536810 
+8. Lacroix M    A multivariate analysis of 416 patients with glioblastoma multiforme: Prognosis, extent of resection, and survival J. Neurosurg. 2001 95 190 198 10.3171/jns.2001.95.2.0190 11780887 
+9. Ellingson BM    Validation of postoperative residual contrast-enhancing tumor volume as an independent prognostic factor for overall survival in newly diagnosed glioblastoma Neuro Oncol. 2018 20 1240 1250 10.1093/neuonc/noy053 29660006 
+10. Albert FK  Forsting M  Sartor K  Adams HP  Kunze S   Early postoperative magnetic resonance imaging after resection of malignant glioma: Objective evaluation of residual tumor and its influence on regrowth and prognosis Neurosurgery 1994 34 45 60 8121569 
+11. Stupp R    High-grade glioma: ESMO clinical practice guidelines for diagnosis, treatment and follow-up Ann. Oncol 2014 25 Suppl 3 93 101 10.1093/annonc/mdu050 
+12. Wen PY    Updated response assessment criteria for high-grade gliomas: Response assessment in neuro-oncology working group J. Clin. Oncol. 2010 28 1963 1972 10.1200/JCO.2009.26.3541 20231676 
+13. Martinez-Garcia M    SEOM clinical guidelines for diagnosis and treatment of glioblastoma (2017) Clin. Transl. Oncol. 2018 20 22 28 10.1007/s12094-017-1763-6 29086250 
+14. Allahdini F  Amirjamshidi A  Reza-Zarei M  Abdollahi M   Evaluating the prognostic factors effective on the outcome of patients with glioblastoma multiformis: Does maximal resection of the tumor lengthen the median survival? World Neurosurg. 2010 73 128 134 10.1016/j.wneu.2009.06.001 20860940 
+15. Sanai N  Polley MY  McDermott MW  Parsa AT  Berger MS   An extent of resection threshold for newly diagnosed glioblastomas J. Neurosurg. 2011 115 3 8 10.3171/2011.2.JNS10998 21417701 
+16. Ellingson BM    Validation of postoperative residual contrast-enhancing tumor volume as an independent prognostic factor for overall survival in newly diagnosed glioblastoma Neuro-Oncology 2018 20 1240 1250 10.1093/neuonc/noy053 29660006 
+17. Aerts HJ    Decoding tumour phenotype by noninvasive imaging using a quantitative radiomics approach Nat. Commun. 2014 5 4006 10.1038/ncomms5006 24892406 
+18. Lambin P    Radiomics: The bridge between medical imaging and personalized medicine Nat. Rev. Clin. Oncol. 2017 14 749 762 10.1038/nrclinonc.2017.141 28975929 
+19. National Comprehensive Cancer Network. Central Nervous System Cancers (Version 1.2019). NCCN Clin Pract Guidel Oncol 2019. https://www.nccn.org/professionals/physician_gls/ (accessed April 22, 2019).
+20. Stupp R    High-grade glioma: ESMO clinical practice guidelines for diagnosis, treatment and follow-up Ann. Oncol. 2014 25 Suppl 3 93 101 10.1093/annonc/mdu050 
+21. Bisdas S    Cerebral blood volume measurements by perfusion-weighted MR imaging in gliomas: Ready for prime time in predicting short-term outcome and recurrent disease? AJNR Am. J. Neuroradiol. 2009 30 681 688 10.3174/ajnr.A1465 19179427 
+22. Li Q    A fully-automatic multiparametric radiomics model: towards reproducible and prognostic imaging signature for prediction of overall survival in glioblastoma multiforme Sci. Rep. 2017 7 14331 10.1038/s41598-017-14753-7 29085044 
+23. Su C    Radiomics based on multicontrast MRI can precisely differentiate among glioma subtypes and predict tumour-proliferative behaviour Eur. Radiol. 2019 29 1986 1996 10.1007/s00330-018-5704-8 30315419 
+24. Ditmer A    Diagnostic accuracy of MRI texture analysis for grading gliomas J. Neurooncol. 2018 140 583 589 10.1007/s11060-018-2984-4 30145731 
+25. Robinson C  Kleinschmidt-DeMasters BK   IDH1-mutation in diffuse gliomas in persons age 55 years and over J. Neuropathol. Exp. Neurol. 2017 76 151 154 10.1093/jnen/nlw112 28110298 
+26. Ohgaki H  Kleihues P   The definition of primary and secondary glioblastoma Clin. Cancer Res. 2013 19 764 772 10.1158/1078-0432.CCR-12-3002 23209033 
+27. Louis DN    The 2016 world health organization classification of tumors of the central nervous system: A summary Acta Neuropathol. 2016 131 803 820 10.1007/s00401-016-1545-1 27157931 
+28. Rathore S    Radiomic MRI signature reveals three distinct subtypes of glioblastoma with different clinical and molecular characteristics, offering prognostic value beyond IDH1 Sci. Rep. 2018 8 5087 10.1038/s41598-018-22739-2 29572492 
+29. Porz N    Multi-modal glioblastoma segmentation: Man versus machine PLoS ONE 2014 9 e96873 10.1371/journal.pone.0096873 24804720 
+30. Meissner JE    Early response assessment of glioma patients to definitive chemoradiotherapy using chemical exchange saturation transfer imaging at 7 T J. Magn. Reson. Imaging 2019 50 1268 1277 10.1002/jmri.26702 30864193 
+31. Paech D    Relaxation-compensated amide proton transfer (APT) MRI signal intensity is associated with survival and progression in high-grade glioma patients Eur. Radiol. 2019 29 4957 4967 10.1007/s00330-019-06066-2 30809720 
+32. Mehrabian H  Myrehaug S  Soliman H  Sahgal A  Stanisz GJ   Evaluation of glioblastoma response to therapy with chemical exchange saturation transfer Int. J. Radiat. Oncol. Biol. Phys. 2018 101 713 723 10.1016/j.ijrobp.2018.03.057 29893279 
+33. Yan H    IDH1 and IDH2 mutations in gliomas N. Engl. J. Med. 2009 360 765 773 10.1056/NEJMoa0808710 19228619 
+34. Tustison NJ    N4ITK: improved N3 bias correction IEEE Trans. Med. Imaging 2010 29 1310 1320 10.1109/TMI.2010.2046908 20378467 
+35. Nyul LG  Udupa JK   On standardizing the MR image intensity scale Magn. Reson. Med. 1999 42 1072 1081 10.1002/(sici)1522-2594(199912)42:6<1072::Aid-mrm11>3.0.Co;2-m 10571928 
+36. Shah M    Evaluating intensity normalization on MRIs of human brain with multiple sclerosis Med. Image Anal. 2011 15 267 282 10.1016/j.media.2010.12.003 21233004 
+37. Fedorov A    3D slicer as an image computing platform for the quantitative imaging network Magn. Reson. Imaging 2012 30 1323 1341 10.1016/j.mri.2012.05.001 22770690 
+38. Grevera, G.J. in Deformable Models Ch. Chapter 2, 33–60 (2007).
+39. Schmainda KM    Multisite concordance of DSC-MRI analysis for brain tumors: Results of a national cancer institute quantitative imaging network collaborative project AJNR Am. J. Neuroradiol. 2018 39 1008 1016 10.3174/ajnr.A5675 29794239 
+40. Boxerman JL  Schmainda KM  Weisskoff RM   Relative cerebral blood volume maps corrected for contrast agent extravasation significantly correlate with glioma tumor grade, whereas uncorrected maps do not Am. J. Neuroradiol. 2006 27 859 867 16611779 
+41. Lupo JM  Cha S  Chang SM  Nelson SJ   Dynamic susceptibility-weighted perfusion imaging of high-grade gliomas: Characterization of spatial heterogeneity AJNR Am. J. Neuroradiol. 2005 26 1446 1454 15956514 
+42. Cha S    Differentiation of glioblastoma multiforme and single brain metastasis by peak height and percentage of signal intensity recovery derived from dynamic susceptibility-weighted contrast-enhanced perfusion MR imaging AJNR Am. J. Neuroradiol. 2007 28 1078 1084 10.3174/ajnr.A0484 17569962 
+43. van Griethuysen JJM    Computational radiomics system to decode the radiographic phenotype Cancer Res. 2017 77 e104 e107 10.1158/0008-5472.CAN-17-0339 29092951 
+44. Molina D    Lack of robustness of textural measures obtained from 3D brain tumor MRIs impose a need for standardization PLoS ONE 2017 12 e0178843 10.1371/journal.pone.0178843 28586353 
+45. Goya-Outi J    Computation of reliable textural indices from multimodal brain MRI: Suggestions based on a study of patients with diffuse intrinsic pontine glioma Phys. Med. Biol. 2018 63 105003 10.1088/1361-6560/aabd21 29633962 
+46. Duron L    Gray-level discretization impacts reproducible MRI radiomics texture features PLoS ONE 2019 14 e0213459 10.1371/journal.pone.0213459 30845221 
+47. Bette S    Patterns and time dependence of unspecific enhancement in postoperative magnetic resonance imaging after glioblastoma resection World Neurosurg. 2016 90 440 447 10.1016/j.wneu.2016.03.031 27001238 
+48. De Jay N    mRMRe: An R package for parallelized mRMR ensemble feature selection Bioinformatics 2013 29 2365 2368 10.1093/bioinformatics/btt383 23825369 
+49. Parmar C    Radiomic machine-learning classifiers for prognostic biomarkers of head and neck cancer Front. Oncol. 2015 5 272 10.3389/fonc.2015.00272 26697407 
+50. Core Team R  R: A Language and Environment for Statistical Computing 2013 Vienna R Foundation for statistical computing
+

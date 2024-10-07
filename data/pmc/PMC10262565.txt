@@ -1,0 +1,333 @@
+
+==== Front
+J Transl Med
+J Transl Med
+Journal of Translational Medicine
+1479-5876
+BioMed Central London
+
+37308956
+4222
+10.1186/s12967-023-04222-3
+Review
+Assessment of brain cancer atlas maps with multimodal imaging features
+http://orcid.org/0000-0001-9360-4767
+Capobianco Enrico enrico.capobianco@gmail.com
+
+1
+Dominietto Marco 23
+1 grid.249880.f 0000 0004 0374 0039 The Jackson Laboratory, 10 Discovery Drive, Farmington, CT 06032 USA
+2 grid.5991.4 0000 0001 1090 7501 Paul Scherrer Institute (PSI), Forschungsstrasse 111, 5232 Villigen, Switzerland
+3 Gate To Brain SA, Via Livio 7, 6830 Chiasso, Switzerland
+12 6 2023
+12 6 2023
+2023
+21 38518 4 2023
+22 5 2023
+© The Author(s) 2023
+https://creativecommons.org/licenses/by/4.0/ Open Access This article is licensed under a Creative Commons Attribution 4.0 International License, which permits use, sharing, adaptation, distribution and reproduction in any medium or format, as long as you give appropriate credit to the original author(s) and the source, provide a link to the Creative Commons licence, and indicate if changes were made. The images or other third party material in this article are included in the article's Creative Commons licence, unless indicated otherwise in a credit line to the material. If material is not included in the article's Creative Commons licence and your intended use is not permitted by statutory regulation or exceeds the permitted use, you will need to obtain permission directly from the copyright holder. To view a copy of this licence, visit http://creativecommons.org/licenses/by/4.0/. The Creative Commons Public Domain Dedication waiver (http://creativecommons.org/publicdomain/zero/1.0/) applies to the data made available in this article, unless otherwise stated in a credit line to the data.
+Background
+
+Glioblastoma Multiforme (GBM) is a fast-growing and highly aggressive brain tumor that invades the nearby brain tissue and presents secondary nodular lesions across the whole brain but generally does not spread to distant organs. Without treatment, GBM can result in death in about 6 months. The challenges are known to depend on multiple factors: brain localization, resistance to conventional therapy, disrupted tumor blood supply inhibiting effective drug delivery, complications from peritumoral edema, intracranial hypertension, seizures, and neurotoxicity.
+
+Main text
+
+Imaging techniques are routinely used to obtain accurate detections of lesions that localize brain tumors. Especially magnetic resonance imaging (MRI) delivers multimodal images both before and after the administration of contrast, which results in displaying enhancement and describing physiological features as hemodynamic processes. This review considers one possible extension of the use of radiomics in GBM studies, one that recalibrates the analysis of targeted segmentations to the whole organ scale. After identifying critical areas of research, the focus is on illustrating the potential utility of an integrated approach with multimodal imaging, radiomic data processing and brain atlases as the main components. The templates associated with the outcome of straightforward analyses represent promising inference tools able to spatio-temporally inform on the GBM evolution while being generalizable also to other cancers.
+
+Conclusions
+
+The focus on novel inference strategies applicable to complex cancer systems and based on building radiomic models from multimodal imaging data can be well supported by machine learning and other computational tools potentially able to translate suitably processed information into more accurate patient stratifications and evaluations of treatment efficacy.
+
+Graphical Abstract
+
+Supplementary Information
+
+The online version contains supplementary material available at 10.1186/s12967-023-04222-3.
+
+Keywords
+
+GBM
+MRI imaging
+Brain cancer atlas
+Radiomics
+Multimodal integration
+NSF-NIHNSF 19-500, DMS 1918925/1922843 Capobianco Enrico JAXCCNCI CCSG (P30CA034196) Capobianco Enrico issue-copyright-statement© BioMed Central Ltd., part of Springer Nature 2023
+==== Body
+pmcIntroduction
+
+Glioblastoma multiforme (GBM)
+
+GBM is the most common type of malignant primary brain tumor but is still not well understood. It presents a poor prognosis with a median survival of about 15 months for patients who receive standard therapy (Stupp protocol, based on surgical resection and radiotherapy combined with concomitant chemotherapy). Population-RWD (real-world data) based meta-analyses suggest that 2-, 3- and 5-year survival in GBM patients only partially improved since 2005 [1]. Recent advances in understanding the molecular biology of GBM leveraged studies on genetic alterations and genomic profiles [2–4], including subclone diversity, via single cell DNA sequencing, and transcriptome profile diversity, via single cell RNA-sequencing [5, 6].
+
+In common with other cancers, the tumor microenvironment (TME) plays a complex role in GBM too. Generally responsible for growth and invasion, TME is highly variable at the intra-tumor spatial level, and both cellular and molecular interactions have not yet led to causal explanations [7, 8]. However, the increased imaging centrality driving radiomic studies, especially magnetic resonance imaging (MRI) in GBM, has drawn novel interest in computational modeling to improve diagnosis, prognostication and clinical decision support [9–11].
+
+Radiomics
+
+Radiomics is a multidisciplinary field that engages scientists in processing various interconnected tasks such as tumor segmentation, image preprocessing, feature extraction, model development, testing and validation. Usually, segmentation is performed on annotated images by targeting whole tumors, subregions or peritumoral areas (all defined through regions of interest or ROI) to extract features describing distributions of signal intensities and spatial relationships. Selected features are those bringing differentially informative content regarding texture, shape, statistical descriptions, intensity-based measures etc. The major interest is in texture, as it reveals patterns characterized by brightness, color, slope, size. The analysis of features aims to quantify variations in intensity values and gray levels. Other relevant tumor information comes from shape characteristics whose analysis elucidates geometric aspects through shape descriptors.
+
+There are a few factors in the radiomics workflow that influence these features and their significance. First, features may undergo manual, semi-automatic or automatic treatment. For instance, automatic learning typically involves Machine Learning (ML) and Deep Learning (DL) algorithms that tend to outperform more classical statistical techniques with complex and big datasets [12–14]. The search for feature saliency may require a reduction of dimensionality to embed only the most informative characteristics then used to train models and determine the best possible accuracy. Alternatively, analyses supported by hand-crafted features may also be highly valuable due to superior interpretability [15, 16], even when combined with ML-derived ones [17–19]. This choice might be instrumental to clinical translational, given multiple criteria to be applied [20, 21].
+
+Due to the substantial image data space that has become available through data repositories for research, examples being The Cancer Imaging Archive, TCIA (https://www.cancerimagingarchive.net/) [22] or the newborn EuCanImage (https://molgenis.eibir-edc.org/), there is a massive call for analysis based on computational and predictive modeling and developments of novel integrative multi-omics inference tools. The applications range from tumor segmentation and anatomical lesion detection [23] to computer-aided diagnosis and prognosis [24, 25], just to mention a few. Some criticism persists relatively to a certain lack of interpretability [26], nonetheless inspiring the emerging explainable artificial intelligence (XAI) [27–30] research. In general, despite the necessity to measure any radiomic tool in terms of clinical value, our understanding of intra-tumor heterogeneity in GBM has received a strong impulse from radiomics with reference to a few specific domains. No doubt that a better characterization of intra-tumor heterogeneity will determine any future progress in terms of outcome prediction and personalized treatment.
+
+Focus areas
+
+TME, habitats and saliency
+
+As tumor regions are biologically different, the most specific use of radiomic features is one that leverages these quantitative measures to support genetic or epigenetic evidence as well as phenotypes (aggressiveness degree, resistance mechanisms, etc.) elucidating differentiated patterns of metabolism, hypoxia, proliferation, neovascularization. Radiomics that informs on tumor surrounding tissues, including the TME, provides additional prognostication power (for instance, in high-grade glioma [31, 32] this affects the possibility to predict tumor’s aggressiveness) and ability to monitor patient’s response to therapy via follow-up imaging and detect new or modified areas of enhancement, e.g., assessment of risk of tumor progression (TP) versus treatment-related changes or pseudo-progression (PsP) [33, 34].
+
+One aspect of heterogeneity in tumors consists of differentiated TMEs, something which has motivated the recent investigation of the so-called habitats [35–40]. Imaging habitats can quantify the grey-level heterogeneity appearing from scans, which helps detect variations in tumor blood supply. Generally obtained by supervised segmentation of the tumor into sub-regions that map its complex organizational structure, the complexity of habitats naturally translates into a very rich data milieu needing ad hoc computational treatment, even beyond the association of habitats with somehow defined clusters [41]. Clustering methods can identify tumor sub-regions contributing with varying prognostic performances. However, the identified clusters or sub-regions are usually the result of the application of globally defined thresholds that often have minimal biological value. Also, biology may not be able to guide selectively the cluster being formed or a reasonable weighting based on the retrieved radiomics features. Finally, clustering often employs simple structures determined with some degree of arbitrariness (say, the choice of the number of clusters) or may assume data hierarchies that are algorithmically valid but have limited contextual relevance (say, random forest, trees etc.).
+
+All the above aspects influence the definition of saliency, for instance relatively to the hypotheses about the importance to assign to tumor regions based on their phenotypic contributions. In principle, a clinically useful saliency map would be predictive for the risk of relapse given the improved model performance expected when selected (salient) features are chosen. However, each specific context must be carefully analyzed, and for instance GBM has a highly complex background with lots of redundant information due to its the multiscale nature. This somehow contrasts with the idea of targeting specific ROI embedding the saliency of contextual characteristics, and is something not linearly solvable (i.e., by fixing thresholds to establish saliency that identify significant foci or connecting to them surrounding regions through some functions or distances).
+
+Multimodal data integration
+
+To address saliency, it is important to consider the fact that imaging informs at the spatial level by identifying sub-regions that may vary across multi-modal sequences (e.g., T1, T1-post contrast, T2 and FLAIR sequences etc.). Interestingly, multi-modality extends beyond the imaging combinations to include the associations with phenotypes, i.e., gene expressions and correlation with molecular subtypes [42], or outcome via survival. These developments have inspired the field of radiogenomics revealing associations between imaging phenotypes (tumor location, neo-angiogenesis, tumor enhancement etc.) and molecular marks, ultimately leading to refined patient stratifications [43–45]. Also, the differentiation of tumor molecular profiles based on imaging traits implies that identified MRI phenotypes may be used to probe the underlying genotypes [46–48]. MRI-driven radiomics has probed substantial relationships also between genomic GBM profiles and imaging traits [49, 50].
+
+Leveraging imaging multi-modality implies taking decisions on what modes to combine and why, based on the general expectation of building more effective radiomic models compared to those dependent on any single modality only. Decisions face a spectrum of possible combinations of different MRI sequences [51], with relevance assigned to their clinical impact [52]. At data and computational levels, the fusion of multiple modalities may also vary, for instance depending on the stage. At early stages, i.e., before feature classification, when combined with clinical information (risk factors etc.). Inherent technological aspects may also prevail, for instance with CT presenting insufficient soft-tissue contrast. More in general, one problem is the presence of imbalanced classes in the data sets, something affecting the classifier learning ability, likely inducing bias towards the majority class, incorrect predictions and less robust models.
+
+Potential gains from modality fusion in terms of model performance can be tested both during the modeling stage, when fusions may depend on active or incremental learning, and during later stages (decision level) too. [53–56]. Data heterogeneity is another aspect, as the fusion of mixed data types should achieve superior predictive accuracy. In both such regards, model performance improvements and data diversity, the role of ML toward handling large amounts of radiomic features characterizing tumor phenotypes integrated with other data types has primarily focused on building accurate and replicable models for tumor classification and outcome prediction. As an example, multimodal MRI radiomics can effectively differentiate GBM from lower grade gliomas and characterize the IDH and 1p/19q status using a ML approach useful to clinical practice [57]. In general, treating multimodality presents several complexities. One is inherent to the definition of multimodality (restricted to imaging or inclusive of other data types) [58]. Another is more contextual and may refer for instance to type of treatment and disease evolution [59]. Then, while more robust estimations can be reasonably expected with multimodal methods, scalability can be an issue, although deep neural networks show high accuracy with hyper-scale data sets (about 5 ml images) [60].
+
+Finally, another interesting domain linked to both habitats and data integration/multimodality is imaging synthesis [61–65], where an increased number of image features retrieved from multiple regions and different sources may require relatively large cohort sizes. This may offset the limited biological meaning found in habitats by leveraging large-scale validations involving tissue phenotypes and histology. Note that spatial co-registration of images and histology can be instrumental to the use of MRI habitats for delineation of hypoxia, necrosis etc. [66]. Especially with reference to necrosis, significant contributions have come from multiple studies [67–72], indicating the informativeness and classification impact of both handcrafted and deep features extracted from multimodal MRI images. Of note that radiomic texture features informative about both the lesion and the peri-lesion environment (defined as “lesion habitat”) can distinguish radiation necrosis and tumor recurrence [73].
+
+Pillars
+
+Brain atlases as integrative tools
+
+Brain function is related to brain organization, which in turn refers to spatial heterogeneity. Brain Atlases usually operationalize these concepts through the parcellation or partitioning of the brain in multiple closely interacting regions [74]. Many atlases exist that collect brain data (tumor and non) and describe high-resolution location-specific maps centered on imaging data, becoming tools that support quantitative analyses. For instance, fMRI or functional MRI-driven brain studies help define probabilistic maps based on functional and structural data [75]. In general, non-random localizations of lesions are identified through specific patterns and marks in capture points or ROI [76]. Then, brain’s information is processed from characteristics at both structural and functional levels [77]. A common goal is to infer causal influences from experimental measures and exploit the interconnectivity between multiple data to provide mechanistic insights on the nature of their relationships. While fMRI estimates functional connectivity (brain activity), the discovery of brain disease signatures emerging from different brain network patterns can also result from integrating other MRI types, e.g., diffusion (dMRI) and structural (sMRI) to study anatomical and pathological connectivity from shape, size, and integrity of brain structures.
+
+Atlases can be useful reference tools and represent templates for brain segmentation tasks. Among the many available resources and tools, The neuromaps software toolbox [78] (https://github.com/netneurolab/neuromaps) offers structural and functional annotations of the human brain through a variety of reference maps and biological ontologies. Then Neuroparc [79] (https://github.com/neurodata/neuroparc), conceived to standardize existing atlas repositories (46 different adult human brain parcellations of various type, surface-based, volume-based etc.). Global integrative analyses may require other types of tools such as BCGene [80] (http://soft.bioinfo-minzhao.org/bcgene/), which explores genetic mechanisms from about 1400 literature-curated human genes in 40 brain cancer subtypes and about 3000 patients. Specific to GBM, a well-known resource is the Ivy Glioblastoma Atlas Project (Ivy GAP) [81, 82] (http://glioblastoma.alleninstitute.org/), a comprehensive resource on GBM anatomy and genetics characterizing the cellular and molecular structures.
+
+Connectome for functional studies
+
+Connectome research [83, 84] is an area potentially receiving a strong impulse from brain atlases. A reference study [85] in brain tumor connectome analyzed neuroimaging data from 335 adult patients with high- and low-grade glioma and combined them into a replicable tumor frequency map correlated with multiple graph-theoretical metrics establishing high functional connectedness. The application of a regression model with connectome, cellular, and genetic variables has explained 58% of the variance in glioma frequency, showing the independently exerted influences over the anatomic localization of oncogenesis. Another study [86] has leveraged the mapping of independent sources of glioma localization determining their relationships with neurogenic niches, genetic markers, and large-scale connectivity networks. Then, by applying independent component analysis (ICA) to lesion data from 242 adult patients with high-/low-grade glioma, three lesion covariance networks were identified to represent clusters of frequent glioma localization. These networks were associated with clinical variables and genomic information, and structural/functional connectivity was derived from neuroimaging data to uncover brain networks prone to tumor development.
+
+Neuroplasticity
+
+Research on GBM radiomics requires precise definition of structural and functional features to infer factors explaining pathogenetic mechanisms together with disease progression or evolution [87]. By combining such features, MRI technologies can explore the neuroplasticity of structural, topological, biochemical metabolism, and related mechanisms [88]. MRI is typically used to provide detailed anatomical and pathological information in addition to physiological detail. Neuroplasticity caused by highly heterogeneous brain tumors could benefit from multimodal MRI offering individualized prediction of functional prognosis of patients based on ML algorithms [89]. Through the (semi-) automatic identifications of image features, ML brings accuracy in the classification and facilitates the integration with molecular profiles, histological tumor grade, and prognostic factors by using images acquired both at diagnosis and treatment, including follow up to enable differentiation between response and post-treatment-related effects.
+
+Brain atlas and radiomics integration
+
+To demonstrate the potential use of brain atlases in combination with radiomics, we chose the atlases and databases publicly available from UNC-Chapel Hill (as part of NITRC, ‘NeuroImaging Tools & Resources Collaboratory’, https://www.nitrc.org/projects/unc_brain_atlas), and chose ‘UNC_Adult_Brain_Atlas_1’, i.e., the atlas of normal adult human brain anatomy generated from 50 + healthy adult cases (20–59 years old). The atlas comes with T1-weighted images (with and without skull), tissue segmentation probability maps (white matter, gray matter, CSF, rest) and a 27-lobe parcellation map.
+
+The radiomic data were obtained from the multimodal MRI of GBM samples and TCIA radiological data (clinical images) matched to TCGA subjects, considering only a couple of patients (for demonstrative scopes). We subjected the samples to standard open source tools, i.e., 3D Slicer (https://www.slicer.org/) and pyradiomics [90], https://www.radiomics.io/pyradiomics.html. The details of the data sets from The Cancer Genome Atlas Glioblastoma Multiforme Collection (TCGA-GBM) are available at https://wiki.cancerimagingarchive.net/display/Public/TCGA-GBM, and they aim to connect radiological phenotypes to tissue genotypes and patient outcomes. Note that the collected data focus on routine care rather than controlled studies or clinical trials, tissues from multiple sites and heterogeneous images due to different scanner modalities and acquisition protocols.
+
+The visualizations of Fig. 1 display examples of parcellation of the normal brain regions. By co-registering the frame that the atlas parcellation provides and the GBM images across the MRI modalities, we obtained spatially matched and integrated brain maps covering both normal and tumor brain regions. Single and combined MRI characteristics were then mapped (Figs. 2 and 3, respectively) also considering the two brain hemispheres (with and without GBM) for measuring differential effects.
+
+The visual associations between brain regions with or without GBM signatures retrieved from MRI radiomic features is well represented by biclusters. We looked for differential effects captured by the different MRI modalities (modality-1 = ‘FLAIR’; modality-2 = ‘T1w’; modality-3 = ‘T1w postCA’; modality-4 = ‘T2w’). In principle biclustering can identify associations between atlas-defined brain regions and radiomic features, offering a few advantages: (a) Facilitating the investigation of complex disease aspects (pseudo-progression and other treatment-related effects); (b) Bringing translational power for patient stratification and evaluation of treatment efficacy when combined with clinical information; (c) Help select predictive MRI readouts-based models from ML approaches and libraries and use the fusion of information from multimodal features to improve the model performance in terms of prediction accuracy.
+
+Fig. 1 Parcellation map obtained from the NITRC Brain Atlas (https://www.nitrc.org/)
+
+Some limitations may apply. Radiomics performs well by training over large data sets with accurate labels (from expert annotations) to facilitate the process of reproducing results of predictive models, generalizing across multiple training data sets, validating over independent patient cohorts and ultimately translating into the clinics. Nevertheless, radiomic methods that integrate multimodal images can establish robust signatures of functional regions (such as tumor habitats) and associate them to outcomes.
+
+Fig. 2 MRI modalities (top) and Biclustering maps. For one GBM patient, four MRI modalities support biclustering maps displayed with all features (centre) or selected ones (bottom). The applied spectral biclustering algorithm https://scikit-learn.org/stable/modules/biclustering.html [91] assumes a hidden checkerboard structure for the input matrix and thus partitions its rows and columns according to a blockwise-constant checkerboard matrix. The most significant Gauss filtered biclusters appear at the bottom-right corner
+
+By looking at Table 1 and considering that these annotations refer to the top-scored biclusters in Fig. 2 (bottom-right corner), the imaging results in patient A show three recurrent brain regions (l = left, r = right), i.e., l_parietal, r_frontal and r_parietal_cingulate across three modalities, i.e., FLAIR, T1w, T2w. Then 2 regions, l_CSF and r_prefrontal informed by T1w and T2w. In patient B, r_parietal_cingulate recurs across FLAIR and T1w, and r_corpus_callosum, l_cerebellum, r_subcortical, l_temporal recur across T1w postCA and T2w. At the opposite, r_cerebellum and l_subcortical appear only in patient B, while r_frontal only in patient A. Interestingly, very different radiomic feature combinations appear in correspondence with the modalities for the two patients (see the Additional file 2 ‘SM_Allregions’ with all the atlas brain regions).
+
+The FLAIR modality indicates the relevance of texture aspects more in Patient A than B, although with a limited overlap of brain regions involved. T1w informs on new brain regions from both patients and includes similar features with respect to local homogeneity properties of the images. T1w postCA involves a mix of brain regions in part overlapping between the two patients but associated to different features referred to shape descriptors (from ROI in both 2D and 3D) and texture heterogeneity (via glcm or gray level co-occurrence matrix, i.e., second-order joint probability function of image regions). Finally, T2w informs in Patient A on three brain regions seen with T1w but associated to totally different features, relatively to texture. In Patient B some similarities emerge from brain region overlaps with Patient A and previously informed by T1w postCA modality through texture-related features, but here additionally related to shape features (see Additional file: 1 ‘SM_ALLfeatures’ with all the listed features, and for the source details https://pyradiomics.readthedocs.io/en/latest/features.html).
+
+Table 1 Biclusters from 2 patients across all MRI modalities combine brain regions and radiomic features. Note that for reasons of space only the data of patient A was previously visualized in Fig. 2
+
+	Brain regions	Radiomic features	
+Patient A	
+ Modality-1 FLAIR	2, 5, 22	8, 10, 14, 19, 35, 40, 49, 60, 71	
+ Modality-2 T1w	2, 5, 22, 25, 26	1, 17, 28, 29, 34, 58, 74	
+ Modality-3 T1w postCA	1, 5, 12, 13	97, 99, 100, 101, 103	
+ Modality-4 T2w	22, 25, 26	11, 33, 67, 68, 70, 82, 83, 92	
+Patient B	
+ Modality-1 FLAIR	14, 15, 22	3, 16, 18, 20, 48, 59, 75, 76, 79, 81, 84, 102, 105, 107	
+ Modality-2 T1w	2, 22	1, 8, 10, 28, 29, 34	
+ Modality-3 T1w postCA	12, 13, 16, 17	15, 24, 30, 31, 32, 43, 86	
+ Modality-4 T2w	12, 13, 16, 17, 25, 26	12, 23, 27, 82, 83, 91, 94, 95, 104	
+
+Discussion and concluding remarks
+
+We have reviewed GBM and some emerging research topics that hopefully can advance the field in the immediate future. Among the identified needs that require pre-clinical investigation, there are integrative and multimodal imaging data approaches. These are especially associated in brain to imaging tools such as MRI that offer multiparametric solutions and interpretations.
+
+As examples of emerging concepts falling into these new developments there are imaging habitats that capture tumor heterogeneity through differentiated TME features whose characterization translates into complex and highly contextualized data fusions. New targeted computational inferences are here needed.
+
+Saliency maps were also addressed to assign phenotypic relevance to the brain regions and delineate predictively the features value for an assessment of the risk of relapse, again requiring consideration of contextual characteristics to be suitably represented in computational models.
+
+We then addressed an interesting space, atlas-driven radiomics, which complements the traditional targeted radiomics. The latter is based on consolidated main steps which include building tumor segmentations, extracting features from ROI and classifying patients based on them. As an alternative, we showed that the use of brain atlases allows the design of interpretable templates that can become implementable tools depending on their definition and how their structures adapt to the various contexts, brain regions in our case.
+
+Fig. 3 Top: Combined MRI modalities in Gauss filtered bicluster maps. Left: single modality. Centre: two combined modalities. Right: effects of modality subtraction (from two to one). Bottom: Visualization of differential effects induced by GBM in left and right hemispheres (N = 13 regions used to map) and by subtracting unsorted biclustering maps (rightmost plot). The MRI modality used is FLAIR
+
+We illustrated the potential use of such templates with GBM patients, and we easily foresee their generalizability to other brain cancers, always with the possibility of visualizing parcellation maps through applied computational tools, i.e., biclustering or similar. Concerning the value of this type of analysis for clinical scopes, the associations between brain regions and radiomic features can become more significant with the scale of the study, in which case features distributions classified by brain regions and patients may become informative for stratification purposes. Finally, the characterization that the template maps offer is useful for monitoring the disease evolution, and in such regard, concepts like imaging habitats and saliency are extremely informative and deserve further investigation.
+
+Supplementary information
+
+Additional file 1: SM_Allregions file: list of atlas parcellation- derived brain regions.
+
+Additional file 2: SM_ALLfeatures file: list of extracted features across all MRI modalities.
+
+Abbreviations
+
+GBM Glioblastoma multiforme
+
+CT Computed tomography
+
+MRI Magnetic resonance imaging
+
+RWD Real-world data
+
+TME Tumor microenvironment
+
+ROI Regions of interest
+
+GLCM Gray level co-occurrence matrix
+
+ML Machine learning
+
+DL Deep learning
+
+TCIA The cancer imaging archive
+
+XAI Explainable artificial intelligence
+
+TP Tumor progression
+
+PsP Pseudo-progression
+
+dMRI Diffusion MRI
+
+sMRI structural MRI
+
+Ivy GAP Ivy glioblastoma atlas project 
+
+NITRC NeuroImaging tools and resources collaboratory
+
+TCGA- GBM The cancer genome atlas glioblastoma multiforme
+
+CSF Cerebrospinal fluid
+
+DWI Diffusion-weighted imaging 
+
+IT Information technology
+
+Acknowledgements
+
+The authors thank the Editors and two anonymous reviewers for their remarks and suggestions.
+
+Author contributions
+
+MD and EC conceived together ideas, concepts and methods. MD collected the sample data, processed the images, prepared the materials for the demonstration. EC wrote the manuscript. MD edited the manuscript. All authors read and approved the final manuscript.
+
+Funding
+
+EC acknowledges support from JAX Computational Sciences, JAX Cancer Center (JAXCC). and NCI CCSG (P30CA034196) and support from Grant NSF 19–500, DMS 1918925/1922843.
+
+Availability of data and materials
+
+Not applicable.
+
+Declarations
+
+Ethics approval and consent to participate
+
+Not applicable.
+
+Consent for publication
+
+Not applicable.
+
+Competing interests
+
+Not applicable.
+
+Publisher’s Note
+
+Springer nature remains neutral with regard to jurisdictional claims in published maps and institutional affiliations.
+==== Refs
+References
+
+1. Poon MTC Sudlow CLM Figueroa JD Longer-term (≥ 2 years) survival in patients with glioblastoma in population-based studies pre- and post-2005: a systematic review and meta-analysis Sci Rep 2020 10 1 11622 10.1038/s41598-020-68011-4 32669604
+2. Crespo I Vital AL Gonzalez-Tablas M Molecular and genomic alterations in glioblastoma multiforme Amer J Path 2015 185 7 1820 33 10.1016/j.ajpath.2015.02.023 25976245
+3. Li Z-H Guan Y-L Zhang G-B Genomic analysis of glioblastoma multiforme reveals a key transcription factor signature relevant to prognosis and the immune processes Front Oncol. 2021 11 657531 10.3389/fonc.2021.657531 33987093
+4. Sakthikumar S Roy A Haseeb L Whole-genome sequencing of glioblastoma reveals enrichment of non-coding constraint mutations in known and novel genes Genome Biol 2020 21 127 10.1186/s13059-020-02035-x 32513296
+5. Cui X Wang Q Zhou J at al. Single-cell transcriptomics of glioblastoma reveals a unique tumor microenvironment and potential immunotherapeutic target against tumor-associated macrophage Front Oncol 2021 11 710695 10.3389/fonc.2021.710695 34434898
+6. Couturier CP Ayyadhury S Le PU Single-cell RNA-seq reveals that glioblastoma recapitulates a normal neurodevelopmental hierarchy Nat Commun 2020 11 3406 10.1038/s41467-020-17186-5 32641768
+7. Bikfalvi A da Costa CA Avril T Challenges in glioblastoma research: focus on the tumor microenvironment Trends Cancer 2023 9 1 9 27 10.1016/j.trecan.2022.09.005 36400694
+8. Ravi VM Will P Kueckelhaus J Spatially resolved multi-omics deciphers bidirectional tumor-host interdependence in glioblastoma Cancer Cell 2022 40 6 639 55 10.1016/j.ccell.2022.05.009 35700707
+9. Ding H Wu C Liao N Radiomics in oncology: a 10-Year bibliometric analysis Front Oncol 2021 11 689802 10.3389/fonc.2021.689802 34616671
+10. van Timmeren J Cester D Tanadini-Lang S Radiomics in medical imaging—“how-to” guide and critical reflection Ins Imaging 2020 11 91 10.1186/s13244-020-00887-2
+11. Rogers W Thulasi Seetha S Refaee TAG Radiomics: from qualitative to quantitative imaging Br J Radiol 2020 93 1108 20190948 10.1259/bjr.20190948 32101448
+12. Bae S An C Ahn SS Robust performance of deep learning for distinguishing glioblastoma from single brain metastasis using radiomic features: model development and validation Sci Rep 2020 10 12110 10.1038/s41598-020-68980-6 32694637
+13. Fu J Singhrao K Zhong X An Automatic deep learning-based workflow for glioblastoma survival prediction using preoperative multimodal MR images: a feasibility study Adv Radiat Oncol 2021 6 5 100746 10.1016/j.adro.2021.100746 34458648
+14. Le NQK Hung TNK Do DT Radiomics-based machine learning model for efficiently classifying transcriptome subtypes in glioblastoma patients from MRI Comp Biol Med. 2021 132 104320 10.1016/j.compbiomed.2021.104320
+15. Yan J Zhao Y Chen Y Deep learning features from diffusion tensor imaging improve glioma stratification and identify risk groups with distinct molecular pathway activities EBioMedicine 2021 72 103583 10.1016/j.ebiom.2021.103583 34563923
+16. Liu Z Jiang Z Meng L Handcrafted and deep learning-based radiomic models can distinguish GBM from brain metastasis J Oncol 2021 10.1155/2021/5518717 35251167
+17. Lao J Chen Y Li ZC A deep learning-based radiomics model for prediction of survival in glioblastoma multiforme Sci Rep 2017 7 10353 10.1038/s41598-017-10649-8 28871110
+18. Han W Qin L Bay C Deep transfer learning and radiomics feature prediction of survival of patients with high-grade gliomas Amer J Neuroradiol 2020 41 1 40 8 10.3174/ajnr.A6365 31857325
+19. Afshar P Mohammadi A Plataniotis KN From handcrafted to deep-learning-based cancer radiomics: challenges and opportunities IEEE Signal Proc Magaz 2019 36 4 132 60 10.1109/MSP.2019.2900993
+20. Papanikolaou N Matos C Koh DM How to develop a meaningful radiomic signature for clinical use in oncologic patients Cancer Imag 2020 20 33 10.1186/s40644-020-00311-4
+21. Huang EP O’Connor JPB McShane LM Criteria for the translation of radiomics into clinically useful tests Nat Rev Clin Oncol 2023 20 69 82 10.1038/s41571-022-00707-0 36443594
+22. Clark K Vendt B Smith K The cancer imaging archive (TCIA): maintaining and operating a Public Information Repository J Digi Imaging 2013 26 1045 57 10.1007/s10278-013-9622-7
+23. Arita H Kinoshita M Kawaguchi A Lesion location implemented magnetic resonance imaging radiomics for predicting IDH and TERT promoter mutations in grade II/III gliomas Sci Rep 2018 8 11773 10.1038/s41598-018-30273-4 30082856
+24. Arimura H Soufi M Ninomiya K Potentials of radiomics for cancer diagnosis and treatment in comparison with computer-aided diagnosis Radiol Phys Technol 2018 11 4 365 74 10.1007/s12194-018-0486-x 30374837
+25. Bodalal Z Trebeschi S Beets-Tan R Radiomics: a critical step towards integrated healthcare Ins Imaging 2018 9 911 4 10.1007/s13244-018-0669-3
+26. Papadimitroulas P Brocki L Christopher Chung N Artificial intelligence: deep learning in oncological radiomics and challenges of interpretability and data harmonization Phys Med 2021 83 108 21 10.1016/j.ejmp.2021.03.009 33765601
+27. Severn C Suresh K Görg C A Pipeline for the implementation and visualization of explainable machine learning for medical imaging using radiomics features Sensors 2022 22 14 5205 10.3390/s22145205 35890885
+28. Varriano G Guerriero P Santone A Explainability of radiomics through formal methods Comp Meth Progr Biomed 2022 220 106824 10.1016/j.cmpb.2022.106824
+29. Chen H Gomez C Huang CM Explainable medical imaging AI needs human-centered design: guidelines and evidence from a systematic review npj Digit Med 2022 5 156 10.1038/s41746-022-00699-2 36261476
+30. Ladbury C Zarinshenas R Semwal H Utilization of model-agnostic explainable artificial intelligence frameworks in oncology: a narrative review Transl Cancer Res 2022 11 10 3853 68 10.21037/tcr-22-1626 36388027
+31. Kim AR Choi KS Kim MS Absolute quantification of tumor-infiltrating immune cells in high-grade glioma identifies prognostic and radiomics values Cancer Immunol Immunother 2021 70 1995 2008 10.1007/s00262-020-02836-w 33416947
+32. Li ZZ Liu PF AnTT Construction of a prognostic immune signature for lower grade glioma that can be recognized by MRI radiomics features to predict survival in LGG patients Translat Oncol 2021 14 6 101065 10.1016/j.tranon.2021.101065
+33. Booth TC Ashkan K Brazil L Tumour progression or pseudoprogression? a review of post-treatment radiological appearances of glioblastoma Clin Radiol 2016 71 5 495 6 10.1016/j.crad.2016.01.014 26896081
+34. Kocher M Ruge MI Galldiks N Applications of radiomics and machine learning for radiotherapy of malignant brain tumors Strahlenther Onkol 2020 196 856 67 10.1007/s00066-020-01626-8 32394100
+35. Sala E Mema E Himoto Y Unravelling tumour heterogeneity using next-generation imaging: radiomics, radiogenomics, and habitat imaging Clin Radiol 2017 72 1 3 10 10.1016/j.crad.2016.09.013 27742105
+36. Waqar M Van Houdt PJ Hessen E Visualising spatial heterogeneity in glioblastoma using imaging habitats Front Oncol 2022 12 1037896 10.3389/fonc.2022.1037896 36505856
+37. Zhang L Wang Y Peng Z The progress of multimodal imaging combination and subregion based radiomics research of cancers Int J Biol Sci 2022 18 8 3458 69 10.7150/ijbs.71046 35637947
+38. Tar PD Thacker NA Babur M Imaging of tumors enables high confidence sub-regional assessment of response to therapy Cancers 2022 14 9 2159 10.3390/cancers14092159 35565288
+39. Bernatowicz K Grussu F Ligero M Robust imaging habitat computation using voxel-wise radiomics features Sci Rep 2021 11 20133 10.1038/s41598-021-99701-2 34635786
+40. Verma R Correa R Hill VB Tumor habitat-derived radiomic features at pretreatment MRI that are prognostic for progression-free survival in glioblastoma are associated with key morphologic attributes at histopathologic examination: a feasibility study Radiol Artif Intell 2020 2 6 e190168 10.1148/ryai.2020190168 33330847
+41. Chiu F-Y Yen Y Efficient radiomics-based classification of multi-parametric MR images to identify volumetric habitats and signatures in glioblastoma: a machine learning approach Cancers 2022 14 6 1475 10.3390/cancers14061475 35326626
+42. Chaddad A Kucharczyk MJ Daniel P Radiomics in glioblastoma: current status and challenges facing clinical implementation Front Oncol 2019 9 374 10.3389/fonc.2019.00374 31165039
+43. Mandal AS Romero-Garcia R Seidlitz J Lesion covariance networks reveal proposed origins and pathways of diffuse gliomas Brain Commum 2021 3 4 fcab289 10.1093/braincomms/fcab289
+44. Fathi Kazerooni A Bagley SJ Akbari H Applications of radiomics and radiogenomics in high-grade gliomas in the era of precision medicine Cancers 2021 13 23 5921 10.3390/cancers13235921 34885031
+45. Fathi Kazerooni A Saxena S Toorens E Clinical measures, radiomics, and genomics offer synergistic value in AI-based prediction of overall survival in patients with glioblastoma Sci Rep 2022 12 8784 10.1038/s41598-022-12699-z 35610333
+46. Shui L Ren H Yang X The era of radiogenomics in precision medicine: an emerging approach to support diagnosis, treatment decisions, and prognostication in oncology Front Oncol 2021 10 570465 10.3389/fonc.2020.570465 33575207
+47. Lo Gullo R Daimiel I Morris EA Combining molecular and imaging metrics in cancer: radiogenomics Ins Imaging 2020 10.1186/s13244-019-0795-6
+48. Chow D Chang P Weinberg BD Imaging genetic heterogeneity in glioblastoma and other glial tumors: review of current methods and future directions AJR Amer J Roentgenol 2018 210 1 30 8 10.2214/AJR.17.18754 28981352
+49. Fathi Kazerooni A Bakas S Saligheh Rad H Imaging signatures of glioblastoma molecular characteristics: a radiogenomics review J Magn Reson Imaging 2020 52 1 54 69 10.1002/jmri.26907 31456318
+50. Liu Z Wu K Wu B Imaging genomics for accurate diagnosis and treatment of tumors: a cutting edge overview Biomed  Pharmacoth 2021 135 111173 10.1016/j.biopha.2020.111173
+51. Coupet M Urruty T Leelanupab T A multi-sequences MRI deep framework study applied to glioma classfication Multimed Tools Appl 2022 81 13563 91 10.1007/s11042-022-12316-1 35250358
+52. Taghizadeh S Labuda C Yang CC Optimizing MRI sequences and images for MRI-based stereotactic radiosurgery treatment planning Rep Pract Oncol Radiother 2019 24 1 12 9 10.1016/j.rpor.2018.09.010 30337843
+53. Lv W Ashrafinia S Ma J Multi-level multi-modality fusion radiomics: application to PET and CT imaging for prognostication of Head and neck cancer IEEE J Biomed Health Inform 2020 24 8 2268 77 10.1109/JBHI.2019.2956354 31804945
+54. Amini M Nazari M Shiri I Multi-level multi-modality (PET and CT) fusion radiomics: prognostic modeling for non-small cell lung carcinoma Phys Med Biol 2021 10.1088/1361-6560/ac287d 34544053
+55. Manafi-Farid R Askari E Shiri I [18F]FDG-PET/CT Radiomics and artificial intelligence in lung cancer: technical aspects and potential clinical applications Sem Nucl Med 2022 52 6 759 80 10.1053/j.semnuclmed.2022.04.004
+56. Li Z Holzgreve A Unterrainer LM Combination of pre-treatment dynamic [18F]FET PET radiomics and conventional clinical parameters for the survival stratification in patients with IDH-wildtype glioblastoma Eur J Nucl Med Mol Imaging 2023 50 535 45 10.1007/s00259-022-05988-2 36227357
+57. Sakai Y Yang C Kihira S MRI Radiomic features to predict IDH1 mutation status in gliomas: a machine learning approach using gradient tree boosting Int J Mol Sci 2020 21 21 8004 10.3390/ijms21218004 33121211
+58. Kline A Wang H Li Y Dennis S Multimodal machine learning in precision health: a scoping review NPJ Digit Med 2022 5 1 171 10.1038/s41746-022-00712-8 36344814
+59. Mansouri N Balvay D Zenteno O Machine learning of multi-modal tumor imaging reveals trajectories of response to precision treatment Cancers 2023 15 6 1751 10.3390/cancers15061751 36980637
+60. MacFadyen C Duraiswamy A Harris-Birtill D Classification of hyper-scale multimodal imaging datasets medRxiv 2023 10.1101/2023.01.03.23284138
+61. Wang T Lei Y Fu Y A review on medical imaging synthesis using deep learning and its clinical applications J Appl Clin Med Phys 2021 22 1 11 36 10.1002/acm2.13121 33305538
+62. Yu B Wang Y Wang L Medical image synthesis via deep learning Adv Exp Med Biol 2020 1213 23 44 10.1007/978-3-030-33128-3_2 32030661
+63. Dai X Lei Y Fu Y Multimodal MRI synthesis using unified generative adversarial networks Med Phys 2020 47 12 6343 54 10.1002/mp.14539 33053202
+64. Li W Li Y Qin W Magnetic resonance image (MRI) synthesis from brain computed tomography (CT) images based on deep learning methods for magnetic resonance (MR)-guided radiotherapy Quant Imaging Med Surg 2020 10 6 1223 36 10.21037/qims-19-885 32550132
+65. Li W Kazemifar S Bai T Synthesizing CT images from MR images with deep learning: model generalization for different datasets through transfer learning Biomed Phys Eng Express 2021 10.1088/2057-1976/abe3a7 33794517
+66. Tomaszewski MR Gillies RJ The biological meaning of radiomic features (Erratum for: Radiology. 2021;298(3):505–516) Radiology. 2021 299 2 256 10.1148/radiol.2021219005
+67. Zhang Z Yang J Ho A A predictive model for distinguishing radiation necrosis from tumour progression after gamma knife radiosurgery based on radiomic features from MR images (Erratum in: Eur Radiol. 2018 Mar 14; PMID: 29178031; PMCID: PMC6036915) Eur Radiol 2018 28 6 2255 2263 10.1007/s00330-017-5154-8 29178031
+68. Delery W Savjani RR Radiation necrosis versus tumor progression: the path toward an optimal discriminator Radiol Imaging Cancer 2023 5 2 e239004 10.1148/rycan.239004 36897223
+69. Peng L Parekh V Huang P Distinguishing true progression from radionecrosis after stereotactic radiation therapy for brain metastases with machine learning and radiomics Int J Radiat Oncol Biol Phys 2018 102 4 1236 43 10.1016/j.ijrobp.2018.05.041 30353872
+70. Chen X Parekh VS Peng L Multiparametric radiomic tissue signature and machine learning for distinguishing radiation necrosis from tumor progression after stereotactic radiosurgery Neuro-Oncol Adv 2021 3 1 vdab150 10.1093/noajnl/vdab150
+71. Park YW Choi D Park JE Differentiation of recurrent glioblastoma from radiation necrosis using diffusion radiomics with machine learning model development and external validation Sci Rep 2021 11 2913 10.1038/s41598-021-82467-y 33536499
+72. Zhang Q Cao J Zhang J Differentiation of recurrence from radiation necrosis in gliomas based on the radiomics of combinational features and multimodality MRI images Comput Math Methods Med 2019 2019 2893043 10.1155/2019/2893043 31871484
+73. Correa R, Lei Q, Chen J et al. Lesion-habitat radiomics to distinguish radiation necrosis from tumor recurrence on post-treatment MRI in metastatic brain tumors. Proc. SPIE (Medical Imaging 2020: Computer-Aided Diagnosis) 2020; 1131430.  10.1117/12.2551393.
+74. Eickhoff SB Yeo BTT Genon S Imaging-based parcellations of the human brain Nat Rev Neurosci 2018 19 672 86 10.1038/s41583-018-0071-7 30305712
+75. Dworetsky A Seitzman BA Adeyemo B Probabilistic mapping of human functional brain networks identifies regions of high group consensus NeuroImage 2021 237 118164 10.1016/j.neuroimage.2021.118164 34000397
+76. Liu T A few thoughts on brain ROIs Brain Imaging Behav 2011 5 3 189 202 10.1007/s11682-011-9123-6 21556745
+77. Škoch A Rehák Bučková B Mareš J Human brain structural connectivity matrices–ready for modelling Sci Data 2022 9 486 10.1038/s41597-022-01596-9 35945231
+78. Markello RD Hansen JY Liu ZQ Neuromaps: structural and functional interpretation of brain maps Nat Methods 2022 19 1472 9 10.1038/s41592-022-01625-w 36203018
+79. Lawrence RM Bridgeford EW Myers PE Standardizing human brain parcellations Sci Data 2021 8 78 10.1038/s41597-021-00849-3 33686079
+80. Zhao M Liu Y Ding G Online database for brain cancer-implicated genes: exploring the subtype-specific mechanisms of brain cancer BMC Genomics 2021 22 1 458 10.1186/s12864-021-07793-x 34144671
+81. Puchalski RB Shah N Miller J An anatomic transcriptional atlas of human glioblastoma Science 2018 360 6389 660 3 10.1126/science.aaf2666 29748285
+82. Pati S Verma R Akbari H Reproducibility analysis of multi-institutional paired expert annotations and radiomic features of the Ivy glioblastoma atlas project (Ivy GAP) dataset Med Phys 2020 47 12 6039 52 10.1002/mp.14556 33118182
+83. Van Essen DC Smith SM Barch DM The WU-Minn human connectome project: an overview NeuroImage 2013 80 62 79 10.1016/j.neuroimage.2013.05.041 23684880
+84. Alemán-Gómez Y Griffa A Houde JC A multi-scale probabilistic atlas of the human connectome Sci Data 2022 9 516 10.1038/s41597-022-01624-8 35999243
+85. Mandal AS Romero-Garcia R Hart MG Genetic, cellular, and connectomic characterization of the brain regions commonly plagued by glioma Brain 2020 143 11 3294 307 10.1093/brain/awaa277 33278823
+86. Mandal AS Romero-Garcia R Seidlitz J Lesion covariance networks reveal proposed origins and pathways of diffuse gliomas Brain Commun 2021 3 4 fcab289 10.1093/braincomms/fcab289 34917940
+87. Neftel C Laffy J Filbin MG An integrative model of Cellular states, plasticity, and genetics for glioblastoma Cell 2019 178 4 835 849e21 10.1016/j.cell.2019.06.024 31327527
+88. Kong NW Gibb WR Tate MC Neuroplasticity: insights from patients harboring gliomas Neural Plast 2016 2016 2365063 10.1155/2016/2365063 27478645
+89. Lv K Cao X Wang R Neuroplasticity of glioma patients: brain structure and topological network Front Neurol. 2022 13 13 871613 10.1155/2016/2365063 35645982
+90. van Griethuysen JJM Fedorov A Parmar C Computational radiomics system to decode the radiographic phenotype Cancer Res 2017 77 21 e104 7 10.1158/0008-5472.CAN-17-0339 29092951
+91. Pedregosa F Varoquaux G Gramfort A Scikit-learn: machine learning in Python JMLR 2011 12 85 2825 30
+

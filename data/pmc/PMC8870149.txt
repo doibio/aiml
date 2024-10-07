@@ -1,0 +1,417 @@
+
+==== Front
+Cancers (Basel)
+Cancers (Basel)
+cancers
+Cancers
+2072-6694
+MDPI
+
+10.3390/cancers14040884
+cancers-14-00884
+Article
+Inducing Biomechanical Heterogeneity in Brain Tumor Modeling by MR Elastography: Effects on Tumor Growth, Vascular Density and Delivery of Therapeutics
+https://orcid.org/0000-0003-0261-1289
+Harkos Constantinos 1
+Svensson Siri Fløgstad 23
+https://orcid.org/0000-0002-6580-9519
+Emblem Kyrre E. 2
+https://orcid.org/0000-0002-3093-1696
+Stylianopoulos Triantafyllos 1*
+Jensen Lasse Academic Editor
+Lolas Georgios Academic Editor
+1 Cancer Biophysics Laboratory, Department of Mechanical and Manufacturing Engineering, University of Cyprus, Nicosia 1678, Cyprus; charko01@ucy.ac.cy
+2 Division of Radiology and Nuclear Medicine, Department of Diagnostic Physics, Oslo University Hospital, 0372 Oslo, Norway; s.f.svensson@fys.uio.no (S.F.S.); kyrre.eeg.emblem@rr-research.no (K.E.E.)
+3 Department of Physics, The Faculty of Mathematics and Natural Sciences, University of Oslo, 0371 Oslo, Norway
+* Correspondence: tstylian@ucy.ac.cy
+10 2 2022
+2 2022
+14 4 88428 1 2022
+07 2 2022
+© 2022 by the authors.
+2022
+https://creativecommons.org/licenses/by/4.0/ Licensee MDPI, Basel, Switzerland. This article is an open access article distributed under the terms and conditions of the Creative Commons Attribution (CC BY) license (https://creativecommons.org/licenses/by/4.0/).
+Simple Summary
+
+Biomechanical forces aggravate brain tumor progression. In this study, magnetic resonance elastography (MRE) is employed to extract tissue biomechanical properties from five glioblastoma patients and a healthy subject, and data are incorporated in a mathematical model that simulates tumor growth. Mathematical modeling enables further understanding of glioblastoma development and allows patient-specific predictions for tumor vascularity and delivery of drugs. Incorporating MRE data results in a more realistic intratumoral distribution of mechanical stress and anisotropic tumor growth and a better description of subsequent events that are closely related to the development of stresses, including heterogeneity of the tumor vasculature and intrapatient variations in tumor perfusion and delivery of drugs.
+
+Abstract
+
+The purpose of this study is to develop a methodology that incorporates a more accurate assessment of tissue mechanical properties compared to current mathematical modeling by use of biomechanical data from magnetic resonance elastography. The elastography data were derived from five glioblastoma patients and a healthy subject and used in a model that simulates tumor growth, vascular changes due to mechanical stresses and delivery of therapeutic agents. The model investigates the effect of tumor-specific biomechanical properties on tumor anisotropic growth, vascular density heterogeneity and chemotherapy delivery. The results showed that including elastography data provides a more realistic distribution of the mechanical stresses in the tumor and induces anisotropic tumor growth. Solid stress distribution differs among patients, which, in turn, induces a distinct functional vascular density distribution—owing to the compression of tumor vessels—and intratumoral drug distribution for each patient. In conclusion, incorporating elastography data results in a more accurate calculation of intratumoral mechanical stresses and enables a better mathematical description of subsequent events, such as the heterogeneous development of the tumor vasculature and intrapatient variations in tumor perfusion and delivery of drugs.
+
+glioblastoma
+chemotherapy
+perfusion
+MRI
+MRE
+DTI MRI
+mathematical modeling
+solid stress
+==== Body
+pmc1. Introduction
+
+Glioblastoma multiforme (GBM) is one of the most common primary brain tumors [1,2]. Despite the different treatments developed, it remains a devastating disease with a poor prognosis and an overall survival of 14 to 15 months [3,4]. The response to treatment varies from patient to patient. Thus, the development of patient-specific mathematical models not only enables further understanding of glioblastoma development but also allows the optimization of a patient’s treatment [5].
+
+Mathematical models can be divided into two categories based on the scale at which the tumor is represented. The models can be discrete/stochastic, with an emphasis on the microscopic scale and the interactions at the cellular level, or continuum models, which focus on events taking place at the macroscopic scale [6,7]. Hybrid-multiscale models have also been developed that combine elements of both microscopic and macroscopic models [8]. GBM models most often combine the human brain geometry derived from magnetic resonance imaging (MRI) or computer tomography (CT) with equations accounting for cancer cells’ proliferation and diffusion [9,10,11]. This modeling strategy allows for the prediction of patterns of submicroscopic tumor invasion not detectable by MRI images [9,10,11]. Some models even consider anisotropic diffusion based on data derived from diffusion tensor imaging (DTI MRI), which allows for patient-specific predictions of the shape and evolution of the tumor [12,13,14]. A probabilistic diffusion coefficients scheme in the diffusion reaction equation has also been employed instead of fixed diffusion parameters to improve predictions [15,16]. Furthermore, some studies focus on simulating treatments, such as radiotherapy [17,18,19,20], while others simulate chemotherapy based on the patient’s imaging data [21,22].
+
+The realization that not only biological and brain physiological factors but also biomechanical forces drive brain tumor progression has led to the development of mathematical models that account for tissue biomechanical properties [23,24]. The effect of the biomechanical properties is crucial because tumor progression is associated with the onset and accumulation of mechanical stresses [25,26,27,28]. A source of mechanical stress is solid stress exerted by stromal and cancer cells and the tumor extracellular matrix as a consequence of a growing tumor, which deforms the surrounding tissues [29,30,31,32]. There are also fluid stresses associated with the interstitial and vascular fluid pressure [33,34]. Glioma in silico models consider the effect of stresses with either continuous or discrete approaches [35,36,37,38]. Solid stresses can directly affect glioma cell proliferation and migration [39,40]. They can also induce blood vessel compression and dysfunction, limiting perfusion rates and, thus, oxygen and chemotherapeutic agents’ transport into the tumor [26,41]. Oxygen levels, in turn, affect cancer cell proliferation, tumor growth and invasion as proliferative cells can become invasive under hypoxic conditions [23,35,40,42,43,44,45,46]. Thus, the normalization of brain tumor blood vessels to restore vessels’ hyper-permeability and compression can lead to improved perfusion and therapeutic efficacy [47,48]. The incorporation of tissue mechanics on tumor growth models improves predictions on preclinical models and also helps distinguishing radiation necrosis from tumor progression in patients [49,50].
+
+For a better understanding of the biomechanical tumor microenvironment, a detailed quantification of the mechanical properties of the normal and tumor brain is required. Magnetic resonance elastography (MRE) is a promising imaging technique, which allows for noninvasive quantification of the mechanical properties of tissues by applying external vibrations [51]. Biomechanical properties provide information about tissue stiffness, which is related to the magnitude of mechanical stresses developed in the tumor. Even though MRE has been used for studying brain cancer in patients and animal models [52,53], it has not been used in simulations of brain tumor development, omitting the importance of biomechanical properties in tumor progression.
+
+To this end, we present a mathematical model that incorporates not only conventional anatomical and DTI MRI data but also considers MRE data for a more realistic representation of the biomechanical properties and mechanical stresses in healthy and malignant brain tissues. The model combines the elastography data of a healthy subject’s brain with those of five patients with GBM. Our model simulates tumor progression by assuming that the non-uniform distribution of mechanical stresses promotes proliferation towards low-stress regions [54,55,56,57,58]. This allows for predictions of patient-specific anisotropic tumor growth, non-uniform vessel compression and heterogeneous distribution of functional tumor vessels. Heterogeneous vascular density, in turn, determines chemotherapeutic agents’ transport, posing limits to effective drug delivery [41]. The model highlights the important relationship of elastography data with tumor anisotropic growth, vascular density and chemotherapy delivery and can be a valuable tool for optimizing cancer treatment by using patient-specific noninvasive medical imaging.
+
+2. Materials and Methods
+
+2.1. Application of MR Imaging Data in the Model
+
+MR imaging was performed on a 3T clinical MRI scanner (Ingenia, Philips Medical Systems, Best, The Netherlands) using a 32-channel head coil. Anatomical T1-weighted, T2-weighted and fluid attenuated inversion recovery (FLAIR) images, as well as DTI MRIs and MRE data, were acquired for five patients, using imaging parameters as in [59], also shown in Table S2. The MRE was performed using a gravitational transducer [60] attached on the side of the head, inducing shear waves of 50 Hz into the brain. The MRE acquisition lasted 5.5 min, with further details about acquisition and processing listed in reference [61]. Patients were between 53 and 75 years (median 60 years), with two female patients and three male patients. All patients had IDH-wildtype glioblastomas, and tumor sizes ranged from 41 cm3 to 110 cm3 (median 60 cm3). Imaging was performed before any treatment. For a healthy subject (a 34-year-old woman), the MRE imaging was extended to cover the entire brain.
+
+Storage and loss modulus values were derived from the MRE data using a localized divergence-free finite element reconstruction [61,62]. The MRE data for both the patients and the healthy subject were converted from a digital imaging and communications in medicine (DICOM) format to Matlab format. Diffusion tensors were derived from the DTI MRI scan of the healthy subject. This was performed using the Diffusion Toolkit (Massachusetts General Hospital, Boston, MA, USA) following a similar procedure as in a previous study [13]. Diffusion tensors were converted to Matlab matrix format too.
+
+A brain geometry employed in a previous study [24] was used here. To reduce computational demands, only the gray matter and white matter regions were included. Generation of the 3D geometry was performed using ScanIP (Simpleware Ltd., Mountain View, CA, USA [24]. The geometry was then imported in COMSOL Multiphysics (COMSOL, Inc., Burlington, MA, USA). Inside the brain geometry, a small spherical tumor, with a radius of 5 mm, acting as the initial tumor seed, was added in the same position for all cases to avoid host tissue mechanical heterogeneities.
+
+A mesh was generated in COMSOL Muliphysics (COMSOL, Inc., Burlington, MA, USA). A finer mesh was used inside and around the tumor domain compared to the rest of the brain in order to improve accuracy and reduce computational cost. The mesh included two types of elements: 1008 prisms that form boundary layers at the tumor boundary and 34,468 tetrahedra for the rest of the geometry.
+
+The storage and loss modulus and diffusion tensors derived from the healthy subject were interpolated in the brain domain. This was done by using a Matlab’s built-in interpolation function (scatteredInterpoland with the method set to natural interpolation) to interpolate the data existing in the Matlab matrixes to the nodes of the finite elements in COMSOL Multiphysics. The same interpolation was used for the patient’s data to the initial tumor seed. This required a deformation of the patient’s data prior to the interpolation, as shown in Figure S1.
+
+For each patient dataset, a rectangular parallelepiped containing the tumor data was extracted. For each patient’s data, the rectangular parallelepiped had the smallest possible dimensions that fitted inside the tumor domain. The parallelepiped was deformed into a cube and then interpolated to the initial tumor seed. For each simulation performed, the tumor seed was subjected to each patient’s elastography data and to the same surrounding elastography data of the normal tissue (derived from the healthy subject). This was done to examine the effect of different tumor elastography properties on the tumor growth.
+
+Figure 1 and Figure 2 depict the shear modulus values, G, which are used for the constitutive equation of the normal and brain tumor material model.
+
+The complex shear modulus G*(ω)  can be written as G*(ω)=G′(ω)+G″(ω), where G′ and G″ are the storage and loss modulus calculated by MRE and given by (1) G′(ω)=G(ωτm)21+(ωτm)2,
+
+(2) G″(ω)=Gωτm1+(ωτm)2,
+
+where ω is the radial frequency, τm is the characteristic decay time and G is the shear modulus [63]. In the model, we only considered elastic effects as transient effects due to tissue viscoelastic properties associated with the characteristic decay time were assumed negligible due to the relatively slow growth/deformation rates.
+
+2.2. Kinematics of Tumor Growth
+
+Tumor growth is based on principles of continuum mechanics. The deformation gradient tensor, F, was decomposed into two components [64,65]. (3) F=Fe·Fg,
+
+where Fe is the elastic (reversible) component of F that is related to the stress response of the material. Fg is the inelastic (growth, irreversible) component of F. The diagonal components of Fg correspond to the growth stretch ratios in the x,y,z direction (λgx, λgy,λgz). (4) Fg=[λgx000λgy000λgz].
+
+The elastic component of the deformation gradient tensor is calculated as, (5) Fe=F·Fg-1,
+
+and the growth stretch ratios are calculated as [54,66], (6) 1λgadλgadt=Γarg , a=x,y,z,
+
+where λga is the growth stretch ratio in each direction (α = x,y,z) and rg is the mass growth per unit of the current mass. The anisotropic growth multiplier, Γa, defines the distribution of the growth term, rg, among the three directions (x,y,z) and is written as, (7) Γa=ΓΣ-1exp(A σaas/k), a=x,y,z, 
+
+(8) ΓΣ=exp(A σxxs/k)+exp(A σyys/k)+exp(A σzzs/k).
+
+σs is the Cauchy stress, k is the bulk modulus of the tumor and ΓΣ is defined in a way that ∑aΓa=1 is satisfied. A is a parameter describing the degree of anisotropy [66]. When A = 0, the Equation (6) becomes (9) 3λgdλgdt=rg,
+
+the growth stretch ratios, λga, become the same and the model accounts for isotropic tumor growth [67]. For A > 0, the larger the value of A, the higher the degree of anisotropy, and growth occurs mostly at the directions of lower stress magnitude [55,56,57,58].
+
+The growth term, rg, depends on the oxygen concentration in the tissue, cox, and the cancer cell density, Tcel [13], (10) rg=k1 coxk2+coxTcel,
+
+where k1, k2 are growth rate parameters.
+
+2.3. Stress Balance
+
+According to the biphasic theory for soft tissues [68], the total stress tensor, σtot, can be expressed as the summation of the solid phase stress tensor, σs, and the stress tensor, piI, due to the effect of the interstitial fluid pressure pi, (11) ∇⋅σtot=0 ⇒ ∇⋅(σs-piI)=0.
+
+The Cauchy stress tensor, σs, is expressed as [69], (12) σs=Je-1Fe∂W∂FeT,
+
+where Je=detFe and W is the strain energy density function of the tissue [70]. (13) W=G2(I1-3)+k2(Je-1)2,
+
+where G is the shear modulus calculated from the elastography data and I1 is the first invariant of the elastic Green–Cauchy deformation tensor.
+
+2.4. Cancer Cell Density
+
+Cancer cell density, Tcel, was normalized by division with a reference initial value of 107cells/cm3 [71]. Thus, the initial value was set to 1 for the tumor region and to 0 for the host tissue. Tcel is given by the diffusion–reaction equation, (14) ∂Tcel∂t+∇·(-DT(x)∇Tcel)=R,
+
+(15) Rtumor=rg=k1 coxk2+coxTcel,
+
+(16) Rhost =ρcellTcel,
+
+where DT(x) is the inhomogeneous and anisotropic diffusion tensor acquired from the DTI MRI [13,16,72]. In the tumor region, cancer cell proliferation is associated with oxygen supply. The cancer cells that escape the tumor domain due to diffusion were assumed to have a constant proliferation rate, ρcell.
+
+2.5. Interstitial Pressure-Fluid Velocity
+
+Normal and tumor tissues have properties similar to those of a porous medium. According to Darcy’s law, the interstitial fluid velocity is given by (17) vf=-kth ∇pi,
+
+where kth is the hydraulic conductivity of the interstitial space [73]. The mass balance gives [74,75], (18) ∇·(vf)=LP Sv (pv-pi)-LPl Svl (pi-pvl).
+
+The first term of the right-hand side of Equation (18) describes the fluid flux entering from the blood vessels and the second term the flux exiting through the lymphatic system. LP is the blood vessels’ hydraulic conductivity, and pv is the vascular pressure. LPl, Svl and pvl are the corresponding parameters for the lymphatic vessels [76].
+
+2.6. Oxygen Transport
+
+The rate of change of oxygen concentration in the tissue was modeled with a convection diffusion equation that includes a source and a sink term [77,78]. The source term is due to oxygen supply from the blood vessels and the sink term describes oxygen consumption by cancer cells:(19) ∂cox∂t+∇·(coxvf)=Dox ∇2cox-Aox coxcox+koxTcel+Perox Sv (ciox-cox),
+
+where Sv is the vascular density, Dox the oxygen diffusion coefficient, Aox and kox are oxygen uptake parameters, ciox is the oxygen concentration in the vessels, vf is the fluid velocity and Perox is the vascular permeability of oxygen defined as the oxygen diffusion coefficient divided by the length of the vessel wall.
+
+2.7. Vascular Density
+
+Cancer cell infiltration was studied in our previews work [13]. Thus, in this study, we emphasize the anisotropic tumor growth governed by the effect of elastography data and how that affects stresses and the vasculature. The vascular density was considered as the vascular surface area, S, per unit volume, (20) S=πdLvwN,
+
+where d and Lvw are the diameter and length of the vessel and N is the number of vessels. By the assumption that the solid stresses do not affect the length or the number of vessels but only the diameter due to compression [41], and by dividing the vascular density with a reference vascular density (21) Sv Sv0=πdLvwNπdoLvwN=ddo.
+
+The functional vascular density can be expressed as [41], (22) Sv=(d/do) Sv0,
+
+where Sv0 is the vascular density of the host tissue and d/do is the degree of vessel compression assumed to be affected only by the solid stress levels, as described in [41]. The compression is assumed to be affected by the average bulk stress. The average bulk stress is expressed as the trace of the solid Cauchy stress. Initially, the vascular density was assumed to have the value of  Sv0 in both the tumor and host tissue. In the tumor region, due to the development of stresses, the degree of vessel compression d/do changes as the tumor grows and, thus Sv decreases in a stress-dependent manner.
+
+2.8. Drug Transport
+
+2.8.1. Drug Transport in the Tumor Interstitial Space
+
+The therapeutic agent can exist in three states: it can travel freely through the interstitial space (cf) of the tumor, bind to cancer cells (cb) and get internalized by the cells (cint). The equations describing the three states are [79]. (23) ∂cf∂t+∇⋅(cfvf)=Df∇2cf+Qsta-koncecfΦ+koffcb,
+
+(24) dcbdt=koncecfΦ-koffcb-kintcb,
+
+(25) dcintdt=kintcb.
+
+The free drug that travels in the tumor interstitial space, cf, can be transferred due to convection and diffusion, where Df is the diffusion coefficient of the drug in the interstitial space and vf is the fluid velocity. Moreover, the free drug is transferred across the tumor vessel wall (Qsta). The remaining terms describe the binding, unbinding and internalization of the drug; ce is the concentration of cell surface receptors and kon, koff and kint are the binding, unbinding and internalization rate constants, respectively; Φ is the volume fraction of cells accessible to the drug.
+
+2.8.2. Drug Transport across the Tumor Vessel Wall: Starling’s Approximation
+
+Starling’s approximation was employed for the transport of drugs across the vessel walls (26) Qsta=PerSv(Civ-cf)+LpSv(pv-pi)(1-σf)Civ,
+
+where Per is the vascular permeability of the drug, σf the reflection coefficient and Civ is the vascular concentration of the drug expressed as a bolus injection:(27) Civ=exp(–(t–t0)/kd),
+
+where t0 is the time of drug injection and kd the blood circulation decay. The parameters Lp, Per and σf are expressed as a function of the vessel wall pores and the size of the drug [41,80]:(28) Lp=γr028ηLvw,
+
+(29) Per=γHD0Lvw,
+
+(30) σf=1–w,
+
+where γ is the fraction of the vessel wall surface area occupied by pores, r0 the pore radius, η the viscosity of blood plasma and Lvw the thickness of the vessel wall. H and w describe the steric and hydrodynamic interactions of the drug with the pores of the vessel wall that hinder diffusive and convective transport, respectively, and D0 is the diffusion coefficient of a particle in free solution given by the Stokes–Einstein equation. By ignoring electrostatic interactions, H and w become [80], (31) H=6πFKt,
+
+(32) w=F(2-F)Ks2Kt,
+
+where F is the partition coefficient expressed as, (33) F=(1-λ)2,
+
+where λ is the ratio of the drug size to the vessel wall pore size and Kt and Ks are expressed as [80] (34) (KtKs)=94π22(1-λ)-5/2[1+∑n=12(anbn)(1-λ)n]+∑n=04(an+3bn+3)λn.
+
+2.9. Solution of Model Equations
+
+At all internal boundaries/interfaces of the computational domains, COMSOL automatically assigned continuity. For the calculation of the displacement fields and stresses, the external surfaces of the brain were considered to have a fixed boundary (u=0). For the transport equations, a no flux boundary condition was assumed at the external surface of the brain. The values of the model parameters are summarized in Table S1 [13,41,45,75,76,78,79,81,82,83,84,85,86,87,88,89].
+
+3. Results
+
+3.1. Elastography Data Affect Mechanical Stress Distribution and Induce Anisotropic Tumor Growth
+
+We first set out to examine how the incorporation of elastography data by the model affects the magnitude and distribution of intratumoral mechanical stresses and the growth pattern of the tumor. Figure 3 illustrates the comparison of a tumor with a constant averaged shear modulus and a tumor based on the elastography data for isotropic growth, as well as the effect of anisotropic growth.
+
+The incorporation of elastography data into the model results in a non-uniform distribution of mechanical stresses, which, in turn, affects the functional vascular density (due to vessel compression, Equation (22) and, thus, the distribution of the drug taken up by cancer cells. The non-uniform spatial distribution of the vasculature can be observed in Table 1 when comparing the standard deviation of the vasculature of the constant modulus case to that of the cases where MRE data were used. The constant case has a 2.6–2.7 times smaller standard deviation and, thus, a narrower variation in the vascular density values and a more uniform distribution. The standard deviation of the drug’s spatial distribution in the constant modulus case is higher compared to the MRE cases due to the lack of vessel compression at the periphery, where the highest drug transport is observed.
+
+Incorporation of anisotropic growth (i.e., A > 0) allows for the development of more realistic, non-spherical tumor shapes and growth towards the region of lower stresses. Interestingly, an increase in the anisotropic parameter, A, does not have a large effect on the shape of the tumor. The overlap of the tumor shapes is displayed in Figure S2. By evaluating the similarity with the Sorensen–Dice coefficient of the two anisotropic cases, we get a value of 0.9748. Therefore, it seems that the effect of elastography data on the model predictions is dominant compared to the effect of the degree of anisotropy.
+
+Subsequently, we repeated the simulations using the MRE data of the other four patients (Figure 4), with each inducing a different stress distribution in the tumor, which, in turn, caused a different anisotropic tumor growth and, thus, different non-spherical tumor shapes.
+
+3.2. Elastography Data Reveal Distinct Functional Vascular Density Distribution among Patients
+
+Vessel compression owing to mechanical stresses causes a reduction in the vessel diameter that limits the area of the lumen available for blood flow. This can have a detrimental effect on tumor perfusion and the functionality of the vessels as the higher the magnitude of stresses the more compressed the vessels become. Figure 5 shows the variation in the magnitude and distribution of the vascular density for the five different patient elastography datasets as a result of the differences in the intratumoral distribution of mechanical stresses (Figure 4). The mean and standard deviation values of the vascular density inside the tumor for the five patients can be found in Table S3.
+
+3.3. Elastography Data Affect Intratumoral Drug Distribution
+
+Abnormal development of vessels during tumor-induced angiogenesis results in vessel hyper-permeability and openings in the tumor vessels wall that can be hundreds of nanometers large [89]. For larger vessel wall pores, the tumor interstitial fluid pressure is uniformly elevated and equals the vascular pressure owing to fluid communication between the vascular and extravascular space of the tumor (Figure 6) [27]. As a result, there is no pressure gradient across the tumor vessel wall nor inside the tumor. Furthermore, there is a steep pressure gradient at the periphery of the tumor as the fluid pressure drops from high values in the tumor interior to normal levels at the interface with the host tissue. For smaller pores in the vessel wall, the distribution of the interstitial fluid pressure is smoother and does not reach the value of the vascular pressure. These observations are well documented in the literature and are typical for the pathophysiology of solid tumors [33,34]. Our data suggest that the incorporation of MRE data does not change the magnitude and elevation of the interstitial fluid pressure.
+
+For larger pores, the lack of pressure gradients eliminates drug transport through convection inside the tumor, and, thus, diffusion becomes the dominant transport mechanism (Equation (26)). Thus, the drug accumulates at the tumor periphery, where both convection and diffusion are prominent, and is washed out from the tumor to the host tissue (Figure 7).
+
+In Table 2, we observe a decrease in the mean values and the standard deviation as we decrease the vessel wall pore size inside the tumor. That means that the establishment of a smooth pressure gradient for smaller vessel wall pore sizes resulted in a more uniform distribution of the drug inside the tumor.
+
+Importantly, incorporation of MRE data can affect model predictions of drug distribution independently of the size of the vessel walls (Figure 7). This is further observed by the mean and standard deviation of the spatial distribution of the drug in the constant versus the MRE cases (Table 2). The use of MRE data in the model leads to predictions of heterogeneous mechanical stress and vascular density distribution. Regions of lower functional vascular density exhibit reduced drug delivery, which results in a heterogenic distribution of the drug.
+
+Next, we repeated the simulations for the delivery of drugs of different sizes: 2 nm, 70 nm and 150 nm, accounting for small molecules and for nanoparticles (Figure 8).
+
+For the constant elastic properties scenario, the drug distribution is symmetric in the radial direction. This is not the case when the MRE data are included, in which regions of lower functional vascular density exhibit reduced drug delivery. The reduced drug delivery in the MRE cases can be further observed by the decrease in the standard deviation when comparing them with the corresponding constant elasticity values (Table 3). Moreover, smaller drugs can be transferred faster through the pores of the vessels and delivered in larger amounts to cancer cells. Alternative versions of Figure 7 and Figure 8 using the same colorbar for all the drug sizes can be found in Figures S3 and S4.
+
+Finally, we employed the elastography data of all the patients to investigate the different patterns of drug delivery within patients (Figure 9).
+
+The results show that the incorporation of patient-specific elastography data can affect the delivery and intratumoral distribution of the drugs. Regions of lower functional vascular density vary among patients, and this results in a distinct drug distribution for each patient. To compare these five cases, we evaluated the fraction of the tumor that receives a drug concentration greater than a specific value (Table 4). This fraction varies by more than 10-fold among the patients. The analysis was also repeated for the cases displayed in Figure 7 and Figure 8 and can be found in Tables S4 and S5, respectively. These results further support that tumor elastic properties can affect drug delivery.
+
+4. Discussion
+
+The important role of mechanical forces in tumor progression and therapy is well established [26,27,28,29,30,31,32,41]. Yet, the incorporation of tissue mechanics in mathematical models of brain tumors is not thoroughly studied. Here, we developed a methodology for more accurate calculation of brain tumor mechanics and highlighted its importance for vascular changes and the delivery of therapeutic agents. We included MRE data for a more realistic incorporation of the mechanical properties of both the tumor and host tissue, which led to a more accurate calculation of the intratumoral distribution of mechanical stresses. In addition, to further improve the accuracy of our calculations, we applied a methodology for anisotropic tumor growth, allowing the tumor to grow in non-spherical shapes. We considered that mechanical stresses induce vessel compression and modeled the delivery of drugs of various sizes.
+
+The incorporation of elastography data resulted in a non-uniform distribution of mechanical stresses. The incorporation of anisotropic growth allowed the development of a more realistic non-spherical tumor shape and growth towards the regions of lower stresses. The non-uniform mechanical stresses induced a non-uniform distribution of vascular density due to vessel compression. This resulted in a non-symmetric distribution of drugs where regions of lower functional vascular density exhibited reduced drug delivery. Stress distribution, vascular density distribution and drug delivery are unique for each patient’s MRE data, and, thus, the inclusion of MRE data allows patient-specific predictions.
+
+Smaller pores of the vessel wall induced a smoother distribution of interstitial fluid pressure. The incorporation of MRE data did not change the magnitude and elevation of interstitial fluid pressure. Smoother pressure gradients caused a more uniform distribution of drug inside the tumor. In addition, our results suggest that smaller drugs can be transferred faster through the pores of the vessels and delivered in larger amounts to the cells compared to larger drugs. Overall, our findings can be used to improve treatment response assessment and evaluation of pharmacological strategies as MRE is a noninvasive imaging technique that can be added to patients’ MR examination. MRE is an emerging imaging technique that has been used in several studies of patients with brain tumors [90]. Currently, there is no commercial system available for brain MRE, limiting its potential as a routine part of brain cancer imaging. The patients in our study were all imaged prior to any treatment, but using MRE on patients after surgical tumor resection is clinically feasible and currently ongoing at our institution as part of a clinical trial and with minimal implications (NCT03951142).
+
+Several simplifying assumptions were made in this study. For the host tissue, elastography data of a healthy subject were used because the clinical patient scans did not cover the entire brain, only 4.65 cm, covering the tumor. Because the patients differ from healthy subjects in terms of MRE values [59], more accurate results would have been obtained if the specific patient’s elastography of the host tissue was used. In addition, patients’ MRE values were obtained at one time point during tumor development and, thus, in the model, the elastic properties were assumed constant during tumor progression. That is not usually the case. Due to changes in the cellular and extracellular matrix components, the compression of the tumor and the host tissue changes during tumor progression. These effects can result in changes in the stiffness of the tumor [26,32,91,92]. The incorporation of temporal variations in the elastic properties would be expected to change our results quantitatively. However, the main conclusions of our study concerning the role of mechanical forces in tumor vasculature and drug delivery are not expected to be altered by this. Furthermore, the evolution of the tumor in the model was related to the simulation time-step and not the actual time for tumor growth. This was done due to the absence of individual tumor growth rates. Moreover, the timepoint of the injection of chemotherapy was also an assumption. The same timepoint of injection was used for all the cases to enable direct comparison among different simulations. Finally, the isotopic neo-Hookean constitutive equation might not be sufficient to fully describe the mechanical response of brain tumors because of the heterogenous structure of the GBM. However, studies have shown that the state of stress of the tumor is largely determined by the properties of the host and tumor tissue and not from the selection of the constitutive equation being used [30].
+
+5. Conclusions
+
+The presented methodology and results led to the conclusion that incorporating the tissue elastic properties assessed by MRE and anisotropic growth into mathematical models can result in more accurate predictions of the distribution of mechanical stresses in tumors. This produces an improved mathematical description of subsequent events that are closely related to the development of mechanical stresses, including the heterogeneity in the functional vasculature of the tumor and intrapatient variations in tumor perfusion and delivery of drugs.
+
+Supplementary Materials
+
+The following are available online at https://www.mdpi.com/article/10.3390/cancers14040884/s1, Table S1: Values of model parameters, Table S2: Scan parameters for patients and healthy subject, Table S3. Mean and standard deviation values, vascular density and drug concentration inside the tumor domain of the 5 patients at day 43 of the simulation, Table S4. Fraction of the tumor that receives drug concentration greater than 20 for the 6 cases of Figure 7, Table S5. Fraction of the tumor that receives drug concentration greater than 20 for the 6 cases of Figure 8, Figure S1. Deformation and interpolation of the patient’s data to the initial tumor seed: (A) T1c MRE space used to locate the tumor region of each patient; (B) tumor data of each patient; (C) deforming the data into becoming a cube; (D) interpolating the data of the cube to each initial tumor seed; (E) initial tumor seed with data, Figure S2. Overlap of the tumor shapes displayed in Figure 3 for the isotropic (A = 0) case and anisotropic (A = 25 and A = 50) cases, Figure S3. Second version of Figure 7 where the same colorbar was used for all figures, Figure S4. Second version of Figure 8 where the same colorbar was used for all figures. References [13,41,45,75,76,79,81,82,83,84,85,86,87,88,89] are cited in the Supplementary Materials.
+
+Click here for additional data file.
+
+Author Contributions
+
+Conceptualization, T.S.; methodology, C.H., S.F.S., K.E.E. and T.S.; software, C.H.; formal analysis, C.H.; investigation, C.H., S.F.S., K.E.E. and T.S.; resources, C.H., S.F.S., K.E.E. and T.S.; data curation, C.H., S.F.S., K.E.E. and T.S.; writing—original draft preparation, C.H.; writing—review and editing, C.H., S.F.S., K.E.E. and T.S.; visualization, C.H. and S.F.S.; supervision, K.E.E. and T.S.; funding acquisition, K.E.E. and T.S. All authors have read and agreed to the published version of the manuscript.
+
+Funding
+
+This research has received funding from the European Research Council (ERC) under the European Union’s Horizon 2020 research and innovation program (grant agreement No. 863955 to T.S and grant agreement No. 758657-ImPRESS to K.E.E) from the South-Eastern Norway Regional Health Authority (Grant Agreements No. 2017073, 2013069 and 2021057) and The Research Council of Norway FRIPRO and Norwegian Cancer Society (Grant Agreements No. 261984, 303249 and 325971).
+
+Institutional Review Board Statement
+
+The study was conducted according to the guidelines of the Declaration of Helsinki and approved by the Norwegian National Research Ethics Committee and Institutional Review Board of Oslo University Hospital (Impress -2017/1875).
+
+Informed Consent Statement
+
+Informed consent was obtained from all subjects involved in the study.
+
+Data Availability Statement
+
+All data supporting the findings of this study are available in the paper and the Supplementary Materials.
+
+Conflicts of Interest
+
+The authors declare no conflict of interest.
+
+Figure 1 Healthy subject’s shear modulus, G, of the brain derived by MRE. The value for the constant shear modulus case also considered for comparison is the average of the healthy subject’s data.
+
+Figure 2 Patients’ tumor shear modulus, G, derived from MRE as it was fitted on the initial tumor seed of the model. The value for the constant shear modulus case is the average value of patient’s 1.
+
+Figure 3 Mechanical stress, vascular density and drug concentration taken up by cancer cells for elastography data of patient 1. A cut plane at the center of the tumor is displayed to visualize the interior of the tumor. Results are presented at day 43 of the simulation. Comparison among isotropic and anisotropic tumor growth by varying the degree of anisotropy (A) is shown. For the constant elasticity case, the average value of the shear modulus was used in the tumor region and the average value of the normal brain for the rest of the brain. A drug of 2 nm in diameter was used to simulate small therapeutic molecules, whereas the tumor vessel wall pore size was set to 200 nm. The bulk mechanical stress is displayed (i.e., the trace of the stress tensor), and the negative sign denotes compression.
+
+Figure 4 Distribution of intratumor mechanical stress at day 43 of the simulation for anisotropic tumor growth (A = 25). For the tumor region, the corresponding patient’s elastography data were used, and elastography data for a healthy subject were used for the rest of the brain. The bulk stress (trace of the stress tensor) is presented, and the negative sign denotes tissue compression.
+
+Figure 5 Vascular density at day 43 of the simulation for anisotropic tumor growth (A = 25) when incorporating the elastography data of the five patients.
+
+Figure 6 Interstitial fluid pressure for various vessel wall pore sizes. A comparison among the isotropic-constant elastic properties case and the anisotropic-elastography case (for patient 1) is shown.
+
+Figure 7 Drug concentration taken up by cancer cells for various wall pore sizes of the tumor vessels. A comparison between the isotropic-constant elastic properties case and the anisotropic-elastography case (patient 1) is shown. All results are displayed at day 43 of the simulation following a drug injection at day 41. The size of the drug is 2 nm.
+
+Figure 8 Drug concentration taken up by cancer cells for various drug sizes. A comparison among the isotropic-constant elastic properties case and the anisotropic-elastography case (patient 1) is shown. All results are displayed at day 43 of the simulation following a drug injection at day 41. The vessel wall pore size was set to 200 nm.
+
+Figure 9 Drug concentration taken up by cancer cells at day 43 of the simulation for anisotropic tumor growth (A = 25). All results are displayed at day 43 of the simulations following a drug administration at day 41. The size of the drug is 2 nm, and the vessel wall pore size was set to 200 nm.
+
+cancers-14-00884-t001_Table 1 Table 1 Mean and standard deviation values of the spatial distribution of the vascular density and drug concentration in the tumor for the 4 cases considered in Figure 3.
+
+	Constant-Isotropic (A = 0)	MRE-Isotropic (A = 0)	MRE-Anisotropic (A = 25)	MRE-Anisotropic (A = 50)	
+Vascular Density (1/cm)	Mean	50.263	47.560	46.933	45.524	
+Standard
+Deviation	7.014	18.942	18.267	19.261	
+Drug Concentration	Mean	18.954	17.726	18.471	18.282	
+Standard
+Deviation	6.292	5.970	4.436	4.723	
+
+cancers-14-00884-t002_Table 2 Table 2 Mean and standard deviation values of the spatial distribution of drug concentration in the tumor for the 6 cases considered in Figure 7.
+
+	Vessel Wall Pore Size in Tumor (nm)	100	200	300	
+Constant Elasticity Drug Concentration	Mean	10.185	18.954	24.223	
+Standard
+Deviation	0.919	6.292	14.162	
+MRE Drug Concentration	Mean	9.361	18.282	23.736	
+Standard
+Deviation	2.656	4.723	8.886	
+
+cancers-14-00884-t003_Table 3 Table 3 Mean and standard deviation values of the drug concentration inside the tumor domain of the 6 cases of Figure 8.
+
+	Drug Size (nm)	2	70	150	
+Constant Elasticity Drug Concentration	Mean	18.954	9.221	1.201	
+Standard
+Deviation	6.292	4.413	0.575	
+MRE Drug Concentration	Mean	18.282	8.957	1.185	
+Standard
+Deviation	4.723	3.114	0.413	
+
+cancers-14-00884-t004_Table 4 Table 4 Fraction of the tumor that receives a drug concentration greater than 20 (dimensionless units) for the 5 patients at day 43 of the simulation.
+
+	Patient 1	Patient 2	Patient 3	Patient 4	Patient 5	
+Volume Fraction
+(Drug Concentration > 20)	0.375	0.173	0.027	0.038	0.206	
+
+Publisher’s Note: MDPI stays neutral with regard to jurisdictional claims in published maps and institutional affiliations.
+==== Refs
+References
+
+1. Ostrom Q.T. Gittleman H. Fulop J. Liu M. Blanda R. Kromer C. Wolinsky Y. Kruchko C. Barnholtz-Sloan J.S. CBTRUS Statistical Report: Primary Brain and Central Nervous System Tumors Diagnosed in the United States in 2008–2012 Neuro-Oncol. 2015 17 iv1 iv62 10.1093/neuonc/nov189 26511214
+2. Lym R.L. Ostrom Q.T. Kruchko C. Couce M. Brat D.J. Louis D.N. Barnholtz-Sloan J.S. Completeness and Concordancy of WHO Grade Assignment for Brain and Central Nervous System Tumors in the United States, 2004–2011 J. Neurooncol. 2015 123 43 51 10.1007/s11060-015-1775-4 25864099
+3. Johnson D.R. O’Neill B.P. Glioblastoma Survival in the United States before and during the Temozolomide Era J. Neuro-Oncol. 2012 107 359 364 10.1007/s11060-011-0749-4 22045118
+4. Stupp R. Hegi M.E. Mason W.P. van den Bent M.J. Taphoorn M.J. Janzer R.C. Ludwin S.K. Allgeier A. Fisher B. Belanger K. Effects of Radiotherapy with Concomitant and Adjuvant Temozolomide versus Radiotherapy Alone on Survival in Glioblastoma in a Randomised Phase III Study: 5-Year Analysis of the EORTC-NCIC Trial Lancet Oncol. 2009 10 459 466 10.1016/S1470-2045(09)70025-7 19269895
+5. Alfonso J.C.L. Talkenberger K. Seifert M. Klink B. Hawkins-Daarud A. Swanson K.R. Hatzikirou H. Deutsch A. The Biology and Mathematical Modelling of Glioma Invasion: A Review J. R. Soc. Interface 2017 14 20170490 10.1098/rsif.2017.0490 29118112
+6. Falco J. Agosti A. Vetrano I.G. Bizzi A. Restelli F. Broggi M. Schiariti M. DiMeco F. Ferroli P. Ciarletta P. In Silico Mathematical Modelling for Glioblastoma: A Critical Review and a Patient-Specific Case J. Clin. Med. 2021 10 2169 10.3390/jcm10102169 34067871
+7. Protopapa M. Zygogianni A. Stamatakos G.S. Antypas C. Armpilia C. Uzunoglu N.K. Kouloulias V. Clinical Implications of in Silico Mathematical Modeling for Glioblastoma: A Critical Review J. Neuro-Oncol. 2017 136 1 11 10.1007/s11060-017-2650-2
+8. Juffer A. Marin U. Niemitalo O. Koivukangas J. Computer Modeling of Brain Tumor Growth Mini Rev. Med. Chem. 2008 8 1494 1506 10.2174/138955708786786471 19075807
+9. Swanson K.R. Alvord E.C. Murray J.D. Virtual Brain Tumours (Gliomas) Enhance the Reality of Medical Imaging and Highlight Inadequacies of Current Therapy Br. J. Cancer 2002 86 14 18 10.1038/sj.bjc.6600021 11857005
+10. Swanson K.R. Alvord J. Murray J.D. A Quantitative Model for Differential Motility of Gliomas in Grey and White Matter Cell Prolif. 2000 33 317 329 10.1046/j.1365-2184.2000.00177.x 11063134
+11. Harpold H.L.P. Alvord E.C. Swanson K.R. The Evolution of Mathematical Modeling of Glioma Proliferation and Invasion J. Neuropathol. Exp. Neurol. 2007 66 1 9 10.1097/nen.0b013e31802d9000 17204931
+12. Jbabdi S. Mandonnet E. Duffau H. Capelle L. Swanson K.R. Pélégrini-Issac M. Guillevin R. Benali H. Simulation of Anisotropic Growth of Low-Grade Gliomas Using Diffusion Tensor Imaging Magn. Reson. Med. 2005 54 616 624 10.1002/mrm.20625 16088879
+13. Angeli S. Emblem K.E. Due-Tonnessen P. Stylianopoulos T. Towards Patient-Specific Modeling of Brain Tumor Growth and Formation of Secondary Nodes Guided by DTI-MRI NeuroImage Clin. 2018 20 664 673 10.1016/j.nicl.2018.08.032 30211003
+14. Colombo M.C. Giverso C. Faggiano E. Boffano C. Acerbi F. Ciarletta P. Towards the Personalized Treatment of Glioblastoma: Integrating Patient-Specific Clinical Data in a Continuous Mechanical Model PLoS ONE 2015 10 e0132887 10.1371/journal.pone.0132887 26186462
+15. Sakkalis V. Roniotis A. Farmaki C. Karatzanis I. Marias K. Evaluation Framework for the Multilevel Macroscopic Models of Solid Tumor Growth in the Glioma Case Proceedings of the Annual International Conference of the IEEE Engineering in Medicine and Biology Buenos Aires, Argentina 31 August–4 September 2010 6809 6812 10.1109/IEMBS.2010.5625961
+16. Roniotis A. Manikis G. Sakkalis V. Zervakis M. Karatzanis I. Marias K. High-Grade Glioma Diffusive Modeling Using Statistical Tissue Information and Diffusion Tensors Extracted from Atlases IEEE Trans. Inf. Technol. Biomed. 2012 16 255 263 10.1109/TITB.2011.2171190 21990337
+17. Rockne R. Rockhill J.K. Mrugala M. Spence A.M. Kalet I. Hendrickson K. Lai A. Cloughesy T. Alvord E.C. Swanson K.R. Predicting the Efficacy of Radiotherapy in Individual Glioblastoma Patients in Vivo: A Mathematical Modeling Approach Phys. Med. Biol. 2010 55 3271 3285 10.1088/0031-9155/55/12/001 20484781
+18. Unkelbach J. Menze B.H. Konukoglu E. Dittmann F. Ayache N. Shih H.A. Radiotherapy Planning for Glioblastoma Based on a Tumor Growth Model: Implications for Spatial Dose Redistribution Phys. Med. Biol. 2014 59 771 789 10.1088/0031-9155/59/3/771 24440905
+19. Lipkova J. Angelikopoulos P. Wu S. Alberts E. Wiestler B. Diehl C. Preibisch C. Pyka T. Combs S.E. Hadjidoukas P. Personalized Radiotherapy Design for Glioblastoma: Integrating Mathematical Tumor Models, Multimodal Scans, and Bayesian Inference IEEE Trans. Med. Imaging 2019 38 1875 1884 10.1109/TMI.2019.2902044 30835219
+20. Roniotis A. Marias K. Sakkalis V. Manikis G.C. Zervakis M. Simulating Radiotherapy Effect in High-Grade Glioma by Using Diffusive Modeling and Brain Atlases J. Biomed. Biotechnol. 2012 2012 715812 10.1155/2012/715812 23093856
+21. Stamatakos G.S. Antipas V.P. Uzunoglu N.K. A Spatiotemporal, Patient Individualized Simulation Model of Solid Tumor Response to Chemotherapy in Vivo: The Paradigm of Glioblastoma Multiforme Treated by Temozolomide IEEE Trans. Biomed. Eng. 2006 53 1467 1477 10.1109/TBME.2006.873761 16916081
+22. Tracqui P. Cruywagen G.C. Woodward D.E. Bartoo G.T. Murray J.D. Alvord E.C. A Mathematical Model of Glioma Growth: The Effect of Chemotherapy on Spatio-temporal Growth Cell Prolif. 1995 28 17 31 10.1111/j.1365-2184.1995.tb00036.x 7833383
+23. Subramanian S. Gholami A. Biros G. Simulation of Glioblastoma Growth Using a 3D Multispecies Tumor Model with Mass Effect J. Math. Biol. 2019 79 941 967 10.1007/s00285-019-01383-y 31127329
+24. Angeli S. Stylianopoulos T. Biphasic Modeling of Brain Tumor Biomechanics and Response to Radiation Treatment J. Biomech. 2016 49 1524 1531 10.1016/j.jbiomech.2016.03.029 27086116
+25. Seano G. Nia H. Emblem K. Datta M. Ren J. Krishnan S. Kloepper J. Pinho M. Ho W. Ghosh M. Solid Stress in Brain Tumours Causes Neuronal Loss and Neurological Dysfunction and Can Be Reversed by Lithium Nat. Biomed. Eng. 2019 3 230 245 10.1038/s41551-018-0334-7 30948807
+26. Jain R.K. Martin J.D. Stylianopoulos T. The Role of Mechanical Forces in Tumor Growth and Therapy Annu. Rev. Biomed. Eng. 2014 16 321 346 10.1146/annurev-bioeng-071813-105259 25014786
+27. Stylianopoulos T. Munn L.L. Jain R.K. Reengineering the Physical Microenvironment of Tumors to Improve Drug Delivery and Efficacy: From Mathematical Modeling to Bench to Bedside Trends Cancer 2018 4 292 319 10.1016/j.trecan.2018.02.005 29606314
+28. Voutouri C. Stylianopoulos T. Accumulation of Mechanical Forces in Tumors Is Related to Hyaluronan Content and Tissue Stiffness PLoS ONE 2018 13 e0193801 10.1371/journal.pone.0193801 29561855
+29. Stylianopoulos T. Martin J.D. Chauhan V.P. Jain S.R. Diop-Frimpong B. Bardeesy N. Smith B.L. Ferrone C.R. Hornicek F.J. Boucher Y. Causes, Consequences, and Remedies for Growth-Induced Solid Stress in Murine and Human Tumors Proc. Natl. Acad. Sci. USA 2012 109 15101 15108 10.1073/pnas.1213353109 22932871
+30. Voutouri C. Mpekris F. Papageorgis P. Odysseos A.D. Stylianopoulos T. Role of Constitutive Behavior and Tumor-Host Mechanical Interactions in the State of Stress and Growth of Solid Tumors PLoS ONE 2014 9 e104717 10.1371/journal.pone.0104717 25111061
+31. Voutouri C. Polydorou C. Papageorgis P. Gkretsi V. Stylianopoulos T. Hyaluronan-Derived Swelling of Solid Tumors, the Contribution of Collagen and Cancer Cells, and Implications for Cancer Therapy Neoplasia 2016 18 732 741 10.1016/j.neo.2016.10.001 27886639
+32. Stylianopoulos T. The Solid Mechanics of Cancer and Strategies for Improved Therapy J. Biomech. Eng. 2017 139 1 10 10.1115/1.4034991
+33. Boucher Y. Jain R.K. Microvascular Pressure Is the Principal Driving Force for Interstitial Hypertension in Solid Tumors: Implications for Vascular Collapse Cancer Res. 1992 52 5110 5114 1516068
+34. Boucher Y. Baxter L.T. Jain R.K. Interstitial Pressure Gradients in Tissue-Isolated and Subcutaneous Tumors: Implications for Therapy Cancer Res. 1990 50 4478 4484 2369726
+35. Macklin P. Lowengrub J. Nonlinear Simulation of the Effect of Microenvironment on Tumor Growth J. Theor. Biol. 2007 245 677 704 10.1016/j.jtbi.2006.12.004 17239903
+36. Frieboes H.B. Lowengrub J.S. Wise S. Zheng X. Macklin P. Bearer E.L. Cristini V. Computer Simulation of Glioma Growth and Morphology Neuroimage 2007 37 S59 10.1016/j.neuroimage.2007.03.008 17475515
+37. Kim Y. Roh S. A Hybrid Model for Cell Proliferation and Migration in Glioblastoma Discret. Contin. Dyn. Syst.—B 2013 18 969 10.3934/dcdsb.2013.18.969
+38. Tunc B. Hormuth D. Biros G. Yankeelov T.E. Modeling of Glioma Growth with Mass Effect by Longitudinal Magnetic Resonance Imaging IEEE Trans. Biomed. Eng. 2021 68 3713 3724 10.1109/TBME.2021.3085523 34061731
+39. Kalli M. Voutouri C. Minia A. Pliaka V. Fotis C. Alexopoulos L. Stylianopoulos T. Mechanical Compression Regulates Brain Cancer Cell Migration Through MEK1/Erk1 Pathway Activation and GDF15 Expression Front. Oncol. 2019 9 992 10.3389/fonc.2019.00992 31612114
+40. Mascheroni P. Alfonso J.C.L. Kalli M. Stylianopoulos T. Meyer-Hermann M. Hatzikirou H. On the Impact of Chemo-Mechanically Induced Phenotypic Transitions in Gliomas Cancers 2019 11 716 10.3390/cancers11050716
+41. Mpekris F. Angeli S. Pirentis A.P. Stylianopoulos T. Stress-Mediated Progression of Solid Tumors: Effect of Mechanical Stress on Tissue Oxygenation, Cancer Cell Proliferation, and Drug Delivery Biomech. Model. Mechanobiol. 2015 14 1391 1402 10.1007/s10237-015-0682-0 25968141
+42. Hatzikirou H. Basanta D. Simon M. Schaller K. Deutsch A. “Go or Grow”: The Key to the Emergence of Invasion in Tumour Progression? Math. Med. Biol. 2012 29 49 65 10.1093/imammb/dqq011 20610469
+43. Saut O. Lagaert J.B. Colin T. Fathallah-Shaykh H.M. A Multilayer Grow-or-Go Model for GBM: Effects of Invasive Cells and Anti-Angiogenesis on Growth Bull. Math. Biol. 2014 76 2306 2333 10.1007/s11538-014-0007-y 25149139
+44. Alfonso J.C.L. Köhn-Luque A. Stylianopoulos T. Feuerhake F. Deutsch A. Hatzikirou H. Why One-Size-Fits-All Vaso-Modulatory Interventions Fail to Control Glioma Invasion: In Silico Insights Sci. Rep. 2016 6 1 15 10.1038/srep37283 28442746
+45. Swanson K.R. Rostomily R.C. Alvord E.C. A Mathematical Modelling Tool for Predicting Survival of Individual Patients Following Resection of Glioblastoma: A Proof of Principle Br. J. Cancer 2008 98 113 119 10.1038/sj.bjc.6604125 18059395
+46. Papadogiorgaki M. Koliou P. Kotsiakis X. Zervakis M.E. Mathematical Modelling of Spatio-Temporal Glioma Evolution Theor. Biol. Med. Model. 2013 10 47 10.1186/1742-4682-10-47 23880133
+47. Batchelor T.T. Gerstner E.R. Emblem K.E. Duda D.G. Kalpathy-Cramer J. Snuderl M. Ancukiewicz M. Polaskova P. Pinho M.C. Jennings D. Improved Tumor Oxygenation and Survival in Glioblastoma Patients Who Show Increased Blood Perfusion after Cediranib and Chemoradiation Proc. Natl. Acad. Sci. USA 2013 110 19059 19064 10.1073/pnas.1318022110 24190997
+48. Sorensen A.G. Emblem K.E. Polaskova P. Jennings D. Kim H. Ancukiewicz M. Wang M. Wen P.Y. Ivy P. Batchelor T.T. Increased Survival of Glioblastoma Patients Who Respond to Antiangiogenic Therapy with Elevated Blood Perfusion Cancer Res. 2012 72 402 407 10.1158/0008-5472.CAN-11-2464 22127927
+49. Hormuth D.A. Weis J.A. Barnes S.L. Miga M.I. Rericha E.C. Quaranta V. Yankeelov T.E. A Mechanically Coupled Reaction–Diffusion Model That Incorporates Intra-Tumoural Heterogeneity to Predict in Vivo Glioma Growth J. R. Soc. Interface 2017 14 20161010 10.1098/rsif.2016.1010 28330985
+50. Dohm A.E. Nickles T.M. Miller C.E. Bowers H.J. Miga M.I. Attia A. Chan M.D. Weis J.A. Clinical Assessment of a Biophysical Model for Distinguishing Tumor Progression from Radiation Necrosis Med. Phys. 2021 48 3852 3859 10.1002/mp.14999 34042188
+51. Jamin Y. Boult J.K.R. Li J. Popov S. Garteiser P. Ulloa J.L. Cummings C. Box G. Eccles S.A. Jones C. Exploring the Biomechanical Properties of Brain Malignancies and Their Pathologic Determinants in Vivo with Magnetic Resonance Elastography Cancer Res. 2015 75 1216 1224 10.1158/0008-5472.CAN-14-1997 25672978
+52. Hiscox L.V. Johnson C.L. Barnhill E. McGarry M.D.J. Huston J. Van Beek E.J.R. Starr J.M. Roberts N. Magnetic Resonance Elastography (MRE) of the Human Brain: Technique, Findings and Clinical Applications Phys. Med. Biol. 2016 61 R401 R437 10.1088/0031-9155/61/24/R401 27845941
+53. Schregel K. Nazari N. Nowicki M.O. Palotai M. Lawler S.E. Sinkus R. Barbone P.E. Patz S. Characterization of Glioblastoma in an Orthotopic Mouse Model with Magnetic Resonance Elastography NMR Biomed. 2018 31 e3840 10.1002/nbm.3840 29193449
+54. Katsamba I. Evangelidis P. Voutouri C. Tsamis A. Vavourakis V. Stylianopoulos T. Biomechanical Modelling of Spinal Tumour Anisotropic Growth Proc. R. Soc. A Math. Phys. Eng. Sci. 2020 476 20190364 10.1098/rspa.2019.0364 32831581
+55. Helmlinger G. Netti P.A. Lichtenbeld H.C. Melder R.J. Jain R.K. Solid Stress Inhibits the Growth of Multicellular Tumor Spheroids Nat. Biotechnol. 1997 15 778 783 10.1038/nbt0897-778 9255794
+56. Cheng G. Tse J. Jain R.K. Munn L.L. Micro-Environmental Mechanical Stress Controls Tumor Spheroid Size and Morphology by Suppressing Proliferation and Inducing Apoptosis in Cancer Cells PLoS ONE 2009 4 e4632 10.1371/journal.pone.0004632 19247489
+57. Kaufman L.J. Brangwynne C.P. Kasza K.E. Filippidi E. Gordon V.D. Deisboeck T.S. Weitz D.A. Glioma Expansion in Collagen I Matrices: Analyzing Collagen Concentration-Dependent Growth and Motility Patterns Biophys. J. 2005 89 635 650 10.1529/biophysj.105.061994 15849239
+58. Delarue M. Montel F. Vignjevic D. Prost J. Joanny J.F. Cappello G. Compressive Stress Inhibits Proliferation in Tumor Spheroids through a Volume Limitation Biophys. J. 2014 107 1821 1828 10.1016/j.bpj.2014.08.031 25418163
+59. Fløgstad Svensson S. Fuster-Garcia E. Latysheva A. Fraser-Green J. Nordhøy W. Isam Darwish O. Thokle Hovden I. Holm S. Vik-Mo E.O. Sinkus R. Decreased Tissue Stiffness in Glioblastoma by MR Elastography Is Associated with Increased Cerebral Blood Flow Eur. J. Radiol. 2022 147 110136 10.1016/j.ejrad.2021.110136 35007982
+60. Runge J.H. Hoelzl S.H. Sudakova J. Dokumaci A.S. Nelissen J.L. Guenthner C. Lee J. Troelstra M. Fovargue D. Stoker J. A Novel Magnetic Resonance Elastography Transducer Concept Based on a Rotational Eccentric Mass: Preliminary Experiences with the Gravitational Transducer Phys. Med. Biol. 2019 64 045007 10.1088/1361-6560/aaf9f8 30566925
+61. Svensson S.F. De Arcos J. Darwish O.I. Fraser-Green J. Storås T.H. Holm S. Vik-Mo E.O. Sinkus R. Emblem K.E. Robustness of MR Elastography in the Healthy Brain: Repeatability, Reliability, and Effect of Different Reconstruction Methods J. Magn. Reson. Imaging 2021 53 1510 1521 10.1002/jmri.27475 33403750
+62. Fovargue D. Kozerke S. Sinkus R. Nordsletten D. Robust MR Elastography Stiffness Quantification Using a Localized Divergence Free Finite Element Reconstruction Med. Image Anal. 2018 44 126 142 10.1016/j.media.2017.12.005 29247876
+63. Li S. Zhao G. Chen H. The Relationship between Steady Shear Viscosity and Complex Viscosity J. Dispers. Sci. Technol. 2005 26 415 419 10.1081/DIS-200054555
+64. Rodriguez E.K. Hoger A. McCulloch A.D. Stress-Dependent Finite Growth in Soft Elastic Tissues J. Biomech. 1994 27 455 467 10.1016/0021-9290(94)90021-3 8188726
+65. Skalak R. Zargaryan S. Jain R.K. Netti P.A. Hoger A. Compatibility and the Genesis of Residual Stress by Volumetric Growth J. Math. Biol. 1996 34 889 914 10.1007/BF01834825 8858855
+66. MacLaurin J. Chapman J. Jones G.W. Roose T. The Buckling of Capillaries in Solid Tumours Proc. R. Soc. A Math. Phys. Eng. Sci. 2012 468 4123 4145 10.1098/rspa.2012.0418
+67. Ambrosi D. Mollica F. On the Mechanics of a Growing Tumor Int. J. Eng. Sci. 2002 40 1297 1316 10.1016/S0020-7225(02)00014-9
+68. Mow V.C. Kuei S.C. Lai W.M. Armstrong C.G. Biphasic Creep and Stress Relaxation of Articular Cartilage in Compression: Theory and Experiments J. Biomech. Eng. 1980 102 73 84 10.1115/1.3138202 7382457
+69. Taber L.A. Theoretical Study of Beloussov’s Hyper-Restoration Hypothesis for Mechanical Regulation of Morphogenesis Biomech. Model. Mechanobiol. 2008 7 427 441 10.1007/s10237-007-0106-x 17909868
+70. Ciarletta P. Buckling Instability in Growing Tumor Spheroids Phys. Rev. Lett. 2013 110 1 5 10.1103/PhysRevLett.110.158102
+71. Stein A.M. Demuth T. Mobley D. Berens M. Sander L.M. A Mathematical Model of Glioblastoma Tumor Spheroid Invasion in a Three-Dimensional in Vitro Experiment Biophys. J. 2007 92 356 365 10.1529/biophysj.106.093468 17040992
+72. Engwer C. Knappitsch M. Surulescu C. A Multiscale Model for Glioma Spread Including Cell-Tissue Interactions and Proliferation Math. Biosci. Eng. 2016 13 443 460 10.3934/mbe.2015011 27105989
+73. Stylianopoulos T. Yeckel A. Derby J.J. Luo X.J. Shephard M.S. Sander E.A. Barocas V.H. Permeability Calculations in Three-Dimensional Isotropic and Oriented Fiber Networks Phys. Fluids 2008 20 123601 10.1063/1.3021477
+74. Zakariapour M. Hamedi M.H. Fatouraee N. Características Do Fluxo de Fluido Intersticial Junto Com o Fluxo Sanguíneo No Interior de Um Tumor Cilíndrico: Uma Simulação Numérica Acta Sci.—Technol. 2018 40 e30792 10.4025/ACTASCITECHNOL.V40I1.30792
+75. Baxter L.T. Jain R.K. Transport of Fluid and Macromolecules in Tumors. I. Role of Interstitial Pressure and Convection Microvasc. Res. 1989 37 77 104 10.1016/0026-2862(89)90074-5 2646512
+76. Stylianopoulos T. Martin J.D. Snuderl M. Mpekris F. Jain S.R. Jain R.K. Coevolution of Solid Stress and Interstitial Fluid Pressure in Tumors during Progression: Implications for Vascular Collapse Cancer Res. 2013 73 3833 3841 10.1158/0008-5472.CAN-12-4521 23633490
+77. Roose T. Netti P.A. Munn L.L. Boucher Y. Jain R.K. Solid Stress Generated by Spheroid Growth Estimated Using a Linear Poroelasticity Model Microvasc. Res. 2003 66 204 212 10.1016/S0026-2862(03)00057-8 14609526
+78. Kim Y. Stolarska M.A. Othmer H.G. The Role of the Microenvironment in Tumor Growth and Invasion Prog. Biophys. Mol. Biol. 2011 106 353 379 10.1016/j.pbiomolbio.2011.06.006 21736894
+79. Stylianopoulos T. Economides E.-A. Baish J.W. Fukumura D. Jain R.K. Towards Optimal Design of Cancer Nanomedicines: Multi-Stage Nanoparticles for the Treatment of Solid Tumors Ann. Biomed. Eng. 2015 43 2291 2300 10.1007/s10439-015-1276-9 25670323
+80. Deen W.M. Hindered Transport of Large Molecules in Liquid-filled Pores AIChE J. 1987 33 1409 1425 10.1002/aic.690330902
+81. Netti P.A. Berk D.A. Swartz M.A. Grodzinsky A.J. Jain R.K. Role of Extracellular Matrix Assembly in Interstitial Transport in Solid Tumors Cancer Res. 2000 60 2497 2503 10811131
+82. Hermann P.C. Huber S.L. Herrler T. Aicher A. Ellwart J.W. Guba M. Bruns C.J. Heeschen C. Distinct Populations of Cancer Stem Cells Determine Tumor Growth and Metastatic Activity in Human Pancreatic Cancer Cell Stem Cell 2007 1 313 323 10.1016/j.stem.2007.06.002 18371365
+83. Casciari J.J. Sotirchos S.V. Sutherland R.M. Variations in Tumor Cell Growth Rates and Metabolism with Oxygen Concentration, Glucose Concentration, and Extracellular PH J. Cell. Physiol. 1992 151 386 394 10.1002/jcp.1041510220 1572910
+84. Schmidt M.M. Wittrup K.D. A Modeling Analysis of the Effects of Molecular Size and Binding Affinity on Tumor Targeting Mol. Cancer Ther. 2009 8 2861 2871 10.1158/1535-7163.MCT-09-0195 19825804
+85. Mok W. Stylianopoulos T. Boucher Y. Jain R.K. Mathematical Modeling of Herpes Simplex Virus Distribution in Solid Tumors: Implications for Cancer Gene Therapy Clin. Cancer Res. 2009 15 2352 2360 10.1158/1078-0432.CCR-08-2082 19318482
+86. Pluen A. Boucher Y. Ramanujan S. McKee T.D. Gohongi T. Di Tomaso E. Brown E.B. Izumi Y. Campbell R.B. Berk D.A. Role of Tumor-Host Interactions in Interstitial Diffusion of Macromolecules: Cranial vs. Subcutaneous Tumors Proc. Natl. Acad. Sci. USA 2001 98 4628 4633 10.1073/pnas.081626898 11274375
+87. Chauhan V.P. Stylianopoulos T. Martin J.D. PopoviÄ Z. Chen O. Kamoun W.S. Bawendi M.G. Fukumura D. Jain R.K. Normalization of Tumour Blood Vessels Improves the Delivery of Nanomedicines in a Size-Dependent Manner Nat. Nanotechnol. 2012 7 383 388 10.1038/nnano.2012.45 22484912
+88. Késmárky G. Kenyeres P. Rábai M. Tóth K. Plasma Viscosity: A Forgotten Variable Clin. Hemorheol. Microcirc. 2008 39 243 246 10.3233/CH-2008-1088 18503132
+89. Hobbs S.K. Monsky W.L. Yuan F. Roberts W.G. Griffith L. Torchilin V.P. Jain R.K. Regulation of Transport Pathways in Tumor Vessels: Role of Tumor Type and Microenvironment Proc. Natl. Acad. Sci. USA 1998 95 4607 4612 10.1073/pnas.95.8.4607 9539785
+90. Bunevicius A. Schregel K. Sinkus R. Golby A. Patz S. REVIEW: MR Elastography of Brain Tumors NeuroImage Clin. 2020 25 102109 10.1016/j.nicl.2019.102109 31809993
+91. Clarke E.C. Cheng S. Green M. Sinkus R. Bilston L.E. Using Static Preload with Magnetic Resonance Elastography to Estimate Large Strain Viscoelastic Properties of Bovine Liver J. Biomech. 2011 44 2461 2465 10.1016/j.jbiomech.2011.06.023 21762921
+92. Pagé G. Tardieu M. Besret L. Blot L. Lopes J. Sinkus R. Van Beers B.E. Garteiser P. Assessing Tumor Mechanics by MR Elastography at Different Strain Levels J. Magn. Reson. Imaging 2019 50 1982 1989 10.1002/jmri.26787 31087619
+

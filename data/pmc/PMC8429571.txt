@@ -1,0 +1,216 @@
+
+==== Front
+Sci Rep
+Sci Rep
+Scientific Reports
+2045-2322
+Nature Publishing Group UK London
+
+97454
+10.1038/s41598-021-97454-6
+Article
+Genomic landscape of gliosarcoma: distinguishing features and targetable alterations
+Zaki Mark M. 15
+Mashouf Leila A. 1
+Woodward Eleanor 1
+Langat Pinky 1
+Gupta Saksham 1
+Dunn Ian F. 2
+Wen Patrick Y. 3
+Nahed Brian V. 34
+Bi Wenya Linda wbi@bwh.harvard.edu
+
+1
+1 grid.62560.37 0000 0004 0378 8294 Center for Skull Base and Pituitary Surgery, Department of Neurosurgery, Brigham and Women’s Hospital, 60 Fenwood Road, Boston, MA 02115 USA
+2 grid.266902.9 0000 0001 2179 3618 Department of Neurosurgery, University of Oklahoma Health Sciences Center, Oklahoma City, OK USA
+3 grid.38142.3c 000000041936754X Center for NeuroOncology, Dana-Farber Cancer Institute, Harvard Medical School, Boston, MA USA
+4 grid.38142.3c 000000041936754X Department of Neurosurgery, Massachusetts General Hospital, Harvard Medical School, Boston, MA USA
+5 grid.214458.e 0000000086837370 Department of Neurosurgery, University of Michigan, Ann Arbor, MI USA
+9 9 2021
+9 9 2021
+2021
+11 180094 9 2020
+19 7 2021
+© The Author(s) 2021
+https://creativecommons.org/licenses/by/4.0/ Open Access This article is licensed under a Creative Commons Attribution 4.0 International License, which permits use, sharing, adaptation, distribution and reproduction in any medium or format, as long as you give appropriate credit to the original author(s) and the source, provide a link to the Creative Commons licence, and indicate if changes were made. The images or other third party material in this article are included in the article's Creative Commons licence, unless indicated otherwise in a credit line to the material. If material is not included in the article's Creative Commons licence and your intended use is not permitted by statutory regulation or exceeds the permitted use, you will need to obtain permission directly from the copyright holder. To view a copy of this licence, visit http://creativecommons.org/licenses/by/4.0/.
+Gliosarcoma is an aggressive brain tumor with histologic features of glioblastoma (GBM) and soft tissue sarcoma. Despite its poor prognosis, its rarity has precluded analysis of its underlying biology. We used a multi-center database to characterize the genomic landscape of gliosarcoma. Sequencing data was obtained from 35 gliosarcoma patients from Genomics Evidence Neoplasia Information Exchange (GENIE) 5.0, a database curated by the American Association of Cancer Research (AACR). We analyzed genomic alterations in gliosarcomas and compared them to GBM (n = 1,449) and soft tissue sarcoma (n = 1,042). 30 samples were included (37% female, median age 59 [IQR: 49–64]). Nineteen common genes were identified in gliosarcoma, defined as those altered in > 5% of samples, including TERT Promoter (92%), PTEN (66%), and TP53 (60%). Of the 19 common genes in gliosarcoma, 6 were also common in both GBM and soft tissue sarcoma, 4 in GBM alone, 0 in soft tissue sarcoma alone, and 9 were more distinct to gliosarcoma. Of these, BRAF harbored an OncoKB level 1 designation, indicating its status as a predictive biomarker of response to an FDA-approved drug in certain cancers. EGFR, CDKN2A, NF1, and PTEN harbored level 4 designations in solid tumors, indicating biological evidence of these biomarkers predicting a drug-response. Gliosarcoma contains molecular features that overlap GBM and soft tissue sarcoma, as well as its own distinct genomic signatures. This may play a role in disease classification and inclusion criteria for clinical trials. Gliosarcoma mutations with potential therapeutic indications include BRAF, EGFR, CDKN2A, NF1, and PTEN.
+
+Subject terms
+
+Cancer
+Neuroscience
+Biomarkers
+Oncology
+issue-copyright-statement© The Author(s) 2021
+==== Body
+pmcIntroduction
+
+Gliosarcoma is a rare tumor histologically characterized by both glial and sarcomatous features1, classified by the World Health Organization (WHO) as a grade IV IDH wild-type variant of glioblastoma (GBM) with a prevalence of approximately 2% within all adult GBM2,3. Despite aggressive treatment consisting of surgical resection, radiation, and chemotherapy, survival for gliosarcoma remains poor with a median survival of 9 months compared to a median 15-month survival for other forms of GBM1. It is essential to accurately distinguish gliosarcoma from GBM in order to better inform patient prognosis with this distinct malignancy, as well as to allow for focused translational and clinical investigation into therapies that will improve outcomes for gliosarcoma specifically.
+
+Gliosarcoma presents a diagnostic challenge due to the lack of clear guidelines for clinicians and dedicated scientific focus on gliosarcoma as a separate entity from GBM; it is not unusual for clinical trials to group GBM and gliosarcoma together in patient inclusion criteria without subsequent stratification in analysis4–7. Gliosarcoma can be divided into primary and secondary gliosarcoma, with secondary subtypes thought of arising from previously treated GBM8. Primary gliosarcoma is historically perceived as a rare subtype of malignant glioma with similarly poor prognosis to glioblastoma. The rarity of this disease, however, has made it difficult to unequivocally define distinguishing features.
+
+In this study, we use a genomic database from an international consortium to characterize molecular alterations in gliosarcoma, GBM, and soft tissue sarcomas to better delineate shared and distinguishing features between these tumors. To help guide therapeutic strategies, we also highlight genetic alterations in gliosarcoma that are currently targeted with existing therapies for other indications.
+
+Methods
+
+Sample identification
+
+We identified 37 samples from 35 patients annotated as gliosarcoma from the American Association of Cancer Research (AACR) Genomics Evidence Neoplasia Information Exchange (GENIE) database9. Patient age in the cohort is captured as "< 18″ or the exact age when > 18. For two patients with two tumor samples each, the sample with a later date of collection was excluded, as well as two others labeled as local recurrence or metastasis. Three primary gliosarcoma cases which shared a patient identification number with GBM tumor samples were also excluded. In total, 30 tumor samples from 30 distinct patients remained for analysis, derived from Memorial Sloan Kettering Cancer Center (MSK, n = 12), MD Anderson (MDA, n = 7), Dana-Farber Cancer Institute (DFCI, n = 8), and Johns Hopkins University (JHU, n = 3) (Supplementary Table 1).
+
+We compared these thirty gliosarcoma samples to the genomic profile of GBM (n = 1449) and soft tissue sarcoma (n = 1042) in GENIE. As with the gliosarcoma cohort, we excluded samples which were not primary tumors and limited our analysis to one tumor per patient, selecting the earlier specimen in cases of multiple samples belonging to a single patient.
+
+Sequence variant calling
+
+Institutions contributing samples to the present study (MSK, MDA, JHU, and DFCI) reported minimum depths of sequencing coverage of 750 ×, 250 ×, 500 ×, and 200 ×, respectively; with an average tumor sequencing coverage depth of 200 × to 4000 × and average depth of variant coverage of 10 × to 500 × (AACR GENIE Data Guide, v7.0-public). Individual variant-calling parameters were employed by each institution: MSK sample alterations were detected from matched tumor-normal sequence data, with sequence mutations reported for > 5% allele frequency for novel variants or > 2% allele frequency for recurrent hotspots. MDA sequence variant identification also incorporated germline variant subtraction, with variant filters of > 5% allele frequency, minimum variant coverage > 25, and absence of the variant in paired germline DNA. JHU specimens had multiple variant filters including a total read depth filter ≥ 100, variant allele coverage ≥ 10, variant allele frequency for substitutions ≥ 0.05, and variants seen in greater than 20% of a set of non-neoplastic control tissues were excluded. DFCI variant identification similarly used a panel of historical normal samples to filter putative germline variants.
+
+Genomic analysis
+
+An average of 247 genes were assayed per sample, with some degree of variability in the total and specific genes assayed at each institution (Supplementary Table 1). To account for this variability in determining the prevalence of genomic alterations in gliosarcoma, we excluded genes assayed in fewer than one-third of all sequenced samples for both mutations (n = 10) and copy number alterations (n = 7). To focus on potentially clinically meaningful changes, we considered only mutations, fusions, and high-level (2 or more copies) amplifications or losses, as defined by the GENIE data dictionary9. Genes that were altered in greater than 5% of assayed samples for each tumor type, with a minimum a genetic alteration in > 2 samples, were considered common alterations for the purpose of this study.
+
+Targetable mutations
+
+We partitioned observed genomic alterations by the OncoKB classification system: (1) an FDA-recognized biomarker predictive of response to an FDA-approved drug for a specific indication; (2) standard care biomarker recommended by an oncology expert panel predictive of response to an FDA-approved drug for a specific indication; (3) clinical evidence supports the biomarker being predictive of response to an investigational drug in a specific indication or an FDA-approved drug in another indication; and (4) biological evidence supports the biomarker being predictive of response to a drug10.
+
+Statistical analysis
+
+Fisher’s Exact Test was used to compare the frequency of altered genes between gliosarcoma, GBM, and soft tissue sarcoma. We then performed a Benjaminin-Hochberg (False Discovery Rate) correction for multiple hypothesis, with a q-value cutoff of 0.1. All analyses were performed using the R programming language, version 3.6.011.
+
+Results
+
+We analyzed 30 patients with gliosarcoma, with median age of 59 years (range: 18–79 years) and a slight predilection for male patients (63%) (Table 1). We identified 19 genes commonly altered genes in gliosarcoma. The most frequently altered were TERT Promoter (92%), PTEN (66%), TP53 (60%), and NF1 (41%), (Fig. 1). Fourteen of 19 recurrently altered genes were associated with mutations, while three (CDKN2A, CDKN2B, and SOX2) harbored copy number alterations, and two (EGFR and CREBBP) contained both mutations and copy number alterations with nearly equal frequency (Supplementary Table 2). Twenty-nine of 30 samples harbored an alteration in one or more of the common 19 genes (Fig. 1). These genes were associated with multiple recognized cellular pathways including cellular migration, proliferation, survival, cell cycle regulation, apoptosis, and genetic stability12.Table 1 Patient Demographics for GENIE Gliosarcoma Samples (n = 30).
+
+	Median	Interquartile range	Range	
+Age	59	49–64	< 18–79	
+	Male	Female	Ratio	
+Gender	19	11	1.7:1	
+	White	Black	Unknown	
+Race	25	1	4	
+
+Figure 1 Recurrent genetic alterations in gliosarcoma. Summary of major alterations in 19 most frequently altered genes and pathways in gliosarcoma. Labels on left represent major biological pathways altered by each group of genes, and genes are ordered within each group in order of decreasing incidence. By functional categorization and descending order of mutation frequency: Cell Migration and Proliferation: NF1 (41%), EGFR (12%), Cell Cycle Regulation: CDKN2B (28%), RB1 (26%), ANKRD11 (11%), Cell Proliferation and Survival: PTEN (66%), CDKN2A (31%), SOX2 (11%), BRAF (10%), Apoptosis: TP53 (60%), Genetic Stability: TERT Promoter (92%), STAG2 (22%), ARID2 (11%), Mismatch repair: MSH6 (11%), and Miscellaneous: CBL (11%), CREBBP (11%), SUZ12 (11%), PTPN11 (10%). Order of samples determined by hierarchical clustering. Bar plots above and to the right represent number of alterations per sample and per gene, respectively.
+
+Potentially targetable alterations
+
+We assessed the potential clinical impact of observed mutations by scoring them based on the four categories of targetability defined by OncoKB, a precision oncology database collating data on the treatment implications of specific cancer gene alterations10. Of the 19 common genes in gliosarcoma, five (BRAF, EGFR, CDKN2A, NF1, and PTEN) were indicated as potentially targetable genes present in the OncoKB database (Table 2). Of these, BRAF harbored a level 1 alteration for several non-CNS cancers, indicating its status as FDA-recognized predictive biomarker of response to an FDA-approved drug; notably, this FDA indication does not include gliosarcoma. The approved drugs target the well-established BRAFV600E mutation, which represented two of the four BRAF mutations in our cohort, for a prevalence of 7% (n = 2 of 30). Another four targetable alterations (EGFR, CDKN2A, NF1, and PTEN) were classified as level 4 for solid tumors, indicating the existence of compelling biological evidence for predictive value of response to an existing drug.Table 2 Targetable alterations in gliosarcoma.
+
+Gene	Alteration type	Protein alterations	Alteration frequency (%)	Combined alteration frequency (all alteration types) (%)	Unique to gliosarcoma?	OncoKB Tier	
+TERT promoter	Mut	Noncoding mutations occurring at hotspots C228T and C250T	92	92	FALSE	N/A	
+PTEN	Mut/CNA	C71Y, G230*, G36R, L325P, N184Efs*6, N48K, R130*, R130Q, R173C, R233*, S229*, V166Sfs*14, V175M, W274*, X55_splice, X268_splice, Deep deletion	50/17	67	FALSE	Level 4 for oncogenic mutations in all solid tumors	
+TP53	Mut	C135F, C238Y, D281G, H179Y, H193R, I255N, K132R, L111P, P80Lfs*43, R175H, R248Q, R248W, R273C, R282W, R342*, S241F, T125M, V272M, V73Wfs*50, Y205H	60	60	FALSE	N/A	
+NF1	Mut/CNA	E1264*, I1679_Y1680del, P1847Qfs*16, Q2589*, R1534*, R2637*, Y2285Tfs*5, Deep deletion	35/6	41	FALSE	Level 4 for oncogenic mutations in all solid tumors	
+CDKN2A	CNA	Deep deletion	31	31	FALSE	Level 4 for oncogenic mutations in all solid tumors	
+CDKN2B	CNA	Deep deletion	28	28	FALSE	N/A	
+RB1	Mut/CNA	H733Ffs*13, M484Vfs*8, R467*, S149*, S567*, S576Rfs*34, Deep deletion	20/6	26	FALSE	N/A	
+STAG2	Mut	G935Vfs*2, K906Nfs*11, M318R	17	17	FALSE	N/A	
+EGFR	Mut/CNA	A289V, R222C, Amplification	7/5	12	FALSE	Level 4 for amplification and A289V in gliomas	
+ARID2	Mut	I124T, T1180K	11	11	TRUE	N/A	
+CBL	Mut	R420L, R718*	11	11	TRUE	N/A	
+MSH6	Mut	L1244dup, T1133A	11	11	TRUE	N/A	
+SUZ12	Mut	G42Afs*30, T596Nfs*6	11	11	TRUE	N/A	
+SOX2	CNA	Amplification	11	11	TRUE	N/A	
+CREBBP	Mut/CNA	A1603T, Deep deletion	6/6	11	TRUE	N/A	
+BRAF	Mut	G32_A33dup, G466E, V600E	10	10	TRUE	Level 1 for V600E in certain non-glioma cancers (e.g. melanoma, colorectal, thyroid, and lung cancers.)	
+PTPN11	Mut	G60R, N308D, S502L	10	10	FALSE	N/A	
+FBXW7	Mut	R465H, R465C	7	7	TRUE	N/A	
+APC	Mut	A735V, R876Q	7	7	TRUE	N/A	
+The top 19 genes in Gliosarcoma (those altered in at least 10% of cases) and their respective level of targetability per OncoKB.
+
+*indicates truncating mutation due to early stop codon.
+
+Comparison of gliosarcoma with related tumors
+
+To help delineate unique and shared features of gliosarcoma compared to other tumors, we next analyzed genes that were altered in greater than 5% of GBM (n = 1449) and soft tissue sarcoma (n = 1042) samples in GENIE (Supplementary Figure 1). Thirty-four common genes were identified in GBM and 14 were identified in soft tissue sarcoma. Among all the samples, 6 were considered common along tumor types. Gliosarcoma shared 4 genes with GBM alone, none with soft tissue sarcoma alone, and the remaining nine common genes in gliosarcoma were unique to gliosarcoma amongst the 5% threshold for each respective tumor type (Fig. 2, Supplementary Table 4).Figure 2 Genetic alteration comparison. Venn diagram of representative commonly altered genes in gliosarcoma, glioblastoma (GBM), and soft tissue sarcoma.
+
+When comparing the alteration frequencies these genes, EGFR, TP53, SUZ12, and CREBBP were significantly different between gliosarcoma and GBM, (Fisher’s Test, p < 0.05), but none maintained significance when corrected for multiple hypothesis testing (Fig. 3). Alteration frequencies of multiple genes including TP53, TERT Promoter and PTEN, were significantly different between gliosarcoma and soft tissue sarcoma (Fisher’s Test, p < 0.05; FDR correction, q < 0.01) (Supplementary Table 3).Figure 3 Comparative incidence of common alterations between GBM and gliosarcoma. Incidence of alterations which significantly differed between gliosarcoma and GBM (Fisher’s Exact Test p < 0.05), although no differences retained significance after multiple hypothesis correction.
+
+Discussion
+
+With a growing understanding of the molecular alterations driving gliomas, scientific effort towards tumor-specific, personalized therapies has been robust13. Gliosarcomas are rare entities, however, and there is sparse data on their molecular profile. In comparison to GBM, gliosarcomas exhibit a higher propensity for extracranial metastasis and differing response to therapies when compared to GBM14–16. In this study, we build upon the emerging literature on the genomic signatures of gliosarcoma.
+
+Although the WHO classification places gliosarcoma as a variant within the greater category of glioblastoma, the distinct mutational landscapes between the two may provide evidence that the common practice of grouping GBM and gliosarcoma patients in clinical trials may not be appropriate. Based on our findings and support in the literature of significant genomic differences between gliosarcoma and glioblastoma, it would be of interest to stratify responses to treatment between GBM and gliosarcoma in order to better understand clinical responses based on tumor type, although the small number of gliosarcoma patients may make this difficult. Additionally, our findings demonstrating no specific mutations shared exclusively between gliosarcoma and soft tissue sarcoma suggest that association between these two entities may be vestigial. The lack of genetic overlap linking soft tissue sarcoma and gliosarcoma reported here should be considered in future studies and taxonomy.
+
+In our study, we observed BRAF to be altered in 10% of gliosarcomas, compared to 3% of GBMs. BRAFV600E in particular is a level 1 OncoKB target for many cancers. While evidence has been limited, one case study of two patients diagnosed with GBM harboring BRAFV600E mutations demonstrated tumor regression and control after treatment with a dual BRAF-MEK inhibitor, though treatment resistance developed, limiting survival to 7 and 7.5 months respectively17. Another case of a pediatric GBM patient with a BRAFV600E mutation demonstrated complete clinical regression 6 months post-treatment with BRAF inhibitor therapy18. Other studies have shown that targeting BRAFV600E shows promising results in a variety of gliomas19–21. BRAF may thus be a therapeutic avenue for a subset of gliosarcomas as well.
+
+In our study, we found EGFR altered in 12% of gliosarcoma samples. Other genomic analyses of gliosarcoma have found frequencies of EGFR amplification of 4% in a study of 22 samples and 74% EGFR gain in another study of 18 samples with one sample expressing EGFR amplification22,23. Differences in epidermal growth factor receptor (EGFR) mutation type and frequency contrast gliosarcoma from GBM. EGFR is thought to be a key oncogenic driver in GBM, amplified in 35–45% of IDH wildtype glioblastomas24. Investigation of EGFR-targeted therapies for GBM has been robust and diverse, including anti-EGFR antibody-loaded nanoparticles, anti-EGFRvIII CAR-T therapy, antibody drug conjugates like depatuxizumab mafodotin, and clinical trials investigating monoclonal antibodies or tyrosine kinase inhibitors against EGFR like erlotinib and lapatinib25–29. According to OncoKB, lapatinib has a level 4 indication for glioma, suggesting biological evidence for potential success as a targeted therapy. In gliosarcoma, no independent trial with EGFR targeted agents has been published to our knowledge. In a comprehensive whole-genome copy number analysis of gliosarcoma, a study found EGFR amplification was uncommon, but found frequent gains of chromosome 7, which contains the EGFR locus, among other genes including CDK6, PDGF-A, and c-Met22. It is unclear if the EGFR pathway is indirectly activated in gliosarcoma through other mutations. Therapies targeting EGFR mutations are unlikely to be important treatment options in gliosarcoma due to low frequency of genetic alterations.
+
+Interestingly, one study found TP53 mutations in gliosarcoma to be correlated with worse prognosis, treatment resistance, and epithelial to mesenchymal transition of the sarcomatous cell population, making it a prospective marker for prognostic categorization1. Other mutations seen in high frequency in this particular analysis of gliosarcoma include TERT promoter, CDK2NB, RB1, and STAG2.
+
+Other genes, elicited in our analysis, showing potential opportunities for investigation include PTEN, NF1, and CDKN2A belonging generally to the Ras/PI3K/AKT pathway. Overall, these mutations remain of unclear clinical and prognostic relevance, though present an interesting avenue for further development as markers of prognosis or tumor-specific therapy.
+
+In our study, PTEN had an alteration frequency of 67% among gliosarcoma samples. PTEN alterations have previously been detected in 26% of HGG in TCGA data, and identified in 45% (9/20) of previously investigated gliosarcomas30,31. Loss of PTEN function through deletion, mutation or down regulation has been found to potentially enrich sensitivity to small molecule inhibitors of PI3Kβ such as AZD8186 and GSK2636771, as studied in cell line panels and early clinical trials of patients with PTEN-deficient advanced solid tumors including GBM, respectively32,33.
+
+We further observed alterations in NF1 in 41% of gliosarcomas via damaging mutations and copy number losses. Loss of NF1 function enhances RAS activity, inducing RAS/RAF/MEK/ERK pathway activation. Single-agent MEK inhibitors (PD0325901 and AZD6244) have been shown to be effective against a subset of NF1–deficient GBM cells dependent on RAF/MEK/ERK signaling34.
+
+We found CDKN2A had an alteration frequency of 31% among the gliosarcoma samples, specifically representing copy number losses and an inactivating mutation. CDNK2A loss is common in 35–60% of GBMs and independently associated with worse overall and progression-free survival in both molecularly and histologically defined IDH-wildtype GBM31,35–37 In a microarray study of gliosarcomas, homozygous loss of CDKN2A was previously detected in 14 of 18 gliosarcoma specimens studied38. Given its significance as a poor prognostic marker in GBM, further investigation into the implications of CDKN2A loss in gliosarcoma is warranted.
+
+Our findings demonstrate a noteworthy distinction between gliosarcoma and GBM, as well as illuminate the potential for robust genomic and histologic analysis of this unique tumor type for prognostication and therapeutics. Histologically, gliosarcomas demonstrate intratumoral heterogeneity, notably of a biphasic composition with both glial-like and mesenchymal/sarcomatous cell populations23,39. Several studies suggest that these populations may be monoclonal in origin given their similar expression of early known glial mutations including p5323,39. A greater fraction of the sarcomatous component in comparison to a predominantly glial component has also been associated with survival benefit (71 vs 63 weeks) in small case series40. Intratumoral heterogeneity between these distinct cellular subpopulations in gliosarcoma harbingers acquired resistance to a single targeted therapy, as suggested in other glial tumors41. This provides another opportunity for further study to characterize the potential heterogeneous composition of this tumor.
+
+With a better understanding of the unique genomic landscape of gliosarcoma, scientific focus may be given to developing gliosarcoma-specific therapeutics. Among the most frequently altered genes found in gliosarcoma, BRAF, EGFR, PTEN, NF1, and CDKN2A are potentially targetable according to OncoKB. Limitations of this study include the finite data set collected and presented within the GENIE database used for our analysis. Specifically, no clinical data was available to correlate genomic alterations with clinical outcomes in this study, nor were further details on histologic characterization of these tumors available. Additionally, institutions reporting to the GENIE database utilize differing parameters in their genetic assays, including in the average depth of coverage and quality parameter thresholds for variant reporting. This heterogeneity within the database itself limits an ideal level of standardization in our determination of significant variants.
+
+Conclusion
+
+While gliosarcoma is categorized by the WHO as a variant of glioblastoma and often grouped with GBM in clinical trials, this study suggests that gliosarcoma has a genomic landscape distinct from GBM and soft tissue sarcoma. These differences should influence disease classification as well as guide targeted therapy for this aggressive tumor.
+
+Supplementary Information
+
+Supplementary Information.
+
+Supplementary Information
+
+The online version contains supplementary material available at 10.1038/s41598-021-97454-6.
+
+Author contributions
+
+Conceived and designed analysis: M.M.Z., E.W., L.M., B.V.N., W.L.B.; Collected the data: M.M.Z., E.W.; Contributed data or analysis tools: E.W., W.L.B.; Performed the analysis: M.M.Z., E.W.; Wrote the paper: M.M.Z., E.W., L.M., S.G.; Critical feedback and revision: M.M.Z., E.W., L.M., S.G., I.F.D., P.Y.W., B.V.N., W.L.B.; Approval of manuscript submission: M.M.Z., E.W., L.M., S.G., I.F.D., P.Y.W., B.V.N., W.L.B.
+
+Competing interests
+
+The authors declare no competing interests.
+
+Publisher's note
+
+Springer Nature remains neutral with regard to jurisdictional claims in published maps and institutional affiliations.
+==== Refs
+References
+
+1. Kozak KR Mahadevan A Moody JS Adult gliosarcoma: Epidemiology, natural history, and factors associated with outcome Neuro Oncol. 2009 11 183 191 10.1215/15228517-2008-076 18780813
+2. Meis JM Martz KL Nelson JS Mixed glioblastoma multiforme and sarcoma. A clinicopathologic study of 26 radiation therapy oncology group cases Cancer 1991 67 2342 2349 10.1002/1097-0142(19910501)67:9<2342::aid-cncr2820670922>3.0.co;2-b 1849447
+3. Lutterbach J Guttenberger R Pagenstecher A Gliosarcoma: A clinical study Radiother. Oncol. 2001 61 57 64 10.1016/s0167-8140(01)00415-7 11578729
+4. Blakeley JO Phase I study of iniparib concurrent with monthly or continuous temozolomide dosing schedules in patients with newly diagnosed malignant gliomas J. Neurooncol. 2015 125 123 131 10.1007/s11060-015-1876-0 26285766
+5. Blumenthal DT A phase III study of radiation therapy (RT) and O(6)-benzylguanine + BCNU versus RT and BCNU alone and methylation status in newly diagnosed glioblastoma and gliosarcoma: Southwest Oncology Group (SWOG) study S0001 Int. J. Clin. Oncol. 2015 20 650 658 10.1007/s10147-014-0769-0 25407559
+6. Lee EQ A multicenter, phase II, randomized, noncomparative clinical trial of radiation and temozolomide with or without vandetanib in newly diagnosed glioblastoma patients Clin. Cancer Res. 2015 21 3610 3618 10.1158/1078-0432.CCR-14-3220 25910950
+7. Patel DM Design of a phase I clinical trial to evaluate M032, a genetically engineered HSV-1 expressing IL-12, in patients with recurrent/progressive glioblastoma multiforme, anaplastic astrocytoma, or gliosarcoma Hum. Gene Ther. Clin. Dev. 2016 27 69 78 10.1089/humc.2016.031 27314913
+8. Cachia D Primary and secondary gliosarcomas: Clinical, molecular and survival characteristics J. Neurooncol. 2015 125 401 410 10.1007/s11060-015-1930-y 26354773
+9. AACR Project GENIE Consortium AACR Project GENIE: Powering Precision Medicine through an International Consortium Cancer Discov. 2017 7 818 831 10.1158/2159-8290.CD-17-0151 28572459
+10. Chakravarty D OncoKB: A precision oncology knowledge base JCO Precis. Oncol. 2017 10.1200/PO.17.00011 28890946
+11. R Core Team A Language and Environment for Statistical Computing 2019 Vienna, Austria R Foundation for Statistical Computing
+12. Pearson JRD Regad T Targeting cellular pathways in glioblastoma multiforme Signal Transduct. Target Ther. 2017 2 17040 10.1038/sigtrans.2017.40 29263927
+13. Touat M Idbaih A Sanson M Ligon KL Glioblastoma targeted therapy: Updated approaches from recent biological insights Ann. Oncol. 2017 28 1457 1472 10.1093/annonc/mdx106 28863449
+14. Saadeh F El Iskandarani S Najjar M Assi HI Prognosis and management of gliosarcoma patients: A review of literature Clin. Neurol. Neurosurg. 2019 182 98 103 10.1016/j.clineuro.2019.05.008 31112812
+15. Lee D Clinicopathologic and genomic features of gliosarcomas J. Neurooncol. 2012 107 643 650 10.1007/s11060-011-0790-3 22270848
+16. Han SJ Yang I Tihan T Prados MD Parsa AT Primary gliosarcoma: Key clinical and pathologic distinctions from glioblastoma with implications as a unique oncologic entity J. Neurooncol. 2010 96 313 320 10.1007/s11060-009-9973-6 19618114
+17. Woo PYM Regression of BRAF (V600E) mutant adult glioblastoma after primary combined BRAF-MEK inhibitor targeted therapy: A report of two cases Oncotarget 2019 10 3818 3826 10.18632/oncotarget.26932 31217909
+18. Robinson GW Orr BA Gajjar A Complete clinical regression of a BRAF V600E-mutant pediatric glioblastoma multiforme after BRAF inhibitor therapy BMC Cancer 2014 14 258 10.1186/1471-2407-14-258 24725538
+19. Kaley T BRAF inhibition in BRAF(V600)-mutant gliomas: Results from the VE-BASKET study J. Clin. Oncol. 2018 36 3477 3484 10.1200/JCO.2018.78.9990 30351999
+20. Nobre L Outcomes of BRAF V600E pediatric gliomas treated with targeted BRAF inhibition JCO Precis. Oncol. 2020 10.1200/po.19.00298 32923898
+21. Wen P RARE-09. Efficacy and safety of dabrafenib + trametinib in patients with recurrent/refractory BRAF V600E–mutated high-grade glioMA (HGG) Neuro Oncol. 2018 20 vi238-vi238 10.1093/neuonc/noy148.986
+22. Lowder L Gliosarcoma: Distinct molecular pathways and genomic alterations identified by DNA copy number/SNP microarray analysis J. Neurooncol. 2019 10.1007/s11060-019-03184-1 31073965
+23. Reis RM Konu-Lebleblicioglu D Lopes JM Kleihues P Ohgaki H Genetic profile of gliosarcomas Am. J. Pathol. 2000 156 425 432 10.1016/S0002-9440(10)64746-3 10666371
+24. Sigismund S Avanzato D Lanzetti L Emerging functions of the EGFR in cancer Mol. Oncol. 2018 12 3 20 10.1002/1878-0261.12155 29124875
+25. O'Rourke DM A single dose of peripherally infused EGFRvIII-directed CAR T cells mediates antigen loss and induces adaptive resistance in patients with recurrent glioblastoma Sci. Transl. Med. 2017 10.1126/scitranslmed.aaa0984 28724573
+26. Bennett EE The prognostic role of tumor volume in the outcome of patients with single brain metastasis after stereotactic radiosurgery World Neurosurg. 2017 104 229 238 10.1016/j.wneu.2017.04.156 28478250
+27. Chou ST Simultaneous blockade of interacting CK2 and EGFR pathways by tumor-targeting nanobioconjugates increases therapeutic efficacy against glioblastoma multiforme J. Control Release 2016 244 14 23 10.1016/j.jconrel.2016.11.001 27825958
+28. Lassman A ACTR-21. A randomized, double-blind, placebo-controlled phase 3 trial of depatuxizumab mafodotin (ABT-414) In Epidermal Growth Factor Receptor (EGFR) amplified (AMP) newly diagnosed glioblASTOMA (nGBM) Neuro Oncol. 2019 21 vi17-vi17 10.1093/neuonc/noz175.064
+29. Van Den Bent M INTELLANCE 2/EORTC 1410 randomized phase II study of Depatux-M alone and with temozolomide vs temozolomide or lomustine in recurrent EGFR amplified glioblastoma Neuro Oncol. 2019 22 684 693 10.1093/neuonc/noz222
+30. Actor B Comprehensive analysis of genomic alterations in gliosarcoma and its two tissue components Genes Chromosomes Cancer 2002 34 416 427 10.1002/gcc.10087 12112531
+31. Pessoa IA Detection and correlation of single and concomitant TP53, PTEN, and CDKN2A alterations in gliomas Int. J. Mol. Sci. 2019 10.3390/ijms20112658 31151164
+32. Hancox U Inhibition of PI3Kbeta signaling with AZD8186 inhibits growth of PTEN-deficient breast and prostate tumors alone and in combination with docetaxel Mol. Cancer Ther. 2015 14 48 58 10.1158/1535-7163.MCT-14-0406 25398829
+33. Mateo J A first-time-in-human study of GSK2636771, a phosphoinositide 3 kinase beta-selective inhibitor, in patients with advanced solid tumors Clin. Cancer Res. 2017 23 5981 5992 10.1158/1078-0432.CCR-17-0725 28645941
+34. See WL Tan IL Mukherjee J Nicolaides T Pieper RO Sensitivity of glioblastomas to clinically available MEK inhibitors is defined by neurofibromin 1 deficiency Cancer Res. 2012 72 3350 3359 10.1158/0008-5472.CAN-12-0334 22573716
+35. Ma S Prognostic impact of CDKN2A/B deletion, TERT mutation, and EGFR amplification on histological and molecular IDH-wildtype glioblastoma Neurooncol. Adv. 2020 2 vdaa126 10.1093/noajnl/vdaa126 33235995
+36. Purkait S CDKN2A deletion in pediatric versus adult glioblastomas and predictive value of p16 immunohistochemistry Neuropathology 2013 33 405 412 10.1111/neup.12014 23311918
+37. Reinhardt A Anaplastic astrocytoma with piloid features, a novel molecular class of IDH wildtype glioma with recurrent MAPK pathway, CDKN2A/B and ATRX alterations Acta Neuropathol 2018 136 273 291 10.1007/s00401-018-1837-8 29564591
+38. Lowder L Gliosarcoma: distinct molecular pathways and genomic alterations identified by DNA copy number/SNP microarray analysis J Neurooncol 2019 143 381 392 10.1007/s11060-019-03184-1 31073965
+39. Peckham ME Osborn AG Palmer CA Tsai A Salzman KL Gliosarcoma: Neuroimaging and immunohistochemical findings J Neuroimaging 2019 29 126 132 10.1111/jon.12565 30295979
+40. Salvati M Gliosarcomas: analysis of 11 cases do two subtypes exist? J. Neurooncol. 2005 74 59 63 10.1007/s11060-004-5949-8 16078109
+41. Neftel C An integrative model of cellular states, plasticity, and genetics for glioblastoma Cell 2019 178 835 849 e821 10.1016/j.cell.2019.06.024 31327527
+

@@ -1,0 +1,804 @@
+
+==== Front
+PLoS One
+PLoS One
+plos
+PLOS ONE
+1932-6203
+Public Library of Science San Francisco, CA USA
+
+10.1371/journal.pone.0290542
+PONE-D-23-03723
+Research Article
+Medicine and Health Sciences
+Oncology
+Cancers and Neoplasms
+Neurological Tumors
+Glioma
+Medicine and Health Sciences
+Neurology
+Neurological Tumors
+Glioma
+Medicine and Health Sciences
+Oncology
+Cancers and Neoplasms
+Malignant Tumors
+Medicine and Health Sciences
+Oncology
+Cancers and Neoplasms
+Blastoma
+Glioblastoma Multiforme
+Medicine and Health Sciences
+Oncology
+Cancers and Neoplasms
+Neurological Tumors
+Glioblastoma Multiforme
+Medicine and Health Sciences
+Neurology
+Neurological Tumors
+Glioblastoma Multiforme
+Biology and Life Sciences
+Genetics
+Mutation
+Deletion Mutation
+Biology and life sciences
+Cell biology
+Chromosome biology
+Chromatin
+Chromatin modification
+DNA methylation
+Biology and life sciences
+Genetics
+Epigenetics
+Chromatin
+Chromatin modification
+DNA methylation
+Biology and life sciences
+Genetics
+Gene expression
+Chromatin
+Chromatin modification
+DNA methylation
+Biology and life sciences
+Genetics
+DNA
+DNA modification
+DNA methylation
+Biology and life sciences
+Biochemistry
+Nucleic acids
+DNA
+DNA modification
+DNA methylation
+Biology and life sciences
+Genetics
+Epigenetics
+DNA modification
+DNA methylation
+Biology and life sciences
+Genetics
+Gene expression
+DNA modification
+DNA methylation
+Medicine and Health Sciences
+Oncology
+Cancers and Neoplasms
+Medicine and Health Sciences
+Oncology
+Cancers and Neoplasms
+Neurological Tumors
+Astrocytoma
+Medicine and Health Sciences
+Neurology
+Neurological Tumors
+Astrocytoma
+Biology and Life Sciences
+Genetics
+Gene Expression
+Molecular and clinicopathological implications of PRAME expression in adult glioma
+PRAME expression in adult gliomas
+https://orcid.org/0000-0002-4571-0888
+Le Minh-Khang Conceptualization Data curation Formal analysis Investigation Methodology Project administration Resources Visualization Writing – original draft 1
+Vuong Huy Gia Conceptualization Formal analysis Methodology Writing – review & editing 2
+Dunn Ian F. Conceptualization Writing – review & editing 3
+https://orcid.org/0000-0003-2268-0302
+Kondo Tetsuo Conceptualization Project administration Writing – review & editing 1 *
+1 Department of Pathology, University of Yamanashi, Chuo City, Yamanashi Prefecture, Japan
+2 Department of Pathology, University of Iowa Hospitals and Clinics, Iowa City, IA, United States of America
+3 Department of Neurosurgery, Oklahoma University Health Sciences Center, Oklahoma City, OK, United States of America
+Faisal Syed M. Editor
+University of Michigan Medical School, UNITED STATES
+Competing Interests: The authors have declared that no competing interests exist.
+
+* E-mail: ktetsuo@yamanashi.ac.jp
+5 10 2023
+2023
+18 10 e02905428 2 2023
+10 8 2023
+© 2023 Le et al
+2023
+Le et al
+https://creativecommons.org/licenses/by/4.0/ This is an open access article distributed under the terms of the Creative Commons Attribution License, which permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are credited.
+
+Background
+
+PRAME (PReferentially expressed Antigen in MElanoma) is a biomarker studied in various human cancers. Little is known about the biological implications of PRAME in glioma. We aimed to perform a comprehensive analysis to explore PRAME gene expression and its biological and clinicopathological significance in gliomas.
+
+Methods and materials
+
+We accessed the human cancer atlas (TCGA) database to collect glioma patients (n = 668) with primary tumors and gene expression data. Single nucleotide variants, copy number variation, DNA methylation data, and other clinicopathological factors were also extracted for the analysis.
+
+Results
+
+Overall, 170, 484, and 14 tumors showed no expression, low expression (FPKM≤1), and overexpression (FPKM>1) of the PRAME gene, respectively. The principal component analysis and pathway analyses showed that PRAME-positive gliomas (n = 498), which consisted of tumors with PRAME low expression and overexpression, expressed different oncogenic profiles, possessing higher activity of Hedgehog, P3IK-AKT-mTOR, and Wnt/β-catenin pathways (p<0.001). DNA methylation analysis also illustrated that PRAME-positive tumors were distributed more densely within a grade 4-related cluster (p<0.001). PRAME positivity was an independent prognostic factor for poor outcomes in a multivariate cox analysis adjusted for clinical characteristics and genetic events. Kaplan-Meier analysis stratified by revised classification showed that PRAME positivity was solely associated with IDH-wildtype glioblastoma, grade 4. Finally, PRAME-overexpressing cases (n = 14) had the worst clinical outcome compared to the PRAME-negative and PRAME-low cohorts (adjusted p<0.001) in pairwise comparisons.
+
+Conclusion
+
+PRAME expression statuses may dictate different biological and clinicopathological profiles in IDH-wildtype glioblastoma.
+
+The author(s) received no specific funding for this work. Data AvailabilityThe mRNA, methylation data underlying the results presented in the study are available from GDC (https://portal.gdc.cancer.gov/). The clinical, WES, and WGS data underlying the results presented in the study are available from cBioPortal (https://www.cbioportal.org/).
+Data Availability
+
+The mRNA, methylation data underlying the results presented in the study are available from GDC (https://portal.gdc.cancer.gov/). The clinical, WES, and WGS data underlying the results presented in the study are available from cBioPortal (https://www.cbioportal.org/).
+==== Body
+pmcIntroduction
+
+PRAME (PReferentially expressed Antigen in MElanoma) is a cancer-testis antigen that is expressed by melanoma cells and was isolated by autologous T cells in a melanoma patient [1]. PRAME expression is used to support the diagnosis of melanoma over nevus in combination with histopathological features and other findings. The expression of the PRAME gene and PRAME protein can be practically evaluated by pigmented lesion assay (PLA) and immunohistochemistry (IHC), respectively [2, 3]. Although PRAME has its primary application in the diagnosis of melanoma, PRAME was also found to be expressed by various epithelial and non-epithelial cancers [4], including uterine carcinoma, uterine carcinosarcoma, ovarian carcinoma, adenoid cystic carcinoma, seminoma, thymic carcinoma, basal cell carcinoma, synovial sarcoma, myxoid liposarcoma, and neuroblastoma. The biological and clinicopathological implications of PRAME expression have been unknown in adult gliomas.
+
+Adult gliomas are a heterogeneous and common group of brain cancers with unclear cell-of-origin [5]. The biological profile of gliomas has been studied with respect to histology, epigenetic, genetic characteristics, cell-of-origin, and tumor microenvironment [6, 7]. There are highly diverse oncogenic mechanisms contributing to gliomagenesis and tumor progression, including Wnt/β-catenin [8], PI3K/Akt/mTOR [9], TGF-β [10], and mesenchymal transition, among many others [11]. Important genetic abnormalities affecting the prognosis of glioma patients consist of IDH1/2 mutations, CDKN2A/B homozygous deletion, EGFR amplification, TP53 mutations, ATRX mutations, TERT promoter mutations, and 7 gain 10 loss chromosomal abnormalities [12]. The recent World Health Organization (WHO) classification of Tumours of the Central Nervous System (CNS) emphasizes that glioma can be divided by IDH mutation and 1p/19q codeletion status. IDH-wildtype astrocytoma has more advanced clinicopathological progression and tumor with grade 4 is referred to as the “glioblastoma” category. Glioblastoma is diagnosed by the absence of IDH mutation and one of the high-grade features, including high-grade morphology, TERT promoter mutation, 7 gain/10 loss chromosomal abnormality, or EGFR amplification. However, the prognostic factors of glioma are still under investigation.
+
+In the present study, we first examined how PRAME gene expression was related to biological profiles. Secondly, we investigated whether PRAME expression patterns were related to the DNA methylation landscape. Finally, clinicopathological characteristics and survivorship were compared between PRAME-low and PRAME-high glioma patients.
+
+Materials and methods
+
+Data processing
+
+The Human Cancer Atlas (TCGA) database consists of many datasets. We extracted cases from the TCGA-GBM and TCGA-LGG projects. Only cases with available gene expression profiles (GEP) and primary tumors (no recurrent or metastatic tumors) were included in the study. To adapt to the new WHO classification, cases with grades 2/3 in the previous studies [13, 14] were reclassified into grade 4 as follows: (1) the presence of both IDH1/2 mutation and CDKN2A/B homozygous deletion, or (2) the absence of IDH1/2 mutations and the presence of at least one of the following abnormalities: TERT promoter mutation, EGFR amplification, and 7 gain 10 loss chromosomal abnormality. Other histopathological grading features such as microvascular proliferation and pseudopalisading necrosis were assumed to be included in previously evaluated grade IV gliomas of the original studies [13, 14]. Tumors with the absence of IDH1/2 mutations and no other high-grade morphological and genetic features mentioned above were reclassified as Astrocytoma, Not Otherwise Specified (NOS). Tumors with the presence of both IDH1/2 mutations and 1p/19q codeletion were categorized as Oligodendroglioma. Mixed glioma was re-distributed into new categories based on IDH1/2 mutation and 1p/19q codeletion status. This reclassification was published in our previous paper [15]. The difference in data processing between this study and our previous one was that we used cbioportal for cancer genomics (https://www.cbioportal.org) datasets that are related to TCGA-GBM and TCGA-LGG projects, including (1) Brain Lower Grade Glioma (TCGA, Firehose Legacy), (2) Glioblastoma Multiforme (TCGA, Firehose Legacy), and (3) Merged Cohort of LGG and GBM (TCGA, Cell 2016). This difference led to a slight inconsistency in the total number of glioma patients.
+
+Gene set variation analysis (GSVA)
+
+GSVA is a type of single-sample gene set enrichment analysis (ssGSEA) [16], which is a variant of conventional GSEA [17]. The rank of genes was based on an expression-level statistic, which is a Gaussian or Poisson kernel estimation of the cumulative density function of each gene across the samples. Each value of kernel estimation was calculated, given each gene expression of each sample. As a result, the enrichment score (ES) of a gene set can be calculated for each sample. Therefore, we can investigate the activity of signaling pathways, using GSVA. In this study, we employed the gene sets of the hallmark pathways (“H” category) in the MSigDB database (https://www.gsea-msigdb.org) and excluded cancer-irrelevant pathways.
+
+Data analysis
+
+Continuous and categorical variables were described by median (range) and the number of cases (percentage), respectively. Chi-square tests and Wilcoxon’s test were performed to compare categorical and continuous variables by default. Pathway activity was calculated by GSVA. For survival analysis, we performed Kaplan-Meier analysis and univariate and multivariate Cox analysis. Heatmap was created, using the Biokit package, run on Python 3.9. Other data analyses were conducted, using R version 4.2.1 (The R Foundation, Austria).
+
+Results
+
+Investigating PRAME expression and pathway activities
+
+A total of 668 primary tumors in 668 glioma patients, were included in our study. We explored the normalized read count value of these 668 gliomas and found that the PRAME gene was not expressed in 170 gliomas (PRAME-negative; FPKM = 0). Fig 1A shows the normalized read counts of the PRAME expression. Therefore, the entire cohort was divided into two groups, PRAME-negative and PRAME-positive, based on the PRAME expression status. Mean PRAME gene expression in the PRAME-positive cohort was 0.98 FPKM, which was relatively low. Most cases (n = 654) had PRAME gene expression < 1 FPKM, while only 14 cases had high PRAME expression (Fig 1A, inset). Next, we conducted principal component analysis (PCA) over 730 genes within the nCounter PanCancer Pathways panel, published by Nanostring Technology (https://nanostring.com/, excluding 40 internal reference genes). This panel included genes within 13 cancer-associated canonical pathways, which supports the understanding of basic cancer biology. S1 Table shows the symbol and ID of the genes within the panel. A dimension reduction plot (Fig 1B) was created, using PC1 and PC2 components, which explained the highest variance in the data. We found that PRAME-negative tumors clustered together with some PRAME-positive counterparts. However, there was a higher percentage of PRAME-positive gliomas outside of this cluster. Therefore, there were differences in the distributions of PRAME-negative and PRAME-positive gliomas in the 730-gene cancer-related space. Finally, we created a heatmap to show the pathway-level comparisons between the two groups, using two-sample independent t-tests (Fig 1C). The PRAME-positive tumors expressed higher activity of Hedgehog (p<0.001), P3IK-AKT-mTOR (p<0.001), P53 (p<0.001), apoptosis (p<0.001), IL2-STAT5 (p<0.001), and Wnt/β-catenin (p<0.001) signaling pathways while these tumors reduced other biological signals, including E2F targets (p<0.001), G2M mitotic checkpoint (p = 0.005), reactive oxidative oxygen species (p<0.001), TNF-α (p<0.001), IL6-JAK-STAT6 (p<0.001), inflammatory response (p<0.001), angiogenesis (p<0.001), epithelial-mesenchymal transition (p<0.001), mTORC1 (p<0.001), glycolysis (p<0.001), and hypoxia (p<0.001). Fig 1D summarizes the results of pathway analysis. In addition, Fig 1E illustrates the PRAME expression in each revised category. In general, gliomas grade 4 had higher PRAME expression compared to other categories.
+
+10.1371/journal.pone.0290542.g001 Fig 1 (A) Histogram shows the distribution of the PRAME expression read counts (FPKM). The inset only shows the distribution of tumors with FPKM>1. (B) Principal component analysis (PCA) plot created by PC1 and PC2 of the nCounter Nanostring PanCancer Pathways gene panel. (C) The activity heatmap of cancer-related pathways illustrates the activity of each pathway in each sample. The p-values in the left column are calculated by the two-sample independent t-tests to compare the enrichment score (ES) of each pathway between PRAME-negative and PRAME-positive tumors. (D) The summary plot of upregulated and downregulated pathways in PRAME-positive gliomas. (E) The boxplot compares PRAME expression between different revised categories of the new WHO classification.
+
+PRAME positivity was densely distributed within a distinct DNA methylation cluster
+
+In the study cohort, there were a total of 476 tumors with available data about 450K DNA methylation. We performed t-SNE dimension reduction to explore the differences in the distribution of PRAME-negative and PRAME-positive glioma in DNA methylation hyperspace. This DNA methylation space can be interpreted as the reduced representation of the CpG methylation landscape. We also included the Glioma CpG Island Methylator Phenotype (G-CIMP), which was published in a previous paper [33941250]. In this study, 476 tumors in DNA methylation space can be relatively divided into two unsupervised tSNE clusters, small (right, lower corner) and large clusters (left and upper part) (Fig 2A–2D). The small cluster densely consisted of PRAME-low and PRAME-overexpressing samples while the larger cluster had a significant portion of PRAME-negative samples (Fig 2A). The revised subtype (Fig 2B), CIMP clusters (Fig 2C), and IDH status (Fig 2D) were strongly associated with these 2 clusters. Fig 2E shows a heatmap of distribution of PRAME expression status within CIMP clusters. There were significant difference in the distribution of PRAME expression status (chi-square test, p<0.001). This discrimination can be seen in LGm6-GBM (6/12 vs. 7/484 vs. 0/170), classic-like (1/12 vs. 63/484 vs. 4/170), and mesenchymal-like (2/12 vs. 87/484 vs. 9/170).
+
+10.1371/journal.pone.0290542.g002 Fig 2 t-SNE dimension reduction plots show the distribution of DNA methylation landscapes of 474 tumors, characterized by PRAME expression status (A), re-classified WHO grades (B), and IDH mutation status (C).
+
+PRAME positivity was associated with IDH-wildtype glioblastoma and adverse outcomes
+
+Table 1 summarizes the clinicopathological characteristics of PRAME-negative and PRAME-positive gliomas. Clinically, patients with PRAME-positive gliomas were older (p<0.001). There were no differences in gender (p = 0.419) and race (p = 0.382). Comparisons of revised classification between PRAME-negative and PRAME-positive cohorts showed that IDH-mutant astrocytoma, grade 2 (26.5% vs. 13.1%) and oligodendroglioma (35.9% vs. 21.7%) dominated PRAME-negative glioma while the incidence of IDH-wildtype glioblastoma, grade 4 (32.9% vs. 4.1%) was much higher in PRAME-positive glioma. These differences were significant (p<0.001). Regarding genetic abnormalities, PRAME-positive tumors more frequently acquired EGFR amplification (20.4% vs. 4.7%; p<0.001), CDKN2A/B homozygous deletion (25.5% vs. 6.0%; p<0.001), and 7 gain 10 loss chromosomal aberrations (28.4% vs. 7.1%; p<0.001) than PRAME-negative tumors. Conversely, IDH1/2 mutations (87.6% vs. 56.7%; p<0.001) and ATRX mutations (40.0% vs. 27.4%; p = 0.005) were significantly more common in PRAME-negative cases.
+
+10.1371/journal.pone.0290542.t001 Table 1 Comparison of clinicopathological characteristics of PRAME-negative and PRAME-positive cohorts.
+
+Variable	PRAME-negative (n = 170)	PRAME-positive (n = 498)	p-value	
+Age	39 (17–74)	4 (14–89)	<0.001	
+Gender			0.419	
+    Female	68 (44.7%)	185 (40.6%)		
+    Male	84 (55.3%)	271 (59.4%)		
+Race			0.382	
+    White	155 (91.2%)	455 (91.4%)		
+    Asian	2 (1.2%)	11 (2.2%)		
+    Black	7 (4.1%)	24 (4.8%)		
+    Not reported	6 (3.5%)	8 (1.6%)		
+Revised classification			<0.001	
+    Astrocytoma NOS, grade 2	8 (4.7%)	12 (2.4%)		
+    Astrocytoma NOS, grade 3	7 (4.1%)	28 (5.6%)		
+    Astrocytoma NOS, grade 4	0 (0.0%)	8 (1.6%)		
+    IDH-mutant astrocytoma, grade 2	45 (26.5%)	65 (13.1%)		
+    IDH-mutant astrocytoma, grade 3	26 (15.3%)	69 (13.9%)		
+    IDH-mutant astrocytoma, grade 4	3 (1.8%)	18 (3.6%)		
+    IDH-wildtype glioblastoma, grade 4	7 (4.1%)	164 (32.9%)		
+    Oligodendroglioma	61 (35.9%)	108 (21.7%)		
+    Unknown	13 (7.6%)	26 (5.2%)		
+IDH1/2 mutation	148/169 (87.6%)	279/492 (56.7%)	<0.001	
+TP53 mutation	76/170 (44.7%)	207/497 (41.6%)	0.545	
+ATRX mutation	68/170 (40.0%)	136/497 (27.4%)	0.005	
+TERT promoter mutation	37/91 (40.7%)	117/227 (51.5%)	0.103	
+EGFR amplification	8/169 (4.7%)	100/490 (20.4%)	<0.001	
+CDKN2A/B homozygous deletion	11/169 (6.0%)	125/490 (25.5%)	<0.001	
+7 gain 10 loss	12/169 (7.1%)	139/490 (28.4%)	<0.001	
+Vital status			<0.001	
+    Alive	129 (84.9%)	298 (65.4%)		
+    Dead	23 (15.1%)	158 (34.6%)		
+Overall survival time (months)	15.2 (0.0–134.0)	11.5 (0.0–211.0)	0.087	
+NOS: Not otherwise specified.
+
+In survival analysis, PRAME was a general marker of prognosis in the entire studied cohort (p<0.001, Fig 3A). Stratified by the new WHO classification, there were no significant results in IDH-mutant astrocytoma grade 2 (p = 0.891, Fig 3B), grade 3 (p = 0.502, Fig 3C), and grade 4 (p = 0.160, Fig 3D). However, PRAME positivity was of prognostic significance in IDH-wildtype glioblastoma grade 4 (p = 0.018, Fig 3E). There was no obvious survival difference between PRAME-positive and PRAME-negative oligodendrogliomas. We also compared the survival outcomes of IDH-mutant/1p19q codeletion and IDH-mutant/non-1p19q codeletion (S1 Fig) but PRAME positivity was not related to the prognosis. Table 2 shows multivariate analyses adjusted for clinical characteristics, whole genome sequencing (WGS) (IDH1/2 mutation, ATRX mutation, and TP53 mutation), whole exome sequencing (WES) (TERT promoter mutaton), and copy number variation information (CDKN2A/B homozygous deletion, EGFR amplification, and 7 gain/10 loss). The prognostic effect of PRAME positivity was significant and independent to clinical characteristics (HR = 2.73; 95%CI = 1.66–4.15; p<0.001), WGS (HR = 2.03; 95%CI = 1.28–3.22; p = 0.003), and CNV (HR = 2.11; 95%CI = 1.35–3.29; p = 0.001) features.
+
+10.1371/journal.pone.0290542.g003 Fig 3 Kaplan-Meier curves illustrate the different survival patterns of PRAME-negative and PRAME-positive tumors in the entire cohort (A), IDH-mutant astrocytoma, grade 2 (B), IDH-mutant astrocytoma, grade 3 (C), and IDH-mutant astrocytoma, grade 4 (D), IDH-wildtype glioblastoma (E), astrocytoma, NOS, grade 2 (F), astrocytoma, NOS, grade 3 (G), astrocytoma, NOS, grade 4 (H), and oligodendroglioma (I).
+
+10.1371/journal.pone.0290542.t002 Table 2 Multivariate Cox survival analyses with overall survival and vital status as the outcome, adjusted for clinical characteristics, WGS, WES, and CNV information.
+
+Variable	HR	95%CI	p-value	
+Clinical characteristics	
+    PRAME positive	2.73	1.66–4.50	<0.001	
+    Age (years)	1.08	1.06–1.09	<0.001	
+    Men	1.05	0.76–1.45	0.761	
+    Race				
+    Asian	1			
+    Black	0.79	0.16–3.93	0.769	
+    White	0.73	0.18–2.98	0.662	
+WGS-available data	
+    PRAME positive	2.03	1.28–3.22	0.003	
+    IDH1/2 mutation	0.07	0.05–0.12	<0.001	
+    ATRX mutation	1.56	0.85–2.87	0.151	
+    TP53 mutation	1.09	0.75–1.59	0.657	
+WES-available data	
+    PRAME positive	1.61	0.94–2.77	0.083	
+    TERT promoter mutation	2.02	1.28–3.20	0.003	
+CNV-available data	
+    PRAME positive	2.11	1.35–3.29	0.001	
+    EGFR amplification	1.36	0.90–2.06	0.143	
+    CDKN2A/B homozygous deletion	2.55	1.70–3.81	<0.001	
+    7 gain/10 loss	3.61	2.35–5.55	<0.001	
+HR: hazard ratio; 95%CI: 95% confidence interval; WGS: whole genome sequencing; WES: whole exome sequencing; CNV: copy number variation.
+
+PRAME overexpression was associated with a worse prognosis than PRAME positivity
+
+First, we defined PRAME overexpression when FPKM > 1, which was observed in only 14 gliomas within the entire studied cohort. Table 3 shows the clinicopathological characteristics of these 14 patients. Notably, only 1 case (7.1%) of this cohort was IDH-mutant. Next, we performed KM analysis to compare the overall survival of PRAME-negative (n = 170), PRAME-low (n = 481), and PRAME-overexpressing (n = 14) cases (PRAME-low and PRAME-overexpressing comprise PRAME-positive cohort) (Fig 4). To avoid false-positive results, pairwise log-rank test comparisons were conducted, using Benjamini-Hochberg correction to calculate the adjusted p-values. Even with a small sample (n = 14), PRAME-overexpressing glioma showed a significantly worse outcome than PRAME-low (adjusted p<0.001), and PRAME-negative (adjusted p<0.001). 2-year overall survival rates of PRAME-negative, PRAME-low, and PRAME-overexpressing cohorts were 92.8% (95%CI = 88.1% - 97.8%), 64.0% (95%CI = 59.2% - 69.1%), and 13.8% (95%CI = 2.6% - 73.3%), respectively.
+
+10.1371/journal.pone.0290542.g004 Fig 4 The Kaplan-Meier curve shows the pairwise comparisons of survivorship between PRAME-negative, PRAME low-expressing, and PRAME-overexpressing tumors.
+
+(***), (**), and (*) indicate adjusted p < 0.001, adjusted p = < 0.01, and adjusted p < 0.05, respectively. The risk table illustrates the number of cases that survived across the timeline in each cohort of PRAME expression status.
+
+10.1371/journal.pone.0290542.t003 Table 3 Clinicopathological data of 14 patients with PRAME-overexpressing gliomas.
+
+ 						Mutations						
+Patient ID	Age (yo)	Gender	Race	Revised classification	PRAME expression (FPKM)	IDH1/2	TP53	ATRX	TERT	CHD	EGFRamp	7+/10-	OS time (months)	Vital Status	
+TCGA-02-0047	79	M	White	IDH-wt Glioblastoma, G4	37.9	No	No	No	No	Yes	No	No	14.9	Dead	
+TCGA-06-0168	60	F	White	IDH-wt Glioblastoma, G4	1.3	No	No	No	No	No	Yes	No	19.9	Dead	
+TCGA-06-0646	61	M	White	IDH-wt Glioblastoma, G4	2.6	No	No	No	No	Yes	Yes	No	5.8	Dead	
+TCGA-06-2569	24	F	Black	IDH-wt Glioblastoma, G4	211.7	No	Yes	No	No	No	Yes	No	0.4	Alive	
+TCGA-06-5411	52	M	White	IDH-wt Glioblastoma, G4	1.1	No	No	No	No	Yes	Yes	No	8.5	Dead	
+TCGA-12-0821	63	M	White	IDH-wt Glioblastoma, G4	41.9	No	No	No	No	Yes	Yes	No	10.8	Dead	
+TCGA-14-0871	75	F	White	IDH-wt Glioblastoma, G4	32.2	No	Yes	No	No	n/a	n/a	n/a	29.3	Dead	
+TCGA-26-5133	59	M	White	IDH-wt Glioblastoma, G4	1.5	No	Yes	No	No	No	No	Yes	15.1	Alive	
+TCGA-28-5218	63	M	White	Astrocytoma NOS, G3	17.3	No	No	No	No	Yes	Yes	No	5.2	Dead	
+TCGA-DH-5140	38	F	White	IDH-wt Glioblastoma, G4	6.5	No	Yes	No	No	No	Yes	No	20.2	Dead	
+TCGA-DU-6403	60	F	White	IDH-wt Glioblastoma, G4	6.9	No	No	No	No	No	Yes	Yes	11.8	Dead	
+TCGA-E1-A7YD	58	M	White	IDH-wt Glioblastoma, G4	3.9	No	Yes	No	No	No	Yes	No	14.5	Dead	
+TCGA-FG-5963	23	M	White	IDH-wt Glioblastoma, G4	79.5	No	Yes	Yes	No	Yes	No	No	25.8	Dead	
+TCGA-S9-A7IY	40	M	White	Oligodendroglioma	1.3	Yes	No	No	No	No	No	No	23.8	Alive	
+CHD: CDKN2A/B homozygous deletion; EGFRamp: EGFR gene amplification; 7+/10-: 7 gain 10 loss chromosomal abnormalities; OS: overall survival.
+
+Analysis of the association between tumor microenvironment (TME) and PRAME expression
+
+Given that PRAME is associated with cytotoxic T-cell activation and killing in glioblastoma [18], we compared the immunologic cell population between PRAME-negative and PRAME-positive gliomas. GSVA of cell type-specific gene sets [19] was performed to calculate the activity (ES) of 17 cell types, including B cells, T cells, T helper, Th1, Th2, TFH, Th17, Treg, CD8 T cells, T gamma delta, cytotoxic cells, NK cells, dendritic cells, eosinophils, macrophages, mast cells, and neutrophils (Fig 5). There were increased activities of T cells (p<0.001), Th2 (p<0.001), Th17 (p<0.001), cytotoxic cells (p = 0.028), macrophages (p<0.001), and neutrophils (p<0.001) in PRAME-positive gliomas while there was reduced activities of TFH (p<0.001) and CD8 T cell (p<0.001).
+
+10.1371/journal.pone.0290542.g005 Fig 5 The boxplots comparing activity of different immunologic cell populations between PRAME-negative and PRAME-positive gliomas.
+
+Discussion
+
+In the present study, we showed that PRAME expression status was significantly correlated with biological and clinicopathological characteristics of adult glioma grade 4, IDH-wildtype (IDH-wildtype glioblastoma). In gene expression analysis, there was a large number of gliomas showing no PRAME expression while a few numbers of tumors possessed high levels of PRAME expression. The remaining tumors generally showed low PRAME expression. Therefore, the included gliomas were divided into PRAME-negative and PRAME-positive subgroups. We then compare biological profiles and clinicopathological characteristics between PRAME-negative and PRAME-positive cases. The PCA of the PanCancer Pathways panel showed that different PRAME expression status was relatively different in their distributions, indicating that PRAME positivity may be related to oncogenic mechanisms in adult glioma. In pathway analysis, we illustrated that PRAME-positive gliomas possessed higher activity of Hedgehog, P3IK-AKT-mTOR, P53, apoptosis, IL2-STAT5, and Wnt/β-catenin signaling pathways and lower expression of E2F targets, G2M mitotic checkpoint, reactive oxidative oxygen species, TNF-α, IL6-JAK-STAT6, inflammatory response, angiogenesis, epithelial-mesenchymal transition, mTORC1, glycolysis, and hypoxia. In DNA methylation analysis, PRAME-positive gliomas were distributed more densely in a distinct, grade 4-related cluster, which implied that PRAME expression can be an indicator of the CpG methylation landscape. Clinicopathologically, PRAME positivity was associated with older age, higher grades, EGFR amplification, CDKN2A/B homozygous deletion, and 7 gain 10 loss. This association was also related to IDH-wildtype glioblastoma in the present study. Finally, PRAME expression status was identified as an independent prognostic factor of IDH-wildtype glioblastoma.
+
+The significance of PRAME expression has been mentioned previously. Wu et al. [20] developed a PRAME-containing formula for risk score, which was inferred from the regression model. This score quantified the risk of Karnofsky performance score, but not the prognosis itself. Therefore, the inference of PRAME prognostic value is plausible but weak. The other study by Zhang et al. [21] mainly compared the PRAME expression between different types of brain tumors, including subtypes of astrocytic and non-astrocytic tumors. However, it can be difficult to conclude that PRAME expression is an independent prognostic factor by the current evidence. On the other hand, the goal of our study is to focus on the biological and clinicopathological characteristics of PRAME. Multiple analyses were performed to provide more concrete proof of the significance of this gene in glioma.
+
+PRAME has been recently introduced as a prognostic and/or oncogenic biomarker of various cancer types, including melanocytic neoplasms [22], invasive breast carcinoma [23], lung adenocarcinoma [24], lung squamous cell carcinoma [25], and hematological malignancies [26]. PRAME has also been found to be expressed by various types of neoplasms as mentioned earlier [4]. Regarding CNS tumors, the significance of PRAME expression has been investigated in medulloblastoma [27, 28] as a biomarker for immunotherapy. However, little is known about the biological and clinical significance of the PRAME protein and its corresponding gene in glioma. To the best of our knowledge, the intensity and pattern of PRAME and its gene expression in glioma are still under investigation. In the present study, we found that most of these tumors still expressed PRAME at a low level and a minority of them, however, showed gene overexpression. Even with low expression, the PRAME-expressing glioma still had distinct biological characteristics, which was shown in subsequent analyses. Further studies to validate PRAME protein expression in glioma, using western blot analysis, immunohistochemistry, immunofluorescence, or other techniques, are needed because it is not clear whether PRAME gene expression can be an indicator of its protein status.
+
+The nCounter Nanostring PanCancer Pathways panel was used to evaluate the biological profiles of human cancers in previous studies [29, 30]. Although the experimental pipeline of Nanostring technology was not performed in the present study, the biological value of the genes should be similar in principle. Using this panel, our PCA analysis illustrated that PRAME expression status can be a biomarker of glioma biology although further interpretations are not available in such general results. Pathway analysis showed more details in the biological difference among PRAME expression statuses. In glioma, the Wnt/β-catenin signal promotes neurogenesis and cell proliferation while the PI3K/AKT/mTOR pathway is associated with growth, metabolism, autophagy, survival, and chemotherapy resistance of glioblastoma [31]. The hedgehog signaling pathway is also required for glioma-initiating cell proliferation and tumorigenesis [32]. These pathways were increased in PRAME-positive gliomas. However, various oncogenic processes or signals in PRAME-positive gliomas such as E2F targets, G2M mitotic checkpoint, reactive oxidative oxygen species, IL6-JAK-STAT6, angiogenesis, epithelial-mesenchymal transition, and mTORC1 were activated at the lower levels compared to PRAME-negative tumors. These results were controversial, suggesting biological heterogeneity in PRAME-positive tumors.
+
+Recent studies showed dozens of clinicopathological risk factors with prognostic significance in adult gliomas. Clinically, age, tumor size, and tumor location within CNS are predictive factors of glioma patient outcomes [33, 34]. Pathologically, histological glioma subtypes and WHO grade are also related to glioma prognosis. Regarding genetic abnormalities, CDKN2A/B homozygous deletion, EGFR amplification, TP53 mutations, ATRX mutations, TERT promoter mutations, and 7 gain 10 loss chromosomal abnormalities are associated with poor prognosis while IDH1/2 mutations are closely related to superior outcomes [12]. Regarding gene expression, a previous study developed a stemness index from the regularized cox model to predict the prognosis of glioma patients [35]. Therefore, it is important to show the prognostic significance of a biomarker by adjusting such confounders in a multivariate analysis. In the present study, we found that PRAME positivity was an independent prognostic factor to other clinicopathological factors. Interestingly, we found that PRAME gene overexpression, which is more likely visualized by the protein expression detection methods, was related to a subgroup with a significantly worse prognosis than PRAME-low gliomas despite its small sample size.
+
+DNA methylation profile was proven to be pathologically associated with CNS tumors. A methylation-based random forest classifier was developed to provide a novel biological fingerprint of CNS tumors in addition to other identifiers such as histopathology and genetic abnormalities [36]. Another study also argued that methylation profiling can be a reliable biomarker for further low-grade glioma subtyping [37]. Therefore, examining whether there is a relationship between PRAME expression status and DNA methylation characteristics can further consolidate PRAME value in glioma biology. Our study showed that PRAME-positive gliomas were distributed more densely in the IDH-wildtype-related methylation cluster compared to the other cluster. Although this specific distribution of PRAME-positive tumors can be attributed to the dense clustering of grade 4 tumors, we believe that PRAME positivity and negativity can still be an indicator of DNA methylation profile, regardless of the causal relationships.
+
+PRAME can also be associated with glioma TME. A previous study showed that Decitabine can increase PRAME expression and, thus, enhance the T-cell-mediated cytotoxicity, which makes PRAME an interesting target for immunotherapy [18]. However, TME of cell line can be difficult to interpret because the stromal or microenvironment context of cancer in vivo is different from that of cell line condition. Our study showed that PRAME higher expression was related to increased cytotoxic cell, macrophage, and neutrophil activity but it was also associated with many immune modulating cells such as Th2, Th17, and TFH. Therefore, PRAME expression is in a complicated relationship with many immunologic cell populations, not only cytotoxic T cells.
+
+However, there were limitations in the present study. First, selection bias was a potential problem because this study used a public database. Second, our findings of PRAME positivity in IDH-mutant glioma were not significant potentially due to small samples, and, thus, sampling error. Therefore, a larger study of PRAME expression on IDH-mutant glioma can be helpful to examine the biological and clinicopathological relevance of PRAME positivity in these brain tumors. Third, protein expression data was not fully available and, therefore, cannot be analyzed. PRAME gene expression may be different from PRAME protein expression, which can be practically evaluated by immunohistochemistry. Hence, immunohistochemical studies are required to validate PRAME prognostic significance at the protein level. Additionally, data about histone modification is not available in TCGA-LGG and TCGA-GBM projects. Therefore, we were not able to analyze the relationship between PRAME expression and this epigenetic regulation. Finally, to our knowledge, there was no available information of chemotherapy and radiotherapy resistance in TCGA datasets. Hence, we were not able to investigate the relationship between PRAME expression and treatment response.
+
+Conclusion
+
+Our study illustrated that a proportion of glioma did not express PRAME while the majority of glioma expressed PRAME, among which a few tumors possessed high PRAME expression. PRAME-positive tumors had different biological (gene expression, DNA methylation, and pathway) and clinicopathological characteristics, which were related to IDH-wildtype glioblastoma. In survival analysis, PRAME positivity, especially PRAME overexpression, was related to poor prognosis.
+
+Supporting information
+
+S1 Fig Kaplan-Meier curves compare the survivorship of PRAME-positive and PRAME-negative tumors in IDH-mutant gliomas with (A) and without (B) 1p/19q co-deletion.
+
+(TIF)
+
+Click here for additional data file.
+
+S1 Table Nanostring PanCancer pathways panel consists of 770 genes.
+
+(XLSX)
+
+Click here for additional data file.
+
+List of abbreviations
+
+PRAME Preferentially expressed antigen in melanoma
+
+TCGA The human cancer atlas
+
+FPKM fragments per kilobase of exon per million mapped fragments
+
+IDH isocitrate dehydrogenase
+
+PLA pigmented lesion assay
+
+IHC immunohistochemistry
+
+WHO World Health Organization
+
+GSEA gene set enrichment analysis
+
+ssGSEA single-sample gene set enrichment analysis
+
+GSVA gene set variation analysis
+
+10.1371/journal.pone.0290542.r001
+Decision Letter 0
+Faisal Syed M. Academic Editor
+© 2023 Syed M. Faisal
+2023
+Syed M. Faisal
+https://creativecommons.org/licenses/by/4.0/ This is an open access article distributed under the terms of the Creative Commons Attribution License, which permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are credited.
+Submission Version0
+26 Jun 2023
+
+PONE-D-23-03723Molecular and clinicopathological implications of PRAME expression in adult gliomaPLOS ONE
+
+Dear Dr. Kondo,
+
+Thank you for submitting your manuscript to PLOS ONE. After careful consideration, we feel that it has merit but does not fully meet PLOS ONE’s publication criteria as it currently stands. Therefore, we invite you to submit a revised version of the manuscript that addresses the points raised during the review process.
+
+==============================
+
+Here is my feedback and the required changes for acceptance:
+
+Reviewer 1 has provided positive feedback on your manuscript and suggests accepting it with some minor suggestions for improvement. I agree with their assessment and require you to address these minor suggestions to enhance the clarity and presentation of your work.
+
+Reviewer 2, on the other hand, has raised concerns about the methodology used in your study and suggests major changes to address potential confounding factors. They recommend revising the manuscript by revisiting the previous similar findings to strengthen the validity of your findings. I concur with their assessment and recommend implementing their major suggestions to improve the scientific rigor of your study.
+
+In addition, Reviewer 2 also suggests some minor changes, such as including additional references, figure legends, and text updates to support your findings. While these changes are not mandatory for acceptance, I encourage you to consider them as they would further strengthen the discussions of your study. He further highlighted some language and formatting issues in the manuscript. I agree with their observations, and I recommend thoroughly revising the manuscript for clarity, grammar, and consistent formatting.
+
+Based on the reviewers' feedback and my evaluation, I am inclined to accept your manuscript pending the revisions mentioned above. These changes are necessary to address the concerns raised by Reviewer 2 and improve the overall quality of your work. Please address all the reviewers' comments and provide a point-by-point response in the cover letter when submitting the revised manuscript.
+
+In your point-by-point responses to the reviewer's comments, please state the page number and paragraph of the tracked manuscript where changes have been made as a result. It can be helpful to tabulate your responses with columns labelled (left to right) as follows: Reviewer comments; author response and changes made; page number in revised, tracked paper where the change can be found.
+
+IMPORTANT: Where a reviewer has asked for clarification, it is usually necessary to amend the manuscript as well as answering the question directly in the point-by-point response document - where no changes have been made to the manuscript, please provide justification.
+
+==============================
+
+Please submit your revised manuscript by Aug 10 2023 11:59PM. If you will need more time than this to complete your revisions, please reply to this message or contact the journal office at plosone@plos.org. When you're ready to submit your revision, log on to https://www.editorialmanager.com/pone/ and select the 'Submissions Needing Revision' folder to locate your manuscript file.
+
+Please include the following items when submitting your revised manuscript:A rebuttal letter that responds to each point raised by the academic editor and reviewer(s). You should upload this letter as a separate file labeled 'Response to Reviewers'.
+
+A marked-up copy of your manuscript that highlights changes made to the original version. You should upload this as a separate file labeled 'Revised Manuscript with Track Changes'.
+
+An unmarked version of your revised paper without tracked changes. You should upload this as a separate file labeled 'Manuscript'.
+
+If you would like to make changes to your financial disclosure, please include your updated statement in your cover letter. Guidelines for resubmitting your figure files are available below the reviewer comments at the end of this letter.
+
+If applicable, we recommend that you deposit your laboratory protocols in protocols.io to enhance the reproducibility of your results. Protocols.io assigns your protocol its own identifier (DOI) so that it can be cited independently in the future. For instructions see: https://journals.plos.org/plosone/s/submission-guidelines#loc-laboratory-protocols. Additionally, PLOS ONE offers an option for publishing peer-reviewed Lab Protocol articles, which describe protocols hosted on protocols.io. Read more information on sharing protocols at https://plos.org/protocols?utm_medium=editorial-email&utm_source=authorletters&utm_campaign=protocols.
+
+We look forward to receiving your revised manuscript.
+
+Kind regards,
+
+Syed M. Faisal, Ph.D.
+
+Academic Editor
+
+PLOS ONE
+
+Journal Requirements:
+
+When submitting your revision, we need you to address these additional requirements.
+
+1. Please ensure that your manuscript meets PLOS ONE's style requirements, including those for file naming. The PLOS ONE style templates can be found at 
+
+https://journals.plos.org/plosone/s/file?id=wjVg/PLOSOne_formatting_sample_main_body.pdf and 
+
+https://journals.plos.org/plosone/s/file?id=ba62/PLOSOne_formatting_sample_title_authors_affiliations.pdf
+
+2. You indicated that ethical approval was not necessary for your study. We understand that the framework for ethical oversight requirements for studies of this type may differ depending on the setting and we would appreciate some further clarification regarding your research. Could you please provide further details on why your study is exempt from the need for approval and confirmation from your institutional review board or research ethics committee (e.g., in the form of a letter or email correspondence) that ethics review was not necessary for this study? Please include a copy of the correspondence as an ""Other"" file.
+
+3. Please review your reference list to ensure that it is complete and correct. If you have cited papers that have been retracted, please include the rationale for doing so in the manuscript text, or remove these references and replace them with relevant current references. Any changes to the reference list should be mentioned in the rebuttal letter that accompanies your revised manuscript. If you need to cite a retracted article, indicate the article’s retracted status in the References list and also include a citation and full reference for the retraction notice.
+
+Additional Editor Comments:
+
+When you submit the revised paper, please provide one "clean" copy and one copy where your changes are tracked (using the ‘track changes’ function in Word).
+
+In your point-by-point responses to the reviewer, please state the page number and paragraph of the tracked manuscript where changes have been made as a result.
+
+It can be helpful to tabulate your responses with columns labelled (left to right) as follows: Reviewer comments; author response and changes made; page number in revised, tracked paper where the change can be found.
+
+IMPORTANT: Where a reviewer has asked for clarification, it is usually necessary to amend the manuscript as well as answering the question directly in the point-by-point response document - where no changes have been made to the manuscript, please provide justification.
+
+[Note: HTML markup is below. Please do not edit.]
+
+Reviewers' comments:
+
+Reviewer's Responses to Questions
+
+Comments to the Author
+
+1. Is the manuscript technically sound, and do the data support the conclusions?
+
+The manuscript must describe a technically sound piece of scientific research with data that supports the conclusions. Experiments must have been conducted rigorously, with appropriate controls, replication, and sample sizes. The conclusions must be drawn appropriately based on the data presented.
+
+Reviewer #1: Yes
+
+Reviewer #2: Partly
+
+**********
+
+2. Has the statistical analysis been performed appropriately and rigorously?
+
+Reviewer #1: Yes
+
+Reviewer #2: Yes
+
+**********
+
+3. Have the authors made all data underlying the findings in their manuscript fully available?
+
+The PLOS Data policy requires authors to make all data underlying the findings described in their manuscript fully available without restriction, with rare exception (please refer to the Data Availability Statement in the manuscript PDF file). The data should be provided as part of the manuscript or its supporting information, or deposited to a public repository. For example, in addition to summary statistics, the data points behind means, medians and variance measures should be available. If there are restrictions on publicly sharing data—e.g. participant privacy or use of data from a third party—those must be specified.
+
+Reviewer #1: Yes
+
+Reviewer #2: Yes
+
+**********
+
+4. Is the manuscript presented in an intelligible fashion and written in standard English?
+
+PLOS ONE does not copyedit accepted manuscripts, so the language in submitted articles must be clear, correct, and unambiguous. Any typographical or grammatical errors should be corrected at revision, so please note any specific errors here.
+
+Reviewer #1: Yes
+
+Reviewer #2: Yes
+
+**********
+
+5. Review Comments to the Author
+
+Please use the space provided to explain your answers to the questions above. You may also include additional comments for the author, including concerns about dual publication, research ethics, or publication ethics. (Please upload your review as an attachment if it exceeds 20,000 characters)
+
+Reviewer #1: In this manuscript, Khang Le et al. explore the publicly available human cancer atlas to reveal the role of PRAME gene expression and its biological and clinicopathological significance in gliomas and established it as a potential prognostic biomarker for glioma.
+
+The study has enormous translational importance, as they justified the prognostic signature in potential study cohorts for further clinical applications.
+
+The authors should address the following issues to consider this manuscript, primarily standard. However, the description is sometimes concise, and the authors should provide more details.
+
+Minor comments:
+
+1.The general description of pertaining to glioma vs glioblastoma should be mentioned in
+
+introduction section of the manuscript.
+
+2. The author should discuss the role of IDH1-mutation in the prognosis of glioma.
+
+3. Should make a diagram of signaling pathways that are upregulated and downregulated
+
+in PRAME-positive gliomas and PRAME-negative gliomas.
+
+Reviewer #2: In this manuscript, the authors investigated and claimed that PRAME positivity is an independent prognostic factor for poor outcomes. They suggested that its over-expression can indicate different biological and clinicopathological profiles, such as age, grade, and EGFR amplification, in adult glioma. High PRAME positivity was found to be solely associated with wtIDH glioma, glioma DNA methylation landscape, and poor outcome. While PRAME is an important molecular and clinicopathological marker for different cancers including adult glioma, the reviewer believes that the present work lacks novelty as similar conclusions have already been established in previous publications. Furthermore, the present work lacks a mechanistic approach, and several aspects of the manuscript still need to be properly addressed."
+
+Major concerns:
+
+1. It has already been established in previous publications that PRAME is expressed in adult glioma and is associated with poor prognosis. [Wei et al., J. Neurooncol. 2019 Apr; 142(2):375-384. doi: 10.1007/s11060-019-03110-5.] [Zhang et al., J. Neurooncol. 2008 May; 88(1): 65-76. doi: 10.1007/s11060-008-9534-4.] [Zhao et al., Ann Clin Lab Sci. 2022 Mar; 52(2): 185-195.] The present study primarily utilized public databases, and no immunohistochemical data were provided to support their claim. Please provide reasons to support the uniqueness and novelty of this article compared to previous publications.
+
+2. According to the WHO 2021 guidelines, wtIDH gliomas are clustered together in grade 4, including diffuse astrocytoma, anaplastic astrocytoma, glioblastoma, and glioblastoma NOS. The present study claims a positive correlation between PRAME and wtIDH glioma, but it doesn't clearly explain the correlation between PRAME and these wtIDH gliomas. It is important to mention the expression status of PRAME in these specific groups of gliomas.
+
+3. PRAME is highly immunogenic and serves as a robust target for immunotherapy. Certain drugs, such as Decitabine, can increase PRAME expression to enhance T-cell-mediated toxicity against GBM, which contradicts the findings of the present study. [Ma et al., Neuro-oncology. 2022 Dec; 24(12), 2093-2106]. The present study lacks an exploration of the immunological aspects of PRAME in gliomas. It is important to investigate the correlation between different immunological populations, pro-inflammatory signaling cascades, and PRAME.
+
+4. Among 665 patients, 170 patients were PRAME-negative, and 495 patients were PRAME-positive. Moreover, within the PRAME-positive population, 481 had low PRAME expression, and only 14 had high PRAME expression. The study compared the PRAME-positive and -negative populations for various biological and clinicopathological parameters. However, the study didn't explain the biological and clinicopathological differences between the low and high PRAME-expressing populations and their relationship with patient survival. It would be worthwhile to compare the biological parameters between the 481 low and 14 high PRAME-expressing sample sets. Additionally, the number of samples in the high PRAME-expressing set is too small to draw conclusions. Increasing the sample size for the high PRAME-positive population is advisable.
+
+5. In the Results section, the authors mentioned that PRAME-positive tumors expressed higher activity in the PI3K-AKT-mTOR, P53, and IL2-STAT5 pathways in gliomas. However, Fig 1C doesn't correlate with this statement, as it shows upregulation of KRAS, TGFb, and Notch signaling pathways in PRAME-positive tumors. Additionally, in Fig 3A, 3B, and 3C, it seems that the PRAME-positive population has longer survival than the PRAME-negative population, although statistical significance is lacking possibly due to the small sample size. Similarly, in Fig 4 and Supplementary Fig A & B, the PRAME low-expressing population tends to have longer survival than the PRAME-negative population. In Fig 3D, PRAME-positive mutant IDH1/2 shows higher survival than PRAME-negative wt-IDH1/2 population. Please provide a proper explanation of the data.
+
+6. It has already been established that PRAME overexpression can inhibit the growth of breast cancer and leukemia. However, PRAME overexpression in glioma is associated with poor outcomes. The present study compared the hallmarks of apoptosis between PRAME-positive and -negative adult glioma but found no differences in apoptotic hallmarks between the two groups. Please explain these findings in detail with underlying mechanisms. Also, the specific role of PRAME in retinoic acid signaling in glioma malignancy is unknown. Since the present study lacks a mechanistic approach, it is important to consider the correlation of PRAME expression with retinoic acid signaling status in wtIDH gliomas.
+
+7. Histone methylation or acetylation status, along with other epigenetic modifications, are important hallmarks of glioma development and progression. The present study did not establish any correlation between PRAME expression and histone methylation or acetylation status in glioma. Additionally, what is the correlation between G-CIMP and PRAME in glioma?
+
+8. Radioresistance and chemoresistance are major obstacles in the successful treatment of adult glioma. Therefore, it would be advisable to investigate the correlation between PRAME expression and treatment resistance properties in adult gliomas.
+
+Minor concerns:
+
+1. Please add the references at the end of the third sentence in the Introduction section.
+
+2. Please mention the figure/table numbers in the Results section at the end of the statements (a) "The association between PRAME expression and WHO grades was statistically significant" and (b) "Conversely, IDH1/2 mutations (87.9%) and ATRX mutations (39.8%) were significantly more common in PRAME-negative cases" under the sub-heading entitled "PRAME-positive gliomas had more advanced grades and adverse outcomes."
+
+3. Properly mention the title of the X-axis in Fig 3A-D.
+
+4. On the title page, it should be ORCID, not ORCHID. Please correct this typo error.
+
+5. Please thoroughly check the manuscript for grammatical and typographical errors.
+
+6. Please rephrase the second sentence of the Discussion section, as it appears confusing to readers."
+
+**********
+
+6. PLOS authors have the option to publish the peer review history of their article (what does this mean?). If published, this will include your full peer review and any attached files.
+
+If you choose “no”, your identity will remain anonymous but your review may still be made public.
+
+Do you want your identity to be public for this peer review? For information about this choice, including consent withdrawal, please see our Privacy Policy.
+
+Reviewer #1: Yes: Shadab Kazmi
+
+Reviewer #2: No
+
+**********
+
+[NOTE: If reviewer comments were submitted as an attachment file, they will be attached to this email and accessible via the submission site. Please log into your account, locate the manuscript record, and check for the action link "View Attachments". If this link does not appear, there are no attachment files.]
+
+While revising your submission, please upload your figure files to the Preflight Analysis and Conversion Engine (PACE) digital diagnostic tool, https://pacev2.apexcovantage.com/. PACE helps ensure that figures meet PLOS requirements. To use PACE, you must first register as a user. Registration is free. Then, login and navigate to the UPLOAD tab, where you will find detailed instructions on how to use the tool. If you encounter any issues or have any questions when using PACE, please email PLOS at figures@plos.org. Please note that Supporting Information files do not need this step.
+
+10.1371/journal.pone.0290542.r002
+Author response to Decision Letter 0
+Submission Version1
+17 Jul 2023
+
+To the editors:
+
+Thank you for processing our manuscript. In this revised version, we made modifications to the author board and analyses. Although there many alterations added, there are 3 main changes.
+
+First, we regret to inform you that we removed our co-author, Kathryn Eschbacher, from the author board. It should be noted that there was no conflict of interest in this project and this removal was made solely based on the personal reasons of this author.
+
+Secondly, we re-run the analyses by using our published preprocessing pipeline [PMID: 37253389] and additionally used data cbioportal for a higher quality of data. The results were similar but the data presentation can be different due to different random seeds of analysis. All the results related to Figures and Tables were revised accordingly.
+
+Thirdly, we modified Table 2, focusing on 4 distinct multivariate analyses of PRAME status adjusted for clinical characteristics, genetic mutations (WGS-available data), TERT promoter mutations (WES-available data), and copy number alterations (7+/10-, EGFR amplification, and CDKN2A/B homozygous deletion). The reason for these modifications is due to the heterogeneity of data availability of different data types (clinical information, WGS, WES, and copy number array). Stratified survival analysis of PRAME status by new classifications was done independently by Kaplan-Meier analyses.
+
+ 
+
+Reviewer #1: In this manuscript, Khang Le et al. explore the publicly available human cancer atlas to reveal the role of PRAME gene expression and its biological and clinicopathological significance in gliomas and established it as a potential prognostic biomarker for glioma. The study has enormous translational importance, as they justified the prognostic signature in potential study cohorts for further clinical applications.
+
+Thank you for reviewing our manuscript.
+
+The authors should address the following issues to consider this manuscript, primarily standard. However, the description is sometimes concise, and the authors should provide more details.
+
+Minor comments:
+
+1. The general description of pertaining to glioma vs glioblastoma should be mentioned in introduction section of the manuscript.
+
+We added a few sentences describing the context of WHO classification regarding glioma and glioblastoma in Introduction as follows:
+
+“Adult gliomas are a heterogeneous and common group of brain cancers with unclear cell-of-origin [5]. The biological profile of gliomas has been studied with respect to histology, epigenetic, genetic characteristics, cell-of-origin, and tumor microenvironment [6,7]. There are highly diverse oncogenic mechanisms contributing to gliomagenesis and tumor progression, including Wnt/𝛽-catenin [8], PI3K/Akt/mTOR [9], TGF-𝛽 [10], and mesenchymal transition, among many others [11]. Important genetic abnormalities affecting the prognosis of glioma patients consist of IDH1/2 mutations, CDKN2A/B homozygous deletion, EGFR amplification, TP53 mutations, ATRX mutations, TERT promoter mutations, and 7 gain 10 loss chromosomal abnormalities [12]. The recent World Health Organization (WHO) classification of Tumours of the Central Nervous System (CNS) emphasizes that glioma can be divided by IDH mutation and 1p/19q codeletion status. IDH-wildtype astrocytoma has more advanced clinicopathological progression and tumor with grade 4 is referred to as the “glioblastoma” category. Glioblastoma is diagnosed by the absence of IDH mutation and one of the high-grade features, including high-grade morphology, TERT promoter mutation, 7 gain/10 loss chromosomal abnormality, or EGFR amplification. However, the prognostic factors of glioma are still under investigation.”
+
+2. The author should discuss the role of IDH1-mutation in the prognosis of glioma.
+
+Thank you for your comments.
+
+We added more details about IDH mutation in Introduction to clarify the background in the previous comment.
+
+3. Should make a diagram of signaling pathways that are upregulated and downregulated
+
+in PRAME-positive gliomas and PRAME-negative gliomas.
+
+We added Figure 1D that describes pathways that are down-regulated or up-regulated regarding the PRAME expression status.
+
+ 
+
+Reviewer #2: In this manuscript, the authors investigated and claimed that PRAME positivity is an independent prognostic factor for poor outcomes. They suggested that its over-expression can indicate different biological and clinicopathological profiles, such as age, grade, and EGFR amplification, in adult glioma. High PRAME positivity was found to be solely associated with wtIDH glioma, glioma DNA methylation landscape, and poor outcome. While PRAME is an important molecular and clinicopathological marker for different cancers including adult glioma, the reviewer believes that the present work lacks novelty as similar conclusions have already been established in previous publications. Furthermore, the present work lacks a mechanistic approach, and several aspects of the manuscript still need to be properly addressed."
+
+Thank you for reviewing our manuscript.
+
+Major concerns:
+
+1. It has already been established in previous publications that PRAME is expressed in adult glioma and is associated with poor prognosis. [Wei et al., J. Neurooncol. 2019 Apr; 142(2):375-384. doi: 10.1007/s11060-019-03110-5.] [Zhang et al., J. Neurooncol. 2008 May; 88(1): 65-76. doi: 10.1007/s11060-008-9534-4.] [Zhao et al., Ann Clin Lab Sci. 2022 Mar; 52(2): 185-195.] The present study primarily utilized public databases, and no immunohistochemical data were provided to support their claim. Please provide reasons to support the uniqueness and novelty of this article compared to previous publications.
+
+Thank you for bringing these studies to our attention. We believe that the purpose of the aforementioned studies is different from our present work. We focused on the biological and clinicopathological investigation of PRAME expression in a more comprehensive way, including epigenetic, genetic, and gene expression.
+
+We added a paragraph to discuss this issue as follows:
+
+“The significance of PRAME expression has been mentioned previously. Wu et al [20] developed a PRAME-containing formula for risk score, which was inferred from the regression model. This score quantified the risk of Karnofsky performance score, but not the prognosis itself. Therefore, the inference of PRAME prognostic value is plausible but weak. The other study by Zhang et al [21] mainly compared the PRAME expression between different types of brain tumors, including subtypes of astrocytic and non-astrocytic tumors. However, it can be difficult to conclude that PRAME expression is an independent prognostic factor by the current evidence. On the other hand, the goal of our study is to focus on the biological and clinicopathological characteristics of PRAME. Multiple analyses were performed to provide more concrete proof of the significance of this gene in glioma.”
+
+2. According to the WHO 2021 guidelines, wtIDH gliomas are clustered together in grade 4, including diffuse astrocytoma, anaplastic astrocytoma, glioblastoma, and glioblastoma NOS.
+
+We believe that Glioblastoma, IDH-wildtype is defined when there is one or more of the following features: microvascular proliferation, necrosis, TERT promoter mutation, EGFR gene amplification, and 7+/10- chromosome copy-number changes according to WHO classification 5th edition. Therefore, astrocytic tumors with IDH wildtype status and no other feature are ill-defined and should be classified as Astrocytoma, NOS. Therefore, we revised the classification in a more detailed way, following our recently published paper [PMID: 37253389].
+
+We added details about our revised data processing pipeline as follows:
+
+“Data processing
+
+The Human Cancer Atlas (TCGA) database consists of many datasets. We extracted cases from the TCGA-GBM and TCGA-LGG projects. Only cases with available gene expression profiles (GEP) and primary tumors (no recurrent or metastatic tumors) were included in the study. To adapt to the new WHO classification, cases with grades 2/3 in the previous studies [13,14] were reclassified into grade 4 as follows: (1) the presence of both IDH1/2 mutation and CDKN2A/B homozygous deletion, or (2) the absence of IDH1/2 mutations and the presence of at least one of the following abnormalities: TERT promoter mutation, EGFR amplification, and 7 gain 10 loss chromosomal abnormality. Other histopathological grading features such as microvascular proliferation and pseudopalisading necrosis were assumed to be included in previously evaluated grade IV gliomas of the original studies [13,14]. Tumors with the absence of IDH1/2 mutations and no other high-grade morphological and genetic features mentioned above were reclassified as Astrocytoma, Not Otherwise Specified (NOS). Tumors with the presence of both IDH1/2 mutations and 1p/19q codeletion were categorized as Oligodendroglioma. Mixed glioma was re-distributed into new categories based on IDH1/2 mutation and 1p/19q codeletion status. This reclassification was published in our previous paper [15]. The difference in data processing between this study and our previous one was that we used cbioportal for cancer genomics (https://www.cbioportal.org) datasets that are related to TCGA-GBM and TCGA-LGG projects, including (1) Brain Lower Grade Glioma (TCGA, Firehose Legacy), (2) Glioblastoma Multiforme (TCGA, Firehose Legacy), and (3) Merged Cohort of LGG and GBM (TCGA, Cell 2016). This difference led to a slight inconsistency in the total number of glioma patients.”
+
+The present study claims a positive correlation between PRAME and wtIDH glioma, but it doesn't clearly explain the correlation between PRAME and these wtIDH gliomas. It is important to mention the expression status of PRAME in these specific groups of gliomas.
+
+We added a boxplot (Figure 1E) to illustrate the PRAME expression status in each revised category of glioma.
+
+3. PRAME is highly immunogenic and serves as a robust target for immunotherapy. Certain drugs, such as Decitabine, can increase PRAME expression to enhance T-cell-mediated toxicity against GBM, which contradicts the findings of the present study. [Ma et al., Neuro-oncology. 2022 Dec; 24(12), 2093-2106]. The present study lacks an exploration of the immunological aspects of PRAME in gliomas. It is important to investigate the correlation between different immunological populations, pro-inflammatory signaling cascades, and PRAME.
+
+Thank you for your information.
+
+We added a section of analysis named “Analysis of the association between tumor microenvironment (TME) and PRAME expression” as follows:
+
+“Analysis of the association between tumor microenvironment (TME) and PRAME expression
+
+Given that PRAME is associated with cytotoxic T-cell activation and killing in glioblastoma [15], we compared the immunologic cell population between PRAME-negative and PRAME¬-positive gliomas. GSVA of cell type-specific gene sets [16] was performed to calculate the activity (ES) of 17 cell types, including B cells, T cells, T helper, Th1, Th2, TFH, Th17, Treg, CD8 T cells, T gamma delta, cytotoxic cells, NK cells, dendritic cells, eosinophils, macrophages, mast cells, and neutrophils (Figure 5). There were increased activities of T cells (p<0.001), Th2 (p<0.001), Th17 (p<0.001), cytotoxic cells (p=0.028), macrophages (p<0.001), and neutrophils (p<0.001) in PRAME-positive gliomas while there was reduced activities of TFH (p<0.001) and CD8 T cell (p<0.001).”
+
+We also added a corresponding discussion paragraph:
+
+“PRAME can also be associated with glioma TME. A previous study showed that Decitabine can increase PRAME expression and, thus, enhance the T-cell-mediated cytotoxicity, which makes PRAME an interesting target for immunotherapy [15]. However, TME of cell line can be difficult to interpret because the stromal or microenvironment context of cancer in vivo is different from that of cell line condition. Our study showed that PRAME higher expression was related to increased cytotoxic cell, macrophage, and neutrophil activity but it was also associated with many immune modulating cells such as Th2, Th17, and TFH. Therefore, PRAME expression is in a complicated relationship with many immunologic cell populations, not only cytotoxic T cells.”
+
+4. Among 665 patients, 170 patients were PRAME-negative, and 495 patients were PRAME-positive. Moreover, within the PRAME-positive population, 481 had low PRAME expression, and only 14 had high PRAME expression. The study compared the PRAME-positive and -negative populations for various biological and clinicopathological parameters. However, the study didn't explain the biological and clinicopathological differences between the low and high PRAME-expressing populations and their relationship with patient survival. It would be worthwhile to compare the biological parameters between the 481 low and 14 high PRAME-expressing sample sets. Additionally, the number of samples in the high PRAME-expressing set is too small to draw conclusions. Increasing the sample size for the high PRAME-positive population is advisable.
+
+Thank you for your suggestion. However, it is quite difficult to define a cutoff of PRAME overexpression. This is emperically determined by the data at hand and defined by >1, >3, or >5 FPKM. For example, a previous study used FPKM>1 to define higher expression [PMID: 27577089]. Therefore, we believe that it is better to follow these recommendations. In our data, a vast number of cases had PRAME read count<1. Therefore, >1 FPKM is an appropriate cutoff for determining high expression or overexpression.
+
+As the reviewer mentioned, the sample size of PRAME-overexpressing cohort was small to create reliable results. Therefore, to avoid multiple hypothesis problem, we only performed survival analysis for this cohort. We additionally applied Benjamini-Hochberg correction for the pairwise comparison in this survival analysis to solidify the result. The analysis of other biological parameters, which requires a lot of hypothesis testing, can be performed but it can lead to false positive results and misleading conclusions. Therefore, we believe that it is better not to over-do the investigation of the PRAME-overexpressing cohort.
+
+5. In the Results section, the authors mentioned that PRAME-positive tumors expressed higher activity in the PI3K-AKT-mTOR, P53, and IL2-STAT5 pathways in gliomas. However, Fig 1C doesn't correlate with this statement, as it shows upregulation of KRAS, TGFb, and Notch signaling pathways in PRAME-positive tumors. Additionally, in Fig 3A, 3B, and 3C, it seems that the PRAME-positive population has longer survival than the PRAME-negative population, although statistical significance is lacking possibly due to the small sample size. Similarly, in Fig 4 and Supplementary Fig A & B, the PRAME low-expressing population tends to have longer survival than the PRAME-negative population. In Fig 3D, PRAME-positive mutant IDH1/2 shows higher survival than PRAME-negative wt-IDH1/2 population. Please provide a proper explanation of the data.
+
+Thank you for pointing out this observation. In Figure 3A, PRAME-positive and PRAME-negative glioma patients had difference in survival patterns (p<0.001). We concur with you that the PRAME-negative cohort survived better in the >10 years of follow-up. Unfortunately, we do not have a clear explanation for this observation. Although it seems that PRAME-negative cohort deceased sooner than PRAME-positive cohort in the period of >10 years of follow-up, there may be many confounding factors because of the long follow-up time. Another confounding factor is sample size. The size of PRAME-positive cohort was much larger than PRAME-negative one. Therefore, the positive cohort was likely to have more outliers than the negative cohort. Generally, first years of follow-up are more reliable prognostic indicator compared to longer term of follow-up. To avoid this confusing phenomenon, we limited the x-axis from 0 to 10 years of follow-up, which eliminates such observation of the outliers.
+
+6. It has already been established that PRAME overexpression can inhibit the growth of breast cancer and leukemia. However, PRAME overexpression in glioma is associated with poor outcomes. The present study compared the hallmarks of apoptosis between PRAME-positive and -negative adult glioma but found no differences in apoptotic hallmarks between the two groups. Please explain these findings in detail with underlying mechanisms. Also, the specific role of PRAME in retinoic acid signaling in glioma malignancy is unknown. Since the present study lacks a mechanistic approach, it is important to consider the correlation of PRAME expression with retinoic acid signaling status in wtIDH gliomas.
+
+Thank you for your suggestion. We experimentally run pathway analysis to investigate the activity of retinoic acid signaling (the full gene set of this pathway is in the link below). The enrichment score (ES) of PRAME-negative and PRAME-positive glioma were compared by two-sample independent t-test, which was similar to other pathways. There was no significant difference between PRAME-negative and PRAME-positive samples (p=0.446). Therefore, the role of PRAME in glioma may not be related to its suppression of retinoic acid signaling. However, we believe that it is better not to include this analysis into the manuscript because this analysis may not be relevant to the main stream of analysis and it can also cause confusion to readers.
+
+The link to retinoic pathway:
+
+https://www.gsea-msigdb.org/gsea/msigdb/human/geneset/REACTOME_SIGNALING_BY_RETINOIC_ACID.html
+
+7. Histone methylation or acetylation status, along with other epigenetic modifications, are important hallmarks of glioma development and progression. The present study did not establish any correlation between PRAME expression and histone methylation or acetylation status in glioma. Additionally, what is the correlation between G-CIMP and PRAME in glioma?
+
+Thank you. The lack of histone modification data is the limitation of the present study. We added a few sentences to the Discussion as follows:
+
+“However, there were limitations in the present study. First, selection bias was a potential problem because this study used a public database. Second, our findings of PRAME positivity in IDH-mutant glioma were not significant potentially due to small samples, and, thus, sampling error. Therefore, a larger study of PRAME expression on IDH-mutant glioma can be helpful to examine the biological and clinicopathological relevance of PRAME positivity in these brain tumors. Third, protein expression data was not fully available and, therefore, cannot be analyzed. PRAME gene expression may be different from PRAME protein expression, which can be practically evaluated by immunohistochemistry. Hence, immunohistochemical studies are required to validate PRAME prognostic significance at the protein level. Additionally, data about histone modification is not available in TCGA-LGG and TCGA-GBM projects. Therefore, we were not able to analyze the relationship between PRAME expression and this epigenetic regulation. Finally, to our knowledge, there was no available information of chemotherapy and radiotherapy resistance in TCGA datasets. Hence, we were not able to investigate the relationship between PRAME expression and treatment response.”
+
+In addition, we created Figure 2E to demonstrate the relationship between G-CIMP and PRAME expression in glioma.
+
+To avoid confusion, we eliminate the analysis of t-SNE methylation clusters. We instead used the published methylation CIMP clusters and performed chi-square test. We modified the methylation Results section as follows:
+
+“In the study cohort, there were a total of 476 tumors with available data about 450K DNA methylation. We performed t-SNE dimension reduction to explore the differences in the distribution of PRAME-negative and PRAME-positive glioma in DNA methylation hyperspace. This DNA methylation space can be interpreted as the reduced representation of the CpG methylation landscape. We also included the Glioma CpG Island Methylator Phenotype (G-CIMP), which was published in a previous paper [33941250]. In this study, 476 tumors in DNA methylation space can be relatively divided into two unsupervised tSNE clusters, small (right, lower corner) and large clusters (left and upper part) (Figure 2A-D). The small cluster densely consisted of PRAME-low and PRAME¬-overexpressing samples while the larger cluster had a significant portion of PRAME-negative samples (Figure 2A). The revised subtype (Figure 2B), CIMP clusters (Figure 2C), and IDH status (Figure 2D) were strongly associated with these 2 clusters. Figure 2E shows a heatmap of distribution of PRAME expression status within CIMP clusters. There were significant difference in the distribution of PRAME expression status (chi-square test, p<0.001). This discrimination can be seen in LGm6-GBM (6/12 vs. 7/484 vs. 0/170), classic-like (1/12 vs. 63/484 vs. 4/170), and mesenchymal-like (2/12 vs. 87/484 vs. 9/170).”
+
+8. Radioresistance and chemoresistance are major obstacles in the successful treatment of adult glioma. Therefore, it would be advisable to investigate the correlation between PRAME expression and treatment resistance properties in adult gliomas.
+
+Thank you for your comment. However, there was no information about chemotherapy and radiotherapy resistance in the TCGA datasets. Therefore, we listed your comments as a limitation of our study.
+
+Minor concerns:
+
+1. Please add the references at the end of the third sentence in the Introduction section.
+
+We added citations at the end of the third sentence in Introduction section.
+
+2. Please mention the figure/table numbers in the Results section at the end of the statements (a) "The association between PRAME expression and WHO grades was statistically significant" and (b) "Conversely, IDH1/2 mutations (87.9%) and ATRX mutations (39.8%) were significantly more common in PRAME-negative cases" under the sub-heading entitled "PRAME-positive gliomas had more advanced grades and adverse outcomes."
+
+Thank you. The referred paragraph was written as a description of Table 1 and it is mentioned in the first sentence of this paragraph:
+
+“Table 1 summarizes the clinicopathological characteristics of PRAME-negative and PRAME-positive gliomas.”
+
+3. Properly mention the title of the X-axis in Fig 3A-D.
+
+We changed the title of the x-axis from “Time” to “Follow-up Time (Years)”.
+
+4. On the title page, it should be ORCID, not ORCHID. Please correct this typo error.
+
+We corrected this error.
+
+5. Please thoroughly check the manuscript for grammatical and typographical errors.
+
+Thank you for your comments.
+
+6. Please rephrase the second sentence of the Discussion section, as it appears confusing to readers.
+
+We modified the sentence “In gene expression analysis, we explored PRAME read counts and found that PRAME expression was generally low in these brain tumors. A significant number of tumors showed no PRAME expression.” into “In gene expression analysis, there was a large number of gliomas showing no PRAME expression while a few numbers of tumors possessed high levels of PRAME expression. The remaining tumors generally showed low PRAME expression.”
+
+Attachment Submitted filename: Response_R1.docx
+
+Click here for additional data file.
+
+10.1371/journal.pone.0290542.r003
+Decision Letter 1
+Faisal Syed M. Academic Editor
+© 2023 Syed M. Faisal
+2023
+Syed M. Faisal
+https://creativecommons.org/licenses/by/4.0/ This is an open access article distributed under the terms of the Creative Commons Attribution License, which permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are credited.
+Submission Version1
+11 Aug 2023
+
+Molecular and clinicopathological implications of PRAME expression in adult glioma
+
+PONE-D-23-03723R1
+
+Dear Dr. Kondo,
+
+We’re pleased to inform you that your manuscript has been judged scientifically suitable for publication and will be formally accepted for publication once it meets all outstanding technical requirements.
+
+Within one week, you’ll receive an e-mail detailing the required amendments. When these have been addressed, you’ll receive a formal acceptance letter and your manuscript will be scheduled for publication.
+
+An invoice for payment will follow shortly after the formal acceptance. To ensure an efficient process, please log into Editorial Manager at http://www.editorialmanager.com/pone/, click the 'Update My Information' link at the top of the page, and double check that your user information is up-to-date. If you have any billing related questions, please contact our Author Billing department directly at authorbilling@plos.org.
+
+If your institution or institutions have a press office, please notify them about your upcoming paper to help maximize its impact. If they’ll be preparing press materials, please inform our press team as soon as possible -- no later than 48 hours after receiving the formal acceptance. Your manuscript will remain under strict press embargo until 2 pm Eastern Time on the date of publication. For more information, please contact onepress@plos.org.
+
+Kind regards,
+
+Syed M. Faisal, Ph.D.
+
+Academic Editor
+
+PLOS ONE
+
+Additional Editor Comments (optional):
+
+Reviewers' comments:
+
+10.1371/journal.pone.0290542.r004
+Acceptance letter
+Faisal Syed M. Academic Editor
+© 2023 Syed M. Faisal
+2023
+Syed M. Faisal
+https://creativecommons.org/licenses/by/4.0/ This is an open access article distributed under the terms of the Creative Commons Attribution License, which permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are credited.
+25 Sep 2023
+
+PONE-D-23-03723R1
+
+Molecular and clinicopathological implications of PRAME expression in adult glioma
+
+Dear Dr. Kondo:
+
+I'm pleased to inform you that your manuscript has been deemed suitable for publication in PLOS ONE. Congratulations! Your manuscript is now with our production department.
+
+If your institution or institutions have a press office, please let them know about your upcoming paper now to help maximize its impact. If they'll be preparing press materials, please inform our press team within the next 48 hours. Your manuscript will remain under strict press embargo until 2 pm Eastern Time on the date of publication. For more information please contact onepress@plos.org.
+
+If we can help with anything else, please email us at plosone@plos.org.
+
+Thank you for submitting your work to PLOS ONE and supporting open access.
+
+Kind regards,
+
+PLOS ONE Editorial Office Staff
+
+on behalf of
+
+Dr. Syed M. Faisal
+
+Academic Editor
+
+PLOS ONE
+==== Refs
+References
+
+1 Ikeda H , Lethé B , Lehmann F , van Baren N , Baurain JF , de Smet C , et al . Characterization of an antigen that is recognized on a melanoma showing partial HLA loss by CTL expressing an NK inhibitory receptor. Immunity. 1997;6 :199–208. doi: 10.1016/s1074-7613(00)80426-4 9047241
+2 Lezcano C , Jungbluth AA , Busam KJ . PRAME Immunohistochemistry as an Ancillary Test for the Assessment of Melanocytic Lesions. Surg Pathol Clin [Internet]. 2021 [cited 2023 Jul 10];14 :165–75. Available from: https://pubmed.ncbi.nlm.nih.gov/34023098/ doi: 10.1016/j.path.2021.01.001 34023098
+3 Fried L , Tan A , Bajaj S , Liebman TN , Polsky D , Stein JA . Technological advances for the detection of melanoma: Advances in molecular techniques. J Am Acad Dermatol [Internet]. 2020 [cited 2023 Jul 10];83 :996–1004. Available from: https://pubmed.ncbi.nlm.nih.gov/32360759/ doi: 10.1016/j.jaad.2020.03.122 32360759
+4 Kaczorowski M , Chłopek M , Kruczak A , Ryś J , Lasota J , Miettinen M . PRAME Expression in Cancer. A Systematic Immunohistochemical Study of >5800 Epithelial and Nonepithelial Tumors. Am J Surg Pathol. 2022;46.
+5 Cahill D , Turcan S . Origin of Gliomas. Semin Neurol. 2018;38 :5–10. doi: 10.1055/s-0037-1620238 29548046
+6 Venteicher AS , Tirosh I , Hebert C , Yizhak K , Neftel C , Filbin MG , et al . Decoupling genetics, lineages, and microenvironment in IDH-mutant gliomas by single-cell RNA-seq. Science. 2017;355.28126774
+7 Gusyatiner O , Hegi ME . Glioma epigenetics: From subclassification to novel treatment options. Semin Cancer Biol. 2018;51 :50–8. doi: 10.1016/j.semcancer.2017.11.010 29170066
+8 Du L , Lee JH , Jiang H , Wang C , Wang S , Zheng Z , et al . β-Catenin induces transcriptional expression of PD-L1 to promote glioblastoma immune evasion. J Exp Med. 2020;217.
+9 Shahcheraghi SH , Tchokonte-Nana V , Lotfi M , Lotfi M , Ghorbani A , Sadeghnia HR . Wnt/beta-catenin and PI3K/Akt/mTOR Signaling Pathways in Glioblastoma: Two Main Targets for Drug Design: A Review. Curr Pharm Des. 2020;26 :1729–41. doi: 10.2174/1381612826666200131100630 32003685
+10 Chao M , Liu N , Sun Z , Jiang Y , Jiang T , Xv M , et al . TGF-β Signaling Promotes Glioma Progression Through Stabilizing Sox9. Front Immunol. 2021;11.
+11 Tao C , Huang K , Shi J , Hu Q , Li K , Zhu X . Genomics and Prognosis Analysis of Epithelial-Mesenchymal Transition in Glioma. Front Oncol. 2020;10.32047721
+12 Louis DN , Perry A , Wesseling P , Brat DJ , Cree IA , Figarella-Branger D , et al . The 2021 WHO Classification of Tumors of the Central Nervous System: a summary. Neuro Oncol. 2021;23 :1231–51. doi: 10.1093/neuonc/noab106 34185076
+13 DJ B , RG V , KD A , WK Y , SR S, LA C , et al . Comprehensive, Integrative Genomic Analysis of Diffuse Lower-Grade Gliomas. N Engl J Med. 2015;372 :2481–98. doi: 10.1056/NEJMoa1402121 26061751
+14 Clark K , Vendt B , Smith K , Freymann J , Kirby J , Koppel P , et al . The Cancer Imaging Archive (TCIA): maintaining and operating a public information repository. J Digit Imaging. 2013;26 :1045–57. doi: 10.1007/s10278-013-9622-7 23884657
+15 Le M-K , Vuong HG , Nguyen TTT , Kondo T . NAA10 overexpression dictates distinct epigenetic, genetic, and clinicopathological characteristics in adult gliomas. J Neuropathol Exp Neurol [Internet]. 2023 [cited 2023 Jul 10];82. Available from: https://pubmed.ncbi.nlm.nih.gov/37253389/ doi: 10.1093/jnen/nlad037 37253389
+16 Hänzelmann S , Castelo R , Guinney J . GSVA: gene set variation analysis for microarray and RNA-seq data. BMC Bioinformatics. 2013;14.23323936
+17 Subramanian A , Tamayo P , Mootha VK , Mukherjee S , Ebert BL , Gillette MA , et al . Gene set enrichment analysis: a knowledge-based approach for interpreting genome-wide expression profiles. Proc Natl Acad Sci U S A. 2005;102 :15545–50. doi: 10.1073/pnas.0506580102 16199517
+18 Ma R , Rei M , Woodhouse I , Ferris K , Kirschner S , Chandran A , et al . Decitabine increases neoantigen and cancer testis antigen expression to enhance T-cell-mediated toxicity against glioblastoma. Neuro Oncol [Internet]. 2022 [cited 2023 Jul 10];24 :2093–106. Available from: https://pubmed.ncbi.nlm.nih.gov/35468205/ doi: 10.1093/neuonc/noac107 35468205
+19 Bindea G , Mlecnik B , Tosolini M , Kirilovsky A , Waldner M , Obenauf AC , et al . Spatiotemporal dynamics of intratumoral immune cells reveal the immune landscape in human cancer. Immunity [Internet]. 2013 [cited 2023 Jul 10];39 :782–95. Available from: https://pubmed.ncbi.nlm.nih.gov/24138885/ doi: 10.1016/j.immuni.2013.10.003 24138885
+20 Wu M , Miska J , Xiao T , Zhang P , Kane JR , Balyasnikova I V ., et al . Race influences survival in glioblastoma patients with KPS ≥ 80 and associates with genetic markers of retinoic acid metabolism. J Neurooncol [Internet]. 2019 [cited 2023 Jul 10];142 :375–84. Available from: https://pubmed.ncbi.nlm.nih.gov/30706176/ 30706176
+21 Zhang JG , Kruse CA , Driggers L , Hoa N , Wisoff J , Allen JC , et al . Tumor antigen precursor protein profiles of adult and pediatric brain tumors identify potential targets for immunotherapy. J Neurooncol [Internet]. 2008 [cited 2023 Jul 10];88 :65–76. Available from: https://pubmed.ncbi.nlm.nih.gov/18259692/ doi: 10.1007/s11060-008-9534-4 18259692
+22 Lezcano C , Jungbluth AA , Nehal KS , Hollmann TJ , Busam KJ . PRAME Expression in Melanocytic Tumors. Am J Surg Pathol. 2018;42 :1456–65. doi: 10.1097/PAS.0000000000001134 30045064
+23 Tessari A , Pilla L , Silvia D , Duca M , Paolini B , Carcangiu ML , et al . Expression of NY-ESO-1, MAGE-A3, PRAME and WT1 in different subgroups of breast cancer: An indication to immunotherapy? Breast. 2018;42 :68–73. doi: 10.1016/j.breast.2018.08.106 30189381
+24 Huang Q , Wei H , Wu Z , Li L , Yao L , Sun Z , et al . Preferentially Expressed Antigen of Melanoma Prevents Lung Cancer Metastasis. PLoS One. 2016;11. doi: 10.1371/journal.pone.0149640 27391090
+25 Pan SH , Su KY , Spiessens B , Kusuma N , Delahaye NF , Gruselle O , et al . Gene expression of MAGE-A3 and PRAME tumor antigens and EGFR mutational status in Taiwanese non-small cell lung cancer patients. Asia Pac J Clin Oncol. 2017;13 :e212–23. doi: 10.1111/ajco.12586 27519286
+26 Tajeddine N , Gala JL , Louis M , van Schoor M , Tombal B , Gailly P . Tumor-associated antigen preferentially expressed antigen of melanoma (PRAME) induces caspase-independent cell death in vitro and reduces tumorigenicity in vivo. Cancer Res. 2005;65 :7348–55. doi: 10.1158/0008-5472.CAN-04-4011 16103086
+27 Orlando D , Miele E , de Angelis B , Guercio M , Boffa I , Sinibaldi M , et al . Adoptive Immunotherapy Using PRAME-Specific T Cells in Medulloblastoma. Cancer Res. 2018;78 :3337–49. doi: 10.1158/0008-5472.CAN-17-3140 29615432
+28 Vulcani-Freitas TM , Saba-Silva N , Cappellano A , Cavalheiro S , de Toledo SRC . PRAME gene expression profile in medulloblastoma. Arq Neuropsiquiatr. 2011;69 :9–12. doi: 10.1590/s0004-282x2011000100003 21359415
+29 Balasubramaniam SD , Balakrishnan V , Oon CE , Kaur G . Gene expression profiling of HPV-associated cervical carcinogenesis in formalin-fixed paraffin-embedded (FFPE) tissues using the NanoString nCounterTM platform. Gene. 2022;825. doi: 10.1016/j.gene.2022.146385 35288200
+30 Bilusic M , Girardi D , Zhou Y , Jung K , Pei J , Slifker M , et al . Molecular Profiling of Exceptional Responders to Cancer Therapy. Oncologist. 2021;26 :186–95. doi: 10.1002/onco.13600 33210795
+31 Shahcheraghi SH , Tchokonte-Nana V , Lotfi M , Lotfi M , Ghorbani A , Sadeghnia HR . Wnt/beta-catenin and PI3K/Akt/mTOR Signaling Pathways in Glioblastoma: Two Main Targets for Drug Design: A Review. Curr Pharm Des. 2020;26 :1729–41. doi: 10.2174/1381612826666200131100630 32003685
+32 Takezaki T , Hide T , Takanaga H , Nakamura H , ichi Kuratsu J , Kondo T . Essential role of the Hedgehog signaling pathway in human glioma-initiating cells. Cancer Sci. 2011;102 :1306–12. doi: 10.1111/j.1349-7006.2011.01943.x 21453386
+33 Yang Y , Yao M , Long S , Xu C , Li L , Li Y , et al . Prognostic Nomograms for Primary High-Grade Glioma Patients in Adult: A Retrospective Study Based on the SEER Database. Biomed Res Int. 2020;2020. doi: 10.1155/2020/1346340 32775408
+34 Zhao YY , Chen SH , Hao Z , Zhu HX , Xing ZL , Li MH . A Nomogram for Predicting Individual Prognosis of Patients with Low-Grade Glioma. World Neurosurg. 2019;130 :e605–12. doi: 10.1016/j.wneu.2019.06.169 31319188
+35 Tan J , Zhu H , Tang G , Liu H , Wanggou S , Cao Y , et al . Molecular Subtypes Based on the Stemness Index Predict Prognosis in Glioma Patients. Front Genet. 2021;12. doi: 10.3389/fgene.2021.616507 33732284
+36 Capper D , Jones DTW , Sill M , Hovestadt V , Schrimpf D , Sturm D , et al . DNA methylation-based classification of central nervous system tumours. Nature. 2018;555 :469–74. doi: 10.1038/nature26000 29539639
+37 Ferreyra Vega S , Olsson Bontell T , Corell A , Smits A , Jakola AS , Carén H . DNA methylation profiling for molecular classification of adult diffuse lower-grade gliomas. Clin Epigenetics. 2021;13.33468200
+

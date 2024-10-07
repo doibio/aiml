@@ -1,0 +1,458 @@
+
+==== Front
+Strahlenther Onkol
+Strahlenther Onkol
+Strahlentherapie Und Onkologie
+0179-7158
+1439-099X
+Springer Berlin Heidelberg Berlin/Heidelberg
+
+35612598
+1959
+10.1007/s00066-022-01959-6
+Original Article
+Monocentric evaluation of Ki-67 labeling index in combination with a modified RPA score as a prognostic factor for survival in IDH-wildtype glioblastoma patients treated with radiochemotherapy
+http://orcid.org/0000-0002-7840-9055
+Dumke R. rieke.dumke@t-online.de
+
+1
+http://orcid.org/0000-0001-6233-2113
+Dumke C. 123
+http://orcid.org/0000-0002-1473-6065
+Eberle F. 12
+http://orcid.org/0000-0002-8216-9410
+Nimsky Ch. 4
+Keber U. 5
+Engenhart-Cabillic R. 12
+Lautenschläger S. 126
+1 grid.411067.5 0000 0000 8584 9230 Department of Radiation Oncology, Marburg University Hospital, Marburg, Hessen Germany
+2 grid.411067.5 0000 0000 8584 9230 Marburg Ion-Beam Therapy Center (MIT), Department of Radiation Oncology, Marburg University Hospital, Marburg, Hessen Germany
+3 Vivantes Radiotherapy, MVZ Spandau, Berlin, Germany
+4 grid.411067.5 0000 0000 8584 9230 Department of Neurosurgery, Marburg University Hospital, Marburg, Hessen Germany
+5 grid.411067.5 0000 0000 8584 9230 Institute of Neuropathology, Marburg University Hospital, Marburg, Hessen Germany
+6 Department of Radiotherapy, Lippe Hospital, Lemgo, Nordrhein-Westfalen Germany
+25 5 2022
+25 5 2022
+2022
+198 10 892906
+20 9 2021
+24 4 2022
+© The Author(s) 2022
+https://creativecommons.org/licenses/by/4.0/ Open Access This article is licensed under a Creative Commons Attribution 4.0 International License, which permits use, sharing, adaptation, distribution and reproduction in any medium or format, as long as you give appropriate credit to the original author(s) and the source, provide a link to the Creative Commons licence, and indicate if changes were made. The images or other third party material in this article are included in the article’s Creative Commons licence, unless indicated otherwise in a credit line to the material. If material is not included in the article’s Creative Commons licence and your intended use is not permitted by statutory regulation or exceeds the permitted use, you will need to obtain permission directly from the copyright holder. To view a copy of this licence, visit http://creativecommons.org/licenses/by/4.0/.
+Purpose
+
+The prognosis for glioblastoma patients remains dismal despite intensive research on better treatment options. Molecular and immunohistochemical markers are increasingly being investigated as understanding of their role in disease progression grows. O(6)-methylguanine-DNA methyltransferase (MGMT) promoter methylation has been shown to have prognostic and therapeutic relevance for glioblastoma patients. Other markers implicated in tumor formation and/or malignancy are p53, Alpha thalassemia/mental retardation syndrome X-linked (ATRX), Epidermal Growth Factor Receptor splice variant III (EGFRvIII), and Ki-67, with loss of nuclear ATRX expression and lower Ki-67 index being associated with prolonged survival. For p53 and EGFRvIII the data are contradictory. Our aim was to investigate the markers mentioned above regarding progression-free (PFS) and overall survival (OS) to evaluate their viability as independent prognostic markers for our patient collective.
+
+Methods
+
+In this retrospective study, we collected data on patients undergoing radiotherapy due to isocitrate dehydrogenase (IDH) wildtype glioblastoma at a single university hospital between 2014 and 2020.
+
+Results
+
+Our findings confirm Ki-67 labeling index ≤ 20% as an independent prognostic factor for prolonged PFS as well as MGMT promoter methylation for both prolonged PFS and OS, in consideration of age and Eastern Cooperative Oncology Group (ECOG) status, chemotherapy treatment, and total radiation dose for PFS as well as additionally sex, resection status, and receipt of treatment for progression or recurrence for OS. Additionally, Ki-67 labeling index ≤ 20% showed a significant correlation with prolonged OS in univariate analysis. Modification of the recursive partitioning analysis (RPA) score to include Ki-67 labeling index resulted in a classification with the possible ability to distinguish long-term-survivors from patients with unfavorable prognosis.
+
+Conclusion
+
+MGMT promoter methylation and Ki-67 labeling index were independent predictors of survival in our collective. We see further studies pooling patient collectives to reach larger patient numbers concerning Ki-67 labeling index as being warranted.
+
+Supplementary Information
+
+The online version of this article (10.1007/s00066-022-01959-6) contains supplementary material, which is available to authorized users.
+
+Keywords
+
+Recurrence
+MGMT
+ATRX
+p53
+EGFR
+Universitätsklinikum Gießen und Marburg GmbH (6265)Open Access funding enabled and organized by Projekt DEAL.
+
+issue-copyright-statement© Springer-Verlag GmbH Germany, part of Springer Nature 2022
+==== Body
+pmcIntroduction
+
+Glioblastomas (GBM) account for 15–20% of brain tumors [1–4] and have a dismal prognosis with median overall survival (OS) ranging from about 5 to 15 months [3–6]. Standard treatment consists of maximum safe resection followed by radio-, chemo-, or radiochemotherapy according to patient characteristics [7]. Younger patients with good performance score (PS) of Eastern Cooperative Oncology Group status (ECOG) 0–2 receive 60 Gy radiotherapy with concomitant and adjuvant temozolomide (TMZ) chemotherapy according to the Stupp protocol [8]. Elderly patients with good PS receive hypofractionated radiotherapy in case of unmethylated O(6)-methylguanine-DNA methyltransferase (MGMT) promoter or temozolomide (TMZ) chemotherapy in case of methylated MGMT promoter according to the NORDIC trial [9]. For elderly patients with an unfavorable PS, best supportive care is recommended [7]. In case of recurrence, an interdisciplinary tumor board evaluates options for renewed resection, reirradiation, and/or salvage chemotherapy [7].
+
+Efforts have been made to find reliable prognostic markers for survival, with increased focus turning to protein expression and molecular markers due to mounting evidence of “genotype trump[ing] the histological phenotype” [10].
+
+P53 is a transcription factor which functions as a tumor suppressor via regulation of cell cycle control, apoptosis, cell differentiation, and neovascularization [11–13], and loss of normal p53 function, e.g., via mutation of its encoding gene, TP53, plays an early role in tumor formation [14, 15]. TP53 mutations occur mainly, but not exclusively, in secondary GBM, isocitrate dehydrogenase (IDH) mutant [12, 13, 16, 17], and can contribute to chemotherapy resistance [18, 19]. To date, no conclusive argument can be made for a clear correlation of TP53 mutation and survival, with several studies finding no association [14, 18, 20–24] whereas some studies showed a survival benefit [13, 25].
+
+Alpha thalassemia/mental retardation syndrome X-linked (ATRX) plays a role in genomic stability [26] and regulation of cell division [27]. ATRX mutations cause genomic instability, non-homologous end-joining (NHEJ), and alternate lengthening of telomeres (ALT) [28–32], as well as increasing susceptibility to DNA-damaging chemotherapy [29]. Loss of nuclear ATRX expression due to ATRX gene mutation [31] has been correlated with a survival benefit [33, 34] and is mainly seen in secondary GBM, IDH mutant [35, 36].
+
+Epidermal growth factor receptor (EGFR) plays a central role in cell proliferation, differentiation [37–39], cell cycle [40], and angiogenesis [41], as well as influencing DNA repair and contributing to radio- and chemotherapy resistance [42]. Amplification of the EGFR gene occurs in 30–50% of IDH-wildtype GBMs [5, 13, 16, 43–49] and is correlated with overexpression of EGFR protein [12, 46, 47, 49]. The most common mutated variant in GBM is tumor-specific EGFR splice variant III (EGFRvIII) which results from gene truncation [16, 50–52] and has been associated with worse survival prognosis [53] and increased carcinogenicity [54]. Current data concerning the survival correlation of EGFR are inconclusive, with some studies showing shorter survival [43, 44, 48, 55] and some studies showing no correlation [18, 24, 25, 53, 56] with survival. A large meta-analysis concluded that most studies did not regard confounders and/or did not differentiate EGFR wildtype from EGFR mutations and so no clear statement could be made regarding EGFR status and survival prognosis [57].
+
+Ki-67 is expressed exclusively in proliferating cells [58, 59], with the Ki-67 labeling index (Ki-67 LI; % of cells expressing Ki-67) correlating closely with histological tumor grade in gliomas [14, 60–64] and a Ki-67 LI of 10% being regarded as a reliable criterium for malignancy [65, 66]. Although some studies see Ki-67 LI as a reliable predictor of survival with higher Ki-67 LI indicating worse prognosis [14, 58, 66–70], more reliable even than histologic grade [44, 71] or age [44], other studies could not find this association [56, 72–74], possibly due to low reproducibility of Ki-67 LI detection between laboratories and examiners [75]. Therefore, the role of Ki-67 LI as a prognostic factor is still disputed.
+
+O(6)-methylguanine-DNA methyltransferase (MGMT) is involved in repair of DNA strands by removing genotoxic alkyl groups from guanine [76, 77]. Methylation of the MGMT promoter reduces MGMT expression and thereby increases sensitivity to alkylating chemotherapy [78–81]. Therefore, MGMT promoter methylation is consistently correlated with better survival when alkylating treatment has been performed [24, 82–86].
+
+Our aim was to investigate the markers mentioned above regarding progression-free (PFS) and overall survival (OS) to evaluate their viability as independent prognostic markers for our patient collective.
+
+Materials and methods
+
+This study was a single-center retrospective cohort study conducted at the Department of Radiation Oncology of the University Hospital Marburg. Inclusion criterium for the study was receipt of radiation therapy due to an IDH-wildtype glioblastoma during 2014 to 2020. For these patients, data regarding patient, disease, and treatment characteristics as well as immunohistochemical and molecular marker status were collected from archived files. Subsequently, progression-free and overall survival was calculated, with progression-free survival being defined as time from first diagnosis to first progression or relapse in magnetic resonance imaging (MRI) or death and overall survival being defined as time from first diagnosis to death or last follow up.
+
+In our clinic, standard treatment for patients closely follows guidelines, with patients undergoing maximum safe resection with 5-aminolevulinic acid fluorescence image-guided surgical resection (5-ALA-FIGR) or biopsy when maximum resection is not feasible and subsequent radio-, chemo-, or radiochemotherapy. Target delineation mostly follows ESTRO-ACROP (European Society for Radiation and Oncology - Advisory Committee on Radiation Oncology Practice) guidelines [87]. Firstly, gross tumor volume (GTV) is defined as encompassing the resection cavity or residual enhancing tumor in contrast-enhanced T1-weighted MRI on the one hand (GTV tumor) and as encompassing edema in T2-weighted MRI on the other (GTV edema). Clinical target volume (CTV) is then delineated by adding a safety margin of 1.5 cm to the GTV tumor and matching this volume with GTV edema. Lastly, the planning target volume (PTV) adjusts the CTV for anatomical features and organs at risk as well as adding 0.5 cm to account for possible imprecision during patient positioning. Radiation techniques used are 3D conformal external beam radiotherapy and intensity-modulated radiotherapy (IMRT) and use mainly photon beams with proton beams being added as an optional 10 Gy boost. Younger patients with good PS receive radiochemotherapy according to the Stupp protocol [8], consisting of 60 Gy total dose either as 60 Gy of photons or 50 Gy of photons plus a 10 Gy proton boost with concomitant (75 mg/m2) and adjuvant (1 course 150 mg/m2 day 1–5 + 5 courses 200 mg/m2 day 1–5) TMZ. Since 2019, these patients have also received lomustine (CCNU; 6 courses 100 mg/m2 lomustine day 1 + 100 mg/m2 TMZ day 2–6) according to the CeTeG/NOA-09 protocol [88] when the MGMT promoter is methylated. According to the NORDIC/NOA-08 trial [9], elderly patients receive 34 to 40.5 Gy total-dose radiotherapy when the MGMT promoter is unmethylated and either the same or TMZ alone when the MGMT promoter is methylated. In case of recurrence, further therapy is discussed in an interdisciplinary tumor board and patients receive either renewed resection whenever feasible and/or reirradiation either with carbon ions (CIRT) or fractionated stereotactic radiotherapy (FSRT) with photons and/or salvage chemotherapy either with TMZ (as a prolonged or dose-intense course) or lomustine [89].
+
+Protein expression was determined by neuropathological evaluation of biopsy or resection tissue. Immunohistochemistry was performed as described previously [90]. In brief, heat-induced epitope retrieval was performed with either citrate or ethylenediaminetetraacetic acid (EDTA) according to the manufacturer’s protocol of the respective primary antibody. Sections were incubated for 1 hour with the following primary antibodies: anti-p53 (1:100; Dako M7001, Agilent Technologies, Inc., Santa Clara, CA, USA), anti-ATRX (1:150; Sigma HPA 001906, Sigma-Aldrich Chemie GmbH, Taufkirchen, Germany), anti-EGFRvIII (1:50; Zytomed MSK029-05, Zytomed Systems GmbH, Berlin, Germany), and anti-Ki-67/MiB‑1 (1:200; Dako M7240, Agilent Technologies, Inc., Santa Clara, CA, USA). Sections were washed and incubated with post-block solution and horse radish peroxidase (HRP) polymer reagent according to the manufacturer’s protocol of the ZytoChem-Plus HRP Polymer Kit (Zytomed Systems GmbH, Berlin, Germany). According to the World Health Organisation (WHO) classification of tumors of the central nervous system (2021, [91]) a strong nuclear expression of p53 in more than 10% of tumor cells and cytoplasmic EGFRvIII expression of either partial or entire tumor were defined as positive, respectively. Nuclear ATRX loss was diagnosed in case of negative tumor cells among positive endothelial cells serving as an internal control. Ki-67 LI demonstrates the percentage of immunoreactive tumor cells from all tumor cells.
+
+MGMT promoter methylation status was examined by methylation-specific polymerase chain reaction (MSP) as described previously [92, 93]. In brief, DNA was isolated from paraffin sections of the tumor using the DNeasy Blood and Tissue Kit (QUIAGEN GmbH, Hilden, Germany). A total of 500 ng DNA was treated with sodium bisulfite using the EZ DNA Methylation Gold Kit (Zymo Research Corp., Irvine, CA, USA). The primer sequences used to detect unmethylated MGMT promoter sequences were 5‑TGT GTT TTT AGA ATG TTT TGT GTT TTG AT‑3 and 5‑CTA CCA CCA TCC CAA AAA AAA ACT CCA‑3. The primer sequences used to detect methylated MGMT promoter sequences were 5‑GTT TTT AGA ACG TTT TGC GTT TCG AC‑3 and 5‑CAC CGT CCC GAA AAA AAA CTC CG‑3.
+
+For data collection and analysis, we used IBM® SPSS® Statistics (version 21; IBM Corp., Armonk, NY, USA). The prevalence of investigated variables as well as the calculation of means and standard deviations was obtained by descriptive statistics. Kaplan–Meier survival analysis was used to determine progression-free and overall survival. All tests with p < 0.05 were then included in univariate analysis (log-rank test) for comparison of survival probability. Following this, all tests with p < 0.1 were included in multivariate analysis using a Cox proportional hazards model to analyze possible dependencies. Lastly, tests with p < 0.05 in multivariate analysis were considered significant. Wilcoxon signed-rank test was used for analysis of Ki-67 LI change upon recurrence.
+
+The study was inspected and approved by the Ethics committee of the Philipps-Universität Marburg (ethics vote “Studie 166/18”).
+
+Results
+
+Data were collected from patients treated between 2014 and 2020. Median follow-up was 13.4 months. A total of 137 patients were included in the study, with 59.9% being male (n = 82/137) and 40.1% being female (n = 55/137). The median age at diagnosis was 63.0 years (24.9–84.6). ECOG status at diagnosis could be determined for 87.6% of patients, with most (82.5%, n = 113/137) ranging from 0 to 2 (Table 1). Tumor localization was diverse (Table 1), with complete or partial resection achievable for 84.6% of patients (42.3%, n = 58/137, each). 71.5% (n = 98/137) of patients suffered a progression or recurrence and 74.5% (n = 102/137) had died by the end of the data collection period. The majority of patients underwent chemotherapy, with 81.0% (n = 111/137) receiving either temozolomide (TMZ) alone (71.5%, n = 98/137) or TMZ plus lomustine (CCNU; 9.5%, n = 13/137). Most patients showed ATRX (91.2%, n = 125/137) and p53 expression (84.7%, n = 116/137), whilst EGFRvIII expression (40.9%, n = 56/137) was less common. The MGMT promoter was methylated in 61.3% (n = 84/137) of patients. Ki-67 LI averaged 20% (0–80%). 72.2% (n = 99/137) of patients received a total radiation dose of 60 Gy, either as sole photon irradiation (45.5%, n = 45/99) or as 50 Gy photon irradiation plus a 10-Gy proton boost (54.5%, n = 54/99).Table 1 Patient characteristics in the overall collective
+
+	n (%)	
+Total	137 (100)	
+Sex	
+Male	82 (59.9)	
+Female	55 (40.1)	
+ECOG at primary diagnosis	
+0	50 (36.5)	
+1	44 (32.1)	
+2	19 (13.9)	
+3–4	7 (5.1)	
+Unknown	17 (12.4)	
+Location of primary tumor	
+Frontal lobe	32 (23.4)	
+Temporal lobe	32 (23.4)	
+Parietal lobe	17 (12.4)	
+Other	16 (11.7)	
+> 1 area	40 (29.2)	
+Marker status	
+ATRX expression	
+Yes	125 (91.2)	
+No	6 (4.4)	
+Unknown	6 (4.4)	
+EGFRvIII overexpression	
+Yes	56 (40.9)	
+No	74 (54.0)	
+Unknown	7 (5.1)	
+p53 overexpression	
+Yes	116 (84.7)	
+No	10 (7.3)	
+Unknown	11 (8.0)	
+MGMT promoter	
+Non-methylated	52 (38.0)	
+Methylated	84 (61.3)	
+Unknown	1 (0.7)	
+Ki-67 LI	
+≤ 20%	82 (59.9)	
+> 20%	50 (36.5)	
+Unknown	5 (3.6)	
+ECOG Eastern Cooperative Oncology Group status, ATRX Alpha thalassemia/mental retardation syndrome X-linked, EGFRvIII Epidermal Growth Factor Receptor splice variant III, MGMT O(6)-methylguanine-DNA methyltransferase, Ki-67 LI Ki-67 labeling index
+
+Details of first and second progression or recurrence as well as retreatment modalities are listed in Table 2. Median time to beginning of retreatment after diagnosis of progression or recurrence was 1.5 weeks. Re-reirradiation was administered only in case of out-of-field recurrence of first reirradiation.Table 2 Treatment characteristics in overall collective
+
+	n (%)	
+Resection status	
+Biopsy	18 (13.1)	
+Partial resection	58 (42.3)	
+Complete resection	58 (42.3)	
+Chemotherapy (TMZ/TMZ + CCNU)	
+Yes	111 (81.0)	
+No	23 (16.8)	
+Radiotherapy	
+60 Gy	45 (32.8)	
+50 Gy photons + 10 Gy protons	54 (39.4)	
+40.5 Gy	21 (15.3)	
+34 Gy	7 (5.1)	
+Other	10 (13.7)	
+Status	
+Alive	35 (25.5)	
+Dead	102 (74.5)	
+Progression or recurrence	
+Yes	98 (71.5)	
+No	39 (28.5)	
+Treatment of progression or recurrence	
+Resection only	9 (9.2)	
+Radiotherapy only	23 (23.5)	
+Chemotherapy only	5 (5.1)	
+Combination of two of the above	26 (26.5)	
+Resection and radiotherapy	12 (12.2)	
+Resection and chemotherapy	9 (9.2)	
+Radio- and chemotherapy	4 (4.1)	
+Combination of three of the above	11 (11.2)	
+None	24 (24.5)	
+Re-progression or re-recurrence	
+Yes	26 (26.5)	
+No	72 (73.5)	
+Treatment of re-progression or re-recurrence	
+Resection only	1 (3.8)	
+Radiotherapy only	7 (26.9)	
+Chemotherapy only	4 (15.4)	
+Combination of two of the above	4 (15.4)	
+Resection and radiotherapy	2 (7.7)	
+Resection and chemotherapy	2 (7.7)	
+None	10 (38.5)	
+TMZ temozolomide, CCNU lomustine
+
+For the overall collective, median progression-free survival (PFS) was 7.5 (6.3–8.6) months. Regarding Ki-67 LI in the overall collective, median PFS was 8.6 (6.6–10.6) months for patients with an index of ≤ 20% compared to 5.7 (4.0–7.5) months in case of > 20% (p = 0.014; Fig. 1a). For MGMT promoter methylation status, PFS in the overall collective was 6.8 (3.6–10.1) months for patients with a non-methylated MGMT promoter compared to 8.7 (5.5–11.9) months in case of a methylated MGMT promoter (p = 0.007, Fig. 2a).Fig. 1 Kaplan–Meier plots and p-values of Kaplan–Meier survival analysis for progression-free survival (PFS) and overall survival (OS) regarding Ki-67 labeling index (Ki-67 LI). For the overall collective: a PFS significant with p = 0.014. b OS significant with p = 0.035. For partial collective “favorable subgroup”: c PFS significant with p = 0.013. d OS not significant with p = 0.079
+
+Fig. 2 Kaplan–Meier plots and p-values of Kaplan–Meier survival analysis for progression-free survival (PFS) and overall survival (OS) regarding O(6)-methylguanine-DNA methyltransferase (MGMT) promoter methylation status. For overall collective: a PFS significant with p = 0.007. b OS significant with p = 0.017. For partial collective “favorable subgroup”: c PFS significant with p = 0.007. d OS significant with p = 0.018
+
+Overall survival was median 15.7 (13.3–18.2) months for the overall collective. Regarding Ki-67 LI, OS in the overall collective was median 18.4 (15.2–21.7) months for patients with an index of ≤ 20% compared with 14.3 (11.9–16.6) months in case of > 20% (p = 0.035, Fig. 1b). For MGMT promoter methylation status, median OS in the overall collective was 13.2 (10.9–15.5) months for patients with a non-methylated MGMT promoter compared to 18.8 (17.2–20.6) months in case of a methylated MGMT promoter (p = 0.017, Fig. 2b).
+
+For those patients receiving a total radiation dose of 60 Gy (72.2%, n = 99/137), we performed a subgroup analysis (partial collective “favorable subgroup,” FS) which showed better ECOG status and lower age (60.6%, n = 60/99, below median age) than in the overall collective as well as similar stats for sex, resection status, and rate of progression or recurrence as the overall collective (Supplement Table S1 and Supplement Table S2). Relatively, more patients received chemotherapy than in the overall collective (89.9%, n = 89/99) and by the end of data collection, fewer patients had died (68.7%, n = 68/99). Again, most patients showed ATRX (88.9%, n = 88/99) and p53 expression (83.8%, n = 83/99), with EGFRvIII expression (50.5%, n = 50/99) more common than in the overall collective. The MGMT promoter was methylated in 59.6% (n = 59/99) of patients and 63.6% (n = 63/99) of patients showed equal to or less than 20% Ki-67 labeling index.
+
+For this favorable subgroup, median PFS was 9.1 (7.6–10.7) months. Regarding Ki-67 LI, PFS was 9.9 (8.5–11.2) months for patients with an index of ≤ 20% compared to 6.9 (5.6–8.3) months in case of > 20% (p = 0.013, Fig. 1c). Concerning MGMT promoter methylation, PFS was 7.5 (6.1–8.8) months for patients with a non-methylated MGMT promoter compared to 10.6 (7.5–13.8) months in case of a methylated MGMT promoter (p = 0.007, Fig. 2c).
+
+Overall survival was median 18.9 (17.2–20.5) months for the favorable subgroup. Regarding Ki-67 LI, no statistically significant difference in OS could be found (p = 0.079, Fig. 1d). Concerning MGMT promoter methylation, median OS was 14.8 (1.6–16.9) months for patients with a non-methylated MGMT promoter compared to 21.0 (15.7–26.3) months in case of a methylated MGMT promoter (p = 0.018, Fig. 2d).
+
+In case of ATRX and p53 expression, no statistically significant differences in PFS or OS could be found for either the overall collective or for the favorable subgroup (data not shown). EGFRvIII expression was only borderline significant for the overall collective (p = 0.050, data not shown).
+
+Multivariate analysis using a Cox proportional hazards model was conducted for the overall collective and repeated for the favorable subgroup, and included the variables listed in Table 3. Regarding Ki-67 LI, increased odds ratios for an index > 20% were statistically significant for the overall collective and the favorable subgroup regarding PFS but not for OS. For MGMT promoter methylation status, a decrease in odds ratio for a methylated MGMT promoter was statistically significant for both the overall collective as well as for the favorable subgroup regarding PFS and OS. Details concerning odds ratios can be found in Fig. 3.Table 3 Variables included in multivariate analysis with a Cox proportional hazards model
+
+Collective	Survival	Variables	
+Overall	PFS	ECOG at diagnosis
+
+EGFRvIII expression
+
+MGMT promoter methylation status*
+
+Ki-67 LI*
+
+Chemotherapy treatment
+
+Total radiation dose*
+
+	
+OS	Age at diagnosis*
+
+ECOG at diagnosis
+
+Sex
+
+Resection status*
+
+MGMT promoter methylation status*
+
+Ki-67 LI
+
+Chemotherapy treatment
+
+Total radiation dose
+
+Receival of re-treatment*
+
+	
+FS	PFS	MGMT promoter methylation status*
+
+Ki-67 LI*
+
+	
+OS	Age at diagnosis
+
+ECOG at diagnosis
+
+Resection status*
+
+MGMT promoter methylation status*
+
+Ki-67 LI
+
+Receipt of retreatment*
+
+	
+Variables included had reached p ≤ 0.1 in univariate analysis (Log-Rank Test)
+
+*Variables marked with * reached p < 0.05 in multivariate analysis, ECOG Eastern Cooperative Oncology Group status, ATRX Alpha thalassemia/mental retardation syndrome X-linked, EGFRvIII Epidermal Growth Factor Receptor splice variant III, MGMT O(6)-methylguanine-DNA methyltransferase, Ki-67 LI Ki-67 labeling index
+
+Fig. 3 Forest plot for odds ratios and 95% confidence intervals from multivariate analysis regarding progression-free survival (PFS) and overall survival (OS) for Ki-67 labeling index (Ki-67) and O(6)-methylguanine-DNA methyltransferase promoter methylation status (MGMT) for the overall collective (OC) and the partial collective “favorable subgroup” (FS)
+
+Due to the encouraging results regarding Ki-67 LI, we considered possibilities for integrating Ki-67 LI into a prognostic score. To this end, we first aimed to test the existing simplified Radiation Therapy Oncology Group/European Organistion for Research and Treatment of Cancer (RTOG/EORTC) recursive partitioning analysis (RPA) score [94] in our collective. Because we did not collect data on the ability of patients to work, we simplified the score further to exclude this factor (“RPAmod,” Fig. 4a). Kaplan–Meier survival analysis comparing the resulting scoring classes III, IV, and V yielded significant p-values for both PFS (p = 0.004) and OS (p < 0.001) in the overall collective (Fig. 5) as well as a significant p-value for OS (p = 0.004) in the favorable subgroup (data not shown), with significance for PFS being missed (p = 0.097). Following this analysis, we modified our decision tree further to include Ki-67 LI for patients under 50 years of age, resulting in formation of a new class IIIa (“RPAki,” Fig. 4b). This improved p-values of Kaplan–Meier survival analysis, resulting in even more significant p-values for OS in the overall collective (p < 0.001, Fig. 5) and in the favorable subgroup (p = 0.003, data not shown). P-values for PFS changed only slightly (overall collective p = 0.005, favorable subgroup p = 0.090). Neither RPAmod nor RPAki could find a significant difference in survival between scoring classes III and IV (RPAmod) or IIIa and IV (RPAki) per se (RPA mod: PFS p = 0.925/0.704, OS p = 0.075/0.054; RPAki PFS p = 0.359/0.365, OS p = 0.133/0.104; for overall collective/favorable subgroup respectively). Furthermore, for RPAki, score class III contained only 3 patients with an unusually long PFS (median 12.7 months) and OS (median 28.4 months), which substantially surpassed median survival times of any other scoring class.Fig. 4 Decision trees for modified Radiation Therapy Oncology Group/European Organistion for Research and Treatment of Cancer (RTOG/EORTC) recursive partitioning analysis (RPA) score classes. a Modification of the simplified RTOG RPA classification from 2011 [94] excluding work status and including age, Eastern Cooperative Oncology Group status (ECOG), and resection status (OP, R resection, B biopsy): RPAmod. b Further modification of decision tree RPAmod to further include Ki-67 labeling index (Ki67)I: RPAki. Age in years, Ki67 in %
+
+Fig. 5 Kaplan–Meier-plots and p-values of Kaplan–Meier survival analysis for progression-free survival (PFS) and overall survival (OS) regarding modified recursive partitioning analysis (RPAmod) scores in the overall collective. For RPAmod: a PFS significant with p = 0.004. b OS significant with p < 0.001. For RPAki: c PFS significant with p = 0.005. d OS significant with p < 0.001
+
+To better understand the impact of (radio)therapy on Ki-67 LI, 24 patients were identified for whom Ki-67 LI upon recurrence or progression had been documented. Most of these patients (91.7%, n = 22/24) had received 60 Gy of photon irradiation. The quotient of initial Ki-67 LI and Ki-67 LI upon recurrence or progression showed statistical significance in the Wilcoxon signed-rank test for reduction of Ki-67 LI upon recurrence or progression (median quotient 2, p = 0.003), while the absolute median reduction of 6% was not statistically significant (p = 0.102). In Kaplan–Meier survival analysis, patients with a reduction of Ki-67 LI upon progression or recurrence (Ki-67 LI quotient > 1) showed a longer OS of 23.1 (17.4–24.5) months compared to 19.5 (12.6–26.5) months for patients with a stable or increased Ki-67 LI (Ki-67 LI quotient ≤ 1), although this difference did not reach statistical significance (p = 0.114, Fig. 6). Regarding overall survival from time of diagnosis of progression or recurrence, patients with a reduction of Ki-67 LI upon progression or recurrence (Ki-67 LI quotient > 1) again showed longer OS of 12.1 (9.1–15.0) months compared to 9.9 (8.0–11.8) months for patients with a stable or increased Ki-67 LI (Ki-67 LI quotient ≤ 1), although this difference did also not reach statistical significance (p = 0.131, Fig. 6).Fig. 6 Kaplan–Meier-plots and p-values of Kaplan–Meier survival analysis regarding change in Ki-67 labeling index (Ki-67 LI) upon progression or recurrence (Ki-67 LI quotient = KI-67 LI upon initial diagnosis/Ki-67 LI upon progression or recurrence). a Overall survival (OS) from first diagnosis not significant with p = 0.114. b OS from diagnosis of progression or recurrence not significant with p = 0.131
+
+Discussion
+
+Overall, our collective can be seen as representative of GBM patients, as median age of 63.0 years and overall survival of 15.7 months correspond to known data [2–6]. The slightly longer overall survival of 18.9 months in the favorable subgroup partial collective might be due to slightly better ECOG status in this collective, as a better performance status has been consistently correlated with improved survival [56, 67, 71, 74].
+
+Expression of p53 was slightly higher than expected, with 84.7% of patients showing overexpression compared with 23 to 69% reported in the literature [17, 95–97]. Notably, in analyses, p53 protein overexpression is often equated with TP53 gene mutations, since the degradation of mutated p53 protein is disturbed and p53 subsequently accumulates [98–100]. However, wildtype p53 can also be upregulated by diverse cellular stress signals [100, 101] which might account for the discrepancy from the lower percentages reported for genetically analyzed TP53 mutations (25 to 54%, [12, 13, 16, 101–103]) [104]. Furthermore, the intensity of immunohistochemical staining can vary in dependence of the antibody and staining method used and the evaluation of overexpression is subject to the assessment of the examiner (being, by nature, not a purely quantitative method). This approach could lead to higher numbers of cases being classified as overexpressed compared to cut-offs used in other studies (e.g., [105]). In line with previous studies [14, 18, 20–24], we found no correlation between p53 expression and survival.
+
+Loss of nuclear ATRX expression in 8.8% of our patients coincides with other studies (7–12% [35, 36]), with preservation of ATRX adding to malignancy as it is implicated in DNA repair [27] and TMZ resistance [106]. Although loss of ATRX expression, which is typically seen in IDH-mutant GBMs, has been linked with better survival even under consideration of IDH status [33, 34], we could not replicate these findings, perhaps due to the fact that ATRX expression was unevenly distributed (91.2% vs. 8.8%). Although 6 patients showed loss of ATRX expression, which is atypical for IDH-wildtype GBMs, these patients nevertheless demonstrated a typical course of disease and treatment and were therefore included in the patient collective.
+
+EGFRvIII expression of 40.9% is slightly more than the mean expression reported in previous studies as mentioned above and although EGFRvIII expression showed borderline significance in Kaplan–Meier survival analysis, this did not hold up in univariate and multivariate analysis; thus, no clear statement can be made about a correlation between survival and EGFRvIII expression.
+
+A median Ki-67 LI of 20% is in line with the malignant nature and high proliferation of GBMs [65, 66] and averages approximately in between previously published data (11 to 27% [14, 61, 62, 64]). Progression-free survival was significantly longer in patients with lower Ki-67 LI < 20%, matching previous studies [107–109]. We propose that this is a result of lower proliferation grade and therefore slower growth in tumors with lower Ki-67 LI. Furthermore, Ki-67 LI was not correlated with time to re-progression or re-recurrence, whereas retreatment was shown to have a significant impact on overall survival in our collective regardless of retreatment modality. Also, while Ki-67 LI had a significant impact on overall survival this did not hold up in multivariate analysis. This could suggest that retreatment received by our patients was sufficient to compensate for a possibly more proliferative tumor or that survival time was not long enough for initial proliferation grade to have an impact. Some studies have shown a non-significant decrease of Ki-67 LI upon recurrence [110, 111], which might account for lacking significance of overall survival in multivariate analysis; however, other studies were not able to find this decrease [108, 112]. The present study was able to show a tendency toward better OS in patients with reduction of Ki-67 LI upon progression or recurrence, with statistical significance being reached for a median Ki-67 LI quotient of 2, but with significance being missed for both an absolute median reduction of 6% as well as for Kaplan–Meier survival analysis of Ki-67 LI quotient ≤ 1 vs. > 1, which could be due to the small sample size (n = 24). As mentioned above, the role of Ki-67 LI as a prognostic factor is still disputed due to differing results concerning impact of Ki-67 LI on survival. A previous study has discussed suboptimal methodological approaches as a possible factor in this variance [75]. In our eyes, the strength of the present study lies firstly in the monocentric approach, seeing as Ki-67 LI detection took place at a single laboratory and with minimal examiner variance, and secondly in the inclusion of treatment criteria via analysis of the partial collective “favorable subgroup,” making the significant results regarding Ki-67 LI and PFS more reliable. Furthermore, our approach of integrating Ki-67 LI into the existing RPA score allows for inclusion of further prognostic factors and could, in our eyes, show that inclusion of Ki-67 LI can contribute to an improved assessment of survival. Concerning a possible impact of Ki-67 LI on treatment stratification, to our knowledge, no data exist regarding glioblastoma, and this was also not the focus of our study. However, Ki-67 has been shown to impact treatment response in neuroendocrine neoplasms [113], prostate cancer [114], and metastatic lung carcinoids [115], as well as impacting treatment options for breast cancer [116–118]. Such promising results in other malign entities combined with the prognostic value of Ki-67 LI as seen and discussed in our study emphasize the need for prospective trials to investigate a possible role of Ki-67 LI in stratification for treatment of glioblastoma.
+
+MGMT promoter methylation was more common in our collective than expected, with 60% of patients having a methylated MGMT promoter compared to 40% in previously published data [12, 46, 84, 119]. A significantly better progression-free and overall survival in all collectives is in line with known data [24, 82–86], with overall survival of 13 months for non-methylated and 18 months for methylated MGMT promoter coinciding with previous studies (5.3–13 months for non-methylated and 10.3–23 months for methylated MGMT promoter [3, 83, 86]).
+
+Regarding the modified RPA scores analyzed by us (Fig. 4), we could show that the combination of age ≥ 50 years, ECOG > 2, and biopsy reliably predicts a bad prognosis with very short survival (median PFS 4.2 months, median OS 4.3 months). On the other hand, the combination of age < 50 years, ECOG 0, and Ki-67 LI ≤ 20% might be able to identify the small collective of long-term GBM survivors irrespective of resection status, as it did in our collective. In our view, this conclusion is underscored by the fact that p-values of Kaplan–Meier survival analysis differentiating between score classes III and IV (RPAmod) showed lower values when this collective of long-term survivors was split off utilizing Ki-67 LI ≤ 20% (RPAki). The fact that in our collective no differentiation of survival prognosis was possible between score classes III and IV (RPAmod) or IIIa and IV (RPAki) might be either due to the fact that we did not take mental/neurological status described via working status into account as intended in the original RPA score [94] or due to the fact that age (younger vs. older) and ECOG status (lower vs. higher) even each other out concerning odd ratios.
+
+Conclusion
+
+In our collective of GBM patients, a Ki-67 LI equal to or lower than 20% was an independent predictor of prolonged progression-free survival and showed significant correlation to prolonged overall survival. A methylated MGMT promoter was also an independent predictor of prolonged progression-free and overall survival. For ATRX and p53 expression, no correlation with survival could be found. For EGFRvIII expression, a borderline significant correlation was found in Kaplan–Meier survival analysis, which did not hold up to univariate or multivariate analysis.
+
+We propose that in future, analysis of Ki-67 LI should also be included as a standard analysis and should be considered as a prognostic factor for progression-free survival upon initial diagnosis. In our opinion, further studies regarding change in or conservation of Ki-67 LI upon progression or recurrence and its influence on time to re-progression or re-recurrence and overall survival should be considered, with studies pooling collectives to reach larger patient numbers. In addition, we strongly suggest further evaluation of Ki-67 LI as part of prognosis scoring systems, as it might be able to identify long-term GBM survivors. Lastly, prospective trials to evaluate a possible impact of Ki-67 LI on treatment stratification are highly recommended.
+
+Supplementary Information
+
+Table S1: Patient characteristics in the favorable subgroup
+
+Table S2: Treatment characteristics in the favorable subgroup
+
+Acknowledgements
+
+We thank all staff involved in the treatment of patients and the accruement of data as well as the patients who agreed to contribute their data to science.
+
+Funding
+
+No funds, grants, or other support were received by any of the authors.
+
+Author Contribution
+
+R. Dumke, Ch. Dumke, S. Lautenschläger, and R. Engenhart-Cabillic contributed to the study conception and design. Data collection was performed by R. Dumke, C. Dumke, and S. Lautenschläger, data analysis was performed by R. Dumke. The first draft of the manuscript was written by R. Dumke, and all authors commented on previous versions of the manuscript. All authors read and approved the final manuscript.
+
+Funding
+
+Open Access funding enabled and organized by Projekt DEAL.
+
+Declarations
+
+Conflict of interest
+
+R. Dumke, C. Dumke, F. Eberle, C. Nimsky, U. Keber, R. Engenhart-Cabillic, and S. Lautenschläger declare that they have no competing interests.
+
+Ethical standards
+
+This study was performed in line with the principles of the Declaration of Helsinki. Approval was granted by the Ethics Committee of the Philipps-Universität Marburg (ethics vote “Studie 166/18”). Consent to participate: not applicable. Consent for publication: not applicable.
+
+The authors R. Engenhart-Cabillic and S. Lautenschläger contributed equally to the manuscript.
+
+Availability of data and material
+
+Not applicable.
+
+Code availability
+
+Not applicable.
+==== Refs
+References
+
+1. Kraywinkel K Spix C Epidemiologie primärer Hirntumoren bei Kindern und Erwachsenen in Deutschland Onkologe 2019 25 1 5 9 10.1007/s00761-018-0501-1
+2. Robert Koch-Institut Krebs in Deutschland 2013/2014 2014 C70 C72
+3. Schalhorn A Malignome des zentralen Nervensystems (ZNS) Klinikleitfaden Hämatologie Onkologie 2018 513 537
+4. Ohgaki H Kleihues P Epidemiology and etiology of gliomas Acta Neuropathol 2005 109 1 93 108 10.1007/s00401-005-0991-y 15685439
+5. Aquilanti E Miller J Santagata S Cahill DP Brastianos PK Updates in prognostic markers for gliomas Neuro Oncol 2018 20 7 vii17 vii26 10.1093/neuonc/noy158 30412261
+6. Daumas-Duport C Scheithauer B O’Fallon J Kelly P Grading of astrocytomas: a simple and reproducible method Cancer 1988 62 10 2152 2165 10.1002/1097-0142(19881115)62:10<2152::AID-CNCR2820621015>3.0.CO;2-T 3179928
+7. Weller M van den Bent M Preusser M Le Rhun E Tonn JC Minniti G Bendszus M Balana C Chinot O Dirven L French P Hegi ME Jakola AS Platten M Roth P Rudà R Short S Smits M Taphoorn MJB von Deimling A Westphal M Soffietti R Reifenberger G Wick W EANO guidelines on the diagnosis and treatment of diffuse gliomas of adulthood Nat Rev Clin Oncol 2021 18 3 170 186 10.1038/s41571-020-00447-z 33293629
+8. Stupp R Mason WP van den Bent MJ Weller M Fisher B Taphoorn MJB Belanger K Brandes AA Marosi C Bogdahn U Curschmann J Janzer RC Ludwin SK Gorlia T Allgeier A Lacombe D Cairncross JG Eisenhauer E Mirimanoff RO Radiotherapy plus concomitant and adjuvant temozolomide for glioblastoma N Engl J Med 2005 352 10 987 996 10.1056/NEJMoa043330 15758009
+9. Malmström A Grønberg BH Marosi C Stupp R Frappaz D Schultz H Abacioglu U Tavelin B Lhermitte B Hegi ME Rosell J Henriksson R Temozolomide versus standard 6-week radiotherapy versus hypofractionated radiotherapy in patients older than 60 years with glioblastoma: the nordic randomised, phase 3 trial Lancet Oncol 2012 13 9 916 926 10.1016/S1470-2045(12)70265-6 22877848
+10. Louis DN Perry A Reifenberger G von Deimling A Figarella-Branger D Cavenee WK Ohgaki H Wiestler OD Kleihues P Ellison DW The 2016 world health organization classification of tumors of the central nervous system: a summary Acta Neuropathol 2016 131 6 803 820 10.1007/s00401-016-1545-1 27157931
+11. Hainaut P The tumor suppressor protein p53: a receptor to genotoxic stress that controls cell growth and survival Curr Opin Oncol 1995 7 1 76 82 10.1097/00001622-199507010-00012 7696367
+12. Ohgaki H Genetic pathways to glioblastomas Neuropathology 2005 25 1 1 7 10.1111/j.1440-1789.2004.00600.x 15822813
+13. Ohgaki H Dessen P Jourde B Horstmann S Nishikawa T Di Patre P-L Burkhard C Schüler D Probst-Hensch NM Maiorka PC Baeza N Pisani P Yonekawa Y Yasargil MG Lütolf UM Kleihues P Genetic pathways to glioblastoma: a population-based study Cancer Res 2004 64 19 6892 6899 10.1158/0008-5472.CAN-04-1337 15466178
+14. Kirla R Salminen E Huhtala S Nuutinen J Talve L Haapasalo H Kalimo H Prognostic value of the expression of tumor suppressor genes p53, p21, p16 and pRb, and Ki-67 labelling in high grade astrocytomas treated with radiotherapy J Neurooncol 2000 46 71 80 10.1023/A:1006473320474 10896207
+15. von Deimling A Louis DN Wiestler OD Molecular pathways in the formation of gliomas Glia 1995 15 328 338 10.1002/glia.440150312 8586467
+16. Rasheed BK Wiltshire RN Bigner SH Bigner DD Molecular pathogenesis of malignant gliomas Curr Opin Oncol 1999 11 3 162 10.1097/00001622-199905000-00004 10328589
+17. Kleihues P Ohgaki H Genetics of glioma progression and the definition of primary and secondary glioblastoma Brain Pathol 1997 7 4 1131 1136 10.1111/j.1750-3639.1997.tb00993.x
+18. Newcomb EW Cohen H Lee SR Bhalla SK Bloom J Hayes RL Miller DC Survival of patients with glioblastoma multiforme is not influenced by altered expression of p16, p53, EGFR, MDM2 or Bcl-2 genes Brain Pathol 1998 8 4 655 667 10.1111/j.1750-3639.1998.tb00191.x 9804374
+19. Ricard D Kaloshi G Amiel-Benouaich A Lejeune J Marie Y Mandonnet E Kujas M Mokhtari K Taillibert S Laigle-Donadey F Carpentier AF Omuro A Capelle L Duffau H Cornu P Guillevin R Sanson M Hoang-Xuan K Delattre J-Y Dynamic history of low-grade gliomas before and after temozolomide treatment Ann Neurol 2007 61 5 484 490 10.1002/ana.21125 17469128
+20. Kyritsis AP Bondy ML Hess KR Cunningham JE Zhu D Amos CJ Yung WK Levin VA Bruner JM Prognostic significance of p53 immunoreactivity in patients with glioma Clin Cancer Res 1995 1 12 1617 1622 9815964
+21. Levidou G El-Habr E Saetta AA Bamias C Katsouyanni K Katsougiannis K Patsouris E Korkolopoulou P P53 immunoexpression as a prognostic marker for human astrocytomas: a meta-analysis and review of the literature J Neurooncol 2010 100 3 363 371 10.1007/s11060-010-0204-y 20461443
+22. Simmons ML Lamborn KR Takahashi M Chen P Israel MA Berger MS Godfrey T Nigro J Prados M Chang S Barker FG Aldape K Analysis of complex relationships between age, p53, epidermal growth factor receptor, and survival in glioblastoma patients Cancer Res 2001 61 3 1122 1128 11221842
+23. Smith JS Tachibana I Passe SM Huntley BK Borell TJ Iturria N O’Fallon JR Schaefer PL Scheithauer BW James CD Buckner JC Jenkins RB PTEN mutation, EGFR amplification, and outcome in patients with anaplastic astrocytoma and glioblastoma multiforme J Natl Cancer Inst 2001 93 16 1246 1256 10.1093/jnci/93.16.1246 11504770
+24. Weller M Felsberg J Hartmann C Berger H Steinbach JP Schramm J Westphal M Schackert G Simon M Tonn JC Heese O Krex D Nikkhah G Pietsch T Wiestler O Reifenberger G von Deimling A Loeffler M Molecular predictors of progression-free and overall survival in patients with newly diagnosed glioblastoma: a prospective translational study of the German glioma network J Clin Oncol 2009 27 34 5743 5750 10.1200/JCO.2009.23.0805 19805672
+25. Schmidt MC Antweiler S Urban N Mueller W Kuklik A Meyer-Puttlitz B Wiestler OD Louis DN Fimmers R von Deimling A Impact of genotype and morphology on the prognosis of glioblastoma J Neuropathol Exp Neurol 2002 61 4 321 328 10.1093/jnen/61.4.321 11939587
+26. Ritchie K Seah C Moulin J Isaac C Dick F Bérubé NG Loss of ATRX leads to chromosome cohesion and congression defects J Cell Biol 2008 180 2 315 324 10.1083/jcb.200706083 18227278
+27. Leung JW-C Ghosal G Wang W Shen X Wang J Li L Chen J Alpha thalassemia/mental retardation syndrome X-linked gene product ATRX is required for proper replication restart and cellular resistance to replication stress J Biol Chem 2013 288 9 6342 6350 10.1074/jbc.M112.411603 23329831
+28. Heaphy CM De Wilde RF Jiao Y Klein AP Edil BH Shi C Bettegowda C Rodriguez FJ Eberhart CG Hebbar S Offerhaus GJ McLendon R Rasheed BA He Y Yan H Bigner DD Oba-Shinjo SM Marie SKN Riggins GJ Kinzler KW Vogelstein B Hruban RH Maitra A Papadopoulos N Meeker AK Altered telomeres in tumors with ATRX and DAXX mutations Science 2011 333 6041 425 10.1126/science.1207313 21719641
+29. Koschmann C Calinescu A-A Nunez FJ Mackay A Fazal-Salom J Thomas D Mendez F Kamran N Dzaman M Mulpuri L Krasinkiewicz J Doherty R Lemons R Brosnan-Cashman JA Li Y Roh S Zhao L Appelman H Ferguson D Gorbunova V Meeker A Jones C Lowenstein PR Castro MG ATRX loss promotes tumor growth and impairs nonhomologous end joining DNA repair in glioma Sci Transl Med 2016 8 328 328ra28 10.1126/scitranslmed.aac8228 26936505
+30. Koschmann C Lowenstein PR Castro MG ATRX mutations and glioblastoma: Impaired DNA damage repair, alternative lengthening of telomeres, and genetic instability Mol Cell Oncol 2016 3 3 e1167158 10.1080/23723556.2016.1167158 27314101
+31. Schwartzentruber J Korshunov A Liu X-Y Driver mutations in histone H3.3 and chromatin remodelling genes in paediatric glioblastoma Nature 2012 482 7384 226 231 10.1038/nature10833 22286061
+32. Wiestler B Capper D Holland-Letz T Korshunov A von Deimling A Pfister SM Platten M Weller M Wick W ATRX loss refines the classification of anaplastic gliomas and identifies a subgroup of IDH mutant astrocytic tumors with better prognosis Acta Neuropathol 2013 126 3 443 451 10.1007/s00401-013-1156-z 23904111
+33. Chaurasia A Park S-H Seo J-W Park C-K Immunohistochemical analysis of ATRX, IDH1 and p53 in glioblastoma and their correlations with patient survival J Korean Med Sci 2016 31 8 1208 1214 10.3346/jkms.2016.31.8.1208 27478330
+34. Xie Y Tan Y Yang C Zhang X Xu C Qiao X Xu J Tian S Fang C Kang C Omics-based integrated analysis identified ATRX as a biomarker associated with glioma diagnosis and prognosis Cancer Biol Med 2019 16 4 784 796 10.20892/j.issn.2095-3941.2019.0143 31908895
+35. Cai J Zhu P Zhang C Li Q Wang Z Li G Wang G Yang P Li J Han B Jiang C Sun Y Jiang T Detection of ATRX and IDH1-R132H immunohistochemistry in the progression of 211 paired gliomas Oncotarget 2016 7 13 16384 16395 10.18632/oncotarget.7650 26918938
+36. Liu X-Y Gerges N Korshunov A Sabha N Khuong-Quang D-A Fontebasso AM Fleming A Hadjadj D Schwartzentruber J Majewski J Dong Z Siegel P Albrecht S Croul S Jones DTW Kool M Tonjes M Reifenberger G Faury D Zadeh G Pfister S Jabado N Frequent ATRX mutations and loss of expression in adult diffuse astrocytic tumors carrying IDH1/IDH2 and TP53 mutations Acta Neuropathol 2012 124 5 615 625 10.1007/s00401-012-1031-3 22886134
+37. Carpenter G Receptors for epidermal growth factor and other polypeptide mitogens Annu Rev Biochem 1987 56 881 914 10.1146/annurev.bi.56.070187.004313 3039909
+38. Cohen S Alfred P. Sloan Jr. Award. The epidermal growth factor (EGF) Cancer 1983 51 10 1787 1791 10.1002/1097-0142(19830515)51:10<1787::AID-CNCR2820511004>3.0.CO;2-A 6299497
+39. Stoscheck CM King LE Functional and structural characteristics of EGF and its receptor and their relationship to transforming proteins J Cell Biochem 1986 31 2 135 152 10.1002/jcb.240310206 3015991
+40. Wu X Rubin M Fan Z DeBlasio T Soos T Koff A Mendelsohn J Involvement of p27KIP1 in G1 arrest mediated by an anti-epidermal growth factor receptor monoclonal antibody Oncogene 1996 12 7 1397 1403 8622855
+41. De Luca A Carotenuto A Rachiglio A Gallo M Maiello MR Aldinucci D Pinto A Normanno N The role of the EGFR signaling in tumor microenvironment J Cell Physiol 2008 214 3 559 567 10.1002/jcp.21260 17894407
+42. Wang S-C Hung M-C Nuclear translocation of the epidermal growth factor receptor family membrane tyrosine kinase receptors Clin Cancer Res 2009 15 21 6484 6489 10.1158/1078-0432.CCR-08-2813 19861462
+43. Hurtt MR Moossy J Donovan-Peluso M Locker J Amplification of epidermal growth factor receptor gene in gliomas: histopathology and prognosis J Neuropathol Exp Neurol 1992 51 1 84 90 10.1097/00005072-199201000-00010 1311022
+44. Jaros E Perry RH Adam L Kelly PJ Crawford PJ Kalbag RM Mendelow AD Sengupta RP Pearson A Prognostic implications of p53 protein, epidermal growth factor receptor, and Ki-67 labelling in brain tumours Br J Cancer 1992 66 373 385 10.1038/bjc.1992.273 1503912
+45. Libermann TA Nusbaum HR Razon N Kris R Lax I Soreq H Whittle N Waterfield MD Ullrich A Schlessinger J Amplification, enhanced expression and possible rearrangement of EGF receptor gene in primary human brain tumours of glial origin Nature 1985 313 5998 144 147 10.1038/313144a0 2981413
+46. Ohgaki H Kleihues P Genetic pathways to primary and secondary glioblastoma Am J Pathol 2007 170 5 1445 1453 10.2353/ajpath.2007.070011 17456751
+47. Schlegel J Stumm G Brändle K Merdes A Mechtersheimer G Hynes NE Kiessling M Amplification and differential expression of members of the erbB-gene family in human glioblastoma J Neurooncol 1994 22 3 201 207 10.1007/BF01052920 7760096
+48. Shinojima N Tada K Shiraishi S Kamiryo T Kochi M Nakamura H Makino K Saya H Hirano H Kuratsu J Oka K Ishimaru Y Ushio Y Prognostic value of epidermal growth factor receptor in patients with glioblastoma multiforme Cancer Res 2003 63 20 6962 6970 14583498
+49. Wong AJ Bigner SH Bigner DD Kinzler KW Hamilton SR Vogelstein B Increased expression of the epidermal growth factor receptor gene in malignant gliomas is invariably associated with gene amplification Proc Natl Acad Sci U S A 1987 84 19 6899 6903 10.1073/pnas.84.19.6899 3477813
+50. M-D-M I Bonavia R Mukasa A Narita Y Sah DWY Vandenberg S Brennan C Johns TG Bachoo R Hadwiger P Tan P DePinho RA Cavenee W Furnari F Tumor heterogeneity is an active process maintained by a mutant EGFR-induced cytokine circuit in glioblastoma Genes Dev 2010 24 16 1731 1745 10.1101/gad.1890510 20713517
+51. Wikstrand CJ Hale LP Batra SK Hill ML Humphrey PA Kurpad SN McLendon RE Moscatello D Pegram CN Reist CJ Monoclonal antibodies against EGFRvIII are tumor specific and react with breast and lung carcinomas and malignant gliomas Cancer Res 1995 55 14 3140 3148 7606735
+52. Faulkner C Palmer A Williams H Wragg C Haynes HR White P DeSouza R-M Williams M Hopkins K Kurian KM EGFR and EGFRvIII analysis in glioblastoma as therapeutic biomarkers Br J Neurosurg 2015 29 1 23 29 10.3109/02688697.2014.950631 25141189
+53. Heimberger AB Hlatky R Suki D Yang D Weinberg J Gilbert M Sawaya R Aldape K Prognostic effect of epidermal growth factor receptor and EGFRvIII in glioblastoma multiforme patients Clin Cancer Res 2005 11 4 1462 1466 10.1158/1078-0432.CCR-04-1737 15746047
+54. Huang HS Nagane M Klingbeil CK Lin H Nishikawa R Ji XD Huang CM Gill GN Wiley HS Cavenee WK The enhanced tumorigenic activity of a mutant epidermal growth factor receptor common in human cancers is mediated by threshold levels of constitutive tyrosine phosphorylation and unattenuated signaling J Biol Chem 1997 272 5 2927 2935 10.1074/jbc.272.5.2927 9006938
+55. Li J Liang R Song C Xiang Y Liu Y Prognostic significance of epidermal growth factor receptor expression in glioma patients Onco Targets Ther 2018 11 731 742 10.2147/OTT.S155160 29445288
+56. Bouvier-Labit C Chinot O Ochi C Gambarelli D Dufour H Figarella-Branger D Prognostic significance of Ki67, p53 and epidermal growth factor receptor immunostaining in human glioblastomas Neuropathol Appl Neurobiol 1998 24 5 381 388 10.1046/j.1365-2990.1998.00137.x 9821169
+57. Huncharek M Kupelnick B Epidermal growth factor receptor gene amplification as a prognostic marker in glioblastoma multiforme: results of a meta-analysis Oncol Res 2000 12 2 107 112 10.3727/096504001108747576 11132923
+58. Chen W-J He D-S Tang R-X Ren F-H Chen G Ki-67 is a valuable prognostic factor in gliomas: evidence from a systematic review and meta-analysis Asian Pac J Cancer Prev 2015 16 2 411 420 10.7314/apjcp.2015.16.2.411 25684464
+59. Scholzen T Gerdes J The Ki-67 protein: from the known and the unknown J. Cell. Physiol. 2000 182 3 311 322 10.1002/(SICI)1097-4652(200003)182:3<311::AID-JCP1>3.0.CO;2-9 10653597
+60. Hu X Miao W Zou Y Zhang W Zhang Y Liu H Expression of p53, epidermal growth factor receptor, Ki-67 and O6-methylguanine-DNA methyltransferase in human gliomas Oncol Lett 2013 6 1 130 134 10.3892/ol.2013.1317 23946790
+61. Karamitopoulou E Perentes E Diamantis I Maraziotis T Ki-67 immunoreactivity in human central nervous system tumors: a study with MIB 1 monoclonal antibody on archival material Acta Neuropathol 1994 87 47 54 10.1007/BF00386253 7511316
+62. Neder L Colli BO Machado HR Carlotti CG Santos AC Chimelli L MIB-1 labeling index in astrocytic tumors—a clinicopathologic study Clin Neuropathol 2004 23 6 262 270 15584210
+63. Raghavan R Steart PV Weller RO Cell proliferation patterns in the diagnosis of astrocytomas, anaplastic astrocytomas and glioblastoma multiforme: a Ki-67 study Neuropathol Appl Neurobiol 1990 16 2 123 133 10.1111/j.1365-2990.1990.tb00941.x 2161084
+64. Zuber P Hamou MF de Tribolet N Identification of proliferating cells in human gliomas using the monoclonal antibody Ki-67 Neurosurgery 1988 22 2 364 368 10.1227/00006123-198802000-00015 2832782
+65. Krishnan SS Muthiah S Rao S Salem SS Madabhushi VC Mahadevan A Mindbomb homolog-1 index in the prognosis of high-grade glioma and its clinicopathological correlation J Neurosci Rural Pract 2019 10 2 185 193 10.4103/jnrp.jnrp_374_18 31001003
+66. Johannessen AL Torp SH The clinical value of Ki-67/MIB-1 labeling index in human astrocytomas Pathol Oncol Res 2006 12 3 143 147 10.1007/BF02893360 16998593
+67. Scott JN Rewcastle NB Brasher PMA Fulton D Which glioblastoma multiforme patient will become a long-term survivor? A population-based study Ann Neurol 1999 46 183 188 10.1002/1531-8249(199908)46:2<183::AID-ANA7>3.0.CO;2-7 10443883
+68. Phillips HS Kharbanda S Chen R Forrest WF Soriano RH Wu TD Misra A Nigro JM Colman H Soroceanu L Williams PM Modrusan Z Feuerstein BG Aldape K Molecular subclasses of high-grade glioma predict prognosis, delineate a pattern of disease progression, and resemble stages in neurogenesis Cancer Cell 2006 9 3 157 173 10.1016/j.ccr.2006.02.019 16530701
+69. Habberstad AH Gulati S Torp SH Evaluation of the proliferation markers Ki-67/MIB-1, mitosin, survivin, pHH3, and DNA topoisomerase IIα in human anaplastic astrocytomas—an immunohistochemical study Diagn Pathol 2011 6 43 10.1186/1746-1596-6-43 21609421
+70. Montano N Cenci T Martini M D’Alessandris QG Pelacchi F Ricci-Vitiani L Maira G De Maria R Larocca LM Pallini R Expression of EGFRvIII in glioblastoma: prognostic significance revisited Neoplasia 2011 13 12 1113 1121 10.1593/neo.111338 22241957
+71. Wakimoto H Aoyagi M Nakayama T Nagashima G Yamamoto S Tamaki M Hirakawa K Prognostic significance of Ki-67 labeling indices obtained using MIB-1 monoclonal antibody in patients with supratentorial astrocytomas Cancer 1996 77 2 373 380 10.1002/(SICI)1097-0142(19960115)77:2<373::AID-CNCR21>3.0.CO;2-Y 8625247
+72. Alkhaibary A Alassiri AH AlSufiani F Alharbi MA Ki-67 labeling index in glioblastoma; does it really matter? Hematol Oncol Stem Cell Ther 2019 12 2 82 88 10.1016/j.hemonc.2018.11.001 30552865
+73. Moskowitz SI Jin T Prayson RA Role of MIB1 in predicting survival in patients with glioblastomas J Neurooncol 2006 76 2 193 200 10.1007/s11060-005-5262-1 16234986
+74. Stark AM Nabavi A Mehdorn HM Blömer U Glioblastoma multiforme-report of 267 cases treated at a single institution Surg Neurol 2005 63 2 162 169 10.1016/j.surneu.2004.01.028 15680662
+75. Dahlrot RH Bangsø JA Petersen JK Rosager AM Sørensen MD Reifenberger G Hansen S Kristensen BW Prognostic role of Ki-67 in glioblastomas excluding contribution from non-neoplastic cells Sci Rep 2021 11 1 17918 10.1038/s41598-021-95958-9 34504133
+76. Iyama T Wilson DM DNA repair mechanisms in dividing and non-dividing cells DNA Repair (Amst) 2013 12 8 620 636 10.1016/j.dnarep.2013.04.015 23684800
+77. Ludlum DB DNA alkylation by the haloethylnitrosoureas: nature of modifications produced and their enzymatic repair or removal Mutat. Res. 1990 233 1 117 126 10.1016/0027-5107(90)90156-X 2233793
+78. Danam RP Qian XC Howell SR Brent TP Methylation of selected CpGs in the humanO6-methylguanine-DNA methyltransferase promoter region as a marker of gene silencing Mol Carcinog 1999 24 2 85 89 10.1002/(SICI)1098-2744(199902)24:2<85::AID-MC2>3.0.CO;2-C 10078935
+79. Esteller M Hamilton SR Burger PC Baylin SB Herman JG Inactivation of the DNA repair gene O6-methylguanine-DNA methyltransferase by promoter hypermethylation is a common event in primary human neoplasia Cancer Res 1999 59 4 793 797 10029064
+80. Qian XC Brent TP Methylation hot spots in the 5’ flanking region denote silencing of the O6-methylguanine-DNA methyltransferase gene Cancer Res 1997 57 17 3672 3677 9288770
+81. Watts GS Pieper RO Costello JF Peng YM Dalton WS Futscher BW Methylation of discrete regions of the O6-methylguanine DNA methyltransferase (MGMT) CpG island is associated with heterochromatinization of the MGMT transcription start site and silencing of the gene Mol Cell Biol 1997 17 9 5612 5619 10.1128/MCB.17.9.5612 9271436
+82. Hegi ME Diserens A-C Godard S Dietrich P-Y Regli L Ostermann S Otten P Van Melle G de Tribolet N Stupp R Clinical trial substantiates the predictive value of O-6-methylguanine-DNA methyltransferase promoter methylation in glioblastoma patients treated with temozolomide Clin Cancer Res 2004 10 1871 1874 10.1158/1078-0432.CCR-03-0384 15041700
+83. Hegi ME Diserens A-C Gorlia T Hamou M-F de Tribolet N Weller M Kros JM Hainfellner JA Mason W Mariani L Bromberg JE Hau P Mirimanoff RO Cairncross JG Janzer RC Stupp R MGMT gene silencing and benefit from temozolomide in glioblastoma N Engl J Med 2005 352 10 997 1003 10.1056/NEJMoa043331 15758010
+84. Alassiri AH Alkhaibary A Al-Sarheed S Alsufani F Alharbi M Alkhani A Aloraidi A O6-methylguanine-DNA methyltransferase promoter methylation and isocitrate dehydrogenase mutation as prognostic factors in a cohort of Saudi patients with glioblastoma Ann Saudi Med 2019 39 6 410 416 10.5144/0256-4947.2019.410 31804140
+85. Esteller M Garcia-Foncillas J Andion E Goodman SN Hidalgo OF Vanaclocha V Baylin SB Herman JG Inactivation of the DNA-repair gene MGMT and the clinical response of gliomas to alkylating agents N Engl J Med 2000 343 19 1350 1354 10.1056/NEJM200011093431901 11070098
+86. Gorlia T van den Bent MJ Hegi ME Mirimanoff RO Weller M Cairncross JG Eisenhauer E Belanger K Brandes AA Allgeier A Lacombe D Stupp R Nomograms for predicting survival of patients with newly diagnosed glioblastoma: prognostic factor analysis of EORTC and NCIC trial 26981-22981/CE.3 Lancet Oncol 2008 9 1 29 38 10.1016/S1470-2045(07)70384-4 18082451
+87. Niyazi M Brada M Chalmers AJ Combs SE Erridge SC Fiorentino A Grosu AL Lagerwaard FJ Minniti G Mirimanoff R-O Ricardi U Short SC Weber DC Belka C ESTRO-ACROP guideline “target delineation of glioblastomas” Radiother Oncol 2016 118 1 35 42 10.1016/j.radonc.2015.12.003 26777122
+88. Herrlinger U Tzaridis T Mack F Lomustine-temozolomide combination therapy versus standard temozolomide therapy in patients with newly diagnosed glioblastoma with methylated MGMT promoter (CeTeG/NOA–09): a randomised, open-label, phase 3 trial Lancet 2019 393 10172 678 688 10.1016/S0140-6736(18)31791-4 30782343
+89. Lautenschlaeger FS Dumke R Schymalla M Hauswald H Carl B Stein M Keber U Jensen A Engenhart-Cabillic R Eberle F Comparison of carbon ion and photon reirradiation for recurrent glioblastoma Strahlenther Onkol 2021 10.1007/s00066-021-01844-8 34523017
+90. Beck-Wödl S Harzer K Sturm M Buchert R Rieß O Mennel H-D Latta E Pagenstecher A Keber U Homozygous TBC1 domain-containing kinase (TBCK) mutation causes a novel lysosomal storage disease—a new type of neuronal ceroid lipofuscinosis (CLN15)? acta neuropathol commun 2018 6 1 145 10.1186/s40478-018-0646-6 30591081
+91. World Health Organization Classification of tumours Central nervous system tumours 2021 5 Lyon International Agency for Research on Cancer
+92. El Hindy N Keyvani K Pagenstecher A Dammann P Sandalcioglu IE Sure U Zhu Y Implications of Dll4-Notch signaling activation in primary glioblastoma multiforme Neuro Oncol 2013 15 10 1366 1378 10.1093/neuonc/not071 23787764
+93. Esteller M Hamilton SR Burger PC Baylin SB Herman JG Inactivation of the DNA repair gene O6-methylguanine-DNA methyltransferase by promoter hypermethylation is a common event in primary human neoplasia Cancer Res 1999 59 4 793 797 10029064
+94. Li J Wang M Won M Shaw EG Coughlin C Curran WJ Mehta MP Validation and simplification of the radiation therapy oncology group recursive partitioning analysis classification for glioblastoma Int J Radiat Oncol Biol Phys 2011 81 3 623 630 10.1016/j.ijrobp.2010.06.012 20888136
+95. Kraus JA Wenghoefer M Glesmann N Mohr S Beck M Schmidt MC Schröder R Berweiler U Roggendorf W Diete S Dietzmann K Heuser K Müller B Fimmers R von Deimling A Schlegel U TP53 gene mutations, nuclear p53 accumulation, expression of Waf/p21, Bcl-2, and CD95 (APO-1/Fas) proteins are not prognostic factors in de novo glioblastoma multiforme J Neurooncol 2001 52 3 263 272 10.1023/a:1010684203704 11519857
+96. Sembritzki O Hagel C Lamszus K Deppert W Bohn W Cytoplasmic localization of wild-type p53 in glioblastomas correlates with expression of vimentin and glial fibrillary acidic protein Neuro Oncol 2002 4 3 171 178 10.1093/neuonc/4.3.171 12084347
+97. Watanabe K Tachibana O Sato K Yonekawa Y Kleihues P Ohgaki H Overexpression of the EGF receptor and p53 mutations are mutually exclusive in the evolution of primary and secondary glioblastomas Brain Pathol 1996 6 217 224 10.1111/j.1750-3639.1996.tb00848.x 8864278
+98. Newcomb EW Madonia WJ Pisharody S Lang FF Koslow M Miller DC A correlative study of p53 protein alteration and p53 gene mutation in glioblastoma multiforme Brain Pathol 1993 3 3 229 235 10.1111/j.1750-3639.1993.tb00749.x 8293182
+99. Liu J Li W Deng M Liu D Ma Q Feng X Immunohistochemical determination of p53 protein overexpression for predicting p53 gene mutations in hepatocellular carcinoma: a meta-analysis PLoS ONE 2016 11 7 e0159636 10.1371/journal.pone.0159636 27428001
+100. Yue X Zhao Y Xu Y Zheng M Feng Z Hu W Mutant p53 in cancer: accumulation, gain-of-function, and therapy J Mol Biol 2017 429 11 1595 1606 10.1016/j.jmb.2017.03.030 28390900
+101. Zhang Y Dube C Gibert M Cruickshanks N Wang B Coughlan M Yang Y Setiady I Deveau C Saoud K Grello C Oxford M Yuan F Abounader R The p53 pathway in glioblastoma Cancers (Basel) 2018 10.3390/cancers10090297
+102. Li Y Milliken RC Carozza S Newman B Liu E Davis R Milke R Wrensch M p53 mutations in malignant gliomas Cancer Epidemiol Biomarkers Prev 1998 7 303 308 9568785
+103. Mendrysa SM Ghassemifar S Malek R p53 in the CNS: perspectives on development, stem cells, and cancer Genes Cancer 2011 2 4 431 442 10.1177/1947601911409736 21779511
+104. Agilent Technologies, Inc. (2021) p53 protein antibody (concentrate). https://www.agilent.com/en/product/immunohistochemistry/antibodies-controls/primary-antibodies/p53-protein-(concentrate)-76616. Accessed 3 Feb 2022
+105. Popova SN Bergqvist M Dimberg A Edqvist P-H Ekman S Hesselager G Ponten F Smits A Sooman L Alafuzoff I Subtyping of gliomas of various WHO grades by the application of immunohistochemistry Histopathology 2014 64 3 365 379 10.1111/his.12252 24410805
+106. Han B Meng X Wu P Li Z Li S Zhang Y Zha C Ye Q Jiang C Cai J Jiang T ATRX/EZH2 complex epigenetically regulates FADD/PARP1 axis, contributing to TMZ resistance in glioma Theranostics 2020 10 7 3351 3365 10.7150/thno.41219 32194873
+107. Armocida D Frati A Salvati M Santoro A Pesce A Is Ki-67 index overexpression in IDH wild type glioblastoma a predictor of shorter progression free survival? A clinical and molecular analytic investigation Clin Neurol Neurosurg 2020 10.1016/j.clineuro.2020.106126 32861131
+108. Schröder R Feisel KD Ernestus R-I Ki-67 labeling is correlated with the time to recurrence in primary glioblastomas J Neurooncol 2002 56 2 127 132 10.1023/A:1014527929948 11995813
+109. Ralte AM Sharma MC Karak AK Mehta VS Sarkar C Clinicopathological features, MIB-1 labeling index and apoptotic index in recurrent astrocytic tumors Pathol Oncol Res 2001 7 4 267 278 10.1007/BF03032383 11882906
+110. Litofsky N Mix T-CH Baker SP Recht LD Smith TW Ki-67 (clone MIB-1) proliferation index in recurrent glial neoplasms: no prognostic significance Surg Neurol 1998 50 6 579 585 10.1016/s0090-3019(97)00312-1 9870820
+111. Ritter AM Sawaya R Hess KR Levin VA Bruner JM Prognostic significance of bromodeoxyuridine labeling in primary and recurrent glioblastoma multiforme Neurosurgery 1994 35 2 192 198 10.1227/00006123-199408000-00003 7969825
+112. Barker FG Prados MD Chang SM Davis RL Gutin PH Lamborn KR Larson DA McDermott MW Sneed PK Wilson CB Bromodeoxyuridine labeling index in glioblastoma multiforme: relation to radiation response, age, and survival Int J Radiat Oncol Biol Phys 1996 34 4 803 808 10.1016/0360-3016(95)02027-6 8598356
+113. Wang W Zhang Y Peng Y Jin K-Z Li Y-L Liang Y Tan H-Y Yu X-J Zhou Z-W Chen J A Ki-67 index to predict treatment response to the capecitabine/temozolomide regimen in neuroendocrine neoplasms: a retrospective multicenter study Neuroendocrinology 2021 111 8 752 763 10.1159/000510159 32668427
+114. Inoue T Segawa T Shiraishi T Yoshida T Toda Y Yamada T Kinukawa N Kinoshita H Kamoto T Ogawa O Androgen receptor, Ki67, and p53 expression in radical prostatectomy specimens predict treatment failure in Japanese population Urology 2005 66 2 332 337 10.1016/j.urology.2005.02.028 16098362
+115. Pelosi G Massa F Gatti G Righi L Volante M Birocco N Maisonneuve P Sonzogni A Harari S Albini A Papotti M Ki-67 evaluation for clinical decision in metastatic lung carcinoids: a proof of concept Clin Pathol 2019 12 2632010X19829259 10.1177/2632010X19829259 31041430
+116. Lee J Cha C Ahn SG Kim D Park S Bae SJ Kim J Park HS Park S Kim SI Park B-W Jeong J Validation of clinical treatment score post-5 years (CTS5) risk stratification in premenopausal breast cancer patients and Ki-67 labelling index Sci Rep 2020 10 1 16850 10.1038/s41598-020-74055-3 33033359
+117. Aleskandarany MA Rakha EA Macmillan RD Powe DG Ellis IO Green AR MIB1/Ki-67 labelling index can classify grade 2 breast cancer into two clinically distinct subgroups Breast Cancer Res Treat 2011 127 3 591 599 10.1007/s10549-010-1028-3 20623333
+118. Lazzeroni M Guerrieri-Gonzaga A Botteri E Leonardi MC Rotmensz N Serrano D Varricchio C Disalvatore D Del Castillo A Bassi F Pagani G DeCensi A Viale G Bonanni B Pruneri G Tailoring treatment for ductal intraepithelial neoplasia of the breast according to Ki-67 and molecular phenotype Br J Cancer 2013 108 8 1593 1601 10.1038/bjc.2013.147 23579208
+119. Cahill DP Levine KK Betensky RA Codd PJ Romany CA Reavie LB Batchelor TT Futreal PA Stratton MR Curry WT Iafrate AJ Louis DN Loss of the mismatch repair protein MSH6 in human glioblastomas is associated with tumor progression during temozolomide treatment Clin Cancer Res 2007 13 7 2038 2045 10.1158/1078-0432.CCR-06-2149 17404084
+

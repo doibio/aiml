@@ -1,0 +1,305 @@
+
+==== Front
+Cancers (Basel)
+Cancers (Basel)
+cancers
+Cancers
+2072-6694
+MDPI
+
+10.3390/cancers13215340
+cancers-13-05340
+Article
+Effects of Carbidopa Premedication on 18F-FDOPA PET Imaging of Glioma: A Multiparametric Analysis
+Bros Marie 1†
+https://orcid.org/0000-0002-2050-3591
+Zaragori Timothée 12†
+Rech Fabien 34
+Blonski Marie 45
+https://orcid.org/0000-0003-1178-9097
+Hossu Gabriela 26
+Taillandier Luc 45
+Marie Pierre-Yves 17
+Verger Antoine 12*†
+Baumert Brigitta G. Academic Editor
+Edmund Kim Euishin Academic Editor
+1 Department of Nuclear Medicine and Nancyclotep Imaging Platform, CHRU-Nancy, Université de Lorraine, F-54000 Nancy, France; marie.bros12@hotmail.fr (M.B.); timothee.zaragori@univ-lorraine.fr (T.Z.); py.marie@chru-nancy.fr (P.-Y.M.)
+2 IADI UMR 1254, INSERM, Université de Lorraine, F-54000 Nancy, France; g.hossu@chru-nancy.fr
+3 Department of Neurosurgery, CHRU-Nancy, Université de Lorraine, F-54000 Nancy, France; f.rech@chru-nancy.fr
+4 Centre de Recherche en Automatique de Nancy CRAN UMR 7039, CNRS, Université de Lorraine, F-54000 Nancy, France; m.blonski@chru-nancy.fr (M.B.); l.taillandier@chru-nancy.fr (L.T.)
+5 Department of Neuro-Oncology, CHRU-Nancy, Université de Lorraine, F-54000 Nancy, France
+6 CIC 1433 Innovation Technologique, INSERM, Université de Lorraine, CHRU Nancy, F-54000 Nancy, France
+7 DCAC UMR 1116, INSERM, Université de Lorraine, F-54000 Nancy, France
+* Correspondence: A.VERGER@chru-nancy.fr
+† These authors contributed equally to this work.
+
+24 10 2021
+11 2021
+13 21 534022 9 2021
+21 10 2021
+© 2021 by the authors.
+2021
+https://creativecommons.org/licenses/by/4.0/ Licensee MDPI, Basel, Switzerland. This article is an open access article distributed under the terms and conditions of the Creative Commons Attribution (CC BY) license (https://creativecommons.org/licenses/by/4.0/).
+Simple Summary
+
+18F-FDOPA PET imaging is routinely used and recommended to assess gliomas. Carbidopa is a peripheral enzyme inhibitor. Carbidopa premedication increases the radiotracer uptake on static images. None of the evidence-based data available to date recommends carbidopa premedication. Our study therefore determined the impact of carbidopa premedication on static, radiomics and dynamic parameters for 18F-FDOPA PET brain tumor imaging. We show that carbidopa premedication leads to higher SUV and TTP dynamic parameters and impacts SUV-dependent radiomics by the same magnitude in healthy brains and tumors. The carbidopa effect is therefore compensated for by correcting for the tumor-to-healthy-brain ratio, a significant advantage for harmonizing data for multicentric studies. Results were obtained from simulations of time-activity curves using compartmental modeling.
+
+Abstract
+
+Purpose: This study aimed to determine the impact of carbidopa premedication on static, dynamic and radiomics parameters of 18F-FDOPA PET in brain tumors. Methods: The study included 54 patients, 18 of whom received carbidopa, who underwent 18F-FDOPA PET for newly diagnosed gliomas. SUV-derived, 105 radiomics features and TTP dynamic parameters were extracted from volumes of interest in healthy brains and tumors. Simulation of the effects of carbidopa on time-activity curves were generated. Results: All static and TTP dynamic parameters were significantly higher in healthy brain regions of premedicated patients (ΔSUVmean = +53%, ΔTTP = +48%, p < 0.001). Furthermore, carbidopa impacted 81% of radiomics features, of which 92% correlated with SUVmean (absolute correlation coefficient ≥ 0.4). In tumors, premedication with carbidopa was an independent predictor of SUVmean (ΔSUVmean = +52%, p < 0.001) and TTP (ΔTTP = +24%, p = 0.025). All parameters were no longer significantly modified by carbidopa premedication when using ratios to healthy brain. Simulated data confirmed that carbidopa leads to higher tumor TTP values, corrected by the ratios. Conclusion: In 18F-FDOPA PET, carbidopa induces similarly higher SUV and TTP dynamic parameters and similarly impacts SUV-dependent radiomics in healthy brain and tumor regions, which is compensated for by correcting for the tumor-to-healthy-brain ratio. This is a significant advantage for multicentric study harmonization.
+
+DOPA
+PET
+carbidopa
+glioma
+dynamic
+radiomics
+==== Body
+pmc1. Introduction
+
+L-3,4-dihydroxy-6-18F-fluoro-phenyl-alanine (18F-FDOPA) is a PET amino acid radiotracer that has been used to assess gliomas for over 20 years [1]. The PET-RANO group (Response Assessment in Neuro-Oncology) recommends its use at the primary diagnosis, for monitoring disease and therapy, and for diagnosing tumor recurrence [2,3,4].
+
+In addition to its physiological uptake in the striatum,18F-FDOPA has a relatively high specificity for gliomas, conferred by its ability to cross an intact blood-brain barrier and the overexpression of Large Amino acid Transporters (LATs) in tumors [5,6], making it a useful adjunct to contrast-enhanced brain MRI, which remains the gold standard for the diagnostic assessment of gliomas.
+
+Carbidopa (L-α-hydrazino-α-methyl-β-(3,4-dihydroxyphenyl)propionic acid) is a peripheral inhibitor of aromatic amino acid decarboxylase. Its use as a premedication therefore results in higher plasma concentrations of 18F-FDOPA and of its metabolite 18F-OMFD (3-O-methyl-6-[18F]fluoro-L-DOPA) [7]. As the 18F-FDOPA transport rate constant from plasma to tumor cells via LAT transporters, K1 [8], and the net influx rate constant, Ki [7], are not affected by this premedication, carbidopa pretreatment leads to higher radiotracer uptake in both healthy brains and glioma [9]. The proportion of uptake increases in these two structures, and the effects of carbidopa premedication on the radiomics parameters as well as the dynamic analysis nevertheless remain to be determined. To date, only one study consisting of two patients premedicated with 200 mg of carbidopa showed an average 50% higher uptake in the cerebellum, striatum and the tumor, based on acquisitions obtained 15 to 25 min post-injection [9].
+
+In contrast to movement disorder PET imaging [10], international guidelines do not recommend administering carbidopa before 18F-FDOPA PET for brain tumor imaging, solely based on the fact that most of the published studies do not use it. There is currently no evidence-based data to determine whether carbidopa should be used in the clinical setting of brain tumor imaging, particularly in the current era of routine semi-quantitative analyses [3].
+
+The objective of this study is therefore to determine the impact of carbidopa premedication on static, radiomics and dynamic parameters in brain tumor 18F-FDOPA PET imaging.
+
+2. Materials and Methods
+
+2.1. Population and 18F-FDOPA PET Imaging
+
+We retrospectively selected newly diagnosed gliomas, which were all classified or re-classified according to the WHO 2016 classification [11]. All newly diagnosed glioma patients had undergone an 18F-FDOPA PET at the CHRU of Nancy between January 2013 and October 2017. Carbidopa premedication data were available for all patients included in the study and depended on the routine examination protocol performed; patients analyzed from March 2016 to October 2017 were premedicated with carbidopa, and patients analyzed from January 2013 to February 2016 were not premedicated prior to PET imaging. The data evaluation process was approved by the local ethics committee (Comité d’Éthique du CHRU de Nancy) on 26 August 2020. The trial was registered at ClinicalTrials.gov (NCT04469244). This research complied with the principles of the Declaration of Helsinki. Informed consent was obtained from all individuals included in the study.
+
+18F-FDOPA PET-computed tomography (CT) scans were performed on a Biograph hybrid system involving a six-detector CT for attenuation correction (Biograph 6 True Point, SIEMENS, Erlangen, Germany). All patients were instructed to fast for at least 4 h, and patients analyzed from March 2016 to October 2017 received 100 mg of carbidopa 1 h prior to their examination. A CT scan was first recorded for each patient, immediately followed by a 30 min 3D list mode PET recording, initiated during the bolus injection of 3 MBq of 18F-FDOPA per kilogram of body weight. Static PET images were reconstructed from the list mode data acquired 10 to 30 min post-injection, while dynamic PET images consisted of 30 frames of one minute each [12]. Static and dynamic images were reconstructed using the OSEM 2D algorithm (2 iterations, 21 subsets, 4 mm Gaussian post-reconstruction filter, 256 × 256 × 148 voxels of 2.7 × 2.7 × 3.0 mm3). All images were corrected for attenuation using CT, dead time, random and scattered coincidences during the reconstruction process.
+
+2.2. Image Analyses
+
+2.2.1. Segmentation
+
+The LIFEx software (lifexsoft.org) was used to define volumes of interest (VOIs) for tumors and contralateral healthy brains [13].
+
+To measure healthy brain uptake, patient-specific crescent-shaped contours for the healthy brain VOI were drawn on three consecutive image slices and encompassed both white and grey matter on the semi-oval center of the unaffected hemisphere, as previously recommended [14].
+
+In tumors, VOIs were segmented semi-automatically using a threshold of 1.6 healthy brain SUVmean [15]. For tumors with multiple loci, we only considered the site on which the neuropathological diagnosis was performed. All final VOIs were visually inspected by an experienced physician (A.V.) to ensure that the quality of the methods applied was consistent throughout and to exclude any potentially pathological areas detected on the MRI (oedema or any other intercurrent pathology) from the VOIs defined as healthy brains.
+
+2.2.2. Extraction of Parameters
+
+For static images, the SUVmean, SUVmax and SUVpeak parameters were extracted from the previously described VOIs for healthy brains and tumors. SUVpeak was defined as the highest mean uptake in a 1 cm3 sphere, centered on each voxel of the VOI.
+
+For the radiomics analysis, 105 features were extracted from the same brain and tumor VOIs. These included morphological, local intensity, intensity-based statistical, intensity histogram and textural parameters. In accordance with the guidelines and benchmark values of the image standard biomarker initiative [16], 103 parameters were extracted using PyRadiomics, and 2 local-intensity parameters, which were not available on PyRadiomics, were extracted with in-house software [12]. These radiomics parameters were extracted as detailed elsewhere [12]. Briefly, isotropic voxel resampling was performed using tricubic spline interpolations, before carrying out an absolute discretization of PET intensities with a fixed bin size of 0.1. Parameters were computed from a single matrix after merging all 3D directional matrices.
+
+To potentially correct for any carbidopa premedication effects in our population, all static and radiomics parameters, except morphological features, in tumors were re-extracted after normalizing each static image for the SUVmean of healthy brain VOI, to compute the Tumor-to-normal-Brain Ratio (TBR) parameters.
+
+To take into account any potential patient movement during the dynamic acquisition, each dynamic frame was first registered to the associated CT image [17]. The SUVmean values for each frame were respectively computed in the brain VOI and in the VOI corresponding to the tumor SUVpeak on the static image to extract the brain and tumor time activity curves (TACs). TACs were fitted to overcome noise effects [12]. As previously defined, two dynamic parameters were extracted: time-to-peak (TTP) and slope [18].
+
+As for parameters extracted from static images, a normalized version of the parameters was extracted from a TAC, representing the evolution of the ratio between tumor and brain fitted TACs to potentially correct for any carbidopa premedication effect [12].
+
+2.3. Simulation
+
+To indirectly confirm our hypotheses and compare the effects of carbidopa premedication on dynamic analysis in the same brain tumor of patients who underwent 18F-FDOPA PET, both without and with premedication, simulations were performed. Simulated TACs of the carbidopa premedication status were computed based on the TACs of 15 patients without premedication, for which raw data were available (median age 58.5 (45.2; 64.1) years, 5 women). Five patients were classified as IDH mutant astrocytomas (3 anaplastic), 4 as IDH wildtype astrocytomas (2 anaplastic), 2 as IDH mutant and 1p/19q co-deleted oligodendrogliomas (1 anaplastic) and 4 as IDH wildtype glioblastomas.
+
+This was performed using a compartmental model analysis. Dynamic PET images were reconstructed using 26 frames of 8 × 15 s, 2 × 30 s, 2 × 60 s, and 5 × 300 s [9]. Total blood TACs of patients having undergone 18F-FDOPA PET imaging without any premedication were extracted from VOIs placed into the internal carotid by an experienced physician (A.V.), using initial dynamic frames to identify early vascular phases [19]. The spill-out coefficient was estimated at 0.35 by simulation and used to correct from partial volume effect on blood TACs [20]. These blood TACs were then fitted to the peak, using linear interpolation followed by a tri-exponential function after the peak [21]. Plasma 18F-FDOPA input functions were computed after metabolite correction, according to the methodology described by Wardak et al. [22] and by using previously published values of metabolite proportions of hematocrit, as follows: (i) proportions of each of the 18F-labeled metabolites determined by Melega et al. [23] were used as they included the proportions for no premedication as well as for premedication with 100 mg of carbidopa (similarly to ours) (respectively C0 and C100 in Figure 1A) and (ii) a mean 40% hematocrit value was selected for each patient, as previously reported [8]. The compartmental model used for tumors was a two-tissue compartmental model validated for compartmental analysis of 18F-FDOPA PET imaging in gliomas [22], as it satisfied the minimum Akaike information criterion when compared to a simpler one-tissue compartmental model [24] or to a two-tissue compartmental model with fewer parameters (Vb fixed at 5% [8] or k4 set to 0).
+
+Raw TACs for healthy brains and tumors were extracted from the dynamic analysis of the 15 patients that had undergone 18F-FDOPA PET imaging without any premedication. Compartmental models were fitted to these TACs using the previously described input function to obtain the four rate constants (K1, k2, k3, k4) as well as the blood volume fraction (Vb) (Figure 1B). For the simulation of the carbidopa premedication status of brain and tumor TACs, the four rate constants (K1, k2, k3, k4) were assumed to be unchanged compared to those calculated for the patients without any premedication, given that the 18F-FDOPA K1 [8] and the net influx rate constant Ki [7] are not affected by the premedication. The carbidopa premedication status of healthy brain and tumor TACs were then simulated using the plasma 18F-FDOPA input function corresponding to the carbidopa premedication (C100, Figure 1C).
+
+TTP and slope were extracted from healthy brain and tumor TACs for the patients as well as for the simulated TACs. A normalized version of these parameters was also extracted.
+
+2.4. Statistical Analysis
+
+Categorical variables are expressed as percentages and continuous variables as medians and interquartile ranges. Intergroup comparisons were performed with the Chi-squared test for categorical variables and the Mann-Whitney test for continuous variables. Mann-Whitney tests were performed to compare carbidopa-naïve and premedicated patients in healthy brain VOIs. Correlations between radiomics features and SUVmean were assessed using the Spearman correlation coefficient. Correction of multiples tests was performed with the Benjamini-Hochberg correction, and p < 0.05 was considered significant. For tumor VOIs, linear regression analyses were performed to predict the parameters using carbidopa status and histo-molecular diagnosis as covariates, as histo-molecular diagnosis is known to influence static and dynamic parameters (gliomas were classified as IDH-wildtype and IDH-mutant astrocytomas, IDH-mutant and 1 p/19 q co-deleted oligodendrogliomas, and IDH-wildtype and IDH mutant glioblastomas) [18]. The significance of each covariate was tested using a type III analysis of variance. Analyses were performed with the R software version 3.6.2 (R Foundation for Statistical Computing, Vienna, Austria) and Python (Python Software Foundation).
+
+3. Results
+
+3.1. Patient Characteristics
+
+Fifty-four patients with a median age of 44 (19.8; 82.6) years, comprised of 19 (35%) women and 18 (33%) patients who were premedicated with 100 mg of carbidopa, were included in the study. Dynamic acquisitions were available for 41 of these patients (median age of 45.2 (19.8; 73.7) years, 14 (34%) women, 11 (27%) patients premedicated with carbidopa). Detailed patient characteristics are provided in Table 1.
+
+3.2. Carbidopa Effects
+
+In this study, carbidopa induced higher values for all static and dynamic parameters in the brain compared to patients that were not premedicated with carbidopa, with ΔSUVmean = +53%, ΔTTP = +48% and Δslope = +88% (all with p < 0.001) (Table 2). Furthermore, our results showed that in healthy brains, 81% of radiomics features were impacted by carbidopa, and 92% of these correlated with SUVmean (absolute correlation coefficient ≥ 0.4) (Supplementary Figure S1).
+
+In tumors, carbidopa premedication was an independent predictor of SUVmean (ΔSUVmean = +52%, p < 0.001) and TTP (ΔTTP = +24%, p = 0.025). Histo-molecular diagnosis was predictive of TTP (p = 0.010) and slope (p < 0.001), and a trend was observed for the SUVmean (p = 0.07). Interestingly, all static, dynamic and radiomics parameters were no longer significantly modified by carbidopa premedication when using tumor-to-healthy-brain image ratios or time-activity curve ratios (Table 3 and Supplementary Tables S1–S4).
+
+Representative examples of glioblastoma IDH wildtype patients with or without carbidopa premedication before and after using tumor-to-healthy-brain ratio (TBR) parametric images are shown in Figure 2.
+
+To confirm our hypotheses about the impact of carbidopa premedication on TTP and to better understand its effect on slope, simulated TACs were performed with carbidopa premedication, on the assumption that carbidopa premedication induces an increase of radiotracer availability through the input function, i.e., the plasma concentration of 18F-FDOPA, without modifying the rate constants. Results of these simulations are provided in Table 4.
+
+Examples of simulated carbidopa premedication leading to higher TTP are displayed in Figure 3.
+
+4. Discussion
+
+This study shows that carbidopa premedication before 18F-FDOPA PET imaging of brain tumors is associated with higher SUV, SUV-related radiomics and TTP dynamic parameters, of the same order of magnitude as in healthy brains. For neuro-oncological PET indications, the effect of the costly and time-consuming carbidopa premedication is thus limited when using TBR images and TAC ratios, which are efficient tools for multicentric study harmonization.
+
+Carbidopa premedication in the present study leads to an approximately 50% higher SUVmean in healthy brain tissue as well as and in brain tumors (Table 2 and Table 3). To the best of our knowledge, to date, only one previously published study evaluated the effects of carbidopa in brain tumors, by comparing two patients with stable brain tumors, premedicated with 200 mg of carbidopa at baseline, and reevaluating these same patients without premedication one year later. Consistent with our study, this previous study also reported a 50% higher uptake in all brain structures, including healthy brain and tumors from acquisitions performed 15 to 25 min post-injection [9].
+
+Our current study found that 81% of all radiomics parameters in healthy brains were significantly modified by carbidopa premedication, among which 92% correlated with SUVmean (85 parameters, absolute correlation coefficient ≥ 0.4 in 78 parameters) (Supplementary Figure S1). This underlines the fact that the effect of carbidopa premedication is related to a relatively homogeneous higher uptake of the 18F-FDOPA radiotracer within the VOIs. The impact of SUV values on textural features has already been highlighted by Orlhac et al. [25]. As we are using absolute discretization here, the higher SUV related to carbidopa premedication induced two concomitant observations: (i) a shift of textural matrices to higher bin values (bin shift), mainly responsible for the modification of the parameters correlated with the SUV values and (ii) a relative spread of the distribution of SUV values over a larger number of bins (bin spread). Eight percent of radiomics features (seven parameters, Supplementary Figure S1) were significantly modified by carbidopa premedication but poorly correlated with SUVmean values (absolute correlation coefficients ranging from 0.27 to 0.34). Beyond the impact of a threshold effect, we presume that these parameters are less correlated with SUVmean because they mainly depend on the bin spread effect, for which the impact on radiomics parameters is less directly correlated with SUVmean than the bin shift effect. The bin spread effect on the involved matrices is illustrated in Supplementary Figure S2. Among the 20 remaining parameters, most are not significantly modified by carbidopa premedication, since they are not correlated with SUVmean values (Supplementary Figure S1).
+
+In our study, carbidopa also induced changes in the dynamic analysis parameters, with higher TTP in healthy brains and in tumors. In tumors, this effect was independent of the histo-molecular diagnosis, which is known to affect the TTP of the dynamic analysis [18,26,27,28]. Even if the slope parameter was influenced by the histo-molecular diagnosis, no significant predictive value of carbidopa premedication was observed in tumors, while carbidopa induced significantly higher slope in healthy brains. To confirm our findings in patients, we performed simulations on the assumption that carbidopa premedication leads to an increase in the plasma availability of 18F-FDOPA without modifying the rate constants (Figure 1). These simulations confirm that the higher TTP was related to carbidopa premedication, similar to what was observed in patients. Moreover, a higher slope was also observed in the simulated data. It is of concern that the higher TTP due to carbidopa premedication could potentially lead to an underestimation of tumor aggressiveness, which stresses the importance of harmonizing heterogenous premedication data. In fact, this probability is moderate with regard to the small degree of variation observed in the absolute values of TTP and slope in the tumors after simulation of carbidopa premedication (around +4 min and +0.5 SUV/h, respectively).
+
+Interestingly, when extracted from TBR images and TAC ratios, all static, dynamic and radiomics parameters were no longer significantly modified by the carbidopa premedication (Table 3 and Table 4 and Supplementary Tables S1–S4). This is an important observation, as TBRs are typically implemented in the routine analysis of neuro-oncology scans. These ratios were used in most articles in the literature for static [29,30], dynamic [18] and radiomics [12] parameters, but without having been yet validated as to the effect of the carbidopa premedication.
+
+Glioma is a rare pathology, which relies on multicentric studies to gather high enough patient numbers. Such multicentric studies can only be conducted after harmonizing data obtained from the participating centers. Although the use of carbidopa premedication is very heterogenous between individual centers, the harmonization process may only entail using TBR images and TAC ratios, which have been shown to be insensitive to carbidopa premedication in this study, without modifying the protocols used by participating centers. While the 18F-FDOPA PET guidelines for imaging of Parkinsonian syndromes [10] recommend carbidopa premedication to increase the systemic and thus central nervous system availability of 18F-FDOPA, this recommendation is completely different in brain tumors, given that, unlike striatum, brain tumor cells do not metabolize 18F-FDOPA [9]. This is presumably why recommendations for 18F-FDOPA PET imaging do not include mandatory carbidopa premedication prior to brain tumor scans. This recommendation is however not founded on any evidence-based data from the literature, and our study therefore provides additional information that supports the current recommendation. It should be noted that premedication with Carbidopa before PET imaging increases 18F-FDOPA bioavailability, leading to higher uptake and thus improved image quality. This was a particularly significant issue in older low-sensitivity PET scanners and is therefore a problem encountered in studies that use retrospective data. Today’s state-of-the-art high-resolution scanners have eliminated this issue. This means that the only remaining rationale for using carbidopa premedication would be to reduce patients’ radiation exposure to an absolute minimum, which is not a key concern in glioma patients, for whom radiotherapy is one of the treatments of choice.
+
+Our retrospective study was performed on a heterogeneous population of patients, therefore limiting the ability to directly compare the effects of carbidopa premedication in tumors. Our hypotheses on the effects of carbidopa premedication were nevertheless confirmed by using simulated data. In our department, the patient carbidopa status was predicated by the recruitment period; this may have introduced an inclusion bias. However, no significant differences were observed between the characteristics of the two groups of patients (Table 1). Finally, 18F-FDOPA and premedication with carbidopa are not ubiquitously available in all parts of the world, with other PET tracers also yielding excellent performances in brain tumor detection [31].
+
+5. Conclusions
+
+Our current study documents the effects of carbidopa premedication on the 18F-FDOPA PET imaging of brain tumors. As carbidopa premedication leads to higher SUV, SUV-dependent radiomics and TTP dynamic parameters in the same order of magnitude in healthy brains as in tumor, these effects are compensated for after taking into account the tumor-to-healthy-brain ratios in static images or in time-activity curves, which is an important point for multicentric study harmonization.
+
+Acknowledgments
+
+The authors thank Petra Neufing for critical review of the manuscript.
+
+Supplementary Materials
+
+The following are available online at https://www.mdpi.com/article/10.3390/cancers13215340/s1, Figure S1: Effect of carbidopa premedication on healthy brain radiomics parameters, Figure S2: Illustration of bin spread effect on matrices in which some textural features were significantly modified with carbidopa, but poorly correlated to SUVmean, Table S1−S4: Brain tumor radiomic parameters extracted from patients without and with carbidopa premedication and after normalizing for healthy brain parameters with Tumor to normal Brain Ratios (TBR).
+
+Click here for additional data file.
+
+Author Contributions
+
+The authors participated in the (1) study conception and design or analysis and interpretation of the data, or both: M.B. (Marie Bros), T.Z., G.H. and A.V.; (2) the drafting of the manuscript or revising it critically for important intellectual content: M.B. (Marie Bros), T.Z., P.-Y.M. and A.V.; (3) final approval of the submitted manuscript: L.T., M.B. (Marie Blonski), F.R. and A.V. All authors have read and agreed to the published version of the manuscript.
+
+Funding
+
+This research received no external funding.
+
+Institutional Review Board Statement
+
+All procedures in studies involving human participants were performed in accordance with the ethical standards of the institutional and/or national research committee and with the latest amendments of the 1964 Helsinki declaration or comparable ethical standards. The institutional ethics committee (Comité d’Ethique du CHRU de Nancy–FRANCE) approved the evaluation of retrospective patient data on 26 August 2020. The trial was registered at ClinicalTrials.gov (NCT04469244).
+
+Informed Consent Statement
+
+Written informed consent was obtained from all individual participants included in the study.
+
+Data Availability Statement
+
+All data generated or analyzed during this study are included in this published article and its supplementary information files.
+
+Conflicts of Interest
+
+All authors declare that they have no conflict of interest.
+
+Figure 1 Generation of simulated time-activity curves simulating carbidopa premedication in the tumor volumes of interest (VOIs). The same processes were applied to healthy brain VOIs. (A) For C0 patients: input function pre-processing; (B) For C0 patients: parameter extractions; (C) For simulations: TAC simulation for carbidopa premedication.
+
+Figure 2 Representative examples of two patients with or without carbidopa premedication, before and after using tumor-to-healthy-brain ratio parametric images. Patient (A) is a 66-year-old woman with a newly diagnosed IDH wildtype glioblastoma (SUVmean 3.2). Patient (B) is a 32-year-old man with a newly diagnosed IDH wildtype glioblastoma (SUVmean 4.1). The two tumors are clearly different on TBR-parametric images, even though they have essentially the same SUV values on SUV-parametric images. Note the higher SUV uptake of striatal and healthy brain areas on B due to the carbidopa premedication.
+
+Figure 3 Typical examples of patients without carbidopa premedication (C0) simulated with the effects of 100 mg carbidopa premedication (C100). (A) 18F-FDOPA PET time-activity curves expressed as SUVmean (left panel) of a 59-year-old woman with IDH wildtype glioblastoma. Carbidopa induces a longer TTP (TTP C0 = 9 mn; TTP C100 = 12.8 mn) and a higher slope (slope C0 = −4 SUV/h; SUV C100 = −3.1 SUV/h). 18F-FDOPA PET time-activity curves expressed in TBRmean (right panel). The differences of TTP and slope values between carbidopa statuses are reduced when using Tumor-to-normal-Brain ratio (TBR) images (TTP C0 = 3.8 mn vs. TTP C100 = 4.2 mn; slope C0 = −1.45 SUV/h vs. slope C100 = −1.4 SUV/h); (B) 18F-FDOPA PET time-activity curves expressed as SUVmean (left panel) of a 65-year-old man with oligodendroglioma. Carbidopa induces a longer TTP (TTP C0 = 13.6 mn; TTP C100 = 17.2 mn) and a higher slope (slope C0 = −0.7 SUV/h; SUV C100 = −0.3 SUV/h). 18F-FDOPA PET time-activity curves expressed as TBRmean (right panel). The differences of TTP and slope values between carbidopa statuses are reduced when using Tumor-to-normal-Brain ratio (TBR) images (TTP C0 = 10.4 mn vs. TTP C100 = 11 mn; slope C0 = −0.45 SUV/h vs. slope C100 = −0.4 SUV/h).
+
+cancers-13-05340-t001_Table 1 Table 1 Patient characteristics.
+
+	Without Carbidopa	With Carbidopa	All Patients	p Value	
+Premedication	Premedication	
+n					
+  Static	36	18	54	
+  Dynamic	30	11	41	
+Age (years) median (range)					
+  Static	45.2 (24.6; 82.6)	37.4 (19.8; 72.7)	44.0 (19.8; 82.6)	0.21	
+  Dynamic	46.7 (24.6; 73.7)	33.3 (19.8; 72.8)	45.2 (19.8; 73.7)	0.13	
+Female gender n (%)					
+  Static	11 (31%)	8 (44%)	19 (35%)	0.48	
+  Dynamic	10 (33%)	4 (36%)	14 (34%)	1	
+Primary histopathological type n (%)					
+  Static					
+  IDH-mutant astrocytoma					
+    Anaplastic	13 (36%)	3 (17%)	16 (30%)		
+    Non-anaplastic	4	1	5		
+  IDH-wildtype astrocytoma	9	2	11		
+    Anaplastic	6 (17%)	1 (6%)	7 (13%)		
+    Non-anaplastic	3	1	4	0.21	
+  IDH-mutant and 1p/19q co-deleted	3	0	3		
+  oligodendroglioma	9 (25%)	5 (28%)	14 (26%)		
+    Anaplastic					
+    Non-anaplastic	6	2	8		
+  IDH-wildtype glioblastoma	3	3	6		
+  IDH-mutant glioblastoma	6 (17%)	6 (33%)	12 (22%)		
+	2 (6%)	3 (17%)	5 (9%)		
+  Dynamic					
+  IDH-mutant astrocytoma					
+    Anaplastic	13 (43%)	2 (18%)	15 (37%)		
+    Non-anaplastic	4	1	5		
+  IDH-wildtype astrocytoma	9	1	10		
+    Anaplastic	4 (13%)	0 (0%)	4 (10%)	0.17	
+    Non-anaplastic	2	0	2		
+  IDH-mutant and 1p/19q co-deleted	2	0	2		
+  oligodendroglioma	7 (23%)	4 (36%)	11 (27%)		
+    Anaplastic					
+    Non-anaplastic	5	2	7		
+  IDH-wildtype glioblastoma	2	2	4		
+  IDH-mutant glioblastoma	5 (17%)	5 (45%)	10 (24%)		
+	1 (3%)	0 (0%)	1 (2%)		
+Note: p-value for comparing patients with and without carbidopa premedication.
+
+cancers-13-05340-t002_Table 2 Table 2 Healthy brain extracted parameters in patients without and with carbidopa premedication.
+
+Parameter	Without Carbidopa Premedication	With Carbidopa Premedication	Correlation Coeffi-cient with SUVmean	p Value	Mean Relative Difference in % (Mean Absolute Difference) between Patients without and with Carbidopa Premedication	Median Relative Difference in % (Median Absolute Difference) between Patients without and with Carbidopa Premedication	
+Static features (in-house software)							
+SUVmean	1.2 (1.02; 1.32)	1.8 (1.53; 2.08)	1	<0.001	53.1% (+0.6)	46.4% (+0.5)	
+SUVmax	1.6 (1.45; 1.75)	2.4 (2.03; 2.68)	0.99	<0.001	48% (+0.8)	41.3% (+0.7)	
+SUVpeak	1.4 (1.27; 1.57)	2.1 (1.8; 2.36)	0.99	<0.001	50.2% (+0.7)	44.2% (+0.6)	
+Dynamic features (in-house software)							
+TTP (min)	12.5 (10.74; 13.64)	18.5 (17.03; 18.96)	0.61	<0.001	48.5% (+6.1)	46.2% (+5.6)	
+Slope (SUV/h)	−0.52 (−0.69; −0.39)	−0.06 (−0.18; 0.01)	0.35	<0.001	87.8% (+0.5)	70% (+0.4)	
+Note: p-value for comparing patients without and with carbidopa premedication (in bold, significant p-values); absolute correlation coefficients ≥ 0.4 are in bold; TTP: time-to-peak; SUV: Standard Uptake Value.
+
+cancers-13-05340-t003_Table 3 Table 3 Brain tumor extracted parameters in patients without and with carbidopa premedication and after normalization for healthy brain parameters with Tumor-to-normal-Brain Ratios (TBRs).
+
+Parameters	Without Carbidopa Premedication	With Carbidopa Premedication	Correlation Coefficient with SUVmean	p Value	Mean Relative Difference in % (Mean Absolute Difference) between Patients without and with Carbidopa Premedication	Median Relative Difference in % (Median Absolute Difference) between Patients without and with Carbidopa Premedication	TBR without Carbidopa Premedication	TBR with Carbidopa Premedication	TBR
+p Value	
+Static features (in-house software)										
+SUVmean	2.4 (1.94; 2.8)	3.6 (3.14; 4.06)	1	<0.001	51.9% (+1.2)	48% (+1.1)	2.1 (1.78; 2.19)	2.1 (1.87; 2.15)	0.458	
+SUVmax	4.1 (2.6; 5.15)	5.8 (4.08; 7.18)	0.84	0.034	41.4% (+1.7)	41.9% (+1.5)	3.5 (2.18; 4.26)	3.3 (2.44; 4.09)	0.291	
+SUVpeak	3.4 (2.02; 4.21)	4.9 (3.62; 6.16)	0.86	0.034	44.1% (+1.5)	51.2% (+1.5)	2.9 (1.84; 3.49)	2.8 (1.98; 3.31)	0.335	
+MTV (mL)	20 (4.02; 29.07)	20.1 (5.79; 24.77)	0.38	0.608	0.9% (+0.2)	31.2% (+3.7)	20 (4.02; 29.07)	20.1 (5.79; 24.77)	0.608	
+Dynamic features (in-house software)							12.2 (2.83; 23.15)	10.3 (2.48; 18)	0.696	
+TTP (mn)	12.2 (7.37; 15.53)	15.1 (9.43; 19.31)	0.02	0.025	24.1% (+2.9)	30.3% (+3.1)	−1.1 (−1.59; 0.41)	−1.7 (−1.9; −0.02)	0.505	
+Slope (SUV/h)	−2.71 (−3.14; −0.62)	−3.18 (−3.67; 0.14)	-0.27	0.962	−17.6% (−0.5)	−93.8% (−1.1)	2.1 (1.78; 2.19)	2.1 (1.87; 2.15)	0.458	
+Note: p-value for the predictive value of the carbidopa premedication in a linear regression model, including histo-molecular diagnosis without and with Tumor-to-normal-Brain ratios (TBR) (in bold, significant p-values). Absolute correlation coefficients in bold are ≥ 0.4. MTV: Metabolic Tumor Volume; TTP: Time to Peak; SUV: Standardized Uptake Value.
+
+cancers-13-05340-t004_Table 4 Table 4 Brain tumor extracted dynamic parameters in simulations and after normalization for healthy brain parameters with Tumor-to-normal-Brain Ratios (TBRs).
+
+Parameters	Without Carbidopa Premedication	With Carbidopa Premedication	Mean Relative Difference in % (Mean Absolute Difference) between Patients without and with Carbidopa Premedication	Median Relative Difference in % (Median Absolute Difference) between Patients without and with Carbidopa Premedication	TBR without Carbidopa Premedication	TBR with Carbidopa Premedication	Mean Relative Difference in % (Mean Absolute Difference) between Patients without and with Carbidopa Premedication	Median Relative Difference in % (Median Absolute Difference) between Patients without and with Carbidopa Premedication	
+Dynamic features									
+TTP (mn)	10.7 (7.36; 12.75)	13.0 (11.13; 15.68)	25.8% (+2.9)	21.4% (+2.3)	4.6 (3.78; 9.27)	4.7 (3.92; 9.70)	2.9% (+0.3)	2.2% (+0.1)	
+Slope (SUV/h)	−2.98 (−3.93; −1.31)	−2.21 (−3.32; −0.85)	23.5% (+0.7)	25.9% (+0.8)	−1.3 (−1.81; −0.07)	−1.3 (−1.67; −0.11)	−0.7% (−0.1)	0% (0)	
+TBR: Tumor-to-normal-Brain ratio; TTP: Time to Peak.
+
+Publisher’s Note: MDPI stays neutral with regard to jurisdictional claims in published maps and institutional affiliations.
+==== Refs
+References
+
+1. Heiss W.-D. Wienhard K. Wagner R. Lanfermann H. Thiel A. Herholtz K. Pietrzyk U. F-Dopa as an Amino Acid Tracer to Detect Brain Tumors J. Nucl. Med. 1996 37 1180 1182 8965194
+2. Albert N.L. Weller M. Suchorska B. Galldiks N. Soffietti R. Kim M.M. la Fougère C. Pope W. Law I. Arbizu J. Response Assessment in Neuro-Oncology Working Group and European Association for Neuro-Oncology Recommendations for the Clinical Use of PET Imaging in Gliomas Neuro-oncology 2016 18 1199 1208 10.1093/neuonc/now058 27106405
+3. Law I. Albert N.L. Arbizu J. Boellaard R. Drzezga A. Galldiks N. la Fougère C. Joint EANM/EANO/RANO Practice Guidelines/SNMMI Procedure Standards for Imaging of Gliomas Using PET with Radiolabelled Amino Acids and [18F]FDG: Version 1.0 Eur. J. Nucl. Med. Mol. Imaging 2019 46 540 557 10.1007/s00259-018-4207-9 30519867
+4. Verger A. Kas A. Darcourt J. Chinot O. Taillandier L. Hoang Xuan K. Guedj E. Joint SFMN/ANOCEF Focus on 18F-FDOPA PET Imaging in Glioma: Current Applications and Perspectives Med. Nucl. 2020 44 164 171 10.1016/j.mednuc.2020.02.006
+5. Kobayashi K. Ohnishi A. Promsuk J. Shimizu S. Kanai Y. Shiokawa Y. Nagane M. Enhanced Tumor Growth Elicited by L-Type Amino Acid Transporter 1 in Human Malignant Glioma Cells Neurosurgery 2008 62 493 504 10.1227/01.neu.0000316018.51292.19 18382329
+6. Papin-Michault C. Bonnetaud C. Dufour M. Almairac F. Coutts M. Patouraux S. Virolle T. Darcourt J. Burel-Vandenbos F. Study of LAT1 Expression in Brain Metastases: Towards a Better Understanding of the Results of Positron Emission Tomography Using Amino Acid Tracers PLoS ONE 2016 11 e0157139 10.1371/journal.pone.0157139 27276226
+7. Hoffman J.M. Meiega W. Hawk T. Grafton S. The Effectsof CarbidopaAdministration on 6-[18F]Fluoro-L-DOPAKinetics in Positron Emission Tomography J. Nucl. Med. 1992 33 1472 1477 1634937
+8. Huang S. Yu D. Grafton S. Melega W.P. Hoffman J.M. Kinetics and Modeling of L-6-EsP]Pluoro-DOPA in Human Positron Emission Tomographic Studies J. Cereb. Blood Flow Metab. 1991 11 898 913 10.1038/jcbfm.1991.155 1939385
+9. Schiepers C. Chen W. Cloughesy T. Dahlbom M. Huang S.-C. 18F-FDOPA Kinetics in Brain Tumors J. Nucl. Med. 2007 48 1651 1661 10.2967/jnumed.106.039321 17873130
+10. Morbelli S. Esposito G. Arbizu J. Barthel H. Boellaard R. Bohnen N.I. Brooks D.J. Darcourt J. Dickson J.C. Douglas D. EANM Practice Guideline/SNMMI Procedure Standard for Dopaminergic Imaging in Parkinsonian Syndromes 1.0 Eur. J. Nucl. Med. Mol. Imaging 2020 47 1885 1912 10.1007/s00259-020-04817-8 32388612
+11. Louis D.N. Perry A. Reifenberger G. von Deimling A. Figarella-Branger D. Cavenee W.K. Ohgaki H. Wiestler O.D. Kleihues P. Ellison D.W. The 2016 World Health Organization Classification of Tumors of the Central Nervous System: A Summary Acta Neuropathol. 2016 131 803 820 10.1007/s00401-016-1545-1 27157931
+12. Zaragori T. Oster J. Roch V. Hossu G. Chawki M.B. Grignon R. Pouget C. Rech F. Blonski M. Taillandier L. 18F-FDopa PET for the Non-Invasive Prediction of Glioma Molecular Parameters: A Radiomics Study J. Nucl. Med 2021 10.2967/jnumed.120.261545
+13. Nioche C. Orlhac F. Boughdad S. Reuze S. Goya-Outi J. Robert C. Pellot-Barakat C. Soussan M. LIFEx: A Freeware for Radiomic Feature Calculation in Multimodality Imaging to Accelerate Advances in the Characterization of Tumor Heterogeneity Cancer Res. 2018 78 4786 4789 10.1158/0008-5472.CAN-18-0125 29959149
+14. Unterrainer M. Vettermann F. Brendel M. Holzgreve A. Lifschitz M. Zähringer M. Suchorska B. Wenter V. Illigens B.M. Bartenstein P. Towards Standardization of 18F-FET PET Imaging: Do We Need a Consistent Method of Background Activity Assessment? EJNMMI Res. 2017 7 48 10.1186/s13550-017-0295-y 28560582
+15. Cicone F. The Mean Striatal 18F-DOPA Uptake Is Not a Reliable Cut-off Threshold for Biological Tumour Volume Definition of Glioma Eur. J. Nucl. Med. Mol. Imaging 2018 46 1051 1053 10.1007/s00259-019-4276-4 30685796
+16. Zwanenburg A. Vallières M. Abdalah M.A. Andrearczyk V. Apte A. Ashrafinia S. Bakas S. Beukinga R.J. Boellaard R. Bogowicz M. The image biomarker standardization initiative: Standardized quantitative radiomics for high-throughput image-based phenotyping Radiology 2020 295 328 338 10.1148/radiol.2020191145 32154773
+17. Ye H. Wong K.-P. Wardak M. Dahlbom M. Kepe V. Barrio J.R. Nelson L.D. Small G.W. Huang S.-C. Automated Movement Correction for Dynamic PET/CT Images: Evaluation with Phantom and Patient Data PLoS ONE 2014 9 12 10.1371/journal.pone.0103745 25111700
+18. Ginet M. Zaragori T. Marie P.-Y. Roch V. Gauchotte G. Rech F. Blonski M. Lamiral Z. Taillandier L. Imbert L. Integration of Dynamic Parameters in the Analysis of 18F-FDopa PET Imaging Improves the Prediction of Molecular Features of Gliomas Eur. J. Nucl. Med. Mol. Imaging 2020 47 1381 1390 10.1007/s00259-019-04509-y 31529264
+19. Kratochwil C. Combs S.E. Leotta K. Afshar-Oromieh A. Rieken S. Debus J. Haberkorn U. Giesel F.L. Intra-Individual Comparison of 18F-FET and 18F-DOPA in PET Imaging of Recurrent Brain Tumors Neuro-Oncology 2014 16 434 440 10.1093/neuonc/not199 24305717
+20. Martens C. Debeir O. Decaestecker C. Metens T. Lebrun L. Leurquin-Sterk G. Trotta N. Goldman S. Van Simaeys G. Voxelwise Principal Component Analysis of Dynamic [S-Methyl-11C]Methionine PET Data in Glioma Patients Cancers 2021 13 2342 10.3390/cancers13102342 34066294
+21. Zanotti-Fregonara P. Hirvonen J. Lyoo C.H. Zoghbi S.S. Rallis-Frutos D. Huestis M.A. Morse C. Pike V.W. Innis R.B. Population-Based Input Function Modeling for [18F]FMPEP-D2, an Inverse Agonist Radioligand for Cannabinoid CB1 Receptors: Validation in Clinical Studies PLoS ONE 2013 8 e60231 10.1371/journal.pone.0060231 23577094
+22. Wardak M. Schiepers C. Cloughesy T.F. Dahlbom M. Phelps M.E. Huang S.-C. 18F-FLT and 18F-FDOPA PET Kinetics in Recurrent Brain Tumors Eur. J. Nucl. Med. Mol. Imaging 2014 41 1199 1209 10.1007/s00259-013-2678-2 24604590
+23. Melega W.P. Hoffman J.M. Luxen A. Nissenson C.H. Phelps M.E. Barrio J.R. The Effects of Carbidopa on the Metabolism of 6-[18F]Fluoro-L-Dopa in Rats, Monkeys and Humans Life Sci. 1990 47 149 157 10.1016/0024-3205(90)90228-J 2117691
+24. Girard A. Le Reste P.-J. Metais A. Chaboub N. Devillers A. Saint-Jalmes H. Jeune F.L. Palard-Novello X. Additive Value of Dynamic FDOPA PET/CT for Glioma Grading Front. Med. 2021 8 705996 10.3389/fmed.2021.705996
+25. Orlhac F. Soussan M. Chouahnia K. Martinod E. Buvat I. 18F-FDG PET-Derived Textural Indices Reflect Tissue-Specific Uptake Pattern in Non-Small Cell Lung Cancer PLoS ONE 2015 10 e0145063 10.1371/journal.pone.0145063 26669541
+26. Verger A. Static and Dynamic 18F–FET PET for the Characterization of Gliomas Defined by IDH and 1p/19q Status Eur. J. Nucl. Med. Mol. Imaging 2018 45 443 451 10.1007/s00259-017-3846-6 29043400
+27. Vettermann F. Suchorska B. Unterrainer M. Nelwan D. Forbrig R. Ruf V. Wenter V. Kreth F.-W. Herms J. Bartenstein P. Non-Invasive Prediction of IDH-Wildtype Genotype in Gliomas Using Dynamic 18F-FET PET Eur. J. Nucl. Med. Mol. Imaging 2019 46 2581 2589 10.1007/s00259-019-04477-3 31410540
+28. Lohmann P. Herzog H. Rota Kops E. Stoffels G. Judov N. Filss C. Galldiks N. Tellmann L. Weiss C. Sabel M. Dual-Time-Point O-(2-[18F]Fluoroethyl)-L-Tyrosine PET for Grading of Cerebral Gliomas Eur. Radiol. 2015 25 3017 3024 10.1007/s00330-015-3691-6 25813014
+29. Chen W. Silverman D.H.S. Delaloye S. Czernin J. Kamdar N. Pope W. Satyamurthy N. Schiepers C. Cloughesy T. 18F-FDOPA PET Imaging of Brain Tumors: Comparison Study with 18F-FDG PET and Evaluation of Diagnostic Accuracy J. Nucl. Med. 2006 47 904 911 16741298
+30. Janvier L. Olivier P. Blonski M. Morel O. Vignaud J.-M. Karcher G. Taillandier L. Verger A. Correlation of SUV-Derived Indices With Tumoral Aggressiveness of Gliomas in Static 18F-FDOPA PET: Use in Clinical Practice Clin. Nucl. Med. 2015 40 e429 e435 10.1097/RLU.0000000000000897 26204212
+31. Treglia G. Muoio B. Trevisi G. Mattoli M.V. Albano D. Bertagna F. Giovanella L. Diagnostic Performance and Prognostic Value of PET/CT with Different Tracers for Brain Tumors: A Systematic Review of Published Meta-Analyses IJMS 2019 20 4669 10.3390/ijms20194669 31547109
+
