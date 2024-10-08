@@ -18,7 +18,7 @@ def main():
     # Read the content of the file
     file_content = read_file(file_name)
 
-    content = file_content + "\n\nFrom this full-text paper on PubMed Central, I’m looking to identify antigens that are highly expressed on cancer cells. Please extract: A list of antigens with strong expression on cancer cells. Any information on their expression levels across different cancer types. Mentions of these antigens in the context of immunotherapy or tumor targeting.  If there is no information about these, please output nothing and no explanation."
+    content = file_content + "\n\nFrom this full-text paper on PubMed Central, I’m looking to identify antigens that are highly expressed on cancer cells but only for IDH-wildtype glioblastoma. Please extract: A list of antigens with strong expression on IDH-wildtype glioblastoma cancer cells. Any information on their expression levels across different cancer types. Mentions of these antigens in the context of immunotherapy or tumor targeting.  If there is no information about these, please output nothing and no explanation."
 
     COHERE_API_KEY = os.getenv('COHERE_API_KEY')
     co = cohere.ClientV2(COHERE_API_KEY)

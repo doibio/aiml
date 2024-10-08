@@ -1,0 +1,63 @@
+sagemaker.config INFO - Not applying SDK defaults from location: /etc/xdg/sagemaker/config.yaml
+sagemaker.config INFO - Not applying SDK defaults from location: /home/sness/.config/sagemaker/config.yaml
+- **Antigens with strong expression on IDH-wildtype glioblastoma cancer cells:**
+   - GLUT3 (Glucose Transporter 3)
+   - GLUT1 (Glucose Transporter 1)
+   - HK2 (Hexokinase 2)
+   - LDHA (Lactate Dehydrogenase A)
+   - c-MYC
+   - SLC7A11 (Solute Carrier Family 7 Member 11)
+   - NMDA (N-Methyl-D-Aspartate)
+   - AMPA (α-Amino-3-hydroxy-5-methyl-4-isoxazolepropionic acid)
+   - xCT (Cystine/Glutamate Antiporter)
+   - EGFR (Epidermal Growth Factor Receptor)
+   - mTOR (Mammalian Target of Rapamycin)
+   - TERT (Telomerase Reverse Transcriptase)
+   - FASN (Fatty Acid Synthase)
+   - PGC-1α (Peroxisome Proliferator-Activated Receptor Gamma Co-Activator 1-Alpha)
+   - EZH2 (Enhancer of Zeste Homolog 2)
+   - HIF-1α (Hypoxia-Inducible Factor 1-Alpha)
+   - SCAP (SREBP Cleavage-Activating Protein)
+   - SREBP-1 (Sterol Regulatory Element-Binding Protein 1)
+   - KEAP1 (Kelch-Like ECH-Associated Protein 1)
+   - NRF2 (Nuclear Factor Erythroid 2-Related Factor 2)
+   - MHC-I (Major Histocompatibility Complex Class I)
+   - SLC13A3 (Sodium-Dependent Dicarboxylate Transporter 3)
+
+- **Expression levels across different cancer types:**
+   - GLUT3 is highly expressed in classical and proneural GBM subtypes.
+   - HK2 is overexpressed in developing embryos and GBM tissue.
+   - PKM2 is upregulated in GBM specimens.
+   - MPC1 is under-expressed in gliomas.
+   - PDP1 is repressed in patient-derived GBM samples.
+   - TERT-promoter mutations are commonly found in GBM and oligodendroglioma.
+   - TERT downregulation results in decreased expression of PGC-1α.
+   - EZH2 is the catalytic subunit of the polycomb repressive complex 2 (PRC2).
+   - HIF-1α is required for EZH2-mediated metabolic adaptation in gliomas.
+   - SLC7A11 expression is associated with seizures and predicts poor survival in patients with malignant glioma.
+   - xCT is responsible for glioma-mediated neuronal toxicity via glutamate release.
+   - IDH-wildtype gliomas utilize glutamine and glucose for metabolic pathways.
+   - IDH1-mutant gliomas depend on glutamate and lactate.
+
+- **Mentions in the context of immunotherapy or tumor targeting:**
+   - The combined targeting of EGFR signaling and polyunsaturated fatty acid synthesis displays a synergistic effect on GSCs.
+   - The combined inhibition of mTOR kinase and glutaminase profoundly reduces tumor growth in a GBM xenograft model.
+   - The pharmacologic inhibition of mTOR kinase promotes cystine uptake and glutamate secretion via the cysteine/glutamate antiporter (xCT) encoded by the SLC7A11 gene.
+   - The treatment of sulfasalazine (SAS), an FDA-approved xCT inhibitor, reduces peritumoral glutamate in glioma patients.
+   - IDH mutations or the epigenetic effect of 2-HG can decrease the level of NAD+, and inhibiting nicotinamide phosphoribosyltransferase (NAMPT) can induce cytotoxicity in endogenous IDH1/2-mutant cancer cells.
+   - The increased enzymatic activity of SIRT1, an NAD+-consuming enzyme, in combination with NAMPT inhibition, can enhance the antiproliferative effect in patient-derived IDH-mutant cells.
+   - The glycolytic inhibition mediated by 3-bromo-2-oxopropionate-1-propyl ester (3-BrOP), along with carmustine (BCNU), shows a dramatic effect in killing GSCs.
+   - Dual treatment with RTV plus BCNU increases the overall survival in the GL261 murine tumor model.
+   - High GLUT1 expression is detected in quiescent endothelial cells.
+   - The loss of GLUT1 in endothelial cells impairs brain angiogenesis in vivo without altering BBB physical functions.
+   - Pharmacological inhibition of mitochondrial components, mutant IDHs, and lipids is also being tested in ongoing clinical studies.
+   - Dichloroacetate (DCA) induces ROS production, showing antitumor and antiangiogenic effects in C6 glioma cells in vivo.
+   - As a pyruvate dehydrogenase inhibitor, DCA penetrates the BBB and normalizes mitochondrial functions in three of five GBM patients.
+   - Mechanistically, DCA contributes to p53 activation and mitochondrial ROS generation.
+   - The small molecule IACS-010759, an inhibitor of mitochondria complex I of the ETC, reduces tumor growth in mouse models of brain cancers and acute myeloid leukemia (AML).
+   - Ivermectin, an antiparasitic drug, markedly suppresses GBM tumor growth via mitochondrial respiration inhibition.
+   - Targeting tumor hypoxia by antiparasitic agents (ivermectin, proguanil, mefloquine, quinacrine, and atovaquone) is a promising approach for enhancing radiosensitivity.
+   - Imipridone, also called ONC201, suppresses glucose metabolism and OXPHOS-dependent ATP production in stem-like GBM cells.
+   - High levels of oxaloacetate have been shown to reduce glioma growth in animal models, and anhydrous Enol-Oxaloacetate (AEO) is being utilized to evaluate clinical response.
+   - Targeting GLS enzymatic activity by CB-839 eradicates stem-like GBM cells.
+   - Based on the preclinical finding, CB-839, combined with radiation and temozolomide, is being utilized in a phase 1 clinical trial of IDH-mutant astrocytoma.
