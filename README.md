@@ -237,3 +237,10 @@ OutputResults(results, "bispecific_antibody_study_report.txt")
 - **OutputResults**: Compiles and saves the results of the development and testing phases.
 
 This pseudocode abstracts the laboratory processes into a sequence of automated steps, which could be implemented using the robotics and integrated systems available at a facility like Ginkgo Bioworks.
+
+10314  for i in out-pmc-split*; python3 ../../test-cohere2.py $i | grep -v sagemaker | tee out0-${i:r}.out.txt
+
+10301  split -d -l 500 out-pmc.txt out-pmc-split --additional-suffix=.txt
+
+10264  for i in data/pmc/* ; python3 test-cohere1.py $i | grep -v sagemaker > out/out-pmc/${i:r}.txt
+
