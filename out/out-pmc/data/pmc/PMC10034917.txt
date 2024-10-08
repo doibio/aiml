@@ -1,31 +1,31 @@
-sagemaker.config INFO - Not applying SDK defaults from location: /etc/xdg/sagemaker/config.yaml
-sagemaker.config INFO - Not applying SDK defaults from location: /home/sness/.config/sagemaker/config.yaml
-- **Antigens with strong expression on IDH-wildtype glioblastoma cancer cells:**
-   - CD3+ and CD8+ tumor-infiltrating immune cells
-   - PD-L1
-   - TIGIT
-   - CD276
-   - CD133
-   - αvβ3 integrin
-   - EGFR
-   - EGFRvIII variant
+- **Antigen:** CD3+ and CD8+ tumor-infiltrating immune cells
+- **Expression:** Elevated levels of CD3+ and CD8+ tumor-infiltrating immune cells are associated with prolonged survival in glioblastoma patients, despite integrated immunosuppressive mechanisms in the tumor microenvironment and at the systemic level.
+- **Immunotherapy/Tumor Targeting:** The study by Kmiecik et al. (2013) found that elevated CD3+ and CD8+ tumor-infiltrating immune cells correlate with prolonged survival in glioblastoma patients, suggesting their potential as targets for immunotherapy.
 
-- **Expression levels across different cancer types:**
-   - CD3+ and CD8+ tumor-infiltrating immune cells are one of the least numerous immune cell populations in GBM, and are predominantly the CD56dimCD16− subtype.
-   - PD-L1 expression is upregulated in glioma cells, and its expression is associated with poor prognosis.
-   - TIGIT is expressed on tumor-infiltrating immune cells in GBM, and its expression is associated with immunosuppression.
-   - CD276 is highly expressed in GBM cells, and its expression is associated with tumor progression and poor prognosis.
-   - CD133 is a marker of glioma stem cells, and its expression is associated with tumor initiation and progression.
-   - αvβ3 integrin is highly expressed in GBM cells, and its expression is associated with tumor invasion and metastasis.
-   - EGFR is overexpressed in GBM cells, and its expression is associated with tumor progression and poor prognosis.
-   - EGFRvIII variant is a mutated form of EGFR that is specifically expressed in GBM cells, and its expression is associated with tumor progression and poor prognosis.
+- **Antigen:** PD-L1
+- **Expression:** PD-L1 expression is observed in glioblastoma, and its prognostic impact has been investigated.
+- **Immunotherapy/Tumor Targeting:** The study by Nduom et al. (2016) examined the expression of PD-L1 in glioblastoma and its association with patient survival. They found that higher PD-L1 expression was associated with reduced survival in glioblastoma patients, indicating its potential as a target for immunotherapy.
 
-- **Mentions of these antigens in the context of immunotherapy or tumor targeting:**
-   - CD3+ and CD8+ tumor-infiltrating immune cells are associated with prolonged survival in glioblastoma patients, despite integrated immunosuppressive mechanisms in the tumor microenvironment and at the systemic level.
-   - PD-L1 is a target for immune checkpoint blockade, and its expression is associated with resistance to immune checkpoint inhibitors.
-   - TIGIT is a target for immune checkpoint blockade, and its expression is associated with immunosuppression in the tumor microenvironment.
-   - CD276 is a target for chimeric antigen receptor (CAR) T-cell therapy, and its expression is associated with tumor progression and poor prognosis.
-   - CD133 is a target for CAR T-cell therapy, and its expression is associated with tumor initiation and progression.
-   - αvβ3 integrin is a target for CAR T-cell therapy, and its expression is associated with tumor invasion and metastasis.
-   - EGFR is a target for CAR T-cell therapy, and its expression is associated with tumor progression and poor prognosis.
-   - EGFRvIII variant is a target for CAR T-cell therapy, and its expression is associated with tumor progression and poor prognosis.
+- **Antigen:** TIGIT
+- **Expression:** TIGIT is an immune checkpoint molecule that is expressed on various immune cells, including T cells, natural killer (NK) cells, and tumor-infiltrating lymphocytes (TILs). In glioblastoma, TIGIT expression has been observed on TILs, and its role in the tumor microenvironment is being explored.
+- **Immunotherapy/Tumor Targeting:** The study by NCT04656535 is a clinical trial investigating the safety and efficacy of an anti-TIGIT antibody (AB154) in combination with an anti-PD-1 antibody (AB122) for the treatment of recurrent glioblastoma. This trial aims to evaluate the potential of targeting TIGIT as an immunotherapeutic approach in glioblastoma.
+
+- **Antigen:** CD16− immature NK cells
+- **Expression:** CD16− immature NK cells are found in IDHwt tumors, whereas CD16+ cytotoxic NK cells are present in IDH1mut tumor and brain metastases.
+- **Immunotherapy/Tumor Targeting:** The study by Friebel et al. (2020) used single-cell approaches to analyze the immune microenvironment of human brain cancer, including glioblastoma. They found that CD16− immature NK cells are present in IDHwt tumors, while CD16+ cytotoxic NK cells are present in IDH1mut tumor and brain metastases. This suggests that targeting CD16− immature NK cells could be a potential immunotherapeutic strategy in IDHwt glioblastoma.
+
+- **Antigen:** CD16+ cytotoxic NK cells
+- **Expression:** CD16+ cytotoxic NK cells are present in IDH1mut tumor and brain metastases.
+- **Immunotherapy/Tumor Targeting:** The study by Friebel et al. (2020) used single-cell approaches to analyze the immune microenvironment of human brain cancer, including glioblastoma. They found that CD16+ cytotoxic NK cells are present in IDH1mut tumor and brain metastases, indicating their potential as targets for immunotherapy in IDH1mut glioblastoma.
+
+- **Antigen:** HLA-I
+- **Expression:** HLA-I genes are subject to loss of heterozygosity in glioblastoma, but complete deletion of all HLA-I genes is uncommon.
+- **Immunotherapy/Tumor Targeting:** The study by Crane et al. (2010) investigated the role of TGF-β in downregulating the activating receptor NKG2D on NK cells isolated from glioblastoma patients. They found that TGF-β, which is secreted by cancer and non-cancer cells, downregulates the expression of NKG2D-activating receptor on NK cells, suggesting that targeting TGF-β or restoring NKG2D expression could be potential immunotherapeutic strategies in glioblastoma.
+
+- **Antigen:** EGFRvIII
+- **Expression:** EGFRvIII is a mutated form of the epidermal growth factor receptor (EGFR) that is commonly found in glioblastoma. It is a promising target for immunotherapy due to its high expression and specificity in glioblastoma cells.
+- **Immunotherapy/Tumor Targeting:** The study by Brown et al. (2016) reported the regression of glioblastoma after chimeric antigen receptor (CAR) T-cell therapy targeting EGFRvIII. This study demonstrated the potential of EGFRvIII-specific CAR T cells in treating glioblastoma. Additionally, the study by Durgin et al. (2021) described a case report of prolonged survival following EGFRvIII CAR T-cell treatment for recurrent glioblastoma, further supporting the therapeutic potential of this approach.
+
+- **Antigen:** IL13RA2, CD276, CD133, αvβ3 integrin, EGFR, and the oncogenic EGFRvIII variant
+- **Expression:** These antigens are highly expressed on glioblastoma cells and have been targeted for CAR T-cell therapy.
+- **Immunotherapy/Tumor Targeting:** The study by Brown et al. (2016) reported the regression of glioblastoma after CAR T-cell therapy targeting EGFRvIII. This study demonstrated the potential of EGFRvIII-specific CAR T cells in treating glioblastoma. Additionally, the study by Cobb et al. (2022) targeted the αvβ3 integrin complex with CAR-T cells, leading to rapid regression of diffuse intrinsic pontine glioma and glioblastoma. These studies highlight the potential of CAR T-cell therapy in targeting specific antigens on glioblastoma cells.
